@@ -12,19 +12,20 @@ body {
 
 body {
   min-height: 100vh;
-  background: radial-gradient(1200px 600px at 20% -10%, #1b2433 0%, #0a0d13 55%, #07090d 100%);
+  min-height: 100dvh;
+  background: radial-gradient(1200px 600px at 50% -10%, #1b2433 0%, #0a0d13 55%, #07090d 100%);
   color: #e6ebf3;
   font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', sans-serif;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 40px 24px;
+  padding: 24px;
 }
 
 .stage {
   display: flex;
-  align-items: flex-start;
-  gap: 48px;
-  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -56,8 +57,26 @@ body {
 }
 
 .status-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 11px;
-  opacity: 0.8;
+  opacity: 0.85;
+}
+
+.signal {
+  font-size: 9px;
+  letter-spacing: -1px;
+}
+
+.carrier {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.battery {
+  font-size: 10px;
+  transform: translateY(-1px);
 }
 
 .navbar {
@@ -66,10 +85,58 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   font-size: 16px;
   font-weight: 600;
   color: #f2f5fa;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 微信小程序右上角胶囊 */
+.capsule {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 82px;
+  height: 30px;
+  padding: 0 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.cap-dots {
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #dfe6f0;
+  transform: translateY(-2px);
+}
+
+.cap-sep {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.cap-circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.6px solid #dfe6f0;
+  position: relative;
+}
+
+.cap-circle::after {
+  content: '';
+  position: absolute;
+  inset: 3.2px;
+  border-radius: 50%;
+  background: #dfe6f0;
 }
 
 .screen {
@@ -1256,72 +1323,37 @@ body {
   color: #8b97aa;
 }
 
-/* ---------- 右侧说明 ---------- */
-.side {
-  flex: 1;
-  min-width: 260px;
-  padding-top: 24px;
-}
-
-.side h1 {
-  margin: 0 0 14px;
-  font-size: 26px;
-  line-height: 1.3;
-  color: #f2f5fa;
-}
-
-.lead {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #a8b3c4;
-}
-
-.side code {
-  padding: 1px 6px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.07);
-  font-size: 12px;
-  color: #ffc08a;
-}
-
-.meta {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-  font-size: 13px;
-  color: #8b97aa;
-}
-
-.meta li {
-  padding: 7px 0;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
-}
-
-.meta b {
-  color: #dfe6f0;
-  font-weight: 600;
-}
-
-.tip {
-  font-size: 12px;
-  line-height: 1.8;
-  color: #6f7a8c;
-}
-
-@media (max-width: 900px) {
+/* ---------- 手机全屏（真机浏览时像小程序） ---------- */
+@media (max-width: 640px) {
   body {
-    padding: 16px;
+    padding: 0;
+    display: block;
+    background: #0b0e14;
   }
 
   .stage {
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
+    display: block;
+    width: 100%;
   }
 
-  .side {
-    order: 2;
-    max-width: 390px;
+  .phone {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #0b0e14;
+  }
+
+  .statusbar {
+    height: calc(44px + env(safe-area-inset-top));
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .tabbar {
+    height: calc(58px + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 

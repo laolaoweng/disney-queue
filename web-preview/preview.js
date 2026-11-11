@@ -51,7 +51,15 @@
   var screenEl = document.getElementById('screen');
   var navTitleEl = document.getElementById('navTitle');
   var tabbarEl = document.getElementById('tabbar');
-  var metaEl = document.getElementById('meta');
+  var statusTimeEl = document.getElementById('statusTime');
+
+  function tickClock() {
+    if (!statusTimeEl) return;
+    var d = new Date();
+    statusTimeEl.textContent = (d.getHours() < 10 ? '0' : '') + d.getHours() + ':' + (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
+  }
+  tickClock();
+  setInterval(tickClock, 20000);
 
   var fmt = null;
   var recModule = null;
@@ -252,7 +260,6 @@
       state.bundle.nowMs = new Date(state.bundle.nowIso).getTime();
       state.loading = false;
       render();
-      renderMeta();
     }).catch(function (err) {
       state.loading = false;
       state.error = (err && err.message) || '数据加载失败';
@@ -1011,25 +1018,6 @@
     state.menuId = null;
     render();
     screenEl.scrollTop = 0;
-  }
-
-  function renderMeta() {
-    var bundle = state.bundle;
-    if (!bundle) return;
-    var rows = [
-      ['数据来源', bundle.mockMode ? '内置 mock（演示）' : (bundle.source || 'unknown')],
-      ['数据文件', bundle.mockMode ? 'miniprogram/mock/*.json' : 'data/*.json'],
-      ['快照时刻', fmt.hhmm(fmt.toDate(bundle.nowIso)) + '（' + esc(bundle.nowIso) + '）'],
-      ['项目数', bundle.catalog.attractions.length + ' 个'],
-      ['预测曲线', bundle.forecast ? Object.keys(bundle.forecast.curves || {}).length + ' 个项目' : '缺失（算法会自动降级）'],
-      ['分时数据', bundle.hourlyStats
-        ? bundle.hourlyStats.hours.length + ' 个整点 · ' + ((bundle.hourlyStats.window && bundle.hourlyStats.window.days) || '?') + ' 天历史'
-        : '缺失（分时页退 forecast 曲线）'],
-      ['算法', 'shared/recommend.js（与小程序同一份）']
-    ];
-    metaEl.innerHTML = rows.map(function (row) {
-      return '<li>' + row[0] + '：<b>' + row[1] + '</b></li>';
-    }).join('');
   }
 
   /* ---------------- 交互 ---------------- */
