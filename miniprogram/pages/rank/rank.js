@@ -47,7 +47,7 @@ Page({
     statsText: '',
     updatedText: '',
     updatedFull: '',
-    hintText: '点任意一项：设为我的位置 / 加入必玩 / 避开它'
+    hintText: '点任意一项：设为我的位置 / 加入必玩 / 避开它 / 导航过去'
   },
 
   onLoad: function () {
@@ -195,7 +195,8 @@ Page({
       inMust ? '取消必玩' : '加入必玩',
       inAvoid ? '取消避开' : '避开它',
       played ? '取消「已玩过」' : '标记「已玩过」',
-      isLast ? '取消「我在这里」' : '设为「我在这里」'
+      isLast ? '取消「我在这里」' : '设为「我在这里」',
+      '🧭 导航过去'
     ];
 
     var self = this;
@@ -219,11 +220,39 @@ Page({
           else store.markPlayed(id);
         } else if (tapIndex === 3) {
           store.setLastAttraction(isLast ? null : id);
+        } else if (tapIndex === 4) {
+          self.navigateToAttraction(id);
+          return;
         }
         self.render();
         wx.showToast({ title: '偏好已更新', icon: 'none' });
       },
       fail: function () {}
+    });
+  },
+
+  // 打开微信内置地图，点「导航」直接走步行路线
+  navigateToAttraction: function (id) {
+    var attrs = (this.bundle && this.bundle.catalog && this.bundle.catalog.attractions) || [];
+    var attr = null;
+    for (var i = 0; i < attrs.length; i++) {
+      if (attrs[i].id === id) { attr = attrs[i]; break; }
+    }
+    if (!attr) {
+      wx.showToast({ title: '没找到这个项目的坐标', icon: 'none' });
+      return;
+    }
+    var g = format.bd09ToGcj02(attr.lat, attr.lng);
+    if (!g) {
+      wx.showToast({ title: '这个项目还没有坐标', icon: 'none' });
+      return;
+    }
+    wx.openLocation({
+      latitude: g.lat,
+      longitude: g.lng,
+      name: attr.name || '目的地',
+      address: attr.land || '上海迪士尼乐园',
+      scale: 18
     });
   }
 });

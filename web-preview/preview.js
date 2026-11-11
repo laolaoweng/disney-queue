@@ -573,7 +573,7 @@
       '<span class="fe-sub">各项目几点人最少，一眼看出最空时段</span></div>' +
       '<span class="fe-arrow">›</span></div>' +
       listHtml +
-      '<div class="footnote">点任意一项：设为我的位置 / 加入必玩 / 避开它 / 标记已玩</div>' +
+      '<div class="footnote">点任意一项：设为我的位置 / 加入必玩 / 避开它 / 标记已玩 / 导航过去</div>' +
       modalHtml(rows) +
       '</div>';
   }
@@ -597,7 +597,8 @@
       inMust ? '取消必玩' : '加入必玩',
       inAvoid ? '取消避开' : '避开它',
       played ? '取消「已玩过」' : '标记「已玩过」',
-      here ? '取消「我在这里」' : '设为「我在这里」'
+      here ? '取消「我在这里」' : '设为「我在这里」',
+      '🧭 导航过去'
     ];
 
     var buttons = actions.map(function (label, index) {
@@ -1062,6 +1063,26 @@
 
   /* ---------------- 交互 ---------------- */
 
+  // 高德步行导航链接（坐标 BD-09 → GCJ-02）；手机浏览器打开会唤起高德 App/网页
+  function amapWalkUrl(row) {
+    if (!fmt || typeof fmt.bd09ToGcj02 !== 'function') return '';
+    var g = fmt.bd09ToGcj02(row.lat, row.lng);
+    if (!g) return '';
+    return 'https://uri.amap.com/navigation?to=' + g.lng.toFixed(6) + ',' + g.lat.toFixed(6) +
+      ',' + encodeURIComponent(row.name || '目的地') +
+      '&mode=walk&callnative=1&src=disney-queue&coordinate=gaode&policy=1';
+  }
+
+  function navigateTo(row) {
+    var url = amapWalkUrl(row);
+    if (!url) {
+      window.alert('这个项目还没有坐标，暂时无法导航');
+      return;
+    }
+    var win = window.open(url, '_blank');
+    if (!win) window.location.href = url;
+  }
+
   function handleMenuAction(index, id) {
     var prefs = getPrefs();
     if (index === 0) {
@@ -1079,6 +1100,17 @@
       else markPlayed(id);
     } else if (index === 3) {
       savePrefs({ lastAttractionId: prefs.lastAttractionId === id ? null : id });
+    } else if (index === 4) {
+      // 导航过去：先收起菜单，再唤起高德步行导航
+      state.menuId = null;
+      render();
+      var attr = null;
+      var attrs = (currentBundle() && currentBundle().catalog && currentBundle().catalog.attractions) || [];
+      for (var ai = 0; ai < attrs.length; ai++) {
+        if (attrs[ai].id === id) { attr = attrs[ai]; break; }
+      }
+      if (attr) navigateTo(attr);
+      return;
     }
     state.menuId = null;
     render();

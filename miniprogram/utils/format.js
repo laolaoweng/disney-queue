@@ -95,6 +95,20 @@ function addMinutesText(baseValue, minutes) {
   return hhmm(new Date(d.getTime() + (minutes || 0) * 60000));
 }
 
+// BD-09（百度系坐标，官方 WAM 数据用的就是这套）→ GCJ-02（高德 / 微信 wx.openLocation）
+// 误差约 1-2 米，够园区内步行导航用。
+var X_PI = Math.PI * 3000 / 180;
+function bd09ToGcj02(lat, lng) {
+  var latitude = Number(lat);
+  var longitude = Number(lng);
+  if (isNaN(latitude) || isNaN(longitude)) return null;
+  var x = longitude - 0.0065;
+  var y = latitude - 0.006;
+  var z = Math.sqrt(x * x + y * y) - 0.00002 * Math.sin(y * X_PI);
+  var theta = Math.atan2(y, x) - 0.000003 * Math.cos(x * X_PI);
+  return { lat: z * Math.sin(theta), lng: z * Math.cos(theta) };
+}
+
 module.exports = {
   pad2: pad2,
   toDate: toDate,
@@ -106,5 +120,6 @@ module.exports = {
   scoreText: scoreText,
   categoryText: categoryText,
   statusText: statusText,
-  addMinutesText: addMinutesText
+  addMinutesText: addMinutesText,
+  bd09ToGcj02: bd09ToGcj02
 };

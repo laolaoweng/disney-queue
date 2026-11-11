@@ -1687,8 +1687,8 @@ body {
 
 .tile-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px 10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px 7px;
   padding: 2px 0 10px;
 }
 .tile { cursor: pointer; min-width: 0; }
@@ -1760,3 +1760,23 @@ body {
 }
 .group + .group { margin-top: 10px; }
 .group .tile-grid { padding-bottom: 4px; }
+/* 4 列小图标：缩小圆角、徽标、名称与尊享角标 */
+.tile-grid .tile-img { border-radius: 10px; }
+.tile-grid .wait-pill {
+  top: 3px;
+  right: 3px;
+  min-width: 19px;
+  padding: 0 4px;
+  border-radius: 6px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.tile-grid .wait-pill.t0 { font-size: 9px; }
+.tile-grid .tile-premier {
+  left: 3px;
+  bottom: 3px;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 8px;
+}
+.tile-grid .tile-name { margin-top: 4px; font-size: 10.5px; line-height: 1.25; }

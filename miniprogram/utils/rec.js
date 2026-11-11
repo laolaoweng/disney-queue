@@ -394,6 +394,8 @@ function rankList(data, prefs, options) {
       statusText: w.status ? format.statusText(w.status) : '',
       heightCm: attr.heightCm,
       premierAccess: !!attr.premierAccess,
+      lat: attr.lat,
+      lng: attr.lng,
       imageUrl: attr.imageUrl || '',
       heroImageUrl: attr.heroImageUrl || '',
       closed: closed
