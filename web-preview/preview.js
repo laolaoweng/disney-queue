@@ -221,6 +221,22 @@
     });
   }
 
+  var initialViewDone = false;
+  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast'];
+
+  function applyInitialView() {
+    if (initialViewDone) return;
+    initialViewDone = true;
+    var view = '';
+    try {
+      view = new URLSearchParams(location.search).get('view') || '';
+    } catch (e) { view = ''; }
+    if (!view) view = (location.hash || '').replace(/^#\/?/, '');
+    if (view && VIEW_NAMES.indexOf(view) >= 0 && view !== state.view) {
+      switchView(view);
+    }
+  }
+
   function boot(force) {
     if (state.bundle && !force) {
       state.loading = false;
@@ -260,6 +276,7 @@
       state.bundle.nowMs = new Date(state.bundle.nowIso).getTime();
       state.loading = false;
       render();
+      applyInitialView();
     }).catch(function (err) {
       state.loading = false;
       state.error = (err && err.message) || '数据加载失败';
