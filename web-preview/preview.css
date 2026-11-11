@@ -1325,6 +1325,14 @@ body {
   color: #8b97aa;
 }
 
+/* 导航是一个 <a>，外观与按钮一致 */
+.modal-nav {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-btn[disabled] { opacity: .45; }
+
 /* ---------- 手机全屏（真机浏览时像小程序） ---------- */
 @media (max-width: 640px) {
   body {

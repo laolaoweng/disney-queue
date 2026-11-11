@@ -597,16 +597,21 @@
       inMust ? '取消必玩' : '加入必玩',
       inAvoid ? '取消避开' : '避开它',
       played ? '取消「已玩过」' : '标记「已玩过」',
-      here ? '取消「我在这里」' : '设为「我在这里」',
-      '🧭 导航过去'
+      here ? '取消「我在这里」' : '设为「我在这里」'
     ];
 
     var buttons = actions.map(function (label, index) {
       return '<button class="modal-btn" data-act="menu" data-i="' + index + '" data-id="' + esc(row.id) + '">' + esc(label) + '</button>';
     }).join('');
 
+    // 导航用真链接（<a href>）：手机浏览器/微信里都能直接打开，不会被 window.open 拦截
+    var navUrl = amapWalkUrl(row);
+    var navBtn = navUrl
+      ? '<a class="modal-btn modal-nav" data-act="nav" href="' + esc(navUrl) + '" target="_blank" rel="noopener">🧭 导航过去</a>'
+      : '<button class="modal-btn" disabled>🧭 暂无坐标</button>';
+
     return '<div class="modal" data-act="closeModal"><div class="modal-panel">' +
-      '<div class="modal-title">' + esc(row.name) + '</div>' + buttons +
+      '<div class="modal-title">' + esc(row.name) + '</div>' + buttons + navBtn +
       '<button class="modal-btn" data-act="closeModal">取消</button></div></div>';
   }
 
@@ -1039,8 +1044,9 @@
     }
     var panel = screenEl.querySelector('.modal-panel');
     if (panel) {
+      // 兜底：面板上的按钮有各自的 data-act，这里只阻止「点面板空白处」冒泡到遮罩关闭
       panel.addEventListener('click', function (event) {
-        event.stopPropagation();
+        if (!event.target.closest('[data-act]')) event.stopPropagation();
       });
     }
     updateTabs();
@@ -1073,14 +1079,24 @@
       '&mode=walk&callnative=1&src=disney-queue&coordinate=gaode&policy=1';
   }
 
+  function isMobileUA() {
+    return /Android|iPhone|iPad|iPod|Mobile|MicroMessenger/i.test(navigator.userAgent);
+  }
+
   function navigateTo(row) {
     var url = amapWalkUrl(row);
     if (!url) {
       window.alert('这个项目还没有坐标，暂时无法导航');
       return;
     }
-    var win = window.open(url, '_blank');
-    if (!win) window.location.href = url;
+    // 手机端直接在同一标签打开高德网页版（会引导打开 App）：
+    // 不用 window.open（微信/手机浏览器会拦截弹窗），也不用 amap:// scheme（没装 App 时页面会卡住没反应）
+    if (isMobileUA()) {
+      window.location.href = url;
+      return;
+    }
+    var opened = window.open(url, '_blank');
+    if (!opened) window.location.href = url;
   }
 
   function handleMenuAction(index, id) {
@@ -1152,6 +1168,22 @@
     }
     if (act === 'menu') {
       handleMenuAction(Number(target.getAttribute('data-i')), target.getAttribute('data-id'));
+      return;
+    }
+    if (act === 'nav') {
+      // 导航：手机端先试高德 App scheme，失败回落到网页版（避免被弹窗拦截）
+      event.preventDefault();
+      var href = target.getAttribute('href');
+      var navId = target.getAttribute('data-id');
+      state.menuId = null;
+      render();
+      var navAttr = null;
+      var navAttrs = (currentBundle() && currentBundle().catalog && currentBundle().catalog.attractions) || [];
+      for (var ni = 0; ni < navAttrs.length; ni++) {
+        if (navAttrs[ni].id === navId) { navAttr = navAttrs[ni]; break; }
+      }
+      if (navAttr) navigateTo(navAttr);
+      else if (href) window.location.href = href;
       return;
     }
     if (act === 'closeModal') {
