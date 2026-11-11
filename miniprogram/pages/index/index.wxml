@@ -143,6 +143,18 @@
       </view>
     </view>
 
+    <!-- 冲刺计划入口 -->
+    <view class="plan8-entry card" bindtap="goPlan8">
+      <view class="p8e-left">
+        <text class="p8e-emoji">🎯</text>
+        <view class="p8e-texts">
+          <text class="p8e-title">冲刺计划</text>
+          <text class="p8e-sub">闭园前尽量多玩 · 每项最佳时间</text>
+        </view>
+      </view>
+      <text class="p8e-arrow">›</text>
+    </view>
+
     <!-- 园区概况 + 行程摘要 -->
     <view class="summary card" bindtap="goPlan">
       <view class="summary-main">

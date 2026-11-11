@@ -415,7 +415,8 @@ check('小程序页面齐全', () => {
     }
   }
   const app = readJSON('miniprogram/app.json');
-  assert(app.pages.length === 7, 'app.json pages 应为 7 个（5 tab + forecast + plan），实际 ' + app.pages.length);
+  assert(app.pages.length === 8, 'app.json pages 应为 8 个（5 tab + forecast + plan + plan8），实际 ' + app.pages.length);
+  assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json 缺少 pages/plan8/plan8');
   for (const p of pages) assert(app.pages.indexOf(p) >= 0, 'app.json 未注册 ' + p);
   assert(app.tabBar && Array.isArray(app.tabBar.list) && app.tabBar.list.length === 5,
     'tabBar 应保持 5 个 tab');
@@ -517,6 +518,71 @@ check('H5 演出页 + 今日客流卡', () => {
   assert(/#eaf2ff|#e4efff/.test(css), 'preview.css 不是浅色主题');
   const tabs = (html.match(/class="tab" data-view=/g) || []).length;
   assert(tabs === 5, 'H5 tabbar 应为 5 个，实际 ' + tabs);
+});
+
+// ---------- planner（冲刺计划） ----------
+const plannerPath = path.join(ROOT, 'shared', 'planner.js');
+let planner = null;
+try { planner = require(plannerPath); } catch (err) { planner = null; }
+
+check('planner 导出', () => {
+  assert(planner, 'shared/planner.js 不存在或加载失败');
+  ['planMustDo', 'walkMinutesBetween', 'buildCurves', 'curveValueAt', 'computeHeatFactor'].forEach((name) => {
+    assert(typeof planner[name] === 'function', 'planner 缺少导出 ' + name);
+  });
+});
+
+check('planner 小程序副本与 shared 一致', () => {
+  const a = fs.readFileSync(plannerPath, 'utf8');
+  const b = fs.readFileSync(path.join(ROOT, 'miniprogram', 'shared', 'planner.js'), 'utf8');
+  assert(a === b, 'miniprogram/shared/planner.js 与 shared/planner.js 不一致，请重新复制');
+});
+
+check('planner 实时数据出计划（8 大必玩，09:00 出发）', () => {
+  const catalog = readJSON('data/catalog.json');
+  const latest = readJSON('data/latest.json');
+  const hourlyStats = readJSON('data/hourly-stats.json');
+  const r = planner.planMustDo({ catalog, latest, hourlyStats, now: '2026-11-11T01:00:00Z', selected: catalog.highlights });
+  assert(r.schemaVersion === 1, 'schemaVersion 应为 1');
+  assert(r.completed.total === 8, '应为 8 个勾选项目，实际 ' + r.completed.total);
+  assert(r.plan.length >= 5, '09:00 出发应至少排 5 项，实际 ' + r.plan.length);
+  for (let i = 1; i < r.plan.length; i++) {
+    assert(Date.parse(r.plan[i].arriveAt) > Date.parse(r.plan[i - 1].leaveAt), '时间线应单调递增');
+  }
+  assert(r.totals.finishAt != null, 'totals.finishAt 不应为空');
+  assert(Array.isArray(r.warnings), 'warnings 应为数组');
+  assert(r.independentBest.length > 0, 'independentBest 不应为空');
+});
+
+check('planner 确定性 & 空清单不崩', () => {
+  const catalog = readJSON('data/catalog.json');
+  const latest = readJSON('data/latest.json');
+  const hourlyStats = readJSON('data/hourly-stats.json');
+  const input = { catalog, latest, hourlyStats, now: '2026-11-11T01:00:00Z', selected: catalog.highlights.slice(0, 3) };
+  const a = planner.planMustDo(input);
+  const b = planner.planMustDo(input);
+  assert(JSON.stringify(a) === JSON.stringify(b), '同一输入结果应完全一致');
+  const empty = planner.planMustDo({ catalog, latest, hourlyStats, now: '2026-11-11T01:00:00Z', selected: [] });
+  assert(empty.completed.total === 0 && empty.plan.length === 0, '空清单应返回空计划');
+});
+
+check('冲刺计划页面文件齐全（H5 + 小程序）', () => {
+  const files = [
+    'web-preview/preview.js',
+    'miniprogram/pages/plan8/plan8.js',
+    'miniprogram/pages/plan8/plan8.wxml',
+    'miniprogram/pages/plan8/plan8.wxss',
+    'miniprogram/pages/plan8/plan8.json',
+    'tools/plan8.js'
+  ];
+  files.forEach((rel) => assert(fs.existsSync(path.join(ROOT, rel)), '缺少 ' + rel));
+  const app = readJSON('miniprogram/app.json');
+  assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json pages 应包含 pages/plan8/plan8');
+  assert(app.pages.length === 8, '小程序应为 8 页，实际 ' + app.pages.length);
+  const h5 = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
+  assert(h5.indexOf('plan8') >= 0, 'preview.js 应包含 plan8 视图');
+  const index = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/index/index.wxml'), 'utf8');
+  assert(index.indexOf('plan8') >= 0, '首页应有冲刺计划入口');
 });
 
 // ---------- 结果 ----------

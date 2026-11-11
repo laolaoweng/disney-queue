@@ -16,7 +16,7 @@
   var PREFS_KEY = 'dq_prefs_v1';
   var WEEK = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
   var PARTY_TEXT = { family: '亲子家庭', thrill: '刺激党', kids: '带小孩', mixed: '混合同行' };
-  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出' };
+  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出', plan8: '冲刺计划' };
   var TABS = [
     { key: 'mustDo', label: '必玩' },
     { key: 'avoid', label: '避开' },
@@ -64,6 +64,7 @@
   var fmt = null;
   var recModule = null;
   var rec = null;
+  var planner = null;
 
   var state = {
     view: 'index',
@@ -76,7 +77,8 @@
     menuId: null,
     settingsTab: 'mustDo',
     forecastScopeId: '',
-    forecastDayType: 'all'
+    forecastDayType: 'all',
+    plan8Selected: null
   };
 
   /* ---------------- 工具 ---------------- */
@@ -202,6 +204,11 @@
       })
       .then(function (exports) {
         rec = exports;
+        // 冲刺计划算法（shared/planner.js 只读）：缺失时页面给兜底文案，不影响其他视图
+        return loadCommonJs('../shared/planner.js').catch(function () { return null; });
+      })
+      .then(function (exports) {
+        planner = exports && typeof exports.planMustDo === 'function' ? exports : null;
       });
   }
 
@@ -221,21 +228,36 @@
     });
   }
 
-  var initialViewDone = false;
-  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows'];
+  var pendingInitialView = null;
+  var initialViewAttempts = 0;
+  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows', 'plan8'];
 
-  function applyInitialView() {
-    if (initialViewDone) return;
-    initialViewDone = true;
+  function readInitialView() {
+    var loc = typeof location !== 'undefined' ? location : null;
     var view = '';
     try {
-      view = new URLSearchParams(location.search).get('view') || '';
+      if (loc) view = new URLSearchParams(loc.search).get('view') || '';
     } catch (e) { view = ''; }
-    if (!view) view = (location.hash || '').replace(/^#\/?/, '');
-    if (view && VIEW_NAMES.indexOf(view) >= 0 && view !== state.view) {
+    if (!view && loc) view = (loc.hash || '').replace(/^#\/?/, '');
+    return view;
+  }
+
+  // ?view=plan8 直达：模块/数据可能还没就绪，失败就重试几次，避免停在首页
+  function tryInitialView() {
+    if (pendingInitialView == null) pendingInitialView = readInitialView();
+    var view = pendingInitialView;
+    if (!view || VIEW_NAMES.indexOf(view) < 0) { pendingInitialView = null; return; }
+    if (state.view === view) { pendingInitialView = null; return; }
+    try {
       switchView(view);
+      pendingInitialView = null;
+    } catch (err) {
+      initialViewAttempts++;
+      if (initialViewAttempts < 20) setTimeout(tryInitialView, 100);
     }
   }
+
+  function applyInitialView() { tryInitialView(); }
 
   function boot(force) {
     if (state.bundle && !force) {
@@ -429,6 +451,12 @@
       '<div class="hero-actions"><button class="btn btn-primary" data-act="plan">看行程怎么排</button>' +
       '<button class="btn btn-ghost" data-act="played" data-id="' + esc(best.attractionId) + '">已经玩过</button></div>' +
       '</section>' +
+
+      '<div class="plan8-entry card" data-act="plan8">' +
+      '<span class="p8e-emoji">🎯</span>' +
+      '<div class="p8e-texts"><span class="p8e-title">冲刺计划</span>' +
+      '<span class="p8e-sub">闭园前尽量多玩 · 每项最佳时间</span></div>' +
+      '<span class="p8e-arrow">›</span></div>' +
 
       '<div class="summary card" data-act="plan">' +
       '<div class="summary-main"><span class="summary-text">' + esc(stats.statsText) + '</span>' +
@@ -838,6 +866,183 @@
       '</div>';
   }
 
+  function plan8Page(inner) {
+    return '<div class="page">' +
+      '<div class="topbar"><div><span class="topbar-title">冲刺计划</span>' +
+      '<span class="topbar-sub">闭园前尽量多玩 · 8 大必玩</span></div>' +
+      '<button class="refresh-btn" data-act="plan8recalc" title="重新计算">↻</button></div>' +
+      inner + '</div>';
+  }
+
+  function htmlPlan8() {
+    var bundle = currentBundle();
+    var catalog = bundle.catalog || {};
+    var attractions = catalog.attractions || [];
+    var attrMap = {};
+    attractions.forEach(function (a) { attrMap[a.id] = a; });
+    var highlightIds = (catalog.highlights && catalog.highlights.length)
+      ? catalog.highlights.slice()
+      : attractions.slice(0, 8).map(function (a) { return a.id; });
+    if (!state.plan8Selected) state.plan8Selected = highlightIds.slice();
+    state.plan8Selected = state.plan8Selected.filter(function (id) { return !!attrMap[id]; });
+    var selected = state.plan8Selected;
+    var prefs = getPrefs();
+
+    var chipsHtml = highlightIds.map(function (id) {
+      var attr = attrMap[id];
+      var seq = selected.indexOf(id) + 1;
+      return '<button class="p8-chip ' + (seq > 0 ? 'on' : '') + '" data-act="plan8chip" data-id="' + esc(id) + '">' +
+        (seq > 0 ? '<b class="p8-chip-seq num">' + seq + '</b>' : '') +
+        '<span class="p8-chip-name">' + esc(attr ? attr.name : id) + '</span></button>';
+    }).join('');
+
+    var originOptions = ['<option value="0">园区中心（不指定）</option>'].concat(attractions.map(function (attr, index) {
+      return '<option value="' + (index + 1) + '"' + (prefs.lastAttractionId === attr.id ? ' selected' : '') + '>' +
+        esc(attr.name) + '</option>';
+    })).join('');
+
+    var picker = '<div class="card p8-pick">' +
+      '<div class="p8-pick-head"><span class="card-title">想玩的项目</span>' +
+      '<span class="p8-pick-count">已选 ' + selected.length + ' 项</span></div>' +
+      '<p class="p8-hint">点一下勾选 / 取消，序号就是优先级（先勾的先排）</p>' +
+      '<div class="p8-chips">' + chipsHtml + '</div>' +
+      '<div class="p8-pick-actions"><button class="p8-mini-btn" data-act="plan8all">全选</button>' +
+      '<button class="p8-mini-btn ghost" data-act="plan8clear">清空</button></div>' +
+      '<div class="hr"></div>' +
+      '<div class="origin-row"><span class="origin-row-label">出发点</span>' +
+      '<select class="origin-row-picker" data-act="plan8origin">' + originOptions + '</select></div>' +
+      '</div>';
+
+    if (!planner) {
+      return plan8Page(
+        '<div class="empty"><div class="empty-emoji">🧭</div><div class="empty-title">冲刺算法没加载出来</div>' +
+        '<p class="muted small">请确认 shared/planner.js 可通过 http 访问（web-preview 需要 http 服务）。</p></div>' + picker
+      );
+    }
+
+    if (!selected.length) {
+      return plan8Page(picker +
+        '<div class="empty"><div class="empty-emoji">🎯</div><div class="empty-title">先勾几个想玩的项目</div>' +
+        '<p class="muted small">勾上项目后，这里会算出闭园前最多能玩几项、按什么顺序、各自几点到。</p>' +
+        '<button class="empty-btn" data-act="plan8all">全选 8 大必玩</button></div>');
+    }
+
+    var nowIso = bundle.mockMode ? bundle.nowIso : new Date().toISOString();
+    var result = null;
+    var resultError = '';
+    try {
+      result = planner.planMustDo({
+        catalog: catalog,
+        hourlyStats: bundle.hourlyStats || null,
+        latest: bundle.latest || { waits: bundle.waits || [] },
+        now: nowIso,
+        selected: selected,
+        location: prefs.lastAttractionId ? { attractionId: prefs.lastAttractionId } : null,
+        opts: { mode: 'max' }
+      });
+    } catch (e) {
+      resultError = '冲刺计划计算失败：' + ((e && e.message) || '未知错误');
+    }
+
+    if (!result) {
+      return plan8Page(picker + '<div class="empty"><div class="empty-emoji">⚠️</div><div class="empty-title">计划没算出来</div>' +
+        '<p class="muted small">' + esc(resultError) + '</p></div>');
+    }
+
+    var nowDate = fmt.toDate(bundle.nowIso);
+    var nowLabel = fmt.hhmm(nowDate);
+    var queueCloseMs = fmt.toDate(result.queueCloseAt).getTime();
+    var remainMin = Math.round((queueCloseMs - nowDate.getTime()) / 60000);
+    var remainText = remainMin > 0
+      ? (Math.floor(remainMin / 60) > 0
+        ? Math.floor(remainMin / 60) + ' 小时 ' + (remainMin % 60) + ' 分'
+        : (remainMin % 60) + ' 分钟')
+      : '已过排队截止时间';
+    var heat = typeof result.heatFactor === 'number' ? result.heatFactor : 1;
+    var heatTone = heat >= 1.25 ? 'hot' : (heat <= 0.75 ? 'ok' : 'mid');
+    var dayTypeText = result.dayType === 'weekend' ? '周末' : '工作日';
+
+    var statusHtml = '<div class="status-card">' +
+      '<div class="status-item"><span class="status-num num">' + esc(nowLabel) + '</span>' +
+      '<span class="status-label">现在</span></div>' +
+      '<div class="status-divider"></div>' +
+      '<div class="status-item status-item-wide"><span class="status-num num status-remain">' + esc(remainText) + '</span>' +
+      '<span class="status-label">距 ' + esc(fmt.hhmm(fmt.toDate(result.queueCloseAt)) || '21:00') + ' 排队截止</span></div>' +
+      '<div class="status-divider"></div>' +
+      '<div class="status-item"><span class="status-num num status-heat tone-' + heatTone + '">×' + heat.toFixed(2) + '</span>' +
+      '<span class="status-label">今日热度 · ' + dayTypeText + '</span></div>' +
+      '</div>';
+
+    var rowsHtml = (result.plan || []).map(function (row, index) {
+      return '<div class="tl-row" data-act="gorank" data-id="' + esc(row.attractionId) + '">' +
+        '<span class="tl-seq num">' + (index + 1) + '</span>' +
+        '<div class="tl-main"><div class="tl-top">' +
+        '<b class="tl-arrive num">' + esc(row.arriveLabel) + '</b>' +
+        '<span class="tl-name">' + esc(row.name) + '</span></div>' +
+        '<span class="tl-sub">' + esc(row.land || '') + ' · 排队 ' + esc(row.queueMin) + ' 分 · 玩 ' +
+        esc(row.rideMinutes) + ' 分 · 离开 ' + esc(row.leaveLabel) + '</span>' +
+        '<span class="tl-walk">步行 ' + esc(Math.round((row.walkFromPrevMin || 0) * 10) / 10) + ' 分钟</span></div>' +
+        '<span class="tl-arrow">›</span></div>';
+    }).join('');
+
+    var summaryText = '排队 ' + ((result.totals && result.totals.queueMin) || 0) + ' 分 · 玩 ' +
+      ((result.totals && result.totals.rideMin) || 0) + ' 分 · 步行 ' +
+      Math.round(((result.totals && result.totals.walkMin) || 0) * 10) / 10 + ' 分';
+
+    var resultHtml = '<div class="p8-result card">' +
+      '<div class="p8-result-top">' +
+      '<div class="p8-result-main"><span class="p8-result-label">最多能玩完</span>' +
+      '<div class="p8-result-line"><b class="p8-result-count num">' + result.completed.count + '</b>' +
+      '<span class="p8-result-total">/ ' + result.completed.total + ' 项</span></div></div>' +
+      '<div class="p8-result-side"><span class="p8-result-label">预计结束</span>' +
+      '<b class="p8-result-finish num">' + esc(result.totals.finishLabel) + '</b>' +
+      '<span class="p8-result-close">闭园 ' + esc(fmt.hhmm(fmt.toDate(result.closeAt))) + '</span></div></div>' +
+      '<span class="p8-totals">' + esc(summaryText) + '</span>' +
+      '<div class="p8-btns"><button class="p8-btn primary" data-act="plan8recalc">🔄 重新计算</button>' +
+      '<button class="p8-btn" data-act="plan8here">📍 我在这里</button></div></div>' +
+      '<div class="card p8-timeline"><span class="card-title">建议顺序</span>' +
+      '<p class="p8-hint">点任意一行可以跳到排队榜看它现在的排队</p>' +
+      (rowsHtml || '<p class="muted small">当前时间已经排不进任何项目了。</p>') + '</div>';
+
+    var skipped = result.skipped || [];
+    var skippedHtml = skipped.length
+      ? '<div class="card p8-skip"><span class="card-title">今天来不及的项目</span>' +
+        skipped.map(function (row) {
+          var closed = row.reason === 'closed';
+          var extra = (!closed && row.extraMinApprox != null) ? ' · 想加进来大约多花 ' + row.extraMinApprox + ' 分钟' : '';
+          return '<div class="skip-row"><span class="skip-dot tone-' + (closed ? 'off' : 'warn') + '"></span>' +
+            '<div class="skip-main"><span class="skip-name">' + esc(row.name) + '</span>' +
+            '<span class="skip-reason">' + (closed ? '已关闭 / 停运' : '预计来不及') + esc(extra) + '</span></div></div>';
+        }).join('') + '</div>'
+      : '';
+
+    var best = result.independentBest || [];
+    var bestHtml = best.length
+      ? '<div class="card p8-best"><span class="card-title">今日最空时段</span>' +
+        '<p class="p8-hint">如果单独去玩这一项，这样排排队最短（从出发点算）</p>' +
+        '<div class="best-head"><span class="best-col name">项目</span><span class="best-col time">最佳开始</span>' +
+        '<span class="best-col num">排队</span><span class="best-col num">步行</span></div>' +
+        best.map(function (row) {
+          return '<div class="best-row"><span class="best-col name">' + esc(row.name) + '</span>' +
+            '<span class="best-col time num">' + esc(row.startLabel) + '</span>' +
+            '<span class="best-col num">' + esc(row.waitMinutes) + ' 分</span>' +
+            '<span class="best-col num">' + esc(Math.round(row.walkMinutes * 10) / 10) + ' 分</span></div>';
+        }).join('') + '</div>'
+      : '';
+
+    var warnings = (result.warnings || []).slice();
+    if (!bundle.hourlyStats) warnings.unshift('缺少 14 天分时数据，排队时间按实时/默认值估算');
+    var warnHtml = warnings.length
+      ? '<div class="card p8-warn">' + warnings.map(function (text) {
+        return '<div class="warn-row"><span class="warn-dot">!</span><span class="warn-text">' + esc(text) + '</span></div>';
+      }).join('') + '</div>'
+      : '';
+
+    return plan8Page(statusHtml + picker + resultHtml + skippedHtml + bestHtml + warnHtml +
+      '<div class="footnote">算法 shared/planner.js · 21:00 后不能排队，21:30 闭园 · ' +
+      esc(bundle.mockMode ? '演示数据（内置 mock）' : '真实数据（' + (bundle.source || 'queue-times') + '）') + '</div>');
+  }
+
   function htmlPlan() {
     var ctx = compute();
     var plan = rec.decoratePlan(ctx.result.plan, ctx.attrMap, ctx.bundle.nowIso, ctx.prefs.playedIds);
@@ -1173,6 +1378,7 @@
       else if (state.view === 'watchlist') screenEl.innerHTML = htmlWatchlist();
       else if (state.view === 'forecast') screenEl.innerHTML = htmlForecast();
       else if (state.view === 'shows') screenEl.innerHTML = htmlShows();
+      else if (state.view === 'plan8') screenEl.innerHTML = htmlPlan8();
       else if (state.view === 'plan') screenEl.innerHTML = htmlPlan();
       else screenEl.innerHTML = htmlSettings();
     } catch (e) {
@@ -1278,6 +1484,39 @@
       return;
     }
     if (act === 'plan') { switchView('plan'); return; }
+    if (act === 'plan8') { switchView('plan8'); return; }
+    if (act === 'plan8chip') {
+      var chipId = target.getAttribute('data-id');
+      if (!state.plan8Selected) state.plan8Selected = [];
+      var chipIdx = state.plan8Selected.indexOf(chipId);
+      if (chipIdx >= 0) state.plan8Selected.splice(chipIdx, 1);
+      else state.plan8Selected.push(chipId);
+      render();
+      return;
+    }
+    if (act === 'plan8all') {
+      var allCatalog = (currentBundle() && currentBundle().catalog) || {};
+      var allAttrs = allCatalog.attractions || [];
+      var allMap = {};
+      allAttrs.forEach(function (a) { allMap[a.id] = a; });
+      var ids = (allCatalog.highlights && allCatalog.highlights.length)
+        ? allCatalog.highlights.slice()
+        : allAttrs.slice(0, 8).map(function (a) { return a.id; });
+      state.plan8Selected = ids.filter(function (id) { return !!allMap[id]; });
+      render();
+      return;
+    }
+    if (act === 'plan8clear') { state.plan8Selected = []; render(); return; }
+    if (act === 'plan8recalc') { render(); return; }
+    if (act === 'plan8here') {
+      if (!getPrefs().lastAttractionId) {
+        window.alert('先在出发点上选你所在的项目');
+        return;
+      }
+      render();
+      return;
+    }
+    if (act === 'gorank') { switchView('rank'); return; }
     if (act === 'rank') { switchView('rank'); return; }
     if (act === 'settings') { switchView('settings'); return; }
     if (act === 'sort') {
@@ -1445,6 +1684,11 @@
       render();
     } else if (act === 'forecastall') {
       state.forecastScopeId = target.value || '';
+      render();
+    } else if (act === 'plan8origin') {
+      var p8Index = Number(target.value) || 0;
+      var p8Attrs = currentBundle().catalog.attractions || [];
+      savePrefs({ lastAttractionId: p8Index === 0 ? null : p8Attrs[p8Index - 1].id });
       render();
     }
   });

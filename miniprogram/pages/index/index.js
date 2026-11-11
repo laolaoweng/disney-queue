@@ -179,6 +179,11 @@ Page({
     wx.navigateTo({ url: '/pages/plan/plan' });
   },
 
+  // 冲刺计划：8 大必玩闭园前尽量多玩（普通页，不进 tabBar）
+  goPlan8: function () {
+    wx.navigateTo({ url: '/pages/plan8/plan8' });
+  },
+
   goRank: function () {
     wx.switchTab({ url: '/pages/rank/rank' });
   },

@@ -285,3 +285,75 @@ const estimate = rec.estimateSelected({
 - `attractions` 顺序与 `catalog.attractions` 一致；`queueTimesId` 取 catalog 里的第一个 id。
 - 消费方（小程序/H5）拿不到 `hourly-stats.json`（404）时退回 `forecast.json`（weekday/weekend 12 桶），再不行就显示「暂无分时数据」。
 - 生成后 `data/forecast.json` 必须同步用这 14 天数据重建（weekday/weekend 各 12 桶，见 §3），两边的同一小时平均应一致（允许 ±1 分钟的四舍五入差异）。
+
+## 7. 冲刺计划（planner.js，planMustDo）
+
+`shared/planner.js` 是纯函数模块（CommonJS，零依赖，Node 与微信小程序共用），H5 用 CommonJS loader 加载同一份文件。
+
+### 7.1 导出
+
+```js
+var Planner = require('./shared/planner.js');
+Planner.planMustDo(input);
+Planner.walkMinutesBetween(from, to);   // {lat,lng} -> 分钟（直线 × 1.35 ÷ 75 m/min）
+Planner.buildCurves(hourlyStats);        // 每项目 工作日/周末 按小时曲线
+Planner.curveValueAt(curve, minuteOfDay);
+Planner.computeHeatFactor(curves, latest, dayType, refMs);
+```
+
+### 7.2 入参 planMustDo(input)
+
+```js
+{
+  catalog,          // 必填，data/catalog.json
+  hourlyStats,      // 建议填，data/hourly-stats.json（缺省回退 latest 实测 → 20 分钟）
+  latest,           // 建议填，data/latest.json（用于热度系数、关闭状态、缺曲线兜底）
+  now,              // ISO 字符串或毫秒，缺省 Date.now()
+  selected,         // 勾选顺序即优先级；缺省用 catalog.highlights
+  location,         // {attractionId} 或 {lat,lng}；缺省园区中心
+  opts: {
+    mode,           // 'max' 默认：完成数最多；'all'：必须全完成、完成最早
+    conservative,   // 等待保守系数，默认 1.15
+    dayType,        // 'auto'|'weekday'|'weekend'，默认按 now 的星期
+    openAt,         // '08:30'
+    queueCloseAt,   // '21:00' 之后不能排队
+    closeAt,        // '21:30'
+    maxLeaveAt      // 默认 = closeAt，不允许计划排到闭园之后
+  }
+}
+```
+
+### 7.3 返回
+
+```js
+{
+  schemaVersion: 1, generatedAt, startAt, queueCloseAt, closeAt,
+  dayType,            // 'weekday' | 'weekend'
+  heatFactor,         // 今日热度系数 0.6–3（实时均值 ÷ 历史同时刻均值）
+  mode,
+  selected: [{ attractionId, name, priority }],
+  completed: { count, total, prioritySum },
+  plan: [{
+    attractionId, name, land,
+    arriveAt, arriveLabel,       // ISO / 'HH:MM'
+    queueMin, rideMinutes,
+    leaveAt, leaveLabel,
+    walkFromPrevMin,             // 上一项 → 本项步行分钟
+    waitSource: 'history-curve'
+  }],
+  skipped: [{ attractionId, name, reason: 'no-time'|'closed', extraMinApprox }],
+  independentBest: [{ attractionId, name, startLabel, walkMinutes, waitMinutes }],
+  totals: { queueMin, rideMin, walkMin, finishAt, finishLabel },
+  warnings: [string]
+}
+```
+
+### 7.4 算法与规则
+
+- 目标按字典序：完成数最多 → 优先级和最大 → 最后结束最早 → 总步行最少；`mode:'all'` 只接受全选序列，取完成最早。
+- 8 个项目全部有序子序列共 109,601 条，直接 DFS 全枚举，毫秒级拿精确最优。
+- 等待估计 = 分时曲线插值 × heatFactor × conservative（四舍五入到分钟）；曲线缺失时先回退 latest 实测，再回退 20 分钟。
+- 时间线：`arrive = 上一项 leave + walk`；`leave = arrive + 排队 + 体验`；排队入场必须 ≤ queueCloseAt，离开必须 ≤ maxLeaveAt。
+- 关闭/停运项目直接排除并在 skipped 中标记 `closed`；`extraMinApprox` = 「把全部选上所需最早完成时间 − 当前最优完成时间」（分钟）。
+- `independentBest`：从当前位置出发，08:30–21:00 每 15 分钟扫描一次，取等待最小的出发时刻。
+- 文案：`warnings` 给前端直接展示（人流偏多/偏少、最多能玩 N 项、关闭项目等）。

@@ -100,6 +100,7 @@ for (const f of MOCK_FILES) {
   if (existsSync(join(root, 'miniprogram', 'mock', f))) copyFile(join('miniprogram', 'mock', f), join('miniprogram', 'mock', f));
 }
 copyFile('miniprogram/shared/recommend.js', 'miniprogram/shared/recommend.js');
+copyFile('miniprogram/shared/planner.js', 'miniprogram/shared/planner.js');
 for (const f of UTIL_FILES) copyFile(join('miniprogram', 'utils', f), join('miniprogram', 'utils', f));
 
 if (existsSync(join(root, 'docs', 'forecast-report.html'))) {

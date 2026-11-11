@@ -32,7 +32,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File start_local.ps1
 | **A. GitHub Pages**（最省事） | 约 5–15 分钟 | 一个 GitHub 账号，仓库 Settings → Pages 选 `main / (root)` 即可，不用构建 |
 | **B. Cloudflare Pages + 边缘函数**（真·实时） | 约 2 分钟 | GitHub + Cloudflare 账号；`node tools\build_site.js` 后 `npx wrangler pages deploy _site --project-name disney-queue` |
 
-手机打开 `https://<你的网址>/web-preview/index.html` → 添加到主屏幕即可，七个页面（推荐/排行/清单/演出/行程/设置/分时预测）都在。`.github/workflows/collect.yml` 已改为**每 5 分钟**抓一次，数据自动 commit；Cloudflare 方案下 `/data/latest.json` 由边缘函数在 2 分钟内实时回源。
+手机打开 `https://<你的网址>/web-preview/index.html` → 添加到主屏幕即可，八个页面（推荐/排行/清单/演出/冲刺计划/行程/设置/分时预测）都在。`.github/workflows/collect.yml` 已改为**每 5 分钟**抓一次，数据自动 commit；Cloudflare 方案下 `/data/latest.json` 由边缘函数在 2 分钟内实时回源。
 
 ---
 
@@ -104,6 +104,7 @@ python collector\collect.py       # 默认 --transport auto：TCP 被重置就�
 | **演出（shows）** | 当天娱乐演出的场次卡片（图 + 最近一场倒计时 + 下一场），按「快要开始」排序，停演/已结束灰显；数据每天从官网抓一次 |
 | **行程（plan）** | 自动排 3–4 个项目的顺序，显示「几点开始、排多久、玩完几点」，可点「我从这里开始」（不再占 tabBar，首页按钮进入） |
 | **分时预测（forecast）** | 最近 14 天的每小时曲线：切项目看「几点人最少」，工作日/周末切换，标出最空 2–3 小时和「比高峰少 X%」；数据来自 `hourly-stats.json`，缺失时退回 `forecast.json` |
+| **冲刺计划（plan8）** | 勾选想玩的必玩项目（勾选顺序=优先级），用精确枚举算出闭园前最多能玩几项、每项几点去最合适；支持出发时间/出发点，越晚出发越会提示先玩哪些 |
 | **设置（settings）** | 同行类型（刺激/家庭/亲子/混合）、最矮身高、是否看演出、时间预算、必玩/尊享卡清单 |
 
 截图：用 `python -m http.server 8000` 起服务后浏览器打开 `http://localhost:8000/web-preview/`，即可看到与小程序同款的 UI（H5 预览版复用同一份 `recommend.js`）。
@@ -139,11 +140,12 @@ deliverables/disney-queue/
 │  ├─ common.py                ← 时间/IO/状态归一化
 │  └─ test_collect.py          ← 41 个单测（含 TCP→HTTP/3 回退、历史导入、分时统计、演出场次）
 ├─ shared/recommend.js         ← 推荐算法（纯函数，CommonJS，零依赖；recommend + estimateSelected）
-├─ tests/                      ← 算法测试（28 例）+ 真实样本冒烟
+├─ tests/                      ← 算法测试（recommend 28 例 + 冲刺计划 13 例 + 仿真 4 例）+ 真实样本冒烟
 ├─ miniprogram/                ← 微信小程序（原生框架，7 页 + mock 数据；浅色主题）
 │  └─ pages/{index,rank,watchlist,shows,plan,settings,forecast}/
 ├─ web-preview/                ← 纯静态 H5 预览（复用同一份算法 + 同一套清单/分时逻辑）
-├─ tools/verify.js             ← 交付物一致性验收（契约/算法/页面/mock/分时预测）
+├─ tools/verify.js             ← 交付物一致性验收（契约/算法/页面/mock/分时预测/冲刺计划）
+├─ tools/plan8.js              ← 命令行跑「冲刺计划」（--at --select --from --mode）
 ├─ tools/now.js                ← 用「此刻 + data/latest.json」打印现在该玩哪个（命令行版推荐）
 ├─ tools/report.js             ← 生成 docs/forecast-report.html（自包含 SVG 曲线报告）
 ├─ tools/build_site.js         ← 生成 _site/（GitHub Pages / Cloudflare Pages 的部署包，--check 只校验）
@@ -271,7 +273,7 @@ python collector\test_collect.py
 # 算法 28 个用例（含 estimateSelected 的排序/总耗时/关闭与未知 id/纯函数）
 & $node tests\recommend.test.js
 
-# 全量验收 32 项（catalog/latest/forecast/hourly-stats/shows 契约、recommend 与 estimateSelected 输出、7 个页面齐全、两份算法文件一致、mock 数据合法、分时预测入口、手机部署文件齐全）
+# 全量验收 37 项（catalog/latest/forecast/hourly-stats/shows 契约、recommend / estimateSelected / planMustDo 输出、8 个页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、手机部署文件齐全）
 & $node tools\verify.js
 
 # 手机部署（Cloudflare Pages）相关：边缘函数 8 + 5 个用例（解析映射 / 缓存 / 回退 / CORS / 静态放行）

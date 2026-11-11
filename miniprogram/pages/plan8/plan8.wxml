@@ -1,0 +1,183 @@
+<view class="page">
+  <view class="topbar">
+    <view>
+      <text class="topbar-title">冲刺计划</text>
+      <text class="topbar-sub">{{dateLine}} · 闭园前尽量多玩</text>
+    </view>
+    <view class="refresh-btn {{spinning ? 'spinning' : ''}}" bindtap="onRecalc">↻</view>
+  </view>
+
+  <!-- 算法文件缺失时的兜底 -->
+  <view wx:if="{{!plannerReady}}" class="empty">
+    <text class="empty-emoji">🧭</text>
+    <text class="empty-title">冲刺算法还没就位</text>
+    <text class="muted small">{{plannerError}}</text>
+    <view class="empty-btn" bindtap="goIndex">先回首页</view>
+  </view>
+
+  <block wx:else>
+    <!-- 顶部状态条 -->
+    <view class="status-card">
+      <view class="status-item">
+        <text class="status-num num">{{nowLabel}}</text>
+        <text class="status-label">现在</text>
+      </view>
+      <view class="status-divider"></view>
+      <view class="status-item status-item-wide">
+        <text class="status-num num status-remain">{{remainText}}</text>
+        <text class="status-label">距 {{queueCloseLabel}} 排队截止</text>
+      </view>
+      <view class="status-divider"></view>
+      <view class="status-item">
+        <text class="status-num num status-heat tone-{{heatTone}}">{{heatText}}</text>
+        <text class="status-label">今日热度 · {{dayTypeText}}</text>
+      </view>
+    </view>
+
+    <!-- 勾选：8 大必玩（勾选顺序 = 优先级） -->
+    <view class="card p8-pick">
+      <view class="p8-pick-head">
+        <text class="card-title">想玩的项目</text>
+        <text class="p8-pick-count">已选 {{selectedCount}} 项</text>
+      </view>
+      <text class="p8-hint">点一下勾选 / 取消，序号就是优先级（先勾的先排）</text>
+      <view class="p8-chips">
+        <view
+          wx:for="{{chips}}"
+          wx:key="id"
+          class="p8-chip {{item.on ? 'on' : ''}}"
+          data-id="{{item.id}}"
+          bindtap="onChipTap"
+        >
+          <text wx:if="{{item.on}}" class="p8-chip-seq num">{{item.seq}}</text>
+          <text class="p8-chip-name">{{item.name}}</text>
+        </view>
+      </view>
+      <view class="p8-pick-actions">
+        <view class="p8-mini-btn" bindtap="onSelectAll">全选</view>
+        <view class="p8-mini-btn ghost" bindtap="onClear">清空</view>
+      </view>
+      <view class="hr"></view>
+      <view class="origin-row">
+        <text class="origin-row-label">出发点</text>
+        <picker
+          class="origin-row-picker"
+          mode="selector"
+          range="{{originOptions}}"
+          value="{{originIndex}}"
+          bindchange="onPickOrigin"
+        >
+          <view class="origin-row-value">{{originText}} <text class="origin-row-caret">▾</text></view>
+        </picker>
+      </view>
+    </view>
+
+    <!-- 没勾项目 -->
+    <view wx:if="{{!hasSelection}}" class="empty">
+      <text class="empty-emoji">🎯</text>
+      <text class="empty-title">先勾几个想玩的项目</text>
+      <text class="muted small">上面点一下就会按「闭园前最多能玩几项」重新排；点「全选」可以一次排完 8 大必玩</text>
+      <view class="empty-btn" bindtap="onSelectAll">全选 8 大必玩</view>
+    </view>
+
+    <!-- 计算失败 -->
+    <view wx:elif="{{resultError}}" class="empty">
+      <text class="empty-emoji">⚠️</text>
+      <text class="empty-title">计划没算出来</text>
+      <text class="muted small">{{resultError}}</text>
+    </view>
+
+    <block wx:else>
+      <!-- 结果摘要 -->
+      <view class="p8-result card">
+        <view class="p8-result-top">
+          <view class="p8-result-main">
+            <text class="p8-result-label">最多能玩完</text>
+            <view class="p8-result-line">
+              <text class="p8-result-count num">{{completedCount}}</text>
+              <text class="p8-result-total">/ {{completedTotal}} 项</text>
+            </view>
+          </view>
+          <view class="p8-result-side">
+            <text class="p8-result-label">预计结束</text>
+            <text class="p8-result-finish num">{{finishLabel}}</text>
+            <text class="p8-result-close">闭园 {{closeLabel}}</text>
+          </view>
+        </view>
+        <text class="p8-totals">{{totalsText}}</text>
+        <view class="p8-btns">
+          <view class="p8-btn primary" bindtap="onRecalc">🔄 重新计算</view>
+          <view class="p8-btn" bindtap="onHere">📍 我在这里</view>
+        </view>
+      </view>
+
+      <!-- 时间线 -->
+      <view wx:if="{{planRows.length}}" class="card p8-timeline">
+        <view class="card-title">建议顺序</view>
+        <view class="p8-hint">点任意一行可以跳到排队榜看它现在的排队</view>
+        <view
+          wx:for="{{planRows}}"
+          wx:key="attractionId"
+          class="tl-row"
+          data-id="{{item.attractionId}}"
+          bindtap="onTapRow"
+        >
+          <view class="tl-seq">
+            <text class="num">{{item.seq}}</text>
+          </view>
+          <view class="tl-main">
+            <view class="tl-top">
+              <text class="tl-arrive num">{{item.arriveLabel}}</text>
+              <text class="tl-name">{{item.name}}</text>
+            </view>
+            <text class="tl-sub">{{item.land}} · 排队 {{item.queueMin}} 分 · 玩 {{item.rideMinutes}} 分 · 离开 {{item.leaveLabel}}</text>
+            <text class="tl-walk">步行 {{item.walkText}}</text>
+          </view>
+          <text class="tl-arrow">›</text>
+        </view>
+      </view>
+
+      <!-- 跳过项 -->
+      <view wx:if="{{skippedRows.length}}" class="card p8-skip">
+        <view class="card-title">今天来不及的项目</view>
+        <view wx:for="{{skippedRows}}" wx:key="attractionId" class="skip-row">
+          <text class="skip-dot tone-{{item.tone}}"></text>
+          <view class="skip-main">
+            <text class="skip-name">{{item.name}}</text>
+            <text class="skip-reason">{{item.reasonText}}{{item.extraText ? ' · ' + item.extraText : ''}}</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 今日最空时段 -->
+      <view wx:if="{{bestRows.length}}" class="card p8-best">
+        <view class="card-title">今日最空时段</view>
+        <view class="p8-hint">如果单独去玩这一项，这样排排队最短（从出发点算）</view>
+        <view class="best-head">
+          <text class="best-col name">项目</text>
+          <text class="best-col time">最佳开始</text>
+          <text class="best-col num">排队</text>
+          <text class="best-col num">步行</text>
+        </view>
+        <view wx:for="{{bestRows}}" wx:key="attractionId" class="best-row">
+          <text class="best-col name">{{item.name}}</text>
+          <text class="best-col time num">{{item.startLabel}}</text>
+          <text class="best-col num">{{item.waitText}}</text>
+          <text class="best-col num">{{item.walkText}}</text>
+        </view>
+      </view>
+
+      <!-- 提示 -->
+      <view wx:if="{{warnings.length}}" class="card p8-warn">
+        <view wx:for="{{warnings}}" wx:key="*this" class="warn-row">
+          <text class="warn-dot">!</text>
+          <text class="warn-text">{{item}}</text>
+        </view>
+      </view>
+    </block>
+
+    <view class="footnote">
+      算法：shared/planner.js（枚举最优，最多 8 项）· 21:00 后不能再排队，21:30 闭园 · {{sourceText}}
+    </view>
+  </block>
+</view>
