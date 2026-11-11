@@ -281,7 +281,7 @@ python collector\test_collect.py
 # 算法 28 个用例（含 estimateSelected 的排序/总耗时/关闭与未知 id/纯函数）
 & $node tests\recommend.test.js
 
-# 全量验收 43 项（catalog/latest/forecast/hourly-stats/shows/history 契约、recommend / estimateSelected / planMustDo 输出、页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、见面会筛选、历史等候时间详情页、手机部署文件齐全）
+# 全量验收 46 项（catalog/latest/forecast/hourly-stats/shows/history 契约、recommend / estimateSelected / planMustDo 输出、页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、见面会筛选、历史等候时间详情页、排队榜顶部热度/奇梦之光卡片、手机部署文件齐全）
 & $node tools\verify.js
 
 # 手机部署（Cloudflare Pages）相关：边缘函数 8 + 5 个用例（解析映射 / 缓存 / 回退 / CORS / 静态放行）

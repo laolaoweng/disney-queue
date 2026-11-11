@@ -61,7 +61,7 @@ function rankHero(bundle) {
     ? Math.round(open.reduce(function (a, b) { return a + b; }, 0) / open.length)
     : 0;
   var heat = Math.max(0, Math.min(100, Math.round(avg / 60 * 100)));
-  var lv = heatLevelOf(heat);
+  var lv = open.length ? heatLevelOf(heat) : { level: '已闭园', tone: 't2' };
 
   var nowMs = bundle && bundle.nowMs ? bundle.nowMs : Date.now();
   var bj = new Date(nowMs + 8 * 3600 * 1000);

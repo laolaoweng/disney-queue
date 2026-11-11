@@ -528,6 +528,8 @@
   }
 
   function rankHero(bundle, crowd) {
+    var closedNow = !crowd.openCount;
+    if (closedNow) { crowd = { heat: 0, level: '已闭园', tone: 't2', avgWait: 0, openCount: 0, bars: '' }; }
     var show = showTimesOf(bundle, '奇梦之光');
     var nowMin = nowChinaMinutes(bundle);
     var showLine = '今日暂无场次';
