@@ -1,0 +1,454 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:44:09"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:44:09"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Siren's Revenge",
+      "entityId": "attSirensRevenge",
+      "entityType": "Attraction",
+      "urlFriendlyId": "sirens-revenge",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/sirens-revenge",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-b-sq_tcm1871-239351.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-hero-new_tcm1871-114858.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-hero-new_tcm1871-114858.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-hero-new_tcm1871-114858.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-b-sq_tcm1871-239351.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.151371967495",
+            "longitude": "121.66931519362"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/sirens-revenge/",
+      "descriptions": {
+        "shortDescriptionText": "<p>Discover a boatload of rowdy pirate fun and some raucous pirate activities aboard this authentic pirate ship.</p>",
+        "shortDescriptionMobileText": "Avast, ye mateys! Captain Jack invites you to experience pirate life first-hand when ye climb aboard this legendary vessel for rousing pirate games, activities and hands-on fun."
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Come Aboard… If Ye Dare",
+              "text": "<p>The Treasure Cove pirates be seeking cutthroat crewmates to join their marauding high-seas adventures. Have ye the pluck and cunning to set sail with this band of villainous rascals and rogues?</p>\n<p>Roam the decks of Siren’s Revenge and discover hands-on (or hooks-on) pirating activities, experiences and games that will test your prowess. See if ye have the sea legs, fearless heart, steady hand and adventurous spirit to be a buccaneer!</p>\n<p>But keep a keen eye out, me mateys. When this wily pirate crew returns to the ship, high-flying mayhem and mischief—in the form of a reckless and rambunctious stunt show—are never far behind!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-01-new_tcm1871-114860.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "A Ship Laden with Legend and Lore",
+              "text": "<p>Today, Treasure Cove is a high-spirited, rollicking pirate haven—and it’s all thanks to Siren’s Revenge! So come explore the ship that’s a proud part of pirate history.</p>\n<p>Originally a Spanish ship, Siren’s Revenge was commandeered by one Joshamee Gibbs—a good friend of Captain Jack—and became a vital asset to their pirating enterprises. But when the English Navy took control of Treasure Cove and its fortress, they tried to drive these buccaneers from the local waters.</p>\n<p>To rid themselves of the pesky British once and for all, Gibbs and Captain Jack concocted a masterful scheme: while the ship’s cannons bombarded the fortress, a landing party paddling a fleet of <a href=\"https://www.shanghaidisneyresort.com/attractions/explorer-canoes/\">Explorer Canoes</a> furtively stormed the shore and routed the scurvy knave Brits.</p>\n<p>For now, the ship is moored peacefully at Landlubber’s Landing so visitors can board and get a taste of pirating life. Be ready though—at any moment, when treasure or adventure call, Siren’s Revenge may once more hoist its sails and set a course for the open seas!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-02-new_tcm1871-114861.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "Shipwreck Shore",
+              "text": "Just moments from Landlubber Landing, explore and frolic at this interactive waterfront playground created out of a shipwrecked French galleon.",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-03-new_tcm1871-114862.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/shipwreck-shore"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attSirensRevenge;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landTreasureCove",
+          "name": "Treasure Cove",
+          "urlFriendlyId": "treasure-cove"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor",
+              "value": "Outdoor"
+            },
+            {
+              "urlFriendlyId": "interactive",
+              "value": "Interactive"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "Preschoolers"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "May Remain in Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/remain-in-wheelchair_tcm1871-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "any-height",
+              "value": "Any Height"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "treasure-cove",
+              "value": "Treasure Cove"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Sirens Revenge - Attraction",
+            "referenceKey": "Sirens Revenge - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-c-sq_tcm1871-239353.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Sirens Revenge - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Sirens Revenge - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-c-sq_tcm1871-239353.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-hero-new_tcm1871-114858.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-hero-new_tcm1871-114858.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-c-sq_tcm1871-239353.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-c_tcm1871-239352.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-b-sq_tcm1871-239351.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-b_tcm1871-239350.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "10:00&18:00",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

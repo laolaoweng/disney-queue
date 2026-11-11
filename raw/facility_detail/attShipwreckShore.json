@@ -1,0 +1,527 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:44:07"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:44:07"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Shipwreck Shore",
+      "entityId": "attShipwreckShore",
+      "entityType": "Attraction",
+      "urlFriendlyId": "shipwreck-shore",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/shipwreck-shore",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sshipwreck-shore-new-e-sq_tcm1871-239527.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-e_tcm1871-239533.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-e_tcm1871-239533.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-e_tcm1871-239533.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sshipwreck-shore-new-e-sq_tcm1871-239527.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.151282805966",
+            "longitude": "121.6684308645"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/shipwreck-shore/",
+      "descriptions": {
+        "shortDescriptionText": "Explore, splash and frolic in an amazing interactive play park built in the wreck of a pirate galleon in Treasure Cove.",
+        "shortDescriptionMobileText": "Get a little wet and go a little wild at this interactive water play area created in the wreck of a sunken ship. Even the youngest pirates will have a blast as they splash, play, pretend and explore."
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Adventure Ahoy ",
+              "text": "<p>Come away to a nautical world of hands-on fun, where kids can let their imaginations sail free. A variety of unique activity zones means children of all ages can get in on the excitement!</p>\n<p><strong>The Toddler Area</strong> features water bells and carved stone turtles, starfish and other charming sea creatures to discover in the “mist garden”—an area where wee ones can clamber among the rocks and basins filled with gently rolling fog.</p>\n<p><strong>The Tide Pools</strong> shimmer with shells, starfish, sea urchin, sea squirts and shellfish—even a submerged treasure chest—fashioned in colored glass mosaics. Watch out: some of these creatures spit water when touched!</p>\n<p><strong>The Observation Deck</strong> offers shaded areas where parents can relax or, if they’re feeling mischievous, spritz their kids with remotely activated water jets hidden in the tide pool below. The Deck is also equipped with 3 skull heads that shoot streams of water and a water blaster (complete with smoke and sound effects) that fires a resounding “cannonball” into the lagoon.</p>\n<p>Throughout Shipwreck Shore, you’ll discover incredible <strong>Water Wonders</strong> like a mysterious ring-shaped stone that’s the source of a magical fountain. Streaming “liquid strings” create an enchanted harp that kids can play, while nearby, a soft blanket of mist wafts and dances as young hands move through it.</p>\n<p><strong>The Shipwreck</strong> is the perfect place for young pirates to launch their fanciful seagoing adventures.</p>\n<p>From the remnants of the <strong>Ship’s Bow,</strong> kids can hoist flags to send messages, ring the ship’s bell and fire a water cannon at the battlements, lighthouse or even passing <a href=\"https://www.shanghaidisneyresort.com/attractions/explorer-canoes/\">Explorer Canoes</a>. A button signals a hidden pirate on lookout at the lighthouse, who comically exhorts kids to bombard unsuspecting intruders. Or, the cannon can target objects in the water like treasure chests, spinning barrels and nets.</p>\n<p>Then, from the ornate and detailed <strong>Ship’s Stern,</strong> young buccaneers can raise and lower a French pirate flag, play Captain at the ship’s wheel, peer through spyglasses and zip down a slide through the ship’s interior to glimpse long-lost treasures and abandoned pirate gear.</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-01-new_tcm1871-114964.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Goodbye Pirate Ship, Hello Fun!",
+              "text": "<p>Discover a splash-tastic playground paradise that’s been created for kids by kids!</p>\n<p>According to Treasure Cove legend, 2 children of early settlers found the remnants of a French pirate galleon one day while exploring the beach. With its deck, rigging and wheel still intact, it sent these kids’ imaginations soaring.</p>\n<p>Dubbing their find “Shipwreck Shore,” these best friends turned the half-buried hull of the <em>La Belle France</em> and the surrounding area into their personal pirate playground. Returning again and again, they kept adding new games and activities to make their adventures even cooler. In the process, they created an awesome play destination where new generations of kids can explore, pretend and enjoy to this very day!</p>\n<p>Now, it’s your children’s turn to climb over the hulking ruins, splash in the pools, fire the cannons and set off on their own make-believe pirate voyages.</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-02-new_tcm1871-114965.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "Siren’s Revenge",
+              "text": "Step aboard a real pirate ship—if ye dare—for rowdy pirate fun and raucous pirate adventure! >",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-03-new_tcm1871-114966.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/sirens-revenge"
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "Check Wait Times in the Theme Park with Our Official Mobile App!",
+              "text": "Download the Shanghai Disney Resort mobile app before your visit for attraction wait times, height recommendations, map locations and much more.",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-gsrvc-mobile-app-icon2_tcm1871-113788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/en/information/download-shanghai-disney-mobile-app"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attShipwreckShore;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landTreasureCove",
+          "name": "Treasure Cove",
+          "urlFriendlyId": "treasure-cove"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor",
+              "value": "Outdoor"
+            },
+            {
+              "urlFriendlyId": "interactive",
+              "value": "Interactive"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "Preschoolers"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "May Remain in Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/remain-in-wheelchair_tcm1871-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "any-height",
+              "value": "Any Height"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "treasure-cove",
+              "value": "Treasure Cove"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Shipwreck Shore - Attraction",
+            "referenceKey": "Shipwreck Shore - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-c-sq_tcm1871-239534.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Shipwreck Shore - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Shipwreck Shore - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sshipwreck-shore-new-e-sq_tcm1871-239527.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-e_tcm1871-239533.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-e_tcm1871-239533.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-c-sq_tcm1871-239534.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-c_tcm1871-239526.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-b-sq_tcm1871-239531.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-b_tcm1871-239530.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-d-sq_tcm1871-239535.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-d_tcm1871-239532.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-a-sq_tcm1871-239529.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-a_tcm1871-239528.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "10:00&18:00",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

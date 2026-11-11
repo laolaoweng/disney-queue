@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T02:13:38Z",
+  "generatedAt": "2026-11-11T05:44:37Z",
   "park": {
     "id": "shdr",
     "name": "上海迪士尼乐园",
@@ -36,7 +36,9 @@
       "sourceIds": {
         "wam": "attBecomeIronMan",
         "urlFriendlyId": "become-iron-man"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-become-icon-man-hero-sq_tcm1871-116348.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-become-icon-man-hero_tcm1871-116347.jpg"
     },
     {
       "id": "attDumboFlyingElephant",
@@ -58,7 +60,9 @@
       "sourceIds": {
         "wam": "attDumboFlyingElephant",
         "urlFriendlyId": "dumbo-flying-elephant"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-dumbo-flying-elephant-hero-sq-new-again_tcm1871-114852.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-dumbo-flying-elephant-hero-new_tcm1871-114851.jpg"
     },
     {
       "id": "attFantasiaCarousel",
@@ -80,7 +84,9 @@
       "sourceIds": {
         "wam": "attFantasiaCarousel",
         "urlFriendlyId": "fantasia-carousel"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-fantasia-carousel-b-new-sq_tcm1871-239287.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-fantasia-carousel-b-new_tcm1871-239286.jpg"
     },
     {
       "id": "attMarvelUniverse",
@@ -102,7 +108,9 @@
       "sourceIds": {
         "wam": "attMarvelUniverse",
         "urlFriendlyId": "marvel-universe"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-sq-new-again_tcm1871-115154.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-new_tcm1871-115153.jpg"
     },
     {
       "id": "attBuzzLightyearPlanetRescue",
@@ -124,7 +132,9 @@
       "sourceIds": {
         "wam": "attBuzzLightyearPlanetRescue",
         "urlFriendlyId": "buzz-lightyear-planet-rescue"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-buzz-lightyear-new-c-sq-260304-v2_tcm1871-287612.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-buzz-lightyear-new-c_tcm1871-239235.jpg"
     },
     {
       "id": "attJetPacks",
@@ -146,7 +156,9 @@
       "sourceIds": {
         "wam": "attJetPacks",
         "urlFriendlyId": "jet-packs"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-jet-packs-new-c-sq_tcm1871-239065.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-jet-packs-new-c_tcm1871-239064.jpg"
     },
     {
       "id": "attPixarAdventurousJourneyTomorrowland",
@@ -168,7 +180,9 @@
       "sourceIds": {
         "wam": "attPixarAdventurousJourneyTomorrowland",
         "urlFriendlyId": "pixar-adventurous-journey-tomorrowland"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pixar-adventurous-journey-cover-sq-260305_tcm1871-287639.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pixar-adventurous-journey-cover-hero_tcm1871-281323.jpg"
     },
     {
       "id": "attStitchEncounter",
@@ -190,7 +204,9 @@
       "sourceIds": {
         "wam": "attStitchEncounter",
         "urlFriendlyId": "space-chat-with-stitch"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-stitch-encounter-hero-sq_tcm1871-102758.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-stitch-encounter-hero_tcm1871-102757.jpg"
     },
     {
       "id": "attTronLightcyclePowerRun",
@@ -212,7 +228,9 @@
       "sourceIds": {
         "wam": "attTronLightcyclePowerRun",
         "urlFriendlyId": "tron-lightcycle-power-run"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-lightcycle-power-run-hero-sq-new-again_tcm1871-114866.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-lightcycle-power-run-hero-new_tcm1871-114865.jpg"
     },
     {
       "id": "attTronRealm",
@@ -234,7 +252,9 @@
       "sourceIds": {
         "wam": "attTronRealm",
         "urlFriendlyId": "tron-realm"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-realm-new-b-sq_tcm1871-238912.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-realm-new-b_tcm1871-238911.jpg"
     },
     {
       "id": "attAdventuresWinniePooh",
@@ -256,7 +276,9 @@
       "sourceIds": {
         "wam": "attAdventuresWinniePooh",
         "urlFriendlyId": "adventures-winnie-pooh"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c-sq_tcm1871-239131.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c_tcm1871-239130.jpg"
     },
     {
       "id": "attAliceWonderlandMaze",
@@ -278,7 +300,9 @@
       "sourceIds": {
         "wam": "attAliceWonderlandMaze",
         "urlFriendlyId": "alice-wonderland-maze"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b-sq_tcm1871-239484.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b_tcm1871-239483.jpg"
     },
     {
       "id": "attHunnyPotSpin",
@@ -300,7 +324,9 @@
       "sourceIds": {
         "wam": "attHunnyPotSpin",
         "urlFriendlyId": "hunny-pot-spin"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hunny-pot-spin-new-b-sq_tcm1871-239379.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hunny-pot-spin-new-b_tcm1871-239377.jpg"
     },
     {
       "id": "attOnceUponTimeAdventure",
@@ -322,7 +348,9 @@
       "sourceIds": {
         "wam": "attOnceUponTimeAdventure",
         "urlFriendlyId": "once-upon-time-adventure"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-once-upon-time-adventure-hero-sq-new-again_tcm1871-115131.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-once-upon-time-adventure-hero-new_tcm1871-115130.jpg"
     },
     {
       "id": "attPeterPansFlight",
@@ -344,7 +372,9 @@
       "sourceIds": {
         "wam": "attPeterPansFlight",
         "urlFriendlyId": "peter-pans-flight"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-hero-sq-new-again2-260304-v2_tcm1871-287616.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-e_tcm1871-239155.jpg"
     },
     {
       "id": "attSevenDwarfsMineTrain",
@@ -367,7 +397,9 @@
       "sourceIds": {
         "wam": "attSevenDwarfsMineTrain",
         "urlFriendlyId": "seven-dwarfs-mine-train"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-seven-dwarfs-mine-train-hero-sq-new_tcm1871-114855.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-seven-dwarfs-mine-train-hero-new_tcm1871-114854.jpg"
     },
     {
       "id": "attVoyageToCrystalGrotto",
@@ -389,7 +421,9 @@
       "sourceIds": {
         "wam": "attVoyageToCrystalGrotto",
         "urlFriendlyId": "voyage-to-crystal-grotto"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-hero-sq-new-261026_tcm1871-294839.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b_tcm1871-239408.JPG"
     },
     {
       "id": "attChallengeTrails",
@@ -411,7 +445,9 @@
       "sourceIds": {
         "wam": "attChallengeTrails",
         "urlFriendlyId": "challenge-trails"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c-sq_tcm1871-239014.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c_tcm1871-239013.jpg"
     },
     {
       "id": "attJuniorExplorersCamp",
@@ -433,7 +469,9 @@
       "sourceIds": {
         "wam": "attJuniorExplorersCamp",
         "urlFriendlyId": "junior-explorers-camp"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-junior-explorers-camp-hero-sq_tcm1871-280416.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-junior-explorers-camp-hero_tcm1871-280415.jpg"
     },
     {
       "id": "attRoaringRapids",
@@ -455,7 +493,9 @@
       "sourceIds": {
         "wam": "attRoaringRapids",
         "urlFriendlyId": "roaring-rapids"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-c-sq_tcm1871-239550.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-d_tcm1871-239551.jpg"
     },
     {
       "id": "attSoaringOverHorizon",
@@ -477,7 +517,9 @@
       "sourceIds": {
         "wam": "attSoaringOverHorizon",
         "urlFriendlyId": "soaring-over-horizon"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-soaring-hero-sq-new-again_tcm1871-114876.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-soaring-hero-new_tcm1871-114877.jpg"
     },
     {
       "id": "attVistaTrail",
@@ -499,7 +541,9 @@
       "sourceIds": {
         "wam": "attVistaTrail",
         "urlFriendlyId": "vista-trail"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-vista-trail-hero-sq_tcm1871-116277.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-vista-trail-hero_tcm1871-116276.jpg"
     },
     {
       "id": "attExplorerCanoes",
@@ -521,7 +565,9 @@
       "sourceIds": {
         "wam": "attExplorerCanoes",
         "urlFriendlyId": "explorer-canoes"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-explorer-canoes-hero-sq-new-again2_tcm1871-114837.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-explorer-canoes-hero-new_tcm1871-114838.jpg"
     },
     {
       "id": "attPiratesOfCaribbean",
@@ -543,7 +589,9 @@
       "sourceIds": {
         "wam": "attPiratesOfCaribbean",
         "urlFriendlyId": "pirates-of-caribbean"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-sq-new-again_tcm1871-115032.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-new_tcm1871-115031.jpg"
     },
     {
       "id": "attShipwreckShore",
@@ -565,7 +613,9 @@
       "sourceIds": {
         "wam": "attShipwreckShore",
         "urlFriendlyId": "shipwreck-shore"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sshipwreck-shore-new-e-sq_tcm1871-239527.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-e_tcm1871-239533.jpg"
     },
     {
       "id": "attSirensRevenge",
@@ -587,7 +637,9 @@
       "sourceIds": {
         "wam": "attSirensRevenge",
         "urlFriendlyId": "sirens-revenge"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-b-sq_tcm1871-239351.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-hero-new_tcm1871-114858.jpg"
     },
     {
       "id": "attRexsRCRacer",
@@ -609,7 +661,9 @@
       "sourceIds": {
         "wam": "attRexsRCRacer",
         "urlFriendlyId": "rexs-rc-racer"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-rexs-racer-new-c-sq_tcm1871-239338.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-rexs-racer-new-c_tcm1871-239337.jpg"
     },
     {
       "id": "attSlinkyDogSpin",
@@ -631,7 +685,9 @@
       "sourceIds": {
         "wam": "attSlinkyDogSpin",
         "urlFriendlyId": "slinky-dog-spin"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-slinky-dog-spin-sq-v2_tcm1871-151651.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-slinky-dog-spin-hero-v2_tcm1871-151650.jpg"
     },
     {
       "id": "attWoodysRoundUp",
@@ -653,7 +709,9 @@
       "sourceIds": {
         "wam": "attWoodysRoundUp",
         "urlFriendlyId": "woodys-round-up"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-woody-new-b-sq_tcm1871-239512.jpg",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-woody-new-b_tcm1871-239513.jpg"
     },
     {
       "id": "attZootopiaHotPursuit",
@@ -676,7 +734,9 @@
       "sourceIds": {
         "wam": "attZootopiaHotPursuit",
         "urlFriendlyId": "zootopia-hot-pursuit"
-      }
+      },
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-sq-20260304-v2_tcm1871-287618.png",
+      "heroImageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1871-269561.jpg"
     }
   ],
   "highlights": [

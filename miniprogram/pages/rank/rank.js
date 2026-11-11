@@ -12,6 +12,29 @@ var SORTS = [
   { key: 'highlights', label: '八大必玩' }
 ];
 
+function pad2(n) {
+  return n < 10 ? '0' + n : '' + n;
+}
+
+// 「2026年11月11日 13:42:01」（北京时间）
+function dateFull(iso) {
+  var d = format.toDate(iso);
+  if (!d) return '--';
+  var b = new Date(d.getTime() + 8 * 3600 * 1000);
+  return b.getUTCFullYear() + '年' + (b.getUTCMonth() + 1) + '月' + b.getUTCDate() + '日 ' +
+    pad2(b.getUTCHours()) + ':' + pad2(b.getUTCMinutes()) + ':' + pad2(b.getUTCSeconds());
+}
+
+// 排队时间徽标配色：绿 → 浅绿 → 黄 → 橙红 → 红
+function waitTone(min, closed) {
+  if (closed || typeof min !== 'number') return 't0';
+  if (min <= 15) return 't1';
+  if (min <= 45) return 't2';
+  if (min <= 70) return 't3';
+  if (min <= 100) return 't4';
+  return 't5';
+}
+
 Page({
   data: {
     loading: true,
@@ -23,6 +46,7 @@ Page({
     groups: [],
     statsText: '',
     updatedText: '',
+    updatedFull: '',
     hintText: '点任意一项：设为我的位置 / 加入必玩 / 避开它'
   },
 
@@ -38,6 +62,10 @@ Page({
     this.load(true).then(function () {
       wx.stopPullDownRefresh();
     });
+  },
+
+  onRefresh: function () {
+    this.load(true);
   },
 
   load: function (force) {
@@ -67,7 +95,8 @@ Page({
     var stats = rec.parkStats(bundle);
     this.setData({
       statsText: stats.statsText,
-      updatedText: format.relativeUpdated(bundle.updatedAt, bundle.nowMs)
+      updatedText: format.relativeUpdated(bundle.updatedAt, bundle.nowMs),
+      updatedFull: dateFull(bundle.updatedAt)
     });
     this.applySort();
   },
@@ -114,6 +143,7 @@ Page({
       rows[i].isAvoid = prefs.avoid.indexOf(rows[i].id) >= 0;
       rows[i].isLast = prefs.lastAttractionId === rows[i].id;
       rows[i].isPlayed = prefs.playedIds.indexOf(rows[i].id) >= 0;
+      rows[i].waitTone = waitTone(rows[i].waitMinutes, rows[i].closed);
     }
 
     this.setData({ rows: rows });

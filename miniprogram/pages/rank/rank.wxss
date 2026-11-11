@@ -283,3 +283,109 @@
   margin-left: 16rpx;
 }
 
+
+/* ---------------- 排队榜：图片卡片网格（参考界面风格） ---------------- */
+.list-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10rpx 24rpx 16rpx;
+}
+
+.refresh-pill {
+  padding: 8rpx 22rpx;
+  border-radius: 999rpx;
+  border: 1rpx solid rgba(96, 165, 250, 0.35);
+  background: rgba(59, 130, 246, 0.12);
+  color: #7fb3ff;
+  font-size: 24rpx;
+  font-weight: 600;
+}
+
+.update-time {
+  font-size: 22rpx;
+  color: #7a8494;
+}
+
+.tile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 24rpx;
+}
+
+.tile {
+  width: 48.4%;
+  margin-bottom: 24rpx;
+}
+
+.tile-off {
+  opacity: 0.55;
+}
+
+.tile-img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 24rpx;
+  overflow: hidden;
+  background: #1b2230;
+}
+
+.tile-img.noimg {
+  background-image: radial-gradient(circle at 30% 25%, #2a3345 0%, #171d28 70%);
+}
+
+.tile-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wait-pill {
+  position: absolute;
+  top: 12rpx;
+  right: 12rpx;
+  min-width: 52rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 14rpx;
+  font-size: 24rpx;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  background: rgba(20, 24, 32, 0.55);
+}
+
+.wait-pill.t1 { background: #22a45d; }
+.wait-pill.t2 { background: #7bab2e; }
+.wait-pill.t3 { background: #d9a441; }
+.wait-pill.t4 { background: #e4702f; }
+.wait-pill.t5 { background: #e0483f; }
+.wait-pill.t0 { background: rgba(255, 255, 255, 0.16); font-size: 22rpx; font-weight: 600; }
+
+.tile-premier {
+  position: absolute;
+  left: 12rpx;
+  bottom: 12rpx;
+  padding: 2rpx 10rpx;
+  border-radius: 10rpx;
+  font-size: 18rpx;
+  color: #ffd9a8;
+  background: rgba(60, 40, 18, 0.55);
+  border: 1rpx solid rgba(255, 180, 90, 0.35);
+}
+
+.tile-name {
+  display: block;
+  margin-top: 12rpx;
+  padding: 0 4rpx;
+  font-size: 24rpx;
+  color: #e6ebf2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

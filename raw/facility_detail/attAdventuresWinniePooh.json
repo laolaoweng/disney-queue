@@ -1,0 +1,578 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:43:51"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:43:51"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "The Many Adventures of Winnie the Pooh",
+      "entityId": "attAdventuresWinniePooh",
+      "entityType": "Attraction",
+      "urlFriendlyId": "adventures-winnie-pooh",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/adventures-winnie-pooh",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c-sq_tcm1871-239131.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c_tcm1871-239130.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c_tcm1871-239130.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c_tcm1871-239130.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c-sq_tcm1871-239131.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-the-many-adventures-of-winnie-the-pooh-fp-andriod_tcm1871-141336.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-the-many-adventures-of-winnie-the-pooh-fp-ios_tcm1871-141337.jpg",
+          "width": 1452,
+          "height": 1670
+        },
+        "redemptionBgImageLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-the-many-adventures-of-winnie-the-pooh-my-plan_tcm1871-286020.png",
+          "width": 170,
+          "height": 96
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.15180406306",
+            "longitude": "121.665299510689"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": true,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/adventures-winnie-pooh/",
+      "policies": [
+        {
+          "id": "policyWinnieThePooh",
+          "name": "Vovage",
+          "text": "The Many Adventures of Winnie the Pooh is a gentle, slow-moving journey through the Hundred Acre Wood. A mild rocking motion of your vehicle will take place in some scenes.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyWheelchairAccessNoteDetail",
+          "name": "Wheelchair Access Note Detail",
+          "text": "Note: Only a certain number of wheelchairs can be loaded to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyWheelchairAccess",
+          "name": "Wheelchair Access",
+          "text": "Wheelchair access.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyWinnieThePooh",
+          "name": "Vovage",
+          "text": "The Many Adventures of Winnie the Pooh is a gentle, slow-moving journey through the Hundred Acre Wood. A mild rocking motion of your vehicle will take place in some scenes.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyWheelchairAccess",
+          "name": "Wheelchair Access",
+          "text": "Wheelchair access.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyWheelchairAccessNoteDetail",
+          "name": "Wheelchair Access Note Detail",
+          "text": "Note: Only a certain number of wheelchairs can be loaded to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "Discover the delightful world of Winnie the Pooh and pals as the Hundred Acre Wood comes to life!",
+        "shortDescriptionMobileText": "Discover the delightful world of Winnie the Pooh and pals as the Hundred Acre Wood comes to life!\n<!-- <br><br>\n<strong>Get a Disney Standby Pass to help reduce wait times and arrange your park visit with ease with a tap of your finger!</strong>\n<br>\nDisney Standby Pass is required to experience The Many Adventures of Winnie the Pooh <strong>from 10:30 to 15:30 today</strong>. \n<br>\nDisney Standby Pass is subject to availability.\n<br>\nOutside of these hours, Disney Standby Pass is not required to enter the queue for the attraction. -->"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "A Musical Menagerie of Enchanted Tales ",
+              "text": "<p>Glide by stories bursting with fun, friendship and everyone’s stuffed-with-fluff favorite, the Silly Old Bear himself. Winnie the Pooh welcomes you to join his magical journey through the Hundred Acre Wood where you’ll encounter Eeyore, Gopher, Kanga, Piglet, Tigger and tiny Roo too.</p>\n<p>Surrounded by a cast of colorful characters, sit back, relax and sail through these song-filled scenes for one “hunny” of a musical adventure!</p>\n<p><strong>Happy Winds-day</strong>\n<br />\nSwirl ‘n’ twirl in a whirlwind of leaves as blustery winds whisk you away.</p>\n<p><strong>Owl’s Humbly, Rumbly House</strong>\n<br />\nPay a visit to Pooh’s wise, old pal as his nest nearly topples in a state of unrest.</p>\n<p><strong>Bouncy, Trouncy, Flouncy, Pouncy</strong>\n<br />\nThe wonderful thing about Tigger, is that he’s the only one—bop and bounce along to Tigger’s famous tune!</p>\n<p><strong>Sleep Tight</strong>\n<br />\nDrift in and out of Pooh’s honey of a dream as he guards his most precious prize.</p>\n<p><strong>They’re Black, Brown, Up, Down</strong>\n<br />\nClever Heffalumps and wily Woozles spring out and sing about stealing Pooh’s honey.</p>\n<p><strong>Rain, Rain, Rain Came Down, Down, Down</strong>\n<br />\nRock around the rapids as Piglet and pals rush straight for the falls.</p>\n<p><strong>Start the Party</strong>\n<br />\nThe tale concludes as the Hundred Acre Wood gang gathers to say “Hooray!” and celebrate Piglet’s rescue.</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-the-many-adventures-of-winnie-the-pooh-01-new_tcm1871-115136.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Awfully Fond of Honey",
+              "text": "<p>The Many Adventures of Winnie the Pooh made its 1999 debut at Magic Kingdom park in Walt Disney World Resort. Slightly different versions opened in Critter Country at the Disneyland Resort, in 2003, and Fantasyland at Tokyo Disneyland in 2000, where it’s called <em>Pooh’s Hunny Hunt</em>.</p>\n<p>Based on scenes from Disney’s animated film of the same name, the popular attraction stars A.A. Milne’s beloved “bear of very little brain” and music from Disney Legends Richard and Robert Sherman.</p>\n<p>The tales published in A.A. Milne’s 1926 book of verse, <em>Winnie the Pooh</em>, originated from bedtime stories the author made up about the friendship between a stuffed bear and his real-life son, Christopher Robin. Now, 90 years later, the stories continue at Shanghai Disneyland!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-the-many-adventures-of-winnie-the-pooh-02-new_tcm1871-115137.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attAdventuresWinniePooh;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "Fantasyland",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "rider-switch",
+              "value": "Rider Switch"
+            },
+            {
+              "urlFriendlyId": "indoor",
+              "value": "Indoor"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "Preschoolers"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "May Remain in Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/remain-in-wheelchair_tcm1871-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "id": "attFacet-height-any-height-global_95472",
+              "urlFriendlyId": "any-height",
+              "value": "Any Height"
+            }
+          ]
+        },
+        "thrillFactor": {
+          "options": [
+            {
+              "urlFriendlyId": "dark",
+              "value": "Dark"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "Fantasyland"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "The Many Adventures of Winnie the Pooh - Attraction",
+            "referenceKey": "The Many Adventures of Winnie the Pooh - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-d-sq_tcm1871-239133.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "The Many Adventures of Winnie the Pooh - Attraction",
+                "subChapters": [
+                  {
+                    "title": "The Many Adventures of Winnie the Pooh - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-d-sq_tcm1871-239133.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c_tcm1871-239130.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c_tcm1871-239130.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-d-sq_tcm1871-239133.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-d_tcm1871-239132.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-a-sq_tcm1871-239127.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-a_tcm1871-239126.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-b-sq_tcm1871-239129.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-b_tcm1871-239128.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&21:30",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false,
+      "redemptionBgImageSize": "Large"
+    }
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:43:56"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:43:56"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Peter Pan’s Flight",
+      "entityId": "attPeterPansFlight",
+      "entityType": "Attraction",
+      "urlFriendlyId": "peter-pans-flight",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/peter-pans-flight",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-hero-sq-new-again2-260304-v2_tcm1871-287616.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-e_tcm1871-239155.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-e_tcm1871-239155.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-e_tcm1871-239155.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-hero-sq-new-again2-260304-v2_tcm1871-287616.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-fp-android_tcm1871-141325.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-fp-ios_tcm1871-141326.jpg",
+          "width": 1452,
+          "height": 1670
+        },
+        "redemptionBgImageLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-my-plan_tcm1871-286022.png",
+          "width": 170,
+          "height": 96
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.149743473847",
+            "longitude": "121.66435218477"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": true,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/peter-pans-flight/",
+      "policies": [
+        {
+          "id": "policyPeterPanFlight",
+          "name": "Peter Pan Flight",
+          "text": "Soar high above the rooftops of London aboard a pirate galleon on an adventure to Never Land.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyNoLapSittingOrHoldingChildrenOnLaps",
+          "name": "No Lap Sitting Or Holding Children On Laps",
+          "text": "No lap sitting or holding children on laps.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMinimumHeight",
+          "name": "Minimum Height",
+          "text": "Persons who do not meet the minimum height requirement may not ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransfer",
+          "name": "Must Transfer",
+          "text": "Must transfer from wheelchair.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransferNoteDetail",
+          "name": "Must Transfer Note Detail",
+          "text": "Note: Only a certain number of guests on wheelchairs can be transferred to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyPeterPanFlight",
+          "name": "Peter Pan Flight",
+          "text": "Soar high above the rooftops of London aboard a pirate galleon on an adventure to Never Land.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyNoLapSittingOrHoldingChildrenOnLaps",
+          "name": "No Lap Sitting Or Holding Children On Laps",
+          "text": "No lap sitting or holding children on laps.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMinimumHeight",
+          "name": "Minimum Height",
+          "text": "Persons who do not meet the minimum height requirement may not ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransfer",
+          "name": "Must Transfer",
+          "text": "Must transfer from wheelchair.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransferNoteDetail",
+          "name": "Must Transfer Note Detail",
+          "text": "Note: Only a certain number of guests on wheelchairs can be transferred to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "Drift by enchanted skies to the second star to the right with Peter Pan, Tinker Bell and the Never Land gang!",
+        "shortDescriptionMobileText": "Drift by enchanted skies to the second star to the right with Peter Pan, Tinker Bell and the Never Land gang! \n<!--<br><br>\n<strong>Get a Disney Standby Pass to help reduce wait times and arrange your park visit with ease with a tap of your finger!</strong>\n<br>\nDisney Standby Pass is required to experience Peter Pan’s Flight <strong>from 10:30 to 15:30 today</strong>. \n<br>\nDisney Standby Pass is subject to availability.\n<br>\nOutside of these hours, Disney Standby Pass is not required to enter the queue for the attraction. -->\n"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "The Captain’s Been Expecting You",
+              "text": "<p>Board the magical pirate galleon and set sail for a make-believe world where imagination takes flight—and tickles your fancy. From the Darling’s nursery in Kensington Gardens to swooping over rooftops and beyond, buckle up for a joyous voyage to Never Land that’ll have you “hooked” on faith, trust and pixie dust!</p>\n<p>Your adventure begins in London, where you’ll learn to fly with Wendy, Michael and John, courtesy of their bedtime heroes—Peter Pan and Tinker Bell. Next, head off into the night sky as Peter leads the way to Pixie Hollow, the Lost Boys’ hideout, Mermaid Lagoon and Skull Rock, where he finally comes dagger to cutlass with Captain Hook. It’s a swordfight to the finish as the two face-off in a dastardly duel that leaves Hook cooked!</p>\n<p>Proud of this Jolly Roger victory, Peter and company help you navigate through the clouds back to sleepy London Town, where your extraordinary journey began.</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-01-new_tcm1871-114847.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Soaring Since 1955",
+              "text": "<p>Think of all the happiest things as you embark on a fantastical trek that’s an important part of Disneyland history! Since its original debut in 1955, Peter Pan’s Flight has lifted spirits young and old to faraway Never Lands filled with fairies, Lost Boys and a delightful cast of classic characters.</p>\n<p>The attraction brings to life some of the best-loved scenes from Disney’s 1953 animated masterpiece which, in turn, is based on J.M. Barrie’s novel of the same name—one of Walt Disney’s personal favorites.</p>\n<p>Adored by fans around the globe, the recently updated attraction was featured on opening day at Walt Disney World Resort, Disneyland Paris and Tokyo Disney Resort. Bid your cares goodbye because “You can fly, you can fly, you can fly!”</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-02-new_tcm1871-114848.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attPeterPansFlight;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "Fantasyland",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "rider-switch",
+              "value": "Rider Switch"
+            },
+            {
+              "urlFriendlyId": "indoor",
+              "value": "Indoor"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-transfer-from-wheelchair-global_95456",
+              "urlFriendlyId": "must-transfer-from-wheelchair",
+              "value": "Must Transfer from Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/transfer-from-wheelchair_tcm1871-281320.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "81cm-32in-or-taller",
+              "value": "81 cm or Taller"
+            }
+          ]
+        },
+        "thrillFactor": {
+          "options": [
+            {
+              "urlFriendlyId": "dark",
+              "value": "Dark"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "Fantasyland"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Peter Pans Flight - Attraction",
+            "referenceKey": "Peter Pans Flight - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-d-sq_tcm1871-239154.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Peter Pans Flight - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Peter Pans Flight - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-d-sq_tcm1871-239154.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-e_tcm1871-239155.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-e_tcm1871-239155.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-d-sq_tcm1871-239154.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight--new-d_tcm1871-239153.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-a-sq_tcm1871-239148.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-a_tcm1871-239147.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-c-sq_tcm1871-239152.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-c_tcm1871-239151.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-b-sq_tcm1871-239150.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-b_tcm1871-239149.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&21:30",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false,
+      "redemptionBgImageSize": "Large"
+    }
+  }
+}

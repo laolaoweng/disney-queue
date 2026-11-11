@@ -1,0 +1,506 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:43:52"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:43:52"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Alice in Wonderland Maze",
+      "entityId": "attAliceWonderlandMaze",
+      "entityType": "Attraction",
+      "urlFriendlyId": "alice-wonderland-maze",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/alice-wonderland-maze",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b-sq_tcm1871-239484.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b_tcm1871-239483.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b_tcm1871-239483.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b_tcm1871-239483.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b-sq_tcm1871-239484.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.1508361265792",
+            "longitude": "121.66616207126300"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/alice-wonderland-maze/",
+      "policies": [
+        {
+          "id": "policyAliceInWonderlandMaze",
+          "name": "Alice In Wonderland Maze",
+          "text": "Choose your own winding path through wonderland to the mad hatter‘s tea party.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyAliceInWonderlandMaze",
+          "name": "Alice In Wonderland Maze",
+          "text": "Choose your own winding path through wonderland to the mad hatter‘s tea party.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "Wind your way through the maze of Alice’s Wonderland world to attend this delightfully mad tea party.",
+        "shortDescriptionMobileText": "Wind your way through the maze of Alice’s Wonderland world to attend this delightfully mad tea party."
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Hatters and Rabbits and Cats… Oh My!",
+              "text": "<p>Join the Mad Hatter, Cheshire Cat and a fantastical cast of characters as you disappear down the rabbit hole. Inspired by Tim Burton’s <em>Alice in Wonderland</em>, this enchanted adventure surrounds you with huge blooms, giant hedges and hidden delights around every corner.</p>\n<p>Enter the maze through one of three doors, each providing a different route into the dream-like landscape where Alice and her pals await.</p>\n<p><strong>Wonderland Garden</strong>\n<br />\nMeander down these peculiar little paths to discover a land full of wonder, mystery and danger—the beastly Bandersnatch, glowering flowers and whimsical armored creatures steer you toward a secretive underground cave. You needn’t be mad as a hatter to continue!</p>\n<p><strong>Cheshire Cat</strong>\n<br />\nHis silly grin may be a comfort to Alice, but look sharp as Cheshire Cat floats before your eyes, then disappears in clouds of smoke—all while offering amusing advice! His Jabberwocky-style gibberish is meant to keep you in stitches… but if you’re still curious, bid him farewell and follow along.</p>\n<p><strong>Red Queen’s Garden</strong>\n<br />\n“Off with your head!” Heart-shaped arches, mighty knights and ruby rose bushes indicate you’ve arrived in the Red Queen’s courtyard. Climb the tower for a sneak peek of the ultimate tea party or stop by the Queen’s throne for a royal photo op. Love her big bulbous head? Funhouse mirrors flanking the door will do wonders for your image.</p>\n<p><strong>Hedge Maze</strong>\n<br />\nThough all ways here are the Queen’s ways, use the head you still have to select a path through the elaborate labyrinth of spiraling high and low hedges. To the left or the right? Each mapped route leads you into the maze, but it’s clearly a matter of choice on how quickly you arrive at the Mad Hatter’s merrymaking.</p>\n<p><strong>Tea Party</strong>\n<br />\nIt’s always teatime here! Emerge from the maze and celebrate with a bunch who are truly bonkers—and all the best people are. Whistling teapots, spinning cakes and wacky stacked cups set the scene, with interactive elements that encourage Guests to play along.</p>\n<p>Be sure to take a seat at a recreation of the table from the popular film and remember the tea-tastic festivities by posing for pics under “chapeaux” created by the Mad Hatter himself!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-wonderland-maze-01-new_tcm1871-114788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Classic Tale, New Twist",
+              "text": "<p>From Walt’s early films to Tim Burton’s brand of fantasy, Alice’s travels hold a special place in Disney history. The imaginations of Lewis Carroll and Walt Disney have been intertwined for nearly a century—dating back to Walt’s childhood, when he first read the author’s Alice books.</p>\n<p><em>Alice’s Wonderland</em>, a short film produced by fledgling filmmaker Walt in 1923, combined live-action with animation and was based on the stories he loved as a kid. The short introduced Carroll’s topsy-turvy universe, which Walt revived years later in the 1951 full-length animated feature, <em>Alice in Wonderland</em>.</p>\n<p>The film has captivated audiences ever since and inspired the classic Fantasyland attraction, Alice in Wonderland, which debuted in 1958 at Disneyland Park. Due to the popularity of the original romp, Alice’s Curious Labyrinth premiered at Disneyland Paris in 1992, giving Guests a whirlwind tour of Wonderland—from Tulgey Woods to the Queen of Hearts’ castle.</p>\n<p>The attraction at Shanghai Disneyland takes its cue from director Tim Burton’s 2010 feature film, <em>Alice in Wonderland</em>. Johnny Depp starred in the big-screen odyssey back to “Underland,” which sparked the park’s brand-new glimpse into the eccentric environment that remains a favorite with fans to this day.</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-wonderland-maze-02-new_tcm1871-114789.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attAliceWonderlandMaze;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "Fantasyland",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor",
+              "value": "Outdoor"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "All Ages"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "Teens"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "Preschoolers"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "Adults"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "May Remain in Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/remain-in-wheelchair_tcm1871-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "any-height",
+              "value": "Any Height"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "Fantasyland"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Alice - Attraction",
+            "referenceKey": "Alice - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-d-sq_tcm1871-239488.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Alice - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Alice - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-d-sq_tcm1871-239488.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b_tcm1871-239483.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b_tcm1871-239483.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-d-sq_tcm1871-239488.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-d_tcm1871-239487.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-c-sq_tcm1871-239486.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-c_tcm1871-239485.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-a-sq_tcm1871-239482.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-a_tcm1871-239481.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "9:00&18:00",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

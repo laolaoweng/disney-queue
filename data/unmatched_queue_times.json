@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T02:13:38Z",
+  "generatedAt": "2026-11-11T05:44:37Z",
   "source": "raw\\sample_queue_times_2026-10-17.csv",
   "queueTimesRideCount": 32,
   "matchedRideCount": 32,

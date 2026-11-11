@@ -1,0 +1,636 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:43:58"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:43:58"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Voyage to the Crystal Grotto",
+      "entityId": "attVoyageToCrystalGrotto",
+      "entityType": "Attraction",
+      "urlFriendlyId": "voyage-to-crystal-grotto",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/voyage-to-crystal-grotto",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-hero-sq-new-261026_tcm1871-294839.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b_tcm1871-239408.JPG",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b_tcm1871-239408.JPG",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b_tcm1871-239408.JPG",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-hero-sq-new-261026_tcm1871-294839.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-dpa-android-new_tcm1871-174538.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-dpa-ios-new_tcm1871-174539.jpg",
+          "width": 1452,
+          "height": 1670
+        },
+        "redemptionBgImageLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-my-plan_tcm1871-285929.png",
+          "width": 170,
+          "height": 96
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.1497810898181",
+            "longitude": "121.664973366207"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": true,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/voyage-to-crystal-grotto/",
+      "policies": [
+        {
+          "id": "policyVoyage",
+          "name": "Voyage",
+          "text": "The whole family will enjoy this gentle boat ride where stunning tributes to classic tales of fantasy line the shore, inspired by magical power of the Crystal Grotto.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under the age of 7 must be accompanied by a person aged 16 or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyWheelchairAccessNoteDetail",
+          "name": "Wheelchair Access Note Detail",
+          "text": "Note: Only a certain number of wheelchairs can be loaded to the ride vehicle of this attraction at one time; your wait time may be affected.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyWheelchairAccess",
+          "name": "Wheelchair Access",
+          "text": "Wheelchair access.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyVoyage",
+          "name": "Voyage",
+          "text": "The whole family will enjoy this gentle boat ride where stunning tributes to classic tales of fantasy line the shore, inspired by magical power of the Crystal Grotto.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under the age of 7 must be accompanied by a person aged 16 or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyWheelchairAccessNoteDetail",
+          "name": "Wheelchair Access Note Detail",
+          "text": "Note: Only a certain number of wheelchairs can be loaded to the ride vehicle of this attraction at one time; your wait time may be affected.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyWheelchairAccess",
+          "name": "Wheelchair Access",
+          "text": "Wheelchair access.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "Journey deep into a cavern where favorite Disney tales come alive in a dazzling display of music, light and wonder!",
+        "shortDescriptionMobileText": "Journey into a legendary magical cavern where the power of imagination brings classic stories alive in a breathtaking spectacle of color, light, music and motion!"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "The Legendary Birthplace of Imagination",
+              "text": "<p>Come aboard for the experience of a lifetime—an excursion on course for a world of magic and enchantment.</p>\n<p>You’re about to discover a fantastic realm energized by imagination. Here, inside a legendary cave, make-believe comes alive in spectacular displays. And those who visit are inspired to forge their own adventures, and follow their dreams.</p>\n<p>The voyage begins at Fantasy Landing. Soon, you'll wind past magnificent sculpture gardens dedicated to timeless Disney epics like<em> Aladdin, Mulan</em> and many more. Each breathtaking display captures a spirit that entertains us with fun, romance and music, and inspires us with uplifting messages.</p>\n<p>As you approach the Grotto, the excitement builds and the magic grows stronger. You’ll see, hear and feel classic stories spring to life within the walls and waters of the cavern. Experience the exhilaration as you’re surrounded by an astounding spectacle of motion, color and vision.</p>\n<p>Once you’ve taken this incredible Voyage to the Crystal Grotto, you’ll never see your favorite fables the same way again!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-01-new_tcm1871-114872.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Treasured Disney Tales on a Grand Scale  ",
+              "text": "<p>Celebrate the stories that spark the imagination and inspire us all to follow our dreams.</p>\n<p>To honor the discovery of the Crystal Grotto, the people of Fantasyland created enchanted sculpture gardens along the waterway lining its approach. Each honors one of the tales inside the cavern—and lives on as an enduring part of the Disney legacy, reminding us to follow our hearts and hold onto our dreams... happily ever after.</p>\n<p>These stories are enduring parts of the Disney legacy because they remind us to follow our hearts and hold onto our dreams... happily ever after.</p>\n<p><strong>Aladdin</strong> – Inspired by the timeless legend of <em>1001 Arabian Nights</em>, this delightful Disney feature proves that, no matter where you start out, there's no limit to where you can end up. With wit, courage and some Genie magic, Aladdin overcomes an evil sorcerer and wins a princess’ heart to rise from \"street rat\" to sultan.</p>\n<p><strong>The Sorcerer's Apprentice</strong> – This enchanting vignette from the Disney classic <em>Fantasia</em> is a vivid reminder of the power of imagination. When Mickey Mouse dons his master’s magical cap, he has the power to bring a broom to life to do his chores. But when he can't control his creation, the results are alarming and hilarious!</p>\n<p><strong>Tangled</strong> – The Brothers Grimm's <em>Rapunzel</em> legend is retold in a story that empowers us all to break away from what holds us back. Like our courageous heroine and the daring Flynn Rider, we must follow our hearts and dreams to realize our true potential.</p>\n<p><strong>Mulan</strong> – Based on Hua Mulan, this endearing film marked the first time that Disney animation brought a Chinese legend to life. Mulan is a young woman who poses as a soldier to take her father’s place in the army. By defying her culture, she helps save her nation. An uplifting tale of loyalty, courage and honor, <em>Mulan</em> proves there's a hero inside all of us.</p>\n<p><strong>The Little Mermaid</strong> – In a fun-filled, musical version of Hans Christian Andersen’s timeless tale, Ariel the mermaid is ready to give up everything she has to become part of our human world. For all of us who yearn for something more, <em>The Little Mermaid</em> shows us that \"happily ever after\" is never out of reach—even if it's a world away.</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-02-new_tcm1871-114873.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "Enchanted Storybook Castle",
+              "text": "Welcome to a magical place that celebrates the stories of Disney Princesses, where you can enjoy live shows, fine dining, royal makeovers and enchanted Character Greetings.",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-enchanted-storybook-castle-hero-new_tcm1871-114800.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/enchanted-storybook-castle"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attVoyageToCrystalGrotto;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "Fantasyland",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "rider-switch",
+              "value": "Rider Switch"
+            },
+            {
+              "urlFriendlyId": "outdoor",
+              "value": "Outdoor"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "All Ages"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "Teens"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "Preschoolers"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "Adults"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "May Remain in Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/remain-in-wheelchair_tcm1871-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "id": "attFacet-height-any-height-global_95472",
+              "urlFriendlyId": "any-height",
+              "value": "Any Height"
+            }
+          ]
+        },
+        "thrillFactor": {
+          "options": [
+            {
+              "urlFriendlyId": "slow-rides",
+              "value": "Slow Rides"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "Fantasyland"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Voyage to the Crystal Grotto - Attraction",
+            "referenceKey": "Voyage to the Crystal Grotto - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b-sq_tcm1871-239409.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Voyage to the Crystal Grotto - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Voyage to the Crystal Grotto - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b-sq_tcm1871-239409.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b_tcm1871-239408.JPG",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b_tcm1871-239408.JPG",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-c-sq_tcm1871-239405.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-c_tcm1871-239404.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/voyage-to-the-crystal-grotto-1029-1-1-3_tcm1871-294893.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/voyage-to-the-crystal-grotto-1029-16-9-3_tcm1871-294894.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/voyage-to-the-crystal-grotto-1029-1-1-4_tcm1871-294890.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/voyage-to-the-crystal-grotto-1029-16-9-4_tcm1871-294888.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/voyage-to-the-crystal-grotto-1029-1-1-5_tcm1871-294892.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/voyage-to-the-crystal-grotto-1029-16-9-5_tcm1871-294887.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&21:30",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false,
+      "redemptionBgImageSize": "Large"
+    }
+  }
+}

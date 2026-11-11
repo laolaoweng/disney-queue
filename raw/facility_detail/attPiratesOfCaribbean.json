@@ -1,0 +1,670 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:44:06"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:44:06"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Pirates of the Caribbean Battle for the Sunken Treasure",
+      "entityId": "attPiratesOfCaribbean",
+      "entityType": "Attraction",
+      "urlFriendlyId": "pirates-of-caribbean",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/pirates-of-caribbean",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-sq-new-again_tcm1871-115032.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-new_tcm1871-115031.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-new_tcm1871-115031.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-new_tcm1871-115031.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-sq-new-again_tcm1871-115032.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-battle-for-sunken-treasure-fp-android_tcm1871-146588.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-battle-for-sunken-treasure-fp-ios_tcm1871-146589.jpg",
+          "width": 1452,
+          "height": 1670
+        },
+        "redemptionBgImageLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-my-plan_tcm1871-285927.png",
+          "width": 170,
+          "height": 96
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.151571488436",
+            "longitude": "121.668203035393"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": true,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/pirates-of-caribbean/",
+      "policies": [
+        {
+          "id": "policyPiratesCaribbean",
+          "name": "Pirates Caribbean",
+          "text": "You may get wet. Avast! This is a grand High Seas Adventure with the infamous CAPTAIN JACK SPARROW himself. You may encounter Spooky SKELETONS. Loud NOISES. And even a short water DROP. WELCOME ABOARD, MATES!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyNoLapSittingOrHoldingChildrenOnLaps",
+          "name": "No Lap Sitting Or Holding Children On Laps",
+          "text": "No lap sitting or holding children on laps.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMinimumHeight",
+          "name": "Minimum Height",
+          "text": "Persons who do not meet the minimum height requirement may not ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransfer",
+          "name": "Must Transfer",
+          "text": "Must transfer from wheelchair",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransferNoteDetail",
+          "name": "Must Transfer Note Detail",
+          "text": "Note: Only a certain number of guests on wheelchairs can be transferred to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyQueueWithEntireParty",
+          "name": "Queue With Entire Party",
+          "text": "Please queue with your entire party and speak with a Cast Member if you would like to leave the queue. Thank you!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyPiratesCaribbean",
+          "name": "Pirates Caribbean",
+          "text": "You may get wet. Avast! This is a grand High Seas Adventure with the infamous CAPTAIN JACK SPARROW himself. You may encounter Spooky SKELETONS. Loud NOISES. And even a short water DROP. WELCOME ABOARD, MATES!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyNoLapSittingOrHoldingChildrenOnLaps",
+          "name": "No Lap Sitting Or Holding Children On Laps",
+          "text": "No lap sitting or holding children on laps.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMinimumHeight",
+          "name": "Minimum Height",
+          "text": "Persons who do not meet the minimum height requirement may not ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransfer",
+          "name": "Must Transfer",
+          "text": "Must transfer from wheelchair",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransferNoteDetail",
+          "name": "Must Transfer Note Detail",
+          "text": "Note: Only a certain number of guests on wheelchairs can be transferred to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyQueueWithEntireParty",
+          "name": "Queue With Entire Party",
+          "text": "Please queue with your entire party and speak with a Cast Member if you would like to leave the queue. Thank you!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "Ahoy! Join Captain Jack’s swashbuckling band of buccaneers for a monster-meeting, treasure-seeking, high-seas adventure!",
+        "shortDescriptionMobileText": "Ahoy! Join Captain Jack’s swashbuckling band of buccaneers for a monster-meeting, treasure-seeking, high-seas adventure! "
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Avast, Me Hearties",
+              "text": "<p>Cruise Treasure Cove with the most charismatic rogue ever to rock the Jolly Roger—the devilishly dashing Captain Jack!</p>\n<p>Set sail for seafaring fun that takes you on, over and under the deep blue in search of Davy Jones’ sunken plunder—all while crossing paths with pirates, mermaids and even the savage Kraken.</p>\n<p>Landlubbers leave from the Royal Navy’s former fortress and embark on a course that passes through the mysterious Voodoo Alley and Jack’s own secret sanctuary—the Caves of Misfortune—before hitting the briny depths. From a face-to-face with some of the world’s saltiest sea dogs to dreaming of those coveted doubloons, you’ll surely “shiver ye timbers” during this rollicking romp!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-01-new_tcm1871-115033.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Thar She Goes…",
+              "text": "<p>Yo ho, yo ho—batten down the hatches for a one-of-a-kind ride with your favorite Pirates of the Caribbean! Board a ship christened after some of history’s most scandalous scoundrels and watch their notorious tales come to life.</p>\n<p>Hold on to ye eye patch, picaroon—each vessel twists, twirls and steers backwards while navigating treacherous waters!</p>\n<p><strong>Your Treasure Quest Begins</strong>\n<br />\nWeigh anchor and hoist the mizzen! Your journey commences as you wind through the fort’s 17th-century supply room, an illuminated map cabin and the abandoned jail cells Captain Jack now calls home. Have ye got what it takes?</p>\n<p>Upon shoving off from the dock, your boat floats past <a href=\"https://www.shanghaidisneyresort.com/dining/theme-park/barbossas-bounty/\">Barbossa’s Bounty</a> and meanders into murky waters. You arrive at the entrance to a series of eerily dark caverns. Dare to continue, matey?</p>\n<p><strong>Into the Caves</strong>\n<br />\nLight flickers and fades while gliding deeper inside the caves until suddenly you’re surrounded by pirates—but dead men tell no tales! Will the old bones of these scurvy rapscallions rattle ye?</p>\n<p><strong>Captain Jack</strong>\n<br />\nYou spiral ‘round a corner as lightning strikes, revealing a skeleton that magically comes alive—it’s Captain Jack! Once the Captain gives his orders, heave ho, heave ho… it’s off to treasure hunt ye go.</p>\n<p><strong>To the Depths</strong>\n<br />\nSwallowed by the ocean, you plummet to the Graveyard of Lost Ships, where gold glimmers from wrecked hulls. Without warning, the monstrous Kraken awakens as you enter what’s left of Davy Jones’ massive craft.</p>\n<p><strong>Undersea World</strong>\n<br />\nWhile making your way into mermaid territory, a bevy of fish-tailed beauties harmonize as their crusty counterparts glare at passing ships. Jones’ former crew members fiercely stand guard over his glistening trove—one hammerhead sailor snarls “The Captain be wantin’ a word with ye!”</p>\n<p><strong>Davy Jones</strong>\n<br />\nBarnacle-encrusted spears, melancholy organ music and walls embedded with the bodily remains of a sordid few… you’ve reached the lair of that squid-headed horror himself, Davy Jones.</p>\n<p><strong>To Battle</strong>\n<br />\nAll hands on deck! Swords are drawn and cannons blast as the captains wage war over the biggest booty in the Caribbean. You’re caught in the crossfire, with fighting pirates battling to their doom.</p>\n<p><strong>Inside the Hold</strong>\n<br />\nTrapped in the ship’s hull, water gushes all around your swirling boat. Captain Jack piles jewels and gold into the hold as Davy Jones jumps in. A dastardly duel ensues—will Captain Jack escape all the richer?</p>\n<p><strong>Fool’s Gold</strong>\n<br />\nAfter surviving Davy’s grip, your voyage returns to Fort Snobbish, now filled to the gills with Jack’s precious treasure—but Jones isn’t done just yet! Will the wicked scallywag’s curse rob Jack of his good fortune? Take ye sea legs for a test run to find out!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-02-new_tcm1871-115034.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "From Films to Full-Blown Attraction",
+              "text": "<p>Walt Disney’s original vision receives a romantic remake honoring the most adored adventurer ever—Captain Jack.</p>\n<p>After nearly a decade-long collaboration of legendary Disney artists, animators, writers and Imagineers, the very first Pirates of the Caribbean attraction officially opened in Disneyland Park in California on April 19, 1967—only 9 months after Walt attended the dedication ceremony of New Orleans Square. Sadly, he never saw its completion.</p>\n<p>What became a crowning achievement in Disney theme park history paved the way for an adaptation at Magic Kingdom park in Walt Disney World Resort, Florida. Additional versions can be found at Tokyo Disney Resort and Disneyland Paris.</p>\n<p>Decades later, the popularity of the attraction inspired a hit film series starring Johnny Depp as that ever-charming ne’er-do-well, Captain Jack. Thanks to the films, the stories of these boisterous marauders live on through legions of fans around the globe.</p>\n<p>And now, life once again imitates art as <a href=\"http://www.shanghaidisneyresort.com/destinations/theme-park/\">Shanghai Disneyland</a> premieres Pirates of the Caribbean Battle for the Sunken Treasure, an all-new take on the classic attraction—inspired by the films!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-03-new_tcm1871-115035.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "Barbossa’s Bounty  ",
+              "text": "Drop plank at a restaurant run by the Captain himself! This grog shop offers BBQ, seafood and vegetarian fare—with pirate-y fun far as ye eye can see!",
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/en/experience/restaurant/barbossas-bounty"
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "Check Wait Times in the Theme Park with Our Official Mobile App!",
+              "text": "Download the Shanghai Disney Resort mobile app before your visit for attraction wait times, height recommendations, map locations and much more.",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-gsrvc-mobile-app-icon2_tcm1871-113788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/en/information/download-shanghai-disney-mobile-app"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attPiratesOfCaribbean;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landTreasureCove",
+          "name": "Treasure Cove",
+          "urlFriendlyId": "treasure-cove"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "indoor",
+              "value": "Indoor"
+            },
+            {
+              "urlFriendlyId": "rider-switch",
+              "value": "Rider Switch"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "Teens"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "Adults"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-transfer-from-wheelchair-global_95456",
+              "urlFriendlyId": "must-transfer-from-wheelchair",
+              "value": "Must Transfer from Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/transfer-from-wheelchair_tcm1871-281320.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "81cm-32in-or-taller",
+              "value": "81 cm or Taller"
+            }
+          ]
+        },
+        "serviceAnimals": {
+          "options": [
+            {
+              "urlFriendlyId": "service-dog",
+              "value": "Service Dog Accepted"
+            }
+          ]
+        },
+        "thrillFactor": {
+          "options": [
+            {
+              "urlFriendlyId": "small-drops",
+              "value": "Small Drops"
+            },
+            {
+              "urlFriendlyId": "loud",
+              "value": "Loud"
+            },
+            {
+              "urlFriendlyId": "dark",
+              "value": "Dark"
+            },
+            {
+              "urlFriendlyId": "thrill-rides",
+              "value": "Thrill Rides"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "treasure-cove",
+              "value": "Treasure Cove"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Pirates of Caribbean - Attraction",
+            "referenceKey": "Pirates of Caribbean - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-new-a-sq_tcm1871-238927.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Pirates of Caribbean - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Pirates of Caribbean - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-new-a-sq_tcm1871-238927.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "video",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-cover-sq-revised_tcm1871-245177.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-cover-hero-revised_tcm1871-245176.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "sourceForVideo": "https://static.shanghaidisneyresort.com/web-img-gallery/Pirates-2022072502.mp4"
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-new_tcm1871-115031.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-new_tcm1871-115031.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-new-a-sq_tcm1871-238927.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-new-a_tcm1871-238925.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&21:30",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false,
+      "redemptionBgImageSize": "Large"
+    }
+  }
+}

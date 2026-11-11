@@ -488,6 +488,33 @@ def load_csv_rides(path):
 
 
 # ---------------------------------------------------------------------------
+# 官方图片（可选）：collector/fetch_images.py -> data/images.json
+# ---------------------------------------------------------------------------
+
+DEFAULT_IMAGES = os.path.join(os.path.dirname(DEFAULT_CATALOG), 'images.json')
+
+
+def attach_images(catalog, images_path=DEFAULT_IMAGES):
+    """把 fetch_images.py 产出的方形图/大图 URL 合并进 catalog（文件不存在则跳过）。"""
+    try:
+        doc = read_json(images_path)
+    except OSError:
+        return 0
+    images = (doc or {}).get('images') or {}
+    merged = 0
+    for att in catalog.get('attractions') or []:
+        item = images.get(att.get('id')) or {}
+        square = (item.get('square') or '').strip()
+        hero = (item.get('hero') or '').strip()
+        if square:
+            att['imageUrl'] = square
+            merged += 1
+        if hero:
+            att['heroImageUrl'] = hero
+    return merged
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -533,6 +560,7 @@ def main(argv=None):
 
     catalog, unmatched, stats = build_catalog(wam, csv_rides,
                                               include_non_rides=args.include_non_rides)
+    merged_images = attach_images(catalog)
 
     write_json_atomic(args.out, catalog)
     unmatched_doc = {
@@ -553,6 +581,7 @@ def main(argv=None):
           % (stats['queueTimesIds'], stats['singleRiderIds']))
     print('[build_catalog]   unmatched queue-times rides: %d -> %s'
           % (stats['unmatchedRides'], args.unmatched_out))
+    print('[build_catalog]   with official images: %d (data/images.json)' % merged_images)
     if stats['excludedNonRides']:
         print('[build_catalog]   排除非游乐设施 %d 条: %s'
               % (len(stats['excludedNonRides']), ', '.join(stats['excludedNonRides'])))

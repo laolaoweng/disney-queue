@@ -1,0 +1,668 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:43:59"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:43:59"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Challenge Trails at Camp Discovery",
+      "entityId": "attChallengeTrails",
+      "entityType": "Attraction",
+      "urlFriendlyId": "challenge-trails",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/challenge-trails",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c-sq_tcm1871-239014.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c_tcm1871-239013.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c_tcm1871-239013.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c_tcm1871-239013.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c-sq_tcm1871-239014.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-challenge-trails-dpa-andriod_tcm1871-174540.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-challenge-trails-dpa-ios-new_tcm1871-174541.jpg",
+          "width": 1452,
+          "height": 1670
+        },
+        "redemptionBgImageLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-challenge-trails-my-plan_tcm1871-286027.png",
+          "width": 170,
+          "height": 96
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.149954",
+            "longitude": "121.67043"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": true,
+      "singleRiderAvailable": false,
+      "hideFunctionality": "Hide from the Listing Page",
+      "hidebychannel": [
+        {
+          "channel": [
+            "WECHAT"
+          ],
+          "hideType": "Hide from List"
+        }
+      ],
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/challenge-trails/",
+      "policies": [
+        {
+          "id": "policyChallengeTrails",
+          "name": "Challenge Trails at Camp Discovery",
+          "text": "Traverse the dynamic cloud forest landscape of Adventure Isle along one of three elevated trails, where natural wonders abound and ancient legends endure.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyAcrophobia",
+          "name": "Acrophobia",
+          "text": "Persons who are afraid of heights should not participate.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyGoodHealthConditions",
+          "name": "Good Health Conditions",
+          "text": "For safety, you should be in good health and free from high blood pressure, heart, back or neck problems, or other conditions that could be aggravated by this adventure.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyExpectantMother",
+          "name": "Expectant Mother",
+          "text": "Expectant mothers should not participate.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTrailMinimumHeight",
+          "name": "Trail Minimum Height",
+          "text": "Persons who do not meet the minimum height requirement may not participate. To participate alone, you must be at least 122 cm tall.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySober",
+          "name": "Sober",
+          "text": "You must be sober to participate.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTrailMinimumWeight",
+          "name": "Trail Minimum Weight",
+          "text": "Guests must be less than 136 kg (300 lbs) to participate. The harness on this experience may prohibit guests of certain body shapes or sizes from participating.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTrailFootWear",
+          "name": "Trail Foot Wear",
+          "text": "This is an overhead activity and appropriate attire must be worn at all times. Closed-toe shoes with secured heel strap are required. Prior to the experience, you must secure all loose articles (such as, cell phones, cameras, and backpacks) in the provided lockers or leave them with a non-participant.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTrailAmbulatory",
+          "name": "Trail Ambulatory",
+          "text": "Must be ambulatory.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyChallengeTrails",
+          "name": "Challenge Trails at Camp Discovery",
+          "text": "Traverse the dynamic cloud forest landscape of Adventure Isle along one of three elevated trails, where natural wonders abound and ancient legends endure.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyAcrophobia",
+          "name": "Acrophobia",
+          "text": "Persons who are afraid of heights should not participate.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyGoodHealthConditions",
+          "name": "Good Health Conditions",
+          "text": "For safety, you should be in good health and free from high blood pressure, heart, back or neck problems, or other conditions that could be aggravated by this adventure.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyExpectantMother",
+          "name": "Expectant Mother",
+          "text": "Expectant mothers should not participate.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTrailMinimumHeight",
+          "name": "Trail Minimum Height",
+          "text": "Persons who do not meet the minimum height requirement may not participate. To participate alone, you must be at least 122 cm tall.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySober",
+          "name": "Sober",
+          "text": "You must be sober to participate.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTrailMinimumWeight",
+          "name": "Trail Minimum Weight",
+          "text": "Guests must be less than 136 kg (300 lbs) to participate. The harness on this experience may prohibit guests of certain body shapes or sizes from participating.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTrailFootWear",
+          "name": "Trail Foot Wear",
+          "text": "This is an overhead activity and appropriate attire must be worn at all times. Closed-toe shoes with secured heel strap are required. Prior to the experience, you must secure all loose articles (such as, cell phones, cameras, and backpacks) in the provided lockers or leave them with a non-participant.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTrailAmbulatory",
+          "name": "Trail Ambulatory",
+          "text": "Must be ambulatory.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "importantInfo": [
+        {
+          "id": "pleaseNoteAtt.ChallengeTrail",
+          "group": "Important Info",
+          "items": [
+            {
+              "name": "Please Note",
+              "description": "<p>This is an overhead activity and appropriate attire must be worn at all times. Closed-toe shoes with secured heel strap are required.</p>",
+              "endTime": null,
+              "openTime": null
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "These 3 uniquely thrilling elevated rope courses traverse the terrain of Roaring Mountain, stepping through spectacular caverns.",
+        "shortDescriptionMobileText": "These 3 uniquely thrilling elevated rope courses traverse the terrain of Roaring Mountain, taking adventurers over river gorges, waterfalls and sheer cliffs, through stunning terrain and into spectacular caverns. Help the League of Adventurers solve the island’s most ancient mysteries.\n<br/>\n<br/>\nPlease note: This is an overhead activity and appropriate attire must be worn at all times. Closed-toe shoes with secured heel strap are required. "
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Traverse the thrilling archeological wonders",
+              "text": "<p>These 3 uniquely thrilling elevated rope courses traverse the terrain of Roaring Mountain—taking adventurers over river gorges, waterfalls and sheer cliffs, through stunning terrain and into spectacular caverns.</p>\n<ul>\n<li><strong>Hidden Falls Chamber</strong> – Journey behind a waterfall and deep into the jungle to a mystical cavern, home to the glittering gem-encrusted Temple of the Milky Way.</li>\n<li><strong>Echo Cavern</strong> – Wind along a perilous river gorge, discover magnificent rock carvings and cave paintings, and hear for yourself how Echo Canyon got its name.</li>\n<li><strong>House of the Ancients</strong> – Trek to the site of an in-progress excavation, where League of Adventurers archeologists are unearthing an ancient Arbori trading center.</li>\n</ul>\n<p><strong>Please note: Guests must be at least 106 centimeters (41.5 inches) or taller to experience the 3 rope courses of the Challenge Trails at Camp Discovery.</strong></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-challenge-trails-01_tcm1871-116274.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "Excitement for Explorers of All Ages",
+              "text": "Choose your course, set out for adventure and prepare for the incredible! For everyone, from the most fearless trailblazer to the youngest League of Adventurers recruit, Camp Discovery offers rare experiences and remarkable sights few have ever encountered.",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-02-new_tcm1871-114799.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/camp-discovery"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attChallengeTrails;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landAdventureIsle",
+          "name": "Adventure Isle",
+          "urlFriendlyId": "adventure-isle"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor",
+              "value": "Outdoor"
+            },
+            {
+              "urlFriendlyId": "rider-switch",
+              "value": "Rider Switch"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "Teens"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "Adults"
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "106cm-41_5in-or-taller",
+              "value": "106 cm or Taller"
+            }
+          ]
+        },
+        "thrillFactor": {
+          "options": [
+            {
+              "urlFriendlyId": "thrill-rides",
+              "value": "Thrill Rides"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "adventure-isle",
+              "value": "Adventure Isle"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Challenge Trails at Camp Discovery - Attraction",
+            "referenceKey": "Challenge Trails at Camp Discovery - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-challenge-trails-hero-sq_tcm1871-116273.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Challenge Trails at Camp Discovery - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Challenge Trails at Camp Discovery - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-challenge-trails-hero-sq_tcm1871-116273.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c_tcm1871-239013.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c_tcm1871-239013.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-challenge-trails-hero-sq_tcm1871-116273.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-challenge-trails-hero_tcm1871-116272.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-b-sq_tcm1871-239012.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-b_tcm1871-239011.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-a-sq_tcm1871-239010.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-a_tcm1871-239009.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&21:30",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false,
+      "redemptionBgImageSize": "Large"
+    }
+  }
+}

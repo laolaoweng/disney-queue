@@ -1,0 +1,705 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:44:02"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:44:02"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Roaring Rapids",
+      "entityId": "attRoaringRapids",
+      "entityType": "Attraction",
+      "urlFriendlyId": "roaring-rapids",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/roaring-rapids",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-c-sq_tcm1871-239550.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-d_tcm1871-239551.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-d_tcm1871-239551.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-d_tcm1871-239551.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-c-sq_tcm1871-239550.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-rapids-fp-android_tcm1871-141332.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-rapids-fp-ios_tcm1871-141333.jpg",
+          "width": 1452,
+          "height": 1670
+        },
+        "redemptionBgImageLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-rapids-my-plan_tcm1871-286033.png",
+          "width": 170,
+          "height": 96
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.149338141182",
+            "longitude": "121.66960123557"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": true,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/roaring-rapids/",
+      "policies": [
+        {
+          "id": "policyRoaringRapids",
+          "name": "Roaring Rapids",
+          "text": "You will get wet, and you may get soaked!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyRoaringRapidsNew",
+          "name": "Roaring Rapids New",
+          "text": "Roaring Rapids is an exhilarating rough-water rafting adventure, which may be scary for younger adventures. You will experience sharp turns, high speeds, and sudden drops.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyGoodHealthConditionsNew",
+          "name": "Good Health Conditions New",
+          "text": "For safety, you should be in good health and free from high blood pressure, heart, back or neck problems, motion sickness, or other conditions that could be aggravated by this adventure.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyExpectantMotherRoaring",
+          "name": "Expectant Mother Roaring",
+          "text": "Expectant mothers should not participate.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberRoaring",
+          "name": "Sober Roaring",
+          "text": "You should be sober to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMinimumHeightRoaring",
+          "name": "Minimum Height Roaring",
+          "text": "Rafters who do not meet the minimum height requirement may not ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransfer",
+          "name": "Must Transfer",
+          "text": "Must transfer from wheelchair",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransferNoteDetail",
+          "name": "Must Transfer Note Detail",
+          "text": "Note: Only a certain number of guests on wheelchairs can be transferred to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyQueueWithEntireParty",
+          "name": "Queue With Entire Party",
+          "text": "Please queue with your entire party and speak with a Cast Member if you would like to leave the queue. Thank you!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyRoaringRapids",
+          "name": "Roaring Rapids",
+          "text": "You will get wet, and you may get soaked!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyRoaringRapidsNew",
+          "name": "Roaring Rapids New",
+          "text": "Roaring Rapids is an exhilarating rough-water rafting adventure, which may be scary for younger adventures. You will experience sharp turns, high speeds, and sudden drops.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyGoodHealthConditionsNew",
+          "name": "Good Health Conditions New",
+          "text": "For safety, you should be in good health and free from high blood pressure, heart, back or neck problems, motion sickness, or other conditions that could be aggravated by this adventure.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyExpectantMotherRoaring",
+          "name": "Expectant Mother Roaring",
+          "text": "Expectant mothers should not participate.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberRoaring",
+          "name": "Sober Roaring",
+          "text": "You should be sober to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMinimumHeightRoaring",
+          "name": "Minimum Height Roaring",
+          "text": "Rafters who do not meet the minimum height requirement may not ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransfer",
+          "name": "Must Transfer",
+          "text": "Must transfer from wheelchair",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransferNoteDetail",
+          "name": "Must Transfer Note Detail",
+          "text": "Note: Only a certain number of guests on wheelchairs can be transferred to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyQueueWithEntireParty",
+          "name": "Queue With Entire Party",
+          "text": "Please queue with your entire party and speak with a Cast Member if you would like to leave the queue. Thank you!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>Plunge through dark chasms, outrace a ferocious beast and churn through raging, roiling currents on a thrilling raft adventure!</p>",
+        "shortDescriptionMobileText": "A rafting expedition takes an unexpected turn. Now hang on tight as you plunge through deep, dark chasms, outrace a ferocious beast and churn through powerful currents!\n<!--<br><br>\n<strong>Get a Disney Standby Pass to help reduce wait times and arrange your park visit with ease with a tap of your finger!</strong>\n<br>\nDisney Standby Pass is required to experience Roaring Rapids <strong>from 10:30 to 15:30 today</strong>. \n<br>\nDisney Standby Pass is subject to availability.\n<br>\nOutside of these hours, Disney Standby Pass is not required to enter the queue for the attraction.-->"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Confront the Mountain’s Terrifying Secret",
+              "text": "<p>Join a rafting expedition to explore an ancient legend… but beware the dangers that lie ahead.</p>\n<p>You’re invited to join the League of Adventurers as they unravel the mystery of Adventure Isle’s highest peak, known as “Roaring Mountain” for the forbidding sounds it emits.</p>\n<p>Arbori natives believe that Q’aráq—a crocodile-like beast—dwells within. But could this incredible tale be true? League scientists have already unearthed fascinating relics and a hidden pathway.</p>\n<p>Finding more clues will require a perilous river journey through uncharted waters. Brave volunteers are needed. If you have a thirst for adventure and a yearning for excitement, climb aboard and set off into the unknown.</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-rapids-01_tcm1871-102770.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Feel the Rush! ",
+              "text": "<p>A journey to explore becomes an adrenaline-charged race to survive.</p>\n<p>You’ll board your raft and set off upriver to Field Camp Beta. But look out! A fallen tree blocks your way and diverts the current in a new direction—right inside the mountain!</p>\n<p>Within the cavern, the roar turns deafening as the rapids propel you toward the enraged monster itself. Speeding through the darkness, you’ll see the bulging-eyed beast ahead, feel its steamy breath and duck as it snaps its giant razor-sharp teeth.</p>\n<p>If your raft escapes the fearsome jaws of Q’aráq, you’ll plunge through a lava tube and into a churning whirlpool, then past erupting volcanic vents and steaming geysers as the whitewater rapids sweep you back to basecamp.</p>\n<p>Breathlessly returning, you’ll be hailed by your fellow League of Adventurers members. Your mission has boldly embraced their intrepid spirit: seeking the unknown and discovering the unbelievable—no matter the peril!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-rapids-02_tcm1871-102771.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attRoaringRapids;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landAdventureIsle",
+          "name": "Adventure Isle",
+          "urlFriendlyId": "adventure-isle"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "rider-switch",
+              "value": "Rider Switch"
+            },
+            {
+              "urlFriendlyId": "outdoor",
+              "value": "Outdoor"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "Teens"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "Adults"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-transfer-from-wheelchair-global_95456",
+              "urlFriendlyId": "must-transfer-from-wheelchair",
+              "value": "Must Transfer from Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/transfer-from-wheelchair_tcm1871-281320.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "107cm-42in-or-taller",
+              "value": "107 cm or Taller"
+            }
+          ]
+        },
+        "thrillFactor": {
+          "options": [
+            {
+              "urlFriendlyId": "big-drops",
+              "value": "Big Drops"
+            },
+            {
+              "urlFriendlyId": "dark",
+              "value": "Dark"
+            },
+            {
+              "urlFriendlyId": "loud",
+              "value": "Loud"
+            },
+            {
+              "urlFriendlyId": "water-rides",
+              "value": "Water Splash Rides"
+            },
+            {
+              "urlFriendlyId": "thrill-rides",
+              "value": "Thrill Rides"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "adventure-isle",
+              "value": "Adventure Isle"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Roaring - Attraction",
+            "referenceKey": "Roaring - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-b-sq_tcm1871-239548.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Roaring - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Roaring - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-b-sq_tcm1871-239548.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "video",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-video-cover-sq_tcm1871-242109.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-video-cover_tcm1871-242108.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": "Vicky Created for Test"
+                            }
+                          }
+                        ],
+                        "sourceForVideo": "https://static.shanghaidisneyresort.com/web-img-gallery/Roaring-Rapids-20220725.mp4"
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-d_tcm1871-239551.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-d_tcm1871-239551.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-b-sq_tcm1871-239548.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-b_tcm1871-239547.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": "Vicky Created for Testing - Image"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-d-sq_tcm1871-239552.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-c_tcm1871-239549.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-a-sq_tcm1871-239546.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-a_tcm1871-239545.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&21:30",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false,
+      "redemptionBgImageSize": "Large"
+    }
+  }
+}

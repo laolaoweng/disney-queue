@@ -1,0 +1,546 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:44:14"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:44:14"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Zootopia: Hot Pursuit",
+      "entityId": "attZootopiaHotPursuit",
+      "entityType": "Attraction",
+      "urlFriendlyId": "zootopia-hot-pursuit",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/zootopia-hot-pursuit",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-sq-20260304-v2_tcm1871-287618.png",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1871-269561.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1871-269561.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1871-269561.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-sq-20260304-v2_tcm1871-287618.png",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-android-v2.png_tcm1871-269163.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-dsp-ios-v2_tcm1871-269162.jpg",
+          "width": 1452,
+          "height": 1670
+        },
+        "redemptionBgImageLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-my-plan_tcm1871-285922.png",
+          "width": 170,
+          "height": 96
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.152389",
+            "longitude": "121.666285"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/zootopia-hot-pursuit/",
+      "policies": [
+        {
+          "id": "policyZootopiaHotPursuit",
+          "name": "Zootopia: Hot Pursuit ",
+          "text": "Zootopia: Hot Pursuit is an exciting, fast-paced chase through the streets of Zootopia. Onboard a police cruiser, you may experience moments of sudden turns, sudden stops and brief periods of complete darkness.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyNoLapSittingOrHoldingChildrenOnLaps",
+          "name": "No Lap Sitting Or Holding Children On Laps",
+          "text": "No lap sitting or holding children on laps.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMinimumHeight",
+          "name": "Minimum Height",
+          "text": "Persons who do not meet the minimum height requirement may not ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransfer",
+          "name": "Must Transfer",
+          "text": "Must transfer from wheelchair",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransferNoteDetail",
+          "name": "Must Transfer Note Detail",
+          "text": "Note: Only a certain number of guests on wheelchairs can be transferred to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyQueueWithEntireParty",
+          "name": "Queue With Entire Party",
+          "text": "Please queue with your entire party and speak with a Cast Member if you would like to leave the queue. Thank you!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyZootopiaHotPursuit",
+          "name": "Zootopia: Hot Pursuit ",
+          "text": "Zootopia: Hot Pursuit is an exciting, fast-paced chase through the streets of Zootopia. Onboard a police cruiser, you may experience moments of sudden turns, sudden stops and brief periods of complete darkness.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyNoLapSittingOrHoldingChildrenOnLaps",
+          "name": "No Lap Sitting Or Holding Children On Laps",
+          "text": "No lap sitting or holding children on laps.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMinimumHeight",
+          "name": "Minimum Height",
+          "text": "Persons who do not meet the minimum height requirement may not ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policySoberSoaring",
+          "name": "Sober Soaring",
+          "text": "You should be sober and in good health to ride.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransfer",
+          "name": "Must Transfer",
+          "text": "Must transfer from wheelchair",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyMustTransferNoteDetail",
+          "name": "Must Transfer Note Detail",
+          "text": "Note: Only a certain number of guests on wheelchairs can be transferred to the ride vehicle of this attraction at one time, your wait time may be impacted.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyQueueWithEntireParty",
+          "name": "Queue With Entire Party",
+          "text": "Please queue with your entire party and speak with a Cast Member if you would like to leave the queue. Thank you!",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<strong>*Guest possessing this Disney Premier Access can enter Zootopia in a shorter wait time. Please note that you may not experience complete scenes in the queue area when entering Zootopia: Hot Pursuit from the Disney Premier Access entrance.</strong>\n<br />\n<br />\nZootopia: Hot Pursuit invites you on a wild police chase in one of Officer Judy Hopps and Nick Wilde’s cruisers! You’ll slide across the ice of Tundratown, prowl for fugitives through the streets of Sahara Square, and weave through the Rainforest District, all in pursuit of Bellwether and her gang to track down Gazelle. It’s a riveting chase that can only happen in Zootopia!\n<br />",
+        "shortDescriptionMobileText": "<strong>*Guest possessing this Disney Premier Access can enter Zootopia in a shorter wait time. Please note that you may not experience complete scenes in the queue area when entering Zootopia: Hot Pursuit from the Disney Premier Access entrance.</strong>\n<br/>\n<br/>\nZootopia: Hot Pursuit invites you on a wild police chase in one of Officer Judy Hopps and Nick Wilde’s cruisers! You’ll slide across the ice of Tundratown, prowl for fugitives through the streets of Sahara Square, and weave through the Rainforest District, all in pursuit of Bellwether and her gang to track down Gazelle. It’s a riveting chase that can only happen in Zootopia!\n<br/>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attZootopiaHotPursuit;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landZootopia",
+          "name": "Zootopia",
+          "urlFriendlyId": "zootopia-land"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "rider-switch",
+              "value": "Rider Switch"
+            },
+            {
+              "urlFriendlyId": "indoor",
+              "value": "Indoor"
+            },
+            {
+              "urlFriendlyId": "single-rider-line",
+              "value": "Single Rider Line"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "Adults"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "Teens"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-transfer-from-wheelchair-global_95456",
+              "urlFriendlyId": "must-transfer-from-wheelchair",
+              "value": "Must Transfer from Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/transfer-from-wheelchair_tcm1871-281320.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "81cm-32in-or-taller",
+              "value": "81 cm or Taller"
+            }
+          ]
+        },
+        "thrillFactor": {
+          "options": [
+            {
+              "urlFriendlyId": "dark",
+              "value": "Dark"
+            },
+            {
+              "urlFriendlyId": "small-drops",
+              "value": "Small Drops"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "zootopia-land",
+              "value": "Zootopia"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Zootopia: Hot Pursuit - Attraction",
+            "referenceKey": "Zootopia: Hot Pursuit - Attraction",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/png",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-sq-20240104_tcm1871-269562.png",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Zootopia: Hot Pursuit - Attraction",
+                "subChapters": [
+                  {
+                    "title": "Zootopia: Hot Pursuit - Attraction",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/png",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-sq-20240104_tcm1871-269562.png",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "video",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-sq-20240104_tcm1871-269562.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1871-269561.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "sourceForVideo": "https://static.shanghaidisneyresort.com/web-img-gallery/finderdetail-zootopia-hot-pursuit-20250702.mp4"
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1871-269561.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1871-269561.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "Mute",
+          "PREVIOUS_BUTTON_TITLE": "Display previous media item",
+          "LARGE_PLAY_BUTTON_TEXT": "Play Video",
+          "THUMB_ALT_PREFIX": "Display larger version of ",
+          "COUNTER_SEPARATOR": " of ",
+          "VIDEO_DT_UNAVAILABLE": "Descriptive Transcript is not available for this video.",
+          "NEXT_BUTTON_TITLE": "Display previous media item",
+          "THUMB_PREVIOUS_TEXT": "Previous",
+          "SHARE_MODAL_TITLE": "Share",
+          "VIDEO_SHARE_BUTTON_TEXT": "Share",
+          "ACCESSIBLE_SELECTED": " - Selected",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "Unmute",
+          "PLAY_BUTTON_TEXT": "Play Slideshow",
+          "TYPE_FILTER_IMAGE": "Photos",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "Descriptive Transcript",
+          "NEXT_BUTTON_TEXT": "Next",
+          "TYPE_FILTER_FLOORPLAN": "Floor Plans",
+          "COUNTER_PREFIX": "Photo ",
+          "VIDEO_LINK_BUTTON_TEXT": "Buy",
+          "PREVIOUS_BUTTON_TEXT": "Previous",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "Copy and paste this link:",
+          "VIDEO_PLAY_BUTTON_TEXT": "Play Video",
+          "SHARE_BAIDU_TEXT": "BAIDU TIEBA",
+          "TYPE_FILTER_INTERACTIVE": "Interactive",
+          "VIDEO_PAUSE_BUTTON_TEXT": "Pause Video",
+          "SHARE_BUTTON_TEXT": "SHARE",
+          "BOOK_TAB_TITLE_PREFIX": "Display media for ",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "Videos",
+          "THUMB_NEXT_TEXT": "Next",
+          "SHARE_EMAIL_TEXT": "EMAIL",
+          "SHARE_CLOSE_TEXT": "Close",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "Full Screen",
+          "PAUSE_BUTTON_TEXT": "Pause Slideshow",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "Show All",
+          "VIDEO_CC_UNAVAILABLE": "Closed captioning is not available for this video.",
+          "TYPE_FILTER_PANO": "360&deg; Views",
+          "THUMB_PREVIOUS_TITLE": "Display next thumbnail group",
+          "VIDEO_REPLAY_BUTTON_TEXT": "Replay",
+          "SHARE_WEIBO_TEXT": "SINA WEIBO",
+          "VIDEO_CC_BUTTON_TEXT": "Closed Captioning",
+          "LARGE_PAUSE_BUTTON_TEXT": "Pause Video",
+          "LOADING_TEXT": "Loading",
+          "THUMB_NEXT_TITLE": "Display next thumbnail group"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&21:30",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false,
+      "redemptionBgImageSize": "Large"
+    }
+  }
+}

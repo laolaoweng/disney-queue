@@ -1,0 +1,216 @@
+{
+  "generatedAt": "2026-11-11T05:44:13Z",
+  "source": "wam/facility/detail",
+  "images": {
+    "attBecomeIronMan": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-become-icon-man-hero-sq_tcm1871-116348.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-become-icon-man-hero_tcm1871-116347.jpg",
+      "title": "Become Iron Man at the Marvel Universe",
+      "bytes": 165117,
+      "contentType": "image/jpeg"
+    },
+    "attDumboFlyingElephant": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-dumbo-flying-elephant-hero-sq-new-again_tcm1871-114852.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-dumbo-flying-elephant-hero-new_tcm1871-114851.jpg",
+      "title": "Dumbo the Flying Elephant",
+      "bytes": 250939,
+      "contentType": "image/jpeg"
+    },
+    "attFantasiaCarousel": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-fantasia-carousel-b-new-sq_tcm1871-239287.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-fantasia-carousel-b-new_tcm1871-239286.jpg",
+      "title": "Fantasia Carousel",
+      "bytes": 419607,
+      "contentType": "image/jpeg"
+    },
+    "attMarvelUniverse": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-sq-new-again_tcm1871-115154.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-new_tcm1871-115153.jpg",
+      "title": "Marvel Universe",
+      "bytes": 309194,
+      "contentType": "image/jpeg"
+    },
+    "attBuzzLightyearPlanetRescue": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-buzz-lightyear-new-c-sq-260304-v2_tcm1871-287612.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-buzz-lightyear-new-c_tcm1871-239235.jpg",
+      "title": "Buzz Lightyear Planet Rescue",
+      "bytes": 488117,
+      "contentType": "image/jpeg"
+    },
+    "attJetPacks": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-jet-packs-new-c-sq_tcm1871-239065.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-jet-packs-new-c_tcm1871-239064.jpg",
+      "title": "Jet Packs",
+      "bytes": 482195,
+      "contentType": "image/jpeg"
+    },
+    "attPixarAdventurousJourneyTomorrowland": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pixar-adventurous-journey-cover-sq-260305_tcm1871-287639.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pixar-adventurous-journey-cover-hero_tcm1871-281323.jpg",
+      "title": "Pixar Adventurous Journey",
+      "bytes": 469608,
+      "contentType": "image/jpeg"
+    },
+    "attStitchEncounter": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-stitch-encounter-hero-sq_tcm1871-102758.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-stitch-encounter-hero_tcm1871-102757.jpg",
+      "title": "Space Chat With Stitch",
+      "bytes": 144338,
+      "contentType": "image/jpeg"
+    },
+    "attTronLightcyclePowerRun": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-lightcycle-power-run-hero-sq-new-again_tcm1871-114866.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-lightcycle-power-run-hero-new_tcm1871-114865.jpg",
+      "title": "TRON Lightcycle Power Run – Presented by Chevrolet",
+      "bytes": 288681,
+      "contentType": "image/jpeg"
+    },
+    "attTronRealm": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-realm-new-b-sq_tcm1871-238912.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-realm-new-b_tcm1871-238911.jpg",
+      "title": "TRON Realm, Chevrolet Digital Challenge",
+      "bytes": 431131,
+      "contentType": "image/jpeg"
+    },
+    "attAdventuresWinniePooh": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c-sq_tcm1871-239131.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c_tcm1871-239130.jpg",
+      "title": "The Many Adventures of Winnie the Pooh",
+      "bytes": 495679,
+      "contentType": "image/jpeg"
+    },
+    "attAliceWonderlandMaze": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b-sq_tcm1871-239484.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b_tcm1871-239483.jpg",
+      "title": "Alice in Wonderland Maze",
+      "bytes": 403848,
+      "contentType": "image/jpeg"
+    },
+    "attHunnyPotSpin": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hunny-pot-spin-new-b-sq_tcm1871-239379.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hunny-pot-spin-new-b_tcm1871-239377.jpg",
+      "title": "Hunny Pot Spin",
+      "bytes": 455023,
+      "contentType": "image/jpeg"
+    },
+    "attOnceUponTimeAdventure": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-once-upon-time-adventure-hero-sq-new-again_tcm1871-115131.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-once-upon-time-adventure-hero-new_tcm1871-115130.jpg",
+      "title": "“Once Upon a Time” Adventure",
+      "bytes": 204691,
+      "contentType": "image/jpeg"
+    },
+    "attPeterPansFlight": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-hero-sq-new-again2-260304-v2_tcm1871-287616.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-new-e_tcm1871-239155.jpg",
+      "title": "Peter Pan’s Flight",
+      "bytes": 207715,
+      "contentType": "image/jpeg"
+    },
+    "attSevenDwarfsMineTrain": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-seven-dwarfs-mine-train-hero-sq-new_tcm1871-114855.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-seven-dwarfs-mine-train-hero-new_tcm1871-114854.jpg",
+      "title": "Seven Dwarfs Mine Train",
+      "bytes": 87943,
+      "contentType": "image/jpeg"
+    },
+    "attVoyageToCrystalGrotto": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-hero-sq-new-261026_tcm1871-294839.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-crystal-grotto-new-b_tcm1871-239408.JPG",
+      "title": "Voyage to the Crystal Grotto",
+      "bytes": 1230144,
+      "contentType": "image/jpeg"
+    },
+    "attChallengeTrails": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c-sq_tcm1871-239014.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c_tcm1871-239013.jpg",
+      "title": "Challenge Trails at Camp Discovery",
+      "bytes": 470934,
+      "contentType": "image/jpeg"
+    },
+    "attJuniorExplorersCamp": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-junior-explorers-camp-hero-sq_tcm1871-280416.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-junior-explorers-camp-hero_tcm1871-280415.jpg",
+      "title": "Junior Explorers Camp",
+      "bytes": 524159,
+      "contentType": "image/jpeg"
+    },
+    "attRoaringRapids": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-c-sq_tcm1871-239550.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-d_tcm1871-239551.jpg",
+      "title": "Roaring Rapids",
+      "bytes": 490289,
+      "contentType": "image/jpeg"
+    },
+    "attSoaringOverHorizon": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-soaring-hero-sq-new-again_tcm1871-114876.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-soaring-hero-new_tcm1871-114877.jpg",
+      "title": "Soaring Over the Horizon",
+      "bytes": 375118,
+      "contentType": "image/jpeg"
+    },
+    "attVistaTrail": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-vista-trail-hero-sq_tcm1871-116277.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-vista-trail-hero_tcm1871-116276.jpg",
+      "title": "Vista Trail at Camp Discovery",
+      "bytes": 116489,
+      "contentType": "image/jpeg"
+    },
+    "attExplorerCanoes": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-explorer-canoes-hero-sq-new-again2_tcm1871-114837.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-explorer-canoes-hero-new_tcm1871-114838.jpg",
+      "title": "Explorer Canoes",
+      "bytes": 286932,
+      "contentType": "image/jpeg"
+    },
+    "attPiratesOfCaribbean": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-sq-new-again_tcm1871-115032.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-new_tcm1871-115031.jpg",
+      "title": "Pirates of the Caribbean Battle for the Sunken Treasure",
+      "bytes": 240864,
+      "contentType": "image/jpeg"
+    },
+    "attShipwreckShore": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sshipwreck-shore-new-e-sq_tcm1871-239527.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-shipwreck-shore-new-e_tcm1871-239533.jpg",
+      "title": "Shipwreck Shore",
+      "bytes": 470654,
+      "contentType": "image/jpeg"
+    },
+    "attSirensRevenge": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-b-sq_tcm1871-239351.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-hero-new_tcm1871-114858.jpg",
+      "title": "Siren's Revenge",
+      "bytes": 465932,
+      "contentType": "image/jpeg"
+    },
+    "attRexsRCRacer": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-rexs-racer-new-c-sq_tcm1871-239338.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-rexs-racer-new-c_tcm1871-239337.jpg",
+      "title": "Rex’s Racer",
+      "bytes": 435419,
+      "contentType": "image/jpeg"
+    },
+    "attSlinkyDogSpin": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-slinky-dog-spin-sq-v2_tcm1871-151651.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-slinky-dog-spin-hero-v2_tcm1871-151650.jpg",
+      "title": "Slinky Dog Spin",
+      "bytes": 847138,
+      "contentType": "image/jpeg"
+    },
+    "attWoodysRoundUp": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-woody-new-b-sq_tcm1871-239512.jpg",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-woody-new-b_tcm1871-239513.jpg",
+      "title": "Woody’s Roundup",
+      "bytes": 406839,
+      "contentType": "image/jpeg"
+    },
+    "attZootopiaHotPursuit": {
+      "square": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-sq-20260304-v2_tcm1871-287618.png",
+      "hero": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-hero-20240104_tcm1871-269561.jpg",
+      "title": "Zootopia: Hot Pursuit",
+      "bytes": 355344,
+      "contentType": "image/png"
+    }
+  }
+}

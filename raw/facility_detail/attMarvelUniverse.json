@@ -1,0 +1,273 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 13:43:43"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 13:43:43"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "Marvel Universe",
+      "entityId": "attMarvelUniverse",
+      "entityType": "Attraction",
+      "urlFriendlyId": "marvel-universe",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Attraction",
+        "urlFriendlyId": "attraction",
+        "value": "Attraction"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/en/experience/attraction/marvel-universe",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-sq-new-again_tcm1871-115154.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-new_tcm1871-115153.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-new_tcm1871-115153.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-new_tcm1871-115153.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-sq-new-again_tcm1871-115154.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.1485217753065",
+            "longitude": "121.665393253818"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/en/attractions/marvel-universe/",
+      "policies": [
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "Supervise children at all times. Children under age 7 years must be accompanied by a person age 16 years or older.",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "Delve deep inside the Marvel Universe—and you just might encounter some of your favorite Marvel Super Heroes!",
+        "shortDescriptionMobileText": "Welcome to Marvel Universe! Capture a selfie with some Marvel Super Heroes, like Captain America, Spider-Man and Iron Man.<br/>\nBesides, Virtually try on an Iron Man suit yourself! Learn how to control the Repulsors, then fire away at Hulk, and at an army of enemies to protect the city!\n<br/>\n*Characters appear occasionally throughout the day"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "Inside the Marvel Cinematic Universe",
+              "text": "<p>Discover the expansive universe that houses some of the world’s greatest Super Heroes! All of these brave champions occupy the stratosphere of the Marvel Cinematic Universe—and have their roots in Marvel Comics.</p>\n<p>Here are some of the films they star in, which are all part of the Marvel Cinematic Universe:</p>\n<ul>\n<li><em>Marvel’s Iron Man</em></li>\n<li><em>Marvel’s Iron Man 2</em></li>\n<li><em>Marvel’s Thor</em></li>\n<li><em>Marvel’s Captain America: The First Avenger</em></li>\n<li><em>Marvel’s The Avengers</em></li>\n<li><em>Marvel’s Iron Man 3</em></li>\n<li><em>Marvel’s Thor: The Dark World</em></li>\n<li><em>Marvel’s Captain America: The Winter Soldier</em></li>\n<li><em>Marvel’s Guardians of the Galaxy</em></li>\n<li><em>Marvel’s Avengers: Age of Ultron</em></li>\n<li><em>Marvel’s Ant-Man</em></li>\n<li><em>Marvel’s Captain America: Civil War</em></li>\n<li><em>Marvel’s Avengers: Infinity War</em></li>\n</ul>\n<p>The Marvel Cinematic Universe roster will also introduce some new movies that are currently being filmed or are in development. The entire slate of new films will be in movie theaters for you to see!</p>\n<p>Explore this collection of extraordinary entertainment when you visit the Marvel Universe at Shanghai Disneyland!</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-02-new_tcm1871-115156.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "attMarvelUniverse;entityType=attraction;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "Shanghai Disneyland",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "Shanghai Disney Resort"
+        },
+        "land": {
+          "id": "landGardensOfImagination",
+          "name": "Gardens of Imagination",
+          "urlFriendlyId": "gardens-imagination"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "indoor",
+              "value": "Indoor"
+            },
+            {
+              "urlFriendlyId": "interactive",
+              "value": "Interactive"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "All Ages"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "Tweens"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "Teens"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "Preschoolers"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "Adults"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "Kids"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "May Remain in Wheelchair",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/remain-in-wheelchair_tcm1871-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "height": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/list-icon-height_tcm1871-281395.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "any-height",
+              "value": "Any Height"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Attraction",
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "AllFuns"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "gardens-imagination",
+              "value": "Gardens of Imagination"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "Shanghai Disneyland"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "attraction",
+              "value": "Attraction"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "9:30&20:45",
+        "statusCode": "STNDOPR",
+        "separator": " to ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

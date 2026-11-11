@@ -484,27 +484,42 @@
 
     var prefs2 = getPrefs();
 
-    function rowHtml(row, i) {
-      var tags = '';
-      if ((prefs2.mustDo || []).indexOf(row.id) >= 0) tags += '<span class="tag must">必玩</span>';
-      if (row.premierAccess) tags += '<span class="tag premier">尊享</span>';
-      if ((prefs2.avoid || []).indexOf(row.id) >= 0) tags += '<span class="tag avoid">避开</span>';
-      if (prefs2.lastAttractionId === row.id) tags += '<span class="tag here">我在这</span>';
-      if ((prefs2.playedIds || []).indexOf(row.id) >= 0) tags += '<span class="tag played">玩过</span>';
+    function pad2(n) { return n < 10 ? '0' + n : '' + n; }
 
-      return '<div class="row ' + (row.excluded ? 'row-off' : '') + '" data-act="row" data-id="' + esc(row.id) + '">' +
-        '<div class="row-rank ' + (i < 3 && !row.excluded ? 'top' : '') + '">' + (i + 1) + '</div>' +
-        '<div class="row-main"><div class="row-title"><span class="row-name">' + esc(row.name) + '</span>' + tags + '</div>' +
-        '<span class="row-sub">' + (state.grouped ? '' : esc(row.land) + ' · ') + esc(row.categoryText) + (row.heightCm ? ' · ' + esc(row.heightCm) + 'cm 以上' : '') + '</span>' +
-        (row.excluded ? '<span class="row-excluded">' + esc(row.excludedText) + '</span>' :
-          (typeof row.walkMinutes === 'number' ? '<span class="row-walk">步行 ' + esc(row.walkMinutes) + ' 分钟</span>' : '')) +
+    function dateFull(iso) {
+      var d = fmt.toDate(iso);
+      if (!d) return '--';
+      var b = new Date(d.getTime() + 8 * 3600 * 1000);
+      return b.getUTCFullYear() + '年' + (b.getUTCMonth() + 1) + '月' + b.getUTCDate() + '日 ' +
+        pad2(b.getUTCHours()) + ':' + pad2(b.getUTCMinutes()) + ':' + pad2(b.getUTCSeconds());
+    }
+
+    // 排队时间徽标配色（与参考界面一致：绿→浅绿→黄→橙红→红）
+    function waitTone(min) {
+      if (typeof min !== 'number') return 't0';
+      if (min <= 15) return 't1';
+      if (min <= 45) return 't2';
+      if (min <= 70) return 't3';
+      if (min <= 100) return 't4';
+      return 't5';
+    }
+
+    function tileHtml(row) {
+      var img = row.imageUrl || '';
+      var badge = row.closed
+        ? '<span class="wait-pill t0">关闭</span>'
+        : '<span class="wait-pill ' + waitTone(row.waitMinutes) + '">' + (row.waitMinutes === null ? '--' : row.waitMinutes) + '</span>';
+      var star = (prefs2.mustDo || []).indexOf(row.id) >= 0 ? '★ ' : '';
+      return '<div class="tile' + (row.excluded ? ' tile-off' : '') + '" data-act="row" data-id="' + esc(row.id) + '">' +
+        '<div class="tile-img' + (img ? '' : ' noimg') + '"' + (img ? ' style="background-image:url(\'' + esc(img) + '\')"' : '') + '>' +
+        badge + (row.premierAccess ? '<span class="tile-premier">尊享</span>' : '') +
         '</div>' +
-        '<div class="row-right">' +
-        (row.closed ? '<span class="num row-wait closed">—</span>' :
-          '<span class="num row-wait ' + esc(row.waitClass) + '">' + esc(row.waitMinutes) + '</span>') +
-        '<span class="row-wait-unit">' + (row.closed ? '已关闭' : '分钟') + '</span>' +
-        '<span class="row-score">' + (row.excluded ? esc(row.excludedText) : esc(row.scoreText) + ' 分') + '</span>' +
-        '</div></div>';
+        '<div class="tile-name">' + star + esc(row.name) + '</div>' +
+        '</div>';
+    }
+
+    function gridHtml(list) {
+      return '<div class="tile-grid">' + list.map(tileHtml).join('') + '</div>';
     }
 
     var listHtml = '';
@@ -522,19 +537,19 @@
       listHtml = groups.map(function (group) {
         return '<div class="group"><div class="group-head"><span class="group-name">' + esc(group.land) + '</span>' +
           '<span class="group-count">' + group.rows.length + ' 个</span></div>' +
-          group.rows.map(function (row, ri) { return rowHtml(row, ri); }).join('') + '</div>';
+          gridHtml(group.rows) + '</div>';
       }).join('');
     } else {
-      listHtml = '<div class="list">' + rows.map(function (row, ri) { return rowHtml(row, ri); }).join('') + '</div>';
+      listHtml = gridHtml(rows);
     }
 
     return '<div class="page">' +
-      '<div class="topbar"><div><span class="topbar-title">排队榜</span>' +
-      '<span class="topbar-sub">' + esc(stats.statsText) + ' · ' + esc(fmt.relativeUpdated(bundle.updatedAt, bundle.nowMs)) + '</span></div></div>' +
+      '<div class="list-topbar"><button class="refresh-pill" data-act="refresh">↻ 刷新</button>' +
+      '<span class="update-time">更新时间：' + esc(dateFull(bundle.updatedAt)) + '</span></div>' +
       '<div class="sortbar">' + sorts + '</div>' +
       '<div class="groupbar"><button class="group-toggle ' + (state.grouped ? 'on' : '') + '" data-act="group">' +
       (state.grouped ? '按园区分组 ✓' : '按园区分组') + '</button>' +
-      '<span class="groupbar-tip">按主题园区看，同一园区顺路玩</span></div>' +
+      '<span class="groupbar-tip">' + esc(stats.statsText) + '</span></div>' +
       '<div class="forecast-entry card" data-act="forecast">' +
       '<span class="fe-emoji">📉</span>' +
       '<div class="fe-texts"><span class="fe-title">分时预测</span>' +
