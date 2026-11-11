@@ -8,7 +8,8 @@ var recommendModule = require('../../shared/recommend.js');
 var SORTS = [
   { key: 'score', label: '综合评分' },
   { key: 'wait', label: '排队最短' },
-  { key: 'walk', label: '步行最近' }
+  { key: 'walk', label: '步行最近' },
+  { key: 'highlights', label: '八大必玩' }
 ];
 
 Page({
@@ -20,7 +21,6 @@ Page({
     grouped: false,
     rows: [],
     groups: [],
-    highlightsRows: [],
     statsText: '',
     updatedText: '',
     hintText: '点任意一项：设为我的位置 / 加入必玩 / 避开它'
@@ -65,16 +65,9 @@ Page({
     }
     this.rows = rows;
     var stats = rec.parkStats(bundle);
-    var highlights = [];
-    try {
-      highlights = rec.highlightsList(bundle, prefs, { recModule: recommendModule });
-    } catch (e) {
-      highlights = [];
-    }
     this.setData({
       statsText: stats.statsText,
-      updatedText: format.relativeUpdated(bundle.updatedAt, bundle.nowMs),
-      highlightsRows: highlights
+      updatedText: format.relativeUpdated(bundle.updatedAt, bundle.nowMs)
     });
     this.applySort();
   },
@@ -82,6 +75,13 @@ Page({
   applySort: function () {
     var rows = (this.rows || []).slice();
     var key = this.data.sortKey;
+
+    // 「八大必玩」是筛选选项：只留八大必玩，并按排队升序
+    if (key === 'highlights') {
+      var hlIds = (this.bundle && this.bundle.catalog && this.bundle.catalog.highlights) || [];
+      rows = rows.filter(function (row) { return hlIds.indexOf(row.id) >= 0; });
+      key = 'wait';
+    }
 
     function isExcluded(row) {
       return !!row.excluded;
@@ -144,15 +144,6 @@ Page({
   // 分时预测：普通页，navigateTo 进入
   goForecast: function () {
     wx.navigateTo({ url: '/pages/forecast/forecast' });
-  },
-
-  goWatchlist: function () {
-    wx.switchTab({ url: '/pages/watchlist/watchlist' });
-  },
-
-  // 八大必玩格子：点一下和点榜单行一样，弹出操作菜单
-  onTapHighlight: function (e) {
-    this.onTapRow(e);
   },
 
   onSortTap: function (e) {

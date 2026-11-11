@@ -462,25 +462,21 @@
   function htmlRank() {
     var prefs = getPrefs();
     var bundle = currentBundle();
-    var rows = sortRows(rec.rankList(bundle, prefs, { recModule: recModule }), state.sortKey);
+    var rows = rec.rankList(bundle, prefs, { recModule: recModule });
+    if (state.sortKey === 'highlights') {
+      var hlIds = bundle.catalog.highlights || [];
+      rows = rows.filter(function (row) { return hlIds.indexOf(row.id) >= 0; });
+      rows = sortRows(rows, 'wait');
+    } else {
+      rows = sortRows(rows, state.sortKey);
+    }
     var stats = rec.parkStats(bundle);
-
-    var highlights = rec.highlightsList(bundle, prefs);
-    var highChips = highlights.map(function (row) {
-      var waitText = row.closed ? '关闭' : (row.waitMinutes === null ? '--' : row.waitMinutes + "'");
-      return '<div class="hc-item" data-act="row" data-id="' + esc(row.id) + '">' +
-        '<span class="hc-name">' + esc(row.name) + '</span>' +
-        '<span class="hc-wait ' + esc(row.waitClass) + '">' + waitText + '</span></div>';
-    }).join('');
-    var highCard = highlights.length
-      ? '<div class="card rank-high"><div class="high-head"><span class="card-title">🎢 八大必玩 · 现在排队</span>' +
-        '<span class="high-link" data-act="watchlist">去清单 ›</span></div><div class="hc-grid">' + highChips + '</div></div>'
-      : '';
 
     var sorts = [
       { key: 'score', label: '综合评分' },
       { key: 'wait', label: '排队最短' },
-      { key: 'walk', label: '步行最近' }
+      { key: 'walk', label: '步行最近' },
+      { key: 'highlights', label: '八大必玩' }
     ].map(function (item) {
       return '<button class="sort-item ' + (state.sortKey === item.key ? 'active' : '') +
         '" data-act="sort" data-key="' + item.key + '">' + item.label + '</button>';
@@ -535,7 +531,6 @@
     return '<div class="page">' +
       '<div class="topbar"><div><span class="topbar-title">排队榜</span>' +
       '<span class="topbar-sub">' + esc(stats.statsText) + ' · ' + esc(fmt.relativeUpdated(bundle.updatedAt, bundle.nowMs)) + '</span></div></div>' +
-      highCard +
       '<div class="sortbar">' + sorts + '</div>' +
       '<div class="groupbar"><button class="group-toggle ' + (state.grouped ? 'on' : '') + '" data-act="group">' +
       (state.grouped ? '按园区分组 ✓' : '按园区分组') + '</button>' +
