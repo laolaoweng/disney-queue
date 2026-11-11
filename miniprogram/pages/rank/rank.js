@@ -36,6 +36,72 @@ function waitTone(min, closed) {
   return 't5';
 }
 
+
+function heatLevelOf(heat) {
+  if (heat < 30) return { level: '清闲', tone: 't1' };
+  if (heat < 45) return { level: '适中', tone: 't2' };
+  if (heat < 60) return { level: '偏挤', tone: 't3' };
+  return { level: '拥挤', tone: 't4' };
+}
+
+function hhmmMinutes(text) {
+  var m = /^(\d{1,2}):(\d{2})$/.exec(String(text || ''));
+  if (!m) return null;
+  return parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+}
+
+function rankHero(bundle) {
+  var waits = (bundle && bundle.waits) || [];
+  var open = [];
+  for (var i = 0; i < waits.length; i++) {
+    var w = waits[i];
+    if (w && w.isOpen && typeof w.waitMinutes === 'number') open.push(w.waitMinutes);
+  }
+  var avg = open.length
+    ? Math.round(open.reduce(function (a, b) { return a + b; }, 0) / open.length)
+    : 0;
+  var heat = Math.max(0, Math.min(100, Math.round(avg / 60 * 100)));
+  var lv = heatLevelOf(heat);
+
+  var nowMs = bundle && bundle.nowMs ? bundle.nowMs : Date.now();
+  var bj = new Date(nowMs + 8 * 3600 * 1000);
+  var nowMin = bj.getUTCHours() * 60 + bj.getUTCMinutes();
+
+  var shows = (bundle && bundle.shows && bundle.shows.shows) || [];
+  var show = null;
+  for (var s = 0; s < shows.length; s++) {
+    if ((shows[s].name || '').indexOf('奇梦之光') >= 0) { show = shows[s]; break; }
+  }
+  var showTimes = '今日暂无场次';
+  var showMeta = '查看全部演出 ›';
+  if (show) {
+    var times = (show.times || []).slice().sort();
+    if (times.length) {
+      showTimes = times.join(' · ');
+      var next = null;
+      for (var t = 0; t < times.length; t++) {
+        var mm = hhmmMinutes(times[t]);
+        if (mm !== null && mm >= nowMin) { next = { t: times[t], m: mm }; break; }
+      }
+      showMeta = next
+        ? next.t + ' 开演 · ' + (next.m - nowMin) + ' 分后'
+        : '今日场次已结束';
+    } else {
+      showTimes = '今日停演';
+    }
+  }
+
+  return {
+    heat: heat,
+    heatLevel: lv.level,
+    heatTone: lv.tone,
+    avgWaitText: avg,
+    openCount: open.length,
+    showTimes: showTimes,
+    showMeta: showMeta
+  };
+}
+
 Page({
   data: {
     loading: true,
@@ -48,7 +114,14 @@ Page({
     statsText: '',
     updatedText: '',
     updatedFull: '',
-    hintText: '点图标看历史等候时间与导航；长按可加入必玩/避开'
+    hintText: '点图标看历史等候时间与导航；长按可加入必玩/避开',
+    heat: 0,
+    heatLevel: '清闲',
+    heatTone: 't1',
+    avgWaitText: 0,
+    openCount: 0,
+    showTimes: '今日暂无场次',
+    showMeta: '查看全部演出 ›'
   },
 
   onLoad: function () {
@@ -94,10 +167,18 @@ Page({
     }
     this.rows = rows;
     var stats = rec.parkStats(bundle);
+    var hero = rankHero(bundle);
     this.setData({
       statsText: stats.statsText,
       updatedText: format.relativeUpdated(bundle.updatedAt, bundle.nowMs),
-      updatedFull: dateFull(bundle.updatedAt)
+      updatedFull: dateFull(bundle.updatedAt),
+      heat: hero.heat,
+      heatLevel: hero.heatLevel,
+      heatTone: hero.heatTone,
+      avgWaitText: hero.avgWaitText,
+      openCount: hero.openCount,
+      showTimes: hero.showTimes,
+      showMeta: hero.showMeta
     });
     this.applySort();
   },
@@ -181,6 +262,11 @@ Page({
   // 分时预测：普通页，navigateTo 进入
   goForecast: function () {
     wx.navigateTo({ url: '/pages/forecast/forecast' });
+  },
+
+  // 顶部奇梦之光卡片 → 演出 tab
+  goShows: function () {
+    wx.switchTab({ url: '/pages/shows/shows' });
   },
 
   // 点图标 → 历史等候时间详情页（导航按钮也移到那里）

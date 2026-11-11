@@ -519,6 +519,50 @@
     return copy;
   }
 
+  function showTimesOf(bundle, keyword) {
+    var shows = (bundle.shows && bundle.shows.shows) || [];
+    for (var i = 0; i < shows.length; i++) {
+      if ((shows[i].name || '').indexOf(keyword) >= 0) return shows[i];
+    }
+    return null;
+  }
+
+  function rankHero(bundle, crowd) {
+    var show = showTimesOf(bundle, '奇梦之光');
+    var nowMin = nowChinaMinutes(bundle);
+    var showLine = '今日暂无场次';
+    var showMeta = '查看全部演出 ›';
+    if (show) {
+      var times = (show.times || []).slice().sort();
+      if (times.length) {
+        var upcoming = null;
+        for (var ti = 0; ti < times.length; ti++) {
+          if (hhmmMinutes(times[ti]) >= nowMin) { upcoming = times[ti]; break; }
+        }
+        showLine = times.join(' · ');
+        if (upcoming) showMeta = upcoming + ' 开演 · ' + (hhmmMinutes(upcoming) - nowMin) + ' 分后';
+        else showMeta = '今日场次已结束';
+      } else {
+        showLine = '今日停演';
+      }
+    }
+    return '<div class="rank-hero">' +
+      '<div class="rh-top">' +
+        '<div class="rh-metric"><span class="rh-label">乐园热度</span>' +
+          '<span class="rh-num">' + crowd.heat + '</span>' +
+          '<span class="rh-pill ' + crowd.tone + '">' + crowd.level + '</span></div>' +
+        '<div class="rh-metric"><span class="rh-label">平均排队</span><span class="rh-num2">' + crowd.avgWait + '<i>分</i></span></div>' +
+        '<div class="rh-metric"><span class="rh-label">开放项目</span><span class="rh-num2">' + crowd.openCount + '<i>个</i></span></div>' +
+      '</div>' +
+      (crowd.bars ? '<div class="rh-bars">' + crowd.bars + '</div>' : '') +
+      '<div class="rh-show" data-act="shows">' +
+        '<span class="rh-show-name">奇梦之光幻影秀</span>' +
+        '<span class="rh-show-time">' + esc(showLine) + '</span>' +
+        '<span class="rh-show-meta">' + esc(showMeta) + '</span>' +
+      '</div>' +
+      '</div>';
+  }
+
   function htmlRank() {
     var prefs = getPrefs();
     var bundle = currentBundle();
@@ -531,6 +575,9 @@
       rows = sortRows(rows, state.sortKey);
     }
     var stats = rec.parkStats(bundle);
+
+    var crowd = crowdInfo(bundle);
+    var heroHtml = rankHero(bundle, crowd);
 
     var sorts = [
       { key: 'wait-desc', label: '排队最长' },
@@ -607,6 +654,7 @@
     return '<div class="page">' +
       '<div class="list-topbar"><button class="refresh-pill" data-act="refresh">↻ 刷新</button>' +
       '<span class="update-time">更新时间：' + esc(dateFull(bundle.updatedAt)) + '</span></div>' +
+      heroHtml +
       '<div class="sortbar">' + sorts + '</div>' +
       '<div class="groupbar"><button class="group-toggle ' + (state.grouped ? 'on' : '') + '" data-act="group">' +
       (state.grouped ? '按园区分组 ✓' : '按园区分组') + '</button>' +
@@ -617,7 +665,7 @@
       '<span class="fe-sub">各项目几点人最少，一眼看出最空时段</span></div>' +
       '<span class="fe-arrow">›</span></div>' +
       listHtml +
-      '<div class="footnote">点任意一项：设为我的位置 / 加入必玩 / 避开它 / 标记已玩 / 导航过去</div>' +
+      '<div class="footnote">点图标看历史等候时间与导航；长按弹菜单（必玩/避开/已玩/我在这里）</div>' +
       modalHtml(rows) +
       '</div>';
   }
@@ -1437,7 +1485,7 @@
     var area = pts.length > 1
       ? 'M' + pts[0][0].toFixed(1) + ' ' + Y(0).toFixed(1) + ' ' + line.replace(/^M/, 'L') + ' L' + pts[pts.length - 1][0].toFixed(1) + ' ' + Y(0).toFixed(1) + ' Z'
       : '';
-    var dots = pts.map(function (p) { return '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="2.4" fill="#1f6fe5"/>'; }).join('');
+    var dots = pts.map(function (p) { return '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="3" fill="#1a63d6" stroke="#ffffff" stroke-width="1.2"/>'; }).join('');
     var avgLine = (typeof avg === 'number')
       ? '<line x1="' + PL + '" y1="' + Y(avg).toFixed(1) + '" x2="' + (W - PR) + '" y2="' + Y(avg).toFixed(1) + '" stroke="#0d7a52" stroke-width="1.2" stroke-dasharray="4 4"/>' +
         '<text x="' + (W - PR) + '" y="' + (Y(avg) - 4).toFixed(1) + '" font-size="8" fill="#0d7a52" text-anchor="end">日均 ' + avg + ' 分</text>'
@@ -1449,9 +1497,9 @@
 
     return '<svg class="hist-chart" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">' +
       '<defs><linearGradient id="histFill" x1="0" y1="0" x2="0" y2="1">' +
-      '<stop offset="0%" stop-color="rgba(47,124,246,.28)"/><stop offset="100%" stop-color="rgba(47,124,246,.02)"/>' +
+      '<stop offset="0%" stop-color="rgba(26,99,214,.34)"/><stop offset="100%" stop-color="rgba(26,99,214,.04)"/>' +
       '</linearGradient></defs>' + grid + (area ? '<path d="' + area + '" fill="url(#histFill)"/>' : '') +
-      (pts.length ? '<path d="' + line + '" fill="none" stroke="#1f6fe5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>' : '') +
+      (pts.length ? '<path d="' + line + '" fill="none" stroke="#1a63d6" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>' : '') +
       dots + avgLine + labels + '</svg>';
   }
 
@@ -1476,6 +1524,14 @@
 
     var hist = histEntry(attr.id);
     var histDays = hist && hist.days ? hist.days : {};
+    var gapText = '';
+    var histKeys = Object.keys(histDays).sort();
+    if (histKeys.length >= 2) {
+      var first = new Date(histKeys[0] + 'T00:00:00+08:00').getTime();
+      var last = new Date(histKeys[histKeys.length - 1] + 'T00:00:00+08:00').getTime();
+      var span = Math.round((last - first) / 86400000) + 1;
+      if (span > histKeys.length) gapText = '中间有 ' + (span - histKeys.length) + ' 天没采集到数据';
+    }
     var allDays = (bundle.history && bundle.history.days) || Object.keys(histDays).sort();
     var dayKeys = Object.keys(histDays).sort();
     if (state.detailDate && dayKeys.indexOf(state.detailDate) < 0) state.detailDate = null;
@@ -1543,6 +1599,7 @@
         '<div class="hist-head"><span class="hist-title">历史等候时间</span>' +
           '<span class="hist-sub">' + (dayKeys.length ? dayKeys.length + ' 天有数据' : '暂无历史数据') + '</span></div>' +
         (chips ? '<div class="daychips">' + chips + '</div>' : '') +
+        (gapText ? '<div class="hist-gap">' + esc(gapText) + '（采集只在运行的日子有数据）</div>' : '') +
         (day
           ? '<div class="hist-day-title">' + esc(lab.short) + ' ' + esc(lab.weekday) + '</div>' + chart +
             '<div class="hist-foot">' +
@@ -1665,6 +1722,14 @@
     state.menuId = null;
     render();
   }
+
+  screenEl.addEventListener('contextmenu', function (event) {
+    var tile = event.target.closest('.tile');
+    if (!tile || state.view !== 'rank') return;
+    event.preventDefault();
+    state.menuId = tile.getAttribute('data-id');
+    render();
+  });
 
   screenEl.addEventListener('click', function (event) {
     var target = event.target.closest('[data-act]');

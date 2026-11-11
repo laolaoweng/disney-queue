@@ -2146,3 +2146,46 @@ body {
 .hist-foot { margin-top: 4px; font-size: 11px; color: #5a6a82; }
 .hist-foot b { color: #164f9e; }
 .hist-empty { padding: 26px 0; text-align: center; color: #7c8aa3; font-size: 13px; }
+
+/* ---------- 排队榜顶部：乐园热度 + 奇梦之光 ---------- */
+.rank-hero {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 14px 14px 12px;
+  box-shadow: 0 8px 22px rgba(31, 88, 160, .08);
+  margin-bottom: 4px;
+}
+.rh-top { display: flex; align-items: flex-end; gap: 10px; }
+.rh-metric { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.rh-label { font-size: 11px; color: #5a6a82; }
+.rh-num { font-size: 26px; font-weight: 800; color: #16233a; line-height: 1; }
+.rh-num2 { font-size: 20px; font-weight: 800; color: #16233a; line-height: 1; }
+.rh-num2 i { font-size: 10px; font-style: normal; color: #7c8aa3; margin-left: 2px; }
+.rh-pill {
+  align-self: flex-start;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(47, 124, 246, .12);
+  color: #164f9e;
+}
+.rh-pill.t1 { background: rgba(13, 122, 82, .12); color: #0d7a52; }
+.rh-pill.t2 { background: rgba(47, 124, 246, .12); color: #164f9e; }
+.rh-pill.t3 { background: rgba(150, 99, 10, .14); color: #96630a; }
+.rh-pill.t4 { background: rgba(176, 74, 12, .14); color: #b04a0c; }
+.rh-bars { display: flex; align-items: flex-end; gap: 3px; height: 34px; margin-top: 10px; }
+.rh-bars .crowd-bar { flex: 1; background: linear-gradient(180deg, #7fb0ff, #2f7cf6); border-radius: 3px 3px 0 0; opacity: .85; }
+.rh-show {
+  margin-top: 12px;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #1f6fe5, #164f9e);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: #fff;
+}
+.rh-show-name { font-size: 13px; font-weight: 700; }
+.rh-show-time { font-size: 15px; font-weight: 800; letter-spacing: .5px; }
+.rh-show-meta { font-size: 10px; opacity: .8; }
+.hist-gap { margin-top: 6px; font-size: 10.5px; color: #96630a; }

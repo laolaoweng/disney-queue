@@ -4,6 +4,29 @@
     <text class="update-time">更新时间：{{updatedFull}}</text>
   </view>
 
+  <view class="rank-hero card">
+    <view class="rh-top">
+      <view class="rh-metric">
+        <text class="rh-label">乐园热度</text>
+        <text class="rh-num">{{heat}}</text>
+        <text class="rh-pill {{heatTone}}">{{heatLevel}}</text>
+      </view>
+      <view class="rh-metric">
+        <text class="rh-label">平均排队</text>
+        <text class="rh-num2">{{avgWaitText}}<text class="rh-unit">分</text></text>
+      </view>
+      <view class="rh-metric">
+        <text class="rh-label">开放项目</text>
+        <text class="rh-num2">{{openCount}}<text class="rh-unit">个</text></text>
+      </view>
+    </view>
+    <view class="rh-show" bindtap="goShows">
+      <text class="rh-show-name">奇梦之光幻影秀</text>
+      <text class="rh-show-time">{{showTimes}}</text>
+      <text class="rh-show-meta">{{showMeta}}</text>
+    </view>
+  </view>
+
   <view class="sortbar">
     <view
       wx:for="{{sorts}}"

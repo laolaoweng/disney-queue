@@ -389,3 +389,37 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/* 排队榜顶部：乐园热度 + 奇梦之光 */
+.rank-hero { padding: 26rpx 26rpx 24rpx; margin-bottom: 20rpx; }
+.rh-top { display: flex; align-items: flex-end; gap: 18rpx; }
+.rh-metric { flex: 1; display: flex; flex-direction: column; gap: 8rpx; }
+.rh-label { font-size: 22rpx; color: #5a6a82; }
+.rh-num { font-size: 52rpx; font-weight: 800; color: #16233a; line-height: 1; }
+.rh-num2 { font-size: 40rpx; font-weight: 800; color: #16233a; line-height: 1; }
+.rh-unit { font-size: 20rpx; font-weight: 400; color: #7c8aa3; margin-left: 4rpx; }
+.rh-pill {
+  align-self: flex-start;
+  font-size: 20rpx;
+  padding: 4rpx 14rpx;
+  border-radius: 999rpx;
+  background: rgba(47, 124, 246, .12);
+  color: #164f9e;
+}
+.rh-pill.t1 { background: rgba(13, 122, 82, .12); color: #0d7a52; }
+.rh-pill.t2 { background: rgba(47, 124, 246, .12); color: #164f9e; }
+.rh-pill.t3 { background: rgba(150, 99, 10, .14); color: #96630a; }
+.rh-pill.t4 { background: rgba(176, 74, 12, .14); color: #b04a0c; }
+.rh-show {
+  margin-top: 22rpx;
+  border-radius: 22rpx;
+  padding: 20rpx 24rpx;
+  background: linear-gradient(135deg, #1f6fe5, #164f9e);
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+  color: #ffffff;
+}
+.rh-show-name { font-size: 26rpx; font-weight: 700; }
+.rh-show-time { font-size: 30rpx; font-weight: 800; letter-spacing: 1rpx; }
+.rh-show-meta { font-size: 20rpx; opacity: .8; }

@@ -650,6 +650,27 @@ check('小程序演出页有 全部/演出/见面会 筛选', () => {
   assert(/见面会/.test(js), 'shows.js 缺少见面会文案');
 });
 
+check('H5 排队榜顶部有热度卡与奇梦之光场次', () => {
+  const js = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
+  assert(/function rankHero\(/.test(js), 'preview.js 缺少 rankHero');
+  assert(/奇梦之光幻影秀/.test(js), 'rankHero 缺少奇梦之光');
+  assert(/rank-hero/.test(js), 'rankHero 未渲染 rank-hero');
+});
+
+check('H5 详情页曲线加粗且提示缺失日期', () => {
+  const js = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
+  assert(/stroke-width="3\.2"/.test(js), '历史曲线未加粗');
+  assert(/hist-gap/.test(js), '缺少缺失日期提示');
+});
+
+check('小程序排队榜顶部有热度卡与奇梦之光', () => {
+  const wxml = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/rank/rank.wxml'), 'utf8');
+  assert(/乐园热度/.test(wxml), 'rank.wxml 缺少乐园热度');
+  assert(/奇梦之光幻影秀/.test(wxml), 'rank.wxml 缺少奇梦之光');
+  const wxss = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/rank/rank.wxss'), 'utf8');
+  assert(/\.rank-hero/.test(wxss), 'rank.wxss 缺少 rank-hero 样式');
+});
+
 console.log('\n==== ' + pass + ' passed, ' + failures.length + ' failed ====');
 if (failures.length) {
   console.log('\n失败明细:');
