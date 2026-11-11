@@ -62,7 +62,10 @@ export async function onRequest(context) {
   }
 
   const cache = caches.default;
-  const cacheKey = new Request(new URL(CACHE_KEY_PATH, url.origin).toString(), { method: 'GET' });
+  // 按 2 分钟分桶的缓存键：Workers Cache API 对 max-age 的过期处理并不总是可靠，
+  // 用时间桶保证每个窗口最多只有一份缓存，过期逻辑不依赖 Cache-Control。
+  const bucket = Math.floor(Date.now() / (EDGE_TTL_SECONDS * 1000));
+  const cacheKey = new Request(new URL(`${CACHE_KEY_PATH}/${bucket}`, url.origin).toString(), { method: 'GET' });
 
   let response = await cache.match(cacheKey);
   let headerSource = 'edge-cache';
