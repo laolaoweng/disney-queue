@@ -226,7 +226,7 @@ Page({
         '综合评分 ' + item.scoreText + ' 分 · ' + (item.land || '') + ' · ' + item.categoryText,
       showCancel: false,
       confirmText: '知道了',
-      confirmColor: '#2f7cf6'
+      confirmColor: '#164f9e'
     });
   },
 
@@ -246,7 +246,7 @@ Page({
         '\n\n确认后把出发点设为这里，按你的位置重算最优解。',
       confirmText: '现在就去',
       cancelText: '再看看',
-      confirmColor: '#2f7cf6',
+      confirmColor: '#164f9e',
       success: function (res) {
         if (!res.confirm) return;
         store.setLastAttraction(item.id);

@@ -223,7 +223,7 @@ Page({
       content: lines.join('\n'),
       showCancel: false,
       confirmText: '知道了',
-      confirmColor: '#2f7cf6'
+      confirmColor: '#164f9e'
     });
   },
 

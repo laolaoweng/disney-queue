@@ -37,7 +37,7 @@
 
 .sort-item.active {
   background: rgba(47, 124, 246, 0.10);
-  color: #2f7cf6;
+  color: #164f9e;
   font-weight: 600;
 }
 
@@ -70,12 +70,12 @@
   flex-shrink: 0;
   font-size: 24rpx;
   font-weight: 600;
-  color: #8b97aa;
+  color: #5f6f87;
   text-align: center;
 }
 
 .row-rank.top {
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .row-main {
@@ -110,22 +110,22 @@
 
 .tag.must {
   background: rgba(47, 124, 246, 0.12);
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .tag.avoid {
   background: rgba(229, 72, 77, 0.14);
-  color: #e5484d;
+  color: #c9302c;
 }
 
 .tag.premier {
   background: rgba(232, 163, 23, 0.14);
-  color: #e8a317;
+  color: #96630a;
 }
 
 .tag.here {
   background: rgba(47, 124, 246, 0.12);
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .tag.played {
@@ -137,7 +137,7 @@
   display: block;
   margin-top: 8rpx;
   font-size: 22rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -157,7 +157,7 @@
   display: block;
   margin-top: 10rpx;
   font-size: 20rpx;
-  color: #8b97aa;
+  color: #5f6f87;
 }
 
 .row-right {
@@ -176,14 +176,14 @@
   display: block;
   margin-top: 6rpx;
   font-size: 20rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .row-score {
   display: block;
   margin-top: 6rpx;
   font-size: 20rpx;
-  color: #8b97aa;
+  color: #5f6f87;
 }
 
 /* 园区分组 */
@@ -205,14 +205,14 @@
 .group-toggle.on {
   background: rgba(47, 124, 246, 0.10);
   border-color: rgba(47, 124, 246, 0.22);
-  color: #2f7cf6;
+  color: #164f9e;
   font-weight: 600;
 }
 
 .groupbar-tip {
   margin-left: 16rpx;
   font-size: 22rpx;
-  color: #9aa6b8;
+  color: #64748c;
 }
 
 .group {
@@ -240,7 +240,7 @@
 
 .group-count {
   font-size: 22rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 /* ---------- 分时预测入口 ---------- */
@@ -279,7 +279,7 @@
 
 .fe-arrow {
   font-size: 36rpx;
-  color: #2f7cf6;
+  color: #164f9e;
   margin-left: 16rpx;
 }
 
@@ -297,14 +297,14 @@
   border-radius: 999rpx;
   border: 1rpx solid rgba(47, 124, 246, 0.3);
   background: rgba(47, 124, 246, 0.12);
-  color: #2f7cf6;
+  color: #164f9e;
   font-size: 24rpx;
   font-weight: 600;
 }
 
 .update-time {
   font-size: 22rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .tile-grid {
@@ -360,11 +360,11 @@
   background: rgba(22, 35, 58, 0.55);
 }
 
-.wait-pill.t1 { background: #17a673; }
+.wait-pill.t1 { background: #0d7a52; }
 .wait-pill.t2 { background: #5e9c2e; }
 .wait-pill.t3 { background: #c98a12; }
 .wait-pill.t4 { background: #e4702f; }
-.wait-pill.t5 { background: #e5484d; }
+.wait-pill.t5 { background: #c9302c; }
 .wait-pill.t0 { background: rgba(255, 255, 255, 0.88); color: #66748c; font-size: 16rpx; font-weight: 600; }
 
 .tile-premier {
@@ -375,7 +375,7 @@
   border-radius: 6rpx;
   font-size: 14rpx;
   color: #ffffff;
-  background: rgba(47, 124, 246, 0.82);
+  background: rgba(22, 35, 58, 0.72);
   border: 1rpx solid rgba(255, 255, 255, 0.45);
 }
 

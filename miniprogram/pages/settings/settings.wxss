@@ -9,18 +9,18 @@
   margin-left: 10rpx;
   font-size: 20rpx;
   font-weight: 400;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .hint {
   margin-top: 16rpx;
   font-size: 22rpx;
   line-height: 1.5;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .hint.warn {
-  color: #e8a317;
+  color: #96630a;
 }
 
 /* 同行类型 2x2 */
@@ -53,7 +53,7 @@
 }
 
 .party.on .party-label {
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .party-desc {
@@ -61,7 +61,7 @@
   margin-top: 8rpx;
   font-size: 20rpx;
   line-height: 1.4;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 /* chips */
@@ -89,7 +89,7 @@
 .chip.on {
   background: rgba(47, 124, 246, 0.12);
   border-color: rgba(47, 124, 246, 0.35);
-  color: #2f7cf6;
+  color: #164f9e;
   font-weight: 600;
 }
 
@@ -113,7 +113,7 @@
 .height-unit {
   margin-left: 14rpx;
   font-size: 24rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 /* picker */
@@ -134,7 +134,7 @@
 
 .picker-arrow {
   font-size: 34rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 /* tabs */
@@ -159,7 +159,7 @@
 
 .tab.on {
   background: rgba(47, 124, 246, 0.12);
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .tab-count {
@@ -196,14 +196,14 @@
 }
 
 .attr.on .attr-name {
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .attr-sub {
   display: block;
   margin-top: 6rpx;
   font-size: 20rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -220,7 +220,7 @@
 }
 
 .attr-toggle.on {
-  color: #2f7cf6;
+  color: #164f9e;
   background: rgba(47, 124, 246, 0.12);
 }
 
@@ -263,7 +263,7 @@
   width: 130rpx;
   flex-shrink: 0;
   font-size: 22rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .info-value {
@@ -276,17 +276,17 @@
 .info-value.url {
   word-break: break-all;
   font-size: 20rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .link {
   margin-top: 22rpx;
   font-size: 26rpx;
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .link.danger {
-  color: #e5484d;
+  color: #c9302c;
 }
 
 /* 当前推荐预览 */
@@ -304,7 +304,7 @@
   flex-shrink: 0;
   margin-right: 16rpx;
   font-size: 20rpx;
-  color: #2f7cf6;
+  color: #164f9e;
   letter-spacing: 2rpx;
 }
 
@@ -312,7 +312,7 @@
   flex: 1;
   font-size: 26rpx;
   font-weight: 600;
-  color: #dceaff;
+  color: #16233a;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -322,5 +322,5 @@
   flex-shrink: 0;
   margin-left: 12rpx;
   font-size: 22rpx;
-  color: #2f7cf6;
+  color: #164f9e;
 }

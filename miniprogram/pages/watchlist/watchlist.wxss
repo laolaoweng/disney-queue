@@ -15,7 +15,7 @@
   padding: 16rpx 48rpx;
   border-radius: 999rpx;
   background: rgba(47, 124, 246, 0.12);
-  color: #2f7cf6;
+  color: #164f9e;
   font-size: 26rpx;
 }
 
@@ -65,7 +65,7 @@
   display: block;
   margin-top: 8rpx;
   font-size: 24rpx;
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .sum-badge {
@@ -80,7 +80,7 @@
 .sum-badge-num {
   display: block;
   font-size: 44rpx;
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .sum-badge-label {
@@ -115,7 +115,7 @@
   display: block;
   margin-top: 2rpx;
   font-size: 20rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .sum-summary {
@@ -131,14 +131,14 @@
   padding: 16rpx 20rpx;
   border-radius: 16rpx;
   background: rgba(229, 72, 77, 0.12);
-  color: #e5484d;
+  color: #c9302c;
   font-size: 22rpx;
 }
 
 .sum-warn {
   margin-top: 16rpx;
   font-size: 22rpx;
-  color: #a8781a;
+  color: #96630a;
 }
 
 /* ---------- 区块头 ---------- */
@@ -152,7 +152,7 @@
 }
 
 .section-title { font-size: 28rpx; font-weight: 600; color: #4a5b78; }
-.section-link { font-size: 24rpx; color: #2f7cf6; }
+.section-link { font-size: 24rpx; color: #164f9e; }
 
 /* ---------- 已选列表 ---------- */
 .order-card {
@@ -168,7 +168,7 @@
   text-align: center;
   border-radius: 50%;
   background: rgba(47, 124, 246, 0.10);
-  color: #2f7cf6;
+  color: #164f9e;
   font-size: 24rpx;
   font-weight: 700;
   margin-right: 20rpx;
@@ -198,7 +198,7 @@
   display: block;
   margin-top: 6rpx;
   font-size: 22rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .order-time {
@@ -209,7 +209,7 @@
 
 .order-time-label {
   font-size: 20rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
   margin-right: 8rpx;
 }
 
@@ -226,7 +226,7 @@
 
 .order-time-dash {
   margin: 0 6rpx;
-  color: #8b97aa;
+  color: #5f6f87;
 }
 
 .order-right {
@@ -241,14 +241,14 @@
 .order-unit {
   display: block;
   font-size: 20rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .order-remove {
   display: block;
   margin-top: 8rpx;
   font-size: 20rpx;
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 /* ---------- 空清单 ---------- */
@@ -281,7 +281,7 @@
 
 .group-count {
   font-size: 20rpx;
-  color: #8b97aa;
+  color: #5f6f87;
 }
 
 .pick-row {
@@ -307,12 +307,12 @@
 }
 
 .checkbox.on {
-  background: #2f7cf6;
-  border-color: #2f7cf6;
+  background: #164f9e;
+  border-color: #164f9e;
 }
 
 .checkbox-mark {
-  color: #e8f2ff;
+  color: #ffffff;
   font-size: 28rpx;
   font-weight: 700;
   line-height: 1;
@@ -337,14 +337,14 @@
 }
 
 .pick-off {
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .pick-sub {
   display: block;
   margin-top: 2rpx;
   font-size: 20rpx;
-  color: #8b97aa;
+  color: #5f6f87;
 }
 
 .pick-right {
@@ -359,9 +359,9 @@
 .pick-unit {
   display: block;
   font-size: 20rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .pick-row.picked .pick-name {
-  color: #2f7cf6;
+  color: #164f9e;
 }

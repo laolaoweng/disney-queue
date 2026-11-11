@@ -19,7 +19,7 @@
 
 .day-item.active {
   background: rgba(47, 124, 246, 0.12);
-  color: #2f7cf6;
+  color: #164f9e;
   font-weight: 600;
 }
 
@@ -42,7 +42,7 @@
 .chip.active {
   background: rgba(47, 124, 246, 0.10);
   border-color: rgba(47, 124, 246, 0.45);
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .chip-all {
@@ -81,7 +81,7 @@
 
 .chart-badge {
   font-size: 20rpx;
-  color: #e8a317;
+  color: #96630a;
   border: 2rpx solid rgba(232, 163, 23, 0.4);
   border-radius: 999rpx;
   padding: 4rpx 14rpx;
@@ -135,19 +135,19 @@
 }
 
 .bar-tag.on {
-  color: #17a673;
+  color: #0d7a52;
   font-weight: 600;
 }
 
 .bar-value {
   font-size: 18rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
   margin-bottom: 6rpx;
   height: 24rpx;
 }
 
 .bar-value.best {
-  color: #17a673;
+  color: #0d7a52;
   font-weight: 600;
 }
 
@@ -164,12 +164,12 @@
 .bar-fill {
   width: 100%;
   border-radius: 10rpx;
-  background: linear-gradient(180deg, #5b9bff 0%, #2f7cf6 100%);
+  background: linear-gradient(180deg, #5b9bff 0%, #164f9e 100%);
   transition: height 0.3s ease;
 }
 
 .bar-fill.best {
-  background: linear-gradient(180deg, #4fc99a 0%, #17a673 100%);
+  background: linear-gradient(180deg, #4fc99a 0%, #0d7a52 100%);
 }
 
 .bar-fill.empty {
@@ -179,11 +179,11 @@
 .bar-hour {
   margin-top: 10rpx;
   font-size: 20rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .bar-hour.best {
-  color: #17a673;
+  color: #0d7a52;
   font-weight: 600;
 }
 
@@ -197,7 +197,7 @@
   width: 14rpx;
   height: 14rpx;
   border-radius: 50%;
-  background: #17a673;
+  background: #0d7a52;
   margin-right: 10rpx;
 }
 
@@ -209,7 +209,7 @@
 .chart-peak {
   margin-top: 8rpx;
   font-size: 22rpx;
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .table-card {
@@ -237,12 +237,12 @@
 
 .tbl-row.best .tbl-hour,
 .tbl-row.best .tbl-avg {
-  color: #17a673;
+  color: #0d7a52;
 }
 
 .tbl-head {
   font-size: 22rpx;
-  color: #7d8ba1;
+  color: #5a6a82;
   border-bottom-color: rgba(31, 88, 160, 0.12);
 }
 
@@ -272,7 +272,7 @@
 .tbl-days {
   flex: 1;
   text-align: right;
-  color: #7d8ba1;
+  color: #5a6a82;
 }
 
 .small-empty {
@@ -302,7 +302,7 @@
 .footnote {
   margin-top: 20rpx;
   font-size: 22rpx;
-  color: #8b97aa;
+  color: #5f6f87;
   line-height: 1.6;
   padding: 0 6rpx 30rpx;
 }

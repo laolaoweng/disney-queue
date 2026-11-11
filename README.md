@@ -148,6 +148,7 @@ deliverables/disney-queue/
 ├─ tools/report.js             ← 生成 docs/forecast-report.html（自包含 SVG 曲线报告）
 ├─ tools/build_site.js         ← 生成 _site/（GitHub Pages / Cloudflare Pages 的部署包，--check 只校验）
 ├─ tools/check_live.js         ← 部署后自检：页面 + /api/live + 数据新鲜度（参数传部署后的网址）
+├─ tools/contrast.js           ← 文本对比度审计：逐视图列出 < 4.5:1 的文字（WCAG AA，本机 Edge + CDP）
 ├─ functions/_middleware.js    ← Cloudflare Pages 边缘函数：/data/latest.json 与 /api/live 现场抓数据
 ├─ cloudflare/lib/live.mjs     ← 边缘端 queue-times → latest.json 的纯函数 + 单测
 ├─ start_local.ps1             ← 本机一条命令：采集 + 每 N 分钟刷新 + 起网页服务器（手机同 Wi-Fi 可用）
@@ -255,6 +256,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File collector\install_task.ps1 -
 - 分时统计里 21:00 只有 3 天有效样本（闭园前快照少），已按「≥7 天」的可靠性规则排除出结论；看闭园前数据请继续累积历史。窗口还含国庆尾巴（10-04~10-07），工作日均值可能略偏高。
 - 预测是 14 天平均的「相对规律」，不是当天实况：天气、设备检修、限流、节假日都会让某天偏离；请结合首页实时数据和现场情况调整。
 - 步行时间是直线距离 ×1.35 的近似，不含绕路和排队区入口距离。
+- 浅色主题的灰字/彩字已按 WCAG AA 校过（正文 ≥4.5:1、大字 ≥3:1）；改配色后建议跑 `tools\contrast.js` 复查。
 - 清单页的「总耗时」是**线性估算**：按当前排队一次性算完；实际游玩中排队会变、可能中途吃饭/看演出，建议玩完一项就在清单里点掉它、重新算一次。
 - `estimateSelected()` 不做身高/偏好/演出过滤（它只对「你主动勾选的项目」负责），关闭/停运项目会进入 `excluded` 并从总耗时里剔除。
 
@@ -275,6 +277,9 @@ python collector\test_collect.py
 # 手机部署（Cloudflare Pages）相关：边缘函数 8 + 5 个用例（解析映射 / 缓存 / 回退 / CORS / 静态放行）
 & $node cloudflare\tests\live.test.mjs
 & $node cloudflare\tests\middleware.test.mjs
+
+# 文本对比度审计（可选，需要本机 Edge）：逐视图列出对比度不足的文字
+& $node tools\contrast.js https://disney-queue.pages.dev
 
 # 分时预测报告（可选）：生成 docs/forecast-report.html
 & $node tools\report.js

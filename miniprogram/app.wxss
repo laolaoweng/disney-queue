@@ -14,21 +14,21 @@ page {
   --text: #16233a;
   --text-strong: #0f1a2c;
   --muted: #66748c;
-  --muted-light: #8b97aa;
+  --muted-light: #5f6f87;
 
-  --primary: #2f7cf6;
+  --primary: #164f9e;
   --primary-deep: #1f61d6;
   --primary-soft: #eaf2ff;
   --primary-line: rgba(47, 124, 246, 0.22);
 
-  --ok: #17a673;
+  --ok: #0d7a52;
   --ok-soft: rgba(23, 166, 115, 0.12);
-  --warn: #e8a317;
+  --warn: #96630a;
   --warn-soft: rgba(232, 163, 23, 0.14);
-  --hot: #ef7a2f;
-  --danger: #e5484d;
+  --hot: #b04a0c;
+  --danger: #c9302c;
   --danger-soft: rgba(229, 72, 77, 0.12);
-  --closed: #9aa6b8;
+  --closed: #64748c;
 
   --line: rgba(31, 88, 160, 0.08);
   --line-strong: rgba(31, 88, 160, 0.14);
@@ -70,10 +70,10 @@ page {
   font-variant-numeric: tabular-nums;
 }
 
-.short { color: #17a673; }
-.mid { color: #e8a317; }
-.long { color: #e5484d; }
-.closed { color: #9aa6b8; }
+.short { color: #0d7a52; }
+.mid { color: #96630a; }
+.long { color: #c9302c; }
+.closed { color: #64748c; }
 
 /* ---------- 顶部栏 ---------- */
 .topbar {
@@ -105,7 +105,7 @@ page {
   text-align: center;
   border-radius: 50%;
   background: #ffffff;
-  color: #2f7cf6;
+  color: #164f9e;
   font-size: 34rpx;
   border: 1rpx solid rgba(47, 124, 246, 0.16);
   box-shadow: 0 4rpx 12rpx rgba(31, 88, 160, 0.08);
@@ -147,7 +147,7 @@ page {
   border-radius: 999rpx;
   font-size: 20rpx;
   background: #eaf2ff;
-  color: #2f7cf6;
+  color: #164f9e;
 }
 
 .badge {
@@ -156,7 +156,7 @@ page {
   border-radius: 8rpx;
   font-size: 20rpx;
   background: rgba(47, 124, 246, 0.12);
-  color: #2f7cf6;
+  color: #164f9e;
   margin-left: 12rpx;
 }
 
@@ -167,12 +167,12 @@ page {
 
 .badge.ok {
   background: rgba(23, 166, 115, 0.12);
-  color: #17a673;
+  color: #0d7a52;
 }
 
 .badge.warn {
   background: rgba(232, 163, 23, 0.14);
-  color: #b07c08;
+  color: #96630a;
 }
 
 /* ---------- 空的 / 错误状态 ---------- */
@@ -206,5 +206,5 @@ page {
   margin: 8rpx 40rpx 0;
   text-align: center;
   font-size: 22rpx;
-  color: #8b97aa;
+  color: #5f6f87;
 }
