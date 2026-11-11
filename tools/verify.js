@@ -420,7 +420,7 @@ check('小程序页面齐全', () => {
     }
   }
   const app = readJSON('miniprogram/app.json');
-  assert(app.pages.length === 8, 'app.json pages 应为 8 个（4 tab + index + forecast + plan + plan8），实际 ' + app.pages.length);
+  assert(app.pages.length === 9, 'app.json pages 应为 9 个（4 tab + index + forecast + plan + plan8 + detail），实际 ' + app.pages.length);
   assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json 缺少 pages/plan8/plan8');
   for (const p of pages) assert(app.pages.indexOf(p) >= 0, 'app.json 未注册 ' + p);
   assert(app.tabBar && Array.isArray(app.tabBar.list) && app.tabBar.list.length === 4,
@@ -589,7 +589,7 @@ check('冲刺计划页面文件齐全（H5 + 小程序）', () => {
   files.forEach((rel) => assert(fs.existsSync(path.join(ROOT, rel)), '缺少 ' + rel));
   const app = readJSON('miniprogram/app.json');
   assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json pages 应包含 pages/plan8/plan8');
-  assert(app.pages.length === 8, '小程序应为 8 页，实际 ' + app.pages.length);
+  assert(app.pages.length === 9, '小程序应为 9 页，实际 ' + app.pages.length);
   const h5 = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
   assert(h5.indexOf('plan8') >= 0, 'preview.js 应包含 plan8 视图');
   const index = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/index/index.wxml'), 'utf8');
@@ -597,6 +597,37 @@ check('冲刺计划页面文件齐全（H5 + 小程序）', () => {
 });
 
 // ---------- 结果 ----------
+check('data/history.json 结构合法', () => {
+  const h = readJSON('data/history.json');
+  assert(h.schemaVersion === 1, 'history schemaVersion 应为 1');
+  assert(Array.isArray(h.days) && h.days.length >= 7, 'history.days 偏少: ' + (h.days && h.days.length));
+  const ids = Object.keys(h.attractions || {});
+  assert(ids.length >= 20, 'history.attractions 偏少: ' + ids.length);
+  const one = h.attractions[ids[0]];
+  assert(one && one.days && Object.keys(one.days).length >= 1, 'history 缺少按天数据');
+  return 'days=' + h.days.length + ', attractions=' + ids.length;
+});
+
+check('H5 历史等候时间详情页', () => {
+  const js = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
+  assert(/function htmlDetail/.test(js), 'preview.js 缺少 htmlDetail');
+  assert(/history\.json/.test(js), 'preview.js 未加载 history.json');
+  assert(/navdetail/.test(js), '详情页缺少导航按钮处理');
+  assert(!/data-act="row" data-id/.test(js), '排队榜图标仍走旧 row 菜单（应改为 detail）');
+});
+
+check('小程序历史等候时间详情页', () => {
+  for (const f of ['detail.js', 'detail.json', 'detail.wxml', 'detail.wxss']) {
+    assert(fs.existsSync(path.join(ROOT, 'miniprogram/pages/detail', f)), '缺少 pages/detail/' + f);
+  }
+  const js = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/detail/detail.js'), 'utf8');
+  assert(/openLocation/.test(js), '详情页缺少 wx.openLocation 导航');
+  const app = readJSON('miniprogram/app.json');
+  assert(app.pages.indexOf('pages/detail/detail') >= 0, 'app.json 未注册详情页');
+  const mock = readJSON('miniprogram/mock/history.json');
+  assert(mock && mock.days && mock.days.length >= 7, 'mock/history.json 数据不完整');
+});
+
 // ---------- 见面会（char* 实体）----------
 check('shows 含见面会且带场次', () => {
   const shows = readJSON('data/shows.json');

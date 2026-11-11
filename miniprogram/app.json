@@ -7,6 +7,7 @@
     "pages/plan/plan",
     "pages/settings/settings",
     "pages/forecast/forecast",
+    "pages/detail/detail",
     "pages/plan8/plan8"
   ],
   "window": {

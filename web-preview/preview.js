@@ -16,7 +16,7 @@
   var PREFS_KEY = 'dq_prefs_v1';
   var WEEK = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
   var PARTY_TEXT = { family: '亲子家庭', thrill: '刺激党', kids: '带小孩', mixed: '混合同行' };
-  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出', plan8: '冲刺计划' };
+  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出', plan8: '冲刺计划', detail: '历史等候时间' };
   var TABS = [
     { key: 'mustDo', label: '必玩' },
     { key: 'avoid', label: '避开' },
@@ -80,7 +80,9 @@
     forecastScopeId: '',
     forecastDayType: 'all',
     plan8Selected: null,
-    plan8Risk: 'balanced'
+    plan8Risk: 'balanced',
+    detailId: null,
+    detailDate: null
   };
 
   /* ---------------- 工具 ---------------- */
@@ -232,7 +234,7 @@
 
   var pendingInitialView = null;
   var initialViewAttempts = 0;
-  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows', 'plan8'];
+  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows', 'plan8', 'detail'];
 
   function readInitialView() {
     var loc = typeof location !== 'undefined' ? location : null;
@@ -276,7 +278,8 @@
       loadJson('latest.json'),
       loadJson('forecast.json').catch(function () { return null; }),
       loadJson('hourly-stats.json').catch(function () { return null; }),
-      loadJson('shows.json').catch(function () { return null; })
+      loadJson('shows.json').catch(function () { return null; }),
+      loadJson('history.json').catch(function () { return null; })
     ]).then(function (arr) {
       var catalog = arr[0];
       var latest = arr[1];
@@ -293,6 +296,7 @@
         forecast: arr[2] || null,
         hourlyStats: arr[3] || null,
         shows: arr[4] || null,
+        history: arr[5] || null,
         updatedAt: latest.updatedAt || latest.fetchedAt || null,
         fetchedAt: latest.fetchedAt || null,
         source: latest.source || 'unknown',
@@ -567,7 +571,7 @@
         ? '<span class="wait-pill t0">关闭</span>'
         : '<span class="wait-pill ' + waitTone(row.waitMinutes) + '">' + (row.waitMinutes === null ? '--' : row.waitMinutes) + '</span>';
       var star = (prefs2.mustDo || []).indexOf(row.id) >= 0 ? '★ ' : '';
-      return '<div class="tile' + (row.excluded ? ' tile-off' : '') + '" data-act="row" data-id="' + esc(row.id) + '">' +
+      return '<div class="tile' + (row.excluded ? ' tile-off' : '') + '" data-act="detail" data-id="' + esc(row.id) + '">' +
         '<div class="tile-img' + (img ? '' : ' noimg') + '"' + (img ? ' style="background-image:url(\'' + esc(img) + '\')"' : '') + '>' +
         badge + (row.premierAccess ? '<span class="tile-premier">尊享</span>' : '') +
         '</div>' +
@@ -644,14 +648,8 @@
       return '<button class="modal-btn" data-act="menu" data-i="' + index + '" data-id="' + esc(row.id) + '">' + esc(label) + '</button>';
     }).join('');
 
-    // 导航用真链接（<a href>）：手机浏览器/微信里都能直接打开，不会被 window.open 拦截
-    var navUrl = amapWalkUrl(row);
-    var navBtn = navUrl
-      ? '<a class="modal-btn modal-nav" data-act="nav" href="' + esc(navUrl) + '" target="_blank" rel="noopener">🧭 导航过去</a>'
-      : '<button class="modal-btn" disabled>🧭 暂无坐标</button>';
-
     return '<div class="modal" data-act="closeModal"><div class="modal-panel">' +
-      '<div class="modal-title">' + esc(row.name) + '</div>' + buttons + navBtn +
+      '<div class="modal-title">' + esc(row.name) + '</div>' + buttons +
       '<button class="modal-btn" data-act="closeModal">取消</button></div></div>';
   }
 
@@ -1392,6 +1390,169 @@
       '</div>';
   }
 
+
+  /* ---------------- 历史等候时间（详情页） ---------------- */
+
+  function histEntry(id) {
+    var b = currentBundle();
+    var h = b && b.history;
+    if (!h || !h.attractions) return null;
+    return h.attractions[id] || null;
+  }
+
+  function dayLabel(date) {
+    var dt = new Date(date + 'T00:00:00+08:00');
+    if (isNaN(dt.getTime())) return { short: date, weekday: '' };
+    var p = fmt.beijingParts(dt);
+    return { short: p.month + '/' + p.day, weekday: WEEK[p.weekday] };
+  }
+
+  function historyChart(hourly, avg) {
+    var W = 330, H = 150, PL = 30, PR = 10, PT = 12, PB = 24;
+    var plotW = W - PL - PR, plotH = H - PT - PB;
+    var byHour = {};
+    var maxWait = 0;
+    (hourly || []).forEach(function (h) {
+      byHour[h.hour] = h.wait;
+      if (h.wait > maxWait) maxWait = h.wait;
+    });
+    var yMax = Math.max(30, Math.ceil(maxWait / 20) * 20);
+    function X(h) { return PL + (h - 8) / 13 * plotW; }
+    function Y(v) { return PT + plotH - (Math.min(v, yMax) / yMax) * plotH; }
+
+    var grid = '';
+    for (var k = 0; k <= 3; k++) {
+      var val = yMax * k / 3;
+      var y = Y(val);
+      grid += '<line x1="' + PL + '" y1="' + y.toFixed(1) + '" x2="' + (W - PR) + '" y2="' + y.toFixed(1) + '" stroke="rgba(31,88,160,.12)" stroke-width="1" stroke-dasharray="3 4"/>' +
+        '<text x="' + (PL - 4) + '" y="' + (y + 3).toFixed(1) + '" font-size="8" fill="#7c8aa3" text-anchor="end">' + Math.round(val) + '</text>';
+    }
+
+    var pts = [];
+    for (var hour = 8; hour <= 21; hour++) {
+      if (byHour[hour] === undefined) continue;
+      pts.push([X(hour), Y(byHour[hour])]);
+    }
+    var line = pts.map(function (p, i) { return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join(' ');
+    var area = pts.length > 1
+      ? 'M' + pts[0][0].toFixed(1) + ' ' + Y(0).toFixed(1) + ' ' + line.replace(/^M/, 'L') + ' L' + pts[pts.length - 1][0].toFixed(1) + ' ' + Y(0).toFixed(1) + ' Z'
+      : '';
+    var dots = pts.map(function (p) { return '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="2.4" fill="#1f6fe5"/>'; }).join('');
+    var avgLine = (typeof avg === 'number')
+      ? '<line x1="' + PL + '" y1="' + Y(avg).toFixed(1) + '" x2="' + (W - PR) + '" y2="' + Y(avg).toFixed(1) + '" stroke="#0d7a52" stroke-width="1.2" stroke-dasharray="4 4"/>' +
+        '<text x="' + (W - PR) + '" y="' + (Y(avg) - 4).toFixed(1) + '" font-size="8" fill="#0d7a52" text-anchor="end">日均 ' + avg + ' 分</text>'
+      : '';
+    var labels = '';
+    [8, 10, 12, 14, 16, 18, 20, 21].forEach(function (h) {
+      labels += '<text x="' + X(h).toFixed(1) + '" y="' + (H - 6) + '" font-size="8" fill="#7c8aa3" text-anchor="middle">' + (h === 21 ? '21时' : h + '时') + '</text>';
+    });
+
+    return '<svg class="hist-chart" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">' +
+      '<defs><linearGradient id="histFill" x1="0" y1="0" x2="0" y2="1">' +
+      '<stop offset="0%" stop-color="rgba(47,124,246,.28)"/><stop offset="100%" stop-color="rgba(47,124,246,.02)"/>' +
+      '</linearGradient></defs>' + grid + (area ? '<path d="' + area + '" fill="url(#histFill)"/>' : '') +
+      (pts.length ? '<path d="' + line + '" fill="none" stroke="#1f6fe5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>' : '') +
+      dots + avgLine + labels + '</svg>';
+  }
+
+  function htmlDetail() {
+    var bundle = currentBundle();
+    var attrs = (bundle.catalog && bundle.catalog.attractions) || [];
+    var attr = null;
+    for (var i = 0; i < attrs.length; i++) {
+      if (attrs[i].id === state.detailId) { attr = attrs[i]; break; }
+    }
+    if (!attr) {
+      return '<div class="card empty-watch"><span class="empty-title">找不到这个项目</span>' +
+        '<button class="empty-btn" data-act="back">返回排队榜</button></div>';
+    }
+
+    var waitMap = {};
+    (bundle.waits || []).forEach(function (w) { if (w && w.attractionId) waitMap[w.attractionId] = w; });
+    var w = waitMap[attr.id] || {};
+    var closed = w.isOpen === false || w.status === 'closed' || w.status === 'down' || w.status === 'refurbishment';
+    var waitText = closed ? '关闭' : (typeof w.waitMinutes === 'number' ? w.waitMinutes + ' 分钟' : '暂无数据');
+    var waitToneClass = closed ? 'closed' : fmt.waitClass(typeof w.waitMinutes === 'number' ? w.waitMinutes : null);
+
+    var hist = histEntry(attr.id);
+    var histDays = hist && hist.days ? hist.days : {};
+    var allDays = (bundle.history && bundle.history.days) || Object.keys(histDays).sort();
+    var dayKeys = Object.keys(histDays).sort();
+    if (state.detailDate && dayKeys.indexOf(state.detailDate) < 0) state.detailDate = null;
+    if (!state.detailDate) {
+      // 默认选「最近一个样本够多、曲线完整」的日期（今天可能只有几条采样）
+      var pick = dayKeys.length ? dayKeys[dayKeys.length - 1] : null;
+      for (var di = dayKeys.length - 1; di >= 0; di--) {
+        var cand = histDays[dayKeys[di]];
+        if (cand && cand.hourly && cand.hourly.length >= 8) { pick = dayKeys[di]; break; }
+      }
+      state.detailDate = pick;
+    }
+
+    var chipDays = allDays.slice().sort().reverse();
+    var chips = chipDays.map(function (date) {
+      var entry = histDays[date] || null;
+      var lab = dayLabel(date);
+      var on = date === state.detailDate ? ' on' : '';
+      return '<button class="daychip' + on + '" data-act="detailday" data-date="' + esc(date) + '">' +
+        '<span class="daychip-date">' + esc(lab.short) + '</span>' +
+        '<span class="daychip-week">' + esc(lab.weekday) + '</span>' +
+        '<span class="daychip-avg">' + (entry ? entry.avg + '分' : '—') + '</span></button>';
+    }).join('');
+
+    var day = state.detailDate ? histDays[state.detailDate] : null;
+    var chart = day ? historyChart(day.hourly, day.avg) : '';
+    var lab = state.detailDate ? dayLabel(state.detailDate) : { short: '', weekday: '' };
+    var peak = null;
+    if (day && day.hourly && day.hourly.length) {
+      peak = day.hourly.slice().sort(function (a, b) { return b.wait - a.wait; })[0];
+    }
+
+    var meta = [];
+    if (attr.land) meta.push(esc(attr.land));
+    var catText = fmt.categoryText(attr.category);
+    if (catText) meta.push(esc(catText));
+    if (attr.durationMin) meta.push('体验约 ' + attr.durationMin + ' 分钟');
+    if (attr.heightCm) meta.push('身高 ' + attr.heightCm + 'cm');
+
+    var prefs = getPrefs();
+    var inMust = (prefs.mustDo || []).indexOf(attr.id) >= 0;
+    var played = (prefs.playedIds || []).indexOf(attr.id) >= 0;
+
+    return '<div class="detail-top">' +
+        '<button class="detail-back" data-act="back">‹ 排队榜</button>' +
+        '<span class="detail-top-title">' + esc(attr.name) + '</span>' +
+      '</div>' +
+      '<div class="card detail-hero">' +
+        '<div class="detail-hero-main">' +
+          '<div class="detail-img' + (attr.imageUrl ? '' : ' noimg') + '"' + (attr.imageUrl ? ' style="background-image:url(\'' + esc(attr.imageUrl) + '\')"' : '') + '></div>' +
+          '<div class="detail-info">' +
+            '<div class="detail-name">' + esc(attr.name) + '</div>' +
+            '<div class="detail-meta">' + meta.join(' · ') + '</div>' +
+            '<div class="detail-wait"><span class="detail-wait-num ' + esc(waitToneClass) + '">' + esc(waitText) + '</span>' +
+              '<span class="detail-wait-label">现在</span></div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="detail-actions">' +
+          '<button class="detail-nav" data-act="navdetail" data-id="' + esc(attr.id) + '">🧭 导航过去</button>' +
+          '<button class="detail-btn' + (inMust ? ' on' : '') + '" data-act="detailmust" data-id="' + esc(attr.id) + '">' + (inMust ? '✓ 必玩' : '加入必玩') + '</button>' +
+          '<button class="detail-btn' + (played ? ' on' : '') + '" data-act="detailplayed" data-id="' + esc(attr.id) + '">' + (played ? '✓ 已玩' : '标记已玩') + '</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="card hist-card">' +
+        '<div class="hist-head"><span class="hist-title">历史等候时间</span>' +
+          '<span class="hist-sub">' + (dayKeys.length ? dayKeys.length + ' 天有数据' : '暂无历史数据') + '</span></div>' +
+        (chips ? '<div class="daychips">' + chips + '</div>' : '') +
+        (day
+          ? '<div class="hist-day-title">' + esc(lab.short) + ' ' + esc(lab.weekday) + '</div>' + chart +
+            '<div class="hist-foot">' +
+              '日均 <b>' + day.avg + '</b> 分钟 · ' + day.samples + ' 个采样' +
+              (peak ? ' · 最挤 <b>' + peak.hour + '时</b> 约 ' + peak.wait + ' 分钟' : '') +
+            '</div>'
+          : '<div class="hist-empty">这一天还没有采样数据</div>') +
+      '</div>';
+  }
+
   function render() {
     navTitleEl.textContent = TITLES[state.view] || '排队最优解';
     if (state.loading) {
@@ -1409,6 +1570,7 @@
       else if (state.view === 'forecast') screenEl.innerHTML = htmlForecast();
       else if (state.view === 'shows') screenEl.innerHTML = htmlShows();
       else if (state.view === 'plan8') screenEl.innerHTML = htmlPlan8();
+      else if (state.view === 'detail') screenEl.innerHTML = htmlDetail();
       else if (state.view === 'plan') screenEl.innerHTML = htmlPlan();
       else screenEl.innerHTML = htmlSettings();
     } catch (e) {
@@ -1577,6 +1739,56 @@
       return;
     }
     if (act === 'index') { switchView('index'); return; }
+    if (act === 'detail') {
+      state.detailId = target.getAttribute('data-id');
+      state.detailDate = null;
+      state.menuId = null;
+      state.view = 'detail';
+      render();
+      screenEl.scrollTop = 0;
+      return;
+    }
+    if (act === 'back') {
+      state.view = 'rank';
+      render();
+      screenEl.scrollTop = 0;
+      return;
+    }
+    if (act === 'detailday') {
+      state.detailDate = target.getAttribute('data-date');
+      render();
+      return;
+    }
+    if (act === 'detailmust') {
+      var dmId = target.getAttribute('data-id');
+      var dmPrefs = getPrefs();
+      var dmList = (dmPrefs.mustDo || []).slice();
+      var dmAt = dmList.indexOf(dmId);
+      if (dmAt >= 0) dmList.splice(dmAt, 1); else dmList.push(dmId);
+      savePrefs({ mustDo: dmList });
+      render();
+      return;
+    }
+    if (act === 'detailplayed') {
+      var dpId = target.getAttribute('data-id');
+      var dpPrefs = getPrefs();
+      var dpList = (dpPrefs.playedIds || []).slice();
+      var dpAt = dpList.indexOf(dpId);
+      if (dpAt >= 0) dpList.splice(dpAt, 1); else dpList.push(dpId);
+      savePrefs({ playedIds: dpList });
+      render();
+      return;
+    }
+    if (act === 'navdetail') {
+      var ndId = target.getAttribute('data-id');
+      var ndAttrs = (currentBundle() && currentBundle().catalog && currentBundle().catalog.attractions) || [];
+      var ndAttr = null;
+      for (var ndi = 0; ndi < ndAttrs.length; ndi++) {
+        if (ndAttrs[ndi].id === ndId) { ndAttr = ndAttrs[ndi]; break; }
+      }
+      if (ndAttr) navigateTo(ndAttr);
+      return;
+    }
     if (act === 'row') {
       state.menuId = target.getAttribute('data-id');
       render();

@@ -1,0 +1,72 @@
+<view class="page">
+  <view class="detail-top">
+    <view class="detail-back" bindtap="onBack">‹ 排队榜</view>
+  </view>
+
+  <view wx:if="{{loading}}" class="card sk-card">
+    <view class="sk-line w60"></view>
+    <view class="sk-line w90"></view>
+    <view class="sk-line w40"></view>
+  </view>
+
+  <view wx:elif="{{error}}" class="empty">
+    <text class="empty-emoji">📡</text>
+    <text class="empty-title">{{error}}</text>
+  </view>
+
+  <block wx:else>
+    <view class="card detail-hero">
+      <view class="detail-hero-main">
+        <image wx:if="{{attr.imageUrl}}" class="detail-img" src="{{attr.imageUrl}}" mode="aspectFill"></image>
+        <view wx:else class="detail-img noimg"></view>
+        <view class="detail-info">
+          <text class="detail-name">{{attr.name}}</text>
+          <text class="detail-meta">{{metaText}}</text>
+          <view class="detail-wait-line">
+            <text class="detail-wait-num tone-{{waitTone}}">{{waitText}}</text>
+            <text class="detail-wait-label">现在</text>
+          </view>
+        </view>
+      </view>
+      <view class="detail-actions">
+        <view class="detail-nav" bindtap="onNavTap">🧭 导航过去</view>
+        <view class="detail-btn {{inMust ? 'on' : ''}}" bindtap="onMustTap">{{inMust ? '✓ 必玩' : '加入必玩'}}</view>
+        <view class="detail-btn {{played ? 'on' : ''}}" bindtap="onPlayedTap">{{played ? '✓ 已玩' : '标记已玩'}}</view>
+      </view>
+    </view>
+
+    <view class="card hist-card">
+      <view class="hist-head">
+        <text class="hist-title">历史等候时间</text>
+        <text class="hist-sub">{{dayCount ? dayCount + ' 天有数据' : '暂无历史数据'}}</text>
+      </view>
+
+      <scroll-view wx:if="{{chips.length}}" class="daychips" scroll-x enable-flex>
+        <view
+          wx:for="{{chips}}"
+          wx:key="date"
+          class="daychip {{item.on ? 'on' : ''}}"
+          data-date="{{item.date}}"
+          bindtap="onChipTap"
+        >
+          <text class="daychip-date">{{item.short}}</text>
+          <text class="daychip-week">{{item.weekday}}</text>
+          <text class="daychip-avg">{{item.avgText}}</text>
+        </view>
+      </scroll-view>
+
+      <block wx:if="{{hasData}}">
+        <view class="hist-day-title">{{dayTitle}}</view>
+        <view class="bar-chart">
+          <view wx:for="{{bars}}" wx:key="hour" class="bar-col">
+            <text class="bar-val">{{item.wait}}</text>
+            <view class="bar" style="height: {{item.h}}%"></view>
+            <text class="bar-hour">{{item.hour}}时</text>
+          </view>
+        </view>
+        <text class="hist-foot">{{footText}}</text>
+      </block>
+      <view wx:else class="hist-empty">这一天还没有采样数据</view>
+    </view>
+  </block>
+</view>

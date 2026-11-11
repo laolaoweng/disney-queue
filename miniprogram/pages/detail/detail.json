@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "历史等候时间",
+  "navigationBarBackgroundColor": "#eaf2ff",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#f2f7ff",
+  "enablePullDownRefresh": false
+}

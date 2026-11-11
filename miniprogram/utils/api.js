@@ -14,7 +14,7 @@ var MOCK_NOW_FALLBACK = '2026-10-17T05:00:00Z';
 var MOCK_NOW = 'auto';
 
 var CACHE_TTL = 5 * 60 * 1000;
-var CACHE_KEY = 'dq_data_cache_v3';
+var CACHE_KEY = 'dq_data_cache_v4';
 var TIMEOUT_MS = 8000;
 var RETRY_TIMES = 2;
 
@@ -28,7 +28,8 @@ function getMockData() {
       'latest.json': require('../mock/latest.json'),
       'forecast.json': require('../mock/forecast.json'),
       'hourly-stats.json': require('../mock/hourly-stats.json'),
-      'shows.json': require('../mock/shows.json')
+      'shows.json': require('../mock/shows.json'),
+      'history.json': require('../mock/history.json')
     };
   }
   return mockData;
@@ -127,7 +128,7 @@ function writeStorageCache(bundle) {
   }
 }
 
-function normalizeBundle(catalog, latest, forecast, hourlyStats, shows) {
+function normalizeBundle(catalog, latest, forecast, hourlyStats, shows, history) {
   if (!catalog || !catalog.attractions) {
     throw new Error('catalog.json 数据无效');
   }
@@ -141,6 +142,7 @@ function normalizeBundle(catalog, latest, forecast, hourlyStats, shows) {
     forecast: forecast || null,
     hourlyStats: hourlyStats || null,
     shows: shows || { schemaVersion: 1, shows: [] },
+    history: history || null,
     waits: latest.waits || [],
     updatedAt: latest.updatedAt || latest.fetchedAt || null,
     fetchedAt: latest.fetchedAt || null,
@@ -168,7 +170,8 @@ function loadAll(forceRefresh) {
       getMockData()['latest.json'],
       getMockData()['forecast.json'],
       getMockData()['hourly-stats.json'],
-      getMockData()['shows.json']
+      getMockData()['shows.json'],
+      getMockData()['history.json']
     );
     writeStorageCache(bundle);
     return new Promise(function (resolve) {
@@ -183,9 +186,10 @@ function loadAll(forceRefresh) {
     fetchJSON('latest.json'),
     fetchJSON('forecast.json'),
     fetchJSON('hourly-stats.json'),
-    fetchJSON('shows.json')
+    fetchJSON('shows.json'),
+    fetchJSON('history.json').catch(function () { return null; })
   ]).then(function (arr) {
-    var bundle = normalizeBundle(arr[0], arr[1], arr[2], arr[3], arr[4]);
+    var bundle = normalizeBundle(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]);
     writeStorageCache(bundle);
     return bundle;
   });

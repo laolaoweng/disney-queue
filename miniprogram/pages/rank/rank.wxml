@@ -55,7 +55,7 @@
           wx:for-item="item"
           class="tile {{item.excluded ? 'tile-off' : ''}}"
           data-id="{{item.id}}"
-          bindtap="onTapRow"
+          bindtap="goDetail" bindlongpress="onTapRow"
         >
           <view class="tile-img {{item.imageUrl ? '' : 'noimg'}}">
             <image wx:if="{{item.imageUrl}}" class="tile-photo" src="{{item.imageUrl}}" mode="aspectFill" lazy-load></image>
@@ -75,7 +75,7 @@
         wx:key="id"
         class="tile {{item.excluded ? 'tile-off' : ''}}"
         data-id="{{item.id}}"
-        bindtap="onTapRow"
+        bindtap="goDetail" bindlongpress="onTapRow"
       >
         <view class="tile-img {{item.imageUrl ? '' : 'noimg'}}">
           <image wx:if="{{item.imageUrl}}" class="tile-photo" src="{{item.imageUrl}}" mode="aspectFill" lazy-load></image>

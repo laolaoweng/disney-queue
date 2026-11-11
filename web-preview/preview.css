@@ -2044,3 +2044,105 @@ body {
   font-weight: 600;
 }
 .show-filter-btn.on { background: #164f9e; border-color: #164f9e; color: #ffffff; }
+
+/* ---------- 历史等候时间（详情页） ---------- */
+.detail-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0 12px;
+}
+.detail-back {
+  border: 1px solid rgba(31, 88, 160, .18);
+  background: rgba(255, 255, 255, .85);
+  color: #164f9e;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.detail-top-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #16233a;
+}
+.detail-hero { padding: 14px; }
+.detail-hero-main { display: flex; gap: 12px; align-items: center; }
+.detail-img {
+  width: 92px;
+  height: 92px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  flex: 0 0 auto;
+  box-shadow: 0 6px 16px rgba(31, 88, 160, .14);
+}
+.detail-img.noimg { background: linear-gradient(135deg, #dbe9ff, #eef5ff); }
+.detail-info { flex: 1 1 auto; min-width: 0; }
+.detail-name { font-size: 19px; font-weight: 800; color: #16233a; line-height: 1.25; }
+.detail-meta { margin-top: 6px; font-size: 12px; color: #5a6a82; line-height: 1.5; }
+.detail-wait { margin-top: 8px; display: flex; align-items: baseline; gap: 6px; }
+.detail-wait-num { font-size: 22px; font-weight: 800; color: #164f9e; }
+.detail-wait-num.closed { color: #7c8aa3; font-size: 18px; }
+.detail-wait-num.warn { color: #b04a0c; }
+.detail-wait-label { font-size: 11px; color: #7c8aa3; }
+.detail-actions { display: flex; gap: 8px; margin-top: 14px; }
+.detail-nav {
+  flex: 1 1 46%;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #1f6fe5, #164f9e);
+  box-shadow: 0 8px 18px rgba(22, 79, 158, .22);
+  cursor: pointer;
+}
+.detail-btn {
+  flex: 1 1 27%;
+  border-radius: 12px;
+  padding: 12px 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #164f9e;
+  background: rgba(47, 124, 246, .1);
+  border: 1px solid rgba(31, 88, 160, .14);
+  cursor: pointer;
+}
+.detail-btn.on { background: rgba(13, 122, 82, .12); color: #0d7a52; border-color: rgba(13, 122, 82, .28); }
+.hist-card { padding: 14px; }
+.hist-head { display: flex; align-items: baseline; justify-content: space-between; }
+.hist-title { font-size: 16px; font-weight: 800; color: #16233a; }
+.hist-sub { font-size: 11px; color: #7c8aa3; }
+.daychips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px 0 8px;
+  scrollbar-width: none;
+}
+.daychips::-webkit-scrollbar { display: none; }
+.daychip {
+  flex: 0 0 auto;
+  min-width: 56px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(31, 88, 160, .12);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+.daychip.on { border-color: #1f6fe5; background: rgba(47, 124, 246, .08); box-shadow: inset 0 0 0 1px #1f6fe5; }
+.daychip-date { font-size: 12px; font-weight: 700; color: #16233a; }
+.daychip-week { font-size: 10px; color: #7c8aa3; }
+.daychip-avg { font-size: 11px; font-weight: 700; color: #0d7a52; }
+.daychip-avg:empty { color: #b3bdcb; }
+.hist-day-title { margin: 8px 0 2px; font-size: 13px; font-weight: 700; color: #16233a; }
+.hist-chart { width: 100%; height: 150px; display: block; }
+.hist-foot { margin-top: 4px; font-size: 11px; color: #5a6a82; }
+.hist-foot b { color: #164f9e; }
+.hist-empty { padding: 26px 0; text-align: center; color: #7c8aa3; font-size: 13px; }

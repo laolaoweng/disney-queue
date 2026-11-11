@@ -48,7 +48,7 @@ Page({
     statsText: '',
     updatedText: '',
     updatedFull: '',
-    hintText: '点任意一项：设为我的位置 / 加入必玩 / 避开它 / 导航过去'
+    hintText: '点图标看历史等候时间与导航；长按可加入必玩/避开'
   },
 
   onLoad: function () {
@@ -183,6 +183,13 @@ Page({
     wx.navigateTo({ url: '/pages/forecast/forecast' });
   },
 
+  // 点图标 → 历史等候时间详情页（导航按钮也移到那里）
+  goDetail: function (e) {
+    var id = e.currentTarget.dataset.id;
+    if (!id) return;
+    wx.navigateTo({ url: '/pages/detail/detail?id=' + encodeURIComponent(id) });
+  },
+
   onSortTap: function (e) {
     var key = e.currentTarget.dataset.key;
     if (!key || key === this.data.sortKey) return;
@@ -202,8 +209,7 @@ Page({
       inMust ? '取消必玩' : '加入必玩',
       inAvoid ? '取消避开' : '避开它',
       played ? '取消「已玩过」' : '标记「已玩过」',
-      isLast ? '取消「我在这里」' : '设为「我在这里」',
-      '🧭 导航过去'
+      isLast ? '取消「我在这里」' : '设为「我在这里」'
     ];
 
     var self = this;

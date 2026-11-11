@@ -103,6 +103,7 @@ python collector\collect.py       # 默认 --transport auto：TCP 被重置就�
 | **清单（watchlist）** | 勾选你想玩的项目 → 自动按「当前排队时间从少到多」排好序、算好步行和项目时长 → 汇总卡显示「一共 N 项、排队合计 X 分、总耗时 W 分、预计 HH:MM 全部玩完」；支持全选在园/清空，勾选状态自动保存 |
 | **演出（shows）** | 当天场次卡片（图 + 最近一场倒计时 + 下一场），顶部可切「全部 / 演出 / 见面会」；见面会单独一组（21 个角色见面会，带场次和倒计时），按「快要开始」排序，停演/已结束灰显；数据每天从官网抓一次 |
 | **行程（plan）** | 自动排 3–4 个项目的顺序，显示「几点开始、排多久、玩完几点」，可点「我从这里开始」（不再占 tabBar，首页按钮进入） |
+| **历史等候时间（detail）** | 排队榜点任意图标进入：项目图 + 当前排队 + 「🧭 导航过去」按钮（高德步行导航）+ 14 天逐日平均排队 chips + 当日 8–21 点曲线（虚线为日均）；数据来自 `data/history.json`（由 `tools/build_history.js` 从 `data/history/*.jsonl` 聚合） |
 | **分时预测（forecast）** | 最近 14 天的每小时曲线：切项目看「几点人最少」，工作日/周末切换，标出最空 2–3 小时和「比高峰少 X%」；**不在 tabBar 上**，从排队榜的分时预测入口进入；数据接口保留（`hourly-stats.json`，缺失时退回 `forecast.json`） |
 | **最优解（首页=冲刺计划）** | 打开就是冲刺计划：勾选必玩项目（勾选顺序=优先级），算出闭园前最多玩几项、每项几点去；支持平衡 P50 / 稳健 P80 与出发点 |
 | **排队榜（rank）** | 官方图片卡片墙，默认按「排队最长」排序（另有综合评分 / 排队最短 / 步行最近 / 八大必玩 4 个筛选） |
@@ -217,6 +218,7 @@ console.log(est.totals); // { attractions: 3, waitMinutes, rideMinutes, walkMinu
     1. **境外中继（推荐，零服务器成本）**：GitHub Actions 每 10 分钟抓一次 → `data/latest.json` 提交回仓库 → 小程序读 raw/对象存储。微信小程序的 `wx.request` 只支持 TCP，用不了 QUIC，所以给小程序提供数据必须走这条路或自己的 HTTPS 服务器。
     2. **本机采集（HTTP/3）**：`collector\run_live.ps1` 用 QUIC 直接抓（需 `pip install aioquic`），配合 Windows 计划任务每 10 分钟刷新本地 `data/` 与小程序 mock；适合自己盯着看、或再把 JSON 同步到你自己的 HTTPS 存储。
 - **项目元数据**：迪士尼官网 `cu.apigw.shanghaidisneyresort.com/steamboat-wam/api/rap/facility/list`（344 个设施里的 30 个游乐项目，简体中文名 + 真实坐标 + 尊享卡标记）。
+- **历史等候时间**：`data/history/*.jsonl`（每 5–10 分钟一份 queue-times 快照，本机 HTTP/3 采集时写入）→ `tools/build_history.js` 聚合成 `data/history.json`（按天 × 按小时的每项目平均排队），供排队榜点开的详情页使用。
 - **演出场次**：上海迪士尼官网 `facility/detail`（`schedule.timeInfo`，33 个娱乐演出 + 21 个角色见面会/见面地点），`.github/workflows/shows.yml` 每天 00:20（北京时间）抓一次，产出 `data/shows.json`。
 - **历史排队（分时预测）**：GitHub 镜像 `hjeee3-tech/shanghai-disney-waits` 的 `data/YYYY-MM-DD.csv`（queue-times park 30 的 5 分钟粒度镜像）；`fetch_history.py` 会 HEAD 探测最新日期并下最近 14 天，不做实时请求。
 - **小程序怎么读到数据**：默认 `https://raw.githubusercontent.com/<你的仓库>/main/data`；正式发布换成自己的**备案域名 + 对象存储**（或微信云开发）。四种下发方式对比、成本、备案/白名单步骤、合规清单见 [docs/02-deploy.md](docs/02-deploy.md)。
@@ -279,7 +281,7 @@ python collector\test_collect.py
 # 算法 28 个用例（含 estimateSelected 的排序/总耗时/关闭与未知 id/纯函数）
 & $node tests\recommend.test.js
 
-# 全量验收 40 项（catalog/latest/forecast/hourly-stats/shows 契约、recommend / estimateSelected / planMustDo 输出、页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、见面会筛选、手机部署文件齐全）
+# 全量验收 43 项（catalog/latest/forecast/hourly-stats/shows/history 契约、recommend / estimateSelected / planMustDo 输出、页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、见面会筛选、历史等候时间详情页、手机部署文件齐全）
 & $node tools\verify.js
 
 # 手机部署（Cloudflare Pages）相关：边缘函数 8 + 5 个用例（解析映射 / 缓存 / 回退 / CORS / 静态放行）
