@@ -1,0 +1,264 @@
+{
+  "generatedAt": "2026-10-17T04:00:00.000Z",
+  "snapshotCst": "2026-10-17 12:00",
+  "snapshotUtc": "2026-10-17T04:00:00.000Z",
+  "snapshotWaitRows": 30,
+  "snapshotUnmapped": [
+    "Seven Dwarfs Mine Train Single Rider (ride_id 13818)",
+    "Zootopia Hot Pursuit Single Rider (ride_id 13819)"
+  ],
+  "csvRows": 4672,
+  "unmatchedRideNames": [
+    "Seven Dwarfs Mine Train Single Rider",
+    "Zootopia Hot Pursuit Single Rider"
+  ],
+  "forecastSample": {
+    "weekday": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "weekend": [
+      null,
+      79,
+      90,
+      82,
+      77,
+      77,
+      72,
+      78,
+      69,
+      68,
+      54,
+      53
+    ]
+  },
+  "scenarios": {
+    "family_1200": {
+      "label": "亲子家庭（12:00 进园，预算 240 分钟）",
+      "generatedAt": "2026-10-17T04:00:00.000Z",
+      "top3": [
+        {
+          "attractionId": "attShipwreckShore",
+          "name": "船奇戏水滩",
+          "waitMinutes": 5,
+          "walkMinutes": 9,
+          "score": 10,
+          "estimated": false,
+          "predictedWait": {
+            "in30min": 5,
+            "in60min": 5
+          },
+          "reasons": [
+            "wait_low：现在只要 5 分钟，人不多",
+            "nearby：步行约 9 分钟就能到"
+          ]
+        },
+        {
+          "attractionId": "attJuniorExplorersCamp",
+          "name": "小勇者营地",
+          "waitMinutes": 5,
+          "walkMinutes": 6,
+          "score": 10,
+          "estimated": false,
+          "predictedWait": null,
+          "reasons": []
+        },
+        {
+          "attractionId": "attBuzzLightyearPlanetRescue",
+          "name": "巴斯光年星际营救",
+          "waitMinutes": 5,
+          "walkMinutes": 9,
+          "score": 9.5,
+          "estimated": false,
+          "predictedWait": null,
+          "reasons": []
+        }
+      ],
+      "plan": [
+        {
+          "name": "船奇戏水滩",
+          "attractionId": "attShipwreckShore",
+          "startAfterMin": 9,
+          "waitMinutes": 5
+        },
+        {
+          "name": "小勇者营地",
+          "attractionId": "attJuniorExplorersCamp",
+          "startAfterMin": 39,
+          "waitMinutes": 5
+        },
+        {
+          "name": "晶彩奇航",
+          "attractionId": "attVoyageToCrystalGrotto",
+          "startAfterMin": 73,
+          "waitMinutes": 9
+        },
+        {
+          "name": "巴斯光年星际营救",
+          "attractionId": "attBuzzLightyearPlanetRescue",
+          "startAfterMin": 96,
+          "waitMinutes": 8
+        }
+      ],
+      "excludedCount": 2,
+      "excludedByReason": {
+        "closed": 2
+      }
+    },
+    "thrill_1200": {
+      "label": "年轻刺激党（必玩热力追踪 + 翱翔尊享卡）",
+      "generatedAt": "2026-10-17T04:00:00.000Z",
+      "top3": [
+        {
+          "attractionId": "attShipwreckShore",
+          "name": "船奇戏水滩",
+          "waitMinutes": 5,
+          "walkMinutes": 9,
+          "score": 7,
+          "estimated": false,
+          "predictedWait": {
+            "in30min": 5,
+            "in60min": 5
+          },
+          "reasons": [
+            "wait_low：现在只要 5 分钟，人不多",
+            "nearby：步行约 9 分钟就能到"
+          ]
+        },
+        {
+          "attractionId": "attBuzzLightyearPlanetRescue",
+          "name": "巴斯光年星际营救",
+          "waitMinutes": 5,
+          "walkMinutes": 9,
+          "score": 6.6,
+          "estimated": false,
+          "predictedWait": null,
+          "reasons": []
+        },
+        {
+          "attractionId": "attVoyageToCrystalGrotto",
+          "name": "晶彩奇航",
+          "waitMinutes": 5,
+          "walkMinutes": 9,
+          "score": 6.6,
+          "estimated": false,
+          "predictedWait": null,
+          "reasons": []
+        }
+      ],
+      "plan": [
+        {
+          "name": "船奇戏水滩",
+          "attractionId": "attShipwreckShore",
+          "startAfterMin": 9,
+          "waitMinutes": 5
+        },
+        {
+          "name": "晶彩奇航",
+          "attractionId": "attVoyageToCrystalGrotto",
+          "startAfterMin": 41,
+          "waitMinutes": 5
+        },
+        {
+          "name": "巴斯光年星际营救",
+          "attractionId": "attBuzzLightyearPlanetRescue",
+          "startAfterMin": 60,
+          "waitMinutes": 8
+        },
+        {
+          "name": "幻想曲旋转木马",
+          "attractionId": "attFantasiaCarousel",
+          "startAfterMin": 79,
+          "waitMinutes": 15
+        }
+      ],
+      "excludedCount": 2,
+      "excludedByReason": {
+        "closed": 2
+      }
+    },
+    "kids_1200": {
+      "label": "带娃（身高 110cm，预算 240 分钟）",
+      "generatedAt": "2026-10-17T04:00:00.000Z",
+      "top3": [
+        {
+          "attractionId": "attJuniorExplorersCamp",
+          "name": "小勇者营地",
+          "waitMinutes": 5,
+          "walkMinutes": 6,
+          "score": 10,
+          "estimated": false,
+          "predictedWait": {
+            "in30min": 5,
+            "in60min": 5
+          },
+          "reasons": [
+            "nearby：离你现在只有 6 分钟步行",
+            "wait_low：现在只要 5 分钟，人不多"
+          ]
+        },
+        {
+          "attractionId": "attShipwreckShore",
+          "name": "船奇戏水滩",
+          "waitMinutes": 5,
+          "walkMinutes": 9,
+          "score": 9,
+          "estimated": false,
+          "predictedWait": null,
+          "reasons": []
+        },
+        {
+          "attractionId": "attBuzzLightyearPlanetRescue",
+          "name": "巴斯光年星际营救",
+          "waitMinutes": 5,
+          "walkMinutes": 9,
+          "score": 8.5,
+          "estimated": false,
+          "predictedWait": null,
+          "reasons": []
+        }
+      ],
+      "plan": [
+        {
+          "name": "小勇者营地",
+          "attractionId": "attJuniorExplorersCamp",
+          "startAfterMin": 6,
+          "waitMinutes": 5
+        },
+        {
+          "name": "船奇戏水滩",
+          "attractionId": "attShipwreckShore",
+          "startAfterMin": 36,
+          "waitMinutes": 5
+        },
+        {
+          "name": "晶彩奇航",
+          "attractionId": "attVoyageToCrystalGrotto",
+          "startAfterMin": 68,
+          "waitMinutes": 9
+        },
+        {
+          "name": "巴斯光年星际营救",
+          "attractionId": "attBuzzLightyearPlanetRescue",
+          "startAfterMin": 91,
+          "waitMinutes": 8
+        }
+      ],
+      "excludedCount": 5,
+      "excludedByReason": {
+        "height": 3,
+        "closed": 2
+      }
+    }
+  }
+}

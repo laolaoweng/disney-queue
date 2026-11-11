@@ -1,0 +1,152 @@
+<view class="page">
+  <view class="topbar">
+    <view>
+      <text class="topbar-title">我想玩</text>
+      <text class="topbar-sub">{{dateLine}} · {{updatedText}}</text>
+    </view>
+    <view class="refresh-btn {{spinning ? 'spinning' : ''}}" bindtap="onRefresh">↻</view>
+  </view>
+
+  <!-- 加载中 -->
+  <view wx:if="{{loading}}" class="card sk-card">
+    <view class="sk-line w40"></view>
+    <view class="sk-line big w70"></view>
+    <view class="sk-line w90"></view>
+    <view class="sk-line w60"></view>
+  </view>
+
+  <!-- 错误 -->
+  <view wx:elif="{{error}}" class="empty">
+    <text class="empty-emoji">📡</text>
+    <text class="empty-title">数据没加载出来</text>
+    <text class="muted small">{{error}}</text>
+    <view class="empty-btn" bindtap="onRefresh">重试</view>
+  </view>
+
+  <block wx:else>
+    <!-- 汇总卡 -->
+    <view class="card sum-card">
+      <view class="sum-top">
+        <view class="sum-top-left">
+          <text class="sum-label">全部玩完大约</text>
+          <view class="sum-num-line">
+            <text class="num sum-num">{{totals.totalMinutes}}</text>
+            <text class="sum-unit">分钟</text>
+          </view>
+          <text wx:if="{{totals.attractions}}" class="sum-finish">预计 {{totals.finishText}} 全部玩完</text>
+          <text wx:else class="sum-finish">还没勾选想玩的项目</text>
+        </view>
+        <view wx:if="{{totals.attractions}}" class="sum-badge">
+          <text class="num sum-badge-num">{{totals.attractions}}</text>
+          <text class="sum-badge-label">个项目</text>
+        </view>
+      </view>
+
+      <view wx:if="{{totals.attractions}}" class="sum-grid">
+        <view class="sum-item">
+          <text class="num sum-item-num">{{totals.waitMinutes}}</text>
+          <text class="sum-item-label">排队 分</text>
+        </view>
+        <view class="sum-item">
+          <text class="num sum-item-num">{{totals.walkMinutes}}</text>
+          <text class="sum-item-label">步行 分</text>
+        </view>
+        <view class="sum-item">
+          <text class="num sum-item-num">{{totals.rideMinutes}}</text>
+          <text class="sum-item-label">体验 分</text>
+        </view>
+      </view>
+
+      <text wx:if="{{summaryText}}" class="sum-summary">{{summaryText}}</text>
+      <view wx:if="{{estimateError}}" class="sum-error">{{estimateError}}</view>
+      <view wx:if="{{excludedCount}}" class="sum-warn">已跳过：{{excludedText}}</view>
+    </view>
+
+    <!-- 已选（算法按当前排队从少到多排好） -->
+    <view wx:if="{{ordered.length}}" class="section">
+      <view class="section-head">
+        <text class="section-title">已选（按排队从少到多）</text>
+        <text class="section-link" bindtap="onClear">清空</text>
+      </view>
+
+      <view
+        wx:for="{{ordered}}"
+        wx:key="attractionId"
+        class="card order-card"
+        data-id="{{item.attractionId}}"
+        bindtap="onRemoveOrdered"
+      >
+        <view class="order-index">{{item.index}}</view>
+        <view class="order-main">
+          <view class="order-name-line">
+            <text class="order-name">{{item.name}}</text>
+            <text wx:if="{{item.estimated}}" class="pill">排队为估算</text>
+          </view>
+          <text class="order-sub">{{item.land}} · {{item.waitText}} · {{item.walkText}}</text>
+          <view class="order-time">
+            <text class="order-time-label">预计</text>
+            <text class="order-time-num">{{item.startText}}</text>
+            <text class="order-time-dash">-</text>
+            <text class="order-time-num">{{item.endText}}</text>
+            <text class="order-time-label">玩完</text>
+          </view>
+        </view>
+        <view class="order-right">
+          <text class="num order-wait {{item.waitClass}}">{{item.waitMinutes}}</text>
+          <text class="order-unit">分钟</text>
+          <text class="order-remove">移出</text>
+        </view>
+      </view>
+      <view class="footnote">点任意一行可以移出清单；顺序和总耗时每次按最新排队重算</view>
+    </view>
+
+    <!-- 空清单引导 -->
+    <view wx:else class="card empty-watch">
+      <text class="empty-emoji">🎯</text>
+      <text class="empty-title">勾上想玩的项目</text>
+      <text class="muted small">下面选几个想玩的，会自动按当前排队从少到多排好，并算出全部玩完要多久。</text>
+      <view class="empty-btn" bindtap="onSelectAll">全选在园项目</view>
+    </view>
+
+    <!-- 全部项目：按主题园区分组 -->
+    <view class="section">
+      <view class="section-head">
+        <text class="section-title">全部项目</text>
+        <text class="section-link" bindtap="onSelectAll">全选在园</text>
+      </view>
+
+      <view wx:for="{{groups}}" wx:for-item="group" wx:key="land" class="card group-card">
+        <view class="group-head">
+          <text class="group-name">{{group.land}}</text>
+          <text class="group-count">{{group.openCount}} 个开放 · 已选 {{group.checkedCount}}</text>
+        </view>
+
+        <view
+          wx:for="{{group.rows}}"
+          wx:for-item="row"
+          wx:key="id"
+          class="pick-row {{row.checked ? 'picked' : ''}} {{row.closed ? 'off' : ''}}"
+          data-id="{{row.id}}"
+          bindtap="onToggle"
+        >
+          <view class="checkbox {{row.checked ? 'on' : ''}}">
+            <text wx:if="{{row.checked}}" class="checkbox-mark">✓</text>
+          </view>
+          <view class="pick-main">
+            <view class="pick-name-line">
+              <text class="pick-name">{{row.name}}</text>
+              <text wx:if="{{row.closed}}" class="pill pick-off">已关闭</text>
+            </view>
+            <text class="pick-sub">{{row.categoryText}}</text>
+          </view>
+          <view class="pick-right">
+            <text class="num pick-wait {{row.waitClass}}">{{row.waitMinutes === null ? '--' : row.waitMinutes}}</text>
+            <text class="pick-unit">{{row.closed ? '已关闭' : '分钟'}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="footnote">{{sourceText}} · 排序与总耗时由 estimateSelected() 计算</view>
+  </block>
+</view>

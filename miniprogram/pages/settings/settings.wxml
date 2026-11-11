@@ -1,0 +1,163 @@
+<view class="page">
+  <view class="topbar">
+    <view>
+      <text class="topbar-title">我的偏好</text>
+      <text class="topbar-sub">改完自动保存，首屏立刻按新偏好重算</text>
+    </view>
+  </view>
+
+  <!-- 当前偏好下的推荐预览（直接调用算法） -->
+  <view wx:if="{{previewText}}" class="card preview-card" bindtap="goIndex">
+    <text class="preview-label">按现在这些设置</text>
+    <text class="preview-text">{{previewText}}</text>
+    <text class="preview-go">去首页看 ›</text>
+  </view>
+
+  <!-- 同行类型 -->
+  <view class="card section">
+    <view class="card-title">同行类型</view>
+    <view class="party-grid">
+      <view
+        wx:for="{{partyOptions}}"
+        wx:key="key"
+        class="party {{party === item.key ? 'on' : ''}}"
+        data-key="{{item.key}}"
+        bindtap="onPartyTap"
+      >
+        <text class="party-label">{{item.label}}</text>
+        <text class="party-desc">{{item.desc}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 时长预算 -->
+  <view class="card section">
+    <view class="card-title">还能玩多久</view>
+    <view class="chips">
+      <view
+        wx:for="{{budgetOptions}}"
+        wx:key="value"
+        class="chip {{budgetMin === item.value ? 'on' : ''}}"
+        data-value="{{item.value}}"
+        bindtap="onBudgetTap"
+      >{{item.label}}</view>
+    </view>
+    <view class="hint">行程页会按这个时长排 3–4 个项目</view>
+  </view>
+
+  <!-- 身高 -->
+  <view class="card section">
+    <view class="card-title">同行最矮身高 <text class="card-title-note">自动过滤身高不够的项目</text></view>
+    <view class="height-row">
+      <input
+        class="height-input"
+        type="number"
+        value="{{heightInput}}"
+        placeholder="不填 = 不限"
+        bindinput="onHeightInput"
+        bindblur="onHeightBlur"
+      />
+      <text class="height-unit">cm</text>
+      <view wx:if="{{heightCm !== null}}" class="link" bindtap="onClearHeight">清除</view>
+    </view>
+    <view class="chips">
+      <view
+        wx:for="{{heightChips}}"
+        wx:key="*this"
+        class="chip small {{heightCm === item ? 'on' : ''}}"
+        data-value="{{item}}"
+        bindtap="onHeightChip"
+      >{{item}}</view>
+    </view>
+  </view>
+
+  <!-- 当前位置 -->
+  <view class="card section">
+    <view class="card-title">我现在在哪</view>
+    <picker mode="selector" range="{{lastOptions}}" value="{{lastIndex}}" bindchange="onLastChange">
+      <view class="picker-row">
+        <text class="picker-value">{{lastOptions[lastIndex]}}</text>
+        <text class="picker-arrow">›</text>
+      </view>
+    </picker>
+    <view class="hint">用于算步行时间和「附近优先」</view>
+  </view>
+
+  <!-- 项目偏好 -->
+  <view class="card section">
+    <view class="card-title">项目偏好</view>
+    <view class="tabs">
+      <view
+        wx:for="{{tabs}}"
+        wx:key="key"
+        class="tab {{currentTab === item.key ? 'on' : ''}}"
+        data-key="{{item.key}}"
+        bindtap="onTabTap"
+      >
+        <text>{{item.key === 'mustDo' ? '必玩' : item.key === 'avoid' ? '避开' : '尊享卡'}}</text>
+        <text class="tab-count">{{item.key === 'mustDo' ? mustCount : item.key === 'avoid' ? avoidCount : premierCount}}</text>
+      </view>
+    </view>
+
+    <view wx:if="{{currentTab === 'mustDo'}}" class="hint">必玩会加权推荐，并优先排进行程</view>
+    <view wx:elif="{{currentTab === 'avoid'}}" class="hint">避开 = 直接排除，不参与推荐</view>
+    <view wx:else class="hint">买了尊享卡的项目，排队时间按 0 分钟估算</view>
+
+    <view wx:if="{{dataError}}" class="hint warn">{{dataError}}</view>
+
+    <view wx:if="{{attractions.length}}" class="attr-list">
+      <view
+        wx:for="{{attractions}}"
+        wx:key="id"
+        class="attr {{item.on ? 'on' : ''}}"
+        data-id="{{item.id}}"
+        bindtap="onToggleAttr"
+      >
+        <view class="attr-main">
+          <text class="attr-name">{{item.name}}</text>
+          <text class="attr-sub">{{item.land}} · {{item.categoryText}}{{item.heightCm ? ' · ' + item.heightCm + 'cm' : ''}}</text>
+        </view>
+        <view class="attr-toggle {{item.on ? 'on' : ''}}">{{item.on ? '已选' : '＋'}}</view>
+      </view>
+    </view>
+    <view wx:else class="hint">项目列表还没加载出来</view>
+  </view>
+
+  <!-- 已玩过 -->
+  <view class="card section">
+    <view class="card-title">已玩过</view>
+    <view wx:if="{{playedList.length}}" class="played-list">
+      <view wx:for="{{playedList}}" wx:key="id" class="played" data-id="{{item.id}}" bindtap="onRemovePlayed">{{item.name}} ×</view>
+    </view>
+    <view wx:else class="hint">在排行页点项目可以标记「已玩过」，会被降权</view>
+    <view wx:if="{{playedList.length}}" class="link" bindtap="onClearPlayed">清空记录</view>
+  </view>
+
+  <!-- 其他 -->
+  <view class="card section">
+    <view class="card-title">其他</view>
+    <view class="switch-row">
+      <text class="switch-label">想看演出 / 巡游</text>
+      <switch checked="{{wantShows}}" color="#ff8a3d" bindchange="onWantShowsChange" />
+    </view>
+    <view class="hr"></view>
+
+    <view class="info-row">
+      <text class="info-label">数据来源</text>
+      <text class="info-value">{{sourceText}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">更新时间</text>
+      <text class="info-value">{{updatedText}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-label">数据地址</text>
+      <text class="info-value url">{{dataBaseUrl}}</text>
+    </view>
+
+    <view wx:if="{{mockMode}}" class="footnote">当前为演示数据：改 utils/api.js 的 MOCK_MODE 即可切真实数据</view>
+
+    <view class="link" bindtap="onClearCache">清除本地数据缓存</view>
+    <view class="link danger" bindtap="onReset">重置全部偏好</view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rank/rank",
+    "pages/watchlist/watchlist",
+    "pages/plan/plan",
+    "pages/settings/settings",
+    "pages/forecast/forecast"
+  ],
+  "window": {
+    "navigationBarTitleText": "排队最优解",
+    "navigationBarBackgroundColor": "#0b0e14",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0b0e14",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#7a8494",
+    "selectedColor": "#ff8a3d",
+    "backgroundColor": "#12161f",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "最优解"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排队榜"
+      },
+      {
+        "pagePath": "pages/watchlist/watchlist",
+        "text": "清单"
+      },
+      {
+        "pagePath": "pages/plan/plan",
+        "text": "行程"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

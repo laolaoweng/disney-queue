@@ -1,0 +1,170 @@
+/**
+ * app.wxss —— 全局样式：深色底 + iOS 卡片风，数字高对比
+ * 状态色：绿=排队短(<=20) / 橙=中等(<=45) / 红=长(>45) / 灰=关闭
+ */
+page {
+  background: #0b0e14;
+  color: #eef2f7;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  font-size: 28rpx;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  padding-bottom: calc(48rpx + env(safe-area-inset-bottom));
+}
+
+/* ---------- 通用文字 ---------- */
+.muted {
+  color: #7a8494;
+}
+
+.small {
+  font-size: 22rpx;
+}
+
+.title-lg {
+  font-size: 40rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+
+.num {
+  font-family: "DIN Alternate", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.short { color: #35d07f; }
+.mid { color: #ffb020; }
+.long { color: #ff5d5d; }
+.closed { color: #5a6473; }
+
+/* ---------- 顶部栏 ---------- */
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 28rpx 32rpx 20rpx;
+}
+
+.topbar-title {
+  display: block;
+  font-size: 42rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+
+.topbar-sub {
+  display: block;
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: #7a8494;
+}
+
+.refresh-btn {
+  width: 64rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #151b26;
+  color: #ff8a3d;
+  font-size: 34rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.08);
+}
+
+.refresh-btn.spinning {
+  opacity: 0.4;
+}
+
+/* ---------- 卡片 ---------- */
+.card {
+  background: #151b26;
+  border-radius: 28rpx;
+  margin: 0 24rpx 24rpx;
+  padding: 32rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.06);
+  box-sizing: border-box;
+}
+
+.card-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+
+.hr {
+  height: 1rpx;
+  background: rgba(255, 255, 255, 0.06);
+  margin: 24rpx 0;
+}
+
+/* ---------- 药丸 / 标签 ---------- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4rpx 16rpx;
+  border-radius: 999rpx;
+  font-size: 20rpx;
+  background: rgba(255, 255, 255, 0.07);
+  color: #c6cfdc;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2rpx 12rpx;
+  border-radius: 8rpx;
+  font-size: 20rpx;
+  background: rgba(255, 138, 61, 0.15);
+  color: #ffab6b;
+  margin-left: 12rpx;
+}
+
+.badge.ghost {
+  background: rgba(255, 255, 255, 0.07);
+  color: #9aa6b8;
+}
+
+.badge.ok {
+  background: rgba(53, 208, 127, 0.14);
+  color: #5fe0a0;
+}
+
+.badge.warn {
+  background: rgba(255, 176, 32, 0.14);
+  color: #ffc65c;
+}
+
+/* ---------- 空的 / 错误状态 ---------- */
+.empty {
+  margin: 0 24rpx;
+  padding: 72rpx 40rpx;
+  border-radius: 28rpx;
+  background: #151b26;
+  text-align: center;
+  color: #8b97aa;
+}
+
+.empty-emoji {
+  display: block;
+  font-size: 64rpx;
+  margin-bottom: 16rpx;
+}
+
+.empty-title {
+  display: block;
+  font-size: 30rpx;
+  color: #dfe6f0;
+  margin-bottom: 12rpx;
+  font-weight: 600;
+}
+
+/* ---------- 底部说明 ---------- */
+.footnote {
+  margin: 8rpx 40rpx 0;
+  text-align: center;
+  font-size: 22rpx;
+  color: #5f6a7a;
+}

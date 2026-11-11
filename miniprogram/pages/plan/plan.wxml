@@ -1,0 +1,98 @@
+<view class="page">
+  <view class="topbar">
+    <view>
+      <text class="topbar-title">行程</text>
+      <text class="topbar-sub">{{originText}} · {{budgetText}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{loading}}" class="card sk-card">
+    <view class="sk-line w50"></view>
+    <view class="sk-line w90"></view>
+    <view class="sk-line w70"></view>
+  </view>
+
+  <view wx:elif="{{error}}" class="empty">
+    <text class="empty-emoji">📡</text>
+    <text class="empty-title">{{error}}</text>
+    <view class="empty-btn" bindtap="goSettings">去调偏好</view>
+  </view>
+
+  <block wx:else>
+    <!-- 头部摘要 -->
+    <view class="plan-head card">
+      <view class="plan-head-row">
+        <view class="plan-head-block">
+          <text class="plan-head-num num">{{planCount}}</text>
+          <text class="plan-head-label">个项目</text>
+        </view>
+        <view class="plan-head-block">
+          <text class="plan-head-num num">{{totalWait}}</text>
+          <text class="plan-head-label">分钟排队</text>
+        </view>
+        <view class="plan-head-block">
+          <text class="plan-head-num num">{{totalMinutes}}</text>
+          <text class="plan-head-label">分钟总耗时</text>
+        </view>
+      </view>
+      <view class="plan-head-time">
+        <text class="plan-time-now">{{startText}}</text>
+        <text class="plan-time-arrow">→</text>
+        <text class="plan-time-end">{{endText}}</text>
+        <text class="plan-time-label">预计玩完</text>
+      </view>
+    </view>
+
+    <!-- 顺序列表 -->
+    <view wx:if="{{items.length}}" class="timeline">
+      <view wx:for="{{items}}" wx:key="attractionId" class="step {{item.played ? 'step-played' : ''}}">
+        <view class="step-left">
+          <view class="step-index num">{{item.index}}</view>
+          <view wx:if="{{index !== items.length - 1}}" class="step-line"></view>
+        </view>
+
+        <view class="step-body card">
+          <view class="step-top">
+            <view class="step-time">
+              <text class="step-start">{{item.startText}}</text>
+              <text class="step-dash">-</text>
+              <text class="step-end">{{item.endText}}</text>
+            </view>
+            <view class="step-btns">
+              <view
+                class="step-start-btn"
+                data-id="{{item.attractionId}}"
+                bindtap="onSetStart"
+              >我从这里开始</view>
+              <view
+                class="step-played-btn {{item.played ? 'on' : ''}}"
+                data-id="{{item.attractionId}}"
+                bindtap="onTogglePlayed"
+              >{{item.played ? '已玩 ✓' : '标记已玩'}}</view>
+            </view>
+          </view>
+
+          <view class="step-name">{{item.name}}</view>
+          <view class="step-meta">
+            <text class="pill">{{item.land}}</text>
+            <text class="step-meta-text">排队 {{item.waitMinutes}} 分钟 · 体验约 {{item.durationMin}} 分钟</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else class="empty">
+      <text class="empty-emoji">🗺️</text>
+      <text class="empty-title">还没排出顺序</text>
+      <text class="muted small">{{noteText}}</text>
+      <view class="empty-btn" bindtap="goSettings">调整时长预算</view>
+    </view>
+
+    <view wx:if="{{noteText && items.length}}" class="note" bindtap="goSettings">
+      {{noteText}} →
+    </view>
+
+    <view wx:if="{{items.length}}" class="footnote">{{summaryText}}</view>
+    <view wx:if="{{items.length}}" class="footnote">{{playTipText}}</view>
+  </block>
+</view>

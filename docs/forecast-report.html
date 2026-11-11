@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>上海迪士尼排队分时预测 · 最近 14 天</title>
+<style>
+  :root { --bg:#0b0e14; --card:#141a26; --line:#26303f; --text:#e8eefc; --muted:#8b97ab;
+          --accent:#ff8a3d; --green:#39d98a; --red:#ff5c5c; --blue:#5aa9ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font: 14px/1.6 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 60px; }
+  h1 { font-size: 24px; margin: 0 0 6px; }
+  h2 { font-size: 17px; margin: 34px 0 12px; }
+  .sub { color:var(--muted); font-size: 13px; }
+  .cards { display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; flex:1 1 220px; }
+  .card .k { color:var(--muted); font-size:12px; }
+  .card .v { font-size:20px; font-weight:600; margin-top:2px; }
+  .card .v.green { color:var(--green); }
+  .card .v.red { color:var(--red); }
+  .tabs { display:flex; gap:8px; margin:14px 0 8px; }
+  .tab { background:transparent; border:1px solid var(--line); color:var(--muted); padding:6px 14px; border-radius:999px; cursor:pointer; font-size:13px; }
+  .tab.on { border-color:var(--accent); color:var(--accent); }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; overflow-x:auto; }
+  svg { display:block; width:100%; height:auto; }
+  .legend { display:flex; gap:14px; flex-wrap:wrap; margin:6px 0 2px; font-size:12px; color:var(--muted); }
+  .legend label { display:flex; align-items:center; gap:6px; cursor:pointer; user-select:none; }
+  .dot { width:10px; height:10px; border-radius:3px; display:inline-block; }
+  table { border-collapse: collapse; width:100%; font-size:12px; margin-top:8px; }
+  th, td { border-bottom:1px solid var(--line); padding:6px 8px; text-align:right; white-space:nowrap; }
+  th:first-child, td:first-child { text-align:left; }
+  th { color:var(--muted); font-weight:500; }
+  td.best { color:var(--green); font-weight:600; }
+  td.peak { color:var(--red); }
+  tr:hover td { background:rgba(255,255,255,.03); }
+  .note { color:var(--muted); font-size:12px; margin-top:10px; }
+  .empty { color:var(--muted); padding:24px 0; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>上海迪士尼 · 排队分时预测</h1>
+  <div class="sub">最近 14 天历史样本（2026-10-04 ~ 2026-10-17，14 天 · 1706 个快照 · 45705 条样本） · 数据来源 Queue-Times.com，仅供个人学习参考</div>
+
+  <div class="cards">
+    <div class="card"><div class="k">窗口</div><div class="v" style="font-size:15px">2026-10-04 ~ 2026-10-17</div><div class="k">14 天有效数据</div></div>
+    <div class="card"><div class="k">全园最空</div><div class="v green">20:00 / 18:00 / 10:00</div><div class="k">21 点最空（平均 18 分钟），17 点最挤（平均 30.1 分钟），最空比最挤少 40%</div></div>
+    <div class="card"><div class="k">全园最挤</div><div class="v red">17:00 / 11:00 / 14:00</div><div class="k">避开这些时段或先玩别的</div></div>
+  </div>
+
+  <h2>全园平均排队（按小时）</h2>
+  <div class="tabs" id="tabs">
+    <button class="tab on" data-day="all">全部</button>
+    <button class="tab" data-day="weekday">工作日</button>
+    <button class="tab" data-day="weekend">周末</button>
+  </div>
+  <div class="panel" id="parkPanel"></div>
+  <div class="note">柱子越高越挤。绿色 = 当天最空的 2–3 个小时。</div>
+
+  <h2>八大必玩的排队曲线</h2>
+  <div class="legend" id="legend"></div>
+  <div class="tabs" id="tabs2">
+    <button class="tab on" data-day="all">全部</button>
+    <button class="tab" data-day="weekday">工作日</button>
+    <button class="tab" data-day="weekend">周末</button>
+  </div>
+  <div class="panel" id="linePanel"></div>
+  <div class="note">点上面的图例可以隐藏/显示线条。空白表示该小时样本不足。</div>
+
+  <h2>明细表</h2>
+  <div class="panel" id="tablePanel"></div>
+  <div class="note">「平均排队」是开放项目的两层平均（先算每个快照的开放项目平均，再按小时平均）；「—」= 样本不足。生成时间 2026-11-11T03:25:20.683Z</div>
+</div>
+<script>
+const DATA = {"window":{"startDate":"2026-10-04","endDate":"2026-10-17","days":14,"daysUsed":["2026-10-04","2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09","2026-10-10","2026-10-11","2026-10-12","2026-10-13","2026-10-14","2026-10-15","2026-10-16","2026-10-17"],"snapshots":1706,"samples":45705},"hours":[9,10,11,12,13,14,15,16,17,18,19,20,21],"park":[{"hour":9,"all":23.3,"weekday":21.9,"weekend":25.9,"samples":948,"days":6},{"hour":10,"all":26,"weekday":25.1,"weekend":27.7,"samples":3219,"days":13},{"hour":11,"all":28.4,"weekday":27.8,"weekend":30,"samples":4530,"days":14},{"hour":12,"all":26.3,"weekday":26.3,"weekend":26.2,"samples":4840,"days":14},{"hour":13,"all":27.4,"weekday":27.3,"weekend":27.5,"samples":4867,"days":14},{"hour":14,"all":28,"weekday":28.4,"weekend":27,"samples":4762,"days":14},{"hour":15,"all":27.1,"weekday":27,"weekend":27.2,"samples":4463,"days":13},{"hour":16,"all":27.3,"weekday":27.7,"weekend":26.6,"samples":4462,"days":13},{"hour":17,"all":30.1,"weekday":30.8,"weekend":28.7,"samples":4338,"days":13},{"hour":18,"all":24.9,"weekday":25.7,"weekend":23.1,"samples":4008,"days":13},{"hour":19,"all":26,"weekday":27.1,"weekend":24.1,"samples":3050,"days":13},{"hour":20,"all":18.3,"weekday":18.5,"weekend":17.8,"samples":1818,"days":13},{"hour":21,"all":18,"weekday":20.9,"weekend":16.5,"samples":400,"days":3}],"quietestHours":[{"hour":20,"avgWait":18.3},{"hour":18,"avgWait":24.9},{"hour":10,"avgWait":26}],"busiestHours":[{"hour":17,"avgWait":30.1},{"hour":11,"avgWait":28.4},{"hour":14,"avgWait":28}],"highlights":[{"id":"attTronLightcyclePowerRun","name":"创极速光轮","land":"明日世界","byHour":[{"hour":9,"all":66.6,"weekday":63.2,"weekend":73.1},{"hour":10,"all":73.9,"weekday":71,"weekend":82.7},{"hour":11,"all":68.5,"weekday":70.4,"weekend":61.7},{"hour":12,"all":70.8,"weekday":69.5,"weekend":74.2},{"hour":13,"all":71.5,"weekday":73.5,"weekend":66.6},{"hour":14,"all":74.8,"weekday":77.2,"weekend":69},{"hour":15,"all":70.2,"weekday":71.1,"weekend":68.4},{"hour":16,"all":84.7,"weekday":86.9,"weekend":80.1},{"hour":17,"all":90.3,"weekday":93.2,"weekend":84.1},{"hour":18,"all":89.6,"weekday":96.8,"weekend":73.4},{"hour":19,"all":80.9,"weekday":88,"weekend":68},{"hour":20,"all":57,"weekday":58.1,"weekend":54.6},{"hour":21,"all":51.9,"weekday":72.9,"weekend":41.4}],"quietestHour":20,"busiestHour":17,"quietestWindow":{"startHour":20,"endHour":20,"avgWait":57}},{"id":"attSevenDwarfsMineTrain","name":"七个小矮人矿山车","land":"梦幻世界","byHour":[{"hour":9,"all":77.9,"weekday":76,"weekend":81.5},{"hour":10,"all":86.8,"weekday":85.1,"weekend":89.9},{"hour":11,"all":91.9,"weekday":89.7,"weekend":97.2},{"hour":12,"all":85.3,"weekday":86.9,"weekend":81.3},{"hour":13,"all":89.8,"weekday":89.3,"weekend":90.8},{"hour":14,"all":86.6,"weekday":86.8,"weekend":86.4},{"hour":15,"all":86.5,"weekday":86.3,"weekend":87},{"hour":16,"all":86.4,"weekday":88.1,"weekend":82.7},{"hour":17,"all":88.4,"weekday":90,"weekend":84.6},{"hour":18,"all":73.6,"weekday":75.2,"weekend":70},{"hour":19,"all":72.5,"weekday":75.7,"weekend":66.6},{"hour":20,"all":51,"weekday":50.5,"weekend":52.3},{"hour":21,"all":46.4,"weekday":47.1,"weekend":46.1}],"quietestHour":20,"busiestHour":11,"quietestWindow":{"startHour":20,"endHour":20,"avgWait":51}},{"id":"attPiratesOfCaribbean","name":"加勒比海盗——沉落宝藏之战","land":"宝藏湾","byHour":[{"hour":9,"all":23.2,"weekday":20,"weekend":29.2},{"hour":10,"all":33.2,"weekday":30.7,"weekend":38.8},{"hour":11,"all":38,"weekday":36,"weekend":43.2},{"hour":12,"all":36.8,"weekday":34.3,"weekend":43},{"hour":13,"all":35.8,"weekday":32.7,"weekend":43.6},{"hour":14,"all":29.6,"weekday":29.6,"weekend":29.8},{"hour":15,"all":28.5,"weekday":27.5,"weekend":30.5},{"hour":16,"all":22.7,"weekday":22.1,"weekend":23.8},{"hour":17,"all":22.9,"weekday":23.9,"weekend":20.6},{"hour":18,"all":13.9,"weekday":15,"weekend":11.5},{"hour":19,"all":12.9,"weekday":13.9,"weekend":11.2},{"hour":20,"all":7.2,"weekday":7.5,"weekend":6.5},{"hour":21,"all":5,"weekday":5,"weekend":5}],"quietestHour":20,"busiestHour":11,"quietestWindow":{"startHour":20,"endHour":20,"avgWait":7.2}},{"id":"attSoaringOverHorizon","name":"翱翔•飞越地平线","land":"探险岛","byHour":[{"hour":9,"all":53.8,"weekday":49.6,"weekend":61.9},{"hour":10,"all":62.2,"weekday":60.6,"weekend":65.3},{"hour":11,"all":68.1,"weekday":63.7,"weekend":78.5},{"hour":12,"all":65.3,"weekday":66,"weekend":63.6},{"hour":13,"all":61.9,"weekday":60.5,"weekend":65.5},{"hour":14,"all":65.2,"weekday":65.6,"weekend":64.5},{"hour":15,"all":66.4,"weekday":65,"weekend":69.6},{"hour":16,"all":60.2,"weekday":59.3,"weekend":62.3},{"hour":17,"all":67.1,"weekday":64.4,"weekend":73.4},{"hour":18,"all":52.1,"weekday":51.4,"weekend":53.4},{"hour":19,"all":51.5,"weekday":50.9,"weekend":52.4},{"hour":20,"all":27,"weekday":24.2,"weekend":33.1},{"hour":21,"all":24,"weekday":27.9,"weekend":22.1}],"quietestHour":20,"busiestHour":11,"quietestWindow":{"startHour":20,"endHour":20,"avgWait":27}},{"id":"attRoaringRapids","name":"雷鸣山漂流","land":"探险岛","byHour":[{"hour":9,"all":24.7,"weekday":19.4,"weekend":35},{"hour":10,"all":35.4,"weekday":32.5,"weekend":41},{"hour":11,"all":41.9,"weekday":39.9,"weekend":46.8},{"hour":12,"all":34.3,"weekday":33.8,"weekend":35.7},{"hour":13,"all":43,"weekday":42.5,"weekend":44.1},{"hour":14,"all":40.4,"weekday":41.5,"weekend":37.8},{"hour":15,"all":42.8,"weekday":42.3,"weekend":44},{"hour":16,"all":37.4,"weekday":38.8,"weekend":34.5},{"hour":17,"all":42.4,"weekday":44.7,"weekend":37.2},{"hour":18,"all":19.7,"weekday":20.6,"weekend":17.7},{"hour":19,"all":17.5,"weekday":18.9,"weekend":15},{"hour":20,"all":12.1,"weekday":12.7,"weekend":10.8},{"hour":21,"all":8.8,"weekday":6.4,"weekend":10}],"quietestHour":20,"busiestHour":13,"quietestWindow":{"startHour":20,"endHour":20,"avgWait":12.1}},{"id":"attZootopiaHotPursuit","name":"疯狂动物城：热力追踪","land":"疯狂动物城","byHour":[{"hour":9,"all":67.6,"weekday":64.4,"weekend":73.8},{"hour":10,"all":76.8,"weekday":72.3,"weekend":88.4},{"hour":11,"all":79.5,"weekday":77.6,"weekend":84.3},{"hour":12,"all":73.8,"weekday":74,"weekend":73.2},{"hour":13,"all":75,"weekday":74.1,"weekend":77.2},{"hour":14,"all":73.8,"weekday":75,"weekend":70.7},{"hour":15,"all":67.4,"weekday":68.2,"weekend":65.8},{"hour":16,"all":64.8,"weekday":67.2,"weekend":59.6},{"hour":17,"all":66.8,"weekday":71.3,"weekend":58.8},{"hour":18,"all":50.5,"weekday":54.8,"weekend":42.6},{"hour":19,"all":47,"weekday":51.6,"weekend":39},{"hour":20,"all":29.6,"weekday":29.8,"weekend":29.2},{"hour":21,"all":23.3,"weekday":27.1,"weekend":20}],"quietestHour":20,"busiestHour":11,"quietestWindow":{"startHour":20,"endHour":20,"avgWait":29.6}},{"id":"attRexsRCRacer","name":"抱抱龙冲天赛车","land":"迪士尼·皮克斯玩具总动员","byHour":[{"hour":9,"all":52.6,"weekday":52,"weekend":53.8},{"hour":10,"all":62.3,"weekday":58.2,"weekend":70.1},{"hour":11,"all":74,"weekday":72.5,"weekend":77.5},{"hour":12,"all":70.5,"weekday":72.3,"weekend":66.1},{"hour":13,"all":76.3,"weekday":78.4,"weekend":71.3},{"hour":14,"all":77.8,"weekday":81.3,"weekend":69.4},{"hour":15,"all":76.8,"weekday":79.5,"weekend":70.9},{"hour":16,"all":89.4,"weekday":93.2,"weekend":81.1},{"hour":17,"all":89.2,"weekday":93.5,"weekend":79.2},{"hour":18,"all":72.1,"weekday":77.2,"weekend":60},{"hour":19,"all":68.7,"weekday":73.6,"weekend":59.9},{"hour":20,"all":46.2,"weekday":48.8,"weekend":40.6},{"hour":21,"all":40,"weekday":52.9,"weekend":33.6}],"quietestHour":20,"busiestHour":16,"quietestWindow":{"startHour":20,"endHour":20,"avgWait":46.2}},{"id":"attPeterPansFlight","name":"小飞侠天空奇遇","land":"梦幻世界","byHour":[{"hour":9,"all":13.7,"weekday":12.4,"weekend":16.2},{"hour":10,"all":27,"weekday":24.4,"weekend":32},{"hour":11,"all":35.7,"weekday":33.3,"weekend":41.7},{"hour":12,"all":32.6,"weekday":32.5,"weekend":32.9},{"hour":13,"all":36,"weekday":35,"weekend":38.2},{"hour":14,"all":38.2,"weekday":38.4,"weekend":37.8},{"hour":15,"all":32.6,"weekday":31.9,"weekend":34.2},{"hour":16,"all":31.1,"weekday":31.6,"weekend":30},{"hour":17,"all":34.5,"weekday":35.5,"weekend":32.2},{"hour":18,"all":25,"weekday":25.8,"weekend":23.3},{"hour":19,"all":25.8,"weekday":26.5,"weekend":24.6},{"hour":20,"all":13.7,"weekday":14,"weekend":13.1},{"hour":21,"all":12.9,"weekday":16.4,"weekend":11.1}],"quietestHour":20,"busiestHour":14,"quietestWindow":{"startHour":20,"endHour":20,"avgWait":13.7}}],"pct":"21 点最空（平均 18 分钟），17 点最挤（平均 30.1 分钟），最空比最挤少 40%"};
+const COLORS = ['#ff8a3d','#5aa9ff','#39d98a','#ffd166','#c792ea','#ff5c5c','#4dd0e1','#f78fb3','#a3e635','#f97316'];
+
+function fmt(v) { return (v === null || v === undefined) ? '—' : (Math.round(v * 10) / 10).toFixed(1); }
+function pretty(h) { return String(h).padStart(2, '0') + ':00'; }
+
+function quietCard(kind) {
+  const list = kind === 'quiet' ? DATA.quietestHours : DATA.busiestHours;
+  if (!list || !list.length) return '—';
+  const top = list.slice(0, 3).map(x => pretty(x.hour));
+  return top.join(' / ');
+}
+
+// ---------- 柱状图 ----------
+function renderBars(day) {
+  const host = document.getElementById('parkPanel');
+  const rows = DATA.park;
+  const val = r => day === 'all' ? r.all : (day === 'weekday' ? r.weekday : r.weekend);
+  const pts = rows.map(r => ({ hour: r.hour, v: val(r) }));
+  const known = pts.filter(p => typeof p.v === 'number');
+  if (!known.length) { host.innerHTML = '<div class="empty">该天型没有足够样本</div>'; return; }
+  const max = Math.max.apply(null, known.map(p => p.v).concat([10]));
+  const quiet = new Set((DATA.quietestHours || []).map(x => x.hour));
+  const muted = new Set(known.filter(p => p.days !== undefined && p.days < 3).map(p => p.hour));
+
+  const W = 1000, H = 340, L = 46, R = 16, T = 28, B = 42;
+  const iw = W - L - R, ih = H - T - B;
+  const bw = Math.min(46, iw / pts.length - 10);
+  let out = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img">';
+  for (let g = 0; g <= 4; g++) {
+    const y = T + ih - ih * g / 4;
+    const label = Math.round(max * g / 4);
+    out += '<line x1="' + L + '" y1="' + y + '" x2="' + (W - R) + '" y2="' + y + '" stroke="#26303f"/>';
+    out += '<text x="' + (L - 8) + '" y="' + (y + 4) + '" fill="#8b97ab" font-size="11" text-anchor="end">' + label + '</text>';
+  }
+  pts.forEach((p, i) => {
+    const cx = L + iw * (i + 0.5) / pts.length;
+    const h = typeof p.v === 'number' ? Math.max(2, ih * p.v / max) : 0;
+    const y = T + ih - h;
+    const color = quiet.has(p.hour) && typeof p.v === 'number' ? '#39d98a' : '#ff8a3d';
+    if (typeof p.v === 'number') {
+      out += '<rect x="' + (cx - bw / 2) + '" y="' + y + '" width="' + bw + '" height="' + h + '" rx="4" fill="' + color + '" opacity="0.92"/>';
+      out += '<text x="' + cx + '" y="' + (y - 6) + '" fill="#e8eefc" font-size="11" text-anchor="middle">' + fmt(p.v) + '</text>';
+      if (quiet.has(p.hour)) out += '<text x="' + cx + '" y="' + (y - 20) + '" fill="#39d98a" font-size="10" text-anchor="middle">最空</text>';
+    }
+    out += '<text x="' + cx + '" y="' + (T + ih + 20) + '" fill="#8b97ab" font-size="11" text-anchor="middle">' + p.hour + '</text>';
+  });
+  out += '<text x="' + L + '" y="' + (H - 6) + '" fill="#8b97ab" font-size="11">小时（点） / 平均排队（分钟）</text>';
+  out += '</svg>';
+  host.innerHTML = out;
+}
+
+// ---------- 折线图 ----------
+const shown = {};
+function renderLines(day) {
+  const host = document.getElementById('linePanel');
+  const items = DATA.highlights.filter(h => shown[h.id] !== false);
+  if (!items.length) { host.innerHTML = '<div class="empty">至少选一条曲线</div>'; return; }
+  const hours = DATA.hours;
+  let max = 10;
+  items.forEach(h => h.byHour.forEach(r => { const v = day === 'all' ? r.all : (day === 'weekday' ? r.weekday : r.weekend); if (typeof v === 'number') max = Math.max(max, v); }));
+  max = Math.ceil(max / 20) * 20;
+
+  const W = 1000, H = 360, L = 46, R = 130, T = 24, B = 40;
+  const iw = W - L - R, ih = H - T - B;
+  const x = h => L + iw * (hours.indexOf(h) + 0.5) / hours.length;
+  const y = v => T + ih - ih * (v / max);
+  let out = '<svg viewBox="0 0 ' + W + ' ' + H + '">';
+  for (let g = 0; g <= 4; g++) {
+    const yy = T + ih - ih * g / 4;
+    out += '<line x1="' + L + '" y1="' + yy + '" x2="' + (W - R) + '" y2="' + yy + '" stroke="#26303f"/>';
+    out += '<text x="' + (L - 8) + '" y="' + (yy + 4) + '" fill="#8b97ab" font-size="11" text-anchor="end">' + Math.round(max * g / 4) + '</text>';
+  }
+  hours.forEach(h => {
+    out += '<text x="' + x(h) + '" y="' + (T + ih + 20) + '" fill="#8b97ab" font-size="11" text-anchor="middle">' + h + '</text>';
+  });
+  items.forEach((h, idx) => {
+    const color = COLORS[DATA.highlights.findIndex(x => x.id === h.id) % COLORS.length];
+    let d = '', started = false, last = null;
+    hours.forEach(hh => {
+      const row = h.byHour.find(r => r.hour === hh);
+      const v = row ? (day === 'all' ? row.all : (day === 'weekday' ? row.weekday : row.weekend)) : null;
+      if (typeof v !== 'number') { started = false; return; }
+      d += (started ? ' L ' : ' M ') + x(hh).toFixed(1) + ' ' + y(v).toFixed(1);
+      started = true; last = { hh, v };
+    });
+    if (d) out += '<path d="' + d.trim() + '" fill="none" stroke="' + color + '" stroke-width="2.4" stroke-linejoin="round"/>';
+    if (last) {
+      out += '<circle cx="' + x(last.hh) + '" cy="' + y(last.v) + '" r="3.4" fill="' + color + '"/>';
+      out += '<text x="' + (W - R + 8) + '" y="' + (y(last.v) + 4) + '" fill="' + color + '" font-size="12">' + h.name + '</text>';
+    }
+  });
+  out += '</svg>';
+  host.innerHTML = out;
+}
+
+function renderLegend() {
+  const host = document.getElementById('legend');
+  host.innerHTML = '';
+  DATA.highlights.forEach((h, i) => {
+    const label = document.createElement('label');
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = shown[h.id] !== false;
+    cb.style.display = 'none';
+    cb.addEventListener('change', () => { shown[h.id] = cb.checked; renderLines(currentDay); });
+    const dot = document.createElement('span');
+    dot.className = 'dot';
+    dot.style.background = COLORS[i % COLORS.length];
+    dot.style.opacity = shown[h.id] === false ? '0.25' : '1';
+    const txt = document.createElement('span');
+    txt.textContent = h.name;
+    txt.style.opacity = shown[h.id] === false ? '0.4' : '1';
+    label.appendChild(cb); label.appendChild(dot); label.appendChild(txt);
+    label.addEventListener('click', ev => {
+      ev.preventDefault();
+      shown[h.id] = shown[h.id] === false;
+      cb.checked = shown[h.id] !== false;
+      dot.style.opacity = shown[h.id] === false ? '0.25' : '1';
+      txt.style.opacity = shown[h.id] === false ? '0.4' : '1';
+      renderLines(currentDay);
+    });
+    host.appendChild(label);
+  });
+}
+
+// ---------- 明细表 ----------
+function renderTable(day) {
+  const host = document.getElementById('tablePanel');
+  const quiet = new Set((DATA.quietestHours || []).map(x => x.hour));
+  const busiest = new Set((DATA.busiestHours || []).map(x => x.hour));
+  const heads = ['小时', '全园平均'].concat(DATA.highlights.map(h => h.name));
+  let html = '<table><thead><tr>';
+  heads.forEach(h => { html += '<th>' + h + '</th>'; });
+  html += '</tr></thead><tbody>';
+  DATA.hours.forEach(hh => {
+    html += '<tr><td>' + pretty(hh) + '</td>';
+    const prow = DATA.park.find(r => r.hour === hh);
+    const pv = prow ? (day === 'all' ? prow.all : (day === 'weekday' ? prow.weekday : prow.weekend)) : null;
+    const cls = quiet.has(hh) ? ' best' : (busiest.has(hh) ? ' peak' : '');
+    html += '<td class="' + cls + '">' + fmt(pv) + '</td>';
+    DATA.highlights.forEach(h => {
+      const r = h.byHour.find(x => x.hour === hh);
+      const v = r ? (day === 'all' ? r.all : (day === 'weekday' ? r.weekday : r.weekend)) : null;
+      const best = h.quietestHour === hh;
+      html += '<td class="' + (best ? ' best' : '') + '">' + fmt(v) + '</td>';
+    });
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+  host.innerHTML = html;
+}
+
+// ---------- 交互 ----------
+let currentDay = 'all';
+function bindTabs(id) {
+  const box = document.getElementById(id);
+  box.querySelectorAll('.tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      box.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
+      btn.classList.add('on');
+      currentDay = btn.getAttribute('data-day');
+      document.querySelectorAll('#tabs .tab').forEach(b => b.classList.toggle('on', b.getAttribute('data-day') === currentDay));
+      document.querySelectorAll('#tabs2 .tab').forEach(b => b.classList.toggle('on', b.getAttribute('data-day') === currentDay));
+      renderBars(currentDay); renderLines(currentDay); renderTable(currentDay);
+    });
+  });
+}
+
+renderLegend(); bindTabs('tabs'); bindTabs('tabs2');
+renderBars('all'); renderLines('all'); renderTable('all');
+</script>
+</body>
+</html>

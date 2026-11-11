@@ -1,0 +1,4546 @@
+{
+  "schemaVersion": 1,
+  "parkId": "shdr",
+  "generatedAt": "2026-11-11T03:30:00Z",
+  "source": "queue-times",
+  "window": {
+    "startDate": "2026-10-04",
+    "endDate": "2026-10-17",
+    "days": 14,
+    "daysUsed": [
+      "2026-10-04",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-09",
+      "2026-10-10",
+      "2026-10-11",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-17"
+    ],
+    "snapshots": 1706,
+    "samples": 45705
+  },
+  "hours": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "park": {
+    "byHour": [
+      {
+        "hour": 9,
+        "avgWait": 23.3,
+        "medianWait": 21,
+        "samples": 948,
+        "days": 6,
+        "weekdayAvg": 21.9,
+        "weekendAvg": 25.9
+      },
+      {
+        "hour": 10,
+        "avgWait": 26.0,
+        "medianWait": 24,
+        "samples": 3219,
+        "days": 13,
+        "weekdayAvg": 25.1,
+        "weekendAvg": 27.7
+      },
+      {
+        "hour": 11,
+        "avgWait": 28.4,
+        "medianWait": 27,
+        "samples": 4530,
+        "days": 14,
+        "weekdayAvg": 27.8,
+        "weekendAvg": 30.0
+      },
+      {
+        "hour": 12,
+        "avgWait": 26.3,
+        "medianWait": 25,
+        "samples": 4840,
+        "days": 14,
+        "weekdayAvg": 26.3,
+        "weekendAvg": 26.2
+      },
+      {
+        "hour": 13,
+        "avgWait": 27.4,
+        "medianWait": 25,
+        "samples": 4867,
+        "days": 14,
+        "weekdayAvg": 27.3,
+        "weekendAvg": 27.5
+      },
+      {
+        "hour": 14,
+        "avgWait": 28.0,
+        "medianWait": 26,
+        "samples": 4762,
+        "days": 14,
+        "weekdayAvg": 28.4,
+        "weekendAvg": 27.0
+      },
+      {
+        "hour": 15,
+        "avgWait": 27.1,
+        "medianWait": 26,
+        "samples": 4463,
+        "days": 13,
+        "weekdayAvg": 27.0,
+        "weekendAvg": 27.2
+      },
+      {
+        "hour": 16,
+        "avgWait": 27.3,
+        "medianWait": 26,
+        "samples": 4462,
+        "days": 13,
+        "weekdayAvg": 27.7,
+        "weekendAvg": 26.6
+      },
+      {
+        "hour": 17,
+        "avgWait": 30.1,
+        "medianWait": 30,
+        "samples": 4338,
+        "days": 13,
+        "weekdayAvg": 30.8,
+        "weekendAvg": 28.7
+      },
+      {
+        "hour": 18,
+        "avgWait": 24.9,
+        "medianWait": 23,
+        "samples": 4008,
+        "days": 13,
+        "weekdayAvg": 25.7,
+        "weekendAvg": 23.1
+      },
+      {
+        "hour": 19,
+        "avgWait": 26.0,
+        "medianWait": 24,
+        "samples": 3050,
+        "days": 13,
+        "weekdayAvg": 27.1,
+        "weekendAvg": 24.1
+      },
+      {
+        "hour": 20,
+        "avgWait": 18.3,
+        "medianWait": 17,
+        "samples": 1818,
+        "days": 13,
+        "weekdayAvg": 18.5,
+        "weekendAvg": 17.8
+      },
+      {
+        "hour": 21,
+        "avgWait": 18.0,
+        "medianWait": 19,
+        "samples": 400,
+        "days": 3,
+        "weekdayAvg": 20.9,
+        "weekendAvg": 16.5
+      }
+    ],
+    "quietestHours": [
+      {
+        "hour": 20,
+        "avgWait": 18.3
+      },
+      {
+        "hour": 18,
+        "avgWait": 24.9
+      },
+      {
+        "hour": 10,
+        "avgWait": 26.0
+      }
+    ],
+    "busiestHours": [
+      {
+        "hour": 17,
+        "avgWait": 30.1
+      },
+      {
+        "hour": 11,
+        "avgWait": 28.4
+      },
+      {
+        "hour": 14,
+        "avgWait": 28.0
+      }
+    ],
+    "quietestWindow": {
+      "startHour": 20,
+      "endHour": 20,
+      "avgWait": 18.3
+    }
+  },
+  "attractions": [
+    {
+      "attractionId": "attBecomeIronMan",
+      "name": "漫威英雄总部 – 变身钢铁侠",
+      "land": "奇想花园",
+      "queueTimesId": 3896,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 21,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 5.3,
+          "medianWait": 5,
+          "samples": 117,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 6.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 6.7,
+          "medianWait": 5,
+          "samples": 163,
+          "min": 5,
+          "max": 20,
+          "weekdayAvg": 6.0,
+          "weekendAvg": 8.3
+        },
+        {
+          "hour": 12,
+          "avgWait": 6.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.4,
+          "weekendAvg": 7.5
+        },
+        {
+          "hour": 13,
+          "avgWait": 5.7,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.2,
+          "weekendAvg": 7.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 5.6,
+          "medianWait": 5,
+          "samples": 165,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.4,
+          "weekendAvg": 6.3
+        },
+        {
+          "hour": 15,
+          "avgWait": 6.2,
+          "medianWait": 5,
+          "samples": 155,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.6,
+          "weekendAvg": 7.5
+        },
+        {
+          "hour": 16,
+          "avgWait": 6.2,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.6,
+          "weekendAvg": 7.5
+        },
+        {
+          "hour": 17,
+          "avgWait": 6.2,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.6,
+          "weekendAvg": 7.5
+        },
+        {
+          "hour": 18,
+          "avgWait": 5.9,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.8,
+          "weekendAvg": 5.9
+        },
+        {
+          "hour": 19,
+          "avgWait": 5.3,
+          "medianWait": 5,
+          "samples": 122,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.5,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 47,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 11,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 5.0
+      }
+    },
+    {
+      "attractionId": "attDumboFlyingElephant",
+      "name": "小飞象",
+      "land": "奇想花园",
+      "queueTimesId": 2993,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 33.4,
+          "medianWait": 30,
+          "samples": 38,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 30.0,
+          "weekendAvg": 40.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 38.2,
+          "medianWait": 40,
+          "samples": 117,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 38.8,
+          "weekendAvg": 37.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 35.5,
+          "medianWait": 30,
+          "samples": 163,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 34.8,
+          "weekendAvg": 37.3
+        },
+        {
+          "hour": 12,
+          "avgWait": 32.4,
+          "medianWait": 30,
+          "samples": 168,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 32.3,
+          "weekendAvg": 32.8
+        },
+        {
+          "hour": 13,
+          "avgWait": 31.5,
+          "medianWait": 30,
+          "samples": 168,
+          "min": 15,
+          "max": 75,
+          "weekdayAvg": 31.5,
+          "weekendAvg": 31.5
+        },
+        {
+          "hour": 14,
+          "avgWait": 34.3,
+          "medianWait": 40,
+          "samples": 165,
+          "min": 15,
+          "max": 60,
+          "weekdayAvg": 34.1,
+          "weekendAvg": 34.7
+        },
+        {
+          "hour": 15,
+          "avgWait": 32.0,
+          "medianWait": 30,
+          "samples": 155,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 31.4,
+          "weekendAvg": 33.2
+        },
+        {
+          "hour": 16,
+          "avgWait": 36.2,
+          "medianWait": 40,
+          "samples": 156,
+          "min": 5,
+          "max": 90,
+          "weekdayAvg": 37.0,
+          "weekendAvg": 34.5
+        },
+        {
+          "hour": 17,
+          "avgWait": 36.4,
+          "medianWait": 35,
+          "samples": 156,
+          "min": 20,
+          "max": 75,
+          "weekdayAvg": 37.6,
+          "weekendAvg": 33.5
+        },
+        {
+          "hour": 18,
+          "avgWait": 29.3,
+          "medianWait": 30,
+          "samples": 136,
+          "min": 15,
+          "max": 50,
+          "weekdayAvg": 30.1,
+          "weekendAvg": 27.5
+        },
+        {
+          "hour": 19,
+          "avgWait": 40.0,
+          "medianWait": 40,
+          "samples": 25,
+          "min": 20,
+          "max": 50,
+          "weekdayAvg": 41.0,
+          "weekendAvg": 35.0
+        },
+        {
+          "hour": 20,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 18,
+      "busiestHour": 19,
+      "quietestWindow": {
+        "startHour": 18,
+        "endHour": 18,
+        "avgWait": 29.3
+      }
+    },
+    {
+      "attractionId": "attFantasiaCarousel",
+      "name": "幻想曲旋转木马",
+      "land": "奇想花园",
+      "queueTimesId": 2994,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 11.1,
+          "medianWait": 10,
+          "samples": 38,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 9.4,
+          "weekendAvg": 14.2
+        },
+        {
+          "hour": 10,
+          "avgWait": 17.9,
+          "medianWait": 20,
+          "samples": 117,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 15.6,
+          "weekendAvg": 22.5
+        },
+        {
+          "hour": 11,
+          "avgWait": 20.4,
+          "medianWait": 20,
+          "samples": 163,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 20.6,
+          "weekendAvg": 19.9
+        },
+        {
+          "hour": 12,
+          "avgWait": 11.5,
+          "medianWait": 10,
+          "samples": 168,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 11.8,
+          "weekendAvg": 11.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 11.4,
+          "medianWait": 10,
+          "samples": 168,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 11.8,
+          "weekendAvg": 10.3
+        },
+        {
+          "hour": 14,
+          "avgWait": 9.4,
+          "medianWait": 10,
+          "samples": 165,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 10.0,
+          "weekendAvg": 7.9
+        },
+        {
+          "hour": 15,
+          "avgWait": 10.2,
+          "medianWait": 10,
+          "samples": 155,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 10.1,
+          "weekendAvg": 10.4
+        },
+        {
+          "hour": 16,
+          "avgWait": 13.6,
+          "medianWait": 10,
+          "samples": 156,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 13.6,
+          "weekendAvg": 13.5
+        },
+        {
+          "hour": 17,
+          "avgWait": 20.6,
+          "medianWait": 20,
+          "samples": 156,
+          "min": 10,
+          "max": 40,
+          "weekdayAvg": 21.4,
+          "weekendAvg": 18.8
+        },
+        {
+          "hour": 18,
+          "avgWait": 17.4,
+          "medianWait": 15,
+          "samples": 156,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 18.0,
+          "weekendAvg": 16.1
+        },
+        {
+          "hour": 19,
+          "avgWait": 29.7,
+          "medianWait": 30,
+          "samples": 126,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 31.3,
+          "weekendAvg": 26.9
+        },
+        {
+          "hour": 20,
+          "avgWait": 22.6,
+          "medianWait": 20,
+          "samples": 58,
+          "min": 10,
+          "max": 40,
+          "weekdayAvg": 22.8,
+          "weekendAvg": 21.9
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 14,
+      "busiestHour": 19,
+      "quietestWindow": {
+        "startHour": 14,
+        "endHour": 14,
+        "avgWait": 9.4
+      }
+    },
+    {
+      "attractionId": "attMarvelUniverse",
+      "name": "漫威英雄总部",
+      "land": "奇想花园",
+      "queueTimesId": 3082,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 21,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 117,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 163,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 12,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 168,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 168,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 165,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 155,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 122,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 47,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 10,
+      "busiestHour": 10,
+      "quietestWindow": {
+        "startHour": 10,
+        "endHour": 20,
+        "avgWait": 0.0
+      }
+    },
+    {
+      "attractionId": "attBuzzLightyearPlanetRescue",
+      "name": "巴斯光年星际营救",
+      "land": "明日世界",
+      "queueTimesId": 2999,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 5.4,
+          "medianWait": 5,
+          "samples": 38,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.6,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 7.1,
+          "medianWait": 5,
+          "samples": 117,
+          "min": 5,
+          "max": 20,
+          "weekdayAvg": 7.1,
+          "weekendAvg": 7.3
+        },
+        {
+          "hour": 11,
+          "avgWait": 7.9,
+          "medianWait": 5,
+          "samples": 163,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 8.2,
+          "weekendAvg": 7.1
+        },
+        {
+          "hour": 12,
+          "avgWait": 6.2,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 6.0,
+          "weekendAvg": 6.7
+        },
+        {
+          "hour": 13,
+          "avgWait": 8.3,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 8.5,
+          "weekendAvg": 7.8
+        },
+        {
+          "hour": 14,
+          "avgWait": 8.4,
+          "medianWait": 5,
+          "samples": 161,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 8.4,
+          "weekendAvg": 8.6
+        },
+        {
+          "hour": 15,
+          "avgWait": 11.0,
+          "medianWait": 10,
+          "samples": 153,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 10.8,
+          "weekendAvg": 11.6
+        },
+        {
+          "hour": 16,
+          "avgWait": 10.9,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 11.0,
+          "weekendAvg": 10.6
+        },
+        {
+          "hour": 17,
+          "avgWait": 11.2,
+          "medianWait": 10,
+          "samples": 156,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 11.9,
+          "weekendAvg": 9.5
+        },
+        {
+          "hour": 18,
+          "avgWait": 7.9,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 7.2,
+          "weekendAvg": 9.6
+        },
+        {
+          "hour": 19,
+          "avgWait": 7.7,
+          "medianWait": 5,
+          "samples": 126,
+          "min": 5,
+          "max": 20,
+          "weekdayAvg": 8.1,
+          "weekendAvg": 6.9
+        },
+        {
+          "hour": 20,
+          "avgWait": 7.0,
+          "medianWait": 5,
+          "samples": 81,
+          "min": 5,
+          "max": 20,
+          "weekdayAvg": 6.8,
+          "weekendAvg": 7.3
+        },
+        {
+          "hour": 21,
+          "avgWait": 6.2,
+          "medianWait": 5,
+          "samples": 21,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 6.8
+        }
+      ],
+      "quietestHour": 12,
+      "busiestHour": 17,
+      "quietestWindow": {
+        "startHour": 12,
+        "endHour": 12,
+        "avgWait": 6.2
+      }
+    },
+    {
+      "attractionId": "attJetPacks",
+      "name": "喷气背包飞行器",
+      "land": "明日世界",
+      "queueTimesId": 3000,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 29.7,
+          "medianWait": 30,
+          "samples": 38,
+          "min": 20,
+          "max": 50,
+          "weekdayAvg": 28.8,
+          "weekendAvg": 31.5
+        },
+        {
+          "hour": 10,
+          "avgWait": 32.1,
+          "medianWait": 30,
+          "samples": 117,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 31.2,
+          "weekendAvg": 33.8
+        },
+        {
+          "hour": 11,
+          "avgWait": 35.3,
+          "medianWait": 40,
+          "samples": 163,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 33.7,
+          "weekendAvg": 39.2
+        },
+        {
+          "hour": 12,
+          "avgWait": 32.5,
+          "medianWait": 30,
+          "samples": 168,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 32.8,
+          "weekendAvg": 31.7
+        },
+        {
+          "hour": 13,
+          "avgWait": 36.4,
+          "medianWait": 40,
+          "samples": 168,
+          "min": 20,
+          "max": 60,
+          "weekdayAvg": 37.2,
+          "weekendAvg": 34.4
+        },
+        {
+          "hour": 14,
+          "avgWait": 39.6,
+          "medianWait": 40,
+          "samples": 165,
+          "min": 20,
+          "max": 60,
+          "weekdayAvg": 40.3,
+          "weekendAvg": 37.7
+        },
+        {
+          "hour": 15,
+          "avgWait": 35.4,
+          "medianWait": 40,
+          "samples": 155,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 35.3,
+          "weekendAvg": 35.6
+        },
+        {
+          "hour": 16,
+          "avgWait": 46.3,
+          "medianWait": 50,
+          "samples": 156,
+          "min": 10,
+          "max": 75,
+          "weekdayAvg": 46.7,
+          "weekendAvg": 45.4
+        },
+        {
+          "hour": 17,
+          "avgWait": 44.1,
+          "medianWait": 40,
+          "samples": 146,
+          "min": 30,
+          "max": 60,
+          "weekdayAvg": 44.7,
+          "weekendAvg": 42.9
+        },
+        {
+          "hour": 18,
+          "avgWait": 35.2,
+          "medianWait": 40,
+          "samples": 141,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 35.9,
+          "weekendAvg": 33.8
+        },
+        {
+          "hour": 19,
+          "avgWait": 37.9,
+          "medianWait": 40,
+          "samples": 126,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 38.6,
+          "weekendAvg": 36.7
+        },
+        {
+          "hour": 20,
+          "avgWait": 30.5,
+          "medianWait": 30,
+          "samples": 81,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 30.9,
+          "weekendAvg": 29.6
+        },
+        {
+          "hour": 21,
+          "avgWait": 29.0,
+          "medianWait": 30,
+          "samples": 21,
+          "min": 20,
+          "max": 40,
+          "weekdayAvg": 32.9,
+          "weekendAvg": 27.1
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 16,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 30.5
+      }
+    },
+    {
+      "attractionId": "attPixarAdventurousJourneyTomorrowland",
+      "name": "皮克斯奇旅",
+      "land": "明日世界",
+      "queueTimesId": 16392,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 10,
+          "avgWait": 4.5,
+          "medianWait": 5,
+          "samples": 105,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.6
+        },
+        {
+          "hour": 11,
+          "avgWait": 4.6,
+          "medianWait": 5,
+          "samples": 163,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.8
+        },
+        {
+          "hour": 12,
+          "avgWait": 4.6,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.8
+        },
+        {
+          "hour": 13,
+          "avgWait": 4.6,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.8
+        },
+        {
+          "hour": 14,
+          "avgWait": 4.6,
+          "medianWait": 5,
+          "samples": 165,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.8
+        },
+        {
+          "hour": 15,
+          "avgWait": 4.6,
+          "medianWait": 5,
+          "samples": 155,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.8
+        },
+        {
+          "hour": 16,
+          "avgWait": 4.6,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.8
+        },
+        {
+          "hour": 17,
+          "avgWait": 4.6,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.8
+        },
+        {
+          "hour": 18,
+          "avgWait": 4.6,
+          "medianWait": 5,
+          "samples": 27,
+          "min": 0,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 3.8
+        },
+        {
+          "hour": 19,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 20,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 10,
+      "busiestHour": 11,
+      "quietestWindow": {
+        "startHour": 10,
+        "endHour": 18,
+        "avgWait": 4.6
+      }
+    },
+    {
+      "attractionId": "attStitchEncounter",
+      "name": "太空对话史迪奇",
+      "land": "明日世界",
+      "queueTimesId": 3001,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 10,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 11,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 12,
+          "avgWait": 15.0,
+          "medianWait": 15,
+          "samples": 140,
+          "min": 15,
+          "max": 15,
+          "weekdayAvg": 15.0,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 15.0,
+          "medianWait": 15,
+          "samples": 168,
+          "min": 15,
+          "max": 15,
+          "weekdayAvg": 15.0,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 15.0,
+          "medianWait": 15,
+          "samples": 165,
+          "min": 15,
+          "max": 15,
+          "weekdayAvg": 15.0,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 15.0,
+          "medianWait": 15,
+          "samples": 155,
+          "min": 15,
+          "max": 15,
+          "weekdayAvg": 15.0,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 15.0,
+          "medianWait": 15,
+          "samples": 156,
+          "min": 15,
+          "max": 15,
+          "weekdayAvg": 15.0,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 15.0,
+          "medianWait": 15,
+          "samples": 156,
+          "min": 15,
+          "max": 15,
+          "weekdayAvg": 15.0,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 15.0,
+          "medianWait": 15,
+          "samples": 27,
+          "min": 15,
+          "max": 15,
+          "weekdayAvg": 15.0,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 19,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 20,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 12,
+      "busiestHour": 12,
+      "quietestWindow": {
+        "startHour": 12,
+        "endHour": 18,
+        "avgWait": 15.0
+      }
+    },
+    {
+      "attractionId": "attTronLightcyclePowerRun",
+      "name": "创极速光轮",
+      "land": "明日世界",
+      "queueTimesId": 2985,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 66.6,
+          "medianWait": 60,
+          "samples": 38,
+          "min": 50,
+          "max": 105,
+          "weekdayAvg": 63.2,
+          "weekendAvg": 73.1
+        },
+        {
+          "hour": 10,
+          "avgWait": 73.9,
+          "medianWait": 75,
+          "samples": 103,
+          "min": 40,
+          "max": 105,
+          "weekdayAvg": 71.0,
+          "weekendAvg": 82.7
+        },
+        {
+          "hour": 11,
+          "avgWait": 68.5,
+          "medianWait": 75,
+          "samples": 147,
+          "min": 20,
+          "max": 105,
+          "weekdayAvg": 70.4,
+          "weekendAvg": 61.7
+        },
+        {
+          "hour": 12,
+          "avgWait": 70.8,
+          "medianWait": 75,
+          "samples": 168,
+          "min": 30,
+          "max": 105,
+          "weekdayAvg": 69.5,
+          "weekendAvg": 74.2
+        },
+        {
+          "hour": 13,
+          "avgWait": 71.5,
+          "medianWait": 75,
+          "samples": 168,
+          "min": 30,
+          "max": 120,
+          "weekdayAvg": 73.5,
+          "weekendAvg": 66.6
+        },
+        {
+          "hour": 14,
+          "avgWait": 74.8,
+          "medianWait": 75,
+          "samples": 165,
+          "min": 50,
+          "max": 105,
+          "weekdayAvg": 77.2,
+          "weekendAvg": 69.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 70.2,
+          "medianWait": 75,
+          "samples": 151,
+          "min": 40,
+          "max": 90,
+          "weekdayAvg": 71.1,
+          "weekendAvg": 68.4
+        },
+        {
+          "hour": 16,
+          "avgWait": 84.7,
+          "medianWait": 90,
+          "samples": 144,
+          "min": 40,
+          "max": 120,
+          "weekdayAvg": 86.9,
+          "weekendAvg": 80.1
+        },
+        {
+          "hour": 17,
+          "avgWait": 90.3,
+          "medianWait": 90,
+          "samples": 153,
+          "min": 50,
+          "max": 150,
+          "weekdayAvg": 93.2,
+          "weekendAvg": 84.1
+        },
+        {
+          "hour": 18,
+          "avgWait": 89.6,
+          "medianWait": 90,
+          "samples": 156,
+          "min": 50,
+          "max": 180,
+          "weekdayAvg": 96.8,
+          "weekendAvg": 73.4
+        },
+        {
+          "hour": 19,
+          "avgWait": 80.9,
+          "medianWait": 75,
+          "samples": 126,
+          "min": 30,
+          "max": 150,
+          "weekdayAvg": 88.0,
+          "weekendAvg": 68.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 57.0,
+          "medianWait": 50,
+          "samples": 81,
+          "min": 10,
+          "max": 105,
+          "weekdayAvg": 58.1,
+          "weekendAvg": 54.6
+        },
+        {
+          "hour": 21,
+          "avgWait": 51.9,
+          "medianWait": 50,
+          "samples": 21,
+          "min": 20,
+          "max": 75,
+          "weekdayAvg": 72.9,
+          "weekendAvg": 41.4
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 17,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 57.0
+      }
+    },
+    {
+      "attractionId": "attTronRealm",
+      "name": "创界：雪佛兰数字挑战",
+      "land": "明日世界",
+      "queueTimesId": 4076,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 10,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 105,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 163,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 12,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 168,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 168,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 165,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 155,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 126,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 70,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 10,
+      "busiestHour": 10,
+      "quietestWindow": {
+        "startHour": 10,
+        "endHour": 20,
+        "avgWait": 0.0
+      }
+    },
+    {
+      "attractionId": "attAdventuresWinniePooh",
+      "name": "小熊维尼历险记",
+      "land": "梦幻世界",
+      "queueTimesId": 2991,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 25.1,
+          "medianWait": 20,
+          "samples": 38,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 24.4,
+          "weekendAvg": 26.5
+        },
+        {
+          "hour": 10,
+          "avgWait": 36.0,
+          "medianWait": 35,
+          "samples": 117,
+          "min": 20,
+          "max": 60,
+          "weekdayAvg": 33.4,
+          "weekendAvg": 41.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 37.2,
+          "medianWait": 35,
+          "samples": 163,
+          "min": 15,
+          "max": 70,
+          "weekdayAvg": 36.4,
+          "weekendAvg": 39.0
+        },
+        {
+          "hour": 12,
+          "avgWait": 36.4,
+          "medianWait": 35,
+          "samples": 168,
+          "min": 15,
+          "max": 70,
+          "weekdayAvg": 36.4,
+          "weekendAvg": 36.3
+        },
+        {
+          "hour": 13,
+          "avgWait": 36.9,
+          "medianWait": 35,
+          "samples": 168,
+          "min": 20,
+          "max": 70,
+          "weekdayAvg": 36.8,
+          "weekendAvg": 37.2
+        },
+        {
+          "hour": 14,
+          "avgWait": 37.1,
+          "medianWait": 35,
+          "samples": 165,
+          "min": 20,
+          "max": 80,
+          "weekdayAvg": 36.8,
+          "weekendAvg": 37.7
+        },
+        {
+          "hour": 15,
+          "avgWait": 33.4,
+          "medianWait": 35,
+          "samples": 146,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 33.3,
+          "weekendAvg": 33.6
+        },
+        {
+          "hour": 16,
+          "avgWait": 29.3,
+          "medianWait": 30,
+          "samples": 149,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 28.9,
+          "weekendAvg": 30.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 33.6,
+          "medianWait": 35,
+          "samples": 156,
+          "min": 15,
+          "max": 60,
+          "weekdayAvg": 34.4,
+          "weekendAvg": 31.9
+        },
+        {
+          "hour": 18,
+          "avgWait": 22.2,
+          "medianWait": 20,
+          "samples": 156,
+          "min": 5,
+          "max": 45,
+          "weekdayAvg": 23.1,
+          "weekendAvg": 20.1
+        },
+        {
+          "hour": 19,
+          "avgWait": 24.8,
+          "medianWait": 25,
+          "samples": 126,
+          "min": 5,
+          "max": 45,
+          "weekdayAvg": 24.7,
+          "weekendAvg": 24.9
+        },
+        {
+          "hour": 20,
+          "avgWait": 14.0,
+          "medianWait": 10,
+          "samples": 81,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 15.5,
+          "weekendAvg": 10.8
+        },
+        {
+          "hour": 21,
+          "avgWait": 10.0,
+          "medianWait": 10,
+          "samples": 21,
+          "min": 5,
+          "max": 20,
+          "weekdayAvg": 10.7,
+          "weekendAvg": 9.6
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 11,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 14.0
+      }
+    },
+    {
+      "attractionId": "attAliceWonderlandMaze",
+      "name": "爱丽丝梦游仙境迷宫",
+      "land": "梦幻世界",
+      "queueTimesId": 2987,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 38,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 117,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 163,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 12,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 165,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 155,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 136,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 25,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 20,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 10,
+      "busiestHour": 10,
+      "quietestWindow": {
+        "startHour": 10,
+        "endHour": 19,
+        "avgWait": 5.0
+      }
+    },
+    {
+      "attractionId": "attHunnyPotSpin",
+      "name": "旋转疯蜜罐",
+      "land": "梦幻世界",
+      "queueTimesId": 2988,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 12.2,
+          "medianWait": 10,
+          "samples": 38,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 10.8,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 20.8,
+          "medianWait": 20,
+          "samples": 117,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 18.2,
+          "weekendAvg": 25.6
+        },
+        {
+          "hour": 11,
+          "avgWait": 24.9,
+          "medianWait": 20,
+          "samples": 163,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 23.6,
+          "weekendAvg": 27.9
+        },
+        {
+          "hour": 12,
+          "avgWait": 22.9,
+          "medianWait": 20,
+          "samples": 168,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 23.2,
+          "weekendAvg": 22.2
+        },
+        {
+          "hour": 13,
+          "avgWait": 23.2,
+          "medianWait": 20,
+          "samples": 168,
+          "min": 10,
+          "max": 40,
+          "weekdayAvg": 23.0,
+          "weekendAvg": 23.8
+        },
+        {
+          "hour": 14,
+          "avgWait": 25.8,
+          "medianWait": 30,
+          "samples": 165,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 26.1,
+          "weekendAvg": 24.9
+        },
+        {
+          "hour": 15,
+          "avgWait": 22.7,
+          "medianWait": 20,
+          "samples": 155,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 22.1,
+          "weekendAvg": 24.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 22.0,
+          "medianWait": 20,
+          "samples": 156,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 21.9,
+          "weekendAvg": 22.1
+        },
+        {
+          "hour": 17,
+          "avgWait": 32.2,
+          "medianWait": 30,
+          "samples": 156,
+          "min": 20,
+          "max": 60,
+          "weekdayAvg": 32.6,
+          "weekendAvg": 31.5
+        },
+        {
+          "hour": 18,
+          "avgWait": 27.0,
+          "medianWait": 30,
+          "samples": 156,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 28.5,
+          "weekendAvg": 23.6
+        },
+        {
+          "hour": 19,
+          "avgWait": 24.7,
+          "medianWait": 30,
+          "samples": 126,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 25.5,
+          "weekendAvg": 23.3
+        },
+        {
+          "hour": 20,
+          "avgWait": 13.3,
+          "medianWait": 10,
+          "samples": 81,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 13.0,
+          "weekendAvg": 14.0
+        },
+        {
+          "hour": 21,
+          "avgWait": 10.2,
+          "medianWait": 10,
+          "samples": 21,
+          "min": 5,
+          "max": 20,
+          "weekdayAvg": 11.4,
+          "weekendAvg": 9.6
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 17,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 13.3
+      }
+    },
+    {
+      "attractionId": "attOnceUponTimeAdventure",
+      "name": "漫游童话时光",
+      "land": "梦幻世界",
+      "queueTimesId": 3080,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 5.3,
+          "medianWait": 5,
+          "samples": 34,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.5,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 5.6,
+          "medianWait": 5,
+          "samples": 117,
+          "min": 5,
+          "max": 20,
+          "weekdayAvg": 5.3,
+          "weekendAvg": 6.3
+        },
+        {
+          "hour": 11,
+          "avgWait": 5.2,
+          "medianWait": 5,
+          "samples": 163,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.8
+        },
+        {
+          "hour": 12,
+          "avgWait": 5.1,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.2,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 5.1,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.1,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 153,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.1
+        },
+        {
+          "hour": 15,
+          "avgWait": 5.5,
+          "medianWait": 5,
+          "samples": 153,
+          "min": 5,
+          "max": 15,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 6.5
+        },
+        {
+          "hour": 16,
+          "avgWait": 5.1,
+          "medianWait": 5,
+          "samples": 144,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.1,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 5.5,
+          "medianWait": 5,
+          "samples": 150,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.8,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 5.7,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 6.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 5.2,
+          "medianWait": 5,
+          "samples": 126,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.4,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 5.1,
+          "medianWait": 5,
+          "samples": 81,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 5.2,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 21,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 21,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        }
+      ],
+      "quietestHour": 14,
+      "busiestHour": 18,
+      "quietestWindow": {
+        "startHour": 11,
+        "endHour": 14,
+        "avgWait": 5.1
+      }
+    },
+    {
+      "attractionId": "attPeterPansFlight",
+      "name": "小飞侠天空奇遇",
+      "land": "梦幻世界",
+      "queueTimesId": 2989,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 13.7,
+          "medianWait": 10,
+          "samples": 38,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 12.4,
+          "weekendAvg": 16.2
+        },
+        {
+          "hour": 10,
+          "avgWait": 27.0,
+          "medianWait": 20,
+          "samples": 117,
+          "min": 5,
+          "max": 80,
+          "weekdayAvg": 24.4,
+          "weekendAvg": 32.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 35.7,
+          "medianWait": 35,
+          "samples": 163,
+          "min": 10,
+          "max": 70,
+          "weekdayAvg": 33.3,
+          "weekendAvg": 41.7
+        },
+        {
+          "hour": 12,
+          "avgWait": 32.6,
+          "medianWait": 30,
+          "samples": 168,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 32.5,
+          "weekendAvg": 32.9
+        },
+        {
+          "hour": 13,
+          "avgWait": 36.0,
+          "medianWait": 35,
+          "samples": 168,
+          "min": 5,
+          "max": 70,
+          "weekdayAvg": 35.0,
+          "weekendAvg": 38.2
+        },
+        {
+          "hour": 14,
+          "avgWait": 38.2,
+          "medianWait": 35,
+          "samples": 165,
+          "min": 15,
+          "max": 60,
+          "weekdayAvg": 38.4,
+          "weekendAvg": 37.8
+        },
+        {
+          "hour": 15,
+          "avgWait": 32.6,
+          "medianWait": 35,
+          "samples": 155,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 31.9,
+          "weekendAvg": 34.2
+        },
+        {
+          "hour": 16,
+          "avgWait": 31.1,
+          "medianWait": 30,
+          "samples": 153,
+          "min": 5,
+          "max": 70,
+          "weekdayAvg": 31.6,
+          "weekendAvg": 30.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 34.5,
+          "medianWait": 35,
+          "samples": 153,
+          "min": 10,
+          "max": 65,
+          "weekdayAvg": 35.5,
+          "weekendAvg": 32.2
+        },
+        {
+          "hour": 18,
+          "avgWait": 25.0,
+          "medianWait": 25,
+          "samples": 156,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 25.8,
+          "weekendAvg": 23.3
+        },
+        {
+          "hour": 19,
+          "avgWait": 25.8,
+          "medianWait": 25,
+          "samples": 126,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 26.5,
+          "weekendAvg": 24.6
+        },
+        {
+          "hour": 20,
+          "avgWait": 13.7,
+          "medianWait": 10,
+          "samples": 80,
+          "min": 5,
+          "max": 45,
+          "weekdayAvg": 14.0,
+          "weekendAvg": 13.1
+        },
+        {
+          "hour": 21,
+          "avgWait": 12.9,
+          "medianWait": 15,
+          "samples": 21,
+          "min": 5,
+          "max": 25,
+          "weekdayAvg": 16.4,
+          "weekendAvg": 11.1
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 14,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 13.7
+      }
+    },
+    {
+      "attractionId": "attSevenDwarfsMineTrain",
+      "name": "七个小矮人矿山车",
+      "land": "梦幻世界",
+      "queueTimesId": 2990,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 77.9,
+          "medianWait": 70,
+          "samples": 38,
+          "min": 55,
+          "max": 135,
+          "weekdayAvg": 76.0,
+          "weekendAvg": 81.5
+        },
+        {
+          "hour": 10,
+          "avgWait": 86.8,
+          "medianWait": 80,
+          "samples": 117,
+          "min": 55,
+          "max": 135,
+          "weekdayAvg": 85.1,
+          "weekendAvg": 89.9
+        },
+        {
+          "hour": 11,
+          "avgWait": 91.9,
+          "medianWait": 90,
+          "samples": 161,
+          "min": 60,
+          "max": 150,
+          "weekdayAvg": 89.7,
+          "weekendAvg": 97.2
+        },
+        {
+          "hour": 12,
+          "avgWait": 85.3,
+          "medianWait": 80,
+          "samples": 166,
+          "min": 45,
+          "max": 120,
+          "weekdayAvg": 86.9,
+          "weekendAvg": 81.3
+        },
+        {
+          "hour": 13,
+          "avgWait": 89.8,
+          "medianWait": 88,
+          "samples": 168,
+          "min": 45,
+          "max": 150,
+          "weekdayAvg": 89.3,
+          "weekendAvg": 90.8
+        },
+        {
+          "hour": 14,
+          "avgWait": 86.6,
+          "medianWait": 80,
+          "samples": 165,
+          "min": 60,
+          "max": 135,
+          "weekdayAvg": 86.8,
+          "weekendAvg": 86.4
+        },
+        {
+          "hour": 15,
+          "avgWait": 86.5,
+          "medianWait": 90,
+          "samples": 155,
+          "min": 50,
+          "max": 135,
+          "weekdayAvg": 86.3,
+          "weekendAvg": 87.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 86.4,
+          "medianWait": 80,
+          "samples": 156,
+          "min": 45,
+          "max": 135,
+          "weekdayAvg": 88.1,
+          "weekendAvg": 82.7
+        },
+        {
+          "hour": 17,
+          "avgWait": 88.4,
+          "medianWait": 80,
+          "samples": 156,
+          "min": 55,
+          "max": 135,
+          "weekdayAvg": 90.0,
+          "weekendAvg": 84.6
+        },
+        {
+          "hour": 18,
+          "avgWait": 73.6,
+          "medianWait": 68,
+          "samples": 156,
+          "min": 40,
+          "max": 135,
+          "weekdayAvg": 75.2,
+          "weekendAvg": 70.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 72.5,
+          "medianWait": 70,
+          "samples": 126,
+          "min": 30,
+          "max": 120,
+          "weekdayAvg": 75.7,
+          "weekendAvg": 66.6
+        },
+        {
+          "hour": 20,
+          "avgWait": 51.0,
+          "medianWait": 50,
+          "samples": 81,
+          "min": 25,
+          "max": 90,
+          "weekdayAvg": 50.5,
+          "weekendAvg": 52.3
+        },
+        {
+          "hour": 21,
+          "avgWait": 46.4,
+          "medianWait": 45,
+          "samples": 21,
+          "min": 30,
+          "max": 60,
+          "weekdayAvg": 47.1,
+          "weekendAvg": 46.1
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 11,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 51.0
+      }
+    },
+    {
+      "attractionId": "attVoyageToCrystalGrotto",
+      "name": "晶彩奇航",
+      "land": "梦幻世界",
+      "queueTimesId": 2992,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 7.8,
+          "medianWait": 5,
+          "samples": 38,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 9.2,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 12.0,
+          "medianWait": 5,
+          "samples": 117,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 9.8,
+          "weekendAvg": 16.1
+        },
+        {
+          "hour": 11,
+          "avgWait": 14.7,
+          "medianWait": 10,
+          "samples": 163,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 13.6,
+          "weekendAvg": 17.4
+        },
+        {
+          "hour": 12,
+          "avgWait": 9.9,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 10.1,
+          "weekendAvg": 9.4
+        },
+        {
+          "hour": 13,
+          "avgWait": 11.9,
+          "medianWait": 10,
+          "samples": 168,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 12.0,
+          "weekendAvg": 11.5
+        },
+        {
+          "hour": 14,
+          "avgWait": 13.1,
+          "medianWait": 10,
+          "samples": 165,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 13.6,
+          "weekendAvg": 11.7
+        },
+        {
+          "hour": 15,
+          "avgWait": 12.5,
+          "medianWait": 10,
+          "samples": 151,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 14.0,
+          "weekendAvg": 9.2
+        },
+        {
+          "hour": 16,
+          "avgWait": 10.5,
+          "medianWait": 5,
+          "samples": 153,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 11.3,
+          "weekendAvg": 8.9
+        },
+        {
+          "hour": 17,
+          "avgWait": 18.8,
+          "medianWait": 20,
+          "samples": 156,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 19.4,
+          "weekendAvg": 17.2
+        },
+        {
+          "hour": 18,
+          "avgWait": 12.0,
+          "medianWait": 10,
+          "samples": 156,
+          "min": 5,
+          "max": 45,
+          "weekdayAvg": 12.5,
+          "weekendAvg": 10.9
+        },
+        {
+          "hour": 19,
+          "avgWait": 23.1,
+          "medianWait": 22,
+          "samples": 126,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 23.3,
+          "weekendAvg": 22.6
+        },
+        {
+          "hour": 20,
+          "avgWait": 15.7,
+          "medianWait": 10,
+          "samples": 81,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 17.2,
+          "weekendAvg": 12.7
+        },
+        {
+          "hour": 21,
+          "avgWait": 11.4,
+          "medianWait": 10,
+          "samples": 21,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 9.3,
+          "weekendAvg": 12.5
+        }
+      ],
+      "quietestHour": 12,
+      "busiestHour": 19,
+      "quietestWindow": {
+        "startHour": 12,
+        "endHour": 12,
+        "avgWait": 9.9
+      }
+    },
+    {
+      "attractionId": "attChallengeTrails",
+      "name": "古迹探索营的绳索挑战道",
+      "land": "探险岛",
+      "queueTimesId": 3893,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 7.3,
+          "medianWait": 5,
+          "samples": 37,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 8.5,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 14.7,
+          "medianWait": 10,
+          "samples": 117,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 16.1,
+          "weekendAvg": 12.1
+        },
+        {
+          "hour": 11,
+          "avgWait": 18.3,
+          "medianWait": 10,
+          "samples": 163,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 19.0,
+          "weekendAvg": 16.5
+        },
+        {
+          "hour": 12,
+          "avgWait": 17.6,
+          "medianWait": 10,
+          "samples": 168,
+          "min": 5,
+          "max": 35,
+          "weekdayAvg": 19.5,
+          "weekendAvg": 12.7
+        },
+        {
+          "hour": 13,
+          "avgWait": 19.4,
+          "medianWait": 20,
+          "samples": 168,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 21.0,
+          "weekendAvg": 15.3
+        },
+        {
+          "hour": 14,
+          "avgWait": 24.1,
+          "medianWait": 20,
+          "samples": 165,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 25.5,
+          "weekendAvg": 20.5
+        },
+        {
+          "hour": 15,
+          "avgWait": 27.3,
+          "medianWait": 30,
+          "samples": 155,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 29.6,
+          "weekendAvg": 22.1
+        },
+        {
+          "hour": 16,
+          "avgWait": 21.5,
+          "medianWait": 15,
+          "samples": 156,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 22.5,
+          "weekendAvg": 19.4
+        },
+        {
+          "hour": 17,
+          "avgWait": 27.3,
+          "medianWait": 30,
+          "samples": 156,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 28.9,
+          "weekendAvg": 23.8
+        },
+        {
+          "hour": 18,
+          "avgWait": 15.7,
+          "medianWait": 10,
+          "samples": 156,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 16.4,
+          "weekendAvg": 14.1
+        },
+        {
+          "hour": 19,
+          "avgWait": 12.0,
+          "medianWait": 10,
+          "samples": 126,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 12.8,
+          "weekendAvg": 10.4
+        },
+        {
+          "hour": 20,
+          "avgWait": 10.8,
+          "medianWait": 10,
+          "samples": 81,
+          "min": 5,
+          "max": 30,
+          "weekdayAvg": 11.6,
+          "weekendAvg": 9.0
+        },
+        {
+          "hour": 21,
+          "avgWait": 8.3,
+          "medianWait": 10,
+          "samples": 21,
+          "min": 5,
+          "max": 10,
+          "weekdayAvg": 10.0,
+          "weekendAvg": 7.5
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 15,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 10.8
+      }
+    },
+    {
+      "attractionId": "attJuniorExplorersCamp",
+      "name": "小勇者营地",
+      "land": "探险岛",
+      "queueTimesId": 16370,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 38,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 117,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 163,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 12,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 165,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 155,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 126,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 81,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 21,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 21,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        }
+      ],
+      "quietestHour": 10,
+      "busiestHour": 10,
+      "quietestWindow": {
+        "startHour": 10,
+        "endHour": 20,
+        "avgWait": 5.0
+      }
+    },
+    {
+      "attractionId": "attRoaringRapids",
+      "name": "雷鸣山漂流",
+      "land": "探险岛",
+      "queueTimesId": 2986,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 24.7,
+          "medianWait": 18,
+          "samples": 38,
+          "min": 10,
+          "max": 75,
+          "weekdayAvg": 19.4,
+          "weekendAvg": 35.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 35.4,
+          "medianWait": 25,
+          "samples": 117,
+          "min": 5,
+          "max": 85,
+          "weekdayAvg": 32.5,
+          "weekendAvg": 41.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 41.9,
+          "medianWait": 40,
+          "samples": 163,
+          "min": 10,
+          "max": 105,
+          "weekdayAvg": 39.9,
+          "weekendAvg": 46.8
+        },
+        {
+          "hour": 12,
+          "avgWait": 34.3,
+          "medianWait": 30,
+          "samples": 168,
+          "min": 10,
+          "max": 75,
+          "weekdayAvg": 33.8,
+          "weekendAvg": 35.7
+        },
+        {
+          "hour": 13,
+          "avgWait": 43.0,
+          "medianWait": 35,
+          "samples": 168,
+          "min": 10,
+          "max": 120,
+          "weekdayAvg": 42.5,
+          "weekendAvg": 44.1
+        },
+        {
+          "hour": 14,
+          "avgWait": 40.4,
+          "medianWait": 40,
+          "samples": 165,
+          "min": 10,
+          "max": 105,
+          "weekdayAvg": 41.5,
+          "weekendAvg": 37.8
+        },
+        {
+          "hour": 15,
+          "avgWait": 42.8,
+          "medianWait": 35,
+          "samples": 155,
+          "min": 10,
+          "max": 120,
+          "weekdayAvg": 42.3,
+          "weekendAvg": 44.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 37.4,
+          "medianWait": 30,
+          "samples": 156,
+          "min": 10,
+          "max": 115,
+          "weekdayAvg": 38.8,
+          "weekendAvg": 34.5
+        },
+        {
+          "hour": 17,
+          "avgWait": 42.4,
+          "medianWait": 35,
+          "samples": 156,
+          "min": 10,
+          "max": 115,
+          "weekdayAvg": 44.7,
+          "weekendAvg": 37.2
+        },
+        {
+          "hour": 18,
+          "avgWait": 19.7,
+          "medianWait": 10,
+          "samples": 156,
+          "min": 5,
+          "max": 75,
+          "weekdayAvg": 20.6,
+          "weekendAvg": 17.7
+        },
+        {
+          "hour": 19,
+          "avgWait": 17.5,
+          "medianWait": 10,
+          "samples": 126,
+          "min": 5,
+          "max": 45,
+          "weekdayAvg": 18.9,
+          "weekendAvg": 15.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 12.1,
+          "medianWait": 10,
+          "samples": 81,
+          "min": 5,
+          "max": 25,
+          "weekdayAvg": 12.7,
+          "weekendAvg": 10.8
+        },
+        {
+          "hour": 21,
+          "avgWait": 8.8,
+          "medianWait": 10,
+          "samples": 21,
+          "min": 5,
+          "max": 15,
+          "weekdayAvg": 6.4,
+          "weekendAvg": 10.0
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 13,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 12.1
+      }
+    },
+    {
+      "attractionId": "attSoaringOverHorizon",
+      "name": "翱翔•飞越地平线",
+      "land": "探险岛",
+      "queueTimesId": 3002,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 53.8,
+          "medianWait": 50,
+          "samples": 38,
+          "min": 30,
+          "max": 90,
+          "weekdayAvg": 49.6,
+          "weekendAvg": 61.9
+        },
+        {
+          "hour": 10,
+          "avgWait": 62.2,
+          "medianWait": 50,
+          "samples": 117,
+          "min": 30,
+          "max": 135,
+          "weekdayAvg": 60.6,
+          "weekendAvg": 65.3
+        },
+        {
+          "hour": 11,
+          "avgWait": 68.1,
+          "medianWait": 60,
+          "samples": 163,
+          "min": 40,
+          "max": 120,
+          "weekdayAvg": 63.7,
+          "weekendAvg": 78.5
+        },
+        {
+          "hour": 12,
+          "avgWait": 65.3,
+          "medianWait": 60,
+          "samples": 168,
+          "min": 50,
+          "max": 120,
+          "weekdayAvg": 66.0,
+          "weekendAvg": 63.6
+        },
+        {
+          "hour": 13,
+          "avgWait": 61.9,
+          "medianWait": 60,
+          "samples": 168,
+          "min": 25,
+          "max": 120,
+          "weekdayAvg": 60.5,
+          "weekendAvg": 65.5
+        },
+        {
+          "hour": 14,
+          "avgWait": 65.2,
+          "medianWait": 60,
+          "samples": 165,
+          "min": 40,
+          "max": 135,
+          "weekdayAvg": 65.6,
+          "weekendAvg": 64.5
+        },
+        {
+          "hour": 15,
+          "avgWait": 66.4,
+          "medianWait": 60,
+          "samples": 155,
+          "min": 20,
+          "max": 135,
+          "weekdayAvg": 65.0,
+          "weekendAvg": 69.6
+        },
+        {
+          "hour": 16,
+          "avgWait": 60.2,
+          "medianWait": 50,
+          "samples": 156,
+          "min": 10,
+          "max": 135,
+          "weekdayAvg": 59.3,
+          "weekendAvg": 62.3
+        },
+        {
+          "hour": 17,
+          "avgWait": 67.1,
+          "medianWait": 60,
+          "samples": 156,
+          "min": 20,
+          "max": 120,
+          "weekdayAvg": 64.4,
+          "weekendAvg": 73.4
+        },
+        {
+          "hour": 18,
+          "avgWait": 52.1,
+          "medianWait": 50,
+          "samples": 156,
+          "min": 10,
+          "max": 120,
+          "weekdayAvg": 51.4,
+          "weekendAvg": 53.4
+        },
+        {
+          "hour": 19,
+          "avgWait": 51.5,
+          "medianWait": 50,
+          "samples": 126,
+          "min": 10,
+          "max": 120,
+          "weekdayAvg": 50.9,
+          "weekendAvg": 52.4
+        },
+        {
+          "hour": 20,
+          "avgWait": 27.0,
+          "medianWait": 25,
+          "samples": 81,
+          "min": 10,
+          "max": 75,
+          "weekdayAvg": 24.2,
+          "weekendAvg": 33.1
+        },
+        {
+          "hour": 21,
+          "avgWait": 24.0,
+          "medianWait": 25,
+          "samples": 21,
+          "min": 10,
+          "max": 45,
+          "weekdayAvg": 27.9,
+          "weekendAvg": 22.1
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 11,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 27.0
+      }
+    },
+    {
+      "attractionId": "attVistaTrail",
+      "name": "古迹探索营的探索步行道",
+      "land": "探险岛",
+      "queueTimesId": 3901,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 37,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 117,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 163,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 12,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 168,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 168,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 165,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 155,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 156,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 126,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 81,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        },
+        {
+          "hour": 21,
+          "avgWait": 0.0,
+          "medianWait": 0,
+          "samples": 21,
+          "min": 0,
+          "max": 0,
+          "weekdayAvg": 0.0,
+          "weekendAvg": 0.0
+        }
+      ],
+      "quietestHour": 10,
+      "busiestHour": 10,
+      "quietestWindow": {
+        "startHour": 10,
+        "endHour": 20,
+        "avgWait": 0.0
+      }
+    },
+    {
+      "attractionId": "attExplorerCanoes",
+      "name": "探险家独木舟",
+      "land": "宝藏湾",
+      "queueTimesId": 2995,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 10,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 11,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 12,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 13,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 14,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 15,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 16,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 17,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 18,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 19,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 20,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": null,
+      "busiestHour": null,
+      "quietestWindow": null
+    },
+    {
+      "attractionId": "attPiratesOfCaribbean",
+      "name": "加勒比海盗——沉落宝藏之战",
+      "land": "宝藏湾",
+      "queueTimesId": 2996,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 23.2,
+          "medianWait": 20,
+          "samples": 38,
+          "min": 5,
+          "max": 75,
+          "weekdayAvg": 20.0,
+          "weekendAvg": 29.2
+        },
+        {
+          "hour": 10,
+          "avgWait": 33.2,
+          "medianWait": 40,
+          "samples": 111,
+          "min": 5,
+          "max": 75,
+          "weekdayAvg": 30.7,
+          "weekendAvg": 38.8
+        },
+        {
+          "hour": 11,
+          "avgWait": 38.0,
+          "medianWait": 40,
+          "samples": 161,
+          "min": 10,
+          "max": 75,
+          "weekdayAvg": 36.0,
+          "weekendAvg": 43.2
+        },
+        {
+          "hour": 12,
+          "avgWait": 36.8,
+          "medianWait": 35,
+          "samples": 168,
+          "min": 10,
+          "max": 90,
+          "weekdayAvg": 34.3,
+          "weekendAvg": 43.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 35.8,
+          "medianWait": 32,
+          "samples": 168,
+          "min": 10,
+          "max": 75,
+          "weekdayAvg": 32.7,
+          "weekendAvg": 43.6
+        },
+        {
+          "hour": 14,
+          "avgWait": 29.6,
+          "medianWait": 25,
+          "samples": 165,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 29.6,
+          "weekendAvg": 29.8
+        },
+        {
+          "hour": 15,
+          "avgWait": 28.5,
+          "medianWait": 30,
+          "samples": 149,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 27.5,
+          "weekendAvg": 30.5
+        },
+        {
+          "hour": 16,
+          "avgWait": 22.7,
+          "medianWait": 20,
+          "samples": 144,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 22.1,
+          "weekendAvg": 23.8
+        },
+        {
+          "hour": 17,
+          "avgWait": 22.9,
+          "medianWait": 20,
+          "samples": 155,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 23.9,
+          "weekendAvg": 20.6
+        },
+        {
+          "hour": 18,
+          "avgWait": 13.9,
+          "medianWait": 10,
+          "samples": 156,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 15.0,
+          "weekendAvg": 11.5
+        },
+        {
+          "hour": 19,
+          "avgWait": 12.9,
+          "medianWait": 10,
+          "samples": 126,
+          "min": 5,
+          "max": 35,
+          "weekdayAvg": 13.9,
+          "weekendAvg": 11.2
+        },
+        {
+          "hour": 20,
+          "avgWait": 7.2,
+          "medianWait": 5,
+          "samples": 81,
+          "min": 5,
+          "max": 15,
+          "weekdayAvg": 7.5,
+          "weekendAvg": 6.5
+        },
+        {
+          "hour": 21,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 21,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 11,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 7.2
+      }
+    },
+    {
+      "attractionId": "attShipwreckShore",
+      "name": "船奇戏水滩",
+      "land": "宝藏湾",
+      "queueTimesId": 2997,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 38,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 117,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 163,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 12,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 165,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 155,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 152,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 24,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 18,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 19,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 20,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        },
+        {
+          "hour": 21,
+          "avgWait": null,
+          "medianWait": null,
+          "samples": 0,
+          "min": null,
+          "max": null,
+          "weekdayAvg": null,
+          "weekendAvg": null
+        }
+      ],
+      "quietestHour": 10,
+      "busiestHour": 10,
+      "quietestWindow": {
+        "startHour": 10,
+        "endHour": 17,
+        "avgWait": 5.0
+      }
+    },
+    {
+      "attractionId": "attSirensRevenge",
+      "name": "探秘海妖复仇号",
+      "land": "宝藏湾",
+      "queueTimesId": 2998,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 38,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 117,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 163,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 12,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 13,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 168,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 14,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 165,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 15,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 155,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 16,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 156,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 17,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 148,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 132,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 115,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 58,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": 5.0,
+          "weekendAvg": 5.0
+        },
+        {
+          "hour": 21,
+          "avgWait": 5.0,
+          "medianWait": 5,
+          "samples": 7,
+          "min": 5,
+          "max": 5,
+          "weekdayAvg": null,
+          "weekendAvg": 5.0
+        }
+      ],
+      "quietestHour": 10,
+      "busiestHour": 10,
+      "quietestWindow": {
+        "startHour": 10,
+        "endHour": 20,
+        "avgWait": 5.0
+      }
+    },
+    {
+      "attractionId": "attRexsRCRacer",
+      "name": "抱抱龙冲天赛车",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "queueTimesId": 5633,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 52.6,
+          "medianWait": 50,
+          "samples": 38,
+          "min": 20,
+          "max": 90,
+          "weekdayAvg": 52.0,
+          "weekendAvg": 53.8
+        },
+        {
+          "hour": 10,
+          "avgWait": 62.3,
+          "medianWait": 60,
+          "samples": 117,
+          "min": 30,
+          "max": 120,
+          "weekdayAvg": 58.2,
+          "weekendAvg": 70.1
+        },
+        {
+          "hour": 11,
+          "avgWait": 74.0,
+          "medianWait": 60,
+          "samples": 162,
+          "min": 40,
+          "max": 120,
+          "weekdayAvg": 72.5,
+          "weekendAvg": 77.5
+        },
+        {
+          "hour": 12,
+          "avgWait": 70.5,
+          "medianWait": 75,
+          "samples": 167,
+          "min": 50,
+          "max": 120,
+          "weekdayAvg": 72.3,
+          "weekendAvg": 66.1
+        },
+        {
+          "hour": 13,
+          "avgWait": 76.3,
+          "medianWait": 75,
+          "samples": 166,
+          "min": 40,
+          "max": 120,
+          "weekdayAvg": 78.4,
+          "weekendAvg": 71.3
+        },
+        {
+          "hour": 14,
+          "avgWait": 77.8,
+          "medianWait": 75,
+          "samples": 165,
+          "min": 60,
+          "max": 120,
+          "weekdayAvg": 81.3,
+          "weekendAvg": 69.4
+        },
+        {
+          "hour": 15,
+          "avgWait": 76.8,
+          "medianWait": 75,
+          "samples": 155,
+          "min": 60,
+          "max": 120,
+          "weekdayAvg": 79.5,
+          "weekendAvg": 70.9
+        },
+        {
+          "hour": 16,
+          "avgWait": 89.4,
+          "medianWait": 90,
+          "samples": 149,
+          "min": 20,
+          "max": 150,
+          "weekdayAvg": 93.2,
+          "weekendAvg": 81.1
+        },
+        {
+          "hour": 17,
+          "avgWait": 89.2,
+          "medianWait": 90,
+          "samples": 154,
+          "min": 60,
+          "max": 150,
+          "weekdayAvg": 93.5,
+          "weekendAvg": 79.2
+        },
+        {
+          "hour": 18,
+          "avgWait": 72.1,
+          "medianWait": 75,
+          "samples": 154,
+          "min": 40,
+          "max": 105,
+          "weekdayAvg": 77.2,
+          "weekendAvg": 60.0
+        },
+        {
+          "hour": 19,
+          "avgWait": 68.7,
+          "medianWait": 60,
+          "samples": 126,
+          "min": 20,
+          "max": 120,
+          "weekdayAvg": 73.6,
+          "weekendAvg": 59.9
+        },
+        {
+          "hour": 20,
+          "avgWait": 46.2,
+          "medianWait": 40,
+          "samples": 81,
+          "min": 20,
+          "max": 75,
+          "weekdayAvg": 48.8,
+          "weekendAvg": 40.6
+        },
+        {
+          "hour": 21,
+          "avgWait": 40.0,
+          "medianWait": 40,
+          "samples": 21,
+          "min": 10,
+          "max": 60,
+          "weekdayAvg": 52.9,
+          "weekendAvg": 33.6
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 16,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 46.2
+      }
+    },
+    {
+      "attractionId": "attSlinkyDogSpin",
+      "name": "弹簧狗团团转",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "queueTimesId": 5634,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 16.2,
+          "medianWait": 10,
+          "samples": 38,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 14.2,
+          "weekendAvg": 20.0
+        },
+        {
+          "hour": 10,
+          "avgWait": 27.2,
+          "medianWait": 30,
+          "samples": 117,
+          "min": 10,
+          "max": 40,
+          "weekdayAvg": 25.7,
+          "weekendAvg": 30.0
+        },
+        {
+          "hour": 11,
+          "avgWait": 33.2,
+          "medianWait": 30,
+          "samples": 163,
+          "min": 20,
+          "max": 60,
+          "weekdayAvg": 31.7,
+          "weekendAvg": 36.7
+        },
+        {
+          "hour": 12,
+          "avgWait": 29.7,
+          "medianWait": 30,
+          "samples": 168,
+          "min": 10,
+          "max": 50,
+          "weekdayAvg": 28.7,
+          "weekendAvg": 32.3
+        },
+        {
+          "hour": 13,
+          "avgWait": 33.1,
+          "medianWait": 30,
+          "samples": 165,
+          "min": 20,
+          "max": 50,
+          "weekdayAvg": 33.0,
+          "weekendAvg": 33.3
+        },
+        {
+          "hour": 14,
+          "avgWait": 33.3,
+          "medianWait": 30,
+          "samples": 158,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 33.2,
+          "weekendAvg": 33.5
+        },
+        {
+          "hour": 15,
+          "avgWait": 32.1,
+          "medianWait": 30,
+          "samples": 151,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 32.4,
+          "weekendAvg": 31.4
+        },
+        {
+          "hour": 16,
+          "avgWait": 34.9,
+          "medianWait": 30,
+          "samples": 156,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 34.7,
+          "weekendAvg": 35.4
+        },
+        {
+          "hour": 17,
+          "avgWait": 34.9,
+          "medianWait": 30,
+          "samples": 156,
+          "min": 20,
+          "max": 50,
+          "weekdayAvg": 35.3,
+          "weekendAvg": 34.0
+        },
+        {
+          "hour": 18,
+          "avgWait": 27.3,
+          "medianWait": 30,
+          "samples": 156,
+          "min": 10,
+          "max": 40,
+          "weekdayAvg": 27.4,
+          "weekendAvg": 27.1
+        },
+        {
+          "hour": 19,
+          "avgWait": 28.7,
+          "medianWait": 30,
+          "samples": 124,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 29.1,
+          "weekendAvg": 27.8
+        },
+        {
+          "hour": 20,
+          "avgWait": 17.0,
+          "medianWait": 10,
+          "samples": 81,
+          "min": 5,
+          "max": 50,
+          "weekdayAvg": 18.4,
+          "weekendAvg": 14.2
+        },
+        {
+          "hour": 21,
+          "avgWait": 19.0,
+          "medianWait": 20,
+          "samples": 21,
+          "min": 10,
+          "max": 30,
+          "weekdayAvg": 22.9,
+          "weekendAvg": 17.1
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 16,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 17.0
+      }
+    },
+    {
+      "attractionId": "attWoodysRoundUp",
+      "name": "胡迪牛仔嘉年华",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "queueTimesId": 5635,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 27.5,
+          "medianWait": 20,
+          "samples": 38,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 23.0,
+          "weekendAvg": 36.2
+        },
+        {
+          "hour": 10,
+          "avgWait": 36.2,
+          "medianWait": 40,
+          "samples": 117,
+          "min": 20,
+          "max": 50,
+          "weekdayAvg": 34.3,
+          "weekendAvg": 39.8
+        },
+        {
+          "hour": 11,
+          "avgWait": 43.8,
+          "medianWait": 40,
+          "samples": 163,
+          "min": 30,
+          "max": 75,
+          "weekdayAvg": 41.4,
+          "weekendAvg": 49.6
+        },
+        {
+          "hour": 12,
+          "avgWait": 41.8,
+          "medianWait": 40,
+          "samples": 168,
+          "min": 30,
+          "max": 60,
+          "weekdayAvg": 41.4,
+          "weekendAvg": 42.9
+        },
+        {
+          "hour": 13,
+          "avgWait": 42.6,
+          "medianWait": 40,
+          "samples": 168,
+          "min": 30,
+          "max": 60,
+          "weekdayAvg": 42.3,
+          "weekendAvg": 43.3
+        },
+        {
+          "hour": 14,
+          "avgWait": 48.0,
+          "medianWait": 50,
+          "samples": 165,
+          "min": 30,
+          "max": 105,
+          "weekdayAvg": 47.3,
+          "weekendAvg": 49.7
+        },
+        {
+          "hour": 15,
+          "avgWait": 46.8,
+          "medianWait": 40,
+          "samples": 155,
+          "min": 10,
+          "max": 105,
+          "weekdayAvg": 43.4,
+          "weekendAvg": 54.5
+        },
+        {
+          "hour": 16,
+          "avgWait": 45.7,
+          "medianWait": 40,
+          "samples": 156,
+          "min": 10,
+          "max": 90,
+          "weekdayAvg": 44.2,
+          "weekendAvg": 49.1
+        },
+        {
+          "hour": 17,
+          "avgWait": 47.9,
+          "medianWait": 50,
+          "samples": 156,
+          "min": 30,
+          "max": 90,
+          "weekdayAvg": 47.3,
+          "weekendAvg": 49.4
+        },
+        {
+          "hour": 18,
+          "avgWait": 38.0,
+          "medianWait": 40,
+          "samples": 156,
+          "min": 20,
+          "max": 60,
+          "weekdayAvg": 37.5,
+          "weekendAvg": 39.2
+        },
+        {
+          "hour": 19,
+          "avgWait": 39.8,
+          "medianWait": 40,
+          "samples": 126,
+          "min": 20,
+          "max": 60,
+          "weekdayAvg": 40.5,
+          "weekendAvg": 38.4
+        },
+        {
+          "hour": 20,
+          "avgWait": 28.5,
+          "medianWait": 30,
+          "samples": 81,
+          "min": 5,
+          "max": 60,
+          "weekdayAvg": 27.3,
+          "weekendAvg": 31.0
+        },
+        {
+          "hour": 21,
+          "avgWait": 27.9,
+          "medianWait": 30,
+          "samples": 21,
+          "min": 5,
+          "max": 40,
+          "weekdayAvg": 30.0,
+          "weekendAvg": 26.8
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 14,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 28.5
+      }
+    },
+    {
+      "attractionId": "attZootopiaHotPursuit",
+      "name": "疯狂动物城：热力追踪",
+      "land": "疯狂动物城",
+      "queueTimesId": 12392,
+      "byHour": [
+        {
+          "hour": 9,
+          "avgWait": 67.6,
+          "medianWait": 60,
+          "samples": 38,
+          "min": 50,
+          "max": 100,
+          "weekdayAvg": 64.4,
+          "weekendAvg": 73.8
+        },
+        {
+          "hour": 10,
+          "avgWait": 76.8,
+          "medianWait": 70,
+          "samples": 104,
+          "min": 35,
+          "max": 135,
+          "weekdayAvg": 72.3,
+          "weekendAvg": 88.4
+        },
+        {
+          "hour": 11,
+          "avgWait": 79.5,
+          "medianWait": 80,
+          "samples": 150,
+          "min": 30,
+          "max": 135,
+          "weekdayAvg": 77.6,
+          "weekendAvg": 84.3
+        },
+        {
+          "hour": 12,
+          "avgWait": 73.8,
+          "medianWait": 75,
+          "samples": 167,
+          "min": 30,
+          "max": 120,
+          "weekdayAvg": 74.0,
+          "weekendAvg": 73.2
+        },
+        {
+          "hour": 13,
+          "avgWait": 75.0,
+          "medianWait": 80,
+          "samples": 168,
+          "min": 40,
+          "max": 120,
+          "weekdayAvg": 74.1,
+          "weekendAvg": 77.2
+        },
+        {
+          "hour": 14,
+          "avgWait": 73.8,
+          "medianWait": 70,
+          "samples": 165,
+          "min": 40,
+          "max": 120,
+          "weekdayAvg": 75.0,
+          "weekendAvg": 70.7
+        },
+        {
+          "hour": 15,
+          "avgWait": 67.4,
+          "medianWait": 70,
+          "samples": 154,
+          "min": 20,
+          "max": 120,
+          "weekdayAvg": 68.2,
+          "weekendAvg": 65.8
+        },
+        {
+          "hour": 16,
+          "avgWait": 64.8,
+          "medianWait": 65,
+          "samples": 154,
+          "min": 20,
+          "max": 120,
+          "weekdayAvg": 67.2,
+          "weekendAvg": 59.6
+        },
+        {
+          "hour": 17,
+          "avgWait": 66.8,
+          "medianWait": 65,
+          "samples": 135,
+          "min": 20,
+          "max": 100,
+          "weekdayAvg": 71.3,
+          "weekendAvg": 58.8
+        },
+        {
+          "hour": 18,
+          "avgWait": 50.5,
+          "medianWait": 45,
+          "samples": 135,
+          "min": 20,
+          "max": 90,
+          "weekdayAvg": 54.8,
+          "weekendAvg": 42.6
+        },
+        {
+          "hour": 19,
+          "avgWait": 47.0,
+          "medianWait": 40,
+          "samples": 123,
+          "min": 10,
+          "max": 90,
+          "weekdayAvg": 51.6,
+          "weekendAvg": 39.0
+        },
+        {
+          "hour": 20,
+          "avgWait": 29.6,
+          "medianWait": 30,
+          "samples": 81,
+          "min": 10,
+          "max": 70,
+          "weekdayAvg": 29.8,
+          "weekendAvg": 29.2
+        },
+        {
+          "hour": 21,
+          "avgWait": 23.3,
+          "medianWait": 20,
+          "samples": 15,
+          "min": 20,
+          "max": 30,
+          "weekdayAvg": 27.1,
+          "weekendAvg": 20.0
+        }
+      ],
+      "quietestHour": 20,
+      "busiestHour": 11,
+      "quietestWindow": {
+        "startHour": 20,
+        "endHour": 20,
+        "avgWait": 29.6
+      }
+    }
+  ]
+}

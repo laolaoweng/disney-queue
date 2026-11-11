@@ -1,0 +1,18 @@
+# 构建产物（GitHub Pages 不用它；Cloudflare Pages 会在构建时重新生成）
+_site/
+
+# Python
+__pycache__/
+*.pyc
+
+# 本地运行日志
+data/collect.log
+*.log
+data/latest.error.json
+
+# 依赖
+node_modules/
+
+# 系统文件
+.DS_Store
+Thumbs.db

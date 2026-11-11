@@ -1,0 +1,219 @@
+<view class="page">
+  <view class="topbar">
+    <view>
+      <text class="topbar-title">现在去玩</text>
+      <text class="topbar-sub">{{dateLine}} · {{updatedText}}</text>
+    </view>
+    <view class="refresh-btn {{spinning ? 'spinning' : ''}}" bindtap="onRefresh">↻</view>
+  </view>
+
+  <view class="origin-bar">
+    <text class="origin-label">出发点</text>
+    <picker
+      class="origin-picker"
+      mode="selector"
+      range="{{originOptions}}"
+      value="{{originIndex}}"
+      bindchange="onPickOrigin"
+    >
+      <view class="origin-value">{{originText}} <text class="origin-caret">▾</text></view>
+    </picker>
+    <text class="origin-tip">步行时间按这里算</text>
+  </view>
+
+  <!-- 加载中 -->
+  <view wx:if="{{loading}}" class="card sk-card">
+    <view class="sk-line w40"></view>
+    <view class="sk-line big w70"></view>
+    <view class="sk-line w90"></view>
+    <view class="sk-line w60"></view>
+  </view>
+
+  <!-- 错误 -->
+  <view wx:elif="{{error}}" class="empty">
+    <text class="empty-emoji">📡</text>
+    <text class="empty-title">数据没加载出来</text>
+    <text class="muted small">{{error}}</text>
+    <view class="empty-btn" bindtap="onRefresh">重试</view>
+  </view>
+
+  <!-- 没有可推荐的项目 -->
+  <view wx:elif="{{!best}}" class="empty">
+    <text class="empty-emoji">🎠</text>
+    <text class="empty-title">现在没有可玩的项目</text>
+    <text class="muted small">可能都在维护或已闭园，去「我的」调一下偏好试试</text>
+    <view class="empty-btn" bindtap="goSettings">调整偏好</view>
+  </view>
+
+  <block wx:else>
+    <!-- 首屏主卡 -->
+    <view class="hero">
+      <view class="hero-top">
+        <text class="hero-label">建议现在去</text>
+        <view class="hero-score">
+          <text class="num hero-score-num">{{best.scoreText}}</text>
+          <text class="hero-score-unit">分</text>
+        </view>
+      </view>
+
+      <view class="hero-name">{{best.name}}</view>
+      <view class="hero-tags">
+        <text class="pill">{{best.land}}</text>
+        <text class="pill">{{best.categoryText}}</text>
+        <text wx:if="{{best.premierAccess}}" class="pill">有尊享卡</text>
+        <text wx:if="{{best.estimated}}" class="pill">排队为估算</text>
+      </view>
+
+      <view class="hero-nums">
+        <view class="hero-num-block">
+          <view class="hero-num-line">
+            <text class="hero-num {{best.waitClass}}">{{best.waitMinutes}}</text>
+            <text class="hero-num-unit">分钟</text>
+          </view>
+          <text class="hero-num-label">排队时间</text>
+        </view>
+        <view class="hero-divider"></view>
+        <view class="hero-num-block">
+          <view class="hero-num-line">
+            <text class="hero-num walk">{{best.walkMinutes}}</text>
+            <text class="hero-num-unit">分钟</text>
+          </view>
+          <text class="hero-num-label">步行过去</text>
+        </view>
+      </view>
+
+      <view class="hero-reasons">
+        <view wx:for="{{best.reasons}}" wx:key="code" class="reason">
+          <text class="reason-dot"></text>
+          <text class="reason-text">{{item.text}}</text>
+        </view>
+      </view>
+
+      <view wx:if="{{best.predictedText}}" class="hero-forecast">{{best.predictedText}}</view>
+
+      <view class="hero-actions">
+        <view class="btn btn-primary" bindtap="goPlan">看行程怎么排</view>
+        <view class="btn btn-ghost" bindtap="onMarkPlayed">已经玩过</view>
+      </view>
+    </view>
+
+    <!-- 园区概况 + 行程摘要 -->
+    <view class="summary card" bindtap="goPlan">
+      <view class="summary-main">
+        <text class="summary-text">{{statsText}}</text>
+        <text class="summary-sub">{{prefsSummary}}</text>
+      </view>
+      <view class="summary-plan">
+        <text class="summary-plan-num num">{{planCount}}</text>
+        <text class="summary-plan-label">个项目 · 约 {{planEndText}} 玩完</text>
+      </view>
+    </view>
+
+    <!-- 分时预测入口 -->
+    <view class="forecast-entry card" bindtap="goForecast">
+      <view class="fe-left">
+        <text class="fe-emoji">📉</text>
+        <view class="fe-texts">
+          <text class="fe-title">分时预测</text>
+          <text class="fe-sub">看今天几点人最少，避开高峰</text>
+        </view>
+      </view>
+      <text class="fe-arrow">›</text>
+    </view>
+
+    <!-- 八大必玩 · 现在排队（点行加入 / 移出清单） -->
+    <view wx:if="{{highlightsRows.length}}" class="card high-card">
+      <view class="high-head">
+        <text class="card-title">🎢 八大必玩 · 现在排队</text>
+        <text class="high-link" bindtap="goWatchlist">去清单 ›</text>
+      </view>
+      <view
+        wx:for="{{highlightsRows}}"
+        wx:key="id"
+        class="high-row"
+        data-id="{{item.id}}"
+        bindtap="onTapHighlight"
+      >
+        <view class="high-main">
+          <view class="high-name-line">
+            <text class="high-name">{{item.name}}</text>
+            <text wx:if="{{item.closed}}" class="pill high-off">已关闭</text>
+          </view>
+          <text class="high-sub">{{item.land}} · {{item.statusText}}</text>
+        </view>
+        <view class="high-right">
+          <block wx:if="{{item.closed}}">
+            <text class="num high-wait closed">--</text>
+            <text class="high-unit">已关闭</text>
+          </block>
+          <block wx:else>
+            <text class="num high-wait {{item.waitClass}}">{{item.waitMinutes === null ? '--' : item.waitMinutes}}</text>
+            <text class="high-unit">分钟</text>
+          </block>
+          <text class="high-add {{item.inWatchlist ? 'on' : ''}}">{{item.inWatchlist ? '已选' : '＋'}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 你的必玩项目：勾了必玩但队太长时，这里给出现排队 + 今日低价时段 -->
+    <view wx:if="{{mustDoItems.length}}" class="card must-card">
+      <view class="must-head">
+        <text class="card-title">你的必玩项目</text>
+        <text class="must-hint">队太长时算法会先推别处</text>
+      </view>
+      <view
+        wx:for="{{mustDoItems}}"
+        wx:key="id"
+        class="must-row"
+        data-id="{{item.id}}"
+        bindtap="onTapMustDo"
+      >
+        <view class="must-main">
+          <view class="must-name-line">
+            <text class="must-name">{{item.name}}</text>
+            <text wx:if="{{item.closed}}" class="pill must-closed">已关闭</text>
+          </view>
+          <text class="must-meta">{{item.metaText}}</text>
+        </view>
+        <view class="must-right">
+          <block wx:if="{{item.closed}}">
+            <text class="must-wait closed">已关闭</text>
+          </block>
+          <block wx:else>
+            <text class="num must-wait {{item.waitClass}}">{{item.waitMinutes === null ? '--' : item.waitMinutes}}</text>
+            <text class="must-unit">分钟</text>
+          </block>
+          <text class="must-go">现在去 ›</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 备选 -->
+    <view wx:if="{{alternatives.length}}" class="section">
+      <view class="section-head">
+        <text class="section-title">也可以去</text>
+        <text class="section-link" bindtap="goRank">全部排名 →</text>
+      </view>
+      <view
+        wx:for="{{alternatives}}"
+        wx:key="attractionId"
+        class="alt card"
+        data-index="{{index}}"
+        bindtap="onTapAlt"
+      >
+        <view class="alt-main">
+          <text class="alt-name">{{item.name}}</text>
+          <text class="alt-sub">{{item.land}} · 步行 {{item.walkMinutes}} 分钟 · {{item.categoryText}}</text>
+        </view>
+        <view class="alt-right">
+          <text class="num alt-wait {{item.waitClass}}">{{item.waitMinutes}}</text>
+          <text class="alt-unit">分钟 · {{item.scoreText}} 分</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="footnote">
+      {{sourceText}}<text wx:if="{{isStub}}"> · 算法为临时桩</text>
+    </view>
+  </block>
+</view>

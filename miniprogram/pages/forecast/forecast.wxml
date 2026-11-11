@@ -1,0 +1,128 @@
+<view class="page">
+  <view class="topbar">
+    <view>
+      <text class="topbar-title">分时预测</text>
+      <text class="topbar-sub">{{dateLine}} · {{windowText}}</text>
+    </view>
+    <view class="refresh-btn {{spinning ? 'spinning' : ''}}" bindtap="onRefresh">↻</view>
+  </view>
+
+  <!-- 工作日 / 周末切换 -->
+  <view class="day-seg">
+    <view
+      wx:for="{{dayTypes}}"
+      wx:key="key"
+      class="day-item {{dayType === item.key ? 'active' : ''}}"
+      data-key="{{item.key}}"
+      bindtap="onDayTypeTap"
+    >{{item.label}}</view>
+  </view>
+
+  <!-- 全园平均 + 八大必玩 + 全部项目 -->
+  <scroll-view class="chips" scroll-x="true" enable-flex="true">
+    <view
+      wx:for="{{chips}}"
+      wx:key="id"
+      class="chip {{item.active ? 'active' : ''}}"
+      data-id="{{item.id}}"
+      bindtap="onChipTap"
+    >{{item.name}}</view>
+    <picker
+      mode="selector"
+      range="{{allOptions}}"
+      range-key="name"
+      value="{{allIndex}}"
+      bindchange="onPickAll"
+    >
+      <view class="chip chip-all">全部项目 ▾</view>
+    </picker>
+  </scroll-view>
+
+  <view wx:if="{{loading}}" class="card sk-card">
+    <view class="sk-line w40"></view>
+    <view class="sk-line big w70"></view>
+    <view class="sk-line w90"></view>
+    <view class="sk-line w60"></view>
+  </view>
+
+  <view wx:elif="{{error}}" class="empty">
+    <text class="empty-emoji">📡</text>
+    <text class="empty-title">{{error}}</text>
+  </view>
+
+  <block wx:else>
+    <view class="chart-card card">
+      <view class="chart-head">
+        <view class="chart-title-wrap">
+          <text class="chart-title">{{scopeName}}</text>
+          <text wx:if="{{scopeLand}}" class="pill">{{scopeLand}}</text>
+        </view>
+        <text class="chart-badge">{{sourceBadge}}</text>
+      </view>
+
+      <block wx:if="{{hasData}}">
+        <view class="best-banner">
+          <text class="best-emoji">🟢</text>
+          <text class="best-text">{{summary}}</text>
+        </view>
+
+        <view class="chart">
+          <view wx:for="{{points}}" wx:key="hour" class="bar-col">
+            <text class="bar-tag {{item.best ? 'on' : ''}}">{{item.best ? '最空' : ''}}</text>
+            <text class="bar-value {{item.best ? 'best' : ''}}">{{item.empty ? '' : item.value}}</text>
+            <view class="bar-track">
+              <view
+                class="bar-fill {{item.best ? 'best' : ''}} {{item.empty ? 'empty' : ''}}"
+                style="height: {{item.heightPct}}%;"
+              ></view>
+            </view>
+            <text class="bar-hour {{item.best ? 'best' : ''}}">{{item.hour}}</text>
+          </view>
+        </view>
+
+        <view class="chart-legend">
+          <text class="legend-dot"></text>
+          <text class="legend-text">柱子高度 = 平均排队分钟，绿色 = 当天最空时段</text>
+        </view>
+        <view wx:if="{{peakText}}" class="chart-peak">{{peakText}}</view>
+      </block>
+
+      <view wx:else class="empty small-empty">
+        <text class="empty-emoji">🌙</text>
+        <text class="empty-title">这个项目暂无分时数据</text>
+        <text class="muted small">历史样本太少，先看全园平均或其他项目</text>
+      </view>
+    </view>
+
+    <!-- 13 行明细表 -->
+    <view wx:if="{{hasData}}" class="card table-card">
+      <view class="card-title">每个整点的平均排队</view>
+      <view class="tbl">
+        <view class="tbl-row tbl-head">
+          <text class="tbl-hour">时间</text>
+          <text class="tbl-avg">平均</text>
+          <text class="tbl-wd">工作日</text>
+          <text class="tbl-we">周末</text>
+          <text class="tbl-days">天数</text>
+        </view>
+        <view
+          wx:for="{{tableRows}}"
+          wx:key="hour"
+          class="tbl-row {{item.best ? 'best' : ''}}"
+        >
+          <text class="tbl-hour">{{item.hourText}}</text>
+          <text class="tbl-avg num">{{item.avgText}}</text>
+          <text class="tbl-wd">{{item.weekdayText}}</text>
+          <text class="tbl-we">{{item.weekendText}}</text>
+          <text class="tbl-days">{{item.daysText}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="footnote">
+      <view class="footnote-line">1. {{sourceText}}</view>
+      <view class="footnote-line">2. 桶 = 北京时间整点后一小时（如 13:00 表示 13:00–14:00）；无样本显示「—」。</view>
+      <view class="footnote-line">3. 数据越多越准，节假日和天气会改变实际排队。</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,692 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-11T02:13:38Z",
+  "park": {
+    "id": "shdr",
+    "name": "上海迪士尼乐园",
+    "nameEn": "Shanghai Disneyland",
+    "timezone": "Asia/Shanghai",
+    "defaultOperatingHours": {
+      "open": "08:30",
+      "close": "21:30"
+    },
+    "center": {
+      "lat": 31.147097966725,
+      "lng": 121.66901898194
+    }
+  },
+  "attractions": [
+    {
+      "id": "attBecomeIronMan",
+      "name": "漫威英雄总部 – 变身钢铁侠",
+      "nameEn": "Become Iron Man at the Marvel Universe",
+      "land": "奇想花园",
+      "landEn": "Gardens of Imagination",
+      "lat": 31.148647,
+      "lng": 121.665078,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 10,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        3896
+      ],
+      "sourceIds": {
+        "wam": "attBecomeIronMan",
+        "urlFriendlyId": "become-iron-man"
+      }
+    },
+    {
+      "id": "attDumboFlyingElephant",
+      "name": "小飞象",
+      "nameEn": "Dumbo the Flying Elephant",
+      "land": "奇想花园",
+      "landEn": "Gardens of Imagination",
+      "lat": 31.1488416,
+      "lng": 121.666352,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 2,
+      "heightCm": null,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2993
+      ],
+      "sourceIds": {
+        "wam": "attDumboFlyingElephant",
+        "urlFriendlyId": "dumbo-flying-elephant"
+      }
+    },
+    {
+      "id": "attFantasiaCarousel",
+      "name": "幻想曲旋转木马",
+      "nameEn": "Fantasia Carousel",
+      "land": "奇想花园",
+      "landEn": "Gardens of Imagination",
+      "lat": 31.1488101,
+      "lng": 121.6678168,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 2,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2994
+      ],
+      "sourceIds": {
+        "wam": "attFantasiaCarousel",
+        "urlFriendlyId": "fantasia-carousel"
+      }
+    },
+    {
+      "id": "attMarvelUniverse",
+      "name": "漫威英雄总部",
+      "nameEn": "Marvel Universe",
+      "land": "奇想花园",
+      "landEn": "Gardens of Imagination",
+      "lat": 31.1485218,
+      "lng": 121.6653933,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 20,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        3082
+      ],
+      "sourceIds": {
+        "wam": "attMarvelUniverse",
+        "urlFriendlyId": "marvel-universe"
+      }
+    },
+    {
+      "id": "attBuzzLightyearPlanetRescue",
+      "name": "巴斯光年星际营救",
+      "nameEn": "Buzz Lightyear Planet Rescue",
+      "land": "明日世界",
+      "landEn": "Tomorrowland",
+      "lat": 31.1472793,
+      "lng": 121.6642092,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 4,
+      "heightCm": null,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2999
+      ],
+      "sourceIds": {
+        "wam": "attBuzzLightyearPlanetRescue",
+        "urlFriendlyId": "buzz-lightyear-planet-rescue"
+      }
+    },
+    {
+      "id": "attJetPacks",
+      "name": "喷气背包飞行器",
+      "nameEn": "Jet Packs",
+      "land": "明日世界",
+      "landEn": "Tomorrowland",
+      "lat": 31.1477166,
+      "lng": 121.6651247,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 2,
+      "heightCm": 112,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        3000
+      ],
+      "sourceIds": {
+        "wam": "attJetPacks",
+        "urlFriendlyId": "jet-packs"
+      }
+    },
+    {
+      "id": "attPixarAdventurousJourneyTomorrowland",
+      "name": "皮克斯奇旅",
+      "nameEn": "Pixar Adventurous Journey",
+      "land": "明日世界",
+      "landEn": "Tomorrowland",
+      "lat": 31.147109,
+      "lng": 121.663872,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 15,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        16392
+      ],
+      "sourceIds": {
+        "wam": "attPixarAdventurousJourneyTomorrowland",
+        "urlFriendlyId": "pixar-adventurous-journey-tomorrowland"
+      }
+    },
+    {
+      "id": "attStitchEncounter",
+      "name": "太空对话史迪奇",
+      "nameEn": "Space Chat With Stitch",
+      "land": "明日世界",
+      "landEn": "Tomorrowland",
+      "lat": 31.1475041,
+      "lng": 121.6647482,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 12,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        3001
+      ],
+      "sourceIds": {
+        "wam": "attStitchEncounter",
+        "urlFriendlyId": "space-chat-with-stitch"
+      }
+    },
+    {
+      "id": "attTronLightcyclePowerRun",
+      "name": "创极速光轮",
+      "nameEn": "TRON Lightcycle Power Run – Presented by Chevrolet",
+      "land": "明日世界",
+      "landEn": "Tomorrowland",
+      "lat": 31.1481777,
+      "lng": 121.6632566,
+      "entranceKey": "Guest Entrance",
+      "category": "thrill",
+      "durationMin": 3,
+      "heightCm": 122,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2985
+      ],
+      "sourceIds": {
+        "wam": "attTronLightcyclePowerRun",
+        "urlFriendlyId": "tron-lightcycle-power-run"
+      }
+    },
+    {
+      "id": "attTronRealm",
+      "name": "创界：雪佛兰数字挑战",
+      "nameEn": "TRON Realm, Chevrolet Digital Challenge",
+      "land": "明日世界",
+      "landEn": "Tomorrowland",
+      "lat": 31.147743,
+      "lng": 121.663286,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 15,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        4076
+      ],
+      "sourceIds": {
+        "wam": "attTronRealm",
+        "urlFriendlyId": "tron-realm"
+      }
+    },
+    {
+      "id": "attAdventuresWinniePooh",
+      "name": "小熊维尼历险记",
+      "nameEn": "The Many Adventures of Winnie the Pooh",
+      "land": "梦幻世界",
+      "landEn": "Fantasyland",
+      "lat": 31.1518041,
+      "lng": 121.6652995,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 4,
+      "heightCm": null,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2991
+      ],
+      "sourceIds": {
+        "wam": "attAdventuresWinniePooh",
+        "urlFriendlyId": "adventures-winnie-pooh"
+      }
+    },
+    {
+      "id": "attAliceWonderlandMaze",
+      "name": "爱丽丝梦游仙境迷宫",
+      "nameEn": "Alice in Wonderland Maze",
+      "land": "梦幻世界",
+      "landEn": "Fantasyland",
+      "lat": 31.1508361,
+      "lng": 121.6661621,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 15,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2987
+      ],
+      "sourceIds": {
+        "wam": "attAliceWonderlandMaze",
+        "urlFriendlyId": "alice-wonderland-maze"
+      }
+    },
+    {
+      "id": "attHunnyPotSpin",
+      "name": "旋转疯蜜罐",
+      "nameEn": "Hunny Pot Spin",
+      "land": "梦幻世界",
+      "landEn": "Fantasyland",
+      "lat": 31.1515364,
+      "lng": 121.6653256,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 2,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2988
+      ],
+      "sourceIds": {
+        "wam": "attHunnyPotSpin",
+        "urlFriendlyId": "hunny-pot-spin"
+      }
+    },
+    {
+      "id": "attOnceUponTimeAdventure",
+      "name": "漫游童话时光",
+      "nameEn": "Once Upon a Time Adventure",
+      "land": "梦幻世界",
+      "landEn": "Fantasyland",
+      "lat": 31.1500205,
+      "lng": 121.6658405,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 10,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        3080
+      ],
+      "sourceIds": {
+        "wam": "attOnceUponTimeAdventure",
+        "urlFriendlyId": "once-upon-time-adventure"
+      }
+    },
+    {
+      "id": "attPeterPansFlight",
+      "name": "小飞侠天空奇遇",
+      "nameEn": "Peter Pan's Flight",
+      "land": "梦幻世界",
+      "landEn": "Fantasyland",
+      "lat": 31.1497435,
+      "lng": 121.6643522,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 3,
+      "heightCm": 81,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2989
+      ],
+      "sourceIds": {
+        "wam": "attPeterPansFlight",
+        "urlFriendlyId": "peter-pans-flight"
+      }
+    },
+    {
+      "id": "attSevenDwarfsMineTrain",
+      "name": "七个小矮人矿山车",
+      "nameEn": "Seven Dwarfs Mine Train",
+      "land": "梦幻世界",
+      "landEn": "Fantasyland",
+      "lat": 31.1512477,
+      "lng": 121.6662509,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 3,
+      "heightCm": 97,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2990,
+        13818
+      ],
+      "sourceIds": {
+        "wam": "attSevenDwarfsMineTrain",
+        "urlFriendlyId": "seven-dwarfs-mine-train"
+      }
+    },
+    {
+      "id": "attVoyageToCrystalGrotto",
+      "name": "晶彩奇航",
+      "nameEn": "Voyage to the Crystal Grotto",
+      "land": "梦幻世界",
+      "landEn": "Fantasyland",
+      "lat": 31.1497811,
+      "lng": 121.6649734,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 8,
+      "heightCm": null,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2992
+      ],
+      "sourceIds": {
+        "wam": "attVoyageToCrystalGrotto",
+        "urlFriendlyId": "voyage-to-crystal-grotto"
+      }
+    },
+    {
+      "id": "attChallengeTrails",
+      "name": "古迹探索营的绳索挑战道",
+      "nameEn": "Challenge Trails at Camp Discovery",
+      "land": "探险岛",
+      "landEn": "Adventure Isle",
+      "lat": 31.149954,
+      "lng": 121.67043,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 20,
+      "heightCm": 106,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        3893
+      ],
+      "sourceIds": {
+        "wam": "attChallengeTrails",
+        "urlFriendlyId": "challenge-trails"
+      }
+    },
+    {
+      "id": "attJuniorExplorersCamp",
+      "name": "小勇者营地",
+      "nameEn": "Junior Explorers Camp",
+      "land": "探险岛",
+      "landEn": "Adventure Isle",
+      "lat": 31.14963,
+      "lng": 121.669866,
+      "entranceKey": "Guest Entrance",
+      "category": "kids",
+      "durationMin": 20,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        16370
+      ],
+      "sourceIds": {
+        "wam": "attJuniorExplorersCamp",
+        "urlFriendlyId": "junior-explorers-camp"
+      }
+    },
+    {
+      "id": "attRoaringRapids",
+      "name": "雷鸣山漂流",
+      "nameEn": "Roaring Rapids",
+      "land": "探险岛",
+      "landEn": "Adventure Isle",
+      "lat": 31.1493381,
+      "lng": 121.6696012,
+      "entranceKey": "Guest Entrance",
+      "category": "water",
+      "durationMin": 8,
+      "heightCm": 107,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2986
+      ],
+      "sourceIds": {
+        "wam": "attRoaringRapids",
+        "urlFriendlyId": "roaring-rapids"
+      }
+    },
+    {
+      "id": "attSoaringOverHorizon",
+      "name": "翱翔•飞越地平线",
+      "nameEn": "Soaring Over the Horizon",
+      "land": "探险岛",
+      "landEn": "Adventure Isle",
+      "lat": 31.1502882,
+      "lng": 121.6715004,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 5,
+      "heightCm": 102,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        3002
+      ],
+      "sourceIds": {
+        "wam": "attSoaringOverHorizon",
+        "urlFriendlyId": "soaring-over-horizon"
+      }
+    },
+    {
+      "id": "attVistaTrail",
+      "name": "古迹探索营的探索步行道",
+      "nameEn": "Vista Trail at Camp Discovery",
+      "land": "探险岛",
+      "landEn": "Adventure Isle",
+      "lat": 31.150221,
+      "lng": 121.670633,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 15,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        3901
+      ],
+      "sourceIds": {
+        "wam": "attVistaTrail",
+        "urlFriendlyId": "vista-trail"
+      }
+    },
+    {
+      "id": "attExplorerCanoes",
+      "name": "探险家独木舟",
+      "nameEn": "Explorer Canoes",
+      "land": "宝藏湾",
+      "landEn": "Treasure Cove",
+      "lat": 31.1499572,
+      "lng": 121.6685373,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 10,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2995
+      ],
+      "sourceIds": {
+        "wam": "attExplorerCanoes",
+        "urlFriendlyId": "explorer-canoes"
+      }
+    },
+    {
+      "id": "attPiratesOfCaribbean",
+      "name": "加勒比海盗——沉落宝藏之战",
+      "nameEn": "Pirates of the Caribbean: Battle for the Sunken Treasure",
+      "land": "宝藏湾",
+      "landEn": "Treasure Cove",
+      "lat": 31.1515715,
+      "lng": 121.668203,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 8,
+      "heightCm": 81,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2996
+      ],
+      "sourceIds": {
+        "wam": "attPiratesOfCaribbean",
+        "urlFriendlyId": "pirates-of-caribbean"
+      }
+    },
+    {
+      "id": "attShipwreckShore",
+      "name": "船奇戏水滩",
+      "nameEn": "Shipwreck Shore",
+      "land": "宝藏湾",
+      "landEn": "Treasure Cove",
+      "lat": 31.1512828,
+      "lng": 121.6684309,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 20,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2997
+      ],
+      "sourceIds": {
+        "wam": "attShipwreckShore",
+        "urlFriendlyId": "shipwreck-shore"
+      }
+    },
+    {
+      "id": "attSirensRevenge",
+      "name": "探秘海妖复仇号",
+      "nameEn": "Siren's Revenge",
+      "land": "宝藏湾",
+      "landEn": "Treasure Cove",
+      "lat": 31.151372,
+      "lng": 121.6693152,
+      "entranceKey": "Guest Entrance",
+      "category": "walkthrough",
+      "durationMin": 15,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        2998
+      ],
+      "sourceIds": {
+        "wam": "attSirensRevenge",
+        "urlFriendlyId": "sirens-revenge"
+      }
+    },
+    {
+      "id": "attRexsRCRacer",
+      "name": "抱抱龙冲天赛车",
+      "nameEn": "Rex's Racer",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "landEn": "Toy Story Land",
+      "lat": 31.149449,
+      "lng": 121.663115,
+      "entranceKey": "Guest Entrance",
+      "category": "thrill",
+      "durationMin": 2,
+      "heightCm": 120,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        5633
+      ],
+      "sourceIds": {
+        "wam": "attRexsRCRacer",
+        "urlFriendlyId": "rexs-rc-racer"
+      }
+    },
+    {
+      "id": "attSlinkyDogSpin",
+      "name": "弹簧狗团团转",
+      "nameEn": "Slinky Dog Spin",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "landEn": "Toy Story Land",
+      "lat": 31.149322,
+      "lng": 121.66354,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 2,
+      "heightCm": null,
+      "premierAccess": false,
+      "standbyPass": false,
+      "queueTimesIds": [
+        5634
+      ],
+      "sourceIds": {
+        "wam": "attSlinkyDogSpin",
+        "urlFriendlyId": "slinky-dog-spin"
+      }
+    },
+    {
+      "id": "attWoodysRoundUp",
+      "name": "胡迪牛仔嘉年华",
+      "nameEn": "Woody's Roundup",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "landEn": "Toy Story Land",
+      "lat": 31.150164,
+      "lng": 121.663769,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 2,
+      "heightCm": 81,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        5635
+      ],
+      "sourceIds": {
+        "wam": "attWoodysRoundUp",
+        "urlFriendlyId": "woodys-round-up"
+      }
+    },
+    {
+      "id": "attZootopiaHotPursuit",
+      "name": "疯狂动物城：热力追踪",
+      "nameEn": "Zootopia: Hot Pursuit",
+      "land": "疯狂动物城",
+      "landEn": "Zootopia",
+      "lat": 31.152389,
+      "lng": 121.666285,
+      "entranceKey": "Guest Entrance",
+      "category": "family",
+      "durationMin": 6,
+      "heightCm": 81,
+      "premierAccess": true,
+      "standbyPass": false,
+      "queueTimesIds": [
+        12392,
+        13819
+      ],
+      "sourceIds": {
+        "wam": "attZootopiaHotPursuit",
+        "urlFriendlyId": "zootopia-hot-pursuit"
+      }
+    }
+  ],
+  "highlights": [
+    "attTronLightcyclePowerRun",
+    "attSevenDwarfsMineTrain",
+    "attPiratesOfCaribbean",
+    "attSoaringOverHorizon",
+    "attRoaringRapids",
+    "attZootopiaHotPursuit",
+    "attRexsRCRacer",
+    "attPeterPansFlight"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "description": "排队最优解 —— 上海迪士尼实时排队与最优项目推荐",
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "disney-queue",
+  "libVersion": "3.4.10",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false,
+    "urlCheck": false,
+    "checkSiteMap": false
+  },
+  "condition": {}
+}

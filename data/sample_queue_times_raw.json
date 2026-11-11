@@ -1,0 +1,271 @@
+{
+  "lands": [
+    {
+      "id": 779,
+      "name": "Adventure Isle",
+      "rides": [
+        {
+          "id": 3893,
+          "name": "Challenge Trails at Camp Discovery",
+          "is_open": true,
+          "wait_time": 50,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 16370,
+          "name": "Junior Explorers Camp",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2986,
+          "name": "Roaring Rapids",
+          "is_open": true,
+          "wait_time": 60,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 3002,
+          "name": "Soaring Over the Horizon",
+          "is_open": true,
+          "wait_time": 90,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 3901,
+          "name": "Vista Trail at Camp Discovery",
+          "is_open": true,
+          "wait_time": 0,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 777,
+      "name": "Fantasyland",
+      "rides": [
+        {
+          "id": 3080,
+          "name": "“Once Upon a Time” Adventure",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2987,
+          "name": "Alice in Wonderland Maze",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2988,
+          "name": "Hunny Pot Spin",
+          "is_open": true,
+          "wait_time": 20,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2989,
+          "name": "Peter Pan’s Flight",
+          "is_open": true,
+          "wait_time": 45,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2990,
+          "name": "Seven Dwarfs Mine Train",
+          "is_open": true,
+          "wait_time": 130,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 13818,
+          "name": "Seven Dwarfs Mine Train Single Rider",
+          "is_open": true,
+          "wait_time": 0,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2991,
+          "name": "The Many Adventures of Winnie the Pooh",
+          "is_open": true,
+          "wait_time": 40,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2992,
+          "name": "Voyage to the Crystal Grotto",
+          "is_open": true,
+          "wait_time": 15,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 780,
+      "name": "Gardens of Imagination",
+      "rides": [
+        {
+          "id": 3896,
+          "name": "Become Iron Man at the Marvel Universe",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2993,
+          "name": "Dumbo the Flying Elephant",
+          "is_open": true,
+          "wait_time": 20,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2994,
+          "name": "Fantasia Carousel",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 3082,
+          "name": "Marvel Universe",
+          "is_open": true,
+          "wait_time": 0,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 778,
+      "name": "Tomorrowland",
+      "rides": [
+        {
+          "id": 2999,
+          "name": "Buzz Lightyear Planet Rescue",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 3000,
+          "name": "Jet Packs",
+          "is_open": true,
+          "wait_time": 40,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 16392,
+          "name": "Pixar Adventurous Journey",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 3001,
+          "name": "Space Chat With Stitch",
+          "is_open": true,
+          "wait_time": 15,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2985,
+          "name": "TRON Lightcycle Power Run – Presented by Chevrolet",
+          "is_open": true,
+          "wait_time": 70,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 4076,
+          "name": "TRON Realm, Chevrolet Digital Challenge",
+          "is_open": true,
+          "wait_time": 0,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 783,
+      "name": "Toy Story Land",
+      "rides": [
+        {
+          "id": 5633,
+          "name": "Rex’s Racer",
+          "is_open": true,
+          "wait_time": 105,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 5634,
+          "name": "Slinky Dog Spin",
+          "is_open": true,
+          "wait_time": 40,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 5635,
+          "name": "Woody’s Roundup",
+          "is_open": true,
+          "wait_time": 50,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 781,
+      "name": "Treasure Cove",
+      "rides": [
+        {
+          "id": 2995,
+          "name": "Explorer Canoes",
+          "is_open": false,
+          "wait_time": 0,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2996,
+          "name": "Pirates of the Caribbean Battle for the Sunken Treasure",
+          "is_open": true,
+          "wait_time": 55,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2997,
+          "name": "Shipwreck Shore",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 2998,
+          "name": "Siren's Revenge",
+          "is_open": true,
+          "wait_time": 5,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 920,
+      "name": "Zootopia",
+      "rides": [
+        {
+          "id": 13819,
+          "name": "Zootopia Hot Pursuit Single Rider",
+          "is_open": true,
+          "wait_time": 0,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        },
+        {
+          "id": 12392,
+          "name": "Zootopia: Hot Pursuit",
+          "is_open": true,
+          "wait_time": 100,
+          "last_updated": "2026-11-11T04:22:00.000Z"
+        }
+      ]
+    }
+  ],
+  "rides": []
+}

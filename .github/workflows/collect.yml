@@ -1,0 +1,70 @@
+# 上海迪士尼实时排队：每 5 分钟抓一次 queue-times.com，更到 data/latest.json。
+#
+# 为什么在 GitHub Actions 里跑（也可在本机跑，见 collector/install_task.ps1）：
+# - 境外 runner 可以直连 queue-times.com（HTTPS/TCP）。
+# - 中国大陆网络对这两个域名的 TCP/TLS 握手会被重置（WinError 10054），但 QUIC/HTTP3
+#   （UDP 443）可用 —— 本机用 `python collector/collect.py --transport auto` 会自动回退到
+#   HTTP/3（需 pip install aioquic），详见 docs/01-data-sources.md。
+# - Actions 里显式用 --transport tcp：runner 直连正常，也不需要装 aioquic。
+#
+# 数据节流约定：queue-times 免费公开接口，仅个人学习用途、5 分钟一次、只抓单个园区。
+# 上游本身约 5 分钟刷新一次，再快没有意义。
+name: collect-queue-times
+
+on:
+  schedule:
+    # UTC 时间，每 5 分钟一次。GitHub 的定时任务在高峰期可能延迟几分钟，属正常。
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {}   # 也可以在 Actions 页面手动触发
+
+# 同一时间只允许一个采集任务在跑，避免两个 job 同时 commit 互相打架。
+concurrency:
+  group: collect-queue-times
+  cancel-in-progress: false
+
+permissions:
+  contents: write          # 需要把 data/ 的更新 commit 回仓库
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch queue times -> data/latest.json
+        # 失败时脚本写 data/latest.error.json 并以非零码退出，绝不覆盖上一份可用的 latest.json。
+        run: python collector/collect.py --transport tcp
+
+      - name: Rebuild forecast -> data/forecast.json
+        # 历史样本不足时用 raw/ 里的样例 CSV 合并补齐；最多 20 小时重算一次，避免每次采集都重算。
+        run: python collector/build_forecast.py --bootstrap-csv --max-age-hours 20
+
+      - name: Commit data if changed
+        # 没有变化就不产生 commit（GitHub 上不做无意义的空提交）。
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/
+          if git diff --cached --quiet; then
+            echo 'data unchanged, nothing to commit'
+          else
+            git commit -m "data: queue times $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push
+          fi
+
+      - name: Upload collect error snapshot
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: latest-error
+          path: data/latest.error.json
+          if-no-files-found: ignore
+          retention-days: 7

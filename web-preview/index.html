@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>上海迪士尼 · 排队最优解（H5 预览）</title>
+<link rel="stylesheet" href="preview.css">
+</head>
+<body>
+<div class="stage">
+  <div class="phone">
+    <div class="statusbar">
+      <span>13:00</span>
+      <span class="status-right">中国联通 · 5G ▮▮▮</span>
+    </div>
+    <div class="navbar">
+      <span class="navbar-title" id="navTitle">排队最优解</span>
+    </div>
+    <main class="screen" id="screen"></main>
+    <nav class="tabbar" id="tabbar">
+      <button class="tab active" data-view="index"><span class="tab-ico">◎</span><span>最优解</span></button>
+      <button class="tab" data-view="rank"><span class="tab-ico">≡</span><span>排队榜</span></button>
+      <button class="tab" data-view="watchlist"><span class="tab-ico">☑</span><span>清单</span></button>
+      <button class="tab" data-view="plan"><span class="tab-ico">↗</span><span>行程</span></button>
+      <button class="tab" data-view="forecast"><span class="tab-ico">▁▃▅</span><span>预测</span></button>
+      <button class="tab" data-view="settings"><span class="tab-ico">☰</span><span>我的</span></button>
+    </nav>
+  </div>
+
+  <aside class="side">
+    <h1>上海迪士尼 · 排队最优解</h1>
+    <p class="lead">微信小程序 6 个页面的静态 H5 预览（含「分时预测」）。页面数据流与小程序完全一致：同一份 <code>utils/rec.js</code> 组装契约输入，同一份 <code>shared/recommend.js</code> 算推荐、清单耗时与分时统计。</p>
+    <ul class="meta" id="meta"></ul>
+    <p class="tip">请用本地静态服务打开（例如在项目根执行 <code>python -m http.server 8000</code>，再访问 <code>/web-preview/</code>）。直接双击 file:// 打开时浏览器会禁止 fetch JSON。</p>
+    <p class="tip">首屏算法用的是演示快照时刻（<code>latest.json</code> 的 fetchedAt），所以结果稳定可复现；接真实数据后换成手机当前时间。</p>
+  </aside>
+</div>
+<script src="preview.js"></script>
+</body>
+</html>

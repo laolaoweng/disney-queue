@@ -1,0 +1,191 @@
+// pages/rank/rank.js —— 排队榜：全部项目按综合评分 / 排队 / 步行排序
+var api = require('../../utils/api.js');
+var store = require('../../utils/store.js');
+var rec = require('../../utils/rec.js');
+var format = require('../../utils/format.js');
+var recommendModule = require('../../shared/recommend.js');
+
+var SORTS = [
+  { key: 'score', label: '综合评分' },
+  { key: 'wait', label: '排队最短' },
+  { key: 'walk', label: '步行最近' }
+];
+
+Page({
+  data: {
+    loading: true,
+    error: '',
+    sortKey: 'score',
+    sorts: SORTS,
+    grouped: false,
+    rows: [],
+    groups: [],
+    statsText: '',
+    updatedText: '',
+    hintText: '点任意一项：设为我的位置 / 加入必玩 / 避开它'
+  },
+
+  onLoad: function () {
+    this.load(true);
+  },
+
+  onShow: function () {
+    if (this.bundle) this.render();
+  },
+
+  onPullDownRefresh: function () {
+    this.load(true).then(function () {
+      wx.stopPullDownRefresh();
+    });
+  },
+
+  load: function (force) {
+    var self = this;
+    this.setData({ loading: !this.bundle });
+    return api.loadAll(force).then(function (bundle) {
+      self.bundle = bundle;
+      self.setData({ loading: false, error: '' });
+      self.render();
+    }).catch(function (err) {
+      self.setData({ loading: false, error: (err && err.message) || '数据加载失败' });
+    });
+  },
+
+  render: function () {
+    var bundle = this.bundle;
+    if (!bundle) return;
+    var prefs = store.getPrefs();
+    var rows;
+    try {
+      rows = rec.rankList(bundle, prefs, { recModule: recommendModule });
+    } catch (e) {
+      this.setData({ error: (e && e.message) || '评分出错' });
+      return;
+    }
+    this.rows = rows;
+    var stats = rec.parkStats(bundle);
+    this.setData({
+      statsText: stats.statsText,
+      updatedText: format.relativeUpdated(bundle.updatedAt, bundle.nowMs)
+    });
+    this.applySort();
+  },
+
+  applySort: function () {
+    var rows = (this.rows || []).slice();
+    var key = this.data.sortKey;
+
+    function isExcluded(row) {
+      return !!row.excluded;
+    }
+
+    rows.sort(function (a, b) {
+      var ea = isExcluded(a) ? 1 : 0;
+      var eb = isExcluded(b) ? 1 : 0;
+      if (ea !== eb) return ea - eb; // 被排除/关闭的永远沉底
+      if (key === 'wait') {
+        var wa = a.waitMinutes === null || a.waitMinutes === undefined ? 9999 : a.waitMinutes;
+        var wb = b.waitMinutes === null || b.waitMinutes === undefined ? 9999 : b.waitMinutes;
+        if (wa !== wb) return wa - wb;
+        return b.score - a.score;
+      }
+      if (key === 'walk') {
+        var pa = a.walkMinutes === null || a.walkMinutes === undefined ? 9999 : a.walkMinutes;
+        var pb = b.walkMinutes === null || b.walkMinutes === undefined ? 9999 : b.walkMinutes;
+        if (pa !== pb) return pa - pb;
+        return b.score - a.score;
+      }
+      if (b.score !== a.score) return b.score - a.score;
+      return (a.waitMinutes || 0) - (b.waitMinutes || 0);
+    });
+
+    var prefs = store.getPrefs();
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].rank = i + 1;
+      rows[i].isMust = prefs.mustDo.indexOf(rows[i].id) >= 0;
+      rows[i].isAvoid = prefs.avoid.indexOf(rows[i].id) >= 0;
+      rows[i].isLast = prefs.lastAttractionId === rows[i].id;
+      rows[i].isPlayed = prefs.playedIds.indexOf(rows[i].id) >= 0;
+    }
+
+    this.setData({ rows: rows });
+
+    // 按主题园区分组（同一园区内保持当前排序，组间按最佳名次先后）
+    if (this.data.grouped) {
+      var groups = [];
+      var seen = {};
+      for (var j = 0; j < rows.length; j++) {
+        var land = rows[j].land || '其他';
+        if (!seen[land]) {
+          seen[land] = { land: land, rows: [] };
+          groups.push(seen[land]);
+        }
+        seen[land].rows.push(rows[j]);
+      }
+      this.setData({ groups: groups });
+    } else {
+      this.setData({ groups: [] });
+    }
+  },
+
+  onGroupTap: function () {
+    this.setData({ grouped: !this.data.grouped });
+    this.applySort();
+  },
+
+  // 分时预测：普通页，navigateTo 进入
+  goForecast: function () {
+    wx.navigateTo({ url: '/pages/forecast/forecast' });
+  },
+
+  onSortTap: function (e) {
+    var key = e.currentTarget.dataset.key;
+    if (!key || key === this.data.sortKey) return;
+    this.setData({ sortKey: key });
+    this.applySort();
+  },
+
+  onTapRow: function (e) {
+    var id = e.currentTarget.dataset.id;
+    var prefs = store.getPrefs();
+    var inMust = prefs.mustDo.indexOf(id) >= 0;
+    var inAvoid = prefs.avoid.indexOf(id) >= 0;
+    var played = prefs.playedIds.indexOf(id) >= 0;
+    var isLast = prefs.lastAttractionId === id;
+
+    var actions = [
+      inMust ? '取消必玩' : '加入必玩',
+      inAvoid ? '取消避开' : '避开它',
+      played ? '取消「已玩过」' : '标记「已玩过」',
+      isLast ? '取消「我在这里」' : '设为「我在这里」'
+    ];
+
+    var self = this;
+    wx.showActionSheet({
+      itemList: actions,
+      success: function (res) {
+        var tapIndex = res.tapIndex;
+        if (tapIndex === 0) {
+          var p1 = store.toggleInList('mustDo', id);
+          // 必玩和避开互斥：加入必玩时自动移出避开
+          if (p1.mustDo.indexOf(id) >= 0 && p1.avoid.indexOf(id) >= 0) {
+            store.toggleInList('avoid', id);
+          }
+        } else if (tapIndex === 1) {
+          var p2 = store.toggleInList('avoid', id);
+          if (p2.avoid.indexOf(id) >= 0 && p2.mustDo.indexOf(id) >= 0) {
+            store.toggleInList('mustDo', id);
+          }
+        } else if (tapIndex === 2) {
+          if (played) store.unmarkPlayed(id);
+          else store.markPlayed(id);
+        } else if (tapIndex === 3) {
+          store.setLastAttraction(isLast ? null : id);
+        }
+        self.render();
+        wx.showToast({ title: '偏好已更新', icon: 'none' });
+      },
+      fail: function () {}
+    });
+  }
+});
