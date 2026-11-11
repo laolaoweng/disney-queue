@@ -6,6 +6,26 @@
     </view>
   </view>
 
+  <!-- 八大必玩 · 现在排队（点格子可直接操作） -->
+  <view wx:if="{{highlightsRows.length}}" class="card rank-high">
+    <view class="high-head">
+      <text class="card-title">🎢 八大必玩 · 现在排队</text>
+      <text class="high-link" bindtap="goWatchlist">去清单 ›</text>
+    </view>
+    <view class="hc-grid">
+      <view
+        wx:for="{{highlightsRows}}"
+        wx:key="id"
+        class="hc-item"
+        data-id="{{item.id}}"
+        bindtap="onTapHighlight"
+      >
+        <text class="hc-name">{{item.name}}</text>
+        <text class="hc-wait {{item.closed ? 'closed' : item.waitClass}}">{{item.closed ? '关闭' : (item.waitMinutes === null ? '--' : item.waitMinutes + '′')}}</text>
+      </view>
+    </view>
+  </view>
+
   <view class="sortbar">
     <view
       wx:for="{{sorts}}"

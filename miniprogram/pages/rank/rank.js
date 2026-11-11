@@ -20,6 +20,7 @@ Page({
     grouped: false,
     rows: [],
     groups: [],
+    highlightsRows: [],
     statsText: '',
     updatedText: '',
     hintText: '点任意一项：设为我的位置 / 加入必玩 / 避开它'
@@ -64,9 +65,16 @@ Page({
     }
     this.rows = rows;
     var stats = rec.parkStats(bundle);
+    var highlights = [];
+    try {
+      highlights = rec.highlightsList(bundle, prefs, { recModule: recommendModule });
+    } catch (e) {
+      highlights = [];
+    }
     this.setData({
       statsText: stats.statsText,
-      updatedText: format.relativeUpdated(bundle.updatedAt, bundle.nowMs)
+      updatedText: format.relativeUpdated(bundle.updatedAt, bundle.nowMs),
+      highlightsRows: highlights
     });
     this.applySort();
   },
@@ -136,6 +144,15 @@ Page({
   // 分时预测：普通页，navigateTo 进入
   goForecast: function () {
     wx.navigateTo({ url: '/pages/forecast/forecast' });
+  },
+
+  goWatchlist: function () {
+    wx.switchTab({ url: '/pages/watchlist/watchlist' });
+  },
+
+  // 八大必玩格子：点一下和点榜单行一样，弹出操作菜单
+  onTapHighlight: function (e) {
+    this.onTapRow(e);
   },
 
   onSortTap: function (e) {

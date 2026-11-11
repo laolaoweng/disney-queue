@@ -1537,6 +1537,15 @@ body {
 .high-add { min-width: 40px; margin-left: 9px; padding: 3px 8px; border-radius: 999px; border: 1px solid rgba(255,138,61,.4); text-align: center; font-size: 10px; color: #ff9a4d; }
 .high-add.on { background: rgba(255,138,61,.16); border-color: transparent; color: #ffbb85; }
 
+/* 排队榜页顶部的八大必玩紧凑网格 */
+.rank-high { padding: 14px 14px 12px; }
+.rank-high .high-head { padding-bottom: 10px; }
+.hc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.hc-item { display: flex; align-items: center; justify-content: space-between; padding: 9px 11px; border-radius: 11px; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.06); cursor: pointer; }
+.hc-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-right: 8px; font-size: 12px; color: #dfe6f0; }
+.hc-wait { flex-shrink: 0; font-size: 15px; font-weight: 600; }
+.hc-wait.closed { font-size: 12px; color: #7a8494; }
+
 /* ---------------- 清单视图 ---------------- */
 .sum-card { padding: 18px 16px 14px; background: linear-gradient(160deg, #202737 0%, #171e2b 55%, #141a24 100%); border-color: rgba(255,138,61,.18); }
 .sum-top { display: flex; align-items: flex-start; justify-content: space-between; }
