@@ -288,11 +288,16 @@ check('recommend 必玩加成生效（评分确实变高，不一定进 Top，�
 });
 
 check('recommend 必玩项目有 must_do 理由', () => {
-  const targetId = 'attShipwreckShore';
+  // 用「基础推荐的第一名」当必玩，必然是合理候选；再断言它带 must_do 理由
+  const base = runRec({ party: 'mixed', mustDo: [], avoid: [], heightCm: 140, wantShows: true, budgetMin: 240, premierAccess: [] });
+  assert(base && base.best, '基础推荐为空');
+  const targetId = base.best.attractionId;
   const out = runRec({ party: 'mixed', mustDo: [targetId], avoid: [], heightCm: 140, wantShows: true, budgetMin: 240, premierAccess: [] });
   const all = [out.best].concat(out.alternatives);
   const hit = all.find(x => x.attractionId === targetId);
-  assert(hit, '必玩项目不在推荐前列（该场景应在前列）');
+  assert(hit, '必玩项目不在推荐前列：' + targetId);
+  const codes = (hit.reasons || []).map(r => r.code);
+  assert(codes.indexOf('must_do') >= 0, '必玩项目缺少 must_do 理由：' + codes.join(','));
   return hit.name;
 });
 

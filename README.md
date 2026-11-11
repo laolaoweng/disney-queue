@@ -32,7 +32,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File start_local.ps1
 | **A. GitHub Pages**（最省事） | 约 5–15 分钟 | 一个 GitHub 账号，仓库 Settings → Pages 选 `main / (root)` 即可，不用构建 |
 | **B. Cloudflare Pages + 边缘函数**（真·实时） | 约 2 分钟 | GitHub + Cloudflare 账号；`node tools\build_site.js` 后 `npx wrangler pages deploy _site --project-name disney-queue` |
 
-手机打开 `https://<你的网址>/web-preview/index.html` → 添加到主屏幕即可，八个页面（推荐/排行/清单/演出/冲刺计划/行程/设置/分时预测）都在。`.github/workflows/collect.yml` 已改为**每 5 分钟**抓一次，数据自动 commit；Cloudflare 方案下 `/data/latest.json` 由边缘函数在 2 分钟内实时回源。
+手机打开 `https://<你的网址>/web-preview/index.html` → 添加到主屏幕即可，页面（最优解=冲刺计划 / 排队榜 / 清单 / 演出 / 预测 / 我的）都在。`.github/workflows/collect.yml` 已改为**每 5 分钟**抓一次，数据自动 commit；Cloudflare 方案下 `/data/latest.json` 由边缘函数在 2 分钟内实时回源。
 
 ---
 
@@ -104,6 +104,8 @@ python collector\collect.py       # 默认 --transport auto：TCP 被重置就�
 | **演出（shows）** | 当天娱乐演出的场次卡片（图 + 最近一场倒计时 + 下一场），按「快要开始」排序，停演/已结束灰显；数据每天从官网抓一次 |
 | **行程（plan）** | 自动排 3–4 个项目的顺序，显示「几点开始、排多久、玩完几点」，可点「我从这里开始」（不再占 tabBar，首页按钮进入） |
 | **分时预测（forecast）** | 最近 14 天的每小时曲线：切项目看「几点人最少」，工作日/周末切换，标出最空 2–3 小时和「比高峰少 X%」；数据来自 `hourly-stats.json`，缺失时退回 `forecast.json` |
+| **最优解（首页=冲刺计划）** | 打开就是冲刺计划：勾选必玩项目（勾选顺序=优先级），算出闭园前最多玩几项、每项几点去；支持平衡 P50 / 稳健 P80 与出发点 |
+| **排队榜（rank）** | 官方图片卡片墙，默认按「排队最长」排序（另有综合评分 / 排队最短 / 步行最近 / 八大必玩 4 个筛选） |
 | **冲刺计划（plan8）** | 勾选想玩的必玩项目（勾选顺序=优先级），用精确枚举算出闭园前最多能玩几项、每项几点去最合适；支持出发时间/出发点，越晚出发越会提示先玩哪些 |
 | **设置（settings）** | 同行类型（刺激/家庭/亲子/混合）、最矮身高、是否看演出、时间预算、必玩/尊享卡清单 |
 

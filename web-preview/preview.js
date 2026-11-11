@@ -971,7 +971,7 @@
       ? (Math.floor(remainMin / 60) > 0
         ? Math.floor(remainMin / 60) + ' 小时 ' + (remainMin % 60) + ' 分'
         : (remainMin % 60) + ' 分钟')
-      : '已过排队截止时间';
+      : '今日已截止';
     var heat = typeof result.heatFactor === 'number' ? result.heatFactor : 1;
     var heatTone = heat >= 1.25 ? 'hot' : (heat <= 0.75 ? 'ok' : 'mid');
     var dayTypeText = result.dayType === 'weekend' ? '周末' : '工作日';
@@ -980,8 +980,8 @@
       '<div class="status-item"><span class="status-num num">' + esc(nowLabel) + '</span>' +
       '<span class="status-label">现在</span></div>' +
       '<div class="status-divider"></div>' +
-      '<div class="status-item status-item-wide"><span class="status-num num status-remain">' + esc(remainText) + '</span>' +
-      '<span class="status-label">距 ' + esc(fmt.hhmm(fmt.toDate(result.queueCloseAt)) || '21:00') + ' 排队截止</span></div>' +
+      '<div class="status-item status-item-wide"><span class="status-num num status-remain' + (remainMin > 0 ? '' : ' status-past') + '">' + esc(remainText) + '</span>' +
+      '<span class="status-label">' + (remainMin > 0 ? '距 ' : '排队截止 ') + esc(fmt.hhmm(fmt.toDate(result.queueCloseAt)) || '21:00') + (remainMin > 0 ? ' 排队截止' : '') + '</span></div>' +
       '<div class="status-divider"></div>' +
       '<div class="status-item"><span class="status-num num status-heat tone-' + heatTone + '">×' + heat.toFixed(2) + '</span>' +
       '<span class="status-label">今日热度 · ' + dayTypeText + '</span></div>' +

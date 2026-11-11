@@ -2025,3 +2025,7 @@ body {
   border-color: #164f9e;
   color: #fff;
 }
+
+
+/* 已过排队截止：别用大字号撑爆卡片 */
+.status-num.status-past { font-size: 18px; letter-spacing: 0; color: #5a6a82; }
