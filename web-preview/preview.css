@@ -681,10 +681,20 @@ body {
 /* ---------- 排队榜 ---------- */
 .sortbar {
   display: flex;
-  gap: 8px;
+  flex-wrap: nowrap;
+  gap: 6px;
   padding: 10px 0 14px;
   overflow-x: auto;
   scrollbar-width: none;
+}
+
+.sortbar::-webkit-scrollbar { display: none; }
+
+.sortbar .sort-item {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 6px 8px;
+  font-size: 11.5px;
 }
 
 .sort-item {

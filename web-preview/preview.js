@@ -67,12 +67,12 @@
   var planner = null;
 
   var state = {
-    view: 'index',
+    view: 'plan8',
     loading: true,
     error: '',
     bundle: null,
     usedMock: false,
-    sortKey: 'score',
+    sortKey: 'wait-desc',
     grouped: false,
     menuId: null,
     settingsTab: 'mustDo',
@@ -496,6 +496,12 @@
         if (wa !== wb) return wa - wb;
         return b.score - a.score;
       }
+      if (key === 'wait-desc') {
+        var da = typeof a.waitMinutes === 'number' ? a.waitMinutes : -1;
+        var db = typeof b.waitMinutes === 'number' ? b.waitMinutes : -1;
+        if (da !== db) return db - da;
+        return b.score - a.score;
+      }
       if (key === 'walk') {
         var pa = typeof a.walkMinutes === 'number' ? a.walkMinutes : 9999;
         var pb = typeof b.walkMinutes === 'number' ? b.walkMinutes : 9999;
@@ -522,6 +528,7 @@
     var stats = rec.parkStats(bundle);
 
     var sorts = [
+      { key: 'wait-desc', label: '排队最长' },
       { key: 'score', label: '综合评分' },
       { key: 'wait', label: '排队最短' },
       { key: 'walk', label: '步行最近' },
@@ -933,7 +940,8 @@
         '<button class="empty-btn" data-act="plan8all">全选 8 大必玩</button></div>');
     }
 
-    var nowIso = bundle.mockMode ? bundle.nowIso : new Date().toISOString();
+    // 统一以「这份数据的时刻」为起点，避免数据快照与真实时钟错位（本地 mock/离线预览尤其明显）
+    var nowIso = bundle.nowIso || new Date().toISOString();
     var result = null;
     var resultError = '';
     try {

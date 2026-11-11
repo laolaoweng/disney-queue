@@ -6,6 +6,7 @@ var format = require('../../utils/format.js');
 var recommendModule = require('../../shared/recommend.js');
 
 var SORTS = [
+  { key: 'wait-desc', label: '排队最长' },
   { key: 'score', label: '综合评分' },
   { key: 'wait', label: '排队最短' },
   { key: 'walk', label: '步行最近' },
@@ -39,7 +40,7 @@ Page({
   data: {
     loading: true,
     error: '',
-    sortKey: 'score',
+    sortKey: 'wait-desc',
     sorts: SORTS,
     grouped: false,
     rows: [],
@@ -120,6 +121,12 @@ Page({
       var ea = isExcluded(a) ? 1 : 0;
       var eb = isExcluded(b) ? 1 : 0;
       if (ea !== eb) return ea - eb; // 被排除/关闭的永远沉底
+      if (key === 'wait-desc') {
+        var da = a.waitMinutes === null || a.waitMinutes === undefined ? -1 : a.waitMinutes;
+        var db = b.waitMinutes === null || b.waitMinutes === undefined ? -1 : b.waitMinutes;
+        if (da !== db) return db - da;
+        return b.score - a.score;
+      }
       if (key === 'wait') {
         var wa = a.waitMinutes === null || a.waitMinutes === undefined ? 9999 : a.waitMinutes;
         var wb = b.waitMinutes === null || b.waitMinutes === undefined ? 9999 : b.waitMinutes;
