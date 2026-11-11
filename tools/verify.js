@@ -168,7 +168,7 @@ if (forecast) {
 // ---------- §6 hourly-stats ----------
 if (hourlyStats) {
   check('hourly-stats 结构（§6）', () => {
-    assert(hourlyStats.schemaVersion === 1, 'schemaVersion 应为 1');
+    assert(hourlyStats.schemaVersion === 1, 'schemaVersion 应为 2');
     assert(hourlyStats.parkId === 'shdr', 'parkId 应为 shdr');
     const w = hourlyStats.window;
     assert(w && typeof w.startDate === 'string' && typeof w.endDate === 'string', 'window 缺失');
@@ -479,7 +479,7 @@ check('手机直接用的部署文件齐全', () => {
 // ---------- 演出数据与页面（show/shows） ----------
 check('data/shows.json 结构合法', () => {
   const shows = readJSON('data/shows.json');
-  assert(shows.schemaVersion === 1, 'shows schemaVersion 应为 1');
+  assert(shows.schemaVersion === 1, 'shows schemaVersion 应为 2');
   assert(shows.source === 'wam/facility/detail', 'shows source 不符');
   assert(/^\d{4}-\d{2}-\d{2}$/.test(shows.businessDate || ''), 'shows.businessDate 格式不对');
   assert(Array.isArray(shows.shows) && shows.shows.length >= 20, 'shows 条数异常: ' + (shows.shows && shows.shows.length));
@@ -521,7 +521,7 @@ check('H5 演出页 + 今日客流卡', () => {
 });
 
 // ---------- planner（冲刺计划） ----------
-const plannerPath = path.join(ROOT, 'shared', 'planner.js');
+const plannerPath = path.join(ROOT, 'shared', 'bundle.js');
 let planner = null;
 try { planner = require(plannerPath); } catch (err) { planner = null; }
 
@@ -534,8 +534,10 @@ check('planner 导出', () => {
 
 check('planner 小程序副本与 shared 一致', () => {
   const a = fs.readFileSync(plannerPath, 'utf8');
+  // H5 与小程序都加载打包后的单文件（shared/bundle.js → miniprogram/shared/planner.js）
   const b = fs.readFileSync(path.join(ROOT, 'miniprogram', 'shared', 'planner.js'), 'utf8');
-  assert(a === b, 'miniprogram/shared/planner.js 与 shared/planner.js 不一致，请重新复制');
+  const bundle = fs.readFileSync(path.join(ROOT, 'shared', 'bundle.js'), 'utf8');
+  assert(b === bundle, 'miniprogram/shared/planner.js 与 shared/bundle.js 不一致，请运行 node tools/build_shared.js --sync');
 });
 
 check('planner 实时数据出计划（8 大必玩，09:00 出发）', () => {
@@ -543,7 +545,7 @@ check('planner 实时数据出计划（8 大必玩，09:00 出发）', () => {
   const latest = readJSON('data/latest.json');
   const hourlyStats = readJSON('data/hourly-stats.json');
   const r = planner.planMustDo({ catalog, latest, hourlyStats, now: '2026-11-11T01:00:00Z', selected: catalog.highlights });
-  assert(r.schemaVersion === 1, 'schemaVersion 应为 1');
+  assert(r.schemaVersion === 2, 'schemaVersion 应为 2，实际 ' + r.schemaVersion);
   assert(r.completed.total === 8, '应为 8 个勾选项目，实际 ' + r.completed.total);
   assert(r.plan.length >= 5, '09:00 出发应至少排 5 项，实际 ' + r.plan.length);
   for (let i = 1; i < r.plan.length; i++) {

@@ -1998,3 +1998,20 @@ body {
   .p8-result-count { font-size: 36px; }
   .p8-chip { padding: 7px 10px; }
 }
+
+/* 冲刺计划：预测口径切换 */
+.p8-risk { display: flex; gap: 8px; }
+.p8-risk-btn {
+  border: 1px solid rgba(22, 79, 158, .18);
+  background: #fff;
+  color: #3b5478;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.p8-risk-btn.on {
+  background: #164f9e;
+  border-color: #164f9e;
+  color: #fff;
+}

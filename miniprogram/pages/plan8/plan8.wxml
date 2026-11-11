@@ -70,6 +70,13 @@
           <view class="origin-row-value">{{originText}} <text class="origin-row-caret">▾</text></view>
         </picker>
       </view>
+      <view class="origin-row">
+        <text class="origin-row-label">预测口径</text>
+        <view class="p8-risk">
+          <view class="p8-risk-btn {{riskMode === 'balanced' ? 'on' : ''}}" data-risk="balanced" bindtap="onRisk">平衡 P50</view>
+          <view class="p8-risk-btn {{riskMode === 'robust' ? 'on' : ''}}" data-risk="robust" bindtap="onRisk">稳健 P80</view>
+        </view>
+      </view>
     </view>
 
     <!-- 没勾项目 -->

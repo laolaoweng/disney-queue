@@ -78,7 +78,8 @@
     settingsTab: 'mustDo',
     forecastScopeId: '',
     forecastDayType: 'all',
-    plan8Selected: null
+    plan8Selected: null,
+    plan8Risk: 'balanced'
   };
 
   /* ---------------- 工具 ---------------- */
@@ -911,6 +912,11 @@
       '<div class="hr"></div>' +
       '<div class="origin-row"><span class="origin-row-label">出发点</span>' +
       '<select class="origin-row-picker" data-act="plan8origin">' + originOptions + '</select></div>' +
+      '<div class="origin-row"><span class="origin-row-label">预测口径</span>' +
+      '<div class="p8-risk">' +
+      '<button class="p8-risk-btn' + (state.plan8Risk !== 'robust' ? ' on' : '') + '" data-act="plan8risk" data-risk="balanced">平衡 P50</button>' +
+      '<button class="p8-risk-btn' + (state.plan8Risk === 'robust' ? ' on' : '') + '" data-act="plan8risk" data-risk="robust">稳健 P80</button>' +
+      '</div></div>' +
       '</div>';
 
     if (!planner) {
@@ -938,7 +944,7 @@
         now: nowIso,
         selected: selected,
         location: prefs.lastAttractionId ? { attractionId: prefs.lastAttractionId } : null,
-        opts: { mode: 'max' }
+        opts: { mode: 'max', riskMode: state.plan8Risk }
       });
     } catch (e) {
       resultError = '冲刺计划计算失败：' + ((e && e.message) || '未知错误');
@@ -979,8 +985,9 @@
         '<div class="tl-main"><div class="tl-top">' +
         '<b class="tl-arrive num">' + esc(row.arriveLabel) + '</b>' +
         '<span class="tl-name">' + esc(row.name) + '</span></div>' +
-        '<span class="tl-sub">' + esc(row.land || '') + ' · 排队 ' + esc(row.queueMin) + ' 分 · 玩 ' +
-        esc(row.rideMinutes) + ' 分 · 离开 ' + esc(row.leaveLabel) + '</span>' +
+        '<span class="tl-sub">' + esc(row.land || '') + ' · 排队 ' + esc(row.queueMin) + ' 分' +
+        (row.forecast ? '（预测 ' + esc(row.forecast.p50) + '~' + esc(row.forecast.p80) + '）' : '') +
+        ' · 玩 ' + esc(row.rideMinutes) + ' 分 · 离开 ' + esc(row.leaveLabel) + '</span>' +
         '<span class="tl-walk">步行 ' + esc(Math.round((row.walkFromPrevMin || 0) * 10) / 10) + ' 分钟</span></div>' +
         '<span class="tl-arrow">›</span></div>';
     }).join('');
@@ -1508,6 +1515,12 @@
     }
     if (act === 'plan8clear') { state.plan8Selected = []; render(); return; }
     if (act === 'plan8recalc') { render(); return; }
+    if (act === 'plan8risk') {
+      var risk = target.getAttribute('data-risk');
+      state.plan8Risk = risk === 'robust' ? 'robust' : 'balanced';
+      render();
+      return;
+    }
     if (act === 'plan8here') {
       if (!getPrefs().lastAttractionId) {
         window.alert('先在出发点上选你所在的项目');

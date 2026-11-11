@@ -1,0 +1,3647 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-11T07:59:03.282Z",
+  "source": "derived-from-wam-coordinates",
+  "note": "由官方 WAM 坐标（BD-09，项目入口 Guest Entrance）的球面直线距离 × 绕路系数 ÷ 步行速度估算，不是实测值，误差约 ±2 分钟。可用实测值覆盖 matrix 中对应项目对，或后续接入道路图 Dijkstra。",
+  "params": {
+    "walkSpeedMPerMin": 75,
+    "walkDetourFactor": 1.35,
+    "coordSys": "BD-09"
+  },
+  "entrances": {
+    "attBecomeIronMan": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attDumboFlyingElephant": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attFantasiaCarousel": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attMarvelUniverse": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attBuzzLightyearPlanetRescue": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attJetPacks": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attPixarAdventurousJourneyTomorrowland": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attStitchEncounter": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attTronLightcyclePowerRun": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attTronRealm": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attAdventuresWinniePooh": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attAliceWonderlandMaze": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attHunnyPotSpin": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attOnceUponTimeAdventure": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attPeterPansFlight": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attSevenDwarfsMineTrain": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attVoyageToCrystalGrotto": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attChallengeTrails": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attJuniorExplorersCamp": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attRoaringRapids": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attSoaringOverHorizon": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attVistaTrail": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attExplorerCanoes": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attPiratesOfCaribbean": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attShipwreckShore": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attSirensRevenge": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attRexsRCRacer": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attSlinkyDogSpin": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attWoodysRoundUp": {
+      "entranceKey": "Guest Entrance"
+    },
+    "attZootopiaHotPursuit": {
+      "entranceKey": "Guest Entrance"
+    }
+  },
+  "matrix": {
+    "attBecomeIronMan": {
+      "attDumboFlyingElephant": 2.2,
+      "attFantasiaCarousel": 4.7,
+      "attMarvelUniverse": 1,
+      "attBuzzLightyearPlanetRescue": 3.1,
+      "attJetPacks": 1.9,
+      "attPixarAdventurousJourneyTomorrowland": 3.7,
+      "attStitchEncounter": 2.4,
+      "attTronLightcyclePowerRun": 3.3,
+      "attTronRealm": 3.6,
+      "attAdventuresWinniePooh": 6.3,
+      "attAliceWonderlandMaze": 4.8,
+      "attHunnyPotSpin": 5.8,
+      "attOnceUponTimeAdventure": 3,
+      "attPeterPansFlight": 2.5,
+      "attSevenDwarfsMineTrain": 5.6,
+      "attVoyageToCrystalGrotto": 2.3,
+      "attChallengeTrails": 9.5,
+      "attJuniorExplorersCamp": 8.4,
+      "attRoaringRapids": 7.9,
+      "attSoaringOverHorizon": 11.5,
+      "attVistaTrail": 10,
+      "attExplorerCanoes": 6.5,
+      "attPiratesOfCaribbean": 7.9,
+      "attShipwreckShore": 7.8,
+      "attSirensRevenge": 9.1,
+      "attRexsRCRacer": 3.7,
+      "attSlinkyDogSpin": 3,
+      "attWoodysRoundUp": 3.8,
+      "attZootopiaHotPursuit": 7.8
+    },
+    "attDumboFlyingElephant": {
+      "attBecomeIronMan": 2.2,
+      "attFantasiaCarousel": 2.5,
+      "attMarvelUniverse": 1.8,
+      "attBuzzLightyearPlanetRescue": 4.8,
+      "attJetPacks": 3.1,
+      "attPixarAdventurousJourneyTomorrowland": 5.5,
+      "attStitchEncounter": 3.8,
+      "attTronLightcyclePowerRun": 5.5,
+      "attTronRealm": 5.7,
+      "attAdventuresWinniePooh": 6.2,
+      "attAliceWonderlandMaze": 4,
+      "attHunnyPotSpin": 5.7,
+      "attOnceUponTimeAdventure": 2.5,
+      "attPeterPansFlight": 3.9,
+      "attSevenDwarfsMineTrain": 4.8,
+      "attVoyageToCrystalGrotto": 3,
+      "attChallengeTrails": 7.3,
+      "attJuniorExplorersCamp": 6.2,
+      "attRoaringRapids": 5.7,
+      "attSoaringOverHorizon": 9.3,
+      "attVistaTrail": 7.8,
+      "attExplorerCanoes": 4.4,
+      "attPiratesOfCaribbean": 6.3,
+      "attShipwreckShore": 6,
+      "attSirensRevenge": 7.2,
+      "attRexsRCRacer": 5.7,
+      "attSlinkyDogSpin": 4.9,
+      "attWoodysRoundUp": 5.2,
+      "attZootopiaHotPursuit": 7.1
+    },
+    "attFantasiaCarousel": {
+      "attBecomeIronMan": 4.7,
+      "attDumboFlyingElephant": 2.5,
+      "attMarvelUniverse": 4.2,
+      "attBuzzLightyearPlanetRescue": 6.9,
+      "attJetPacks": 5.1,
+      "attPixarAdventurousJourneyTomorrowland": 7.6,
+      "attStitchEncounter": 5.9,
+      "attTronLightcyclePowerRun": 7.9,
+      "attTronRealm": 8,
+      "attAdventuresWinniePooh": 7.4,
+      "attAliceWonderlandMaze": 4.9,
+      "attHunnyPotSpin": 6.9,
+      "attOnceUponTimeAdventure": 4.2,
+      "attPeterPansFlight": 6.2,
+      "attSevenDwarfsMineTrain": 5.6,
+      "attVoyageToCrystalGrotto": 5.2,
+      "attChallengeTrails": 5,
+      "attJuniorExplorersCamp": 3.9,
+      "attRoaringRapids": 3.2,
+      "attSoaringOverHorizon": 7,
+      "attVistaTrail": 5.6,
+      "attExplorerCanoes": 2.6,
+      "attPiratesOfCaribbean": 5.6,
+      "attShipwreckShore": 5.1,
+      "attSirensRevenge": 5.7,
+      "attRexsRCRacer": 8.2,
+      "attSlinkyDogSpin": 7.4,
+      "attWoodysRoundUp": 7.4,
+      "attZootopiaHotPursuit": 7.6
+    },
+    "attMarvelUniverse": {
+      "attBecomeIronMan": 1,
+      "attDumboFlyingElephant": 1.8,
+      "attFantasiaCarousel": 4.2,
+      "attBuzzLightyearPlanetRescue": 3.2,
+      "attJetPacks": 1.7,
+      "attPixarAdventurousJourneyTomorrowland": 3.8,
+      "attStitchEncounter": 2.3,
+      "attTronLightcyclePowerRun": 3.7,
+      "attTronRealm": 3.9,
+      "attAdventuresWinniePooh": 6.6,
+      "attAliceWonderlandMaze": 4.8,
+      "attHunnyPotSpin": 6,
+      "attOnceUponTimeAdventure": 3.1,
+      "attPeterPansFlight": 3,
+      "attSevenDwarfsMineTrain": 5.7,
+      "attVoyageToCrystalGrotto": 2.6,
+      "attChallengeTrails": 9.1,
+      "attJuniorExplorersCamp": 8,
+      "attRoaringRapids": 7.4,
+      "attSoaringOverHorizon": 11,
+      "attVistaTrail": 9.6,
+      "attExplorerCanoes": 6.1,
+      "attPiratesOfCaribbean": 7.8,
+      "attShipwreckShore": 7.6,
+      "attSirensRevenge": 8.8,
+      "attRexsRCRacer": 4.3,
+      "attSlinkyDogSpin": 3.6,
+      "attWoodysRoundUp": 4.3,
+      "attZootopiaHotPursuit": 7.9
+    },
+    "attBuzzLightyearPlanetRescue": {
+      "attBecomeIronMan": 3.1,
+      "attDumboFlyingElephant": 4.8,
+      "attFantasiaCarousel": 6.9,
+      "attMarvelUniverse": 3.2,
+      "attJetPacks": 1.8,
+      "attPixarAdventurousJourneyTomorrowland": 1,
+      "attStitchEncounter": 1,
+      "attTronLightcyclePowerRun": 2.4,
+      "attTronRealm": 1.8,
+      "attAdventuresWinniePooh": 9.2,
+      "attAliceWonderlandMaze": 7.9,
+      "attHunnyPotSpin": 8.7,
+      "attOnceUponTimeAdventure": 6.2,
+      "attPeterPansFlight": 4.9,
+      "attSevenDwarfsMineTrain": 8.7,
+      "attVoyageToCrystalGrotto": 5.2,
+      "attChallengeTrails": 11.9,
+      "attJuniorExplorersCamp": 10.8,
+      "attRoaringRapids": 10.1,
+      "attSoaringOverHorizon": 13.9,
+      "attVistaTrail": 12.5,
+      "attExplorerCanoes": 9.1,
+      "attPiratesOfCaribbean": 11,
+      "attShipwreckShore": 10.8,
+      "attSirensRevenge": 12,
+      "attRexsRCRacer": 4.7,
+      "attSlinkyDogSpin": 4.2,
+      "attWoodysRoundUp": 5.8,
+      "attZootopiaHotPursuit": 10.8
+    },
+    "attJetPacks": {
+      "attBecomeIronMan": 1.9,
+      "attDumboFlyingElephant": 3.1,
+      "attFantasiaCarousel": 5.1,
+      "attMarvelUniverse": 1.7,
+      "attBuzzLightyearPlanetRescue": 1.8,
+      "attPixarAdventurousJourneyTomorrowland": 2.5,
+      "attStitchEncounter": 1,
+      "attTronLightcyclePowerRun": 3.3,
+      "attTronRealm": 3.2,
+      "attAdventuresWinniePooh": 8.2,
+      "attAliceWonderlandMaze": 6.5,
+      "attHunnyPotSpin": 7.7,
+      "attOnceUponTimeAdventure": 4.8,
+      "attPeterPansFlight": 4.3,
+      "attSevenDwarfsMineTrain": 7.3,
+      "attVoyageToCrystalGrotto": 4.1,
+      "attChallengeTrails": 10.1,
+      "attJuniorExplorersCamp": 9,
+      "attRoaringRapids": 8.3,
+      "attSoaringOverHorizon": 12.1,
+      "attVistaTrail": 10.7,
+      "attExplorerCanoes": 7.4,
+      "attPiratesOfCaribbean": 9.3,
+      "attShipwreckShore": 9.1,
+      "attSirensRevenge": 10.2,
+      "attRexsRCRacer": 4.9,
+      "attSlinkyDogSpin": 4.2,
+      "attWoodysRoundUp": 5.4,
+      "attZootopiaHotPursuit": 9.6
+    },
+    "attPixarAdventurousJourneyTomorrowland": {
+      "attBecomeIronMan": 3.7,
+      "attDumboFlyingElephant": 5.5,
+      "attFantasiaCarousel": 7.6,
+      "attMarvelUniverse": 3.8,
+      "attBuzzLightyearPlanetRescue": 1,
+      "attJetPacks": 2.5,
+      "attStitchEncounter": 1.7,
+      "attTronLightcyclePowerRun": 2.4,
+      "attTronRealm": 1.6,
+      "attAdventuresWinniePooh": 9.7,
+      "attAliceWonderlandMaze": 8.4,
+      "attHunnyPotSpin": 9.2,
+      "attOnceUponTimeAdventure": 6.7,
+      "attPeterPansFlight": 5.3,
+      "attSevenDwarfsMineTrain": 9.2,
+      "attVoyageToCrystalGrotto": 5.7,
+      "attChallengeTrails": 12.6,
+      "attJuniorExplorersCamp": 11.4,
+      "attRoaringRapids": 10.8,
+      "attSoaringOverHorizon": 14.5,
+      "attVistaTrail": 13.1,
+      "attExplorerCanoes": 9.8,
+      "attPiratesOfCaribbean": 11.6,
+      "attShipwreckShore": 11.4,
+      "attSirensRevenge": 12.6,
+      "attRexsRCRacer": 4.9,
+      "attSlinkyDogSpin": 4.5,
+      "attWoodysRoundUp": 6.1,
+      "attZootopiaHotPursuit": 11.3
+    },
+    "attStitchEncounter": {
+      "attBecomeIronMan": 2.4,
+      "attDumboFlyingElephant": 3.8,
+      "attFantasiaCarousel": 5.9,
+      "attMarvelUniverse": 2.3,
+      "attBuzzLightyearPlanetRescue": 1,
+      "attJetPacks": 1,
+      "attPixarAdventurousJourneyTomorrowland": 1.7,
+      "attTronLightcyclePowerRun": 2.9,
+      "attTronRealm": 2.5,
+      "attAdventuresWinniePooh": 8.7,
+      "attAliceWonderlandMaze": 7.1,
+      "attHunnyPotSpin": 8.1,
+      "attOnceUponTimeAdventure": 5.4,
+      "attPeterPansFlight": 4.5,
+      "attSevenDwarfsMineTrain": 7.9,
+      "attVoyageToCrystalGrotto": 4.6,
+      "attChallengeTrails": 10.9,
+      "attJuniorExplorersCamp": 9.7,
+      "attRoaringRapids": 9.1,
+      "attSoaringOverHorizon": 12.8,
+      "attVistaTrail": 11.5,
+      "attExplorerCanoes": 8.1,
+      "attPiratesOfCaribbean": 10.1,
+      "attShipwreckShore": 9.8,
+      "attSirensRevenge": 11,
+      "attRexsRCRacer": 4.8,
+      "attSlinkyDogSpin": 4.2,
+      "attWoodysRoundUp": 5.6,
+      "attZootopiaHotPursuit": 10.1
+    },
+    "attTronLightcyclePowerRun": {
+      "attBecomeIronMan": 3.3,
+      "attDumboFlyingElephant": 5.5,
+      "attFantasiaCarousel": 7.9,
+      "attMarvelUniverse": 3.7,
+      "attBuzzLightyearPlanetRescue": 2.4,
+      "attJetPacks": 3.3,
+      "attPixarAdventurousJourneyTomorrowland": 2.4,
+      "attStitchEncounter": 2.9,
+      "attTronRealm": 1,
+      "attAdventuresWinniePooh": 8.1,
+      "attAliceWonderlandMaze": 7.3,
+      "attHunnyPotSpin": 7.6,
+      "attOnceUponTimeAdventure": 5.8,
+      "attPeterPansFlight": 3.7,
+      "attSevenDwarfsMineTrain": 8,
+      "attVoyageToCrystalGrotto": 4.4,
+      "attChallengeTrails": 12.8,
+      "attJuniorExplorersCamp": 11.7,
+      "attRoaringRapids": 11.1,
+      "attSoaringOverHorizon": 14.7,
+      "attVistaTrail": 13.3,
+      "attExplorerCanoes": 9.7,
+      "attPiratesOfCaribbean": 10.9,
+      "attShipwreckShore": 10.8,
+      "attSirensRevenge": 12.2,
+      "attRexsRCRacer": 2.6,
+      "attSlinkyDogSpin": 2.3,
+      "attWoodysRoundUp": 4.1,
+      "attZootopiaHotPursuit": 9.9
+    },
+    "attTronRealm": {
+      "attBecomeIronMan": 3.6,
+      "attDumboFlyingElephant": 5.7,
+      "attFantasiaCarousel": 8,
+      "attMarvelUniverse": 3.9,
+      "attBuzzLightyearPlanetRescue": 1.8,
+      "attJetPacks": 3.2,
+      "attPixarAdventurousJourneyTomorrowland": 1.6,
+      "attStitchEncounter": 2.5,
+      "attTronLightcyclePowerRun": 1,
+      "attAdventuresWinniePooh": 8.8,
+      "attAliceWonderlandMaze": 7.9,
+      "attHunnyPotSpin": 8.4,
+      "attOnceUponTimeAdventure": 6.3,
+      "attPeterPansFlight": 4.4,
+      "attSevenDwarfsMineTrain": 8.7,
+      "attVoyageToCrystalGrotto": 5,
+      "attChallengeTrails": 13,
+      "attJuniorExplorersCamp": 11.9,
+      "attRoaringRapids": 11.3,
+      "attSoaringOverHorizon": 15,
+      "attVistaTrail": 13.5,
+      "attExplorerCanoes": 10,
+      "attPiratesOfCaribbean": 11.4,
+      "attShipwreckShore": 11.3,
+      "attSirensRevenge": 12.6,
+      "attRexsRCRacer": 3.4,
+      "attSlinkyDogSpin": 3.2,
+      "attWoodysRoundUp": 4.9,
+      "attZootopiaHotPursuit": 10.6
+    },
+    "attAdventuresWinniePooh": {
+      "attBecomeIronMan": 6.3,
+      "attDumboFlyingElephant": 6.2,
+      "attFantasiaCarousel": 7.4,
+      "attMarvelUniverse": 6.6,
+      "attBuzzLightyearPlanetRescue": 9.2,
+      "attJetPacks": 8.2,
+      "attPixarAdventurousJourneyTomorrowland": 9.7,
+      "attStitchEncounter": 8.7,
+      "attTronLightcyclePowerRun": 8.1,
+      "attTronRealm": 8.8,
+      "attAliceWonderlandMaze": 2.4,
+      "attHunnyPotSpin": 1,
+      "attOnceUponTimeAdventure": 3.7,
+      "attPeterPansFlight": 4.4,
+      "attSevenDwarfsMineTrain": 2,
+      "attVoyageToCrystalGrotto": 4.1,
+      "attChallengeTrails": 9.5,
+      "attJuniorExplorersCamp": 9,
+      "attRoaringRapids": 8.9,
+      "attSoaringOverHorizon": 11,
+      "attVistaTrail": 9.7,
+      "attExplorerCanoes": 6.7,
+      "attPiratesOfCaribbean": 5,
+      "attShipwreckShore": 5.5,
+      "attSirensRevenge": 6.9,
+      "attRexsRCRacer": 6,
+      "attSlinkyDogSpin": 5.8,
+      "attWoodysRoundUp": 4.2,
+      "attZootopiaHotPursuit": 2.1
+    },
+    "attAliceWonderlandMaze": {
+      "attBecomeIronMan": 4.8,
+      "attDumboFlyingElephant": 4,
+      "attFantasiaCarousel": 4.9,
+      "attMarvelUniverse": 4.8,
+      "attBuzzLightyearPlanetRescue": 7.9,
+      "attJetPacks": 6.5,
+      "attPixarAdventurousJourneyTomorrowland": 8.4,
+      "attStitchEncounter": 7.1,
+      "attTronLightcyclePowerRun": 7.3,
+      "attTronRealm": 7.9,
+      "attAdventuresWinniePooh": 2.4,
+      "attHunnyPotSpin": 2,
+      "attOnceUponTimeAdventure": 1.7,
+      "attPeterPansFlight": 3.8,
+      "attSevenDwarfsMineTrain": 1,
+      "attVoyageToCrystalGrotto": 2.9,
+      "attChallengeTrails": 7.5,
+      "attJuniorExplorersCamp": 6.8,
+      "attRoaringRapids": 6.6,
+      "attSoaringOverHorizon": 9.2,
+      "attVistaTrail": 7.8,
+      "attExplorerCanoes": 4.4,
+      "attPiratesOfCaribbean": 3.8,
+      "attShipwreckShore": 4,
+      "attSirensRevenge": 5.5,
+      "attRexsRCRacer": 5.9,
+      "attSlinkyDogSpin": 5.4,
+      "attWoodysRoundUp": 4.3,
+      "attZootopiaHotPursuit": 3.1
+    },
+    "attHunnyPotSpin": {
+      "attBecomeIronMan": 5.8,
+      "attDumboFlyingElephant": 5.7,
+      "attFantasiaCarousel": 6.9,
+      "attMarvelUniverse": 6,
+      "attBuzzLightyearPlanetRescue": 8.7,
+      "attJetPacks": 7.7,
+      "attPixarAdventurousJourneyTomorrowland": 9.2,
+      "attStitchEncounter": 8.1,
+      "attTronLightcyclePowerRun": 7.6,
+      "attTronRealm": 8.4,
+      "attAdventuresWinniePooh": 1,
+      "attAliceWonderlandMaze": 2,
+      "attOnceUponTimeAdventure": 3.2,
+      "attPeterPansFlight": 4,
+      "attSevenDwarfsMineTrain": 1.7,
+      "attVoyageToCrystalGrotto": 3.6,
+      "attChallengeTrails": 9.3,
+      "attJuniorExplorersCamp": 8.7,
+      "attRoaringRapids": 8.5,
+      "attSoaringOverHorizon": 10.9,
+      "attVistaTrail": 9.5,
+      "attExplorerCanoes": 6.3,
+      "attPiratesOfCaribbean": 4.9,
+      "attShipwreckShore": 5.3,
+      "attSirensRevenge": 6.8,
+      "attRexsRCRacer": 5.6,
+      "attSlinkyDogSpin": 5.4,
+      "attWoodysRoundUp": 3.8,
+      "attZootopiaHotPursuit": 2.4
+    },
+    "attOnceUponTimeAdventure": {
+      "attBecomeIronMan": 3,
+      "attDumboFlyingElephant": 2.5,
+      "attFantasiaCarousel": 4.2,
+      "attMarvelUniverse": 3.1,
+      "attBuzzLightyearPlanetRescue": 6.2,
+      "attJetPacks": 4.8,
+      "attPixarAdventurousJourneyTomorrowland": 6.7,
+      "attStitchEncounter": 5.4,
+      "attTronLightcyclePowerRun": 5.8,
+      "attTronRealm": 6.3,
+      "attAdventuresWinniePooh": 3.7,
+      "attAliceWonderlandMaze": 1.7,
+      "attHunnyPotSpin": 3.2,
+      "attPeterPansFlight": 2.6,
+      "attSevenDwarfsMineTrain": 2.6,
+      "attVoyageToCrystalGrotto": 1.6,
+      "attChallengeTrails": 7.9,
+      "attJuniorExplorersCamp": 6.9,
+      "attRoaringRapids": 6.6,
+      "attSoaringOverHorizon": 9.7,
+      "attVistaTrail": 8.2,
+      "attExplorerCanoes": 4.6,
+      "attPiratesOfCaribbean": 5.1,
+      "attShipwreckShore": 5.1,
+      "attSirensRevenge": 6.5,
+      "attRexsRCRacer": 4.8,
+      "attSlinkyDogSpin": 4.2,
+      "attWoodysRoundUp": 3.6,
+      "attZootopiaHotPursuit": 4.8
+    },
+    "attPeterPansFlight": {
+      "attBecomeIronMan": 2.5,
+      "attDumboFlyingElephant": 3.9,
+      "attFantasiaCarousel": 6.2,
+      "attMarvelUniverse": 3,
+      "attBuzzLightyearPlanetRescue": 4.9,
+      "attJetPacks": 4.3,
+      "attPixarAdventurousJourneyTomorrowland": 5.3,
+      "attStitchEncounter": 4.5,
+      "attTronLightcyclePowerRun": 3.7,
+      "attTronRealm": 4.4,
+      "attAdventuresWinniePooh": 4.4,
+      "attAliceWonderlandMaze": 3.8,
+      "attHunnyPotSpin": 4,
+      "attOnceUponTimeAdventure": 2.6,
+      "attSevenDwarfsMineTrain": 4.4,
+      "attVoyageToCrystalGrotto": 1.1,
+      "attChallengeTrails": 10.4,
+      "attJuniorExplorersCamp": 9.4,
+      "attRoaringRapids": 9,
+      "attSoaringOverHorizon": 12.3,
+      "attVistaTrail": 10.8,
+      "attExplorerCanoes": 7.2,
+      "attPiratesOfCaribbean": 7.5,
+      "attShipwreckShore": 7.6,
+      "attSirensRevenge": 9.1,
+      "attRexsRCRacer": 2.2,
+      "attSlinkyDogSpin": 1.6,
+      "attWoodysRoundUp": 1.3,
+      "attZootopiaHotPursuit": 6.2
+    },
+    "attSevenDwarfsMineTrain": {
+      "attBecomeIronMan": 5.6,
+      "attDumboFlyingElephant": 4.8,
+      "attFantasiaCarousel": 5.6,
+      "attMarvelUniverse": 5.7,
+      "attBuzzLightyearPlanetRescue": 8.7,
+      "attJetPacks": 7.3,
+      "attPixarAdventurousJourneyTomorrowland": 9.2,
+      "attStitchEncounter": 7.9,
+      "attTronLightcyclePowerRun": 8,
+      "attTronRealm": 8.7,
+      "attAdventuresWinniePooh": 2,
+      "attAliceWonderlandMaze": 1,
+      "attHunnyPotSpin": 1.7,
+      "attOnceUponTimeAdventure": 2.6,
+      "attPeterPansFlight": 4.4,
+      "attVoyageToCrystalGrotto": 3.7,
+      "attChallengeTrails": 7.6,
+      "attJuniorExplorersCamp": 7,
+      "attRoaringRapids": 6.9,
+      "attSoaringOverHorizon": 9.2,
+      "attVistaTrail": 7.8,
+      "attExplorerCanoes": 4.7,
+      "attPiratesOfCaribbean": 3.4,
+      "attShipwreckShore": 3.7,
+      "attSirensRevenge": 5.3,
+      "attRexsRCRacer": 6.5,
+      "attSlinkyDogSpin": 6,
+      "attWoodysRoundUp": 4.8,
+      "attZootopiaHotPursuit": 2.3
+    },
+    "attVoyageToCrystalGrotto": {
+      "attBecomeIronMan": 2.3,
+      "attDumboFlyingElephant": 3,
+      "attFantasiaCarousel": 5.2,
+      "attMarvelUniverse": 2.6,
+      "attBuzzLightyearPlanetRescue": 5.2,
+      "attJetPacks": 4.1,
+      "attPixarAdventurousJourneyTomorrowland": 5.7,
+      "attStitchEncounter": 4.6,
+      "attTronLightcyclePowerRun": 4.4,
+      "attTronRealm": 5,
+      "attAdventuresWinniePooh": 4.1,
+      "attAliceWonderlandMaze": 2.9,
+      "attHunnyPotSpin": 3.6,
+      "attOnceUponTimeAdventure": 1.6,
+      "attPeterPansFlight": 1.1,
+      "attSevenDwarfsMineTrain": 3.7,
+      "attChallengeTrails": 9.4,
+      "attJuniorExplorersCamp": 8.4,
+      "attRoaringRapids": 8,
+      "attSoaringOverHorizon": 11.2,
+      "attVistaTrail": 9.7,
+      "attExplorerCanoes": 6.1,
+      "attPiratesOfCaribbean": 6.6,
+      "attShipwreckShore": 6.6,
+      "attSirensRevenge": 8.1,
+      "attRexsRCRacer": 3.3,
+      "attSlinkyDogSpin": 2.6,
+      "attWoodysRoundUp": 2.2,
+      "attZootopiaHotPursuit": 5.7
+    },
+    "attChallengeTrails": {
+      "attBecomeIronMan": 9.5,
+      "attDumboFlyingElephant": 7.3,
+      "attFantasiaCarousel": 5,
+      "attMarvelUniverse": 9.1,
+      "attBuzzLightyearPlanetRescue": 11.9,
+      "attJetPacks": 10.1,
+      "attPixarAdventurousJourneyTomorrowland": 12.6,
+      "attStitchEncounter": 10.9,
+      "attTronLightcyclePowerRun": 12.8,
+      "attTronRealm": 13,
+      "attAdventuresWinniePooh": 9.5,
+      "attAliceWonderlandMaze": 7.5,
+      "attHunnyPotSpin": 9.3,
+      "attOnceUponTimeAdventure": 7.9,
+      "attPeterPansFlight": 10.4,
+      "attSevenDwarfsMineTrain": 7.6,
+      "attVoyageToCrystalGrotto": 9.4,
+      "attJuniorExplorersCamp": 1.2,
+      "attRoaringRapids": 1.9,
+      "attSoaringOverHorizon": 2,
+      "attVistaTrail": 1,
+      "attExplorerCanoes": 3.2,
+      "attPiratesOfCaribbean": 5,
+      "attShipwreckShore": 4.3,
+      "attSirensRevenge": 3.4,
+      "attRexsRCRacer": 12.6,
+      "attSlinkyDogSpin": 11.9,
+      "attWoodysRoundUp": 11.4,
+      "attZootopiaHotPursuit": 8.6
+    },
+    "attJuniorExplorersCamp": {
+      "attBecomeIronMan": 8.4,
+      "attDumboFlyingElephant": 6.2,
+      "attFantasiaCarousel": 3.9,
+      "attMarvelUniverse": 8,
+      "attBuzzLightyearPlanetRescue": 10.8,
+      "attJetPacks": 9,
+      "attPixarAdventurousJourneyTomorrowland": 11.4,
+      "attStitchEncounter": 9.7,
+      "attTronLightcyclePowerRun": 11.7,
+      "attTronRealm": 11.9,
+      "attAdventuresWinniePooh": 9,
+      "attAliceWonderlandMaze": 6.8,
+      "attHunnyPotSpin": 8.7,
+      "attOnceUponTimeAdventure": 6.9,
+      "attPeterPansFlight": 9.4,
+      "attSevenDwarfsMineTrain": 7,
+      "attVoyageToCrystalGrotto": 8.4,
+      "attChallengeTrails": 1.2,
+      "attRoaringRapids": 1,
+      "attSoaringOverHorizon": 3.1,
+      "attVistaTrail": 1.8,
+      "attExplorerCanoes": 2.4,
+      "attPiratesOfCaribbean": 4.8,
+      "attShipwreckShore": 4.1,
+      "attSirensRevenge": 3.6,
+      "attRexsRCRacer": 11.6,
+      "attSlinkyDogSpin": 10.9,
+      "attWoodysRoundUp": 10.5,
+      "attZootopiaHotPursuit": 8.3
+    },
+    "attRoaringRapids": {
+      "attBecomeIronMan": 7.9,
+      "attDumboFlyingElephant": 5.7,
+      "attFantasiaCarousel": 3.2,
+      "attMarvelUniverse": 7.4,
+      "attBuzzLightyearPlanetRescue": 10.1,
+      "attJetPacks": 8.3,
+      "attPixarAdventurousJourneyTomorrowland": 10.8,
+      "attStitchEncounter": 9.1,
+      "attTronLightcyclePowerRun": 11.1,
+      "attTronRealm": 11.3,
+      "attAdventuresWinniePooh": 8.9,
+      "attAliceWonderlandMaze": 6.6,
+      "attHunnyPotSpin": 8.5,
+      "attOnceUponTimeAdventure": 6.6,
+      "attPeterPansFlight": 9,
+      "attSevenDwarfsMineTrain": 6.9,
+      "attVoyageToCrystalGrotto": 8,
+      "attChallengeTrails": 1.9,
+      "attJuniorExplorersCamp": 1,
+      "attSoaringOverHorizon": 3.8,
+      "attVistaTrail": 2.5,
+      "attExplorerCanoes": 2.2,
+      "attPiratesOfCaribbean": 5.1,
+      "attShipwreckShore": 4.4,
+      "attSirensRevenge": 4.1,
+      "attRexsRCRacer": 11.1,
+      "attSlinkyDogSpin": 10.4,
+      "attWoodysRoundUp": 10.1,
+      "attZootopiaHotPursuit": 8.3
+    },
+    "attSoaringOverHorizon": {
+      "attBecomeIronMan": 11.5,
+      "attDumboFlyingElephant": 9.3,
+      "attFantasiaCarousel": 7,
+      "attMarvelUniverse": 11,
+      "attBuzzLightyearPlanetRescue": 13.9,
+      "attJetPacks": 12.1,
+      "attPixarAdventurousJourneyTomorrowland": 14.5,
+      "attStitchEncounter": 12.8,
+      "attTronLightcyclePowerRun": 14.7,
+      "attTronRealm": 15,
+      "attAdventuresWinniePooh": 11,
+      "attAliceWonderlandMaze": 9.2,
+      "attHunnyPotSpin": 10.9,
+      "attOnceUponTimeAdventure": 9.7,
+      "attPeterPansFlight": 12.3,
+      "attSevenDwarfsMineTrain": 9.2,
+      "attVoyageToCrystalGrotto": 11.2,
+      "attChallengeTrails": 2,
+      "attJuniorExplorersCamp": 3.1,
+      "attRoaringRapids": 3.8,
+      "attVistaTrail": 1.5,
+      "attExplorerCanoes": 5.1,
+      "attPiratesOfCaribbean": 6.2,
+      "attShipwreckShore": 5.6,
+      "attSirensRevenge": 4.3,
+      "attRexsRCRacer": 14.5,
+      "attSlinkyDogSpin": 13.8,
+      "attWoodysRoundUp": 13.2,
+      "attZootopiaHotPursuit": 9.9
+    },
+    "attVistaTrail": {
+      "attBecomeIronMan": 10,
+      "attDumboFlyingElephant": 7.8,
+      "attFantasiaCarousel": 5.6,
+      "attMarvelUniverse": 9.6,
+      "attBuzzLightyearPlanetRescue": 12.5,
+      "attJetPacks": 10.7,
+      "attPixarAdventurousJourneyTomorrowland": 13.1,
+      "attStitchEncounter": 11.5,
+      "attTronLightcyclePowerRun": 13.3,
+      "attTronRealm": 13.5,
+      "attAdventuresWinniePooh": 9.7,
+      "attAliceWonderlandMaze": 7.8,
+      "attHunnyPotSpin": 9.5,
+      "attOnceUponTimeAdventure": 8.2,
+      "attPeterPansFlight": 10.8,
+      "attSevenDwarfsMineTrain": 7.8,
+      "attVoyageToCrystalGrotto": 9.7,
+      "attChallengeTrails": 1,
+      "attJuniorExplorersCamp": 1.8,
+      "attRoaringRapids": 2.5,
+      "attSoaringOverHorizon": 1.5,
+      "attExplorerCanoes": 3.6,
+      "attPiratesOfCaribbean": 5,
+      "attShipwreckShore": 4.3,
+      "attSirensRevenge": 3.2,
+      "attRexsRCRacer": 13,
+      "attSlinkyDogSpin": 12.3,
+      "attWoodysRoundUp": 11.8,
+      "attZootopiaHotPursuit": 8.6
+    },
+    "attExplorerCanoes": {
+      "attBecomeIronMan": 6.5,
+      "attDumboFlyingElephant": 4.4,
+      "attFantasiaCarousel": 2.6,
+      "attMarvelUniverse": 6.1,
+      "attBuzzLightyearPlanetRescue": 9.1,
+      "attJetPacks": 7.4,
+      "attPixarAdventurousJourneyTomorrowland": 9.8,
+      "attStitchEncounter": 8.1,
+      "attTronLightcyclePowerRun": 9.7,
+      "attTronRealm": 10,
+      "attAdventuresWinniePooh": 6.7,
+      "attAliceWonderlandMaze": 4.4,
+      "attHunnyPotSpin": 6.3,
+      "attOnceUponTimeAdventure": 4.6,
+      "attPeterPansFlight": 7.2,
+      "attSevenDwarfsMineTrain": 4.7,
+      "attVoyageToCrystalGrotto": 6.1,
+      "attChallengeTrails": 3.2,
+      "attJuniorExplorersCamp": 2.4,
+      "attRoaringRapids": 2.2,
+      "attSoaringOverHorizon": 5.1,
+      "attVistaTrail": 3.6,
+      "attPiratesOfCaribbean": 3.3,
+      "attShipwreckShore": 2.7,
+      "attSirensRevenge": 3.1,
+      "attRexsRCRacer": 9.3,
+      "attSlinkyDogSpin": 8.7,
+      "attWoodysRoundUp": 8.2,
+      "attZootopiaHotPursuit": 6.2
+    },
+    "attPiratesOfCaribbean": {
+      "attBecomeIronMan": 7.9,
+      "attDumboFlyingElephant": 6.3,
+      "attFantasiaCarousel": 5.6,
+      "attMarvelUniverse": 7.8,
+      "attBuzzLightyearPlanetRescue": 11,
+      "attJetPacks": 9.3,
+      "attPixarAdventurousJourneyTomorrowland": 11.6,
+      "attStitchEncounter": 10.1,
+      "attTronLightcyclePowerRun": 10.9,
+      "attTronRealm": 11.4,
+      "attAdventuresWinniePooh": 5,
+      "attAliceWonderlandMaze": 3.8,
+      "attHunnyPotSpin": 4.9,
+      "attOnceUponTimeAdventure": 5.1,
+      "attPeterPansFlight": 7.5,
+      "attSevenDwarfsMineTrain": 3.4,
+      "attVoyageToCrystalGrotto": 6.6,
+      "attChallengeTrails": 5,
+      "attJuniorExplorersCamp": 4.8,
+      "attRoaringRapids": 5.1,
+      "attSoaringOverHorizon": 6.2,
+      "attVistaTrail": 5,
+      "attExplorerCanoes": 3.3,
+      "attShipwreckShore": 1,
+      "attSirensRevenge": 1.9,
+      "attRexsRCRacer": 9.7,
+      "attSlinkyDogSpin": 9.2,
+      "attWoodysRoundUp": 8.1,
+      "attZootopiaHotPursuit": 3.7
+    },
+    "attShipwreckShore": {
+      "attBecomeIronMan": 7.8,
+      "attDumboFlyingElephant": 6,
+      "attFantasiaCarousel": 5.1,
+      "attMarvelUniverse": 7.6,
+      "attBuzzLightyearPlanetRescue": 10.8,
+      "attJetPacks": 9.1,
+      "attPixarAdventurousJourneyTomorrowland": 11.4,
+      "attStitchEncounter": 9.8,
+      "attTronLightcyclePowerRun": 10.8,
+      "attTronRealm": 11.3,
+      "attAdventuresWinniePooh": 5.5,
+      "attAliceWonderlandMaze": 4,
+      "attHunnyPotSpin": 5.3,
+      "attOnceUponTimeAdventure": 5.1,
+      "attPeterPansFlight": 7.6,
+      "attSevenDwarfsMineTrain": 3.7,
+      "attVoyageToCrystalGrotto": 6.6,
+      "attChallengeTrails": 4.3,
+      "attJuniorExplorersCamp": 4.1,
+      "attRoaringRapids": 4.4,
+      "attSoaringOverHorizon": 5.6,
+      "attVistaTrail": 4.3,
+      "attExplorerCanoes": 2.7,
+      "attPiratesOfCaribbean": 1,
+      "attSirensRevenge": 1.5,
+      "attRexsRCRacer": 9.8,
+      "attSlinkyDogSpin": 9.3,
+      "attWoodysRoundUp": 8.3,
+      "attZootopiaHotPursuit": 4.3
+    },
+    "attSirensRevenge": {
+      "attBecomeIronMan": 9.1,
+      "attDumboFlyingElephant": 7.2,
+      "attFantasiaCarousel": 5.7,
+      "attMarvelUniverse": 8.8,
+      "attBuzzLightyearPlanetRescue": 12,
+      "attJetPacks": 10.2,
+      "attPixarAdventurousJourneyTomorrowland": 12.6,
+      "attStitchEncounter": 11,
+      "attTronLightcyclePowerRun": 12.2,
+      "attTronRealm": 12.6,
+      "attAdventuresWinniePooh": 6.9,
+      "attAliceWonderlandMaze": 5.5,
+      "attHunnyPotSpin": 6.8,
+      "attOnceUponTimeAdventure": 6.5,
+      "attPeterPansFlight": 9.1,
+      "attSevenDwarfsMineTrain": 5.3,
+      "attVoyageToCrystalGrotto": 8.1,
+      "attChallengeTrails": 3.4,
+      "attJuniorExplorersCamp": 3.6,
+      "attRoaringRapids": 4.1,
+      "attSoaringOverHorizon": 4.3,
+      "attVistaTrail": 3.2,
+      "attExplorerCanoes": 3.1,
+      "attPiratesOfCaribbean": 1.9,
+      "attShipwreckShore": 1.5,
+      "attRexsRCRacer": 11.3,
+      "attSlinkyDogSpin": 10.7,
+      "attWoodysRoundUp": 9.8,
+      "attZootopiaHotPursuit": 5.6
+    },
+    "attRexsRCRacer": {
+      "attBecomeIronMan": 3.7,
+      "attDumboFlyingElephant": 5.7,
+      "attFantasiaCarousel": 8.2,
+      "attMarvelUniverse": 4.3,
+      "attBuzzLightyearPlanetRescue": 4.7,
+      "attJetPacks": 4.9,
+      "attPixarAdventurousJourneyTomorrowland": 4.9,
+      "attStitchEncounter": 4.8,
+      "attTronLightcyclePowerRun": 2.6,
+      "attTronRealm": 3.4,
+      "attAdventuresWinniePooh": 6,
+      "attAliceWonderlandMaze": 5.9,
+      "attHunnyPotSpin": 5.6,
+      "attOnceUponTimeAdventure": 4.8,
+      "attPeterPansFlight": 2.2,
+      "attSevenDwarfsMineTrain": 6.5,
+      "attVoyageToCrystalGrotto": 3.3,
+      "attChallengeTrails": 12.6,
+      "attJuniorExplorersCamp": 11.6,
+      "attRoaringRapids": 11.1,
+      "attSoaringOverHorizon": 14.5,
+      "attVistaTrail": 13,
+      "attExplorerCanoes": 9.3,
+      "attPiratesOfCaribbean": 9.7,
+      "attShipwreckShore": 9.8,
+      "attSirensRevenge": 11.3,
+      "attSlinkyDogSpin": 1,
+      "attWoodysRoundUp": 1.8,
+      "attZootopiaHotPursuit": 8
+    },
+    "attSlinkyDogSpin": {
+      "attBecomeIronMan": 3,
+      "attDumboFlyingElephant": 4.9,
+      "attFantasiaCarousel": 7.4,
+      "attMarvelUniverse": 3.6,
+      "attBuzzLightyearPlanetRescue": 4.2,
+      "attJetPacks": 4.2,
+      "attPixarAdventurousJourneyTomorrowland": 4.5,
+      "attStitchEncounter": 4.2,
+      "attTronLightcyclePowerRun": 2.3,
+      "attTronRealm": 3.2,
+      "attAdventuresWinniePooh": 5.8,
+      "attAliceWonderlandMaze": 5.4,
+      "attHunnyPotSpin": 5.4,
+      "attOnceUponTimeAdventure": 4.2,
+      "attPeterPansFlight": 1.6,
+      "attSevenDwarfsMineTrain": 6,
+      "attVoyageToCrystalGrotto": 2.6,
+      "attChallengeTrails": 11.9,
+      "attJuniorExplorersCamp": 10.9,
+      "attRoaringRapids": 10.4,
+      "attSoaringOverHorizon": 13.8,
+      "attVistaTrail": 12.3,
+      "attExplorerCanoes": 8.7,
+      "attPiratesOfCaribbean": 9.2,
+      "attShipwreckShore": 9.3,
+      "attSirensRevenge": 10.7,
+      "attRexsRCRacer": 1,
+      "attWoodysRoundUp": 1.7,
+      "attZootopiaHotPursuit": 7.7
+    },
+    "attWoodysRoundUp": {
+      "attBecomeIronMan": 3.8,
+      "attDumboFlyingElephant": 5.2,
+      "attFantasiaCarousel": 7.4,
+      "attMarvelUniverse": 4.3,
+      "attBuzzLightyearPlanetRescue": 5.8,
+      "attJetPacks": 5.4,
+      "attPixarAdventurousJourneyTomorrowland": 6.1,
+      "attStitchEncounter": 5.6,
+      "attTronLightcyclePowerRun": 4.1,
+      "attTronRealm": 4.9,
+      "attAdventuresWinniePooh": 4.2,
+      "attAliceWonderlandMaze": 4.3,
+      "attHunnyPotSpin": 3.8,
+      "attOnceUponTimeAdventure": 3.6,
+      "attPeterPansFlight": 1.3,
+      "attSevenDwarfsMineTrain": 4.8,
+      "attVoyageToCrystalGrotto": 2.2,
+      "attChallengeTrails": 11.4,
+      "attJuniorExplorersCamp": 10.5,
+      "attRoaringRapids": 10.1,
+      "attSoaringOverHorizon": 13.2,
+      "attVistaTrail": 11.8,
+      "attExplorerCanoes": 8.2,
+      "attPiratesOfCaribbean": 8.1,
+      "attShipwreckShore": 8.3,
+      "attSirensRevenge": 9.8,
+      "attRexsRCRacer": 1.8,
+      "attSlinkyDogSpin": 1.7,
+      "attZootopiaHotPursuit": 6.2
+    },
+    "attZootopiaHotPursuit": {
+      "attBecomeIronMan": 7.8,
+      "attDumboFlyingElephant": 7.1,
+      "attFantasiaCarousel": 7.6,
+      "attMarvelUniverse": 7.9,
+      "attBuzzLightyearPlanetRescue": 10.8,
+      "attJetPacks": 9.6,
+      "attPixarAdventurousJourneyTomorrowland": 11.3,
+      "attStitchEncounter": 10.1,
+      "attTronLightcyclePowerRun": 9.9,
+      "attTronRealm": 10.6,
+      "attAdventuresWinniePooh": 2.1,
+      "attAliceWonderlandMaze": 3.1,
+      "attHunnyPotSpin": 2.4,
+      "attOnceUponTimeAdventure": 4.8,
+      "attPeterPansFlight": 6.2,
+      "attSevenDwarfsMineTrain": 2.3,
+      "attVoyageToCrystalGrotto": 5.7,
+      "attChallengeTrails": 8.6,
+      "attJuniorExplorersCamp": 8.3,
+      "attRoaringRapids": 8.3,
+      "attSoaringOverHorizon": 9.9,
+      "attVistaTrail": 8.6,
+      "attExplorerCanoes": 6.2,
+      "attPiratesOfCaribbean": 3.7,
+      "attShipwreckShore": 4.3,
+      "attSirensRevenge": 5.6,
+      "attRexsRCRacer": 8,
+      "attSlinkyDogSpin": 7.7,
+      "attWoodysRoundUp": 6.2
+    }
+  },
+  "pairs": [
+    {
+      "from": "attBecomeIronMan",
+      "to": "attDumboFlyingElephant",
+      "minutes": 2.2,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attFantasiaCarousel",
+      "minutes": 4.7,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attMarvelUniverse",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attBuzzLightyearPlanetRescue",
+      "minutes": 3.1,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attJetPacks",
+      "minutes": 1.9,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attPixarAdventurousJourneyTomorrowland",
+      "minutes": 3.7,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attStitchEncounter",
+      "minutes": 2.4,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attTronLightcyclePowerRun",
+      "minutes": 3.3,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attTronRealm",
+      "minutes": 3.6,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 6.3,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attHunnyPotSpin",
+      "minutes": 5.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 3,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attPeterPansFlight",
+      "minutes": 2.5,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 5.6,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 2.3,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attChallengeTrails",
+      "minutes": 9.5,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 8.4,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attRoaringRapids",
+      "minutes": 7.9,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attSoaringOverHorizon",
+      "minutes": 11.5,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attVistaTrail",
+      "minutes": 10,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attExplorerCanoes",
+      "minutes": 6.5,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 7.9,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attShipwreckShore",
+      "minutes": 7.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attSirensRevenge",
+      "minutes": 9.1,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attRexsRCRacer",
+      "minutes": 3.7,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attSlinkyDogSpin",
+      "minutes": 3,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attWoodysRoundUp",
+      "minutes": 3.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBecomeIronMan",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 7.8,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attFantasiaCarousel",
+      "minutes": 2.5,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attMarvelUniverse",
+      "minutes": 1.8,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attBuzzLightyearPlanetRescue",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attJetPacks",
+      "minutes": 3.1,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attPixarAdventurousJourneyTomorrowland",
+      "minutes": 5.5,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attStitchEncounter",
+      "minutes": 3.8,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attTronLightcyclePowerRun",
+      "minutes": 5.5,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attTronRealm",
+      "minutes": 5.7,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 6.2,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 4,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attHunnyPotSpin",
+      "minutes": 5.7,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 2.5,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attPeterPansFlight",
+      "minutes": 3.9,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 3,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attChallengeTrails",
+      "minutes": 7.3,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 6.2,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attRoaringRapids",
+      "minutes": 5.7,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attSoaringOverHorizon",
+      "minutes": 9.3,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attVistaTrail",
+      "minutes": 7.8,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attExplorerCanoes",
+      "minutes": 4.4,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 6.3,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attShipwreckShore",
+      "minutes": 6,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attSirensRevenge",
+      "minutes": 7.2,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attRexsRCRacer",
+      "minutes": 5.7,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attSlinkyDogSpin",
+      "minutes": 4.9,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attWoodysRoundUp",
+      "minutes": 5.2,
+      "source": "derived"
+    },
+    {
+      "from": "attDumboFlyingElephant",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 7.1,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attMarvelUniverse",
+      "minutes": 4.2,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attBuzzLightyearPlanetRescue",
+      "minutes": 6.9,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attJetPacks",
+      "minutes": 5.1,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attPixarAdventurousJourneyTomorrowland",
+      "minutes": 7.6,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attStitchEncounter",
+      "minutes": 5.9,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attTronLightcyclePowerRun",
+      "minutes": 7.9,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attTronRealm",
+      "minutes": 8,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 7.4,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 4.9,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attHunnyPotSpin",
+      "minutes": 6.9,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 4.2,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attPeterPansFlight",
+      "minutes": 6.2,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 5.6,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 5.2,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attChallengeTrails",
+      "minutes": 5,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 3.9,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attRoaringRapids",
+      "minutes": 3.2,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attSoaringOverHorizon",
+      "minutes": 7,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attVistaTrail",
+      "minutes": 5.6,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attExplorerCanoes",
+      "minutes": 2.6,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 5.6,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attShipwreckShore",
+      "minutes": 5.1,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attSirensRevenge",
+      "minutes": 5.7,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attRexsRCRacer",
+      "minutes": 8.2,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attSlinkyDogSpin",
+      "minutes": 7.4,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attWoodysRoundUp",
+      "minutes": 7.4,
+      "source": "derived"
+    },
+    {
+      "from": "attFantasiaCarousel",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 7.6,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attBuzzLightyearPlanetRescue",
+      "minutes": 3.2,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attJetPacks",
+      "minutes": 1.7,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attPixarAdventurousJourneyTomorrowland",
+      "minutes": 3.8,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attStitchEncounter",
+      "minutes": 2.3,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attTronLightcyclePowerRun",
+      "minutes": 3.7,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attTronRealm",
+      "minutes": 3.9,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 6.6,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attHunnyPotSpin",
+      "minutes": 6,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 3.1,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attPeterPansFlight",
+      "minutes": 3,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 5.7,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 2.6,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attChallengeTrails",
+      "minutes": 9.1,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 8,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attRoaringRapids",
+      "minutes": 7.4,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attSoaringOverHorizon",
+      "minutes": 11,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attVistaTrail",
+      "minutes": 9.6,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attExplorerCanoes",
+      "minutes": 6.1,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 7.8,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attShipwreckShore",
+      "minutes": 7.6,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attSirensRevenge",
+      "minutes": 8.8,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attRexsRCRacer",
+      "minutes": 4.3,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attSlinkyDogSpin",
+      "minutes": 3.6,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attWoodysRoundUp",
+      "minutes": 4.3,
+      "source": "derived"
+    },
+    {
+      "from": "attMarvelUniverse",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 7.9,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attJetPacks",
+      "minutes": 1.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attPixarAdventurousJourneyTomorrowland",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attStitchEncounter",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attTronLightcyclePowerRun",
+      "minutes": 2.4,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attTronRealm",
+      "minutes": 1.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 9.2,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 7.9,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attHunnyPotSpin",
+      "minutes": 8.7,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 6.2,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attPeterPansFlight",
+      "minutes": 4.9,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 8.7,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 5.2,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attChallengeTrails",
+      "minutes": 11.9,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 10.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attRoaringRapids",
+      "minutes": 10.1,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attSoaringOverHorizon",
+      "minutes": 13.9,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attVistaTrail",
+      "minutes": 12.5,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attExplorerCanoes",
+      "minutes": 9.1,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 11,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attShipwreckShore",
+      "minutes": 10.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attSirensRevenge",
+      "minutes": 12,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attRexsRCRacer",
+      "minutes": 4.7,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attSlinkyDogSpin",
+      "minutes": 4.2,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attWoodysRoundUp",
+      "minutes": 5.8,
+      "source": "derived"
+    },
+    {
+      "from": "attBuzzLightyearPlanetRescue",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 10.8,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attPixarAdventurousJourneyTomorrowland",
+      "minutes": 2.5,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attStitchEncounter",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attTronLightcyclePowerRun",
+      "minutes": 3.3,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attTronRealm",
+      "minutes": 3.2,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 8.2,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 6.5,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attHunnyPotSpin",
+      "minutes": 7.7,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attPeterPansFlight",
+      "minutes": 4.3,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 7.3,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 4.1,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attChallengeTrails",
+      "minutes": 10.1,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 9,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attRoaringRapids",
+      "minutes": 8.3,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attSoaringOverHorizon",
+      "minutes": 12.1,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attVistaTrail",
+      "minutes": 10.7,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attExplorerCanoes",
+      "minutes": 7.4,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 9.3,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attShipwreckShore",
+      "minutes": 9.1,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attSirensRevenge",
+      "minutes": 10.2,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attRexsRCRacer",
+      "minutes": 4.9,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attSlinkyDogSpin",
+      "minutes": 4.2,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attWoodysRoundUp",
+      "minutes": 5.4,
+      "source": "derived"
+    },
+    {
+      "from": "attJetPacks",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 9.6,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attStitchEncounter",
+      "minutes": 1.7,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attTronLightcyclePowerRun",
+      "minutes": 2.4,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attTronRealm",
+      "minutes": 1.6,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 9.7,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 8.4,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attHunnyPotSpin",
+      "minutes": 9.2,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 6.7,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attPeterPansFlight",
+      "minutes": 5.3,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 9.2,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 5.7,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attChallengeTrails",
+      "minutes": 12.6,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 11.4,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attRoaringRapids",
+      "minutes": 10.8,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attSoaringOverHorizon",
+      "minutes": 14.5,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attVistaTrail",
+      "minutes": 13.1,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attExplorerCanoes",
+      "minutes": 9.8,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 11.6,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attShipwreckShore",
+      "minutes": 11.4,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attSirensRevenge",
+      "minutes": 12.6,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attRexsRCRacer",
+      "minutes": 4.9,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attSlinkyDogSpin",
+      "minutes": 4.5,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attWoodysRoundUp",
+      "minutes": 6.1,
+      "source": "derived"
+    },
+    {
+      "from": "attPixarAdventurousJourneyTomorrowland",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 11.3,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attTronLightcyclePowerRun",
+      "minutes": 2.9,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attTronRealm",
+      "minutes": 2.5,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 8.7,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 7.1,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attHunnyPotSpin",
+      "minutes": 8.1,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 5.4,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attPeterPansFlight",
+      "minutes": 4.5,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 7.9,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 4.6,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attChallengeTrails",
+      "minutes": 10.9,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 9.7,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attRoaringRapids",
+      "minutes": 9.1,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attSoaringOverHorizon",
+      "minutes": 12.8,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attVistaTrail",
+      "minutes": 11.5,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attExplorerCanoes",
+      "minutes": 8.1,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 10.1,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attShipwreckShore",
+      "minutes": 9.8,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attSirensRevenge",
+      "minutes": 11,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attRexsRCRacer",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attSlinkyDogSpin",
+      "minutes": 4.2,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attWoodysRoundUp",
+      "minutes": 5.6,
+      "source": "derived"
+    },
+    {
+      "from": "attStitchEncounter",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 10.1,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attTronRealm",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 8.1,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 7.3,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attHunnyPotSpin",
+      "minutes": 7.6,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 5.8,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attPeterPansFlight",
+      "minutes": 3.7,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 8,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 4.4,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attChallengeTrails",
+      "minutes": 12.8,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 11.7,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attRoaringRapids",
+      "minutes": 11.1,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attSoaringOverHorizon",
+      "minutes": 14.7,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attVistaTrail",
+      "minutes": 13.3,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attExplorerCanoes",
+      "minutes": 9.7,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 10.9,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attShipwreckShore",
+      "minutes": 10.8,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attSirensRevenge",
+      "minutes": 12.2,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attRexsRCRacer",
+      "minutes": 2.6,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attSlinkyDogSpin",
+      "minutes": 2.3,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attWoodysRoundUp",
+      "minutes": 4.1,
+      "source": "derived"
+    },
+    {
+      "from": "attTronLightcyclePowerRun",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 9.9,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attAdventuresWinniePooh",
+      "minutes": 8.8,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 7.9,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attHunnyPotSpin",
+      "minutes": 8.4,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 6.3,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attPeterPansFlight",
+      "minutes": 4.4,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 8.7,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 5,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attChallengeTrails",
+      "minutes": 13,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 11.9,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attRoaringRapids",
+      "minutes": 11.3,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attSoaringOverHorizon",
+      "minutes": 15,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attVistaTrail",
+      "minutes": 13.5,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attExplorerCanoes",
+      "minutes": 10,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 11.4,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attShipwreckShore",
+      "minutes": 11.3,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attSirensRevenge",
+      "minutes": 12.6,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attRexsRCRacer",
+      "minutes": 3.4,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attSlinkyDogSpin",
+      "minutes": 3.2,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attWoodysRoundUp",
+      "minutes": 4.9,
+      "source": "derived"
+    },
+    {
+      "from": "attTronRealm",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 10.6,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attAliceWonderlandMaze",
+      "minutes": 2.4,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attHunnyPotSpin",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 3.7,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attPeterPansFlight",
+      "minutes": 4.4,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 2,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 4.1,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attChallengeTrails",
+      "minutes": 9.5,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 9,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attRoaringRapids",
+      "minutes": 8.9,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attSoaringOverHorizon",
+      "minutes": 11,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attVistaTrail",
+      "minutes": 9.7,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attExplorerCanoes",
+      "minutes": 6.7,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 5,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attShipwreckShore",
+      "minutes": 5.5,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attSirensRevenge",
+      "minutes": 6.9,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attRexsRCRacer",
+      "minutes": 6,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attSlinkyDogSpin",
+      "minutes": 5.8,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attWoodysRoundUp",
+      "minutes": 4.2,
+      "source": "derived"
+    },
+    {
+      "from": "attAdventuresWinniePooh",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 2.1,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attHunnyPotSpin",
+      "minutes": 2,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 1.7,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attPeterPansFlight",
+      "minutes": 3.8,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 2.9,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attChallengeTrails",
+      "minutes": 7.5,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 6.8,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attRoaringRapids",
+      "minutes": 6.6,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attSoaringOverHorizon",
+      "minutes": 9.2,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attVistaTrail",
+      "minutes": 7.8,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attExplorerCanoes",
+      "minutes": 4.4,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 3.8,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attShipwreckShore",
+      "minutes": 4,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attSirensRevenge",
+      "minutes": 5.5,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attRexsRCRacer",
+      "minutes": 5.9,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attSlinkyDogSpin",
+      "minutes": 5.4,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attWoodysRoundUp",
+      "minutes": 4.3,
+      "source": "derived"
+    },
+    {
+      "from": "attAliceWonderlandMaze",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 3.1,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attOnceUponTimeAdventure",
+      "minutes": 3.2,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attPeterPansFlight",
+      "minutes": 4,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 1.7,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 3.6,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attChallengeTrails",
+      "minutes": 9.3,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 8.7,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attRoaringRapids",
+      "minutes": 8.5,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attSoaringOverHorizon",
+      "minutes": 10.9,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attVistaTrail",
+      "minutes": 9.5,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attExplorerCanoes",
+      "minutes": 6.3,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 4.9,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attShipwreckShore",
+      "minutes": 5.3,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attSirensRevenge",
+      "minutes": 6.8,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attRexsRCRacer",
+      "minutes": 5.6,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attSlinkyDogSpin",
+      "minutes": 5.4,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attWoodysRoundUp",
+      "minutes": 3.8,
+      "source": "derived"
+    },
+    {
+      "from": "attHunnyPotSpin",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 2.4,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attPeterPansFlight",
+      "minutes": 2.6,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 2.6,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 1.6,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attChallengeTrails",
+      "minutes": 7.9,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 6.9,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attRoaringRapids",
+      "minutes": 6.6,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attSoaringOverHorizon",
+      "minutes": 9.7,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attVistaTrail",
+      "minutes": 8.2,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attExplorerCanoes",
+      "minutes": 4.6,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 5.1,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attShipwreckShore",
+      "minutes": 5.1,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attSirensRevenge",
+      "minutes": 6.5,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attRexsRCRacer",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attSlinkyDogSpin",
+      "minutes": 4.2,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attWoodysRoundUp",
+      "minutes": 3.6,
+      "source": "derived"
+    },
+    {
+      "from": "attOnceUponTimeAdventure",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attSevenDwarfsMineTrain",
+      "minutes": 4.4,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 1.1,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attChallengeTrails",
+      "minutes": 10.4,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 9.4,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attRoaringRapids",
+      "minutes": 9,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attSoaringOverHorizon",
+      "minutes": 12.3,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attVistaTrail",
+      "minutes": 10.8,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attExplorerCanoes",
+      "minutes": 7.2,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 7.5,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attShipwreckShore",
+      "minutes": 7.6,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attSirensRevenge",
+      "minutes": 9.1,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attRexsRCRacer",
+      "minutes": 2.2,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attSlinkyDogSpin",
+      "minutes": 1.6,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attWoodysRoundUp",
+      "minutes": 1.3,
+      "source": "derived"
+    },
+    {
+      "from": "attPeterPansFlight",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 6.2,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attVoyageToCrystalGrotto",
+      "minutes": 3.7,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attChallengeTrails",
+      "minutes": 7.6,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 7,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attRoaringRapids",
+      "minutes": 6.9,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attSoaringOverHorizon",
+      "minutes": 9.2,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attVistaTrail",
+      "minutes": 7.8,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attExplorerCanoes",
+      "minutes": 4.7,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 3.4,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attShipwreckShore",
+      "minutes": 3.7,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attSirensRevenge",
+      "minutes": 5.3,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attRexsRCRacer",
+      "minutes": 6.5,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attSlinkyDogSpin",
+      "minutes": 6,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attWoodysRoundUp",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attSevenDwarfsMineTrain",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 2.3,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attChallengeTrails",
+      "minutes": 9.4,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 8.4,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attRoaringRapids",
+      "minutes": 8,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attSoaringOverHorizon",
+      "minutes": 11.2,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attVistaTrail",
+      "minutes": 9.7,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attExplorerCanoes",
+      "minutes": 6.1,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 6.6,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attShipwreckShore",
+      "minutes": 6.6,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attSirensRevenge",
+      "minutes": 8.1,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attRexsRCRacer",
+      "minutes": 3.3,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attSlinkyDogSpin",
+      "minutes": 2.6,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attWoodysRoundUp",
+      "minutes": 2.2,
+      "source": "derived"
+    },
+    {
+      "from": "attVoyageToCrystalGrotto",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 5.7,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attJuniorExplorersCamp",
+      "minutes": 1.2,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attRoaringRapids",
+      "minutes": 1.9,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attSoaringOverHorizon",
+      "minutes": 2,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attVistaTrail",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attExplorerCanoes",
+      "minutes": 3.2,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 5,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attShipwreckShore",
+      "minutes": 4.3,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attSirensRevenge",
+      "minutes": 3.4,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attRexsRCRacer",
+      "minutes": 12.6,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attSlinkyDogSpin",
+      "minutes": 11.9,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attWoodysRoundUp",
+      "minutes": 11.4,
+      "source": "derived"
+    },
+    {
+      "from": "attChallengeTrails",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 8.6,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attRoaringRapids",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attSoaringOverHorizon",
+      "minutes": 3.1,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attVistaTrail",
+      "minutes": 1.8,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attExplorerCanoes",
+      "minutes": 2.4,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 4.8,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attShipwreckShore",
+      "minutes": 4.1,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attSirensRevenge",
+      "minutes": 3.6,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attRexsRCRacer",
+      "minutes": 11.6,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attSlinkyDogSpin",
+      "minutes": 10.9,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attWoodysRoundUp",
+      "minutes": 10.5,
+      "source": "derived"
+    },
+    {
+      "from": "attJuniorExplorersCamp",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 8.3,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attSoaringOverHorizon",
+      "minutes": 3.8,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attVistaTrail",
+      "minutes": 2.5,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attExplorerCanoes",
+      "minutes": 2.2,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 5.1,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attShipwreckShore",
+      "minutes": 4.4,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attSirensRevenge",
+      "minutes": 4.1,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attRexsRCRacer",
+      "minutes": 11.1,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attSlinkyDogSpin",
+      "minutes": 10.4,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attWoodysRoundUp",
+      "minutes": 10.1,
+      "source": "derived"
+    },
+    {
+      "from": "attRoaringRapids",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 8.3,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attVistaTrail",
+      "minutes": 1.5,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attExplorerCanoes",
+      "minutes": 5.1,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 6.2,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attShipwreckShore",
+      "minutes": 5.6,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attSirensRevenge",
+      "minutes": 4.3,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attRexsRCRacer",
+      "minutes": 14.5,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attSlinkyDogSpin",
+      "minutes": 13.8,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attWoodysRoundUp",
+      "minutes": 13.2,
+      "source": "derived"
+    },
+    {
+      "from": "attSoaringOverHorizon",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 9.9,
+      "source": "derived"
+    },
+    {
+      "from": "attVistaTrail",
+      "to": "attExplorerCanoes",
+      "minutes": 3.6,
+      "source": "derived"
+    },
+    {
+      "from": "attVistaTrail",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 5,
+      "source": "derived"
+    },
+    {
+      "from": "attVistaTrail",
+      "to": "attShipwreckShore",
+      "minutes": 4.3,
+      "source": "derived"
+    },
+    {
+      "from": "attVistaTrail",
+      "to": "attSirensRevenge",
+      "minutes": 3.2,
+      "source": "derived"
+    },
+    {
+      "from": "attVistaTrail",
+      "to": "attRexsRCRacer",
+      "minutes": 13,
+      "source": "derived"
+    },
+    {
+      "from": "attVistaTrail",
+      "to": "attSlinkyDogSpin",
+      "minutes": 12.3,
+      "source": "derived"
+    },
+    {
+      "from": "attVistaTrail",
+      "to": "attWoodysRoundUp",
+      "minutes": 11.8,
+      "source": "derived"
+    },
+    {
+      "from": "attVistaTrail",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 8.6,
+      "source": "derived"
+    },
+    {
+      "from": "attExplorerCanoes",
+      "to": "attPiratesOfCaribbean",
+      "minutes": 3.3,
+      "source": "derived"
+    },
+    {
+      "from": "attExplorerCanoes",
+      "to": "attShipwreckShore",
+      "minutes": 2.7,
+      "source": "derived"
+    },
+    {
+      "from": "attExplorerCanoes",
+      "to": "attSirensRevenge",
+      "minutes": 3.1,
+      "source": "derived"
+    },
+    {
+      "from": "attExplorerCanoes",
+      "to": "attRexsRCRacer",
+      "minutes": 9.3,
+      "source": "derived"
+    },
+    {
+      "from": "attExplorerCanoes",
+      "to": "attSlinkyDogSpin",
+      "minutes": 8.7,
+      "source": "derived"
+    },
+    {
+      "from": "attExplorerCanoes",
+      "to": "attWoodysRoundUp",
+      "minutes": 8.2,
+      "source": "derived"
+    },
+    {
+      "from": "attExplorerCanoes",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 6.2,
+      "source": "derived"
+    },
+    {
+      "from": "attPiratesOfCaribbean",
+      "to": "attShipwreckShore",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attPiratesOfCaribbean",
+      "to": "attSirensRevenge",
+      "minutes": 1.9,
+      "source": "derived"
+    },
+    {
+      "from": "attPiratesOfCaribbean",
+      "to": "attRexsRCRacer",
+      "minutes": 9.7,
+      "source": "derived"
+    },
+    {
+      "from": "attPiratesOfCaribbean",
+      "to": "attSlinkyDogSpin",
+      "minutes": 9.2,
+      "source": "derived"
+    },
+    {
+      "from": "attPiratesOfCaribbean",
+      "to": "attWoodysRoundUp",
+      "minutes": 8.1,
+      "source": "derived"
+    },
+    {
+      "from": "attPiratesOfCaribbean",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 3.7,
+      "source": "derived"
+    },
+    {
+      "from": "attShipwreckShore",
+      "to": "attSirensRevenge",
+      "minutes": 1.5,
+      "source": "derived"
+    },
+    {
+      "from": "attShipwreckShore",
+      "to": "attRexsRCRacer",
+      "minutes": 9.8,
+      "source": "derived"
+    },
+    {
+      "from": "attShipwreckShore",
+      "to": "attSlinkyDogSpin",
+      "minutes": 9.3,
+      "source": "derived"
+    },
+    {
+      "from": "attShipwreckShore",
+      "to": "attWoodysRoundUp",
+      "minutes": 8.3,
+      "source": "derived"
+    },
+    {
+      "from": "attShipwreckShore",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 4.3,
+      "source": "derived"
+    },
+    {
+      "from": "attSirensRevenge",
+      "to": "attRexsRCRacer",
+      "minutes": 11.3,
+      "source": "derived"
+    },
+    {
+      "from": "attSirensRevenge",
+      "to": "attSlinkyDogSpin",
+      "minutes": 10.7,
+      "source": "derived"
+    },
+    {
+      "from": "attSirensRevenge",
+      "to": "attWoodysRoundUp",
+      "minutes": 9.8,
+      "source": "derived"
+    },
+    {
+      "from": "attSirensRevenge",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 5.6,
+      "source": "derived"
+    },
+    {
+      "from": "attRexsRCRacer",
+      "to": "attSlinkyDogSpin",
+      "minutes": 1,
+      "source": "derived"
+    },
+    {
+      "from": "attRexsRCRacer",
+      "to": "attWoodysRoundUp",
+      "minutes": 1.8,
+      "source": "derived"
+    },
+    {
+      "from": "attRexsRCRacer",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 8,
+      "source": "derived"
+    },
+    {
+      "from": "attSlinkyDogSpin",
+      "to": "attWoodysRoundUp",
+      "minutes": 1.7,
+      "source": "derived"
+    },
+    {
+      "from": "attSlinkyDogSpin",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 7.7,
+      "source": "derived"
+    },
+    {
+      "from": "attWoodysRoundUp",
+      "to": "attZootopiaHotPursuit",
+      "minutes": 6.2,
+      "source": "derived"
+    }
+  ]
+}

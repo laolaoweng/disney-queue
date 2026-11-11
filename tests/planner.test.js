@@ -117,8 +117,10 @@ test('关闭项目：被排除在 plan 之外，skipped.reason=closed', function
   assert.ok(r.warnings.join('|').indexOf('关闭') >= 0);
 });
 
-test('热度系数：实时排队翻倍时 heatFactor 变大、排队估计变大', function () {
-  var input = baseInput('2026-11-11T01:00:00Z');
+test('项目级实时修正：实时排队翻倍时 heatFactor 变大、排队估计变大', function () {
+  var one = ['attTronLightcyclePowerRun'];
+  var normal = planner.planMustDo(baseInput('2026-11-11T01:00:00Z', one));
+  var input = baseInput('2026-11-11T01:00:00Z', one);
   var hotWaits = latest.waits.map(function (w) {
     var m = Object.assign({}, w);
     if (typeof m.waitMinutes === 'number' && m.status === 'operating') m.waitMinutes = m.waitMinutes * 2;
@@ -126,9 +128,10 @@ test('热度系数：实时排队翻倍时 heatFactor 变大、排队估计变�
   });
   input.latest = Object.assign({}, latest, { waits: hotWaits });
   var hot = planner.planMustDo(input);
-  var normal = planner.planMustDo(baseInput('2026-11-11T01:00:00Z'));
   assert.ok(hot.heatFactor >= 1.2, '热度应 >=1.2，实际 ' + hot.heatFactor);
-  assert.ok(hot.totals.queueMin > normal.totals.queueMin, '热度高时总排队应更长');
+  assert.strictEqual(hot.plan.length, 1);
+  assert.ok(hot.plan[0].forecast.ratio >= 1.5, '实时修正比例应明显 >1，实际 ' + hot.plan[0].forecast.ratio);
+  assert.ok(hot.totals.queueMin > normal.totals.queueMin, '实时排队翻倍时应预测更长排队');
   assert.ok(hot.warnings.join('|').indexOf('人流偏多') >= 0);
 });
 

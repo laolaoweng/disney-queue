@@ -357,3 +357,64 @@ Planner.computeHeatFactor(curves, latest, dayType, refMs);
 - 关闭/停运项目直接排除并在 skipped 中标记 `closed`；`extraMinApprox` = 「把全部选上所需最早完成时间 − 当前最优完成时间」（分钟）。
 - `independentBest`：从当前位置出发，08:30–21:00 每 15 分钟扫描一次，取等待最小的出发时刻。
 - 文案：`warnings` 给前端直接展示（人流偏多/偏少、最多能玩 N 项、关闭项目等）。
+
+
+## 7.1 V2 修订（2026-11-11）
+
+冲刺计划升级为「项目级预测 + 步行矩阵 + 风险口径 + 重规划」，接口在原 §7 基础上向后兼容：
+
+### 7.1.1 新增模块（shared/）
+
+| 文件 | 作用 |
+| --- | --- |
+| `shared/forecast.js` | 项目级预测：`buildForecast()` / `waitAt()`（P20/P50/P80） |
+| `shared/walking.js` | 步行：`estimateMinutes()` / `walkMinutes()`（优先用步行矩阵） |
+| `shared/scoring.js` | 方案比较：`comparePlans()`（完成数 → 优先级向量 → 结束时间 → 步行 → 风险） |
+| `shared/replanner.js` | 重规划触发与防抖：`shouldReplan()` |
+| `shared/bundle.js` | 上面四个 + planner 的单文件打包（H5/小程序运行的就是它） |
+
+生成/校验：`node tools/build_shared.js --sync`；`tools/verify.js` 会检查 `miniprogram/shared/planner.js === shared/bundle.js`。
+
+### 7.1.2 `planMustDo()` 输入新增
+
+```js
+planMustDo({
+  catalog, hourlyStats, latest,
+  now, selected, location,
+  observations: { [attractionId]: [{ minuteOfDay, wait }] }, // 实时观测（可选）
+  walkMatrix: { matrix, source },                            // 步行矩阵（可选，缺省用球面距离推导）
+  opts: {
+    mode: 'max' | 'all',
+    riskMode: 'balanced' | 'robust',  // 默认 balanced：用 P50；robust：用 P80
+    locked: [attractionId],           // 锁定必须先玩的项目（按顺序）
+    params: { ...model-config.params } // 覆盖预测参数
+  }
+})
+```
+
+### 7.1.3 输出 `schemaVersion: 2` 新增字段
+
+| 字段 | 说明 |
+| --- | --- |
+| `riskMode` | 本次计算口径：`balanced` / `robust` |
+| `model` | `{ name:'v2-project-level', ewmaAlpha, rMin, rMax, quantileZ, robustQuantile }` |
+| `priorityVector` | 完成项目的优先级向量（按优先级降序），用于比较方案 |
+| `risk` | `{ score, meanSpreadMin, lowConfidenceCount }`，score 越小越稳 |
+| `plan[].forecast` | `{ wait, p20, p50, p80, horizonMin, source, confidence, ratio, historyNow, recentLevel }` |
+| `plan[].waitSource` | `history-curve` / `latest-ewma` / `fallback` |
+
+- `plan[].queueMin === plan[].forecast.wait`，都是按 `riskMode` 选出的口径值。
+- `totals.queueMin` 是各行 `queueMin` 之和。
+- `opts.locked` 的顺序即优先级：只要某个锁定项未入列，排在它后面的锁定项不能入列。
+
+### 7.1.4 参数文件 `data/model-config.json`
+
+关键参数（完整见文件）：`ewmaAlpha 0.35`、`recentWindowMin 30`、`rMin 0.5`、`rMax 3`、
+`trendWindowMin 15`、`horizonWeights {15:0.8,30:0.6,45:0.4,60:0.2}`、`quantileZ 0.84`、
+`sigmaFactor 0.12`、`sigmaMin 2`、`walkSpeedMPerMin 75`、`walkDetourFactor 1.35`、
+`switchSavingMin 8`、`riskSwitchRatio 0.2`。
+
+### 7.1.5 回测
+
+`node tools/backtest_forecast.js`：15 天回放、83,536 个预测点，V2 相对 V1 的 MAE 降幅 15%~35%，
+Bias 从 +4 分钟降到 0 附近，P20~P80 覆盖率 61%~72%。详见 `docs/11-backtest.md`。

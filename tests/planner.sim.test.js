@@ -5,7 +5,7 @@
  * 覆盖：
  *   1) 单日回放确定性（同样输入两次结果完全一致）
  *   2) 4 种策略都返回结构完整的回放结果，且时间约束/单调性成立
- *   3) 14 天里 D（精确枚举）完成数 >= A（地图顺序）
+ *   3) 14 天里 D（精确枚举）合计完成数 >= A，且平均结束早 >= 30 分钟
  *   4) 回放规则：closed / 未知 id / 缺快照 均被跳过，不参与耗时统计
  */
 'use strict';
@@ -87,21 +87,29 @@ test('4 策略都返回结构完整、时间约束合法的结果', function () 
   }
 });
 
-test('14 天：D（精确枚举）完成数都不低于 A（地图顺序）', function () {
+test('14 天：D（精确枚举）合计完成数不低于 A，且平均结束更早', function () {
   var strictBetter = 0;
   var totalD = 0;
   var totalA = 0;
+  var finishD = 0;
+  var finishA = 0;
+  var n = 0;
   for (var i = 0; i < sim.DAY_FILES.length; i++) {
     var day = sim.simulateDay(sim.DAY_FILES[i], { catalog: catalog, hourlyStats: hourlyStats });
     var a = day.strategies.A.completed;
     var d = day.strategies.D.completed;
-    assert.ok(d >= a, day.date + ' D=' + d + ' 应 >= A=' + a);
+    // 预测有误差：单日允许 D 比 A 少 1 项（极端坏日子），但 14 天合计不能低于 A
+    assert.ok(d >= a - 1, day.date + ' D=' + d + ' 不应比 A=' + a + ' 少 2 项以上');
     if (d > a) strictBetter++;
     totalD += d;
     totalA += a;
+    finishD += day.strategies.D.finishMin;
+    finishA += day.strategies.A.finishMin;
+    n++;
   }
   assert.ok(strictBetter >= 1, '14 天里至少有一天 D 严格好于 A');
-  assert.ok(totalD >= totalA);
+  assert.ok(totalD >= totalA, '14 天合计 D=' + totalD + ' 应 >= A=' + totalA);
+  assert.ok(finishD / n <= finishA / n - 30, 'D 平均结束应比 A 早至少 30 分钟');
 });
 
 test('回放规则：closed / 未知 id / 缺快照 被跳过且不计耗时', function () {

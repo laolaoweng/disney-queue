@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-11T08:10:00Z",
+  "source": "docs: V2.0 技术方案（2026-11-11）+ 本地回测校准",
+  "note": "所有参数都是初始实验值，可被 data/model-config.json 覆盖；改动后请重跑 tools/backtest_forecast.js 验证。",
+  "params": {
+    "ewmaAlpha": 0.35,
+    "recentWindowMin": 30,
+    "eps": 1,
+    "rMin": 0.5,
+    "rMax": 3,
+    "trendWindowMin": 15,
+    "trendClampRatio": 0.35,
+    "horizonWeights": {
+      "15": 0.8,
+      "30": 0.6,
+      "45": 0.4,
+      "60": 0.2
+    },
+    "quantileZ": 0.84,
+    "dispersionModel": "normal-from-hourly-range",
+    "conservative": 1,
+    "robustQuantile": 0.8,
+    "fallbackWaitMin": 20,
+    "walkSpeedMPerMin": 75,
+    "walkDetourFactor": 1.35,
+    "openAt": "08:30",
+    "queueCloseAt": "21:00",
+    "closeAt": "21:30",
+    "switchSavingMin": 8,
+    "replanIntervalMin": 5,
+    "riskSwitchRatio": 0.2,
+    "sigmaFactor": 0.12,
+    "sigmaMin": 2
+  }
+}

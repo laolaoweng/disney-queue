@@ -107,3 +107,17 @@ console.log(r.completed.count + '/' + r.completed.total, r.totals.finishLabel);
 node tests\planner.test.js     # 13 例：步行矩阵/全枚举/约束/关闭/热度/空清单/确定性
 node tools\verify.js           # 含 planner 导出、副本一致、真实数据出计划、页面文件
 ```
+
+
+## V2 升级（2026-11-11）
+
+按《上海迪士尼排队最优路线算法 V2.0 技术方案》把预测与比较部分替换为项目级模型，页面行为变化：
+
+1. **每一行排队时间都带预测区间**：`排队 93 分（预测 93~104）`，P50 是平衡值，P80 是稳健值。
+2. **新增「预测口径」切换**：平衡 P50 / 稳健 P80。稳健口径会把排队估高，适合「最后一项必须赶上 21:00 排队」的场景。
+3. **算法拆成 5 个模块**：`forecast`（项目级预测）、`walking`（步行矩阵）、`scoring`（方案比较 + 风险）、`replanner`（重规划防抖）、`planner`（枚举 + 时间线），打包成单文件 `shared/bundle.js` 供 H5/小程序共用。
+4. **步行优先走矩阵**：`data/walking-matrix.json`（30 项目 / 435 对，由球面距离 ×1.35÷75 推导，标注 `source: derived`；有实测可覆盖）。
+5. **回测**：15 天 83,536 个预测点，V2 相比 V1 的 MAE 降低 15%~35%，Bias 从 +4 分钟降到 ≈0。见 `docs/11-backtest.md`。
+6. **CLI 新增** `--risk balanced|robust`、`--lock a,b`、`--no-history`；会自动读 `data/model-config.json`、`data/walking-matrix.json`，并把当天 `data/history/*.jsonl` 的最近 3 小时观测喂给模型。
+
+已知限制仍与上面一致；其中「临时停运自动重排」的触发函数 `shared/replanner.js` 已经写好并有测试，但页面还没接（下一步）。

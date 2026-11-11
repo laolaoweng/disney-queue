@@ -41,6 +41,7 @@ Page({
     plannerReady: true,
     plannerError: '',
     mockMode: false,
+    riskMode: 'balanced',
     dateLine: '',
     // 顶部状态条
     nowLabel: '—',
@@ -229,7 +230,7 @@ Page({
         now: nowIso,
         selected: this.selectedIds,
         location: location,
-        opts: { mode: 'max' }
+        opts: { mode: 'max', riskMode: this.data.riskMode || 'balanced' }
       });
     } catch (e2) {
       resultError = '冲刺计划计算失败：' + ((e2 && e2.message) || '未知错误');
@@ -339,6 +340,12 @@ Page({
     if (idx >= 0) this.selectedIds.splice(idx, 1);
     else this.selectedIds.push(id);
     this.render();
+  },
+
+  onRisk: function (e) {
+    var risk = e && e.currentTarget && e.currentTarget.dataset ? e.currentTarget.dataset.risk : 'balanced';
+    this.setData({ riskMode: risk === 'robust' ? 'robust' : 'balanced' });
+    this.load(true);
   },
 
   onSelectAll: function () {

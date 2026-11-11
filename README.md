@@ -124,7 +124,11 @@ deliverables/disney-queue/
 │  ├─ 04-forecast.md           ← 分时预测：最近 14 天曲线、最空/最挤时段、局限
 │  ├─ 05-release.md            ← 上架微信小程序：5 个硬门槛、备案、提审、检查清单
 │  ├─ 06-phone-only.md         ← 手机直接用（家里电脑不开）：GitHub Pages / Cloudflare Pages 部署
+│  ├─ 08-plan8.md              ← 冲刺计划：目标、约束、算法、CLI 与真实示例
+│  ├─ 09-simulation.md         ← 14 天回放：4 种策略对比（地图顺序/贪心/最短排队/精确枚举）
+│  ├─ 10-目标与算法说明.docx    ← 给你看的完整说明文档：目标简介 + 算法 + 验证 + 使用 + 局限（9 页）
 │  └─ CONTRACT.md              ← 三方并行的数据契约（catalog/latest/forecast/hourly-stats/shows/recommend）
+
 ├─ collector/                  ← 采集端（Python 标准库；HTTP/3 回退才需要 aioquic）
 │  ├─ build_catalog.py         ← 官方 WAM 元数据 → data/catalog.json（30 个项目 + highlights 八大必玩）
 │  ├─ collect.py               ← queue-times → data/latest.json（--transport auto/tcp/h3，原子写，失败不覆盖）
@@ -296,3 +300,12 @@ python collector\test_collect.py
 - 排队数据来自 [Queue-Times.com](https://queue-times.com/)（免费公开接口），按社区惯例标注来源；本项目仅用于个人学习与自用，**不用于数据转售或商业分发**。
 - 项目名称、坐标等元数据来自上海迪士尼度假区官网公开页面，版权归迪士尼所有。
 - 本项目与迪士尼、Queue-Times 均无关联；排队时间为第三方估算，请以现场为准。
+
+
+## V2 预测升级（2026-11-11）
+
+- 预测从「曲线 × 全园热度 × 1.15」升级为**项目级模型**：`曲线 × 该项目实时修正比例 + 短期趋势`，输出 P20/P50/P80。
+- 冲刺计划页每行显示「排队 93 分（预测 93~104）」，并新增「平衡 P50 / 稳健 P80」切换。
+- 新增文件：`shared/{forecast,walking,scoring,replanner,bundle}.js`、`data/model-config.json`、`data/walking-matrix.json`、`tools/{build_shared,build_walking_matrix,backtest_forecast}.js`、`docs/11-backtest.md`。
+- 回测（15 天 / 83,536 点）：MAE 比 V1 降 15%~35%，Bias 从 +4 分钟到 ≈0，区间覆盖率 61%~72%。复现：`node tools/backtest_forecast.js`。
+- 构建：改完 `shared/*.js` 后运行 `node tools/build_shared.js --sync`，再 `node tools/verify.js`。

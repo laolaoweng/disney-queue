@@ -13,6 +13,9 @@
  *   --select a,b,c     attractionId 或名称关键字，按给定顺序=优先级；默认 8 大必玩
  *   --from id|name     出发点（默认园区中心）
  *   --mode max|all     目标（默认 max：完成数最多）
+ *   --risk balanced|robust  预测口径：balanced 用 P50，robust 用 P80（默认 balanced）
+ *   --lock a,b         锁定必须先玩的项目（按给定顺序）
+ *   --no-history       不读当天的 data/history 实时观测（只用分时曲线 + latest 快照）
  *   --json             输出原始 JSON
  */
 'use strict';
@@ -40,6 +43,9 @@ function loadJson(rel) {
 var catalog = loadJson('data/catalog.json');
 var latest = loadJson('data/latest.json');
 var hourlyStats = loadJson('data/hourly-stats.json');
+var modelConfig = loadJson('data/model-config.json');
+var walkMatrix = null;
+try { walkMatrix = loadJson('data/walking-matrix.json'); } catch (e) { walkMatrix = null; }
 
 function resolveIds(text) {
   if (!text) return null;
@@ -86,14 +92,45 @@ if (fromText) {
 }
 
 var mode = arg('mode', 'max');
+var riskMode = arg('risk', 'balanced') === 'robust' ? 'robust' : 'balanced';
+var lockedIds = resolveIds(arg('lock', null)) || [];
+var observations = {};
+if (!flag('no-history')) {
+  // 读当天 history（如果有）：每行 {fetchedAt, waits:{id:分钟}}
+  var cstDate = new Date(Date.parse(nowIso) + 8 * 3600 * 1000).toISOString().slice(0, 10);
+  var historyPath = path.join(root, 'data', 'history', cstDate + '.jsonl');
+  if (fs.existsSync(historyPath)) {
+    var cutoff = Date.parse(nowIso) - 3 * 3600 * 1000;
+    fs.readFileSync(historyPath, 'utf8').split(/\r?\n/).forEach(function (line) {
+      if (!line.trim()) return;
+      var row;
+      try { row = JSON.parse(line); } catch (e) { return; }
+      var ts = Date.parse(row.fetchedAt);
+      if (!isFinite(ts) || ts < cutoff) return;
+      var minuteOfDay = Math.floor(((ts + 8 * 3600 * 1000) % 86400000) / 60000);
+      Object.keys(row.waits || {}).forEach(function (id) {
+        var w = row.waits[id];
+        if (typeof w !== 'number' || !isFinite(w)) return;
+        (observations[id] = observations[id] || []).push({ minuteOfDay: minuteOfDay, wait: w });
+      });
+    });
+  }
+}
 var result = Planner.planMustDo({
   catalog: catalog,
   hourlyStats: hourlyStats,
   latest: latest,
+  observations: observations,
+  walkMatrix: walkMatrix,
   now: nowIso,
   selected: selected,
   location: location,
-  opts: { mode: mode === 'all' ? 'all' : 'max' }
+  opts: {
+    mode: mode === 'all' ? 'all' : 'max',
+    riskMode: riskMode,
+    locked: lockedIds,
+    params: modelConfig.params
+  }
 });
 
 if (flag('json')) {
@@ -101,18 +138,25 @@ if (flag('json')) {
   process.exit(0);
 }
 
-function pad(s, n) {
+function displayWidth(s) {
   s = String(s == null ? '' : s);
   var width = 0;
   for (var i = 0; i < s.length; i++) width += s.charCodeAt(i) > 255 ? 2 : 1;
-  return s + new Array(Math.max(0, n - width) + 1).join(' ');
+  return width;
+}
+function pad(s, n) {
+  s = String(s == null ? '' : s);
+  return s + new Array(Math.max(0, n - displayWidth(s)) + 1).join(' ');
 }
 
 console.log('');
 console.log('🎯 冲刺计划 · ' + new Date(nowIso + '').toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', hour12: false }));
 var startCst = new Date(Date.parse(result.startAt) + 8 * 3600 * 1000).toISOString();
 console.log('   开始 ' + startCst.slice(0, 10) + ' ' + startCst.slice(11, 16) + '（北京） · 排队截止 21:00 · 闭园 21:30 · ' + (result.dayType === 'weekend' ? '周末' : '工作日'));
-console.log('   今日热度系数 ' + result.heatFactor + ' · 目标 ' + (mode === 'all' ? '全部完成' : '尽量多玩') + ' · 完成 ' + result.completed.count + '/' + result.completed.total);
+console.log('   今日热度系数 ' + result.heatFactor + ' · 目标 ' + (mode === 'all' ? '全部完成' : '尽量多玩') +
+  ' · 完成 ' + result.completed.count + '/' + result.completed.total +
+  ' · 口径 ' + (result.riskMode === 'robust' ? '稳健(P80)' : '平衡(P50)') +
+  (result.risk ? ' · 风险 ' + result.risk.score : ''));
 console.log('');
 
 if (!result.plan.length) {
@@ -121,18 +165,23 @@ if (!result.plan.length) {
   process.exit(0);
 }
 
-console.log('  时间   项目                         排队  玩   步行  离开');
-console.log('  ───────────────────────────────────────────────────────────');
-result.plan.forEach(function (row, i) {
-  console.log(
-    '  ' + pad(row.arriveLabel, 6) +
-    pad((i + 1) + '. ' + row.name, 30) +
-    pad(row.queueMin + '分', 6) +
-    pad(row.rideMinutes + '分', 4) +
-    pad(row.walkFromPrevMin + '分', 6) +
-    row.leaveLabel
-  );
-});
+var rows = result.plan.map(function (row, i) {
+    var q = row.forecast ? row.queueMin + '分 (' + row.forecast.p50 + '~' + row.forecast.p80 + ')' : row.queueMin + '分';
+    return [row.arriveLabel, (i + 1) + '. ' + row.name, q, row.rideMinutes + '分', row.walkFromPrevMin + '分', row.leaveLabel];
+  });
+  var header = ['时间', '项目', '预计排队(P50~P80)', '玩', '步行', '离开'];
+  var widths = header.map(function (h, ci) {
+    var w = displayWidth(h);
+    rows.forEach(function (r) { w = Math.max(w, displayWidth(r[ci])); });
+    return w;
+  });
+  function line(cells) {
+    return '  ' + cells.map(function (c, ci) { return pad(c, widths[ci]); }).join(' ');
+  }
+  console.log(line(header));
+  console.log('  ' + widths.map(function (w) { return new Array(w + 1).join('─'); }).join(' '));
+  rows.forEach(function (r) { console.log(line(r)); });
+
 console.log('');
 console.log('  合计：排队 ' + result.totals.queueMin + ' 分钟 · 体验 ' + result.totals.rideMin +
   ' 分钟 · 步行 ' + result.totals.walkMin + ' 分钟 · 全部玩完 ' + result.totals.finishLabel);
