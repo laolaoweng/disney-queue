@@ -73,6 +73,7 @@
     bundle: null,
     usedMock: false,
     sortKey: 'wait-desc',
+    showsFilter: 'all',
     grouped: false,
     menuId: null,
     settingsTab: 'mustDo',
@@ -1213,7 +1214,18 @@
       var bn = b.show.name || '';
       return an < bn ? -1 : an > bn ? 1 : 0;
     });
+    var filter = state.showsFilter === 'show' || state.showsFilter === 'meet' ? state.showsFilter : 'all';
+    if (filter !== 'all') {
+      decorated = decorated.filter(function (d) { return (d.show.kind || 'show') === filter; });
+    }
     var shows = decorated.map(function (d) { return d.show; });
+    var meetCount = data.shows.filter(function (s) { return (s.kind || 'show') === 'meet'; }).length;
+    var showCount = data.shows.length - meetCount;
+    var filterBar = '<div class="show-filter">' +
+      '<button class="show-filter-btn' + (filter === 'all' ? ' on' : '') + '" data-act="showsfilter" data-filter="all">全部 ' + data.shows.length + '</button>' +
+      '<button class="show-filter-btn' + (filter === 'show' ? ' on' : '') + '" data-act="showsfilter" data-filter="show">演出 ' + showCount + '</button>' +
+      '<button class="show-filter-btn' + (filter === 'meet' ? ' on' : '') + '" data-act="showsfilter" data-filter="meet">见面会 ' + meetCount + '</button>' +
+      '</div>';
     var cards = shows.map(function (s) {
       var times = (s.times || []).slice().sort();
       var nextIdx = -1;
@@ -1238,14 +1250,17 @@
         ? '<span class="show-img" style="background-image:url(\'' + esc(s.imageUrl) + '\')"></span>'
         : '<span class="show-img noimg">🎭</span>';
       return '<div class="show-card">' + img +
-        '<div class="show-body"><span class="show-land">' + esc(s.land || '娱乐演出') + '</span>' +
+        '<div class="show-body"><span class="show-land">' + esc((s.kind === 'meet' ? '见面会' : (s.land || '娱乐演出'))) + '</span>' +
         '<span class="show-name">' + esc(s.name) + '</span>' +
         '<span class="show-times">' + chips + '</span></div></div>';
     }).join('');
     return '<div class="page">' +
       '<div class="list-topbar"><button class="refresh-pill" data-act="refresh">↻ 刷新</button>' +
       '<span class="update-time">场次日期：' + esc(data.businessDate || '') + '</span></div>' +
-      '<div class="show-grid">' + cards + '</div>' +
+      filterBar +
+      (cards ? '<div class="show-grid">' + cards + '</div>'
+        : '<div class="empty"><div class="empty-emoji">🎭</div><div class="empty-title">今天没有这类场次</div></div>') +
+      '' +
       '<div class="footnote">场次来自上海迪士尼官网，可能临时调整，以现场为准。</div></div>';
   }
 
@@ -1500,6 +1515,11 @@
     }
     if (act === 'plan') { switchView('plan'); return; }
     if (act === 'plan8') { switchView('plan8'); return; }
+    if (act === 'showsfilter') {
+      state.showsFilter = target.getAttribute('data-filter') || 'all';
+      render();
+      return;
+    }
     if (act === 'plan8chip') {
       var chipId = target.getAttribute('data-id');
       if (!state.plan8Selected) state.plan8Selected = [];

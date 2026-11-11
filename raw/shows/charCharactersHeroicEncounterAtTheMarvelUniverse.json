@@ -1,0 +1,254 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 21:40:09"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 21:40:09"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "漫威英雄总部见面会 - 与复仇者联盟见面",
+      "entityId": "charCharactersHeroicEncounterAtTheMarvelUniverse",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "characters-heroic-encounter-at-the-marvel-universe",
+      "subType": "Character Experience - Meet & Greet",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Characters",
+        "urlFriendlyId": "characters",
+        "value": "迪士尼朋友"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/characters-heroic-encounter-at-the-marvel-universe",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-heroic-encounter-at-the-marvel-universe-sq-20231108_tcm1874-267307.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-heroic-encounter-at-the-marvel-universe-hero-20231108_tcm1874-267306.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-heroic-encounter-at-the-marvel-universe-hero-20231108_tcm1874-267306.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-heroic-encounter-at-the-marvel-universe-hero-20231108_tcm1874-267306.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-heroic-encounter-at-the-marvel-universe-sq-20231108_tcm1874-267307.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "漫威英雄总部见面会 - 与复仇者联盟见面",
+            "latitude": "31.148641",
+            "longitude": "121.665204"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/zh-cn/entertainment/theme-park/characters-heroic-encounter-at-the-marvel-universe/",
+      "policies": [
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "请时刻照看好同行的儿童。7岁以下儿童必须由16岁或以上人士陪同。",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyUnderSeven",
+          "name": "Under Seven",
+          "text": "请时刻照看好同行的儿童。7岁以下儿童必须由16岁或以上人士陪同。",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "importantInfo": [
+        {
+          "id": "pleaseNoteCharacter",
+          "group": "Important Info",
+          "items": [
+            {
+              "name": "请注意",
+              "description": "<p>请始终遵从现场演职人员的指引。由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。</p>",
+              "endTime": null,
+              "openTime": null
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>请注意，千万不要错过在漫威英雄总部与复仇者见面的机会！接受第一个任务： 与漫威英雄见面并留下一张合影！</p>\n<p><small>当您见到您所喜爱的迪士尼朋友时， 请您温柔地表达您的喜爱。\n<br />\n请始终遵从现场演职人员的指引。\n<br />\n由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。\n<br />\n为了让我们的迪士尼朋友能与更多的游客见面，请控制您与迪士尼朋友的见面时长。\n<br />\n见面时，每位游客至多可获得每位迪士尼朋友的一个签名。\n<br />\n为了您和其他游客拥有一个安全愉快的体验，上海迪士尼乐园内禁止使用自拍杆，请勿在与迪士尼朋友合影时使用自拍杆。\n<br />\n*每天会不定时地出现，给您美好的问候。演出效果请以实际运营情况为准。</small></p>",
+        "shortDescriptionMobileText": "<p>请注意，千万不要错过在漫威英雄总部与复仇者见面的机会！接受第一个任务： 与漫威英雄见面并留下一张合影！</p>\n<p><small>\n当您见到您所喜爱的迪士尼朋友时， 请您温柔地表达您的喜爱。\n<br/>\n为了让我们的迪士尼朋友能与更多的游客见面，请控制您与迪士尼朋友的见面时长。\n<br/>\n见面时，每位游客至多可获得每位迪士尼朋友的一个签名。\n<br/>\n 为了您和其他游客拥有一个安全愉快的体验，上海迪士尼乐园内禁止使用自拍杆，请勿在与迪士尼朋友合影时使用自拍杆。\n<br/>\n*每天会不定时地出现，给您美好的问候。演出效果请以实际运营情况为准。\n</small></p>\n<br/>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "charCharactersHeroicEncounterAtTheMarvelUniverse;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landGardensOfImagination",
+          "name": "奇想花园",
+          "urlFriendlyId": "gardens-imagination"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "marvel",
+              "value": "漫威"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Characters",
+              "urlFriendlyId": "characters",
+              "value": "迪士尼朋友"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "gardens-imagination",
+              "value": "奇想花园"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "10:00&16:30",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

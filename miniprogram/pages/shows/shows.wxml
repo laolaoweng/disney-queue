@@ -42,10 +42,10 @@
     <view class="empty-btn" bindtap="onRefresh">刷新</view>
   </view>
 
-  <!-- 「即将开始」筛选后为空 -->
+  <!-- 当前筛选为空 -->
   <view wx:elif="{{!shows.length}}" class="empty">
     <text class="empty-emoji">🌙</text>
-    <text class="empty-title">今天的演出都结束了</text>
+    <text class="empty-title">今天没有这类场次</text>
     <text class="muted small">切回「全部」看看今天的完整排期</text>
     <view class="empty-btn" data-key="all" bindtap="onFilterTap">看全部</view>
   </view>

@@ -4,7 +4,8 @@ var format = require('../../utils/format.js');
 
 var FILTERS = [
   { key: 'all', label: '全部' },
-  { key: 'upcoming', label: '即将开始' }
+  { key: 'show', label: '演出' },
+  { key: 'meet', label: '见面会' }
 ];
 
 var STATUS_TEXT = {
@@ -142,10 +143,12 @@ Page({
       firstText = times.length ? times.map(function (t) { return pad(Math.floor(t / 60)) + ':' + pad(t % 60); }).join(' / ') : '';
     }
 
+    var kind = show.kind === 'meet' ? 'meet' : 'show';
     return {
       id: show.id,
+      kind: kind,
       name: show.name || '未命名演出',
-      land: show.land || '',
+      land: kind === 'meet' ? '见面会' : (show.land || ''),
       subType: show.subType || '',
       imageUrl: show.imageUrl || '',
       hasImage: !!show.imageUrl,
@@ -185,8 +188,9 @@ Page({
     });
 
     var scheduledCount = rows.filter(function (r) { return !r.closed && !r.ended; }).length;
-    var visible = this.data.filter === 'upcoming'
-      ? rows.filter(function (r) { return !r.closed && !r.ended; })
+    var filter = this.data.filter;
+    var visible = (filter === 'show' || filter === 'meet')
+      ? rows.filter(function (r) { return r.kind === filter; })
       : rows;
 
     this.setData({

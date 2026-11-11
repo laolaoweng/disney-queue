@@ -2029,3 +2029,18 @@ body {
 
 /* 已过排队截止：别用大字号撑爆卡片 */
 .status-num.status-past { font-size: 18px; letter-spacing: 0; color: #5a6a82; }
+
+
+/* 演出 / 见面会 筛选 */
+.show-filter { display: flex; gap: 8px; padding: 10px 0 4px; }
+.show-filter-btn {
+  flex: 1;
+  padding: 9px 0;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 79, 158, 0.14);
+  background: #ffffff;
+  color: #3b5478;
+  font-size: 13px;
+  font-weight: 600;
+}
+.show-filter-btn.on { background: #164f9e; border-color: #164f9e; color: #ffffff; }

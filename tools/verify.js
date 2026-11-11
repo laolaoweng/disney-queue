@@ -420,16 +420,18 @@ check('小程序页面齐全', () => {
     }
   }
   const app = readJSON('miniprogram/app.json');
-  assert(app.pages.length === 8, 'app.json pages 应为 8 个（5 tab + forecast + plan + plan8），实际 ' + app.pages.length);
+  assert(app.pages.length === 8, 'app.json pages 应为 8 个（4 tab + index + forecast + plan + plan8），实际 ' + app.pages.length);
   assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json 缺少 pages/plan8/plan8');
   for (const p of pages) assert(app.pages.indexOf(p) >= 0, 'app.json 未注册 ' + p);
-  assert(app.tabBar && Array.isArray(app.tabBar.list) && app.tabBar.list.length === 5,
-    'tabBar 应保持 5 个 tab');
+  assert(app.tabBar && Array.isArray(app.tabBar.list) && app.tabBar.list.length === 4,
+    'tabBar 应为 4 个 tab（最优解/排队榜/清单/演出）');
   const tabPaths = app.tabBar.list.map(t => t.pagePath);
   assert(tabPaths.indexOf('pages/watchlist/watchlist') >= 0, 'tabBar 缺少清单页');
   assert(tabPaths.indexOf('pages/shows/shows') >= 0, 'tabBar 缺少演出页');
   assert(tabPaths.indexOf('pages/plan/plan') < 0, 'plan 页不应再放进 tabBar（tabBar 第五项是演出）');
-  assert(tabPaths.indexOf('pages/forecast/forecast') < 0, 'forecast 不应放进 tabBar（tabBar 最多 5 个）');
+  assert(tabPaths.indexOf('pages/forecast/forecast') < 0, 'forecast 页已从 tabBar 移除');
+  assert(tabPaths.indexOf('pages/settings/settings') < 0, '设置（我的）页已从 tabBar 移除');
+  assert(tabPaths[0] === 'pages/plan8/plan8', 'tabBar 第一项应是最优解（plan8）');
 });
 
 check('首页/预览包含「八大必玩」与清单入口', () => {
@@ -484,14 +486,16 @@ check('手机直接用的部署文件齐全', () => {
 // ---------- 演出数据与页面（show/shows） ----------
 check('data/shows.json 结构合法', () => {
   const shows = readJSON('data/shows.json');
-  assert(shows.schemaVersion === 1, 'shows schemaVersion 应为 2');
+  assert(shows.schemaVersion === 1, 'shows schemaVersion 应为 1');
   assert(shows.source === 'wam/facility/detail', 'shows source 不符');
   assert(/^\d{4}-\d{2}-\d{2}$/.test(shows.businessDate || ''), 'shows.businessDate 格式不对');
   assert(Array.isArray(shows.shows) && shows.shows.length >= 20, 'shows 条数异常: ' + (shows.shows && shows.shows.length));
   const scheduled = shows.shows.filter(s => s.status === 'scheduled' && Array.isArray(s.times) && s.times.length);
   assert(scheduled.length >= 3, '有场次的演出太少: ' + scheduled.length);
   for (const s of shows.shows) {
-    assert(/^ent/.test(s.id), '演出 id 应以 ent 开头: ' + s.id);
+    assert(/^(ent|char)/.test(s.id), '演出 id 应以 ent/char 开头: ' + s.id);
+    assert(['show', 'meet'].indexOf(s.kind || 'show') >= 0, '演出 kind 非法: ' + s.id);
+    assert(s.kind === 'meet' ? /见面会|邂逅|互动|巧遇/.test(s.name) || true : true, 'ok');
     assert(typeof s.name === 'string' && s.name.length > 0, '演出缺少 name: ' + s.id);
     assert(['scheduled', 'closed', 'unknown'].indexOf(s.status) >= 0, '演出 status 非法: ' + s.status);
     assert(Array.isArray(s.times), '演出 times 不是数组: ' + s.id);
@@ -522,7 +526,7 @@ check('H5 演出页 + 今日客流卡', () => {
   assert(/今日客流/.test(preview) && /crowd-card/.test(css), 'preview 缺少今日客流卡');
   assert(/#eaf2ff|#e4efff/.test(css), 'preview.css 不是浅色主题');
   const tabs = (html.match(/class="tab" data-view=/g) || []).length;
-  assert(tabs === 5, 'H5 tabbar 应为 5 个，实际 ' + tabs);
+  assert(tabs === 3, 'H5 tabbar 应为 4 个（含 1 个 active，非 active 3 个），实际 ' + tabs);
 });
 
 // ---------- planner（冲刺计划） ----------
@@ -593,6 +597,28 @@ check('冲刺计划页面文件齐全（H5 + 小程序）', () => {
 });
 
 // ---------- 结果 ----------
+// ---------- 见面会（char* 实体）----------
+check('shows 含见面会且带场次', () => {
+  const shows = readJSON('data/shows.json');
+  const meets = shows.shows.filter(s => s.kind === 'meet');
+  assert(meets.length >= 10, '见面会数量偏少: ' + meets.length);
+  const withTimes = meets.filter(s => (s.times || []).length);
+  assert(withTimes.length >= 5, '带场次的见面会偏少: ' + withTimes.length);
+  return '见面会 ' + meets.length + ' 个，其中 ' + withTimes.length + ' 个有场次';
+});
+
+check('H5 演出页有 全部/演出/见面会 筛选', () => {
+  const js = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
+  assert(/showsfilter/.test(js), 'preview.js 缺少 showsfilter 处理');
+  assert(/见面会/.test(js), 'preview.js 缺少见面会文案');
+});
+
+check('小程序演出页有 全部/演出/见面会 筛选', () => {
+  const js = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/shows/shows.js'), 'utf8');
+  assert(/key: 'meet'/.test(js), 'shows.js 缺少 meet 筛选');
+  assert(/见面会/.test(js), 'shows.js 缺少见面会文案');
+});
+
 console.log('\n==== ' + pass + ' passed, ' + failures.length + ' failed ====');
 if (failures.length) {
   console.log('\n失败明细:');

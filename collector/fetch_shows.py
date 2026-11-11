@@ -141,7 +141,12 @@ def list_entertainments(wam):
         if not isinstance(facility, dict):
             continue
         facility_id = str(facility.get('facilityId') or facility.get('entityId') or key or '')
-        if not facility_id.startswith('ent'):
+        # ent* = 演出/巡游/烟花，char* = 角色见面会（也是 Entertainment 实体，有 schedule.timeInfo）
+        if facility_id.startswith('ent'):
+            kind = 'show'
+        elif facility_id.startswith('char'):
+            kind = 'meet'
+        else:
             continue
         land = ((facility.get('ancestorFacilities') or {}).get('land') or {})
         items.append({
@@ -149,6 +154,7 @@ def list_entertainments(wam):
             'name': str(facility.get('name') or ''),
             'land': str(land.get('name') or ''),
             'urlFriendlyId': str(facility.get('urlFriendlyId') or ''),
+            'kind': kind,
         })
     items.sort(key=lambda item: item['id'])
     return items
@@ -217,6 +223,7 @@ def build_show(entertainment, detail):
             or entertainment.get('land') or '')
     media = data.get('media') or {}
     return {
+        'kind': str(entertainment.get('kind') or 'show'),
         'id': str(data.get('entityId') or entertainment['id']),
         'name': str(data.get('name') or entertainment.get('name') or ''),
         'subType': str(data.get('subType') or ''),
@@ -382,8 +389,9 @@ def main(argv=None):
 
     scheduled = sum(1 for show in document['shows'] if show['times'])
     print('[shows] -> %s' % args.out)
-    print('[shows]   businessDate %s，%d 个演出，%d 个当日有场次，%d 个停演/无场次，失败 %d'
-          % (document['businessDate'], len(document['shows']), scheduled,
+    meets = sum(1 for show in document['shows'] if show.get('kind') == 'meet')
+    print('[shows]   businessDate %s，%d 个条目（%d 个见面会），%d 个当日有场次，%d 个停演/无场次，失败 %d'
+          % (document['businessDate'], len(document['shows']), meets, scheduled,
              len(document['shows']) - scheduled, len(failures)))
     for show in document['shows'][:3]:
         print('[shows]   示例：%s | %s | %s' % (show['name'], show['status'],

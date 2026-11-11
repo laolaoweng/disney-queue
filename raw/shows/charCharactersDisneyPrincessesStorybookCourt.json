@@ -1,0 +1,303 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 21:40:08"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 21:40:08"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "奇幻童话城堡见面会 - 与迪士尼王室见面",
+      "entityId": "charCharactersDisneyPrincessesStorybookCourt",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "characters-disney-princesses-storybook-court",
+      "subType": "Character Experience - Meet & Greet",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Characters",
+        "urlFriendlyId": "characters",
+        "value": "迪士尼朋友"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/characters-disney-princesses-storybook-court",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-sq-20250227_tcm1874-277385.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-hero-20250227_tcm1874-277384.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-hero-20250227_tcm1874-277384.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-hero-20250227_tcm1874-277384.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-sq-20250227_tcm1874-277385.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "奇幻童话城堡见面会 - 与迪士尼王室见面",
+            "latitude": "31.14982587296053",
+            "longitude": "121.66571224616177"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/entertainment/theme-park/characters-disney-princesses-storybook-court/",
+      "importantInfo": [
+        {
+          "id": "pleaseNoteCharacter",
+          "group": "Important Info",
+          "items": [
+            {
+              "name": "请注意",
+              "description": "<p>请始终遵从现场演职人员的指引。由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。</p>",
+              "endTime": null,
+              "openTime": null
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>奇幻邂逅的朋友，祝您幸福快乐每一天！</p>\n<p><small>当您见到您所喜爱的迪士尼朋友时， 请您温柔地表达您的喜爱。\n<br />\n请始终遵从现场演职人员的指引。\n<br />\n由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。\n<br />\n为了让我们的迪士尼朋友能与更多的游客见面，请控制您与迪士尼朋友的见面时长。\n<br />\n见面时，每位游客至多可获得每位迪士尼朋友的一个签名。\n<br />\n为了您和其他游客拥有一个安全愉快的体验，上海迪士尼乐园内禁止使用自拍杆，请勿在与迪士尼朋友合影时使用自拍杆。\n<br />\n*每天会不定时地出现，给您美好的问候。演出效果请以实际运营情况为准。</small></p>",
+        "shortDescriptionMobileText": "<p>奇幻邂逅的朋友，祝您幸福快乐每一天！</p>\n<p><small>当您见到您所喜爱的迪士尼朋友时， 请您温柔地表达您的喜爱。\n<br/>\n请始终遵从现场演职人员的指引。\n<br/>\n由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。\n<br/>\n为了让我们的迪士尼朋友能与更多的游客见面，请控制您与迪士尼朋友的见面时长。\n<br/>\n见面时，每位游客至多可获得每位迪士尼朋友的一个签名。\n<br/>\n为了您和其他游客拥有一个安全愉快的体验，上海迪士尼乐园内禁止使用自拍杆，请勿在与迪士尼朋友合影时使用自拍杆。\n<br/>\n*每天会不定时地出现，给您美好的问候。演出效果请以实际运营情况为准。</small></p>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "迎宾阁",
+              "text": "<p>进入迎宾阁——您在此受到的欢迎或许会永生难忘！</p>\n<p>几位深受喜爱的迪士尼公主会时不时出现在城堡里——她们是，灰姑娘，长发公主、贝儿公主和白雪公主。如果你偶遇了某位迪士尼公主并与她合照，记得与一起游览上海迪士尼乐园的家人和朋友们分享哦！</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-01-new_tcm1874-115237.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "迪士尼公主们的故事",
+              "text": "<p>在奇幻童话城堡，您也许会偶遇灰姑娘、长发公主、贝儿公主、睡美人或白雪公主。和其他迪士尼公主们一样，她们是无邪和美丽的象征——向人们展示着爱、希望、勇气和善良。自首次与众人见面至今，她们始终深受喜爱。</p>\n<p>第一位迪士尼公主是白雪公主，她出现在1937年的迪士尼电影《白雪公主和七个小矮人》中。从那时起，陆续诞生了许多经典的迪士尼电影，里面出现了其它迪士尼公主的角色，这些电影包括《灰姑娘》、《睡美人》、《小美人鱼》、《美女与野兽》、《阿拉丁》、《风中奇缘》、《花木兰》、《公主与青蛙》、《魔发奇缘》、《冰雪奇缘》以及迪士尼•皮克斯出品的电影《勇敢传说》。</p>\n<p>这些迪士尼公主们赢得了全球观众们的心，请让她们留存在您的记忆里：</p>\n<p><strong>白雪公主</strong>\n<br />\n年轻的白雪公主被认为是世界上最漂亮的女人。白雪公主为了躲避她的王后继母，七个小矮人帮助了她。他们让她住在他们的森林小屋，白雪公主给他们煮饭打扫。白雪公主吃了一个让她沉睡的苹果，最终一位英俊的王子用真爱之吻唤醒了她。</p>\n<p><strong>灰姑娘</strong>\n<br />\n即使灰姑娘的继母和同父异母的姐姐们对她很刻薄，但灰姑娘从未放弃她的梦想。灰姑娘许愿希望能参加王室舞会，她的仙女教母实现了她的愿望。在舞会上，灰姑娘遇到了王子并坠入爱河。从此他们幸福美满的生活在一起。</p>\n<p><strong>爱洛公主</strong>\n<br />\n爱洛公主坚信梦想终会成真，真爱无敌。爱洛公主出生时被黑巫婆施了魔法，使她的手指被纺车刺伤并陷入沉睡，只有真爱之吻能将她唤醒。爱洛公主最终被菲利的真爱之吻唤醒。</p>\n<p><strong>美人鱼公主</strong>\n<br />\n这条性格独立而坚定的小美人鱼喜欢歌唱、热衷幻想，她为了自己心爱的人愿意牺牲一切。</p>\n<p><strong>贝儿公主</strong>\n<br />\n贝儿公主是一位热爱阅读、聪明倔强又年轻漂亮的女生。当贝儿公主的父亲被囚禁在野兽的城堡里，她主动要求代替她的父亲受禁。贝儿公主和城堡里的所有被施魔法的物件成为了朋友。她的善良和同情心，让她爱上了野兽并帮助野兽解除了魔咒。</p>\n<p><strong>茉莉公主</strong>\n<br />\n一位无拘无束、善良、充满自信的梦想家。和阿拉丁一起，她实现了外出冒险的梦想。</p>\n<p><strong>宝嘉康蒂</strong>\n<br />\n这位美丽的印第安女孩尊敬自然，她爱上了一个英国人，并始终致力于为自己的人民带来和平。</p>\n<p><strong>花木兰</strong>\n<br />\n这位勇敢的女孩将自己乔装成男人，并加入了保卫国家的战争。</p>\n<p><strong>蒂安娜公主</strong>\n<br />\n这位年轻的女士希望拥有一间自己的餐厅。经过一段冒险旅程，她最终找到了真心朋友以及自己的真爱。</p>\n<p><strong>长发公主</strong>\n<br />\n长发公主乐佩是位聪明智慧，敢于冒险并充满好奇心的公主，渴望去看高塔外的生活。随着时间推移，乐佩公主最渴望做的事情是看天灯。费林雷德把乐佩公主带回她的王国，在那里她发现自己是这里消失的公主。乐佩公主有许多兴趣爱好，她尤其热爱美术。</p>\n<p><strong>梅莉达</strong>\n<br />\n这位有着一头红发的公主是一位天生的探险家和探索者，她希望能把握自己的命运。</p>\n<p><strong>艾莎和安娜</strong>\n<br />\n一对听话的女儿、相爱的姐妹——在艾莎意外将阿伦黛尔王国变成了永恒的冰雪世界后，安娜踏上了拯救王国的旅程，并获得了采冰人、驯鹿和雪人的帮助。</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-enchanted-storybook-castle-hero-new_tcm1874-114800.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "下载官方App 即刻查看娱乐演出安排！",
+              "text": "下载上海迪士尼度假区官方App，即刻查看娱乐演出时间安排，适宜年龄，地图定位及更多。",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-gsrvc-mobile-app-icon2_tcm1874-113788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/zh-cn/information/download-shanghai-disney-mobile-app"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "charCharactersDisneyPrincessesStorybookCourt;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "梦幻世界",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "disney-princesses",
+              "value": "迪士尼公主"
+            },
+            {
+              "urlFriendlyId": "classic-characters",
+              "value": "经典角色"
+            },
+            {
+              "urlFriendlyId": "indoor-entertainment",
+              "value": "室内娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            },
+            {
+              "urlFriendlyId": "character-experience",
+              "value": "与迪士尼朋友见面"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Characters",
+              "urlFriendlyId": "characters",
+              "value": "迪士尼朋友"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "梦幻世界"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&18:30",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

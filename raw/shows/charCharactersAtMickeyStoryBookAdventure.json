@@ -1,0 +1,232 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 21:40:07"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 21:40:07"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "迪士尼尊享卡：米奇妙游童话书见面会——与迪士尼朋友见面",
+      "entityId": "charCharactersAtMickeyStoryBookAdventure",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "characters-at-mickey-storybook-adventure",
+      "subType": "Character Experience - Meet & Greet",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/characters-at-mickey-storybook-adventure",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-sq_tcm1874-235304.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-hero-v2_tcm1874-235307.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-hero-v2_tcm1874-235307.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-hero-v2_tcm1874-235307.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-sq_tcm1874-235304.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-andriod_tcm1874-235306.png",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-ios_tcm1874-235305.png",
+          "width": 1452,
+          "height": 1670
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "Disney Premier Access: Meet a Disney Character at Mickey’s Storybook Adventure",
+            "latitude": "31.14781",
+            "longitude": "121.66725"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "hideFunctionality": "Hide from the Listing Page",
+      "hidebychannel": [
+        {
+          "channel": [
+            "WEB"
+          ],
+          "hideType": "Hide from List"
+        }
+      ],
+      "webLinks": "https://www.shanghaidisneyresort.com/zh-cn/entertainment/theme-park/characters-at-mickey-storybook-adventure/",
+      "descriptions": {
+        "shortDescriptionText": "仅限兑换“天猫88会员专享权益”的游客本人使用。该福利仅限于游园当日最后场次演出使用。\n<br />\n<br />\n请确保您在游园当日 “米奇妙游童话书”最后场次开场前20分钟，到达进入华特迪士尼大剧院（最后场次演出时间须根据当天13：00以后上海迪士尼度假区官方APP所展示的演出场次为准。）如果游客晚于指定入场时间到达华特迪士尼大剧院，将无法享有与迪士尼朋友见面的权益。剧院大门将会于演出前10分钟关闭。\n<br />\n<br />\n请您在观看演出后先不要离开，根据演职人员指引，出示您于游园当日获取的与迪士尼朋友见面的迪士尼尊享卡以兑换您与迪士尼朋友见面的权益。演出里的迪士尼朋友 (包括米奇，高飞，朱迪和路易王) 的其中一位将会随机与您见面。",
+        "shortDescriptionMobileText": "仅限兑换“天猫88会员专享权益”的游客本人使用。该福利仅限于游园当日最后场次演出使用。\n<br/>\n<br/>\n请确保您在游园当日 “米奇妙游童话书”最后场次开场前20分钟，到达进入华特迪士尼大剧院（最后场次演出时间须根据当天13：00以后上海迪士尼度假区官方APP所展示的演出场次为准。）如果游客晚于指定入场时间到达华特迪士尼大剧院，将无法享有与迪士尼朋友见面的权益。剧院大门将会于演出前10分钟关闭。\n<br/>\n<br/>\n请您在观看演出后先不要离开，根据演职人员指引，出示您于游园当日获取的与迪士尼朋友见面的迪士尼尊享卡以兑换您与迪士尼朋友见面的权益。演出里的迪士尼朋友 (包括米奇，高飞，朱迪和路易王) 的其中一位将会随机与您见面。"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "charCharactersAtMickeyStoryBookAdventure;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landMickeyAvenue",
+          "name": "米奇大街",
+          "urlFriendlyId": "mickey-avenue"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "classic-characters",
+              "value": "经典角色"
+            },
+            {
+              "urlFriendlyId": "mickey-friends",
+              "value": "米奇和朋友们"
+            },
+            {
+              "urlFriendlyId": "indoor-entertainment",
+              "value": "室内娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "mickey-avenue",
+              "value": "米奇大街"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "8:30&21:30",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

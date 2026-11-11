@@ -1,0 +1,418 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 21:40:10"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 21:40:10"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "史派罗秘密基地见面会 - 与杰克船长见面",
+      "entityId": "charCharactersJackSparrowTreasureCove",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "characters-jack-sparrow-treasure-cove",
+      "subType": "Character Experience - Meet & Greet",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Characters",
+        "urlFriendlyId": "characters",
+        "value": "迪士尼朋友"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/characters-jack-sparrow-treasure-cove",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-sq-20220303_tcm1874-235051.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-hero-20220303_tcm1874-235052.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-hero-20220303_tcm1874-235052.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-hero-20220303_tcm1874-235052.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-sq-20220303_tcm1874-235051.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "在史派罗秘密基地与杰克船长见面",
+            "latitude": "31.151256",
+            "longitude": "121.66907"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/zh-cn/entertainment/theme-park/characters-jack-sparrow-treasure-cove/",
+      "importantInfo": [
+        {
+          "id": "pleaseNoteCharacter",
+          "group": "Important Info",
+          "items": [
+            {
+              "name": "请注意",
+              "description": "<p>请始终遵从现场演职人员的指引。由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。</p>",
+              "endTime": null,
+              "openTime": null
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>您敢在这个充斥着加勒比海盗的港口城市成为一名海盗吗？当您偶遇独一无二的杰克•史派罗船长，记得说一声“Ahoy Matey”！</p>\n<p><small>当您见到您所喜爱的迪士尼朋友时， 请您温柔地表达您的喜爱。\n<br />\n请始终遵从现场演职人员的指引。\n<br />\n由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。\n<br />\n为了让我们的迪士尼朋友能与更多的游客见面，请控制您与迪士尼朋友的见面时长。\n<br />\n见面时，每位游客至多可获得每位迪士尼朋友的一个签名。\n<br />\n为了您和其他游客拥有一个安全愉快的体验，上海迪士尼乐园内禁止使用自拍杆，请勿在与迪士尼朋友合影时使用自拍杆。\n<br />\n*每天会不定时地出现，给您美好的问候。演出效果请以实际运营情况为准。演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p>",
+        "shortDescriptionMobileText": "<p>您敢在这个充斥着加勒比海盗的港口城市成为一名海盗吗？当您偶遇独一无二的杰克•史派罗船长，记得说一声“Ahoy Matey”！</p>\n<p><small>\n当您见到您所喜爱的迪士尼朋友时， 请您温柔地表达您的喜爱。\n<br/>\n为了让我们的迪士尼朋友能与更多的游客见面，请控制您与迪士尼朋友的见面时长。\n<br/>\n见面时，每位游客至多可获得每位迪士尼朋友的一个签名。\n<br/>\n为了您和其他游客拥有一个安全愉快的体验，上海迪士尼乐园内禁止使用自拍杆，请勿在与迪士尼朋友合影时使用自拍杆。\n<br/>\n*每天会不定时地出现，给您美好的问候。演出效果请以实际运营情况为准。演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。\n</small></p>\n<br/>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "邂逅海盗和水手们",
+              "text": "<p>瞧一眼杰克船长——相信我，这个船长不值得信赖。在这个充斥着打斗的海盗港湾里，充满着奇妙探险和令人胆寒的危险，您在这里还会遇见杰克船长和他手下的那帮恶棍水手们。</p>\n<p>杰克船长是整个加勒比最精明的海盗，但他也是个诚实的人。他驾驶着他的“黑珍珠号”寻找宝藏。杰克追寻自由，并追寻着地平线之外的新鲜事物。</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-01-new_tcm1874-115201.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "加勒比海盗的历史",
+              "text": "<p>1967年起，加勒比海盗就开始与观众们见面，自那时起就开始收获各方好评。</p>\n<p>华特•迪士尼和他的幻想工程师团队决定采用当时最先进的发声机动人偶创新技术，将他们心中海盗蜡像馆的想法变成一处景点。于是，1967年4月19日，在加利福尼亚迪士尼乐园的新奥尔良广场，加勒比海盗景点正式开幕。这是华特•迪士尼亲自监督开发过程的最后一个景点，遗憾的是，他没有亲眼见到景点最终完工。但如若能见到他一定会对这个卓越的成就感到自豪并且为之惊叹。</p>\n<p>加勒比海盗——景点中设有多个海盗、动物及鸟儿形象的发声机动人偶——一经推出便大受欢迎。1973年12月15日，在经过细微改动后，它的另一个版本在佛罗里达华特迪士尼世界度假区盛大开幕。再一次，游客高涨的热情促成了更多版本的诞生。1983年，东京迪士尼乐园的加勒比海盗景点正式开幕；1992年，巴黎迪士尼乐园的加勒比海盗景点与广大游客见面。</p>\n<p>2003年，热门电影系列《加勒比海盗》的第一部诞生，并由约翰尼•德普扮演杰克船长！系列中的另外三部也在之后几年内陆续面世，系列电影的第五部将于2017年上映。</p>\n<p>现在，上海迪士尼乐园开辟出了一整块土地，建造了全世界首个以海盗为主题的园区，游客们将能够尽情体验海盗的世界！</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-02-new_tcm1874-115202.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "charCharactersJackSparrowTreasureCove;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landTreasureCove",
+          "name": "宝藏湾",
+          "urlFriendlyId": "treasure-cove"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor-entertainment",
+              "value": "室外娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "character-experience",
+              "value": "与迪士尼朋友见面"
+            },
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Characters",
+              "urlFriendlyId": "characters",
+              "value": "迪士尼朋友"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "treasure-cove",
+              "value": "宝藏湾"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Selfie Spot with Jack Sparrow at the Sparrow’s Nest - Entertainment",
+            "referenceKey": "Selfie Spot with Jack Sparrow at the Sparrow’s Nest - Entertainment",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-jack-new-a-sq_tcm1874-240007.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Selfie Spot with Jack Sparrow at the Sparrow’s Nest - Entertainment",
+                "subChapters": [
+                  {
+                    "title": "Selfie Spot with Jack Sparrow at the Sparrow’s Nest - Entertainment",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-jack-new-a-sq_tcm1874-240007.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-hero-20220303_tcm1874-235052.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-hero-20220303_tcm1874-235052.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-jack-new-a-sq_tcm1874-240007.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-jack-new-a_tcm1874-240008.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "hideOperationHours": false
+    }
+  }
+}

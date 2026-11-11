@@ -37,10 +37,6 @@
       {
         "pagePath": "pages/shows/shows",
         "text": "演出"
-      },
-      {
-        "pagePath": "pages/settings/settings",
-        "text": "我的"
       }
     ]
   },

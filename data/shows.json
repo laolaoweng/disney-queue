@@ -1,11 +1,156 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-11T06:27:04Z",
+ "generatedAt": "2026-11-11T13:40:25Z",
  "source": "wam/facility/detail",
  "parkId": "shdr",
  "businessDate": "2026-11-11",
  "shows": [
   {
+   "kind": "meet",
+   "id": "charCharactersMeetJudyNickAtZootopiaPoliceDepartmentRecruitmentCenter",
+   "name": "动物城警局招募中心 - 与朱迪和尼克见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "疯狂动物城",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-sq-20231220-gallery02-characters-meet-Judy-nick-at-zootopia-police-department-recruitment-center_tcm1874-269526.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-hero-20231220-gallery02-characters-meet-Judy-nick-at-zootopia-police-department-recruitment-center_tcm1874-269525.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:30&19:15",
+   "times": [
+    "08:30",
+    "19:15"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMeetingPost",
+   "name": "友情驿站见面会 - 与您喜爱的玩具朋友见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "迪士尼·皮克斯玩具总动员",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meeting-post-sq-20230524_tcm1874-259033.png",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meeting-post-hero-20230524_tcm1874-259032.png",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:30&19:45",
+   "times": [
+    "08:30",
+    "19:45"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersDisneyPrincessesStorybookCourt",
+   "name": "奇幻童话城堡见面会 - 与迪士尼王室见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-sq-20250227_tcm1874-277385.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-disney-princesses-storybook-court-hero-20250227_tcm1874-277384.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:30&18:30",
+   "times": [
+    "08:30",
+    "18:30"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMeetDonaldFriendsatFantasyland",
+   "name": "梦幻世界见面会 - 与唐老鸭和朋友们见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-donald-friends-at-fantasyland-sq_tcm1874-288514.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-donald-friends-at-fantasyland-hero-0318_tcm1874-288790.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:30&14:45",
+   "times": [
+    "08:30",
+    "14:45"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMeetMinnieFriendsatFantasyland",
+   "name": "梦幻世界见面会 - 与米妮和朋友们见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-minnie-friends-at-fantasyland-sq-20261104_tcm1874-295075.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-minnie-friends-at-fantasyland-hero-20261104_tcm1874-295076.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:30&14:45",
+   "times": [
+    "08:30",
+    "14:45"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersSelfieSpotDuffy",
+   "name": "米奇大街见面会 - 与达菲和朋友们见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "米奇大街",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-duffy-friends-glimmer-sq_tcm1874-288671.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-duffy-friends-glimmer-hero-0318_tcm1874-288789.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:30&14:45",
+   "times": [
+    "08:30",
+    "14:45"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charSelfieSpotLinaBell",
+   "name": "萌友小站见面会 - 与玲娜贝儿见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "探险岛",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/glimmer-selfie-spot-linabell-sq_tcm1874-288674.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/glimmer-selfie-spot-linabell-hero-update_tcm1874-288787.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:30&19:15",
+   "times": [
+    "08:30",
+    "19:15"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersAtMickeyStoryBookAdventure",
+   "name": "迪士尼尊享卡：米奇妙游童话书见面会——与迪士尼朋友见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "米奇大街",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-sq_tcm1874-235304.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-at-mickey-storybook-adventure-hero-v2_tcm1874-235307.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:30&21:30",
+   "times": [
+    "08:30",
+    "21:30"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMeetGoofy",
+   "name": "米奇大街见面会 - 与高飞和朋友们见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "米奇大街",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-goofy-friends-sq-20260316_tcm1874-288665.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-goofy-friends-hero-20260318_tcm1874-288788.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "8:45&15:00",
+   "times": [
+    "08:45",
+    "15:00"
+   ]
+  },
+  {
+   "kind": "show",
    "id": "entShanghaiDisneylandBandCelebratesMickeyMinniesBirthdaySurpriseMoment",
    "name": "上海迪士尼乐团庆祝米奇和米妮生日的惊喜时刻",
    "subType": "Concert",
@@ -22,6 +167,135 @@
    ]
   },
   {
+   "kind": "meet",
+   "id": "charCharactersMickeyMouseGardensImagination",
+   "name": "奇想花园见面会 - 与米奇见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/mickey-mouse-gardens-imagination-1-1-1_tcm1874-294182.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/mickey-mouse-gardens-imagination-16-9-1_tcm1874-294181.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "9:00&20:45",
+   "times": [
+    "09:00",
+    "20:45"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMeetPooh",
+   "name": "百亩森林见面会",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-pooh-hero-sq_tcm1874-211331.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-pooh-hero-new_tcm1874-211332.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "9:00&15:15",
+   "times": [
+    "09:00",
+    "15:15"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMarvelUniverse",
+   "name": "漫威英雄总部",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-marvel-universe-hero-sq-new-again_tcm1874-153406.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-marvel-universe-hero-new_tcm1874-153400.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "9:30&20:45",
+   "times": [
+    "09:30",
+    "20:45"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCatchAGlimpseOfKevinBird",
+   "name": "偶遇凯文",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "探险岛",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-catch-a-glimpse-of-kevin-bird-sq_tcm1874-219449.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-catch-a-glimpse-of-kevin-bird-hero_tcm1874-219448.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "10:00&15:55",
+   "times": [
+    "10:00",
+    "15:55"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMeetTheFriendsFromLiloStitchAtGalaxyGathering",
+   "name": "太空传送门见面会 - 与《星际宝贝》中的朋友见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "明日世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-stich-and-lilo-sq-20240618_tcm1874-272228.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-stich-and-lilo-hero-20240618_tcm1874-272227.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "10:00&16:15",
+   "times": [
+    "10:00",
+    "16:15"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMeetPixarCharactersAtTomorrowland",
+   "name": "明日世界见面会 - 和皮克斯朋友们见面 ",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "明日世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-pixar-characters-at-tomorrowland-sq-20240527_tcm1874-271517.png",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-pixar-characters-at-tomorrowland-hero-20240527_tcm1874-271516.png",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "10:00&16:15",
+   "times": [
+    "10:00",
+    "16:15"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersHeroicEncounterAtTheMarvelUniverse",
+   "name": "漫威英雄总部见面会 - 与复仇者联盟见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-heroic-encounter-at-the-marvel-universe-sq-20231108_tcm1874-267307.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-heroic-encounter-at-the-marvel-universe-hero-20231108_tcm1874-267306.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "10:00&16:30",
+   "times": [
+    "10:00",
+    "16:30"
+   ]
+  },
+  {
+   "kind": "meet",
+   "id": "charCharactersMarvelUniverseSpiderMan",
+   "name": "漫威英雄总部见面会 - 与蜘蛛侠见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-marvel-universe-hero-sq-spidarman_tcm1874-210461.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-marvel-universe-hero-new-spidarman_tcm1874-210460.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "10:00&16:30",
+   "times": [
+    "10:00",
+    "16:30"
+   ]
+  },
+  {
+   "kind": "show",
    "id": "entTheJAMMitors",
    "name": "分类回收杂物打",
    "subType": "Atmosphere",
@@ -37,6 +311,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entEyeOfStormCaptainJacksSpectacular",
    "name": "风暴来临：杰克船长之惊天特技大冒险",
    "subType": "Stage Show",
@@ -60,6 +335,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entFrozenSingAlongCelebration",
    "name": "冰雪奇缘：欢唱盛会",
    "subType": "Concert",
@@ -81,6 +357,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entMickeyStorybookAdventure",
    "name": "米奇妙游童话书",
    "subType": "Concert",
@@ -102,6 +379,23 @@
    ]
   },
   {
+   "kind": "meet",
+   "id": "charMeetTheCharacterFromUPAtHappyCircle",
+   "name": "欢笑聚友会见面会 - 与《飞屋环游记》中的朋友见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "探险岛",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jungle-characters-at-happy-circle-sq-20250603_tcm1874-279833.jpeg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jungle-characters-at-happy-circle-hero-20250603_tcm1874-279834.jpeg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "11:00&17:15",
+   "times": [
+    "11:00",
+    "17:15"
+   ]
+  },
+  {
+   "kind": "show",
    "id": "entBaiLingStorytelling",
    "name": "梦幻故事会",
    "subType": "Atmosphere",
@@ -119,6 +413,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entVoodooAlleyFight",
    "name": "巫毒巷打斗",
    "subType": "Atmosphere",
@@ -134,6 +429,23 @@
    ]
   },
   {
+   "kind": "meet",
+   "id": "charCharactersMeetChipAndDale",
+   "name": "奇奇蒂蒂淘淘铺 – 与奇奇蒂蒂见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "探险岛",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-chip-and-dale-sq-20231108_tcm1874-267313.png",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-meet-chip-and-dale-hero-20231108_tcm1874-267312.png",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "11:30&17:45",
+   "times": [
+    "11:30",
+    "17:45"
+   ]
+  },
+  {
+   "kind": "show",
    "id": "entFriendshipDuffyandFriendsSpecialPreParade",
    "name": "“友谊号”：达菲和朋友们的特别巡游",
    "subType": "Parade",
@@ -149,6 +461,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entMickeysStorybookExpress",
    "name": "米奇童话专列",
    "subType": "Parade",
@@ -164,6 +477,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entTheHeartOfMagic",
    "name": "“奇妙之心”城堡秀",
    "subType": "Concert",
@@ -180,6 +494,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entSwabbieFight",
    "name": "水手打斗",
    "subType": "Atmosphere",
@@ -196,6 +511,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entAPiratesLifeForYou",
    "name": "海盗大人生",
    "subType": "Atmosphere",
@@ -211,6 +527,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entShanghaiDisneylandHotelLobbyPianist",
    "name": "上海迪士尼酒店钢琴师",
    "subType": "Atmosphere",
@@ -226,6 +543,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entMickeyFriendsTravelAroundChina",
    "name": "米奇和朋友们游中国",
    "subType": "Atmosphere",
@@ -241,6 +559,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entClubDestinE",
    "name": "E空间聚乐部",
    "subType": "Stage Show",
@@ -255,6 +574,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entIgniteDreamNighttimeSpectacular",
    "name": "奇梦之光幻影秀",
    "subType": "Fireworks",
@@ -270,6 +590,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entMagicTogether",
    "name": "奇妙在身边：10岁生日特别欢庆",
    "subType": "Fireworks",
@@ -285,6 +606,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entMickeyandMinniesBirthdayCelebrationCastleProjection",
    "name": "米奇和米妮生日城堡投影​",
    "subType": "Fireworks",
@@ -300,6 +622,7 @@
    ]
   },
   {
+   "kind": "show",
    "id": "entCelebratethe10thBirthdaywithLinaBellattheEntryPortal",
    "name": " 玲娜贝儿的钟楼欢庆“十”光",
    "subType": "Stage Show",
@@ -312,6 +635,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entShanghaiDisneylandBand",
    "name": "上海迪士尼乐团",
    "subType": "Concert",
@@ -324,6 +648,20 @@
    "times": []
   },
   {
+   "kind": "meet",
+   "id": "charCharactersJackSparrowTreasureCove",
+   "name": "史派罗秘密基地见面会 - 与杰克船长见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "宝藏湾",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-sq-20220303_tcm1874-235051.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-characters-jack-sparrow-treasure-cove-hero-20220303_tcm1874-235052.jpg",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "kind": "show",
    "id": "entTravelingTroubadours",
    "name": "吟游剧团",
    "subType": "Atmosphere",
@@ -336,6 +674,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entTaiChiWithCharacter",
    "name": "唐式太极",
    "subType": "Atmosphere",
@@ -348,6 +687,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entDisneyCharacterEncounteratShanghaiDisneylandHotel",
    "name": "在上海迪士尼乐园酒店巧遇迪士尼朋友",
    "subType": "Character Experience - Meet & Greet",
@@ -360,6 +700,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entAvengersPatrol",
    "name": "复仇者联盟巡逻",
    "subType": "Stage Show",
@@ -372,6 +713,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entStitchEncounterInteractwithStitch",
    "name": "太空对话史迪奇 – 与史迪奇互动",
    "subType": "Character Experience - Meet & Greet",
@@ -384,6 +726,20 @@
    "times": []
   },
   {
+   "kind": "meet",
+   "id": "charAnnualPassExclusiveCharacterGreetingatHappyCircle",
+   "name": "年卡专享 - 在欢笑聚友会与迪士尼朋友见面",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "探险岛",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-ap-character-at-happy-circle-20260827-sq-1_tcm1874-293326.png",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-char-ap-character-at-happy-circle-20260827-hero-1_tcm1874-293329.png",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "kind": "show",
    "id": "entFantasyFestival",
    "name": "梦幻节",
    "subType": "Atmosphere",
@@ -396,6 +752,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entPiratesRoaming",
    "name": "海盗氛围",
    "subType": "Atmosphere",
@@ -408,6 +765,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entASpecialCelebrationintheHundredAcreWood",
    "name": "百亩森林里的欢庆会",
    "subType": "Atmosphere",
@@ -420,6 +778,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entMickeyandMinniesCelebrationatEntryPortal",
    "name": "米奇米妮的钟楼欢庆会​",
    "subType": "Stage Show",
@@ -432,6 +791,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entToySoldiersBucketOFun",
    "name": "绿色奇兵:欢乐玩具桶",
    "subType": "Character Experience - Meet & Greet",
@@ -444,6 +804,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entDisneyXiaoTuiTheMagicalRecycleBin",
    "name": "迪士尼小推：神奇回收箱",
    "subType": "Stage Show",
@@ -456,6 +817,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entDisneyZootopiaComesAlive",
    "name": "迪士尼疯狂动物城生活秀",
    "subType": "Atmosphere",
@@ -468,6 +830,7 @@
    "times": []
   },
   {
+   "kind": "show",
    "id": "entSnapPicturesofWoodyandJessie",
    "name": "邂逅玩具朋友们",
    "subType": "Character Experience - Meet & Greet",

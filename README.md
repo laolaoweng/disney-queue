@@ -101,13 +101,13 @@ python collector\collect.py       # 默认 --transport auto：TCP 被重置就�
 | **首页（index）** | 一张大卡片告诉你「现在去玩 X，排队 20 分钟，步行 6 分钟」，附 2–4 条理由、数据更新时间、备选 3 个；「🎢 八大必玩 · 现在排队」卡片按排队从少到多列出 8 个招牌项目，点一下即可加入清单；有必玩清单时额外显示「必玩项目当前排队 + 今日预计最低时段」 |
 | **排行（rank）** | 排序栏可选「综合评分 / 排队最短 / 步行最近 / 八大必玩」；选「八大必玩」只留 8 个招牌项目并按排队升序；全部 30 个项目按主题园区分组，可点行加入必玩，闭园/停运灰显 |
 | **清单（watchlist）** | 勾选你想玩的项目 → 自动按「当前排队时间从少到多」排好序、算好步行和项目时长 → 汇总卡显示「一共 N 项、排队合计 X 分、总耗时 W 分、预计 HH:MM 全部玩完」；支持全选在园/清空，勾选状态自动保存 |
-| **演出（shows）** | 当天娱乐演出的场次卡片（图 + 最近一场倒计时 + 下一场），按「快要开始」排序，停演/已结束灰显；数据每天从官网抓一次 |
+| **演出（shows）** | 当天场次卡片（图 + 最近一场倒计时 + 下一场），顶部可切「全部 / 演出 / 见面会」；见面会单独一组（21 个角色见面会，带场次和倒计时），按「快要开始」排序，停演/已结束灰显；数据每天从官网抓一次 |
 | **行程（plan）** | 自动排 3–4 个项目的顺序，显示「几点开始、排多久、玩完几点」，可点「我从这里开始」（不再占 tabBar，首页按钮进入） |
-| **分时预测（forecast）** | 最近 14 天的每小时曲线：切项目看「几点人最少」，工作日/周末切换，标出最空 2–3 小时和「比高峰少 X%」；数据来自 `hourly-stats.json`，缺失时退回 `forecast.json` |
+| **分时预测（forecast）** | 最近 14 天的每小时曲线：切项目看「几点人最少」，工作日/周末切换，标出最空 2–3 小时和「比高峰少 X%」；**不在 tabBar 上**，从排队榜的分时预测入口进入；数据接口保留（`hourly-stats.json`，缺失时退回 `forecast.json`） |
 | **最优解（首页=冲刺计划）** | 打开就是冲刺计划：勾选必玩项目（勾选顺序=优先级），算出闭园前最多玩几项、每项几点去；支持平衡 P50 / 稳健 P80 与出发点 |
 | **排队榜（rank）** | 官方图片卡片墙，默认按「排队最长」排序（另有综合评分 / 排队最短 / 步行最近 / 八大必玩 4 个筛选） |
 | **冲刺计划（plan8）** | 勾选想玩的必玩项目（勾选顺序=优先级），用精确枚举算出闭园前最多能玩几项、每项几点去最合适；支持出发时间/出发点，越晚出发越会提示先玩哪些 |
-| **设置（settings）** | 同行类型（刺激/家庭/亲子/混合）、最矮身高、是否看演出、时间预算、必玩/尊享卡清单 |
+| **设置（settings，已从 tabBar 移出）** | 同行类型（刺激/家庭/亲子/混合）、最矮身高、是否看演出、时间预算、必玩/尊享卡清单；页面文件保留，默认入口不再显示 |
 
 截图：用 `python -m http.server 8000` 起服务后浏览器打开 `http://localhost:8000/web-preview/`，即可看到与小程序同款的 UI（H5 预览版复用同一份 `recommend.js`）。
 
@@ -142,7 +142,7 @@ deliverables/disney-queue/
 │  ├─ build_hourly_stats.py    ← 14 天分时统计 → data/hourly-stats.json（契约 §6）
 │  ├─ build_forecast.py        ← 历史样本 → data/forecast.json（分时段曲线；--history-dir 用 14 天窗口）
 │  ├─ fetch_images.py          ← 官方 WAM facility/detail → data/images.json（项目方形图/头图）
-│  ├─ fetch_shows.py           ← 官方 WAM facility/detail → data/shows.json（33 场演出的当日场次）
+│  ├─ fetch_shows.py           ← 官方 WAM facility/detail → data/shows.json（33 个演出 + 21 个见面会的当日场次）
 │  ├─ common.py                ← 时间/IO/状态归一化
 │  └─ test_collect.py          ← 41 个单测（含 TCP→HTTP/3 回退、历史导入、分时统计、演出场次）
 ├─ shared/recommend.js         ← 推荐算法（纯函数，CommonJS，零依赖；recommend + estimateSelected）
@@ -217,7 +217,7 @@ console.log(est.totals); // { attractions: 3, waitMinutes, rideMinutes, walkMinu
     1. **境外中继（推荐，零服务器成本）**：GitHub Actions 每 10 分钟抓一次 → `data/latest.json` 提交回仓库 → 小程序读 raw/对象存储。微信小程序的 `wx.request` 只支持 TCP，用不了 QUIC，所以给小程序提供数据必须走这条路或自己的 HTTPS 服务器。
     2. **本机采集（HTTP/3）**：`collector\run_live.ps1` 用 QUIC 直接抓（需 `pip install aioquic`），配合 Windows 计划任务每 10 分钟刷新本地 `data/` 与小程序 mock；适合自己盯着看、或再把 JSON 同步到你自己的 HTTPS 存储。
 - **项目元数据**：迪士尼官网 `cu.apigw.shanghaidisneyresort.com/steamboat-wam/api/rap/facility/list`（344 个设施里的 30 个游乐项目，简体中文名 + 真实坐标 + 尊享卡标记）。
-- **演出场次**：上海迪士尼官网 `facility/detail`（`schedule.timeInfo`，33 个娱乐演出），`.github/workflows/shows.yml` 每天 00:20（北京时间）抓一次，产出 `data/shows.json`。
+- **演出场次**：上海迪士尼官网 `facility/detail`（`schedule.timeInfo`，33 个娱乐演出 + 21 个角色见面会/见面地点），`.github/workflows/shows.yml` 每天 00:20（北京时间）抓一次，产出 `data/shows.json`。
 - **历史排队（分时预测）**：GitHub 镜像 `hjeee3-tech/shanghai-disney-waits` 的 `data/YYYY-MM-DD.csv`（queue-times park 30 的 5 分钟粒度镜像）；`fetch_history.py` 会 HEAD 探测最新日期并下最近 14 天，不做实时请求。
 - **小程序怎么读到数据**：默认 `https://raw.githubusercontent.com/<你的仓库>/main/data`；正式发布换成自己的**备案域名 + 对象存储**（或微信云开发）。四种下发方式对比、成本、备案/白名单步骤、合规清单见 [docs/02-deploy.md](docs/02-deploy.md)。
 - **要上架微信小程序？** 主体选择、ICP 备案、服务类目、商标避坑、数据域名、隐私指引、提审驳回原因和 11 项检查清单，都整理在 [docs/05-release.md](docs/05-release.md)。
@@ -279,7 +279,7 @@ python collector\test_collect.py
 # 算法 28 个用例（含 estimateSelected 的排序/总耗时/关闭与未知 id/纯函数）
 & $node tests\recommend.test.js
 
-# 全量验收 37 项（catalog/latest/forecast/hourly-stats/shows 契约、recommend / estimateSelected / planMustDo 输出、8 个页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、手机部署文件齐全）
+# 全量验收 40 项（catalog/latest/forecast/hourly-stats/shows 契约、recommend / estimateSelected / planMustDo 输出、页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、见面会筛选、手机部署文件齐全）
 & $node tools\verify.js
 
 # 手机部署（Cloudflare Pages）相关：边缘函数 8 + 5 个用例（解析映射 / 缓存 / 回退 / CORS / 静态放行）
