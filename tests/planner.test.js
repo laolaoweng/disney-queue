@@ -122,11 +122,15 @@ test('项目级实时修正：实时排队翻倍时 heatFactor 变大、排队�
   var normal = planner.planMustDo(baseInput('2026-11-11T01:00:00Z', one));
   var input = baseInput('2026-11-11T01:00:00Z', one);
   var hotWaits = latest.waits.map(function (w) {
-    var m = Object.assign({}, w);
+    var m = Object.assign({}, w, { lastUpdated: '2026-11-11T01:00:00Z' });
     if (typeof m.waitMinutes === 'number' && m.status === 'operating') m.waitMinutes = m.waitMinutes * 2;
     return m;
   });
-  input.latest = Object.assign({}, latest, { waits: hotWaits });
+  input.latest = Object.assign({}, latest, {
+    updatedAt: '2026-11-11T01:00:00Z',
+    fetchedAt: '2026-11-11T01:00:00Z',
+    waits: hotWaits
+  });
   var hot = planner.planMustDo(input);
   assert.ok(hot.heatFactor >= 1.2, '热度应 >=1.2，实际 ' + hot.heatFactor);
   assert.strictEqual(hot.plan.length, 1);

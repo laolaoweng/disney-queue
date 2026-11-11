@@ -21,7 +21,7 @@ var SHARED = path.join(ROOT, 'shared');
 var OUT = path.join(SHARED, 'bundle.js');
 var MIRROR = path.join(ROOT, 'miniprogram', 'shared', 'planner.js');
 
-var ORDER = ['forecast', 'walking', 'scoring', 'planner'];
+var ORDER = ['forecast', 'walking', 'scoring', 'replanner', 'planner'];
 
 function readModule(name) {
   return fs.readFileSync(path.join(SHARED, name + '.js'), 'utf8');
@@ -30,7 +30,7 @@ function readModule(name) {
 function build() {
   var parts = [];
   parts.push('/* 自动生成，请勿直接修改：node tools/build_shared.js');
-  parts.push(' * 源码在 shared/{forecast,walking,scoring,planner}.js，本文件是它们的单文件打包。');
+  parts.push(' * 源码在 shared/{forecast,walking,scoring,replanner,planner}.js，本文件是它们的单文件打包。');
   parts.push(' */'); // 注意：不要写生成时间，否则 --check 永远不一致
   parts.push("'use strict';");
   parts.push('var __modules = {};');

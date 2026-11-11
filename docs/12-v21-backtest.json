@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-11T14:44:52.664Z",
+  "window": {
+    "days": 13,
+    "files": 15,
+    "firstDay": "2026-10-05",
+    "lastDay": "2026-10-17"
+  },
+  "rule": "严格滚动起点：回放日期只用更早日期构建历史曲线；起点 t 只用 t 及之前 180 分钟观测；真实值取 t+Δ 最近 ±4 分钟快照；Δ=15/30/45/60",
+  "horizons": {
+    "15": {
+      "v1": {
+        "n": 18579,
+        "mae": 6.9,
+        "bias": 4.1,
+        "coverage": null
+      },
+      "v2": {
+        "n": 18579,
+        "mae": 4.4,
+        "bias": 0.4,
+        "coverage": 0.678
+      },
+      "maeImprovePct": 36.2
+    },
+    "30": {
+      "v1": {
+        "n": 17992,
+        "mae": 7.2,
+        "bias": 4,
+        "coverage": null
+      },
+      "v2": {
+        "n": 17992,
+        "mae": 5.6,
+        "bias": 0.3,
+        "coverage": 0.612
+      },
+      "maeImprovePct": 22.2
+    },
+    "45": {
+      "v1": {
+        "n": 17451,
+        "mae": 7.5,
+        "bias": 3.9,
+        "coverage": null
+      },
+      "v2": {
+        "n": 17451,
+        "mae": 6.1,
+        "bias": 0.3,
+        "coverage": 0.583
+      },
+      "maeImprovePct": 18.7
+    },
+    "60": {
+      "v1": {
+        "n": 16914,
+        "mae": 7.5,
+        "bias": 3.8,
+        "coverage": null
+      },
+      "v2": {
+        "n": 16914,
+        "mae": 6.2,
+        "bias": 0.2,
+        "coverage": 0.579
+      },
+      "maeImprovePct": 17.3
+    }
+  },
+  "perDay": [
+    {
+      "date": "2026-10-05",
+      "predictions": 0
+    },
+    {
+      "date": "2026-10-06",
+      "predictions": 6124
+    },
+    {
+      "date": "2026-10-07",
+      "predictions": 2624
+    },
+    {
+      "date": "2026-10-08",
+      "predictions": 6156
+    },
+    {
+      "date": "2026-10-09",
+      "predictions": 5886
+    },
+    {
+      "date": "2026-10-10",
+      "predictions": 6220
+    },
+    {
+      "date": "2026-10-11",
+      "predictions": 6571
+    },
+    {
+      "date": "2026-10-12",
+      "predictions": 6066
+    },
+    {
+      "date": "2026-10-13",
+      "predictions": 5600
+    },
+    {
+      "date": "2026-10-14",
+      "predictions": 6012
+    },
+    {
+      "date": "2026-10-15",
+      "predictions": 6010
+    },
+    {
+      "date": "2026-10-16",
+      "predictions": 6617
+    },
+    {
+      "date": "2026-10-17",
+      "predictions": 7050
+    }
+  ]
+}

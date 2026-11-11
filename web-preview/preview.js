@@ -81,6 +81,8 @@
     forecastDayType: 'all',
     plan8Selected: null,
     plan8Risk: 'balanced',
+    plan8PlanCache: null,
+    plan8PlanSignature: null,
     detailId: null,
     detailDate: null
   };
@@ -983,6 +985,8 @@
     }
 
     if (!selected.length) {
+      state.plan8PlanCache = null;
+      state.plan8PlanSignature = null;
       return plan8Page(picker +
         '<div class="empty"><div class="empty-emoji">🎯</div><div class="empty-title">先勾几个想玩的项目</div>' +
         '<p class="muted small">勾上项目后，这里会算出闭园前最多能玩几项、按什么顺序、各自几点到。</p>' +
@@ -1005,6 +1009,33 @@
       });
     } catch (e) {
       resultError = '冲刺计划计算失败：' + ((e && e.message) || '未知错误');
+    }
+
+    // 同一组项目/出发点/风险口径下启用动态重规划防抖：小幅改善不频繁换路线。
+    var planSignature = JSON.stringify({
+      selected: selected,
+      riskMode: state.plan8Risk,
+      origin: prefs.lastAttractionId || null
+    });
+    if (state.plan8PlanSignature !== planSignature) {
+      state.plan8PlanSignature = planSignature;
+      state.plan8PlanCache = null;
+    }
+    var replanDecision = null;
+    if (result && result.plan && result.plan.length && typeof planner.shouldReplan === 'function') {
+      replanDecision = planner.shouldReplan({
+        previous: state.plan8PlanCache,
+        next: result,
+        now: nowIso,
+        params: bundle.modelConfig && bundle.modelConfig.params
+      });
+      if (state.plan8PlanCache && !replanDecision.replan) {
+        result = state.plan8PlanCache;
+      } else {
+        state.plan8PlanCache = result;
+      }
+    } else if (result && (!result.plan || !result.plan.length)) {
+      state.plan8PlanCache = null;
     }
 
     if (!result) {
@@ -1095,6 +1126,7 @@
       : '';
 
     var warnings = (result.warnings || []).slice();
+    if (replanDecision) warnings.unshift('动态重规划：' + replanDecision.message);
     if (!bundle.hourlyStats) warnings.unshift('缺少 14 天分时数据，排队时间按实时/默认值估算');
     var warnHtml = warnings.length
       ? '<div class="card p8-warn">' + warnings.map(function (text) {

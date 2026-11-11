@@ -41,10 +41,8 @@ function flag(name) { return process.argv.indexOf('--' + name) >= 0; }
 function loadJson(p) { return JSON.parse(fs.readFileSync(p, 'utf8')); }
 
 var catalog = loadJson(path.join(ROOT, 'data', 'catalog.json'));
-var hourlyStats = loadJson(path.join(ROOT, 'data', 'hourly-stats.json'));
 var modelConfig = loadJson(path.join(ROOT, 'data', 'model-config.json'));
 var params = F.mergeParams(modelConfig.params);
-var curves = F.curvesFromHourly(hourlyStats);
 
 // history 的 waits 直接以 attractionId 为键；只回测 catalog 里存在的项目
 var knownAttractions = {};
@@ -83,21 +81,53 @@ function dayTypeOf(row) {
   return row.dow === 0 || row.dow === 6 ? 'weekend' : 'weekday';
 }
 
-function curveAt(attractionId, dayType, minuteOfDay) {
+/**
+ * 严格滚动起点训练集：只使用回放日期之前的历史快照构建分时曲线。
+ * 不读取 data/hourly-stats.json，避免其中包含被回测日期本身而造成未来信息泄漏。
+ */
+function buildTrainingCurves(trainingRows) {
+  var buckets = {};
+  trainingRows.forEach(function (row) {
+    var dayType = dayTypeOf(row);
+    Object.keys(row.waits || {}).forEach(function (id) {
+      if (!knownAttractions[id] || (row.closed || []).indexOf(id) >= 0) return;
+      var wait = row.waits[id];
+      if (typeof wait !== 'number' || !isFinite(wait) || wait < 0) return;
+      var hour = Math.floor(row.minuteOfDay / 60);
+      var key = id + '|' + dayType + '|' + hour;
+      var b = buckets[key] || (buckets[key] = { sum: 0, n: 0, min: Infinity, max: -Infinity });
+      b.sum += wait; b.n += 1; b.min = Math.min(b.min, wait); b.max = Math.max(b.max, wait);
+    });
+  });
+  var out = {};
+  Object.keys(buckets).forEach(function (key) {
+    var parts = key.split('|');
+    var id = parts[0], type = parts[1], hour = parts[2], b = buckets[key];
+    var c = out[id] || (out[id] = { weekday: {}, weekend: {}, dispersion: {}, samples: 0 });
+    c[type][hour] = b.sum / b.n;
+    c.samples += b.n;
+    var d = c.dispersion[hour] || (c.dispersion[hour] = { min: b.min, max: b.max, avg: b.sum / b.n, samples: b.n });
+    d.min = Math.min(d.min, b.min);
+    d.max = Math.max(d.max, b.max);
+  });
+  return out;
+}
+
+function curveAt(curves, attractionId, dayType, minuteOfDay) {
   var c = curves[attractionId];
   if (!c) return null;
   return F.interpolate(c[dayType] || c.weekday, minuteOfDay);
 }
 
 /** 某时刻的全园热度：开放项目实时均值 ÷ 同时刻历史均值（限 0.6~3） */
-function heatAt(row, dayType) {
+function heatAt(row, dayType, curves) {
   var real = 0, realN = 0, hist = 0, histN = 0;
   Object.keys(row.waits).forEach(function (id) {
     if (!knownAttractions[id]) return;
     var w = row.waits[id];
     if (typeof w !== 'number' || !isFinite(w)) return;
     real += w; realN += 1;
-    var h = curveAt(id, dayType, row.minuteOfDay);
+    var h = curveAt(curves, id, dayType, row.minuteOfDay);
     if (h != null) { hist += h; histN += 1; }
   });
   if (!realN || !histN) return 1;
@@ -119,10 +149,19 @@ function bucket() {
 var files = listHistoryFiles();
 var result = bucket();
 var perDay = [];
+var allDays = files.map(function (file) { return { file: file, rows: readDay(file) }; });
 
-files.forEach(function (file) {
-  var rows = readDay(file);
+allDays.forEach(function (day, dayIndex) {
+  var file = day.file;
+  var rows = day.rows;
   if (rows.length < 20) return;
+  var trainingRows = [];
+  for (var prior = 0; prior < dayIndex; prior++) {
+    trainingRows = trainingRows.concat(allDays[prior].rows);
+  }
+  var curves = buildTrainingCurves(trainingRows);
+  // 至少有一个训练日，否则没有可用历史曲线，跳过该回放日。
+  if (!Object.keys(curves).length) return;
   var dayStats = { date: rows[0].date, predictions: 0 };
   var byMinute = [];
   rows.forEach(function (r) { byMinute[r.minuteOfDay] = r; });
@@ -143,7 +182,7 @@ files.forEach(function (file) {
     var row = rows[i];
     if (row.minuteOfDay % TARGET_STEP_MIN !== 0) continue;
     var dayType = dayTypeOf(row);
-    var heat = heatAt(row, dayType);
+    var heat = heatAt(row, dayType, curves);
 
     // 该起点之前的观测（每个项目）
     var obs = {};
@@ -165,7 +204,7 @@ files.forEach(function (file) {
       Object.keys(obs).forEach(function (id) {
         var w = target.waits[id];
         if (typeof w !== 'number' || !isFinite(w)) return;
-        var h50 = curveAt(id, dayType, targetMinute);
+        var h50 = curveAt(curves, id, dayType, targetMinute);
         if (h50 == null) return;
 
         var fc = F.buildForecast(id, {
@@ -206,8 +245,8 @@ function summarize(rec) {
 var report = {
   schemaVersion: 1,
   generatedAt: new Date().toISOString(),
-  window: { days: files.length, firstDay: files[0] || null, lastDay: files[files.length - 1] || null },
-  rule: '起点 t 只用 t 及之前 180 分钟观测；真实值取 t+Δ 最近 ±4 分钟快照；Δ=15/30/45/60',
+  window: { days: perDay.length, files: files.length, firstDay: perDay.length ? perDay[0].date : null, lastDay: perDay.length ? perDay[perDay.length - 1].date : null },
+  rule: '严格滚动起点：回放日期只用更早日期构建历史曲线；起点 t 只用 t 及之前 180 分钟观测；真实值取 t+Δ 最近 ±4 分钟快照；Δ=15/30/45/60',
   horizons: {},
   perDay: perDay
 };
@@ -235,7 +274,7 @@ if (jsonOut) {
 
 console.log('');
 console.log('📉 排队预测回测（V1 heat-only vs V2 project-level）');
-console.log('   数据：' + files.length + ' 天（' + report.window.firstDay + ' ~ ' + report.window.lastDay + '），共 ' +
+console.log('   数据：' + report.window.days + ' 个可回测日（' + report.window.firstDay + ' ~ ' + report.window.lastDay + '；扫描文件 ' + files.length + ' 个），共 ' +
   (report.horizons[15] ? (report.horizons[15].v1.n + report.horizons[30].v1.n + report.horizons[45].v1.n + report.horizons[60].v1.n) : 0) + ' 个预测点');
 console.log('');
 console.log('   预测时长  样本数   V1 MAE   V2 MAE   MAE 降幅   V1 Bias  V2 Bias   V2 区间覆盖');

@@ -236,6 +236,33 @@ Page({
       resultError = '冲刺计划计算失败：' + ((e2 && e2.message) || '未知错误');
     }
 
+    // 动态重规划：同一组选择/出发点/预测口径下，只有新路线明显更优或旧路线已过期才切换。
+    var planSignature = JSON.stringify({
+      selected: this.selectedIds,
+      riskMode: this.data.riskMode || 'balanced',
+      origin: prefs.lastAttractionId || null
+    });
+    if (this._planCacheSignature !== planSignature) {
+      this._planCacheSignature = planSignature;
+      this._lastPlan = null;
+    }
+    var replanDecision = null;
+    if (result && result.plan && result.plan.length && planner.shouldReplan) {
+      replanDecision = planner.shouldReplan({
+        previous: this._lastPlan,
+        next: result,
+        now: nowIso,
+        params: bundle.modelConfig && bundle.modelConfig.params
+      });
+      if (this._lastPlan && !replanDecision.replan) {
+        result = this._lastPlan;
+      } else {
+        this._lastPlan = result;
+      }
+    } else if (result && (!result.plan || !result.plan.length)) {
+      this._lastPlan = null;
+    }
+
     if (!result) {
       this.setData(this.extend(base, {
         hasSelection: true,
@@ -293,6 +320,11 @@ Page({
     });
 
     var warnings = (result.warnings || []).slice();
+    if (replanDecision) {
+      warnings.unshift(replanDecision.replan
+        ? '动态重规划：' + replanDecision.message
+        : '动态重规划：' + replanDecision.message);
+    }
     if (!bundle.hourlyStats) {
       warnings.unshift('缺少 14 天分时数据，排队时间按实时/默认值估算，结果仅供参考');
     }
@@ -376,7 +408,7 @@ Page({
       return;
     }
     this.render();
-    wx.showToast({ title: '已按当前时间重新计算', icon: 'none' });
+    wx.showToast({ title: '已检查新路线是否值得切换', icon: 'none' });
   },
 
   // 📍 我在这里：把当前出发点当作「我所在的位置」重算

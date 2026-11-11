@@ -1072,7 +1072,7 @@ class ShowScheduleTestCase(unittest.TestCase):
                               '', '9:00&10:00')
         show = fetch_shows.build_show(entertainment, detail)
         self.assertEqual(set(show), {'id', 'name', 'subType', 'land', 'imageUrl', 'heroUrl',
-                                     'status', 'statusCode', 'timeInfo', 'times',
+                                     'kind', 'status', 'statusCode', 'timeInfo', 'times',
                                      'businessDate'})
         self.assertEqual(show['id'], 'entBeta')
         self.assertEqual(show['name'], '午场演出（详情名）')
@@ -1080,6 +1080,7 @@ class ShowScheduleTestCase(unittest.TestCase):
         self.assertEqual(show['land'], '奇想花园')
         self.assertEqual(show['times'], ['09:00', '10:00'])
         self.assertEqual(show['timeInfo'], '9:00&10:00')
+        self.assertEqual(show['kind'], 'show')
         self.assertEqual(show['status'], 'scheduled')
         self.assertEqual(show['businessDate'], '2026-11-11')
         self.assertEqual(show['imageUrl'], 'https://img.test/entBeta-sq.png')
@@ -1098,10 +1099,14 @@ class ShowScheduleTestCase(unittest.TestCase):
             self.skipTest('缺少 %s' % DEFAULT_WAM)
         wam = read_json(DEFAULT_WAM)
         entertainments = fetch_shows.list_entertainments(wam)
-        self.assertEqual(len(entertainments), 33)
-        self.assertTrue(all(item['id'].startswith('ent') for item in entertainments))
-        self.assertTrue(all(item['name'] for item in entertainments))
+        # 33 个演出（ent*）+ 21 个角色见面会（char*）
+        self.assertEqual(len(entertainments), 54)
         ids = {item['id'] for item in entertainments}
+        self.assertEqual(len([i for i in ids if i.startswith('ent')]), 33)
+        self.assertEqual(len([i for i in ids if i.startswith('char')]), 21)
+        self.assertTrue(all(item['id'].startswith('ent') or item['id'].startswith('char')
+                            for item in entertainments))
+        self.assertTrue(all(item['name'] for item in entertainments))
         self.assertIn('entMickeysStorybookExpress', ids)
         # 排序稳定（按 id）
         self.assertEqual([item['id'] for item in entertainments], sorted(ids))

@@ -24,6 +24,7 @@
 var F = require('./forecast.js');
 var W = require('./walking.js');
 var S = require('./scoring.js');
+var R = require('./replanner.js');
 
 var TZ_OFFSET_MS = 8 * 3600 * 1000;
 var DAY_MS = 24 * 3600 * 1000;
@@ -130,19 +131,21 @@ function curveValueAt(curve, minuteOfDay) {
 }
 
 /** 今日热度系数（仅用于展示/告警；V2 的预测不用它） */
-function computeHeatFactor(curves, latest, dayType, refMs) {
+function computeHeatFactor(curves, latest, dayType, refMs, params) {
   if (!latest || !Array.isArray(latest.waits)) return 1;
-  var ref = latest.updatedAt ? parseIso(latest.updatedAt) : (latest.fetchedAt ? parseIso(latest.fetchedAt) : refMs);
-  var minute = cstMinuteOfDay(ref);
+  var fallbackMs = latest.updatedAt ? parseIso(latest.updatedAt) : (latest.fetchedAt ? parseIso(latest.fetchedAt) : refMs);
+  var maxAgeMin = Math.max(1, toNum(params && params.latestMaxAgeMin, 20));
   var live = [];
   var hist = [];
   for (var i = 0; i < latest.waits.length; i++) {
     var w = latest.waits[i];
     if (!w || typeof w.waitMinutes !== 'number') continue;
     if (w.status && w.status !== 'operating') continue;
+    var itemMs = w.lastUpdated ? Date.parse(w.lastUpdated) : fallbackMs;
+    if (!isFinite(itemMs) || itemMs > refMs + 60000 || refMs - itemMs > maxAgeMin * 60000) continue;
     var c = curves[w.attractionId];
     if (!c) continue;
-    var v = curveValueAt(c[dayType] || c.weekday, minute);
+    var v = curveValueAt(c[dayType] || c.weekday, cstMinuteOfDay(itemMs));
     if (v == null || v <= 0) continue;
     live.push(w.waitMinutes);
     hist.push(v);
@@ -193,7 +196,8 @@ function planMustDo(input) {
     })(),
     latest,
     dayType,
-    nowMs
+    nowMs,
+    params
   );
 
   var openMin = hhmmToMin(opts.openAt || params.openAt, DEFAULT_OPEN_MIN);
@@ -207,8 +211,14 @@ function planMustDo(input) {
   var closeMs = dayStart + closeMin * 60000;
   var maxLeaveMs = dayStart + maxLeaveMin * 60000;
   var startMs = roundToMinute(Math.max(nowMs, openMs));
+  // 若用户正在排队，当前项目不再加入后续路线；从预计出队时刻继续规划。
+  var currentRemainingMin = Math.max(0, toNum(opts.currentRemainingMin, 0));
+  if (opts.current && currentRemainingMin > 0) startMs += currentRemainingMin * 60000;
 
   var warnings = [];
+  if (opts.current && !Object.prototype.hasOwnProperty.call(opts, 'currentRemainingMin')) {
+    warnings.push('当前项目已从后续路线中排除；未提供剩余排队时间，后续路线按立即出队估算');
+  }
   var result = {
     schemaVersion: 2,
     generatedAt: new Date(nowMs).toISOString(),
@@ -250,6 +260,11 @@ function planMustDo(input) {
   } else if (loc && isFinite(toNum(loc.lat, NaN)) && isFinite(toNum(loc.lng, NaN))) {
     startPos = { lat: toNum(loc.lat, 0), lng: toNum(loc.lng, 0) };
   }
+  // 正在排队的项目视为后续路线的出发点；显式 location 优先。
+  if (!startPos && opts.current && byId[opts.current]) {
+    startPos = coordsOf(byId[opts.current]);
+    startId = opts.current;
+  }
   if (!startPos) {
     startPos = coordsOf({
       lat: catalog.park && catalog.park.center ? catalog.park.center.lat : null,
@@ -280,19 +295,28 @@ function planMustDo(input) {
   /* ---------------- 实时观测与预测 ---------------- */
   var observations = input.observations || {};
   var latestWait = {};
-  var latestMinute = latest && latest.updatedAt ? cstMinuteOfDay(parseIso(latest.updatedAt)) : nowMinute;
+  var latestFallbackMs = latest
+    ? parseIso(latest.updatedAt || latest.fetchedAt || nowMs)
+    : nowMs;
+  var latestMaxAgeMin = Math.max(1, toNum(params.latestMaxAgeMin, 20));
+  var latestMinuteById = {};
   if (latest && Array.isArray(latest.waits)) {
     for (var lw = 0; lw < latest.waits.length; lw++) {
       var w = latest.waits[lw];
       if (!w || w.attractionId == null) continue;
       if (w.status && w.status !== 'operating') continue;
-      if (typeof w.waitMinutes === 'number') latestWait[w.attractionId] = w.waitMinutes;
+      if (typeof w.waitMinutes !== 'number' || !isFinite(w.waitMinutes)) continue;
+      var itemMs = w.lastUpdated ? Date.parse(w.lastUpdated) : latestFallbackMs;
+      // 无效、未来或过旧的单项快照不能被当成当前实时值。
+      if (!isFinite(itemMs) || itemMs > nowMs + 60000 || nowMs - itemMs > latestMaxAgeMin * 60000) continue;
+      latestWait[w.attractionId] = w.waitMinutes;
+      latestMinuteById[w.attractionId] = cstMinuteOfDay(itemMs);
     }
   }
 
   function observationsOf(id) {
     if (observations && Array.isArray(observations[id]) && observations[id].length) return observations[id];
-    if (latestWait[id] != null) return [{ minuteOfDay: latestMinute, wait: latestWait[id] }];
+    if (latestWait[id] != null) return [{ minuteOfDay: latestMinuteById[id], wait: latestWait[id] }];
     return [];
   }
 
@@ -361,7 +385,9 @@ function planMustDo(input) {
   if (selected.length === 0) return result;
   if (startMs >= queueCloseMs) {
     warnings.push('已经过了 ' + minToHhmm(queueCloseMin) + ' 排队截止时间，今天排不了项目了');
-    result.skipped = selected.map(function (id) {
+    result.skipped = selected.filter(function (id) {
+      return completedIds.indexOf(id) < 0 && id !== currentId;
+    }).map(function (id) {
       return { attractionId: id, name: byId[id].name, reason: 'no-time', extraMinApprox: null };
     });
     return result;
@@ -499,6 +525,8 @@ function planMustDo(input) {
   var extra = {};
   var doneSet = {};
   for (var ds = 0; ds < (bestRows || []).length; ds++) doneSet[bestRows[ds].attractionId] = true;
+  for (var dc = 0; dc < completedIds.length; dc++) doneSet[completedIds[dc]] = true;
+  if (currentId) doneSet[currentId] = true;
   var missing = pool.filter(function (id) { return !doneSet[id]; });
   if (missing.length) {
     var fullBestMs = null;
@@ -603,7 +631,9 @@ var api = {
   walkMinutesBetween: walkMinutesBetween,
   buildCurves: buildCurves,
   curveValueAt: curveValueAt,
-  computeHeatFactor: computeHeatFactor
+  computeHeatFactor: computeHeatFactor,
+  shouldReplan: R.shouldReplan,
+  remainingSelection: R.remainingSelection
 };
 
 if (typeof module !== 'undefined' && module.exports) module.exports = api;

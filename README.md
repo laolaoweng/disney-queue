@@ -312,4 +312,18 @@ python collector\test_collect.py
 - 冲刺计划页每行显示「排队 93 分（预测 93~104）」，并新增「平衡 P50 / 稳健 P80」切换。
 - 新增文件：`shared/{forecast,walking,scoring,replanner,bundle}.js`、`data/model-config.json`、`data/walking-matrix.json`、`tools/{build_shared,build_walking_matrix,backtest_forecast}.js`、`docs/11-backtest.md`。
 - 回测（15 天 / 83,536 点）：MAE 比 V1 降 15%~35%，Bias 从 +4 分钟到 ≈0，区间覆盖率 61%~72%。复现：`node tools/backtest_forecast.js`。
+
+## V2.1 修正（2026-11-11）
+
+在 V2.0 基础上修了 7 处会影响预测正确性的边界问题（不改变架构）：
+
+- **未来观测泄漏**：`forecast.js` 只用 `minuteOfDay <= nowMinute` 的观测，删除「窗口为空时回退最后一条」的逻辑；
+- **置信度**：没有有效实时观测时保持 `low`，≥1 条才 `medium`，≥5 条才 `high`；
+- **按项目时间戳过滤实时数据**：用每个项目自己的 `waits[].lastUpdated`，超过 `latestMaxAgeMin`（默认 20 分钟）不参与修正；
+- **已完成/正在排队的项目**不再出现在候选路线或「预计来不及」里；
+- **正在排队剩余时间**：支持 `opts.current` + `opts.currentRemainingMin`，后续路线从预计出队时刻开始算；
+- **动态重规划防抖接入页面**：H5 与小程序缓存当前路线，只在多玩项目、旧路线不可行、至少提前 8 分钟或风险明显降低时切换；
+- **回测防泄漏**：`backtest_forecast.js` 每个回放日只用它之前的历史日期建曲线。
+
+严格滚动回测（13 个日期）：15/30/45/60 分钟 MAE 为 4.4 / 5.6 / 6.1 / 6.2 分钟（比 V1 降 17%~36%），Bias ≈ +0.2~0.4，P20–P80 覆盖率 58%~68%。详见 [docs/12-v21-upgrade.md](docs/12-v21-upgrade.md)。
 - 构建：改完 `shared/*.js` 后运行 `node tools/build_shared.js --sync`，再 `node tools/verify.js`。

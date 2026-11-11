@@ -151,11 +151,8 @@ function summarizeObservations(observations, nowMinute, params) {
   if (nowMinute != null && rows.length) {
     var lo = nowMinute - toNum(p.recentWindowMin, 30);
     var filtered = rows.filter(function (r) { return r.minuteOfDay >= lo && r.minuteOfDay <= nowMinute; });
-    // 数据快照时间晚于规划时刻（回放/测试很常见）时，退化为「以最后一条观测为基准」的窗口
-    if (!filtered.length) {
-      var lastObs = rows[rows.length - 1].minuteOfDay;
-      filtered = rows.filter(function (r) { return r.minuteOfDay >= lastObs - toNum(p.recentWindowMin, 30); });
-    }
+    // 严格只使用规划时刻及之前的观测；没有历史观测时退回历史曲线，
+    // 绝不能把未来快照当成当前实时数据。
     rows = filtered;
   }
   if (!rows.length) return { level: null, trend: 0, samples: 0, last: null };
@@ -199,7 +196,7 @@ function buildForecast(attractionOrId, opts) {
   var confidence = 'low';
   if (curve && summary.samples >= 5) confidence = 'high';
   else if (curve && summary.samples >= 1) confidence = 'medium';
-  else if (curve) confidence = 'medium';
+  // 只有历史曲线、没有有效实时观测时，置信度必须保持 low。
   return {
     attractionId: typeof attractionOrId === 'string' ? attractionOrId : attractionOrId && attractionOrId.id,
     dayType: dayType,

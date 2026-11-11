@@ -37,14 +37,15 @@ check('映射结果 30 个项目、每个都有 queueTimesId', () => {
   assert.ok(doc.waits.every((w) => ['operating', 'closed', 'unknown'].includes(w.status)));
 });
 
-check('与 Python 产出的 latest.json 映射一致（同项目同 queueTimesId）', () => {
+check('与 Python 产出的 latest.json 项目映射一致（同项目同 queueTimesId；状态按各自快照独立变化）', () => {
   const doc = buildLatest(catalog, raw, { fetchedAt: latest.fetchedAt });
   const byId = new Map(doc.waits.map((w) => [w.attractionId, w]));
   for (const py of latest.waits) {
     const js = byId.get(py.attractionId);
     assert.ok(js, `缺少 ${py.attractionId}`);
     assert.equal(js.queueTimesId, py.queueTimesId, `${py.attractionId} qid 不一致`);
-    assert.equal(js.status, py.status, `${py.attractionId} status 不一致`);
+    assert.ok(['operating', 'closed', 'unknown'].includes(js.status), `${py.attractionId} status 非法`);
+
   }
   // 排队分钟数取的是本次原始 payload 的值（两次抓取之间数值会变，不能跨快照比）
   const rawByQid = new Map(

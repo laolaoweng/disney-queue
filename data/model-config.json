@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-11-11T08:10:00Z",
   "source": "docs: V2.0 技术方案（2026-11-11）+ 本地回测校准",
-  "note": "所有参数都是初始实验值，可被 data/model-config.json 覆盖；改动后请重跑 tools/backtest_forecast.js 验证。",
+  "note": "所有参数都是初始实验值，可被 data/model-config.json 覆盖；改动后请重跑 tools/backtest_forecast.js 验证。 V2.1：实时单项数据默认超过 20 分钟即不再作为当前观测。",
   "params": {
     "ewmaAlpha": 0.35,
     "recentWindowMin": 30,
@@ -31,6 +31,7 @@
     "replanIntervalMin": 5,
     "riskSwitchRatio": 0.2,
     "sigmaFactor": 0.12,
-    "sigmaMin": 2
+    "sigmaMin": 2,
+    "latestMaxAgeMin": 20
   }
 }
