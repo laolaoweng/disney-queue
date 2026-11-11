@@ -205,7 +205,7 @@
       .then(function (exports) {
         rec = exports;
         // 冲刺计划算法（shared/planner.js 只读）：缺失时页面给兜底文案，不影响其他视图
-        return loadCommonJs('../shared/planner.js').catch(function () { return null; });
+        return loadCommonJs('../miniprogram/shared/planner.js').catch(function () { return null; });
       })
       .then(function (exports) {
         planner = exports && typeof exports.planMustDo === 'function' ? exports : null;
