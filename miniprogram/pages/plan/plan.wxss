@@ -7,7 +7,7 @@
 .sk-line {
   height: 28rpx;
   border-radius: 8rpx;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(31, 88, 160, 0.07);
   margin-bottom: 22rpx;
 }
 
@@ -35,13 +35,13 @@
 .plan-head-num {
   font-size: 64rpx;
   line-height: 1;
-  color: #ff8a3d;
+  color: #2f7cf6;
 }
 
 .plan-head-label {
   margin-top: 10rpx;
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 .plan-head-time {
@@ -49,30 +49,30 @@
   align-items: baseline;
   margin-top: 28rpx;
   padding-top: 24rpx;
-  border-top: 1rpx solid rgba(255, 255, 255, 0.07);
+  border-top: 1rpx solid rgba(31, 88, 160, 0.08);
 }
 
 .plan-time-now {
   font-size: 32rpx;
   font-weight: 600;
-  color: #dfe6f0;
+  color: #16233a;
 }
 
 .plan-time-arrow {
   margin: 0 16rpx;
-  color: #5f6a7a;
+  color: #8b97aa;
 }
 
 .plan-time-end {
   font-size: 32rpx;
   font-weight: 600;
-  color: #ffab6b;
+  color: #2f7cf6;
 }
 
 .plan-time-label {
   margin-left: auto;
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 /* 时间线 */
@@ -100,8 +100,8 @@
   line-height: 44rpx;
   text-align: center;
   border-radius: 50%;
-  background: rgba(255, 138, 61, 0.16);
-  color: #ffab6b;
+  background: rgba(47, 124, 246, 0.12);
+  color: #2f7cf6;
   font-size: 24rpx;
   flex-shrink: 0;
 }
@@ -110,7 +110,7 @@
   flex: 1;
   width: 2rpx;
   margin: 10rpx 0;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(31, 88, 160, 0.10);
 }
 
 .step-body {
@@ -137,37 +137,37 @@
 .step-start {
   font-size: 28rpx;
   font-weight: 600;
-  color: #ffab6b;
+  color: #2f7cf6;
 }
 
 .step-dash {
   margin: 0 8rpx;
-  color: #5f6a7a;
+  color: #8b97aa;
 }
 
 .step-end {
   font-size: 24rpx;
-  color: #8b97aa;
+  color: #66748c;
 }
 
 .step-played-btn {
   padding: 8rpx 20rpx;
   border-radius: 999rpx;
   font-size: 20rpx;
-  background: rgba(255, 255, 255, 0.06);
-  color: #9aa6b8;
+  background: rgba(31, 88, 160, 0.07);
+  color: #66748c;
 }
 
 .step-played-btn.on {
-  background: rgba(53, 208, 127, 0.14);
-  color: #5fe0a0;
+  background: rgba(23, 166, 115, 0.14);
+  color: #17a673;
 }
 
 .step-name {
   margin-top: 14rpx;
   font-size: 34rpx;
   font-weight: 600;
-  color: #eef2f7;
+  color: #16233a;
 }
 
 .step-meta {
@@ -179,15 +179,15 @@
 .step-meta-text {
   margin-left: 14rpx;
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 .note {
   margin: 8rpx 40rpx 16rpx;
   padding: 20rpx 24rpx;
   border-radius: 18rpx;
-  background: rgba(255, 176, 32, 0.1);
-  color: #ffc65c;
+  background: rgba(232, 163, 23, 0.12);
+  color: #e8a317;
   font-size: 24rpx;
   text-align: center;
 }
@@ -197,8 +197,8 @@
   margin-top: 28rpx;
   padding: 16rpx 48rpx;
   border-radius: 999rpx;
-  background: rgba(255, 138, 61, 0.16);
-  color: #ffab6b;
+  background: rgba(47, 124, 246, 0.12);
+  color: #2f7cf6;
   font-size: 26rpx;
 }
 
@@ -214,7 +214,7 @@
   padding: 8rpx 20rpx;
   border-radius: 999rpx;
   font-size: 20rpx;
-  background: rgba(255, 138, 61, 0.14);
-  border: 1rpx solid rgba(255, 138, 61, 0.28);
-  color: #ffab6b;
+  background: rgba(47, 124, 246, 0.10);
+  border: 1rpx solid rgba(47, 124, 246, 0.20);
+  color: #2f7cf6;
 }

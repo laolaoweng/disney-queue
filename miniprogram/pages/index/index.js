@@ -17,6 +17,7 @@ Page({
     alternatives: [],
     mustDoItems: [],
     highlightsRows: [],
+    crowd: null,
     originOptions: ['园区中心（不指定）'],
     originIndex: 0,
     originText: '园区中心',
@@ -90,6 +91,21 @@ Page({
     var mustDoItems = rec.mustDoList(bundle, prefs, { recModule: recommendModule });
     var highlightsRows = rec.highlightsList(bundle, prefs);
 
+    // 今日客流卡（纯函数在 utils/rec.js，本页只做图表高度归一）
+    var crowd = rec.crowdStats(bundle, { now: nowDate });
+    var crowdMax = 0;
+    for (var c = 0; c < crowd.bars.length; c++) {
+      if (typeof crowd.bars[c].avgWait === 'number' && crowd.bars[c].avgWait > crowdMax) {
+        crowdMax = crowd.bars[c].avgWait;
+      }
+    }
+    for (var cb = 0; cb < crowd.bars.length; cb++) {
+      var barItem = crowd.bars[cb];
+      barItem.heightPct = (typeof barItem.avgWait !== 'number' || !crowdMax)
+        ? 8
+        : Math.max(8, Math.round((barItem.avgWait / crowdMax) * 100));
+    }
+
     // 出发点：下拉可选「园区中心」或任一项目（默认沿用上次位置）
     var attractions = (bundle.catalog && bundle.catalog.attractions) || [];
     var originOptions = ['园区中心（不指定）'];
@@ -116,6 +132,7 @@ Page({
       alternatives: alternatives,
       mustDoItems: mustDoItems,
       highlightsRows: highlightsRows,
+      crowd: crowd,
       originOptions: originOptions,
       originIndex: originIndex,
       originText: originText,
@@ -158,7 +175,8 @@ Page({
   },
 
   goPlan: function () {
-    wx.switchTab({ url: '/pages/plan/plan' });
+    // 行程页仍在「最优解」主卡入口进入（不在 tabBar 上）
+    wx.navigateTo({ url: '/pages/plan/plan' });
   },
 
   goRank: function () {
@@ -208,7 +226,7 @@ Page({
         '综合评分 ' + item.scoreText + ' 分 · ' + (item.land || '') + ' · ' + item.categoryText,
       showCancel: false,
       confirmText: '知道了',
-      confirmColor: '#ff8a3d'
+      confirmColor: '#2f7cf6'
     });
   },
 
@@ -228,7 +246,7 @@ Page({
         '\n\n确认后把出发点设为这里，按你的位置重算最优解。',
       confirmText: '现在就去',
       cancelText: '再看看',
-      confirmColor: '#ff8a3d',
+      confirmColor: '#2f7cf6',
       success: function (res) {
         if (!res.confirm) return;
         store.setLastAttraction(item.id);

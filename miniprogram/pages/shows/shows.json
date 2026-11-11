@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "娱乐演出",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#f7fbff",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

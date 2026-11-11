@@ -1,0 +1,608 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:34"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:34"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "“友谊号”：达菲和朋友们的特别巡游",
+      "entityId": "entFriendshipDuffyandFriendsSpecialPreParade",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "friendship-duffy-and-friends-special-pre-parade",
+      "subType": "Parade",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Entertainment",
+        "urlFriendlyId": "entertainment",
+        "value": "娱乐演出"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/friendship-duffy-and-friends-special-pre-parade",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-sq-260324_tcm1874-289201.jpeg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-hero_tcm1874-288952.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-hero_tcm1874-288952.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-hero_tcm1874-288952.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-sq-260324_tcm1874-289201.jpeg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "“友谊号”：达菲和朋友们的特别巡游",
+            "latitude": "31.148194334335425",
+            "longitude": "121.66473602935343"
+          }
+        ],
+        "vantagePoints": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "迪士尼小镇观赏点",
+            "latitude": "31.14789443432045",
+            "longitude": "121.66677336770746"
+          },
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "漫月食府观赏点",
+            "latitude": "31.14972841418034",
+            "longitude": "121.66752227226907"
+          },
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "明日世界观赏点",
+            "latitude": "31.148700006827962",
+            "longitude": "121.66421196700058"
+          },
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "幻想曲旋转木马观赏点",
+            "latitude": "31.148563133068915",
+            "longitude": "121.6680019208183"
+          }
+        ]
+      },
+      "route": [
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线1",
+          "latitude": "31.149253",
+          "longitude": "121.66325"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线2",
+          "latitude": "31.149274",
+          "longitude": "121.663351"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线3",
+          "latitude": "31.149116",
+          "longitude": "121.663601"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线4",
+          "latitude": "31.14905",
+          "longitude": "121.663887"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线5",
+          "latitude": "31.148917",
+          "longitude": "121.663993"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线6",
+          "latitude": "31.148693",
+          "longitude": "121.6641"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线7",
+          "latitude": "31.148424",
+          "longitude": "121.664189"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线8",
+          "latitude": "31.148237",
+          "longitude": "121.664342"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线9",
+          "latitude": "31.148086",
+          "longitude": "121.664698"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线10",
+          "latitude": "31.148152",
+          "longitude": "121.665132"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线11",
+          "latitude": "31.148217",
+          "longitude": "121.665446"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线12",
+          "latitude": "31.148177",
+          "longitude": "121.665963"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线13",
+          "latitude": "31.148271",
+          "longitude": "121.666266"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线14",
+          "latitude": "31.148271",
+          "longitude": "121.666421"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线15",
+          "latitude": "31.148051",
+          "longitude": "121.666684"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线16",
+          "latitude": "31.147922",
+          "longitude": "121.66698"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线17",
+          "latitude": "31.147889",
+          "longitude": "121.667301"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线18",
+          "latitude": "31.148028",
+          "longitude": "121.667688"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线19",
+          "latitude": "31.148183",
+          "longitude": "121.668018"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线20",
+          "latitude": "31.148505",
+          "longitude": "121.668168"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线21",
+          "latitude": "31.148785",
+          "longitude": "121.668188"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线22",
+          "latitude": "31.149185",
+          "longitude": "121.668033"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线23",
+          "latitude": "31.149419",
+          "longitude": "121.667816"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线24",
+          "latitude": "31.149643",
+          "longitude": "121.667526"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线25",
+          "latitude": "31.149792",
+          "longitude": "121.667238"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线26",
+          "latitude": "31.150012",
+          "longitude": "121.667158"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线27",
+          "latitude": "31.150303",
+          "longitude": "121.667218"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线28",
+          "latitude": "31.150591",
+          "longitude": "121.667151"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线29",
+          "latitude": "31.150722",
+          "longitude": "121.667254"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线30",
+          "latitude": "31.150826",
+          "longitude": "121.667306"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线31",
+          "latitude": "31.150905",
+          "longitude": "121.667317"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "达菲缤纷夏日巡游路线32",
+          "latitude": "31.150965",
+          "longitude": "121.667305"
+        }
+      ],
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/entertainment/theme-park/friendship-duffy-and-friends-special-pre-parade/",
+      "descriptions": {
+        "shortDescriptionText": "<p>达菲和朋友们穿上10岁生日庆典限定新装，跳着全新的舞步，在异彩缤纷的浪花中，萌力全开，扑面而来！邀你一起跳舞，一起欢庆，一起传递友谊的奇妙。\n<br />\n<br />\n<small>*效果请以实际运营情况为准。\n<br />\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p>",
+        "shortDescriptionMobileText": "<p>达菲和朋友们穿上10岁生日庆典限定新装，跳着全新的舞步，在异彩缤纷的浪花中，萌力全开，扑面而来！邀你一起跳舞，一起欢庆，一起传递友谊的奇妙。\n<br/>\n<br/>\n<small>*效果请以实际运营情况为准。\n<br/>\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p>"
+      },
+      "multiLocation": true,
+      "multiLocationLabel": "多个位置",
+      "facilityId": "entFriendshipDuffyandFriendsSpecialPreParade;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landGardensOfImagination",
+          "name": "奇想花园",
+          "urlFriendlyId": "gardens-imagination"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "classic-characters",
+              "value": "经典角色"
+            },
+            {
+              "urlFriendlyId": "outdoor-entertainment",
+              "value": "室外娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "parades",
+              "value": "巡游"
+            },
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Entertainment",
+              "urlFriendlyId": "entertainment",
+              "value": "娱乐演出"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            },
+            {
+              "id": "SeasonalEvents",
+              "urlFriendlyId": "seasonal-events",
+              "value": "季节活动"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "gardens-imagination",
+              "value": "奇想花园"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "FriendSHIP! Duffy and Friends’ Special Pre-Parade",
+            "referenceKey": "FriendSHIP! Duffy and Friends’ Special Pre-Parade",
+            "thumbnail": null,
+            "chapters": [
+              {
+                "title": "FriendSHIP! Duffy and Friends’ Special Pre-Parade",
+                "subChapters": [
+                  {
+                    "title": "FriendSHIP! Duffy and Friends’ Special Pre-Parade",
+                    "thumbnail": null,
+                    "assets": [
+                      {
+                        "type": "video",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-sq-update_tcm1874-288953.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-hero_tcm1874-288952.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "sourceForVideo": "https://static.shanghaidisneyresort.com/web-img-gallery/friendship-20260325.mp4"
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-hero_tcm1874-288952.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-hero_tcm1874-288952.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-sq-0330_tcm1874-289347.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-16-9-0330_tcm1874-289346.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "12:05&15:35",
+        "statusCode": "",
+        "separator": " | ",
+        "timeType": "SHOW_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

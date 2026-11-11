@@ -3,22 +3,23 @@
     "pages/index/index",
     "pages/rank/rank",
     "pages/watchlist/watchlist",
+    "pages/shows/shows",
     "pages/plan/plan",
     "pages/settings/settings",
     "pages/forecast/forecast"
   ],
   "window": {
     "navigationBarTitleText": "排队最优解",
-    "navigationBarBackgroundColor": "#0b0e14",
-    "navigationBarTextStyle": "white",
-    "backgroundColor": "#0b0e14",
-    "backgroundTextStyle": "light"
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7fbff",
+    "backgroundTextStyle": "dark"
   },
   "tabBar": {
-    "color": "#7a8494",
-    "selectedColor": "#ff8a3d",
-    "backgroundColor": "#12161f",
-    "borderStyle": "black",
+    "color": "#7d8ba1",
+    "selectedColor": "#2f7cf6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -33,8 +34,8 @@
         "text": "清单"
       },
       {
-        "pagePath": "pages/plan/plan",
-        "text": "行程"
+        "pagePath": "pages/shows/shows",
+        "text": "演出"
       },
       {
         "pagePath": "pages/settings/settings",

@@ -16,7 +16,7 @@
   var PREFS_KEY = 'dq_prefs_v1';
   var WEEK = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
   var PARTY_TEXT = { family: '亲子家庭', thrill: '刺激党', kids: '带小孩', mixed: '混合同行' };
-  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' };
+  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出' };
   var TABS = [
     { key: 'mustDo', label: '必玩' },
     { key: 'avoid', label: '避开' },
@@ -222,7 +222,7 @@
   }
 
   var initialViewDone = false;
-  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast'];
+  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows'];
 
   function applyInitialView() {
     if (initialViewDone) return;
@@ -251,7 +251,8 @@
       loadJson('catalog.json'),
       loadJson('latest.json'),
       loadJson('forecast.json').catch(function () { return null; }),
-      loadJson('hourly-stats.json').catch(function () { return null; })
+      loadJson('hourly-stats.json').catch(function () { return null; }),
+      loadJson('shows.json').catch(function () { return null; })
     ]).then(function (arr) {
       var catalog = arr[0];
       var latest = arr[1];
@@ -267,6 +268,7 @@
         waits: latest.waits,
         forecast: arr[2] || null,
         hourlyStats: arr[3] || null,
+        shows: arr[4] || null,
         updatedAt: latest.updatedAt || latest.fetchedAt || null,
         fetchedAt: latest.fetchedAt || null,
         source: latest.source || 'unknown',
@@ -403,6 +405,7 @@
       '<span class="topbar-sub">' + esc(dateLine(ctx.bundle)) + ' · ' + esc(fmt.relativeUpdated(ctx.bundle.updatedAt, ctx.bundle.nowMs)) + '</span></div>' +
       '<button class="refresh-btn" data-act="refresh" title="刷新">↻</button></div>' +
 
+      crowdCardHtml(ctx.bundle) +
       '<div class="origin-bar"><span class="origin-label">出发点</span>' +
       '<select class="origin-select" data-act="origin">' + originOptions + '</select>' +
       '<span class="origin-tip">' + esc(originName === '园区中心' ? '步行时间按这里算' : '步行按此位置算') + '</span></div>' +
@@ -894,6 +897,138 @@
     return attr.heightCm ? ' · ' + attr.heightCm + 'cm' : '';
   }
 
+
+  /* ---------------- 今日客流（首页顶部） ---------------- */
+  function crowdInfo(bundle) {
+    var waits = (bundle.waits || []).filter(function (w) {
+      return w && w.isOpen !== false && w.status === 'operating' && typeof w.waitMinutes === 'number';
+    });
+    var sum = 0;
+    waits.forEach(function (w) { sum += w.waitMinutes; });
+    var avg = waits.length ? Math.round(sum / waits.length) : 0;
+    var heat = Math.max(0, Math.min(100, Math.round(avg / 60 * 100)));
+    var level = heat < 30 ? '清闲' : heat < 45 ? '适中' : heat < 60 ? '偏挤' : '拥挤';
+    var tone = heat < 30 ? 't1' : heat < 45 ? 't2' : heat < 60 ? 't3' : 't4';
+    var stats = bundle.hourlyStats;
+    var bars = '';
+    var peakText = '';
+    var quietText = '';
+    if (stats && stats.park && stats.park.byHour) {
+      var hours = stats.park.byHour;
+      var max = 1;
+      hours.forEach(function (h) { if (typeof h.avgWait === 'number' && h.avgWait > max) max = h.avgWait; });
+      bars = hours.map(function (h) {
+        var v = typeof h.avgWait === 'number' ? h.avgWait : 0;
+        var pct = Math.round(v / max * 100);
+        return '<span class="crowd-bar" style="height:' + Math.max(8, pct) + '%" title="' +
+          pad2(h.hour) + ':00 ' + (typeof h.avgWait === 'number' ? h.avgWait : '--') + ' 分钟"></span>';
+      }).join('');
+      if (stats.park.busiestHours && stats.park.busiestHours.length) {
+        var b = stats.park.busiestHours[0];
+        peakText = pad2(b.hour) + ':00 · ' + b.avgWait + ' 分钟';
+      }
+      if (stats.park.quietestHours && stats.park.quietestHours.length) {
+        var q = stats.park.quietestHours[0];
+        quietText = pad2(q.hour) + ':00 · ' + q.avgWait + ' 分钟';
+      }
+    }
+    return {
+      heat: heat, level: level, tone: tone, avgWait: avg, openCount: waits.length,
+      bars: bars, peakText: peakText, quietText: quietText, hasStats: !!peakText
+    };
+  }
+
+  function crowdCardHtml(bundle) {
+    var c = crowdInfo(bundle);
+    var peakHour = c.peakText ? c.peakText.split(' · ')[0] : '--';
+    return '<div class="card crowd-card" data-act="forecast">' +
+      '<div class="crowd-head"><span class="crowd-title">今日客流</span>' +
+      '<span class="crowd-level ' + c.tone + '">' + esc(c.level) + '</span>' +
+      '<span class="crowd-heat"><b class="num">' + c.heat + '</b> 热度</span></div>' +
+      '<div class="crowd-nums">' +
+      '<div class="crowd-cell"><b class="num">' + c.avgWait + '</b><span>平均排队 分</span></div>' +
+      '<div class="crowd-cell"><b class="num">' + c.openCount + '</b><span>开放项目</span></div>' +
+      '<div class="crowd-cell"><b class="num">' + esc(peakHour) + '</b><span>最挤时段</span></div>' +
+      '</div>' +
+      (c.bars ? '<div class="crowd-bars">' + c.bars + '</div>' : '') +
+      '<div class="crowd-note">' + (c.hasStats
+        ? '最挤 ' + esc(c.peakText) + ' · 最空 ' + esc(c.quietText)
+        : '分时预测还没生成，点这里看') + '</div>' +
+      '</div>';
+  }
+
+  /* ---------------- 娱乐演出 ---------------- */
+  function nowChinaMinutes(bundle) {
+    var p = fmt.beijingParts(fmt.toDate(bundle.nowIso));
+    return p.hour * 60 + p.minute;
+  }
+
+  function hhmmMinutes(s) {
+    var m = /^(\d{1,2}):(\d{2})$/.exec(s || '');
+    if (!m) return -1;
+    return parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+  }
+
+  function htmlShows() {
+    var bundle = currentBundle();
+    var data = bundle.shows;
+    var nowMin = nowChinaMinutes(bundle);
+    if (!data || !data.shows || !data.shows.length) {
+      return emptyBox('🎭', '演出时刻表还没生成',
+        '场次来自上海迪士尼官网，今天还没抓到数据，点「刷新」再试一次', '刷新', 'refresh');
+    }
+    // 排序：还有场次的按「下一场」时间升序，已结束/停演的排最后
+    var decorated = data.shows.map(function (s) {
+      var times = (s.times || []).slice().sort();
+      var nextMin = Infinity;
+      for (var i = 0; i < times.length; i++) {
+        var m = hhmmMinutes(times[i]);
+        if (m >= nowMin) { nextMin = m; break; }
+      }
+      return { show: s, times: times, nextMin: nextMin };
+    });
+    decorated.sort(function (a, b) {
+      if (a.nextMin !== b.nextMin) return a.nextMin - b.nextMin;
+      var an = a.show.name || '';
+      var bn = b.show.name || '';
+      return an < bn ? -1 : an > bn ? 1 : 0;
+    });
+    var shows = decorated.map(function (d) { return d.show; });
+    var cards = shows.map(function (s) {
+      var times = (s.times || []).slice().sort();
+      var nextIdx = -1;
+      for (var i = 0; i < times.length; i++) {
+        if (hhmmMinutes(times[i]) >= nowMin) { nextIdx = i; break; }
+      }
+      var chips = '';
+      if (nextIdx >= 0) {
+        var nm = times[nextIdx];
+        var diff = hhmmMinutes(nm) - nowMin;
+        chips += '<span class="show-time on"><b>' + esc(nm) + '</b>' +
+          (diff <= 300 ? '<i>' + diff + '分后</i>' : '<i>今天</i>') + '</span>';
+        if (times[nextIdx + 1]) chips += '<span class="show-time">' + esc(times[nextIdx + 1]) + '</span>';
+      } else if (s.status === 'closed') {
+        chips = '<span class="show-time off">今日停演</span>';
+      } else if (times.length) {
+        chips = '<span class="show-time off">今日已结束</span>';
+      } else {
+        chips = '<span class="show-time off">暂无场次</span>';
+      }
+      var img = s.imageUrl
+        ? '<span class="show-img" style="background-image:url(\'' + esc(s.imageUrl) + '\')"></span>'
+        : '<span class="show-img noimg">🎭</span>';
+      return '<div class="show-card">' + img +
+        '<div class="show-body"><span class="show-land">' + esc(s.land || '娱乐演出') + '</span>' +
+        '<span class="show-name">' + esc(s.name) + '</span>' +
+        '<span class="show-times">' + chips + '</span></div></div>';
+    }).join('');
+    return '<div class="page">' +
+      '<div class="list-topbar"><button class="refresh-pill" data-act="refresh">↻ 刷新</button>' +
+      '<span class="update-time">场次日期：' + esc(data.businessDate || '') + '</span></div>' +
+      '<div class="show-grid">' + cards + '</div>' +
+      '<div class="footnote">场次来自上海迪士尼官网，可能临时调整，以现场为准。</div></div>';
+  }
+
   function htmlSettings() {
     var bundle = currentBundle();
     var prefs = getPrefs();
@@ -1037,6 +1172,7 @@
       else if (state.view === 'rank') screenEl.innerHTML = htmlRank();
       else if (state.view === 'watchlist') screenEl.innerHTML = htmlWatchlist();
       else if (state.view === 'forecast') screenEl.innerHTML = htmlForecast();
+      else if (state.view === 'shows') screenEl.innerHTML = htmlShows();
       else if (state.view === 'plan') screenEl.innerHTML = htmlPlan();
       else screenEl.innerHTML = htmlSettings();
     } catch (e) {

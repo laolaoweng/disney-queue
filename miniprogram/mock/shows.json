@@ -1,0 +1,483 @@
+{
+ "schemaVersion": 1,
+ "generatedAt": "2026-11-11T06:27:04Z",
+ "source": "wam/facility/detail",
+ "parkId": "shdr",
+ "businessDate": "2026-11-11",
+ "shows": [
+  {
+   "id": "entShanghaiDisneylandBandCelebratesMickeyMinniesBirthdaySurpriseMoment",
+   "name": "上海迪士尼乐团庆祝米奇和米妮生日的惊喜时刻",
+   "subType": "Concert",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment-20261103-sq_tcm1874-295003.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment-20261103-hero_tcm1874-295004.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "9:00&10:00&11:00",
+   "times": [
+    "09:00",
+    "10:00",
+    "11:00"
+   ]
+  },
+  {
+   "id": "entTheJAMMitors",
+   "name": "分类回收杂物打",
+   "subType": "Atmosphere",
+   "land": "明日世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-the-jammitors-0225-sq_tcm1874-234882.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-the-jammitors-0225-hero_tcm1874-234881.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "10:05&16:20",
+   "times": [
+    "10:05",
+    "16:20"
+   ]
+  },
+  {
+   "id": "entEyeOfStormCaptainJacksSpectacular",
+   "name": "风暴来临：杰克船长之惊天特技大冒险",
+   "subType": "Stage Show",
+   "land": "宝藏湾",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-sq-new_tcm1874-115043.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-new_tcm1874-115042.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "10:30&11:10&11:50&13:00&13:40&14:20&15:30&16:00&16:30&17:10",
+   "times": [
+    "10:30",
+    "11:10",
+    "11:50",
+    "13:00",
+    "13:40",
+    "14:20",
+    "15:30",
+    "16:00",
+    "16:30",
+    "17:10"
+   ]
+  },
+  {
+   "id": "entFrozenSingAlongCelebration",
+   "name": "冰雪奇缘：欢唱盛会",
+   "subType": "Concert",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-frozen-sing-along-celebration-sq-formal-v1_tcm1874-198173.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-frozen-sing-along-celebration-hero-formal-v1_tcm1874-198172.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "10:45&11:30&13:15&14:00&14:45&15:30&16:30&17:15",
+   "times": [
+    "10:45",
+    "11:30",
+    "13:15",
+    "14:00",
+    "14:45",
+    "15:30",
+    "16:30",
+    "17:15"
+   ]
+  },
+  {
+   "id": "entMickeyStorybookAdventure",
+   "name": "米奇妙游童话书",
+   "subType": "Concert",
+   "land": "米奇大街",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-adventure-251231-sq_tcm1874-285653.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-adventure-hero-v2_tcm1874-223146.png",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "10:45&11:45&13:00&14:00&15:10&16:30&17:35&18:55",
+   "times": [
+    "10:45",
+    "11:45",
+    "13:00",
+    "14:00",
+    "15:10",
+    "16:30",
+    "17:35",
+    "18:55"
+   ]
+  },
+  {
+   "id": "entBaiLingStorytelling",
+   "name": "梦幻故事会",
+   "subType": "Atmosphere",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero-sq_tcm1874-155895.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero_tcm1874-155894.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "11:15&13:00&14:30&16:10",
+   "times": [
+    "11:15",
+    "13:00",
+    "14:30",
+    "16:10"
+   ]
+  },
+  {
+   "id": "entVoodooAlleyFight",
+   "name": "巫毒巷打斗",
+   "subType": "Atmosphere",
+   "land": "宝藏湾",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-voodoo-alley-fight-hero-sq_tcm1874-174290.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-voodoo-alley-fight-hero_tcm1874-174289.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "11:25&11:35",
+   "times": [
+    "11:25",
+    "11:35"
+   ]
+  },
+  {
+   "id": "entFriendshipDuffyandFriendsSpecialPreParade",
+   "name": "“友谊号”：达菲和朋友们的特别巡游",
+   "subType": "Parade",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-sq-260324_tcm1874-289201.jpeg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-friendship-duffy-and-friends-special-pre-parade-hero_tcm1874-288952.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "12:05&15:35",
+   "times": [
+    "12:05",
+    "15:35"
+   ]
+  },
+  {
+   "id": "entMickeysStorybookExpress",
+   "name": "米奇童话专列",
+   "subType": "Parade",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-glimmer-sq_tcm1874-289203.png",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-glimmer-hero_tcm1874-289204.png",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "12:15&15:45",
+   "times": [
+    "12:15",
+    "15:45"
+   ]
+  },
+  {
+   "id": "entTheHeartOfMagic",
+   "name": "“奇妙之心”城堡秀",
+   "subType": "Concert",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/the-heart-of-magic-sq-0409_tcm1874-289616.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/the-heart-of-magic-hero_tcm1874-288951.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "13:40&15:05&16:35",
+   "times": [
+    "13:40",
+    "15:05",
+    "16:35"
+   ]
+  },
+  {
+   "id": "entSwabbieFight",
+   "name": "水手打斗",
+   "subType": "Atmosphere",
+   "land": "宝藏湾",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-swabbie-fight-hero-sq_tcm1874-174229.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-swabbie-fight-hero_tcm1874-174228.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "13:45&14:55&16:05",
+   "times": [
+    "13:45",
+    "14:55",
+    "16:05"
+   ]
+  },
+  {
+   "id": "entAPiratesLifeForYou",
+   "name": "海盗大人生",
+   "subType": "Atmosphere",
+   "land": "宝藏湾",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-a-pirates-life-for-you-hero-sq_tcm1874-155887.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-a-pirates-life-for-you-hero_tcm1874-155886.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "14:05&15:25",
+   "times": [
+    "14:05",
+    "15:25"
+   ]
+  },
+  {
+   "id": "entShanghaiDisneylandHotelLobbyPianist",
+   "name": "上海迪士尼酒店钢琴师",
+   "subType": "Atmosphere",
+   "land": "",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-hotel-lobby-pianist-hero-sq_tcm1874-174114.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-hotel-lobby-pianist-hero_tcm1874-174113.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "15:00&16:30",
+   "times": [
+    "15:00",
+    "16:30"
+   ]
+  },
+  {
+   "id": "entMickeyFriendsTravelAroundChina",
+   "name": "米奇和朋友们游中国",
+   "subType": "Atmosphere",
+   "land": "",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-friends-travel-around-china-sq-20240909_tcm1874-272828.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-friends-travel-around-china-hero-20240909_tcm1874-272827.jpg",
+   "status": "scheduled",
+   "statusCode": "STNDOPR",
+   "timeInfo": "17:15&19:15",
+   "times": [
+    "17:15",
+    "19:15"
+   ]
+  },
+  {
+   "id": "entClubDestinE",
+   "name": "E空间聚乐部",
+   "subType": "Stage Show",
+   "land": "明日世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-sq-20250115_tcm1874-276440.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-hero-20250115_tcm1874-276441.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "18:45",
+   "times": [
+    "18:45"
+   ]
+  },
+  {
+   "id": "entIgniteDreamNighttimeSpectacular",
+   "name": "奇梦之光幻影秀",
+   "subType": "Fireworks",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero-sq_tcm1874-220572.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero_tcm1874-220570.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "20:00&21:15",
+   "times": [
+    "20:00",
+    "21:15"
+   ]
+  },
+  {
+   "id": "entMagicTogether",
+   "name": "奇妙在身边：10岁生日特别欢庆",
+   "subType": "Fireworks",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-magic-together-sq-1_tcm1874-289030.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-magic-together-hero-1_tcm1874-289031.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "20:15&21:30",
+   "times": [
+    "20:15",
+    "21:30"
+   ]
+  },
+  {
+   "id": "entMickeyandMinniesBirthdayCelebrationCastleProjection",
+   "name": "米奇和米妮生日城堡投影​",
+   "subType": "Fireworks",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-and-minnies-birthday-celebration-2026-sq_tcm1874-294940.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-and-minnies-birthday-celebration-2026_tcm1874-294939.jpg",
+   "status": "scheduled",
+   "statusCode": "",
+   "timeInfo": "20:20&21:35",
+   "times": [
+    "20:20",
+    "21:35"
+   ]
+  },
+  {
+   "id": "entCelebratethe10thBirthdaywithLinaBellattheEntryPortal",
+   "name": " 玲娜贝儿的钟楼欢庆“十”光",
+   "subType": "Stage Show",
+   "land": "米奇大街",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bell-portal-sq_tcm1874-291299.jpeg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bell-portal-hero_tcm1874-291298.jpeg",
+   "status": "closed",
+   "statusCode": "ScheduledClosedDay",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entShanghaiDisneylandBand",
+   "name": "上海迪士尼乐团",
+   "subType": "Concert",
+   "land": "米奇大街",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-hero-sq-new-again_tcm1874-115047.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-hero-new_tcm1874-115046.jpg",
+   "status": "closed",
+   "statusCode": "ScheduledClosedDay",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entTravelingTroubadours",
+   "name": "吟游剧团",
+   "subType": "Atmosphere",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-traveling-troubadours-hero-sq_tcm1874-174269.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-traveling-troubadours-hero_tcm1874-174268.jpg",
+   "status": "closed",
+   "statusCode": "ScheduledClosedDay",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entTaiChiWithCharacter",
+   "name": "唐式太极",
+   "subType": "Atmosphere",
+   "land": "奇想花园",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-tai-chi-with-character-hero-sq-20220620_tcm1874-239954.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-tai-chi-with-character-hero-20220620_tcm1874-239953.jpg",
+   "status": "closed",
+   "statusCode": "ScheduledClosedDay",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entDisneyCharacterEncounteratShanghaiDisneylandHotel",
+   "name": "在上海迪士尼乐园酒店巧遇迪士尼朋友",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-hotel-meet-hero-sq_tcm1874-241234.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-hotel-meet-hero_tcm1874-241233.jpg",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entAvengersPatrol",
+   "name": "复仇者联盟巡逻",
+   "subType": "Stage Show",
+   "land": "明日世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-avengers-special-mission-sq-20230506_tcm1874-258648.png",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-avengers-special-mission-hero-20230506_tcm1874-258647.png",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entStitchEncounterInteractwithStitch",
+   "name": "太空对话史迪奇 – 与史迪奇互动",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "明日世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-stitch-encounter-hero-sq-new-again_tcm1874-114863.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-stitch-encounter-hero-new_tcm1874-114864.jpg",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entFantasyFestival",
+   "name": "梦幻节",
+   "subType": "Atmosphere",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-fantasy-festival-hero-sq_tcm1874-174135.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-fantasy-festival-hero_tcm1874-174134.jpg",
+   "status": "closed",
+   "statusCode": "ScheduledClosedDay",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entPiratesRoaming",
+   "name": "海盗氛围",
+   "subType": "Atmosphere",
+   "land": "宝藏湾",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-pirates-roaming-hero-sq_tcm1874-174107.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-pirates-roaming-hero_tcm1874-174106.jpg",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entASpecialCelebrationintheHundredAcreWood",
+   "name": "百亩森林里的欢庆会",
+   "subType": "Atmosphere",
+   "land": "梦幻世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-traveling-troubadours-sq-202400809-gallery1_tcm1874-272636.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-traveling-troubadours-hero-202400809-gallery1_tcm1874-272637.jpg",
+   "status": "closed",
+   "statusCode": "ScheduledClosedDay",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entMickeyandMinniesCelebrationatEntryPortal",
+   "name": "米奇米妮的钟楼欢庆会​",
+   "subType": "Stage Show",
+   "land": "米奇大街",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mm-bell-portal-sq_tcm1874-295040.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mm-bell-portal-hero_tcm1874-295039.jpg",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entToySoldiersBucketOFun",
+   "name": "绿色奇兵:欢乐玩具桶",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "迪士尼·皮克斯玩具总动员",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-characters-toy-soldiers-bucket-o-fun-sq-20230529_tcm1874-259242.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-characters-toy-soldiers-bucket-o-fun-hero-20230529_tcm1874-259241.jpg",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entDisneyXiaoTuiTheMagicalRecycleBin",
+   "name": "迪士尼小推：神奇回收箱",
+   "subType": "Stage Show",
+   "land": "明日世界",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-disney-xiaotui-the-magical-recycle-bin-sq-20240924_tcm1874-273353.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-disney-xiaotui-the-magical-recycle-bin-hero-20240924_tcm1874-273352.jpg",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entDisneyZootopiaComesAlive",
+   "name": "迪士尼疯狂动物城生活秀",
+   "subType": "Atmosphere",
+   "land": "疯狂动物城",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-disney-zootopia-comes-alive-sq-2023121202_tcm1874-269145.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-disney-zootopia-comes-alive-hero-2023121202_tcm1874-269144.jpg",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  },
+  {
+   "id": "entSnapPicturesofWoodyandJessie",
+   "name": "邂逅玩具朋友们",
+   "subType": "Character Experience - Meet & Greet",
+   "land": "",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-snap-pictures-of-woody-and-buzz-sq-20230609_tcm1874-261104.png",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-snap-pictures-of-woody-and-buzz-hero-20230609_tcm1874-261103.png",
+   "status": "closed",
+   "statusCode": "",
+   "timeInfo": "",
+   "times": []
+  }
+ ]
+}

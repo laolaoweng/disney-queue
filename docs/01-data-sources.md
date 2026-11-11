@@ -67,6 +67,32 @@ CONTRACT 里 `down` / `refurbishment` 两个枚举**当前数据源永远产不�
 最终 catalog = **30 个可排队项目，全部有 Queue-Times id**（其中 2 个项目各多挂 1 个单人通道 id：
 `attSevenDwarfsMineTrain` → [2990, 13818]、`attZootopiaHotPursuit` → [12392, 13819]）。
 
+### 2.1 演出时刻表：`POST /rap/facility/detail`（2026-11-11 实测）
+
+| 项 | 值 |
+| --- | --- |
+| 接口 | `POST https://cu.apigw.shanghaidisneyresort.com/steamboat-wam/api/rap/facility/detail` |
+| 请求体 | `{"entityId":"<entXxx>","entityType":"Entertainment","facilityId":"<entXxx>;entityType=Entertainment;destination=shdr"}` |
+| 必需请求头 | `client: WEB`、`Origin/Referer: https://www.shanghaidisneyresort.com`、`Content-Type: application/json`、**`Accept-Language: zh-CN`**（少了它 `name` 返回英文） |
+| 成功状态码 | **HTTP 201**（不是 200——所以判定要按 2xx，写死 200 会全部误判失败） |
+| 返回结构 | `data.data`：`name` / `entityId` / `urlFriendlyId` / `subType` / `primaryGroup` / `media.finderListMobileSquare.url` / `media.finderDetailMobileHero.url` / `ancestorFacilities.land.name` / `duration` / `schedule` |
+| 时刻字段 | `schedule = {businessDate, timeInfo, statusCode, separator, timeType}`，`timeType` 实测 `SHOW_TIME` |
+| `timeInfo` 格式 | 当天场次的 `HH:MM`，用 **`&`** 分隔：`"12:15&15:45"`、`"10:45&11:30&13:15&14:00&14:45&15:30&16:30&17:15"`；**小时不补零**：`"9:00&10:00&11:00"` |
+| 停演语义 | `statusCode == "ScheduledClosedDay"` 或 `timeInfo == ""` → 当日无场次（`times: []`）；有场次时 `statusCode` 可能是 `""` 或 `"STNDOPR"` |
+| 范围 | WAM 全量里 `facilityId` 以 `ent` 开头的 **33 条**（`entityType == "Entertainment"`）；其中部分无 `land`（酒店活动等） |
+
+用途：`collector/fetch_shows.py` 逐条 POST → 解析 `schedule.timeInfo` → **`data/shows.json`**（33 条演出、
+按「有场次的在前、按首个场次升序，其余按名称」排序；每条含 `id/name/subType/land/imageUrl/heroUrl/
+status(scheduled|closed|unknown)/statusCode/timeInfo/times/businessDate`）。原始响应缓存到
+`raw/shows/<entityId>.json`（已缓存则不重复请求，`--refresh` 强制刷新）；**串行、每请求间隔 0.7s**，
+失败重试 2 次，失败条目写 `data/shows.error.json` 并以非零退出。2026-11-11 实测：33 条中 18 条当日有
+场次、15 条停演。
+
+```powershell
+python collector/fetch_shows.py              # 增量（有缓存则跳过）
+python collector/fetch_shows.py --refresh    # 全部重抓（33 个请求，约 25s）
+```
+
 ---
 
 ## 3. 历史样本与冷启动
@@ -198,7 +224,8 @@ python collector\collect.py                        # auto：TCP 失败自动回�
 | `collector/fetch_history.py` | 从 `hjeee3-tech/shanghai-disney-waits` 镜像下载 `raw/history/YYYY-MM-DD.csv`（先探测最新日期，逐日校验） |
 | `collector/import_history.py` | `raw/history/*.csv` → `data/history/*.jsonl`（快照合并、UTC、主入口优先、幂等） |
 | `collector/build_hourly_stats.py` | `data/history/*.jsonl` → `data/hourly-stats.json`（CONTRACT §6：两层平均、最空/最挤时段、可靠性过滤） |
-| `collector/test_collect.py` | 32 个用例（catalog/latest/采集回退/历史下载导入/分时统计/预测/仓库冒烟），`python collector/test_collect.py`，纯标准库 + 临时目录，不出网 |
+| `collector/fetch_shows.py` | WAM `ent*` 33 条演出 → `POST /rap/facility/detail` → `data/shows.json`（缓存 `raw/shows/`，0.7s 串行，失败重试，`--refresh` 强制重抓） |
+| `collector/test_collect.py` | 41 个用例（catalog/latest/采集回退/历史下载导入/分时统计/预测/演出时刻表/仓库冒烟），`python collector\test_collect.py`，纯标准库 + 临时目录，不出网 |
 | `.github/workflows/collect.yml` | 每 10 分钟：checkout → collect → forecast（最多 20h 一次）→ 有变化才 commit/push；`concurrency` 防并发；失败上传 error artifact |
 
 手动跑一遍（项目根）：
@@ -210,6 +237,7 @@ python collector\fetch_history.py --days 14
 python collector\import_history.py
 python collector\build_hourly_stats.py --days 14
 python collector\build_forecast.py --bootstrap-csv
+python collector\fetch_shows.py
 python collector\test_collect.py
 ```
 

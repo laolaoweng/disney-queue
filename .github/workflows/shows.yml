@@ -1,0 +1,51 @@
+name: collect-shows
+
+# 演出时刻表每天变一次，单独一条每天跑（33 个请求约 25s）。
+# 北京时间 00:20 = UTC 16:20，赶在早上开园前把当天场次更新好。
+on:
+  schedule:
+    - cron: '20 16 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: collect-shows
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  shows:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch show schedules (official WAM facility/detail)
+        run: python collector/fetch_shows.py
+
+      - name: Commit data/shows.json
+        run: |
+          git config user.name "disney-queue-bot"
+          git config user.email "disney-queue-bot@users.noreply.github.com"
+          git add data/shows.json data/shows.error.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "shows.json 无变化"
+          else
+            git commit -m "data(shows): 更新演出时刻表 $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: Upload error file on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shows-error
+          path: data/shows.error.json
+          retention-days: 7

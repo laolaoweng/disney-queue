@@ -7,7 +7,7 @@
 .sk-line {
   height: 28rpx;
   border-radius: 8rpx;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(31, 88, 160, 0.07);
   margin-bottom: 24rpx;
 }
 
@@ -25,8 +25,8 @@
   margin-top: 28rpx;
   padding: 16rpx 48rpx;
   border-radius: 999rpx;
-  background: rgba(255, 138, 61, 0.16);
-  color: #ffab6b;
+  background: rgba(47, 124, 246, 0.12);
+  color: #2f7cf6;
   font-size: 26rpx;
 }
 
@@ -35,9 +35,9 @@
   margin: 0 24rpx 24rpx;
   padding: 40rpx 36rpx 36rpx;
   border-radius: 36rpx;
-  background: linear-gradient(160deg, #1d2536 0%, #151b26 55%, #141a24 100%);
-  border: 1rpx solid rgba(255, 138, 61, 0.16);
-  box-shadow: 0 16rpx 48rpx rgba(0, 0, 0, 0.35);
+  background: linear-gradient(160deg, #f2f7ff 0%, #ffffff 55%, #ffffff 100%);
+  border: 1rpx solid rgba(47, 124, 246, 0.12);
+  box-shadow: 0 12rpx 32rpx rgba(47, 124, 246, 0.12);
 }
 
 .hero-top {
@@ -49,7 +49,7 @@
 .hero-label {
   font-size: 24rpx;
   letter-spacing: 4rpx;
-  color: #ffab6b;
+  color: #2f7cf6;
 }
 
 .hero-score {
@@ -59,13 +59,13 @@
 
 .hero-score-num {
   font-size: 44rpx;
-  color: #ff8a3d;
+  color: #2f7cf6;
 }
 
 .hero-score-unit {
   margin-left: 6rpx;
   font-size: 22rpx;
-  color: #ffab6b;
+  color: #2f7cf6;
 }
 
 .hero-name {
@@ -74,7 +74,7 @@
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 1rpx;
-  color: #ffffff;
+  color: #16233a;
 }
 
 .hero-tags {
@@ -110,32 +110,32 @@
 }
 
 .hero-num.walk {
-  color: #9fb3cc;
+  color: #66748c;
 }
 
 .hero-num-unit {
   margin-left: 10rpx;
   font-size: 26rpx;
-  color: #8b97aa;
+  color: #66748c;
 }
 
 .hero-num-label {
   display: block;
   margin-top: 10rpx;
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 .hero-divider {
   width: 1rpx;
   margin: 8rpx 28rpx;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(31, 88, 160, 0.10);
 }
 
 .hero-reasons {
   margin-top: 30rpx;
   padding-top: 24rpx;
-  border-top: 1rpx solid rgba(255, 255, 255, 0.07);
+  border-top: 1rpx solid rgba(31, 88, 160, 0.08);
 }
 
 .reason {
@@ -149,20 +149,20 @@
   height: 10rpx;
   margin: 16rpx 14rpx 0 2rpx;
   border-radius: 50%;
-  background: #ff8a3d;
+  background: #2f7cf6;
   flex-shrink: 0;
 }
 
 .reason-text {
   font-size: 28rpx;
   line-height: 1.55;
-  color: #d5dde8;
+  color: #2a3a55;
 }
 
 .hero-forecast {
   margin-top: 14rpx;
   font-size: 24rpx;
-  color: #8b97aa;
+  color: #66748c;
 }
 
 .hero-actions {
@@ -181,15 +181,15 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #ff9a4d, #ff6a1f);
-  color: #1a1206;
-  box-shadow: 0 10rpx 28rpx rgba(255, 106, 31, 0.28);
+  background: linear-gradient(135deg, #4c93ff, #2f7cf6);
+  color: #ffffff;
+  box-shadow: 0 10rpx 28rpx rgba(47, 124, 246, 0.28);
 }
 
 .btn-ghost {
   margin-left: 20rpx;
-  background: rgba(255, 255, 255, 0.06);
-  color: #c6cfdc;
+  background: rgba(31, 88, 160, 0.07);
+  color: #66748c;
   font-weight: 500;
 }
 
@@ -209,14 +209,14 @@
 .summary-text {
   display: block;
   font-size: 26rpx;
-  color: #dfe6f0;
+  color: #16233a;
 }
 
 .summary-sub {
   display: block;
   margin-top: 8rpx;
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 .summary-plan {
@@ -226,7 +226,7 @@
 
 .summary-plan-num {
   font-size: 44rpx;
-  color: #ff8a3d;
+  color: #2f7cf6;
   line-height: 1;
 }
 
@@ -234,7 +234,7 @@
   display: block;
   margin-top: 8rpx;
   font-size: 20rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 /* ---------- 必玩提醒 ---------- */
@@ -251,7 +251,7 @@
 
 .must-hint {
   font-size: 20rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 .must-row {
@@ -259,7 +259,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 22rpx 0;
-  border-top: 1rpx solid rgba(255, 255, 255, 0.07);
+  border-top: 1rpx solid rgba(31, 88, 160, 0.08);
 }
 
 .must-main {
@@ -276,7 +276,7 @@
 .must-name {
   font-size: 30rpx;
   font-weight: 600;
-  color: #eef2f7;
+  color: #16233a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -291,7 +291,7 @@
   display: block;
   margin-top: 8rpx;
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 .must-right {
@@ -309,19 +309,19 @@
 .must-wait.closed {
   font-size: 26rpx;
   line-height: 52rpx;
-  color: #5a6473;
+  color: #9aa6b8;
 }
 
 .must-unit {
   margin-top: 2rpx;
   font-size: 20rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 .must-go {
   margin-top: 8rpx;
   font-size: 22rpx;
-  color: #ff9a4d;
+  color: #2f7cf6;
 }
 
 /* ---------- 备选列表 ---------- */
@@ -339,12 +339,12 @@
 .section-title {
   font-size: 28rpx;
   font-weight: 600;
-  color: #b9c4d4;
+  color: #4a5b78;
 }
 
 .section-link {
   font-size: 24rpx;
-  color: #ff9a4d;
+  color: #2f7cf6;
 }
 
 .alt {
@@ -364,7 +364,7 @@
   display: block;
   font-size: 30rpx;
   font-weight: 600;
-  color: #eef2f7;
+  color: #16233a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -374,7 +374,7 @@
   display: block;
   margin-top: 8rpx;
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -394,7 +394,7 @@
   display: block;
   margin-top: 6rpx;
   font-size: 20rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 /* ---------- 出发点选择条 ---------- */
@@ -404,13 +404,13 @@
   margin: 0 24rpx 20rpx;
   padding: 16rpx 24rpx;
   border-radius: 999rpx;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1rpx solid rgba(255, 255, 255, 0.06);
+  background: rgba(31, 88, 160, 0.05);
+  border: 1rpx solid rgba(31, 88, 160, 0.07);
 }
 
 .origin-label {
   font-size: 22rpx;
-  color: #8b94a7;
+  color: #66748c;
   letter-spacing: 2rpx;
 }
 
@@ -423,7 +423,7 @@
 .origin-value {
   font-size: 24rpx;
   font-weight: 600;
-  color: #eef2f7;
+  color: #16233a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -432,14 +432,14 @@
 .origin-caret {
   margin-left: 8rpx;
   font-size: 20rpx;
-  color: #ff8a3d;
+  color: #2f7cf6;
 }
 
 .origin-tip {
   flex-shrink: 0;
   margin-left: 16rpx;
   font-size: 20rpx;
-  color: #5a6473;
+  color: #9aa6b8;
 }
 
 /* ---------- 八大必玩 · 现在排队 ---------- */
@@ -460,7 +460,7 @@
 
 .high-link {
   font-size: 22rpx;
-  color: #ff9a4d;
+  color: #2f7cf6;
 }
 
 .high-row {
@@ -468,7 +468,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20rpx 4rpx;
-  border-top: 1rpx solid rgba(255, 255, 255, 0.05);
+  border-top: 1rpx solid rgba(31, 88, 160, 0.06);
 }
 
 .high-main {
@@ -485,19 +485,19 @@
 
 .high-name {
   font-size: 28rpx;
-  color: #eef2f7;
+  color: #16233a;
   margin-right: 8rpx;
 }
 
 .high-off {
-  color: #7a8494;
+  color: #7d8ba1;
 }
 
 .high-sub {
   display: block;
   margin-top: 2rpx;
   font-size: 20rpx;
-  color: #5f6a7a;
+  color: #8b97aa;
 }
 
 .high-right {
@@ -513,7 +513,7 @@
 .high-unit {
   margin-left: 6rpx;
   font-size: 20rpx;
-  color: #7a8494;
+  color: #7d8ba1;
 }
 
 .high-add {
@@ -521,16 +521,16 @@
   margin-left: 18rpx;
   padding: 6rpx 14rpx;
   border-radius: 999rpx;
-  border: 1rpx solid rgba(255, 138, 61, 0.4);
+  border: 1rpx solid rgba(47, 124, 246, 0.28);
   text-align: center;
   font-size: 20rpx;
-  color: #ff9a4d;
+  color: #2f7cf6;
 }
 
 .high-add.on {
-  background: rgba(255, 138, 61, 0.16);
+  background: rgba(47, 124, 246, 0.12);
   border-color: transparent;
-  color: #ffbb85;
+  color: #2f7cf6;
 }
 
 /* ---------- 分时预测入口 ---------- */
@@ -540,8 +540,8 @@
   justify-content: space-between;
   padding: 22rpx 24rpx;
   margin-bottom: 20rpx;
-  background: linear-gradient(135deg, rgba(255, 138, 61, 0.12), rgba(21, 27, 38, 0.9));
-  border: 1rpx solid rgba(255, 138, 61, 0.22);
+  background: linear-gradient(135deg, rgba(47, 124, 246, 0.08), rgba(31, 88, 160, 0.92));
+  border: 1rpx solid rgba(47, 124, 246, 0.16);
 }
 
 .fe-left {
@@ -564,17 +564,197 @@
 .fe-title {
   font-size: 28rpx;
   font-weight: 600;
-  color: #f2f5f9;
+  color: #16233a;
 }
 
 .fe-sub {
   margin-top: 4rpx;
   font-size: 22rpx;
-  color: #8fa0b5;
+  color: #66748c;
 }
 
 .fe-arrow {
   font-size: 36rpx;
-  color: #ff8a3d;
+  color: #2f7cf6;
   margin-left: 16rpx;
+}
+
+/* ---------- 今日客流卡 ---------- */
+.crowd-card {
+  margin: 0 24rpx 24rpx;
+  padding: 28rpx 28rpx 20rpx;
+  background: #ffffff;
+  border-radius: 24rpx;
+  border: 1rpx solid rgba(31, 88, 160, 0.06);
+  box-shadow: 0 6rpx 18rpx rgba(31, 88, 160, 0.08);
+}
+
+.crowd-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.crowd-left {
+  flex: 0 0 auto;
+}
+
+.crowd-label {
+  display: block;
+  font-size: 22rpx;
+  color: #66748c;
+  letter-spacing: 1rpx;
+}
+
+.crowd-heat-line {
+  display: flex;
+  align-items: baseline;
+  margin-top: 4rpx;
+}
+
+.crowd-heat {
+  font-size: 64rpx;
+  line-height: 1.1;
+  color: #16233a;
+}
+
+.crowd-heat.none {
+  color: #9aa6b8;
+}
+
+.crowd-heat-unit {
+  margin-left: 4rpx;
+  font-size: 20rpx;
+  color: #8b97aa;
+}
+
+.crowd-level {
+  margin-left: 14rpx;
+  padding: 3rpx 14rpx;
+  border-radius: 999rpx;
+  font-size: 20rpx;
+  font-weight: 600;
+}
+
+.crowd-level.tone-ok {
+  background: rgba(23, 166, 115, 0.12);
+  color: #17a673;
+}
+
+.crowd-level.tone-warn {
+  background: rgba(232, 163, 23, 0.14);
+  color: #b07c08;
+}
+
+.crowd-level.tone-hot {
+  background: rgba(239, 122, 47, 0.14);
+  color: #ef7a2f;
+}
+
+.crowd-level.tone-danger {
+  background: rgba(229, 72, 77, 0.12);
+  color: #e5484d;
+}
+
+.crowd-level.tone-ghost {
+  background: rgba(31, 88, 160, 0.06);
+  color: #8b97aa;
+}
+
+.crowd-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-left: 16rpx;
+}
+
+.crowd-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 26rpx;
+}
+
+.crowd-metric-num {
+  font-size: 30rpx;
+  color: #16233a;
+  line-height: 1.25;
+}
+
+.crowd-metric-num.crowd-hours {
+  font-size: 24rpx;
+  color: #2f7cf6;
+}
+
+.crowd-metric-label {
+  margin-top: 2rpx;
+  font-size: 18rpx;
+  color: #8b97aa;
+}
+
+.crowd-bars {
+  display: flex;
+  align-items: flex-end;
+  height: 92rpx;
+  margin-top: 18rpx;
+}
+
+.crowd-bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  min-width: 0;
+}
+
+.crowd-bar-track {
+  width: 100%;
+  height: 66rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 2rpx;
+  box-sizing: border-box;
+}
+
+.crowd-bar-fill {
+  width: 68%;
+  max-width: 14rpx;
+  border-radius: 6rpx 6rpx 3rpx 3rpx;
+  background: linear-gradient(180deg, rgba(47, 124, 246, 0.5), rgba(47, 124, 246, 0.22));
+}
+
+.crowd-bar-fill.current {
+  background: linear-gradient(180deg, #4c93ff, #2f7cf6);
+}
+
+.crowd-bar-hour {
+  margin-top: 4rpx;
+  font-size: 16rpx;
+  color: #b3bdcb;
+  line-height: 1;
+}
+
+.crowd-bar-col.current .crowd-bar-hour {
+  color: #2f7cf6;
+  font-weight: 600;
+}
+
+.crowd-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8rpx;
+}
+
+.crowd-note {
+  font-size: 22rpx;
+  color: #66748c;
+}
+
+.crowd-go {
+  font-size: 22rpx;
+  color: #2f7cf6;
 }

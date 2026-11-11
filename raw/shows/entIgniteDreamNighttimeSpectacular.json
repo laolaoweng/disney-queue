@@ -1,0 +1,543 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:35"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:35"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "奇梦之光幻影秀",
+      "entityId": "entIgniteDreamNighttimeSpectacular",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "a-nighttime-celebration",
+      "subType": "Fireworks",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Entertainment",
+        "urlFriendlyId": "entertainment",
+        "value": "娱乐演出"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/a-nighttime-celebration",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero-sq_tcm1874-220572.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero_tcm1874-220570.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero_tcm1874-220570.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero_tcm1874-220570.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero-sq_tcm1874-220572.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-a-special-nighttime-show-dpa-android_tcm1874-220632.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-a-nighttime-celebration-ios-v2_tcm1874-227049.png",
+          "width": 1452,
+          "height": 1670
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "奇梦之光幻影秀",
+            "latitude": "31.149282448931",
+            "longitude": "121.66655874341"
+          }
+        ],
+        "dpaPoints": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "奇梦之光幻影秀",
+            "latitude": "31.148820",
+            "longitude": "121.665958"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/entertainment/theme-park/a-nighttime-celebration/",
+      "importantInfo": [
+        {
+          "id": "pleaseNoteEnt.spectacular",
+          "group": "Important Info",
+          "items": [
+            {
+              "name": "请注意",
+              "description": "<p>为营造一个更为舒适的观赏体验，如当天有两场“奇梦之光幻影秀”的演出，我们建议您错峰观赏当晚第二场演出。</p>",
+              "endTime": null,
+              "openTime": null
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>踏入光影交织的迪士尼奇梦，点亮你心中的光。</p>\n<p>一场新锐科技与光影艺术编织的童话奇梦，在烟花、火焰、水幕、激光与投影的流转互动中，呈现360度沉浸式体验。</p>\n<p>让你变为主角置于光影之中。跟着迪士尼朋友，一起走入一段跌宕起伏的旅程。</p>\n<p><small><em>*所有图片仅供参考，以实际产品/体验为准</em>\n<br />\n<br />\n<em>为营造一个更为舒适的观赏体验，如当天有两场“奇梦之光幻影秀”的演出，我们建议您错峰观赏当晚第二场演出。</em>\n<br />\n<br />\n<em>和乐园内的其他现场娱乐演出一样，“奇梦之光幻影秀”的呈现可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会调整或取消其烟火效果，甚至暂时推迟或取消整场演出。</em></small></p>",
+        "shortDescriptionMobileText": "<br/>踏入光影交织的迪士尼奇梦，点亮你心中的光。\n<br/>\n<br/>\n一场新锐科技与光影艺术编织的童话奇梦，在烟花、火焰、水幕、激光与投影的流转互动中，呈现360度沉浸式体验。\n<br/>\n<br/>\n让你变为主角置于光影之中。跟着迪士尼朋友，一起走入一段跌宕起伏的旅程。\n<br/><br/>\n<small><em>*所有图片仅供参考，以实际产品/体验为准</em><br/><br/><em>和乐园内的其他现场娱乐演出一样，“奇梦之光幻影秀”的呈现可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会调整或取消其烟火效果，甚至暂时推迟或取消整场演出。</em></small>\n<br/><br/>\n开篇：你就是光 - 每个人心中都有一道光，引领梦想，照亮前方。\n<br/>\n<br/>\n第二篇：点亮梦想 - 光芒点燃追寻梦想的热情。\n<br/>\n<br/>\n第三篇：光芒不熄 - 追梦路上，直面逆境与险阻。\n<br/>\n<br/>\n第四篇：冲破黑暗 - 点亮心中光芒，召唤内心英雄。\n<br/>\n<br/>\n第五篇：最初的你 - 光明战胜黑暗，点亮最初的纯与真。\n<br/>\n<br/>\n第六篇：坚定向光 - 紧握心中信念之光，坚定前行。\n<br/>\n<br/>\n终篇：你就是光 - 一个更璀璨的未来，由我们点亮!\n<br/>\n<br/>\n<strong>购买迪士尼尊享卡——在预留观赏区域，观看 “奇梦之光幻影秀”！</strong>\n<br>\n请注意，迪士尼尊享卡不可转让，不可转售，不可退款（除非法律另有规定）。\n<br/><br/>\n出于乐园承载量、恶劣天气包括但不限于台风（当上海中心气象台或浦东新区气象局发布蓝色或以上台风预警时）、高温（当上海中心气象台或浦东新区气象局发布橙色或以上高温预警时）、空气污染（当上海市空气重污染应急工作组发布空气重污染黄色及以上预警、或当上海市环境监测中心或上海中心气象台公布的空气质量指数超过300时）、特别活动、乐园安全或游园秩序的考虑，或者在其他必要的情况下：\n<br/>\n- 景点的运营时间和娱乐演出的演出时间可能根据实际情况进行更改(包括但不限于室外景点可能会临时关闭，“奇梦之光幻影秀”演出可能不包含烟花效果)。景点和娱乐演出可能会临时关闭或暂停。我们可能不定期更改乐园或乐园内任何游乐项目的开放时间、对不特定公众临时关闭乐园或乐园内的任何部分区域、控制入园人数、暂停或取消任何游乐项目或娱乐演出。\n<br/>\n- 我们可能会拒绝个别游客入园或要求个别游客离园。\n<br><br>\n演出效果将不时根据实际运营情况进行调整。\n<br><br>\n此迪士尼尊享卡会根据上海迪士尼乐园当天运营情况开放销售。"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "奇梦之光幻影秀故事",
+              "text": "开篇：你就是光 - 每个人心中都有一道光，引领梦想，照亮前方。\n<br />\n<br />\n第二篇：点亮梦想 - 光芒点燃追寻梦想的热情。\n<br />\n<br />\n第三篇：光芒不熄 - 追梦路上，直面逆境与险阻。\n<br />\n<br />\n第四篇：冲破黑暗 - 点亮心中光芒，召唤内心英雄。\n<br />\n<br />\n第五篇：最初的你 - 光明战胜黑暗，点亮最初的纯与真。\n<br />\n<br />\n第六篇：坚定向光 - 紧握心中信念之光，坚定前行。\n<br />\n<br />\n终篇：你就是光 - 一个更璀璨的未来，由我们点亮!",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero_tcm1874-220570.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "entIgniteDreamNighttimeSpectacular;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landGardensOfImagination",
+          "name": "奇想花园",
+          "urlFriendlyId": "gardens-imagination"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor-entertainment",
+              "value": "室外娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            },
+            {
+              "urlFriendlyId": "fireworks",
+              "value": "夜间娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Entertainment",
+              "urlFriendlyId": "entertainment",
+              "value": "娱乐演出"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            },
+            {
+              "id": "SeasonalEvents",
+              "urlFriendlyId": "seasonal-events",
+              "value": "季节活动"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "gardens-imagination",
+              "value": "奇想花园"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "ILLUMINATE! A Nighttime Celebration - Entertainment",
+            "referenceKey": "ILLUMINATE! A Nighttime Celebration - Entertainment",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-illuminate-a-sq_tcm1874-239793.JPG",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "ILLUMINATE! A Nighttime Celebration - Entertainment",
+                "subChapters": [
+                  {
+                    "title": "ILLUMINATE! A Nighttime Celebration - Entertainment",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-illuminate-a-sq_tcm1874-239793.JPG",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "video",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-illuminate-video-cover-v2-sq_tcm1874-242098.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-illuminate-video-cover-v2-full_tcm1874-242097.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "sourceForVideo": "https://static.shanghaidisneyresort.com/web-img-gallery/Illuminate-2022072502.mp4"
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero_tcm1874-220570.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-new-nts-hero_tcm1874-220570.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-illuminate-a-sq_tcm1874-239793.JPG",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-illuminate-a_tcm1874-239788.JPG",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-illuminate-b-sq_tcm1874-239791.JPG",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-illuminate-b_tcm1874-239790.JPG",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-night-10-sq_tcm1874-288955.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-night-10-hero_tcm1874-288954.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-night-10-sq-2_tcm1874-288957.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-night-10-hero-2_tcm1874-288956.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "20:00&21:15",
+        "statusCode": "",
+        "separator": " | ",
+        "timeType": "SHOW_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

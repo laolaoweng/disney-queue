@@ -1,0 +1,389 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:28"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:28"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "E空间聚乐部",
+      "entityId": "entClubDestinE",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "club-destin-e",
+      "subType": "Stage Show",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Entertainment",
+        "urlFriendlyId": "entertainment",
+        "value": "娱乐演出"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/club-destin-e",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-sq-20250115_tcm1874-276440.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-hero-20250115_tcm1874-276441.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-hero-20250115_tcm1874-276441.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-hero-20250115_tcm1874-276441.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-sq-20250115_tcm1874-276440.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "E空间聚乐部",
+            "latitude": "31.148215",
+            "longitude": "121.663861"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/entertainment/theme-park/club-destin-e/",
+      "descriptions": {
+        "shortDescriptionText": "<p>一起参加在E空间•百事舞台举办的高科技、超级有活力的音乐盛宴。这不只是表演；这是一场派对！</p>\n<p><small>*演出效果请以实际运营情况为准\n<br />\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p>",
+        "shortDescriptionMobileText": "<p>一起参加在E空间•百事舞台举办的高科技、超级有活力的音乐盛宴。这不只是表演；这是一场派对！</p>\n<p><small>*演出效果请以实际运营情况为准\n<br/>\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "摇滚未来！",
+              "text": "<p>音乐是人类共同的语言，想象一下，在一场演出里用音乐描绘出世界的和谐。这正是E空间聚乐部为您呈现的精彩！</p>\n<p>百事舞台摇身一变，给您带来未来感十足的奇妙体验。届时，DJ将点燃夜晚，带来年代摇滚金曲和动感热辣舞蹈。</p>\n<p>快快加入：起身摇摆。E空间聚乐部绝不仅是一场演出，更是一场更是一场狂欢派对！</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-01-new_tcm1874-115144.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "entClubDestinE;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landTomorrowland",
+          "name": "明日世界",
+          "urlFriendlyId": "tomorrowland"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor-entertainment",
+              "value": "室外娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Entertainment",
+              "urlFriendlyId": "entertainment",
+              "value": "娱乐演出"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "tomorrowland",
+              "value": "明日世界"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Club Destin-E - Entertainment",
+            "referenceKey": "Club Destin-E - Entertainment",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-gallery-01-sq_tcm1874-238536.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Club Destin-E - Entertainment",
+                "subChapters": [
+                  {
+                    "title": "Club Destin-E - Entertainment",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-gallery-01-sq_tcm1874-238536.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-hero-20250115_tcm1874-276441.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-hero-20250115_tcm1874-276441.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-gallery-01-sq_tcm1874-238536.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-club-destin-e-gallery-01-hero_tcm1874-238535.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "18:45",
+        "statusCode": "",
+        "separator": " | ",
+        "timeType": "SHOW_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:46"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:46"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "邂逅玩具朋友们",
+      "entityId": "entSnapPicturesofWoodyandJessie",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "snap-pictures-of-woody-and-jessie",
+      "subType": "Character Experience - Meet & Greet",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Hotel",
+        "urlFriendlyId": "hotel",
+        "value": "酒店"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/snap-pictures-of-woody-and-jessie",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-snap-pictures-of-woody-and-buzz-sq-20230609_tcm1874-261104.png",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-snap-pictures-of-woody-and-buzz-hero-20230609_tcm1874-261103.png",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-snap-pictures-of-woody-and-buzz-hero-20230609_tcm1874-261103.png",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-snap-pictures-of-woody-and-buzz-hero-20230609_tcm1874-261103.png",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-snap-pictures-of-woody-and-buzz-sq-20230609_tcm1874-261104.png",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "邂逅玩具朋友们",
+            "latitude": "31.145665",
+            "longitude": "121.660321"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "hideFunctionality": "Hide from the Listing Page",
+      "hidebychannel": [
+        {
+          "channel": [
+            "WECHAT"
+          ],
+          "hideType": "Hide from List"
+        }
+      ],
+      "webLinks": "https://www.shanghaidisneyresort.com/zh-cn/entertainment/theme-park/snap-pictures-of-woody-and-jessie/",
+      "importantInfo": [
+        {
+          "id": "pleaseNoteCharacter",
+          "group": "Important Info",
+          "items": [
+            {
+              "name": "请注意",
+              "description": "<p>请始终遵从现场演职人员的指引。由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。</p>",
+              "endTime": null,
+              "openTime": null
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>跟您喜爱的玩具朋友们打一声招呼，就像遇见老朋友一般惊喜。</p>\n<p><small>请始终遵从现场演职人员的指引。\n<br />\n由于见面会受载客量的限制，排队截止时间将以现场运营情况为准。\n<br />\n为了让我们的迪士尼朋友能与更多的游客见面，请控制您与迪士尼朋友的见面时长。\n<br />\n见面时，每位游客至多可获得每位迪士尼朋友的一个签名。\n<br />\n为了您和其他游客拥有一个安全愉快的体验，上海迪士尼乐园内禁止使用自拍杆，请勿在与迪士尼朋友合影时使用自拍杆。\n<br />\n*每天会不定时地出现，给您美好的问候。演出效果请以实际运营情况为准。演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p>",
+        "shortDescriptionMobileText": "<p>跟您喜爱的玩具朋友们打一声招呼，就像遇见老朋友一般惊喜。</p>\n<p><small>\n为了让我们的迪士尼朋友能与更多的游客见面，请控制您与迪士尼朋友的见面时长。\n<br/>\n见面时，每位游客至多可获得每位迪士尼朋友的一个签名。\n<br/>\n为了您和其他游客拥有一个安全愉快的体验，上海迪士尼乐园内禁止使用自拍杆，请勿在与迪士尼朋友合影时使用自拍杆。\n<br/>\n*每天会不定时地出现，给您美好的问候。演出效果请以实际运营情况为准。演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p><br/>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "entSnapPicturesofWoodyandJessie;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "Shanghai Disney Resort": {
+          "id": "hotelSHTSH",
+          "name": "玩具总动员酒店",
+          "urlFriendlyId": "toy-story-hotel"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "classic-characters",
+              "value": "经典角色"
+            },
+            {
+              "urlFriendlyId": "indoor-entertainment",
+              "value": "室内娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "character-experience",
+              "value": "与迪士尼朋友见面"
+            },
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Hotel",
+              "urlFriendlyId": "hotel",
+              "value": "酒店"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "toy-story-hotel",
+              "value": "玩具总动员酒店"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "hideOperationHours": false
+    }
+  }
+}

@@ -7,7 +7,7 @@
 .sk-line {
   height: 28rpx;
   border-radius: 8rpx;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(31, 88, 160, 0.07);
   margin-bottom: 22rpx;
 }
 
@@ -21,8 +21,8 @@
   margin: 0 24rpx 20rpx;
   padding: 8rpx;
   border-radius: 999rpx;
-  background: #151b26;
-  border: 1rpx solid rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  border: 1rpx solid rgba(31, 88, 160, 0.07);
 }
 
 .sort-item {
@@ -32,12 +32,12 @@
   text-align: center;
   border-radius: 999rpx;
   font-size: 26rpx;
-  color: #8b97aa;
+  color: #66748c;
 }
 
 .sort-item.active {
-  background: rgba(255, 138, 61, 0.14);
-  color: #ffab6b;
+  background: rgba(47, 124, 246, 0.10);
+  color: #2f7cf6;
   font-weight: 600;
 }
 
@@ -46,15 +46,15 @@
   margin: 0 24rpx;
   border-radius: 28rpx;
   overflow: hidden;
-  background: #151b26;
-  border: 1rpx solid rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  border: 1rpx solid rgba(31, 88, 160, 0.07);
 }
 
 .row {
   display: flex;
   align-items: center;
   padding: 26rpx 28rpx;
-  border-bottom: 1rpx solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1rpx solid rgba(31, 88, 160, 0.06);
 }
 
 .row:last-child {
@@ -70,12 +70,12 @@
   flex-shrink: 0;
   font-size: 24rpx;
   font-weight: 600;
-  color: #5f6a7a;
+  color: #8b97aa;
   text-align: center;
 }
 
 .row-rank.top {
-  color: #ff8a3d;
+  color: #2f7cf6;
 }
 
 .row-main {
@@ -93,7 +93,7 @@
 .row-name {
   font-size: 30rpx;
   font-weight: 600;
-  color: #eef2f7;
+  color: #16233a;
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -109,35 +109,35 @@
 }
 
 .tag.must {
-  background: rgba(255, 138, 61, 0.16);
-  color: #ffab6b;
+  background: rgba(47, 124, 246, 0.12);
+  color: #2f7cf6;
 }
 
 .tag.avoid {
-  background: rgba(255, 93, 93, 0.14);
-  color: #ff8f8f;
+  background: rgba(229, 72, 77, 0.14);
+  color: #e5484d;
 }
 
 .tag.premier {
-  background: rgba(255, 214, 102, 0.14);
-  color: #ffd666;
+  background: rgba(232, 163, 23, 0.14);
+  color: #e8a317;
 }
 
 .tag.here {
-  background: rgba(80, 160, 255, 0.16);
-  color: #7fb8ff;
+  background: rgba(47, 124, 246, 0.12);
+  color: #2f7cf6;
 }
 
 .tag.played {
-  background: rgba(255, 255, 255, 0.08);
-  color: #9aa6b8;
+  background: rgba(31, 88, 160, 0.10);
+  color: #66748c;
 }
 
 .row-sub {
   display: block;
   margin-top: 8rpx;
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -149,15 +149,15 @@
   padding: 2rpx 12rpx;
   border-radius: 6rpx;
   font-size: 20rpx;
-  background: rgba(255, 255, 255, 0.06);
-  color: #8b97aa;
+  background: rgba(31, 88, 160, 0.07);
+  color: #66748c;
 }
 
 .row-walk {
   display: block;
   margin-top: 10rpx;
   font-size: 20rpx;
-  color: #5f6a7a;
+  color: #8b97aa;
 }
 
 .row-right {
@@ -176,14 +176,14 @@
   display: block;
   margin-top: 6rpx;
   font-size: 20rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 .row-score {
   display: block;
   margin-top: 6rpx;
   font-size: 20rpx;
-  color: #5f6a7a;
+  color: #8b97aa;
 }
 
 /* 园区分组 */
@@ -196,31 +196,31 @@
 .group-toggle {
   padding: 12rpx 28rpx;
   border-radius: 999rpx;
-  background: #151b26;
-  border: 1rpx solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1rpx solid rgba(31, 88, 160, 0.10);
   font-size: 24rpx;
-  color: #8b97aa;
+  color: #66748c;
 }
 
 .group-toggle.on {
-  background: rgba(255, 138, 61, 0.14);
-  border-color: rgba(255, 138, 61, 0.3);
-  color: #ffab6b;
+  background: rgba(47, 124, 246, 0.10);
+  border-color: rgba(47, 124, 246, 0.22);
+  color: #2f7cf6;
   font-weight: 600;
 }
 
 .groupbar-tip {
   margin-left: 16rpx;
   font-size: 22rpx;
-  color: #5a6473;
+  color: #9aa6b8;
 }
 
 .group {
   margin: 0 24rpx 20rpx;
   border-radius: 28rpx;
   overflow: hidden;
-  background: #151b26;
-  border: 1rpx solid rgba(255, 255, 255, 0.06);
+  background: #ffffff;
+  border: 1rpx solid rgba(31, 88, 160, 0.07);
 }
 
 .group-head {
@@ -228,19 +228,19 @@
   align-items: center;
   justify-content: space-between;
   padding: 20rpx 28rpx;
-  background: rgba(255, 255, 255, 0.03);
-  border-bottom: 1rpx solid rgba(255, 255, 255, 0.05);
+  background: rgba(31, 88, 160, 0.04);
+  border-bottom: 1rpx solid rgba(31, 88, 160, 0.06);
 }
 
 .group-name {
   font-size: 26rpx;
   font-weight: 600;
-  color: #dfe6f0;
+  color: #16233a;
 }
 
 .group-count {
   font-size: 22rpx;
-  color: #6f7a8c;
+  color: #7d8ba1;
 }
 
 /* ---------- 分时预测入口 ---------- */
@@ -249,8 +249,8 @@
   align-items: center;
   margin: 0 24rpx 20rpx;
   padding: 22rpx 24rpx;
-  background: linear-gradient(135deg, rgba(255, 138, 61, 0.12), rgba(21, 27, 38, 0.9));
-  border: 1rpx solid rgba(255, 138, 61, 0.22);
+  background: linear-gradient(135deg, rgba(47, 124, 246, 0.08), rgba(255, 255, 255, 0.92));
+  border: 1rpx solid rgba(47, 124, 246, 0.16);
 }
 
 .fe-emoji {
@@ -268,18 +268,18 @@
 .fe-title {
   font-size: 28rpx;
   font-weight: 600;
-  color: #f2f5f9;
+  color: #16233a;
 }
 
 .fe-sub {
   margin-top: 4rpx;
   font-size: 22rpx;
-  color: #8fa0b5;
+  color: #66748c;
 }
 
 .fe-arrow {
   font-size: 36rpx;
-  color: #ff8a3d;
+  color: #2f7cf6;
   margin-left: 16rpx;
 }
 
@@ -295,16 +295,16 @@
 .refresh-pill {
   padding: 8rpx 22rpx;
   border-radius: 999rpx;
-  border: 1rpx solid rgba(96, 165, 250, 0.35);
-  background: rgba(59, 130, 246, 0.12);
-  color: #7fb3ff;
+  border: 1rpx solid rgba(47, 124, 246, 0.3);
+  background: rgba(47, 124, 246, 0.12);
+  color: #2f7cf6;
   font-size: 24rpx;
   font-weight: 600;
 }
 
 .update-time {
   font-size: 22rpx;
-  color: #7a8494;
+  color: #7d8ba1;
 }
 
 .tile-grid {
@@ -330,11 +330,11 @@
   padding-bottom: 100%;
   border-radius: 14rpx;
   overflow: hidden;
-  background: #1b2230;
+  background: #f0f6ff;
 }
 
 .tile-img.noimg {
-  background-image: radial-gradient(circle at 30% 25%, #2a3345 0%, #171d28 70%);
+  background-image: radial-gradient(circle at 30% 25%, #dbe9ff 0%, #ffffff 70%);
 }
 
 .tile-photo {
@@ -357,15 +357,15 @@
   line-height: 1.4;
   text-align: center;
   color: #fff;
-  background: rgba(20, 24, 32, 0.55);
+  background: rgba(22, 35, 58, 0.55);
 }
 
-.wait-pill.t1 { background: #22a45d; }
-.wait-pill.t2 { background: #7bab2e; }
-.wait-pill.t3 { background: #d9a441; }
+.wait-pill.t1 { background: #17a673; }
+.wait-pill.t2 { background: #5e9c2e; }
+.wait-pill.t3 { background: #c98a12; }
 .wait-pill.t4 { background: #e4702f; }
-.wait-pill.t5 { background: #e0483f; }
-.wait-pill.t0 { background: rgba(255, 255, 255, 0.16); font-size: 16rpx; font-weight: 600; }
+.wait-pill.t5 { background: #e5484d; }
+.wait-pill.t0 { background: rgba(255, 255, 255, 0.88); color: #66748c; font-size: 16rpx; font-weight: 600; }
 
 .tile-premier {
   position: absolute;
@@ -374,9 +374,9 @@
   padding: 0 6rpx;
   border-radius: 6rpx;
   font-size: 14rpx;
-  color: #ffd9a8;
-  background: rgba(60, 40, 18, 0.55);
-  border: 1rpx solid rgba(255, 180, 90, 0.35);
+  color: #ffffff;
+  background: rgba(47, 124, 246, 0.82);
+  border: 1rpx solid rgba(255, 255, 255, 0.45);
 }
 
 .tile-name {
@@ -384,7 +384,7 @@
   margin-top: 8rpx;
   padding: 0 2rpx;
   font-size: 19rpx;
-  color: #e6ebf2;
+  color: #16233a;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

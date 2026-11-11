@@ -1,0 +1,92 @@
+<view class="page">
+  <view class="topbar">
+    <view>
+      <text class="topbar-title">娱乐演出</text>
+      <text class="topbar-sub">{{dateLine}} · 共 {{totalCount}} 场 · {{updatedText}}</text>
+    </view>
+    <view class="refresh-btn {{spinning ? 'spinning' : ''}}" bindtap="onRefresh">↻</view>
+  </view>
+
+  <view class="show-seg">
+    <view
+      wx:for="{{filters}}"
+      wx:key="key"
+      class="show-seg-item {{filter === item.key ? 'active' : ''}}"
+      data-key="{{item.key}}"
+      bindtap="onFilterTap"
+    >{{item.label}}</view>
+  </view>
+
+  <!-- 加载中 -->
+  <view wx:if="{{loading}}" class="show-grid">
+    <view wx:for="{{[1, 2, 3, 4]}}" wx:key="*this" class="card sk-card show-sk">
+      <view class="sk-pic"></view>
+      <view class="sk-line w80"></view>
+      <view class="sk-line w60"></view>
+    </view>
+  </view>
+
+  <!-- 加载失败 -->
+  <view wx:elif="{{error}}" class="empty">
+    <text class="empty-emoji">🎭</text>
+    <text class="empty-title">演出数据没加载出来</text>
+    <text class="muted small">{{error}}</text>
+    <view class="empty-btn" bindtap="onRefresh">重试</view>
+  </view>
+
+  <!-- 空态 -->
+  <view wx:elif="{{empty}}" class="empty">
+    <text class="empty-emoji">🎭</text>
+    <text class="empty-title">今日暂无演出数据</text>
+    <text class="muted small">演出排期还没同步，晚点下拉刷新看看</text>
+    <view class="empty-btn" bindtap="onRefresh">刷新</view>
+  </view>
+
+  <!-- 「即将开始」筛选后为空 -->
+  <view wx:elif="{{!shows.length}}" class="empty">
+    <text class="empty-emoji">🌙</text>
+    <text class="empty-title">今天的演出都结束了</text>
+    <text class="muted small">切回「全部」看看今天的完整排期</text>
+    <view class="empty-btn" data-key="all" bindtap="onFilterTap">看全部</view>
+  </view>
+
+  <!-- 演出卡片：2 列，方形图 + 名称 + 两行时间胶囊 -->
+  <view wx:else class="show-grid">
+    <view
+      wx:for="{{shows}}"
+      wx:key="id"
+      class="show-card {{item.closed ? 'is-off' : ''}}"
+      data-index="{{index}}"
+      bindtap="onTapShow"
+    >
+      <view class="show-pic">
+        <image wx:if="{{item.hasImage}}" class="show-img" src="{{item.imageUrl}}" mode="aspectFill" />
+        <view wx:else class="show-ph">
+          <text class="show-ph-emoji">🎭</text>
+        </view>
+        <text wx:if="{{item.land}}" class="show-land">{{item.land}}</text>
+        <text wx:if="{{item.closed}}" class="show-off">今日停演</text>
+      </view>
+
+      <view class="show-body">
+        <text class="show-name">{{item.name}}</text>
+
+        <view class="show-time-row">
+          <text wx:if="{{item.firstText}}" class="show-time-pill">{{item.firstText}}</text>
+          <text class="show-cd cd-{{item.countdownTone}}">{{item.countdownText}}</text>
+        </view>
+
+        <view class="show-next-row">
+          <text wx:if="{{item.secondText}}" class="show-next">下一场 {{item.secondText}}</text>
+          <text wx:elif="{{item.closed}}" class="show-next">今日停演</text>
+          <text wx:elif="{{item.ended}}" class="show-next">今日已结束</text>
+          <text wx:else class="show-next">{{item.timeInfo || '今日最后一场'}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="footnote">
+    场次与倒计时按北京时间计算 · 演出可能临时调整，以园区现场公告为准
+  </view>
+</view>

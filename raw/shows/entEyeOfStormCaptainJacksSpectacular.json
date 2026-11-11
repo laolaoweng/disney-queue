@@ -1,0 +1,588 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:31"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:31"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "风暴来临：杰克船长之惊天特技大冒险",
+      "entityId": "entEyeOfStormCaptainJacksSpectacular",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "eye-of-storm-captain-jacks-spectacular",
+      "subType": "Stage Show",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Entertainment",
+        "urlFriendlyId": "entertainment",
+        "value": "娱乐演出"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/eye-of-storm-captain-jacks-spectacular",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-sq-new_tcm1874-115043.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-new_tcm1874-115042.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-new_tcm1874-115042.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-new_tcm1874-115042.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-sq-new_tcm1874-115043.jpg",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-dpa-andriod_tcm1874-196480.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-dpa-ios_tcm1874-196481.jpg",
+          "width": 1452,
+          "height": 1670
+        },
+        "redemptionBgImageLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-my-plan_tcm1874-286039.png",
+          "width": 170,
+          "height": 96
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "风暴来临——杰克船长之惊天特技大冒险",
+            "latitude": "31.151213988467",
+            "longitude": "121.66981800564"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "openDate": "2015-10-07T14:01:52",
+      "endDate": "2020-10-07T14:02:06",
+      "webLinks": "https://www.shanghaidisneyresort.com/entertainment/theme-park/eye-of-storm-captain-jacks-spectacular/",
+      "duration": [
+        {
+          "hours": null,
+          "minutes": "30"
+        }
+      ],
+      "policies": [
+        {
+          "id": "policyStoryhouse",
+          "name": "Storyhouse",
+          "text": "请尽早到场并与所有同行人员一同排队。座位有限，满座即止，大门将在演出开始前10分钟关闭。",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTheater",
+          "name": "Theater",
+          "text": "在此景点中请将手机调至静音。请勿在剧院内进食，吸烟或使用闪光灯。",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "guestPolicies": [
+        {
+          "id": "policyStoryhouse",
+          "name": "Storyhouse",
+          "text": "请尽早到场并与所有同行人员一同排队。座位有限，满座即止，大门将在演出开始前10分钟关闭。",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        },
+        {
+          "id": "policyTheater",
+          "name": "Theater",
+          "text": "在此景点中请将手机调至静音。请勿在剧院内进食，吸烟或使用闪光灯。",
+          "group": "Guest Policies",
+          "description": "Physical Considerations",
+          "usageType": "Policy"
+        }
+      ],
+      "importantInfo": [
+        {
+          "id": "pleaseNoteShow",
+          "group": "Important Info",
+          "items": [
+            {
+              "name": "请注意",
+              "description": "<p>每场演出座位有限。当剧院满座时或在演出开始前10分钟，剧院大门将关闭。请您与所有同行人员到达后一同排队，如果您有任何问题，请咨询现场演职人员。</p>",
+              "endTime": null,
+              "openTime": null
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>欢迎来到凡迭戈剧场,本场演出分为暖场和主场两个部分。\n<br />\n<br />\n温馨提示：暖场为站立式观演，稍后您将进入主场入座观看。\n<br />\n<br />\n<strong>故事梗概</strong>\n<br />\n杰克船长从海军上将手中夺得了一箱黄金，将其藏匿于凡迭戈剧场内，事后却忘了具体位置。杰克的手下潜入剧场搜寻这批宝藏。剧场老板发现这群不速之客后心中惶恐，为保障演出能够继续进行，他急中生智，招募这群海盗担任临时领位员。与此同时，海军上将派人追查失窃的黄金，正步步向剧场逼近，一场惊险刺激的海盗冒险即将拉开帷幕。\n<br />\n<br />\n<strong>角色介绍</strong>\n<br />\n<strong>大海盗：</strong>杰克的船员之一，头脑简单，四肢发达。\n<br />\n<br />\n<strong>邋遢鬼海盗：</strong>杰克的船员之一，聪明机灵，敏感好奇，喜欢艺术。\n<br />\n<br />\n<strong>马克斯：</strong>唐迭戈的得力助手，承担了剧场内的很多杂活。\n<br />\n<br />\n<strong>唐迭戈：</strong>凡迭戈剧场的老板、表演者、主持人。\n<br />\n<br />\n<strong>红发妹：</strong>人称“夜莺海盗”，曾帮助过杰克，海盗之间一直流传着关于她的传说，性格泼辣果断。\n<br />\n<br />\n<strong>海盗老三：</strong>杰克的船员之一，非常仰慕杰克。\n<br />\n<br />\n<strong>海盗老四：</strong>杰克的船员之一，一个普通的海盗。\n<br />\n<br />\n<strong>杰克·史派罗：</strong>宝藏湾最出名的海盗。\n<br />\n<br />\n<strong>海军上将：</strong>欺善怕恶、冷酷无情。</p>\n<p><small>*演出效果请以实际运营情况为准。</small></p>\n<p><strong>购买迪士尼尊享卡——风暴来临：杰克船长之惊天特技大冒险，享受提前入场！</strong>\n<br />\n迪士尼尊享卡，仅限所关联乐园门票的游客或年卡持卡人本人使用。在进入凡迭戈剧院时，将核对与您的门票或年卡关联的照片。请提前查询演出时间，并于演出开场前20分钟到达。如果游客晚于APP的指定入场时间到达凡迭戈剧院，将没有优先进入剧场的权益。剧院大门将会于演出前10分钟关闭。请注意，本迪士尼尊享卡不可转让，不可转售，不可退款（除非法律另有规定）。</p>",
+        "shortDescriptionMobileText": "<p>欢迎来到凡迭戈剧场,本场演出分为暖场和主场两个部分。\n<br/>\n<br/>\n温馨提示：暖场为站立式观演，稍后您将进入主场入座观看。\n<br/>\n<br/>\n<strong>故事梗概</strong>\n<br/>\n杰克船长从海军上将手中夺得了一箱黄金，将其藏匿于凡迭戈剧场内，事后却忘了具体位置。杰克的手下潜入剧场搜寻这批宝藏。剧场老板发现这群不速之客后心中惶恐，为保障演出能够继续进行，他急中生智，招募这群海盗担任临时领位员。与此同时，海军上将派人追查失窃的黄金，正步步向剧场逼近，一场惊险刺激的海盗冒险即将拉开帷幕。\n<br/>\n<br/>\n<strong>角色介绍</strong>\n<br/>\n<strong>大海盗：</strong>杰克的船员之一，头脑简单，四肢发达。\n<br/>\n<br/>\n<strong>邋遢鬼海盗：</strong>杰克的船员之一，聪明机灵，敏感好奇，喜欢艺术。\n<br/>\n<br/>\n<strong>马克斯：</strong>唐迭戈的得力助手，承担了剧场内的很多杂活。\n<br/>\n<br/>\n<strong>唐迭戈：</strong>凡迭戈剧场的老板、表演者、主持人。\n<br/>\n<br/>\n<strong>红发妹：</strong>人称“夜莺海盗”，曾帮助过杰克，海盗之间一直流传着关于她的传说，性格泼辣果断。\n<br/>\n<br/>\n<strong>海盗老三：</strong>杰克的船员之一，非常仰慕杰克。\n<br/>\n<br/>\n<strong>海盗老四：</strong>杰克的船员之一，一个普通的海盗。\n<br/>\n<br/>\n<strong>杰克·史派罗：</strong>宝藏湾最出名的海盗。\n<br/>\n<br/>\n<strong>海军上将：</strong>欺善怕恶、冷酷无情。\n</p><p><small>*演出效果请以实际运营情况为准。</small></p><p><strong>购买迪士尼尊享卡——风暴来临：杰克船长之惊天特技大冒险，享受提前入场！</strong><br>迪士尼尊享卡，仅限所关联乐园门票的游客或年卡持卡人本人使用。在进入凡迭戈剧院时，将核对与您的门票或年卡关联的照片。请提前查询演出时间，并于演出开场前20分钟到达。如果游客晚于APP的指定入场时间到达凡迭戈剧院，将没有优先进入剧场的权益。剧院大门将会于演出前10分钟关闭。请注意，本迪士尼尊享卡不可转让，不可转售，不可退款（除非法律另有规定）。</p>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "嬉闹有趣的海盗大冒险！",
+              "text": "<p>舞台上，杰克船长神出鬼没、诙谐逗趣，又勇敢无畏，让人激动不已，观众看得忍俊不禁、惊呼声欢笑声此起彼伏。</p>\n<p>在“凡迭戈剧院”，当真正的杰克船长发现有位演员在舞台上扮演他时，他立誓要让这位冒名顶替者以及在座的观众见识一下真正的海盗究竟有多大的本事。但是杰克船长一露面，就引起了英国皇家海军的注意，他们在舞台上发起猛攻，展开了追捕。全场很快陷入一片令人捧腹的混乱之中。海盗、水手和演员们在舞台上激烈厮杀，以惊人特技上演英勇决斗。</p>\n<p>混战持续升级，屏气凝神，惊心动魄的结局即将上演！一股向“宝藏湾”逼近的飓风猛烈地吹袭剧院，杰克船长和他的对手被刮到半空中，最扣人心弦的空中击剑大战就在眼前！</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-01-new_tcm1874-115044.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "下载官方App 即刻查看娱乐演出安排！",
+              "text": "下载上海迪士尼度假区官方App，即刻查看娱乐演出时间安排，适宜年龄，地图定位及更多。",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-gsrvc-mobile-app-icon2_tcm1874-113788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/zh-cn/information/download-shanghai-disney-mobile-app"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "entEyeOfStormCaptainJacksSpectacular;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landTreasureCove",
+          "name": "宝藏湾",
+          "urlFriendlyId": "treasure-cove"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "indoor-entertainment",
+              "value": "室内娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            },
+            {
+              "urlFriendlyId": "stage-shows",
+              "value": "舞台表演"
+            },
+            {
+              "urlFriendlyId": "theater-shows",
+              "value": "剧场表演"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            },
+            {
+              "id": "facet-designated-area-for-disabilities-global_100157",
+              "urlFriendlyId": "designated-area-for-disabilities",
+              "value": "提供无障碍观赏区",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/disabilities_tcm1874-281317.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            },
+            {
+              "id": "facet-access-assistive-listening-global_95452",
+              "urlFriendlyId": "assistive-listening",
+              "value": "听力辅助",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/listening_tcm1874-281313.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            },
+            {
+              "urlFriendlyId": "sign-language",
+              "value": "手语",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/sign_tcm1874-281319.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Entertainment",
+              "urlFriendlyId": "entertainment",
+              "value": "娱乐演出"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "treasure-cove",
+              "value": "宝藏湾"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Eye of the Storm: Captain Jack’s Stunt Spectacular - Entertainment",
+            "referenceKey": "Eye of the Storm: Captain Jack’s Stunt Spectacular - Entertainment",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-storm-a-sq_tcm1874-239915.JPG",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Eye of the Storm: Captain Jack’s Stunt Spectacular - Entertainment",
+                "subChapters": [
+                  {
+                    "title": "Eye of the Storm: Captain Jack’s Stunt Spectacular - Entertainment",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-storm-a-sq_tcm1874-239915.JPG",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-new_tcm1874-115042.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-eye-of-storm-captain-jacks-spectacular-hero-new_tcm1874-115042.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-storm-a-sq_tcm1874-239915.JPG",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-storm-a_tcm1874-239914.JPG",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-storm-b-sq_tcm1874-239917.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-storm-b_tcm1874-239916.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-storm-c-sq_tcm1874-239919.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-storm-c_tcm1874-239918.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "10:30&11:10&11:50&13:00&13:40&14:20&15:30&16:00&16:30&17:10",
+        "statusCode": "",
+        "separator": " | ",
+        "timeType": "SHOW_TIME"
+      },
+      "hideOperationHours": false,
+      "redemptionBgImageSize": "Large"
+    }
+  }
+}

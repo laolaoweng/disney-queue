@@ -1,0 +1,230 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:44"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:44"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "上海迪士尼乐团庆祝米奇和米妮生日的惊喜时刻",
+      "entityId": "entShanghaiDisneylandBandCelebratesMickeyMinniesBirthdaySurpriseMoment",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment",
+      "subType": "Concert",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Entertainment",
+        "urlFriendlyId": "entertainment",
+        "value": "娱乐演出"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment-20261103-sq_tcm1874-295003.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment-20261103-hero_tcm1874-295004.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment-20261103-hero_tcm1874-295004.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment-20261103-sq_tcm1874-295003.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "上海迪士尼乐团庆祝米奇和米妮生日的惊喜时刻",
+            "latitude": "31.149543",
+            "longitude": "121.66647"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/entertainment/theme-park/shanghai-disneyland-band-celebrates-mickey-and-minnies-birthday-surprise-moment/",
+      "descriptions": {
+        "shortDescriptionText": "<p>11月9日至11月18日，为了庆祝米奇和米妮的生日，上海迪士尼乐团和舞者们为米奇和米妮呈现一场为期10天的惊喜时刻，音乐家们将演奏不同的乐曲，致意米奇和米妮的爱，欢庆大家的友谊，并奏响欢快的《生日快乐》歌，为他们送上难忘的生日祝福。</p>\n<p><small>*图片仅供参考，请以实际运营情况为准。\n<br />\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p>",
+        "shortDescriptionMobileText": "<p>11月9日至11月18日，为了庆祝米奇和米妮的生日，上海迪士尼乐团和舞者们为米奇和米妮呈现一场为期10天的惊喜时刻，音乐家们将演奏不同的乐曲，致意米奇和米妮的爱，欢庆大家的友谊，并奏响欢快的《生日快乐》歌，为他们送上难忘的生日祝福。</p>\n<p><small>*图片仅供参考，请以实际运营情况为准。\n<br/>*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。</small></p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "entShanghaiDisneylandBandCelebratesMickeyMinniesBirthdaySurpriseMoment;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landGardensOfImagination",
+          "name": "奇想花园",
+          "urlFriendlyId": "gardens-imagination"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor-entertainment",
+              "value": "室外娱乐"
+            },
+            {
+              "urlFriendlyId": "classic-characters",
+              "value": "经典角色"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            },
+            {
+              "urlFriendlyId": "character-experience",
+              "value": "与迪士尼朋友见面"
+            },
+            {
+              "urlFriendlyId": "stage-shows",
+              "value": "舞台表演"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "SeasonalEvents2",
+              "urlFriendlyId": "seasonal-events-2",
+              "value": "Cool Summer"
+            },
+            {
+              "id": "Entertainment",
+              "urlFriendlyId": "entertainment",
+              "value": "娱乐演出"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "gardens-imagination",
+              "value": "奇想花园"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "9:00&10:00&11:00",
+        "statusCode": "",
+        "separator": " | ",
+        "timeType": "SHOW_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

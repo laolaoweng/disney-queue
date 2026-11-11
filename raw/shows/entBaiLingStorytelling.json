@@ -1,0 +1,377 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:26"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:26"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "梦幻故事会",
+      "entityId": "entBaiLingStorytelling",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "bai-ling-storytelling",
+      "subType": "Atmosphere",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Entertainment",
+        "urlFriendlyId": "entertainment",
+        "value": "娱乐演出"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/bai-ling-storytelling",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero-sq_tcm1874-155895.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero_tcm1874-155894.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero_tcm1874-155894.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero_tcm1874-155894.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero-sq_tcm1874-155895.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "梦幻故事会",
+            "latitude": "31.151161",
+            "longitude": "121.664936"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "openDate": "2018-07-02T14:01:52.000",
+      "endDate": "2020-10-31T14:02:06.000",
+      "webLinks": "https://www.shanghaidisneyresort.com/zh-cn/entertainment/theme-park/bai-ling-storytelling/",
+      "duration": [
+        {
+          "hours": null,
+          "minutes": "20"
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>一个说故事的剧团诙谐地用木偶、歌唱叙述了他们最爱的迪士尼故事。</p>\n<p><small>*每天会不定时地演出。\n<br />\n*演出效果请以实际运营情况为准\n<br />\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。 </small></p>",
+        "shortDescriptionMobileText": "<p>一个说故事的剧团诙谐地用木偶、歌唱叙述了他们最爱的迪士尼故事。</p>\n<p><small>*每天会不定时地演出。\n<br/>\n*演出效果请以实际运营情况为准\n<br/>\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。 </small></p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "entBaiLingStorytelling;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "梦幻世界",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor-entertainment",
+              "value": "室外娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Entertainment",
+              "urlFriendlyId": "entertainment",
+              "value": "娱乐演出"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "梦幻世界"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Fantasy Storytelling",
+            "referenceKey": "Fantasy Storytelling",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-gallery-01-sq-20240516_tcm1874-271285.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Fantasy Storytelling",
+                "subChapters": [
+                  {
+                    "title": "Fantasy Storytelling",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-gallery-01-sq-20240516_tcm1874-271285.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero_tcm1874-155894.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-hero_tcm1874-155894.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-gallery-01-sq-20240516_tcm1874-271285.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-bai-ling-storytelling-gallery-01-20240516_tcm1874-271284.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "11:15&13:00&14:30&16:10",
+        "statusCode": "",
+        "separator": " | ",
+        "timeType": "SHOW_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

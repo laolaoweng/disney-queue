@@ -751,6 +751,129 @@ function forecastStats(data, options) {
   };
 }
 
+// 今日客流：首页顶部卡片用的纯函数（不依赖 wx.*，Node 里可直接测）
+// 输入 bundle（catalog / latest / hourlyStats / nowIso），返回热度、等级、均值、开放数、营业时间与 13 根迷你柱
+function crowdStats(data, options) {
+  var opts = options || {};
+  var nowDate = opts.now ? format.toDate(opts.now) : null;
+  if (!nowDate) nowDate = format.toDate(data && data.nowIso) || new Date();
+  var parts = format.beijingParts(nowDate);
+
+  var waits = (data && data.latest && data.latest.waits) || (data && data.waits) || [];
+  var waitValues = [];
+  var openCount = 0;
+  waits.forEach(function (w) {
+    if (!w) return;
+    var status = w.status || (w.isOpen === false ? 'closed' : 'operating');
+    var open = w.isOpen !== false && status === 'operating';
+    if (open) openCount++;
+    if (open && typeof w.waitMinutes === 'number') waitValues.push(w.waitMinutes);
+  });
+
+  var avgWait = null;
+  if (waitValues.length) {
+    var sum = 0;
+    for (var i = 0; i < waitValues.length; i++) sum += waitValues[i];
+    avgWait = Math.round(sum / waitValues.length);
+  }
+
+  var heat = avgWait === null ? null : Math.max(0, Math.min(100, Math.round((avgWait / 60) * 100)));
+  var level = '暂无数据';
+  var levelTone = 'ghost';
+  if (avgWait !== null) {
+    if (heat < 30) { level = '清闲'; levelTone = 'ok'; }
+    else if (heat < 45) { level = '适中'; levelTone = 'warn'; }
+    else if (heat < 60) { level = '偏挤'; levelTone = 'hot'; }
+    else { level = '拥挤'; levelTone = 'danger'; }
+  }
+
+  var park = (data && data.hourlyStats && data.hourlyStats.park) || null;
+  var byHour = (park && park.byHour) || [];
+  var peakHour = null;
+  var quietHour = null;
+  if (park && park.busiestHours && park.busiestHours.length) peakHour = park.busiestHours[0].hour;
+  if (park && park.quietestHours && park.quietestHours.length) quietHour = park.quietestHours[0].hour;
+
+  var bars = byHour.map(function (row) {
+    return {
+      hour: row.hour,
+      avgWait: typeof row.avgWait === 'number' ? row.avgWait : null,
+      current: row.hour === parts.hour
+    };
+  });
+
+  // 没有 hourly-stats 时，用 forecast 曲线兜底（12 桶 / 8:00–19:00，按周末/工作日取均值）
+  if (!bars.length && data && data.forecast && data.forecast.curves) {
+    var isWeekend = parts.weekday === 0 || parts.weekday === 6;
+    var buckets = [];
+    var ids = Object.keys(data.forecast.curves);
+    ids.forEach(function (id) {
+      var curve = data.forecast.curves[id] || {};
+      var arr = isWeekend ? curve.weekend : curve.weekday;
+      if (!arr || !arr.length) arr = curve.weekend || curve.weekday || [];
+      for (var k = 0; k < arr.length; k++) {
+        var v = arr[k];
+        if (typeof v !== 'number') continue;
+        if (!buckets[k]) buckets[k] = { sum: 0, count: 0 };
+        buckets[k].sum += v;
+        buckets[k].count++;
+      }
+    });
+    for (var h = 0; h < 12; h++) {
+      var b = buckets[h];
+      var hour = 8 + h;
+      bars.push({
+        hour: hour,
+        avgWait: (b && b.count) ? Math.round(b.sum / b.count) : null,
+        current: hour === parts.hour
+      });
+    }
+    // 兜底曲线下重新求最挤 / 最空
+    var numeric = bars.filter(function (r) { return typeof r.avgWait === 'number'; });
+    if (numeric.length) {
+      var pMax = numeric[0], pMin = numeric[0];
+      numeric.forEach(function (r) {
+        if (r.avgWait > pMax.avgWait) pMax = r;
+        if (r.avgWait < pMin.avgWait) pMin = r;
+      });
+      peakHour = pMax.hour;
+      quietHour = pMin.hour;
+    }
+  }
+
+  if (!bars.length) {
+    // 完全没有分时数据：给 13 根空柱子占位，保证卡片布局稳定
+    for (var hh = 9; hh <= 21; hh++) {
+      bars.push({ hour: hh, avgWait: null, current: hh === parts.hour });
+    }
+  }
+
+  var hours = data && data.catalog && data.catalog.park && data.catalog.park.defaultOperatingHours;
+  var hoursText = (hours && hours.open && hours.close) ? (hours.open + '–' + hours.close) : '08:30–21:30';
+
+  var note;
+  if (avgWait === null) note = '暂无实时排队数据';
+  else if (peakHour !== null && quietHour !== null) {
+    note = '预计最挤 ' + format.pad2(peakHour) + ':00 · ' + format.pad2(quietHour) + ':00 后最空';
+  } else {
+    note = '分时统计待更新';
+  }
+
+  return {
+    heat: heat,
+    level: level,
+    levelTone: levelTone,
+    avgWait: avgWait,
+    openCount: openCount,
+    hoursText: hoursText,
+    peakHour: peakHour,
+    quietHour: quietHour,
+    bars: bars,
+    note: note,
+    hour: parts.hour
+  };
+}
+
 module.exports = {
   indexAttractions: indexAttractions,
   buildInput: buildInput,
@@ -764,6 +887,7 @@ module.exports = {
   watchlistData: watchlistData,
   highlightsList: highlightsList,
   forecastStats: forecastStats,
+  crowdStats: crowdStats,
   scoreMap: scoreMap,
   rankList: rankList,
   excludedText: excludedText

@@ -270,7 +270,7 @@ Page({
 
   onClearCache: function () {
     try {
-      wx.removeStorageSync('dq_data_cache_v2');
+      wx.removeStorageSync('dq_data_cache_v3');
     } catch (e) {}
     wx.showToast({ title: '缓存已清除，下拉刷新生效', icon: 'none' });
   },

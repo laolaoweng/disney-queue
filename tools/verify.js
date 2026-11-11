@@ -407,7 +407,7 @@ check('miniprogram mock 含 hourly-stats（分时预测）', () => {
 
 // ---------- 小程序页面文件完整性 ----------
 check('小程序页面齐全', () => {
-  const pages = ['pages/index/index', 'pages/rank/rank', 'pages/watchlist/watchlist', 'pages/plan/plan', 'pages/settings/settings', 'pages/forecast/forecast'];
+  const pages = ['pages/index/index', 'pages/rank/rank', 'pages/watchlist/watchlist', 'pages/plan/plan', 'pages/settings/settings', 'pages/forecast/forecast', 'pages/shows/shows'];
   for (const p of pages) {
     const base = path.join(ROOT, 'miniprogram', p);
     for (const ext of ['.js', '.wxml', '.wxss']) {
@@ -415,12 +415,14 @@ check('小程序页面齐全', () => {
     }
   }
   const app = readJSON('miniprogram/app.json');
-  assert(app.pages.length === 6, 'app.json pages 应为 6 个（5 tab + forecast），实际 ' + app.pages.length);
+  assert(app.pages.length === 7, 'app.json pages 应为 7 个（5 tab + forecast + plan），实际 ' + app.pages.length);
   for (const p of pages) assert(app.pages.indexOf(p) >= 0, 'app.json 未注册 ' + p);
   assert(app.tabBar && Array.isArray(app.tabBar.list) && app.tabBar.list.length === 5,
     'tabBar 应保持 5 个 tab');
   const tabPaths = app.tabBar.list.map(t => t.pagePath);
   assert(tabPaths.indexOf('pages/watchlist/watchlist') >= 0, 'tabBar 缺少清单页');
+  assert(tabPaths.indexOf('pages/shows/shows') >= 0, 'tabBar 缺少演出页');
+  assert(tabPaths.indexOf('pages/plan/plan') < 0, 'plan 页不应再放进 tabBar（tabBar 第五项是演出）');
   assert(tabPaths.indexOf('pages/forecast/forecast') < 0, 'forecast 不应放进 tabBar（tabBar 最多 5 个）');
 });
 
@@ -471,6 +473,50 @@ check('手机直接用的部署文件齐全', () => {
   assert(/EDGE_TTL_SECONDS\s*=\s*120/.test(mw), '边缘缓存 TTL 应为 120 秒');
   const wf = fs.readFileSync(path.join(ROOT, '.github/workflows/collect.yml'), 'utf8');
   assert(/cron:\s*'\*\/5 \* \* \* \*'/.test(wf), 'Actions 采集应改为每 5 分钟');
+});
+
+// ---------- 演出数据与页面（show/shows） ----------
+check('data/shows.json 结构合法', () => {
+  const shows = readJSON('data/shows.json');
+  assert(shows.schemaVersion === 1, 'shows schemaVersion 应为 1');
+  assert(shows.source === 'wam/facility/detail', 'shows source 不符');
+  assert(/^\d{4}-\d{2}-\d{2}$/.test(shows.businessDate || ''), 'shows.businessDate 格式不对');
+  assert(Array.isArray(shows.shows) && shows.shows.length >= 20, 'shows 条数异常: ' + (shows.shows && shows.shows.length));
+  const scheduled = shows.shows.filter(s => s.status === 'scheduled' && Array.isArray(s.times) && s.times.length);
+  assert(scheduled.length >= 3, '有场次的演出太少: ' + scheduled.length);
+  for (const s of shows.shows) {
+    assert(/^ent/.test(s.id), '演出 id 应以 ent 开头: ' + s.id);
+    assert(typeof s.name === 'string' && s.name.length > 0, '演出缺少 name: ' + s.id);
+    assert(['scheduled', 'closed', 'unknown'].indexOf(s.status) >= 0, '演出 status 非法: ' + s.status);
+    assert(Array.isArray(s.times), '演出 times 不是数组: ' + s.id);
+    const sorted = s.times.slice().sort();
+    assert(JSON.stringify(sorted) === JSON.stringify(s.times), '演出 times 未升序: ' + s.id);
+    for (const tm of s.times) assert(/^\d{2}:\d{2}$/.test(tm), '演出时间格式不对: ' + s.id + ' ' + tm);
+  }
+  return shows.shows.length + ' 场演出，' + scheduled.length + ' 条有场次';
+});
+
+check('miniprogram mock 含演出数据', () => {
+  const m = readJSON('miniprogram/mock/shows.json');
+  const real = readJSON('data/shows.json');
+  assert(Array.isArray(m.shows), 'mock shows 缺 shows 数组');
+  assert(m.businessDate === real.businessDate, 'mock shows 日期与 data/shows.json 不一致（需重新同步）');
+  return m.shows.length + ' 条';
+});
+
+check('H5 演出页 + 今日客流卡', () => {
+  const preview = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
+  const html = fs.readFileSync(path.join(ROOT, 'web-preview/index.html'), 'utf8');
+  const css = fs.readFileSync(path.join(ROOT, 'web-preview/preview.css'), 'utf8');
+  assert(/function htmlShows\s*\(/.test(preview), 'preview.js 缺少 htmlShows');
+  assert(/娱乐演出/.test(preview), 'preview.js 缺少演出页标题');
+  assert(/TITLES\[state\.view\]/.test(preview), 'render 未使用 TITLES');
+  assert(/shows:/.test(preview.match(/var TITLES = \{[^}]*\};/)[0]), 'TITLES 缺少 shows');
+  assert(/data-view="shows"/.test(html), 'index.html tabbar 缺少演出 tab');
+  assert(/今日客流/.test(preview) && /crowd-card/.test(css), 'preview 缺少今日客流卡');
+  assert(/#eaf2ff|#e4efff/.test(css), 'preview.css 不是浅色主题');
+  const tabs = (html.match(/class="tab" data-view=/g) || []).length;
+  assert(tabs === 5, 'H5 tabbar 应为 5 个，实际 ' + tabs);
 });
 
 // ---------- 结果 ----------

@@ -1,5 +1,5 @@
 // utils/api.js —— 数据层（契约见 docs/CONTRACT.md）
-// 负责读取 catalog.json / latest.json / forecast.json / hourly-stats.json：
+// 负责读取 catalog.json / latest.json / forecast.json / hourly-stats.json / shows.json：
 //   1. MOCK_MODE=true 时直接 require 小程序包内的 mock/*.json（离线演示，默认）
 //   2. 否则请求 DATA_BASE_URL 下的静态 JSON，带超时、重试 2 次、内存 + storage 5 分钟缓存
 // 发布前把 DATA_BASE_URL 换成自己的备案域名/对象存储（见 docs/02-deploy.md）。
@@ -14,7 +14,7 @@ var MOCK_NOW_FALLBACK = '2026-10-17T05:00:00Z';
 var MOCK_NOW = 'auto';
 
 var CACHE_TTL = 5 * 60 * 1000;
-var CACHE_KEY = 'dq_data_cache_v2';
+var CACHE_KEY = 'dq_data_cache_v3';
 var TIMEOUT_MS = 8000;
 var RETRY_TIMES = 2;
 
@@ -27,7 +27,8 @@ function getMockData() {
       'catalog.json': require('../mock/catalog.json'),
       'latest.json': require('../mock/latest.json'),
       'forecast.json': require('../mock/forecast.json'),
-      'hourly-stats.json': require('../mock/hourly-stats.json')
+      'hourly-stats.json': require('../mock/hourly-stats.json'),
+      'shows.json': require('../mock/shows.json')
     };
   }
   return mockData;
@@ -126,7 +127,7 @@ function writeStorageCache(bundle) {
   }
 }
 
-function normalizeBundle(catalog, latest, forecast, hourlyStats) {
+function normalizeBundle(catalog, latest, forecast, hourlyStats, shows) {
   if (!catalog || !catalog.attractions) {
     throw new Error('catalog.json 数据无效');
   }
@@ -139,6 +140,7 @@ function normalizeBundle(catalog, latest, forecast, hourlyStats) {
     latest: latest,
     forecast: forecast || null,
     hourlyStats: hourlyStats || null,
+    shows: shows || { schemaVersion: 1, shows: [] },
     waits: latest.waits || [],
     updatedAt: latest.updatedAt || latest.fetchedAt || null,
     fetchedAt: latest.fetchedAt || null,
@@ -149,7 +151,7 @@ function normalizeBundle(catalog, latest, forecast, hourlyStats) {
   };
 }
 
-// 并行拉四个文件；forecast / hourly-stats 允许 404
+// 并行拉五个文件；forecast / hourly-stats / shows 允许 404
 function loadAll(forceRefresh) {
   if (!forceRefresh) {
     var cached = readStorageCache();
@@ -165,7 +167,8 @@ function loadAll(forceRefresh) {
       getMockData()['catalog.json'],
       getMockData()['latest.json'],
       getMockData()['forecast.json'],
-      getMockData()['hourly-stats.json']
+      getMockData()['hourly-stats.json'],
+      getMockData()['shows.json']
     );
     writeStorageCache(bundle);
     return new Promise(function (resolve) {
@@ -179,9 +182,10 @@ function loadAll(forceRefresh) {
     fetchJSON('catalog.json'),
     fetchJSON('latest.json'),
     fetchJSON('forecast.json'),
-    fetchJSON('hourly-stats.json')
+    fetchJSON('hourly-stats.json'),
+    fetchJSON('shows.json')
   ]).then(function (arr) {
-    var bundle = normalizeBundle(arr[0], arr[1], arr[2], arr[3]);
+    var bundle = normalizeBundle(arr[0], arr[1], arr[2], arr[3], arr[4]);
     writeStorageCache(bundle);
     return bundle;
   });

@@ -7,6 +7,52 @@
     <view class="refresh-btn {{spinning ? 'spinning' : ''}}" bindtap="onRefresh">↻</view>
   </view>
 
+  <!-- 今日客流（点击进入分时预测） -->
+  <view wx:if="{{!loading && !error && crowd}}" class="crowd-card" bindtap="goForecast">
+    <view class="crowd-head">
+      <view class="crowd-left">
+        <text class="crowd-label">乐园热度</text>
+        <view class="crowd-heat-line">
+          <text class="crowd-heat num {{crowd.heat === null ? 'none' : ''}}">{{crowd.heat === null ? '—' : crowd.heat}}</text>
+          <text class="crowd-heat-unit">/100</text>
+          <text class="crowd-level tone-{{crowd.levelTone}}">{{crowd.level}}</text>
+        </view>
+      </view>
+      <view class="crowd-right">
+        <view class="crowd-metric">
+          <text class="crowd-metric-num num">{{crowd.avgWait === null ? '—' : crowd.avgWait}}</text>
+          <text class="crowd-metric-label">平均排队</text>
+        </view>
+        <view class="crowd-metric">
+          <text class="crowd-metric-num num">{{crowd.openCount}}</text>
+          <text class="crowd-metric-label">开放项目</text>
+        </view>
+        <view class="crowd-metric">
+          <text class="crowd-metric-num num crowd-hours">{{crowd.hoursText}}</text>
+          <text class="crowd-metric-label">营业时间</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="crowd-bars">
+      <view
+        wx:for="{{crowd.bars}}"
+        wx:key="hour"
+        class="crowd-bar-col {{item.current ? 'current' : ''}}"
+      >
+        <view class="crowd-bar-track">
+          <view class="crowd-bar-fill {{item.current ? 'current' : ''}}" style="height: {{item.heightPct}}%"></view>
+        </view>
+        <text wx:if="{{item.hour % 3 === 0}}" class="crowd-bar-hour">{{item.hour}}</text>
+      </view>
+    </view>
+
+    <view class="crowd-foot">
+      <text class="crowd-note">{{crowd.note}}</text>
+      <text class="crowd-go">分时预测 ›</text>
+    </view>
+  </view>
+
   <view class="origin-bar">
     <text class="origin-label">出发点</text>
     <picker

@@ -29,8 +29,8 @@ function argValue(name, fallback) {
 const checkOnly = args.includes('--check');
 const outDir = resolve(root, argValue('--out', '_site'));
 
-const DATA_FILES = ['catalog.json', 'latest.json', 'forecast.json', 'hourly-stats.json'];
-const MOCK_FILES = ['catalog.json', 'latest.json', 'forecast.json', 'hourly-stats.json'];
+const DATA_FILES = ['catalog.json', 'latest.json', 'forecast.json', 'hourly-stats.json', 'shows.json'];
+const MOCK_FILES = ['catalog.json', 'latest.json', 'forecast.json', 'hourly-stats.json', 'shows.json'];
 const UTIL_FILES = ['api.js', 'rec.js', 'store.js', 'format.js'];
 
 function fail(message) {
@@ -74,7 +74,9 @@ if (!Array.isArray(catalog.attractions) || catalog.attractions.length < 20) {
   fail(`catalog.attractions 数量异常: ${catalog.attractions?.length}`);
 }
 for (const f of DATA_FILES) assertValidJson(join('data', f));
-for (const f of MOCK_FILES) assertValidJson(join('miniprogram', 'mock', f));
+for (const f of MOCK_FILES) {
+  if (existsSync(join(root, 'miniprogram', 'mock', f))) assertValidJson(join('miniprogram', 'mock', f));
+}
 requireFile('web-preview/index.html');
 requireFile('web-preview/preview.js');
 requireFile('miniprogram/shared/recommend.js');
@@ -94,7 +96,9 @@ mkdirSync(outDir, { recursive: true });
 
 copyDir('web-preview', 'web-preview');
 for (const f of DATA_FILES) copyFile(join('data', f), join('data', f));
-for (const f of MOCK_FILES) copyFile(join('miniprogram', 'mock', f), join('miniprogram', 'mock', f));
+for (const f of MOCK_FILES) {
+  if (existsSync(join(root, 'miniprogram', 'mock', f))) copyFile(join('miniprogram', 'mock', f), join('miniprogram', 'mock', f));
+}
 copyFile('miniprogram/shared/recommend.js', 'miniprogram/shared/recommend.js');
 for (const f of UTIL_FILES) copyFile(join('miniprogram', 'utils', f), join('miniprogram', 'utils', f));
 

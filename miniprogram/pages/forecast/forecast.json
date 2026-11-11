@@ -1,8 +1,8 @@
 {
   "navigationBarTitleText": "分时预测",
-  "navigationBarBackgroundColor": "#0b0e14",
-  "navigationBarTextStyle": "white",
-  "backgroundColor": "#0b0e14",
-  "enablePullDownRefresh": true,
-  "backgroundTextStyle": "light"
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#f7fbff",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
 }

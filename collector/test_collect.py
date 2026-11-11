@@ -39,6 +39,7 @@ sys.path.insert(0, COLLECTOR_DIR)
 import build_hourly_stats  # noqa: E402
 import collect as collect_mod  # noqa: E402  （被测模块，顺便测内部函数）
 import fetch_history  # noqa: E402
+import fetch_shows  # noqa: E402
 import h3_fetch  # noqa: E402
 import import_history  # noqa: E402
 
@@ -979,6 +980,279 @@ class HistoryPipelineTestCase(unittest.TestCase):
                                      % (att['attractionId'], row['hour'], value,
                                         row['weekdayAvg']))
         self.assertGreater(compared, 0)
+
+
+class ShowScheduleTestCase(unittest.TestCase):
+    """fetch_shows.py 的离线自测（预置详情缓存 + 假 fetcher，全程不出网）。"""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.tmp = tempfile.TemporaryDirectory(prefix='disney-queue-shows-test-')
+        cls.work = cls.tmp.name
+        # 三个演出：entAlpha 停演、entBeta 两场、entGamma 一场（WAM 扁平 dict 结构）
+        cls.entertainments = [
+            {'id': 'entAlpha', 'name': '停演演出', 'land': '梦幻世界', 'urlFriendlyId': 'alpha'},
+            {'id': 'entBeta', 'name': '午场演出', 'land': '明日世界', 'urlFriendlyId': 'beta'},
+            {'id': 'entGamma', 'name': '早场演出', 'land': '奇想花园', 'urlFriendlyId': 'gamma'},
+        ]
+        cls.wam_path = os.path.join(cls.work, 'wam.json')
+        wam = {}
+        for entertainment in cls.entertainments:
+            entity_id = entertainment['id']
+            wam[entity_id + ';entityType=Entertainment;destination=shdr'] = {
+                'entityId': entity_id,
+                'facilityId': entity_id + ';entityType=Entertainment;destination=shdr',
+                'entityType': 'Entertainment',
+                'name': entertainment['name'],
+                'urlFriendlyId': entertainment['urlFriendlyId'],
+                'ancestorFacilities': {'land': {'name': entertainment['land']}},
+            }
+        with open(cls.wam_path, 'w', encoding='utf-8') as handle:
+            json.dump(wam, handle, ensure_ascii=False)
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.tmp.cleanup()
+
+    def setUp(self):
+        self.case_dir = tempfile.mkdtemp(prefix='case-', dir=self.work)
+
+    # ------------------------------------------------------------ 纯函数
+    @staticmethod
+    def _detail(entity_id, name, sub_type='Show', land='明日世界', status_code='',
+                time_info='', business_date='2026-11-11'):
+        return {'data': {'data': {
+            'entityId': entity_id,
+            'name': name,
+            'subType': sub_type,
+            'urlFriendlyId': entity_id.lower(),
+            'ancestorFacilities': {'land': {'name': land}} if land else {},
+            'media': {
+                'finderListMobileSquare': {'url': 'https://img.test/%s-sq.png' % entity_id},
+                'finderDetailMobileHero': {'url': 'https://img.test/%s-hero.png' % entity_id},
+            },
+            'schedule': {'businessDate': business_date, 'timeInfo': time_info,
+                         'statusCode': status_code, 'separator': ' | ',
+                         'timeType': 'SHOW_TIME'},
+        }}}
+
+    def _write_cache(self, cache_dir, entity_id, detail):
+        os.makedirs(cache_dir, exist_ok=True)
+        with open(os.path.join(cache_dir, entity_id + '.json'), 'w',
+                  encoding='utf-8') as handle:
+            json.dump(detail, handle, ensure_ascii=False)
+
+    def test_parse_time_info_formats(self):
+        cases = [
+            ('14:00, 15:10', ['14:00', '15:10']),
+            ('12:15&15:45', ['12:15', '15:45']),
+            ('10:45&11:30&13:15&14:00&14:45&15:30&16:30&17:15',
+             ['10:45', '11:30', '13:15', '14:00', '14:45', '15:30', '16:30', '17:15']),
+            ('9:00&10:00&11:00', ['09:00', '10:00', '11:00']),
+            ('9:05；09:05', ['09:05']),        # 重复场次去重 + 不补零归一
+            ('', []),
+            (None, []),
+            ('24:00&25:99&12:60', []),         # 非法时间丢弃
+        ]
+        for raw, expected in cases:
+            self.assertEqual(fetch_shows.parse_time_info(raw), expected, repr(raw))
+
+    def test_classify_status(self):
+        self.assertEqual(fetch_shows.classify_status('', '12:15&15:45',
+                                                     ['12:15', '15:45']), 'scheduled')
+        self.assertEqual(fetch_shows.classify_status('STNDOPR', '10:05&16:20',
+                                                     ['10:05', '16:20']), 'scheduled')
+        self.assertEqual(fetch_shows.classify_status('ScheduledClosedDay', '', []), 'closed')
+        self.assertEqual(fetch_shows.classify_status('STNDOPR', '', []), 'closed')
+        self.assertEqual(fetch_shows.classify_status('STNDOPR', 'TBD', []), 'unknown')
+
+    def test_build_show_fields_and_media(self):
+        entertainment = self.entertainments[1]
+        detail = self._detail('entBeta', '午场演出（详情名）', 'Concert', '奇想花园',
+                              '', '9:00&10:00')
+        show = fetch_shows.build_show(entertainment, detail)
+        self.assertEqual(set(show), {'id', 'name', 'subType', 'land', 'imageUrl', 'heroUrl',
+                                     'status', 'statusCode', 'timeInfo', 'times',
+                                     'businessDate'})
+        self.assertEqual(show['id'], 'entBeta')
+        self.assertEqual(show['name'], '午场演出（详情名）')
+        self.assertEqual(show['subType'], 'Concert')
+        self.assertEqual(show['land'], '奇想花园')
+        self.assertEqual(show['times'], ['09:00', '10:00'])
+        self.assertEqual(show['timeInfo'], '9:00&10:00')
+        self.assertEqual(show['status'], 'scheduled')
+        self.assertEqual(show['businessDate'], '2026-11-11')
+        self.assertEqual(show['imageUrl'], 'https://img.test/entBeta-sq.png')
+        self.assertEqual(show['heroUrl'], 'https://img.test/entBeta-hero.png')
+
+        # 详情缺 media / land 时回落：URL 空串、land 用 WAM 里的
+        sparse = self._detail('entBeta', '午场演出', land='', time_info='')
+        sparse['data']['data'].pop('media')
+        show = fetch_shows.build_show(entertainment, sparse)
+        self.assertEqual(show['imageUrl'], '')
+        self.assertEqual(show['heroUrl'], '')
+        self.assertEqual(show['land'], '明日世界')
+
+    def test_list_entertainments_from_repo_wam(self):
+        if not os.path.exists(DEFAULT_WAM):
+            self.skipTest('缺少 %s' % DEFAULT_WAM)
+        wam = read_json(DEFAULT_WAM)
+        entertainments = fetch_shows.list_entertainments(wam)
+        self.assertEqual(len(entertainments), 33)
+        self.assertTrue(all(item['id'].startswith('ent') for item in entertainments))
+        self.assertTrue(all(item['name'] for item in entertainments))
+        ids = {item['id'] for item in entertainments}
+        self.assertIn('entMickeysStorybookExpress', ids)
+        # 排序稳定（按 id）
+        self.assertEqual([item['id'] for item in entertainments], sorted(ids))
+
+    # ------------------------------------------------------------ 缓存 / 失败
+    def test_collect_shows_reuses_cache_without_network(self):
+        cache_dir = os.path.join(self.case_dir, 'cache')
+        self._write_cache(cache_dir, 'entAlpha', self._detail(
+            'entAlpha', '停演演出', land='梦幻世界', status_code='ScheduledClosedDay'))
+        self._write_cache(cache_dir, 'entBeta', self._detail(
+            'entBeta', '午场演出', time_info='12:15&15:45'))
+        self._write_cache(cache_dir, 'entGamma', self._detail(
+            'entGamma', '早场演出', time_info='9:00'))
+
+        def no_network(*args, **kwargs):
+            raise AssertionError('缓存齐全时不应发网络请求')
+
+        shows, failures, stats = fetch_shows.collect_shows(
+            self.entertainments, cache_dir, sleep=0, fetcher=no_network)
+        self.assertEqual(failures, [])
+        self.assertEqual(stats, {'requested': 3, 'ok': 3, 'fetched': 0,
+                                 'cached': 3, 'failed': 0})
+        self.assertEqual([show['id'] for show in shows],
+                         ['entAlpha', 'entBeta', 'entGamma'])
+        # 排序在 build_document 里做：有场次的在前（按首个场次），停演最后
+        document = fetch_shows.build_document(shows, now=datetime(2026, 11, 11, 3, 30,
+                                                                  tzinfo=timezone.utc))
+        self.assertEqual([show['id'] for show in document['shows']],
+                         ['entGamma', 'entBeta', 'entAlpha'])
+        self.assertEqual(document['shows'][0]['times'], ['09:00'])
+        self.assertEqual(document['shows'][2]['status'], 'closed')
+
+    def test_collect_shows_failure_is_skipped(self):
+        cache_dir = os.path.join(self.case_dir, 'cache')
+        calls = []
+
+        def fetcher(entity_id, timeout=25.0, sleep=0.7):
+            calls.append(entity_id)
+            if entity_id == 'entBeta':
+                raise fetch_shows.CollectorError('HTTP 500 entBeta')
+            return self._detail(entity_id, '抓到的演出', time_info='10:00')
+
+        shows, failures, stats = fetch_shows.collect_shows(
+            self.entertainments, cache_dir, sleep=0, fetcher=fetcher)
+        self.assertEqual(len(shows), 2)
+        self.assertEqual([show['id'] for show in shows], ['entAlpha', 'entGamma'])
+        self.assertEqual(len(failures), 1)
+        self.assertEqual(failures[0][0], 'entBeta')
+        self.assertEqual(stats['fetched'], 2)
+        self.assertEqual(stats['failed'], 1)
+        self.assertEqual(calls, ['entAlpha', 'entBeta', 'entGamma'])
+        self.assertTrue(os.path.isfile(os.path.join(cache_dir, 'entAlpha.json')),
+                        '抓取成功后应写缓存')
+
+    def test_fetch_with_retries_retries_then_raises(self):
+        original = fetch_shows.post_detail
+        calls = []
+
+        def failing(entity_id, timeout=25.0):
+            calls.append(entity_id)
+            raise fetch_shows.CollectorError('HTTP 503 %s' % entity_id)
+
+        fetch_shows.post_detail = failing
+        try:
+            with self.assertRaises(fetch_shows.CollectorError):
+                fetch_shows.fetch_with_retries('entBeta', timeout=1, retries=2, sleep=0)
+        finally:
+            fetch_shows.post_detail = original
+        self.assertEqual(calls, ['entBeta', 'entBeta', 'entBeta'])
+
+    # ------------------------------------------------------------ CLI / 产物
+    def test_main_writes_document_idempotently(self):
+        cache_dir = os.path.join(self.case_dir, 'cache')
+        self._write_cache(cache_dir, 'entAlpha', self._detail(
+            'entAlpha', '停演演出', land='梦幻世界', status_code='ScheduledClosedDay'))
+        self._write_cache(cache_dir, 'entBeta', self._detail(
+            'entBeta', '午场演出', time_info='12:15&15:45'))
+        self._write_cache(cache_dir, 'entGamma', self._detail(
+            'entGamma', '早场演出', time_info='9:00'))
+        out_path = os.path.join(self.case_dir, 'out', 'shows.json')
+        error_path = os.path.join(self.case_dir, 'out', 'shows.error.json')
+        os.makedirs(os.path.dirname(out_path))
+        with open(error_path, 'w', encoding='utf-8') as handle:
+            handle.write('{"stale": true}')
+
+        original = fetch_shows.fetch_with_retries
+
+        def no_network(*args, **kwargs):
+            raise AssertionError('缓存齐全时不应发网络请求')
+
+        fetch_shows.fetch_with_retries = no_network
+        try:
+            argv = ['--wam', self.wam_path, '--cache-dir', cache_dir,
+                    '--out', out_path, '--now', '2026-11-11T03:30:00Z']
+            self.assertEqual(fetch_shows.main(argv), 0)
+            with open(out_path, 'rb') as handle:
+                first_bytes = handle.read()
+            self.assertFalse(first_bytes.startswith(b'\xef\xbb\xbf'), '不应写 BOM')
+            self.assertEqual(fetch_shows.main(argv), 0)
+            with open(out_path, 'rb') as handle:
+                self.assertEqual(handle.read(), first_bytes, '同样输入应生成同样字节')
+        finally:
+            fetch_shows.fetch_with_retries = original
+
+        document = read_json(out_path)
+        self.assertEqual(set(document), {'schemaVersion', 'generatedAt', 'source',
+                                         'parkId', 'businessDate', 'shows'})
+        self.assertEqual(document['source'], 'wam/facility/detail')
+        self.assertEqual(document['parkId'], 'shdr')
+        self.assertEqual(document['businessDate'], '2026-11-11')
+        self.assertEqual(document['generatedAt'], '2026-11-11T03:30:00Z')
+        self.assertEqual([show['id'] for show in document['shows']],
+                         ['entGamma', 'entBeta', 'entAlpha'])
+        self.assertEqual(document['shows'][2]['times'], [])
+        self.assertFalse(os.path.exists(error_path), '成功后应删除旧的 error 文件')
+        # indent=1：第二行以一个空格开头
+        text = first_bytes.decode('utf-8')
+        self.assertEqual(text.splitlines()[1][:1], ' ')
+
+    def test_main_limit_and_failure_error_file(self):
+        cache_dir = os.path.join(self.case_dir, 'cache')
+        self._write_cache(cache_dir, 'entAlpha', self._detail(
+            'entAlpha', '停演演出', status_code='ScheduledClosedDay'))
+        # entBeta / entGamma 无缓存 -> 用假 fetcher 报错（只测 entAlpha 会被 limit 跳过）
+        out_path = os.path.join(self.case_dir, 'out', 'shows.json')
+        error_path = os.path.join(self.case_dir, 'out', 'shows.error.json')
+
+        original = fetch_shows.fetch_with_retries
+
+        def failing(entity_id, timeout=25.0, sleep=0.7):
+            raise fetch_shows.CollectorError('HTTP 503 %s' % entity_id)
+
+        fetch_shows.fetch_with_retries = failing
+        try:
+            base = ['--wam', self.wam_path, '--cache-dir', cache_dir, '--out', out_path,
+                    '--now', '2026-11-11T03:30:00Z']
+            self.assertEqual(fetch_shows.main(base + ['--limit', '1']), 0)
+            limited = read_json(out_path)
+            self.assertEqual([show['id'] for show in limited['shows']], ['entAlpha'])
+            self.assertFalse(os.path.exists(error_path))
+
+            self.assertEqual(fetch_shows.main(base), 1)
+        finally:
+            fetch_shows.fetch_with_retries = original
+
+        document = read_json(out_path)
+        self.assertEqual(len(document['shows']), 1)
+        error = read_json(error_path)
+        self.assertEqual(error['requested'], 3)
+        self.assertEqual(error['ok'], 1)
+        self.assertEqual([item['id'] for item in error['failed']], ['entBeta', 'entGamma'])
 
 
 if __name__ == '__main__':

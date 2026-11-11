@@ -1,8 +1,8 @@
 {
   "navigationBarTitleText": "清单",
-  "navigationBarBackgroundColor": "#0b0e14",
-  "navigationBarTextStyle": "white",
-  "backgroundColor": "#0b0e14",
-  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#f7fbff",
+  "backgroundTextStyle": "dark",
   "enablePullDownRefresh": true
 }

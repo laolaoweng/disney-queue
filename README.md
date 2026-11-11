@@ -32,7 +32,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File start_local.ps1
 | **A. GitHub Pages**（最省事） | 约 5–15 分钟 | 一个 GitHub 账号，仓库 Settings → Pages 选 `main / (root)` 即可，不用构建 |
 | **B. Cloudflare Pages + 边缘函数**（真·实时） | 约 2 分钟 | GitHub + Cloudflare 账号；`node tools\build_site.js` 后 `npx wrangler pages deploy _site --project-name disney-queue` |
 
-手机打开 `https://<你的网址>/web-preview/index.html` → 添加到主屏幕即可，六个页面（推荐/排行/清单/行程/设置/分时预测）都在。`.github/workflows/collect.yml` 已改为**每 5 分钟**抓一次，数据自动 commit；Cloudflare 方案下 `/data/latest.json` 由边缘函数在 2 分钟内实时回源。
+手机打开 `https://<你的网址>/web-preview/index.html` → 添加到主屏幕即可，七个页面（推荐/排行/清单/演出/行程/设置/分时预测）都在。`.github/workflows/collect.yml` 已改为**每 5 分钟**抓一次，数据自动 commit；Cloudflare 方案下 `/data/latest.json` 由边缘函数在 2 分钟内实时回源。
 
 ---
 
@@ -94,12 +94,15 @@ python collector\collect.py       # 默认 --transport auto：TCP 被重置就�
 
 ## 它长什么样
 
+浅色主题：淡蓝渐变背景 + 白色圆角卡片 + 蓝色主色；首页最上方是「今日客流」卡（热度/等级/平均排队/开放项目数/13 根分时迷你柱，点进分时预测）。
+
 | 页面 | 作用 |
 | --- | --- |
 | **首页（index）** | 一张大卡片告诉你「现在去玩 X，排队 20 分钟，步行 6 分钟」，附 2–4 条理由、数据更新时间、备选 3 个；「🎢 八大必玩 · 现在排队」卡片按排队从少到多列出 8 个招牌项目，点一下即可加入清单；有必玩清单时额外显示「必玩项目当前排队 + 今日预计最低时段」 |
 | **排行（rank）** | 排序栏可选「综合评分 / 排队最短 / 步行最近 / 八大必玩」；选「八大必玩」只留 8 个招牌项目并按排队升序；全部 30 个项目按主题园区分组，可点行加入必玩，闭园/停运灰显 |
 | **清单（watchlist）** | 勾选你想玩的项目 → 自动按「当前排队时间从少到多」排好序、算好步行和项目时长 → 汇总卡显示「一共 N 项、排队合计 X 分、总耗时 W 分、预计 HH:MM 全部玩完」；支持全选在园/清空，勾选状态自动保存 |
-| **行程（plan）** | 自动排 3–4 个项目的顺序，显示「几点开始、排多久、玩完几点」，可点「我从这里开始」 |
+| **演出（shows）** | 当天娱乐演出的场次卡片（图 + 最近一场倒计时 + 下一场），按「快要开始」排序，停演/已结束灰显；数据每天从官网抓一次 |
+| **行程（plan）** | 自动排 3–4 个项目的顺序，显示「几点开始、排多久、玩完几点」，可点「我从这里开始」（不再占 tabBar，首页按钮进入） |
 | **分时预测（forecast）** | 最近 14 天的每小时曲线：切项目看「几点人最少」，工作日/周末切换，标出最空 2–3 小时和「比高峰少 X%」；数据来自 `hourly-stats.json`，缺失时退回 `forecast.json` |
 | **设置（settings）** | 同行类型（刺激/家庭/亲子/混合）、最矮身高、是否看演出、时间预算、必玩/尊享卡清单 |
 
@@ -120,7 +123,7 @@ deliverables/disney-queue/
 │  ├─ 04-forecast.md           ← 分时预测：最近 14 天曲线、最空/最挤时段、局限
 │  ├─ 05-release.md            ← 上架微信小程序：5 个硬门槛、备案、提审、检查清单
 │  ├─ 06-phone-only.md         ← 手机直接用（家里电脑不开）：GitHub Pages / Cloudflare Pages 部署
-│  └─ CONTRACT.md              ← 三方并行的数据契约（catalog/latest/forecast/hourly-stats/recommend）
+│  └─ CONTRACT.md              ← 三方并行的数据契约（catalog/latest/forecast/hourly-stats/shows/recommend）
 ├─ collector/                  ← 采集端（Python 标准库；HTTP/3 回退才需要 aioquic）
 │  ├─ build_catalog.py         ← 官方 WAM 元数据 → data/catalog.json（30 个项目 + highlights 八大必玩）
 │  ├─ collect.py               ← queue-times → data/latest.json（--transport auto/tcp/h3，原子写，失败不覆盖）
@@ -131,12 +134,14 @@ deliverables/disney-queue/
 │  ├─ import_history.py        ← CSV → data/history/*.jsonl（UTC、closed 分类、id 映射）
 │  ├─ build_hourly_stats.py    ← 14 天分时统计 → data/hourly-stats.json（契约 §6）
 │  ├─ build_forecast.py        ← 历史样本 → data/forecast.json（分时段曲线；--history-dir 用 14 天窗口）
+│  ├─ fetch_images.py          ← 官方 WAM facility/detail → data/images.json（项目方形图/头图）
+│  ├─ fetch_shows.py           ← 官方 WAM facility/detail → data/shows.json（33 场演出的当日场次）
 │  ├─ common.py                ← 时间/IO/状态归一化
-│  └─ test_collect.py          ← 32 个单测（含 TCP→HTTP/3 回退、历史导入、分时统计）
+│  └─ test_collect.py          ← 41 个单测（含 TCP→HTTP/3 回退、历史导入、分时统计、演出场次）
 ├─ shared/recommend.js         ← 推荐算法（纯函数，CommonJS，零依赖；recommend + estimateSelected）
 ├─ tests/                      ← 算法测试（28 例）+ 真实样本冒烟
-├─ miniprogram/                ← 微信小程序（原生框架，6 页 + mock 数据）
-│  └─ pages/{index,rank,watchlist,plan,settings,forecast}/
+├─ miniprogram/                ← 微信小程序（原生框架，7 页 + mock 数据；浅色主题）
+│  └─ pages/{index,rank,watchlist,shows,plan,settings,forecast}/
 ├─ web-preview/                ← 纯静态 H5 预览（复用同一份算法 + 同一套清单/分时逻辑）
 ├─ tools/verify.js             ← 交付物一致性验收（契约/算法/页面/mock/分时预测）
 ├─ tools/now.js                ← 用「此刻 + data/latest.json」打印现在该玩哪个（命令行版推荐）
@@ -146,9 +151,9 @@ deliverables/disney-queue/
 ├─ functions/_middleware.js    ← Cloudflare Pages 边缘函数：/data/latest.json 与 /api/live 现场抓数据
 ├─ cloudflare/lib/live.mjs     ← 边缘端 queue-times → latest.json 的纯函数 + 单测
 ├─ start_local.ps1             ← 本机一条命令：采集 + 每 N 分钟刷新 + 起网页服务器（手机同 Wi-Fi 可用）
-├─ data/                       ← 生成物：catalog.json / latest.json / forecast.json / hourly-stats.json / history/ / collect.log
+├─ data/                       ← 生成物：catalog.json / latest.json / forecast.json / hourly-stats.json / shows.json / images.json / history/ / collect.log
 ├─ raw/                        ← 原始素材：官方 WAM 全量设施 JSON + queue-times 历史 CSV（raw/history/）
-└─ .github/workflows/collect.yml ← 每 5 分钟采集 + 有变化才提交（GitHub Pages / Cloudflare 的数据来源）
+└─ .github/workflows/           ← collect.yml 每 5 分钟排队采集；shows.yml 每天 00:20 抓演出场次
 ```
 
 ---
@@ -203,6 +208,7 @@ console.log(est.totals); // { attractions: 3, waitMinutes, rideMinutes, walkMinu
     1. **境外中继（推荐，零服务器成本）**：GitHub Actions 每 10 分钟抓一次 → `data/latest.json` 提交回仓库 → 小程序读 raw/对象存储。微信小程序的 `wx.request` 只支持 TCP，用不了 QUIC，所以给小程序提供数据必须走这条路或自己的 HTTPS 服务器。
     2. **本机采集（HTTP/3）**：`collector\run_live.ps1` 用 QUIC 直接抓（需 `pip install aioquic`），配合 Windows 计划任务每 10 分钟刷新本地 `data/` 与小程序 mock；适合自己盯着看、或再把 JSON 同步到你自己的 HTTPS 存储。
 - **项目元数据**：迪士尼官网 `cu.apigw.shanghaidisneyresort.com/steamboat-wam/api/rap/facility/list`（344 个设施里的 30 个游乐项目，简体中文名 + 真实坐标 + 尊享卡标记）。
+- **演出场次**：上海迪士尼官网 `facility/detail`（`schedule.timeInfo`，33 个娱乐演出），`.github/workflows/shows.yml` 每天 00:20（北京时间）抓一次，产出 `data/shows.json`。
 - **历史排队（分时预测）**：GitHub 镜像 `hjeee3-tech/shanghai-disney-waits` 的 `data/YYYY-MM-DD.csv`（queue-times park 30 的 5 分钟粒度镜像）；`fetch_history.py` 会 HEAD 探测最新日期并下最近 14 天，不做实时请求。
 - **小程序怎么读到数据**：默认 `https://raw.githubusercontent.com/<你的仓库>/main/data`；正式发布换成自己的**备案域名 + 对象存储**（或微信云开发）。四种下发方式对比、成本、备案/白名单步骤、合规清单见 [docs/02-deploy.md](docs/02-deploy.md)。
 - **要上架微信小程序？** 主体选择、ICP 备案、服务类目、商标避坑、数据域名、隐私指引、提审驳回原因和 11 项检查清单，都整理在 [docs/05-release.md](docs/05-release.md)。
@@ -236,6 +242,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File collector\install_task.ps1 -
 
 ## 已知限制
 
+- **演出场次是每天的快照**：官网临时调整不会立刻反映，页面已注明「以现场为准」。
+- **今日客流热度是估算**：用当前开放项目的平均排队除以 60 分钟估算（0–100），不是官方客流数字。
+
 - **「实时」的上限是数据源**：queue-times 上游约 10 分钟刷新一次，所以我们再勤也只能拿到 10 分钟级的数；`fetchedAt`/`updatedAt` 会如实写在 `latest.json` 里，界面已标注数据更新时间。
 - 微信小程序的 `wx.request` 只能走 TCP 上的 HTTP/1.1-2，**用不了 QUIC**；因此小程序端的实时数据必须来自 HTTPS 中继（GitHub Actions / 对象存储 / 自己的服务器）。本机 HTTP/3 采集适合自己看、或给中继喂数据。
 - HTTP/3 通道在 2026-11-11 上海电信实测可用，但个别运营商/网络可能封 UDP 443；`--transport auto` 会先试 TCP 再回退，两条都失败时脚本会保留上一份可用数据并写 `data/latest.error.json`。
@@ -254,13 +263,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File collector\install_task.ps1 -
 ## 测试
 
 ```powershell
-# 采集端 32 个用例（含 TCP 被重置 -> HTTP/3 回退、历史导入、14 天分时统计）
+# 采集端 41 个用例（含 TCP 被重置 -> HTTP/3 回退、历史导入、14 天分时统计、演出场次解析）
 python collector\test_collect.py
 
 # 算法 28 个用例（含 estimateSelected 的排序/总耗时/关闭与未知 id/纯函数）
 & $node tests\recommend.test.js
 
-# 全量验收 29 项（catalog/latest/forecast/hourly-stats 契约、recommend 与 estimateSelected 输出、6 个页面齐全、两份算法文件一致、mock 数据合法、分时预测入口、手机部署文件齐全）
+# 全量验收 32 项（catalog/latest/forecast/hourly-stats/shows 契约、recommend 与 estimateSelected 输出、7 个页面齐全、两份算法文件一致、mock 数据合法、分时预测入口、手机部署文件齐全）
 & $node tools\verify.js
 
 # 手机部署（Cloudflare Pages）相关：边缘函数 8 + 5 个用例（解析映射 / 缓存 / 回退 / CORS / 静态放行）

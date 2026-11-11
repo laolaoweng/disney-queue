@@ -1,0 +1,712 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:41"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:41"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "米奇童话专列",
+      "entityId": "entMickeysStorybookExpress",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "mickeys-storybook-express",
+      "subType": "Parade",
+      "disneyPremierAccess": true,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Entertainment",
+        "urlFriendlyId": "entertainment",
+        "value": "娱乐演出"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/mickeys-storybook-express",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-glimmer-sq_tcm1874-289203.png",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-glimmer-hero_tcm1874-289204.png",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-storybook-express-video-cover-20230309_tcm1874-256553.png",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-glimmer-hero_tcm1874-289204.png",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-glimmer-sq_tcm1874-289203.png",
+          "width": 90,
+          "height": 90
+        },
+        "digitalRedemptionAndroid": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-android_tcm1874-188472.jpg",
+          "width": 1600,
+          "height": 1670
+        },
+        "digitalRedemptionIOS": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-ios_tcm1874-188473.jpg",
+          "width": 1452,
+          "height": 1670
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "米奇童话专列",
+            "latitude": "31.149169298614186",
+            "longitude": "121.66351950733016"
+          }
+        ],
+        "dpaPoints": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "米奇童话专列",
+            "latitude": "31.148149",
+            "longitude": "121.66474"
+          }
+        ],
+        "vantagePoints": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "迪士尼小镇观赏点",
+            "latitude": "31.147882161143652",
+            "longitude": "121.66671450818764"
+          },
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "漫月食府观赏点",
+            "latitude": "31.149690617146113",
+            "longitude": "121.66764702154114"
+          },
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "明日世界观赏点",
+            "latitude": "31.149",
+            "longitude": "121.663525"
+          },
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "幻想曲旋转木马观赏点",
+            "latitude": "31.14863305118585",
+            "longitude": "121.6678850480465"
+          }
+        ]
+      },
+      "route": [
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线32",
+          "latitude": "31.150965",
+          "longitude": "121.667305"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线31",
+          "latitude": "31.150905",
+          "longitude": "121.667317"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线30",
+          "latitude": "31.150826",
+          "longitude": "121.667306"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线29",
+          "latitude": "31.150722",
+          "longitude": "121.667254"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线28",
+          "latitude": "31.150591",
+          "longitude": "121.667151"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线27",
+          "latitude": "31.150303",
+          "longitude": "121.667218"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线26",
+          "latitude": "31.150012",
+          "longitude": "121.667158"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线25",
+          "latitude": "31.149792",
+          "longitude": "121.667238"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线24",
+          "latitude": "31.149643",
+          "longitude": "121.667526"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线23",
+          "latitude": "31.149419",
+          "longitude": "121.667816"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线22",
+          "latitude": "31.149185",
+          "longitude": "121.668033"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线21",
+          "latitude": "31.148785",
+          "longitude": "121.668188"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线20",
+          "latitude": "31.148505",
+          "longitude": "121.668168"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线19",
+          "latitude": "31.148183",
+          "longitude": "121.668018"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线18",
+          "latitude": "31.148028",
+          "longitude": "121.667688"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线17",
+          "latitude": "31.147889",
+          "longitude": "121.667301"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线16",
+          "latitude": "31.147922",
+          "longitude": "121.66698"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线15",
+          "latitude": "31.148051",
+          "longitude": "121.666684"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线14",
+          "latitude": "31.148271",
+          "longitude": "121.666421"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线13",
+          "latitude": "31.148271",
+          "longitude": "121.666266"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线12",
+          "latitude": "31.148177",
+          "longitude": "121.665963"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线11",
+          "latitude": "31.148217",
+          "longitude": "121.665446"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线10",
+          "latitude": "31.148152",
+          "longitude": "121.665132"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线9",
+          "latitude": "31.148086",
+          "longitude": "121.664698"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线8",
+          "latitude": "31.148237",
+          "longitude": "121.664342"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线7",
+          "latitude": "31.148424",
+          "longitude": "121.664189"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线6",
+          "latitude": "31.148693",
+          "longitude": "121.6641"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线5",
+          "latitude": "31.148917",
+          "longitude": "121.663993"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线4",
+          "latitude": "31.14905",
+          "longitude": "121.663887"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线3",
+          "latitude": "31.149116",
+          "longitude": "121.663601"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线2",
+          "latitude": "31.149274",
+          "longitude": "121.663351"
+        },
+        {
+          "keyCoordinates": "Guest Entrance",
+          "name": "米奇童话专列路线1",
+          "latitude": "31.149253",
+          "longitude": "121.66325"
+        }
+      ],
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "openDate": "2015-10-07T14:01:52",
+      "endDate": "2020-10-07T14:02:06",
+      "webLinks": "https://www.shanghaidisneyresort.com/entertainment/theme-park/mickeys-storybook-express/",
+      "duration": [
+        {
+          "hours": null,
+          "minutes": "14"
+        }
+      ],
+      "importantInfo": [
+        {
+          "id": "pleaseNoteAP",
+          "group": "Important Info",
+          "items": [
+            {
+              "name": "请注意",
+              "description": "<p>演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于气温、下雨、大风、空气质量、浓雾等天气因素的影响下，本场演出将可能改为“米奇和朋友专列”。</p>",
+              "endTime": null,
+              "openTime": null
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>由米奇领衔的火车主题巡游，满载幻想、趣味和音乐，快加入上海迪士尼乐园巡游之旅吧！</p>\n<p>全新的疯狂动物城花车将加入米奇童话专列，动物城居民将带你置身“夏奇羊巡回演唱会”的火热现场！朱迪尼克热情开道、豹警官应援压轴，集结动物城新老居民，邀你一起嗨翻疯狂派对！\n<br />\n<br />\n<small>*演出效果请以实际运营情况为准。\n<br />\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。\n<br />\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于气温、下雨、大风、空气质量、浓雾等天气因素的影响下，本场演出将可能改为“米奇和朋友专列”。</small></p>",
+        "shortDescriptionMobileText": "<p>由米奇领衔的火车主题巡游，满载幻想、趣味和音乐，快加入上海迪士尼乐园巡游之旅吧！</p>\n<p>全新的疯狂动物城花车将加入米奇童话专列，动物城居民将带你置身“夏奇羊巡回演唱会”的火热现场！朱迪尼克热情开道、豹警官应援压轴，集结动物城新老居民，邀你一起嗨翻疯狂派对！\n<br/>\n<br/>\n<small>*演出效果请以实际运营情况为准。\n<br/>\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。<br/>\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于气温、下雨、大风、空气质量、浓雾等天气因素的影响下，本场演出将可能改为“米奇和朋友专列”。</small></p>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "切勿错过这列满载音乐和魔法的火车",
+              "text": "<p>巡游欢乐无穷，众多迪士尼朋友逐一向你走来，米奇将在火车头驾驶列车，而随后的梦幻花车均取材自经典迪士尼电影，为您带来熟悉的迪士尼朋友和醉人的音乐。</p>\n<p>米奇童话专列将“驶过”全球迪士尼主题乐园中最长的巡游路线，为所有年龄段的游客带来欢笑与惊喜。</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-01-new_tcm1874-115282.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": true,
+      "multiLocationLabel": "多个位置",
+      "facilityId": "entMickeysStorybookExpress;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landGardensOfImagination",
+          "name": "奇想花园",
+          "urlFriendlyId": "gardens-imagination"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "classic-characters",
+              "value": "经典角色"
+            },
+            {
+              "urlFriendlyId": "pixar-pals",
+              "value": "皮克斯伙伴"
+            },
+            {
+              "urlFriendlyId": "mickey-friends",
+              "value": "米奇和朋友们"
+            },
+            {
+              "urlFriendlyId": "outdoor-entertainment",
+              "value": "室外娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "parades",
+              "value": "巡游"
+            },
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Entertainment",
+              "urlFriendlyId": "entertainment",
+              "value": "娱乐演出"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            },
+            {
+              "id": "SeasonalEvents",
+              "urlFriendlyId": "seasonal-events",
+              "value": "季节活动"
+            },
+            {
+              "id": "SeasonalEvents2",
+              "urlFriendlyId": "seasonal-events-2",
+              "value": "Cool Summer"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "gardens-imagination",
+              "value": "奇想花园"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Mickey’s Storybook Express - Entertainment",
+            "referenceKey": "Mickey’s Storybook Express - Entertainment",
+            "thumbnail": null,
+            "chapters": [
+              {
+                "title": "Mickey’s Storybook Express - Entertainment",
+                "subChapters": [
+                  {
+                    "title": "Mickey’s Storybook Express - Entertainment",
+                    "thumbnail": null,
+                    "assets": [
+                      {
+                        "type": "video",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-storybook-express-video-cover-20230309-sq_tcm1874-256554.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickey-storybook-express-video-cover-20230309_tcm1874-256553.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "sourceForVideo": "https://static.shanghaidisneyresort.com/web-img-gallery/mickey-storybook-express-20260325.mp4"
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-glimmer-hero_tcm1874-289204.png",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mickeys-storybook-express-glimmer-hero_tcm1874-289204.png",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-glimmer-sq_tcm1874-289206.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-glimmer-hero_tcm1874-289205.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-glimmer-4-sq_tcm1874-289208.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-glimmer-4-hero_tcm1874-289207.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-11",
+        "timeInfo": "12:15&15:45",
+        "statusCode": "",
+        "separator": " | ",
+        "timeType": "SHOW_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

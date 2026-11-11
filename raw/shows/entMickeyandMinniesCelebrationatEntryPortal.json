@@ -1,0 +1,211 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-11 14:24:41"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-11 14:24:41"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "米奇米妮的钟楼欢庆会​",
+      "entityId": "entMickeyandMinniesCelebrationatEntryPortal",
+      "entityType": "Entertainment",
+      "urlFriendlyId": "mickey-and-minnies-celebration-at-entry-portal​",
+      "subType": "Stage Show",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Entertainment",
+        "urlFriendlyId": "entertainment",
+        "value": "娱乐演出"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/entertainment/mickey-and-minnies-celebration-at-entry-portal​",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mm-bell-portal-sq_tcm1874-295040.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mm-bell-portal-hero_tcm1874-295039.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mm-bell-portal-hero_tcm1874-295039.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-ent-mm-bell-portal-sq_tcm1874-295040.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "米奇米妮的钟楼欢庆会​",
+            "latitude": "31.147647299697198",
+            "longitude": "121.66853971432873"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/entertainment/theme-park/mickey-and-minnies-celebration-at-entry-portal​/",
+      "descriptions": {
+        "shortDescriptionText": "<p>在上海迪士尼10岁生日庆典期间，11月9日至11月18日，米奇和米妮也将迎来自己的生日欢庆。他们将每天以一款不同的经典造型惊喜现身钟楼。​\n<br />\n<br />\n11月18日，米奇和米妮生日当天，还将有一个特别时刻——我们将邀请大家一起为这对生日主角唱响生日歌。​</p>\n<p><small>*图片仅供参考，请以实际运营情况为准。​\n<br />\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。​​</small></p>",
+        "shortDescriptionMobileText": "<p>在上海迪士尼10岁生日庆典期间，11月9日至11月18日，米奇和米妮也将迎来自己的生日欢庆。他们将每天以一款不同的经典造型惊喜现身钟楼。​\n<br/><br/>\n11月18日，米奇和米妮生日当天，还将有一个特别时刻——我们将邀请大家一起为这对生日主角唱响生日歌。​</p>\n<p><small>*图片仅供参考，请以实际运营情况为准。​\n<br/>\n*演出可能会受到恶劣天气或其他不可预见因素的影响。例如，在包括但不限于下雨、大风、空气质量、浓雾、闪电等天气因素的影响下，我们可能会推迟或取消整场演出。​​</small></p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "entMickeyandMinniesCelebrationatEntryPortal;entityType=entertainment;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landMickeyAvenue",
+          "name": "米奇大街",
+          "urlFriendlyId": "mickey-avenue"
+        }
+      },
+      "facets": {
+        "interests": {
+          "options": [
+            {
+              "urlFriendlyId": "outdoor-entertainment",
+              "value": "室外娱乐"
+            }
+          ]
+        },
+        "age": {
+          "options": [
+            {
+              "urlFriendlyId": "preschoolers",
+              "value": "学龄前儿童"
+            },
+            {
+              "urlFriendlyId": "kids",
+              "value": "儿童"
+            },
+            {
+              "urlFriendlyId": "tweens",
+              "value": "8-13岁少年"
+            },
+            {
+              "urlFriendlyId": "teens",
+              "value": "青少年"
+            },
+            {
+              "urlFriendlyId": "adults",
+              "value": "成人"
+            },
+            {
+              "urlFriendlyId": "all-ages",
+              "value": "所有年龄"
+            }
+          ]
+        },
+        "entertainmentType": {
+          "options": [
+            {
+              "urlFriendlyId": "live-entertainment",
+              "value": "现场娱乐演出"
+            }
+          ]
+        },
+        "mobilityDisabilities": {
+          "options": [
+            {
+              "id": "facet-access-remain-in-wheelchair-global_95454",
+              "urlFriendlyId": "may-remain-in-wheelchair",
+              "value": "可使用轮椅",
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/remain-in-wheelchair_tcm1874-281318.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Entertainment",
+              "urlFriendlyId": "entertainment",
+              "value": "娱乐演出"
+            },
+            {
+              "id": "SeasonalEvents2",
+              "urlFriendlyId": "seasonal-events-2",
+              "value": "Cool Summer"
+            },
+            {
+              "id": "AllFuns",
+              "urlFriendlyId": "all-funs",
+              "value": "所有玩乐"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "mickey-avenue",
+              "value": "米奇大街"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "entertainment",
+              "value": "Entertainment"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "hideOperationHours": false
+    }
+  }
+}
