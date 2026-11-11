@@ -141,7 +141,7 @@ if (result.skipped.length) {
   console.log('');
   console.log('  来不及 / 不可玩：');
   result.skipped.forEach(function (s) {
-    console.log('   ✕ ' + s.name + (s.reason === 'closed' ? '（当前关闭）' : '（多花约 ' + s.extraMinApprox + ' 分钟才可能排上）'));
+    console.log('   ✕ ' + s.name + (s.reason === 'closed' ? '（当前关闭）' : '（想全都玩完还要再多约 ' + s.extraMinApprox + ' 分钟）'));
   });
 }
 

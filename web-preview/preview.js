@@ -1009,7 +1009,7 @@
       ? '<div class="card p8-skip"><span class="card-title">今天来不及的项目</span>' +
         skipped.map(function (row) {
           var closed = row.reason === 'closed';
-          var extra = (!closed && row.extraMinApprox != null) ? ' · 想加进来大约多花 ' + row.extraMinApprox + ' 分钟' : '';
+          var extra = (!closed && row.extraMinApprox != null) ? ' · 想全都玩完还要再多 ' + row.extraMinApprox + ' 分钟' : '';
           return '<div class="skip-row"><span class="skip-dot tone-' + (closed ? 'off' : 'warn') + '"></span>' +
             '<div class="skip-main"><span class="skip-name">' + esc(row.name) + '</span>' +
             '<span class="skip-reason">' + (closed ? '已关闭 / 停运' : '预计来不及') + esc(extra) + '</span></div></div>';

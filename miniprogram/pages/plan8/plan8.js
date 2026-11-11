@@ -275,7 +275,7 @@ Page({
         name: row.name,
         reasonText: closed ? '已关闭 / 停运' : '预计来不及',
         extraText: (row.extraMinApprox != null && !closed)
-          ? '想加进来大约多花 ' + row.extraMinApprox + ' 分钟'
+          ? '想全都玩完还要再多 ' + row.extraMinApprox + ' 分钟'
           : '',
         tone: closed ? 'off' : 'warn'
       };
