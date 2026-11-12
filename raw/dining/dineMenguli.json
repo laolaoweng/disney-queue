@@ -1,0 +1,205 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:04"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:04"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "猛古里·烤肉自助",
+      "entityId": "dineMenguli",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "menguli",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/menguli",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mengguli-hero-sq_tcm1874-282850.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mengguli-hero_tcm1874-282849.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mengguli-hero_tcm1874-282849.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mengguli-hero_tcm1874-282849.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mengguli-hero-sq_tcm1874-282850.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.147365",
+            "longitude": "121.666643"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/menguli/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "<p>猛古里，自2020年进入美⻝界，就致力于为年轻人打造一场潮流美⻝派对!猛古里精选多款新鲜肉类，坚持100%纯肉炙烤，无合成、轻腌制，保证真美味、真肉香。招牌惠灵顿牛排、低温慢烤牛肋排，海鲜、蔬菜、甜品、饮品，满足多种需求!\n<br />\n同时，猛古里推出自助、零点与套餐三大就餐模式，希望每一位顾客都能尽享美食派对。</p>",
+        "shortDescriptionMobileText": "<p>猛古里，自2020年进入美⻝界，就致力于为年轻人打造一场潮流美⻝派对!猛古里精选多款新鲜肉类，坚持100%纯肉炙烤，无合成、轻腌制，保证真美味、真肉香。招牌惠灵顿牛排、低温慢烤牛肋排，海鲜、蔬菜、甜品、饮品，满足多种需求!\n<br/>\n同时，猛古里推出自助、零点与套餐三大就餐模式，希望每一位顾客都能尽享美食派对。</p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineMenguli;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "fine-signature-dining",
+              "value": "精致餐饮"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "fine-signature-dining",
+              "value": "精致餐饮"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "asian",
+              "value": "亚洲"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥¥",
+              "value": "¥¥¥ (人均 人民币101 - 300)"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

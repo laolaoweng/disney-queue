@@ -1,0 +1,636 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:20:53"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:20:53"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "卢米亚厨房",
+      "entityId": "dineLumieresKitchen",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "lumieres-kitchen",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/lumieres-kitchen",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-new2024-sq_tcm1874-271515.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-20250409_tcm1874-278563.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-20250409_tcm1874-278563.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-20250409_tcm1874-278563.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-new2024-sq_tcm1874-271515.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.141826738073",
+            "longitude": "121.67270236207"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/shanghai-disneyland-hotel/lumieres-kitchen/",
+      "showSignature": false,
+      "contactInformation": {
+        "phone": [
+          {
+            "type": "Reservations",
+            "number": ""
+          }
+        ]
+      },
+      "descriptions": {
+        "shortDescriptionText": "<p>这里有来自全球各地的诱人佳肴，丰富的开胃菜、色拉，主菜选择，更有各式主题甜品为您在欢愉时刻助兴，带来甜蜜享受。还有机会在用餐时见到你喜欢的迪士尼朋友哦。</p>",
+        "shortDescriptionMobileText": "<p>这里有来自全球各地的诱人佳肴，丰富的开胃菜、色拉，主菜选择，更有各式主题甜品为您在欢愉时刻助兴，带来甜蜜享受。还有机会在用餐时见到你喜欢的迪士尼朋友哦。</p>\n<br>\n\n\n\n"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "卢米亚厨房·缤纷乐选早午餐（不定时供应）",
+              "text": "周末与米奇和他的朋友一起趣享缤纷美食！\n<br />\n<br />\n周末带着你最爱的家人，在米奇和他的朋友们陪伴下共享一顿丰盛的美食盛宴，这是种怎样的神奇体验？快来尽情品尝卢米亚厨房缤纷自助大餐，让来自全球各地的诱人佳肴唤醒你沉睡的味蕾，开启元气满满的一天吧！更有馥郁醉人的美酒佳酿和香甜芬芳的现做甜点为欢愉时刻倾情助兴，如此难得的家庭欢聚盛宴，现在无需入住酒店，也无需乐园门票即可轻松享用哦！\n<br />",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-21_tcm1874-147846.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "在准备美食和提供贴心服务方面我们天赋异禀",
+              "text": "<p>给您的餐碟装满美味佳肴，尽情享受这精彩纷呈的用餐体验！身处以《美女与野兽》中的烛台卢米亚欢乐歌唱的经典片段为装饰灵感的餐厅，重温这部动画电影中的歌舞场景，享受美味且选择丰富的自助餐。各式佳肴会让美食爱好者们心满意足。</p>\n<p>首先登场的开胃菜有美味汤羹和新鲜沙拉。接着登场的主菜囊括世界各地菜肴，不乏中国、亚洲和西方美食。别忘了返场！缺少甜蜜的重奏不可能造就一流的表演——尽情品尝香甜的奶酪蛋糕、诱人的提拉米苏和更多美味，您一定会赞不绝口。</p>\n<p>菜单上的菜式或会有所变动，恕不作另行通知。</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-NovBuffet-hero_tcm1874-294838.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单",
+              "text": "<p>立即查看菜单详情。</p>\n<ul>\n<li><strong>早餐</strong>\n<ol>\n<li>蛋档</li>\n<li>面档</li>\n<li>粥档</li>\n<li>点心档</li>\n<li>蒸档</li>\n<li>西餐热食档</li>\n<li>中餐热食档</li>\n<li>麦片档</li>\n<li>冷切肉档</li>\n<li>鱼盘</li>\n<li>色拉吧</li>\n<li>开胃菜</li>\n<li>芝士</li>\n<li>新鲜水果</li>\n<li>饮料</li>\n<li>酸奶</li>\n<li>牛奶</li>\n<li>面包档</li>\n</ol>\n</li>\n<li><strong>晚餐</strong>\n<ol>\n<li>冰镇海鲜</li>\n<li>寿司和刺生档</li>\n<li>色拉吧</li>\n<li>冷切肉档</li>\n<li>鱼盘</li>\n<li>芝士</li>\n<li>开胃菜和色拉</li>\n<li>汤</li>\n<li>面包篮</li>\n<li>麻辣烫</li>\n<li>西式热菜</li>\n<li>中式热菜</li>\n<li>印度和披萨档</li>\n<li>蒸档</li>\n<li>现切档</li>\n<li>新鲜水果</li>\n<li>巧克力喷泉档</li>\n<li>冰激凌档</li>\n<li>甜品</li>\n</ol>\n</li>\n</ul>\n<p><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "立即预订",
+              "text": "<p>订座电话 400-180-0000\n<br />\n<br />\n用户可能会被收取国际长途电话费，费用根据所在网络而有所不同。</p>",
+              "media": [
+                {
+                  "type": "image/png",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-tour-vip-tour-services-storycard-03_tcm1874-153741.png",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "下载官方App即刻查看餐厅信息！",
+              "text": "下载上海迪士尼度假区官方App，即刻查看餐厅菜系，营业时间以及参考价格。",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-gsrvc-mobile-app-icon2_tcm1874-113788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/zh-cn/information/download-shanghai-disney-mobile-app"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineLumieresKitchen;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "Shanghai Disney Resort": {
+          "id": "hotelSHDLH",
+          "name": "上海迪士尼乐园酒店",
+          "urlFriendlyId": "shanghai-disneyland-hotel"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "id": "dineFacet-experience-reservations-global_95640",
+              "urlFriendlyId": "reservations-accepted",
+              "value": "接受预订"
+            },
+            {
+              "urlFriendlyId": "buffet",
+              "value": "自助餐"
+            },
+            {
+              "urlFriendlyId": "character-dining",
+              "value": "邂逅迪士尼朋友"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "id": "dineFacet-experience-reservations-global_95640",
+              "urlFriendlyId": "reservations-accepted",
+              "value": "接受预订"
+            },
+            {
+              "urlFriendlyId": "buffet",
+              "value": "自助餐"
+            },
+            {
+              "urlFriendlyId": "character-dining",
+              "value": "邂逅迪士尼朋友"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "western",
+              "value": "西式"
+            },
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            },
+            {
+              "urlFriendlyId": "vegetarian-option",
+              "value": "素食可选"
+            },
+            {
+              "urlFriendlyId": "Cafe",
+              "value": "咖啡"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥¥¥",
+              "value": "¥¥¥¥ (人均 人民币301 - 500)"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Hotel",
+              "urlFriendlyId": "hotel",
+              "value": "酒店"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "shanghai-disneyland-hotel",
+              "value": "上海迪士尼乐园酒店"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Lumieres Kitchen - Dishes",
+            "referenceKey": "Lumieres Kitchen - Dishes",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-05-sq_tcm1874-137704.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Lumieres Kitchen - Dishes",
+                "subChapters": [
+                  {
+                    "title": "Lumieres Kitchen - Dishes",
+                    "thumbnail": null,
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-20250409_tcm1874-278563.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-20250409_tcm1874-278563.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-hero-sq-new_tcm1874-122301.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchen-hero-new2_tcm1874-122288.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-sq_tcm1874-280546.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery_tcm1874-280545.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-21-sq_tcm1874-147845.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-21_tcm1874-147846.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-03-sq_tcm1874-137700.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-03_tcm1874-137699.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-15-sq_tcm1874-138114.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-15_tcm1874-138113.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-17-sq_tcm1874-138118.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-17_tcm1874-138117.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-18-sq_tcm1874-138120.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-lumieres-kitchem-gallery-18_tcm1874-138119.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "6:30&11:00 17:30&21:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:20:53"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:20:53"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "南里山房",
+      "entityId": "dineNamleaVilla",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "namlea-villa",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/namlea-villa",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-namlea-hero-sq_tcm1874-293148.jpeg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-namlea-hero_tcm1874-293147.jpeg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-namlea-hero_tcm1874-293147.jpeg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-namlea-hero_tcm1874-293147.jpeg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-namlea-hero-sq_tcm1874-293148.jpeg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.146271",
+            "longitude": "121.667984"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/namlea-villa/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "<p>南里山房迪士尼小镇店，专为游园阖家、结伴旅客打造上海风味，融合新颖的淮扬菜。 取淮扬精工细作、清润本真之骨，融上海本帮醇厚咸甜之韵，风味均衡温润，老少皆适口。店内空间轩敞雅致，配套亲子设施。游园小憩休整、团圆家宴皆相宜。</p>",
+        "shortDescriptionMobileText": "<p>南里山房迪士尼小镇店，专为游园阖家、结伴旅客打造上海风味，融合新颖的淮扬菜。 取淮扬精工细作、清润本真之骨，融上海本帮醇厚咸甜之韵，风味均衡温润，老少皆适口。店内空间轩敞雅致，配套亲子设施。游园小憩休整、团圆家宴皆相宜。</p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineNamleaVilla;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "fine-signature-dining",
+              "value": "精致餐饮"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "fine-signature-dining",
+              "value": "精致餐饮"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥¥",
+              "value": "¥¥¥ (人均 人民币101 - 300)"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

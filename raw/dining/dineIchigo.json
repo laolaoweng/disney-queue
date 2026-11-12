@@ -1,0 +1,205 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:20:49"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:20:49"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "一牛一笑",
+      "entityId": "dineIchigo",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "ichigo",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/ichigo",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichigo-hero-sq_tcm1874-278492.png",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichigo-hero_tcm1874-278491.png",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichigo-hero_tcm1874-278491.png",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichigo-hero_tcm1874-278491.png",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichigo-hero-sq_tcm1874-278492.png",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.147256",
+            "longitude": "121.666641"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/ichigo/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "<p>“一牛一笑”是一家日式料理餐厅，主打“和牛料理”；有各种丰富的组合套餐、日式丼饭类产品；菜单还融入了米其林主厨特色菜品及料理手艺；</p>\n<p>“一牛一笑”新时代概念餐厅，提供新鲜、健康、美味的料理、舒适放松的日式装修环境、热情活力的服务。</p>",
+        "shortDescriptionMobileText": "<p>“一牛一笑”是一家日式料理餐厅，主打“和牛料理”；有各种丰富的组合套餐、日式丼饭类产品；菜单还融入了米其林主厨特色菜品及料理手艺；</p>\n<p>“一牛一笑”新时代概念餐厅，提供新鲜、健康、美味的料理、舒适放松的日式装修环境、热情活力的服务。</p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineIchigo;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            },
+            {
+              "urlFriendlyId": "fine-signature-dining",
+              "value": "精致餐饮"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            },
+            {
+              "urlFriendlyId": "fine-signature-dining",
+              "value": "精致餐饮"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "asian",
+              "value": "亚洲"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥¥",
+              "value": "¥¥¥ (人均 人民币101 - 300)"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

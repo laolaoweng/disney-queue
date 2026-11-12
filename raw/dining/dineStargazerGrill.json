@@ -1,0 +1,726 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:22"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:22"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "星露台餐厅",
+      "entityId": "dineStargazerGrill",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "stargazer-grill",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/stargazer-grill",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-sq-20250603_tcm1874-279845.jpeg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-hero-20250603_tcm1874-279844.jpeg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-hero-20250603_tcm1874-279844.jpeg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-hero-20250603_tcm1874-279844.jpeg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-sq-20250603_tcm1874-279845.jpeg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.147369462469",
+            "longitude": "121.66445017657"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/stargazer-grill/",
+      "showSignature": true,
+      "signature": [
+        {
+          "assets": [
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_BeefShankandShrimp-sq_tcm1874-289410.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "牛腱虾仁阳春面配红汤​",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_BeefShankandShrimp-hero_tcm1874-289409.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_Boo-tifullyTender-sq_tcm1874-289411.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "心里软战斧猪排饭",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_Boo-tifullyTender-hero_tcm1874-289412.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_Wall-EsRecharging-sq_tcm1874-289413.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "加足瓦力咖喱饭",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_Wall-EsRecharging-hero_tcm1874-289414.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_ThePixarParty-sq_tcm1874-289415.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "皮克斯缤纷派对",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_ThePixarParty-hero_tcm1874-289416.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_BrainBoostBlast-sq_tcm1874-289417.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "头脑充能套餐",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_BrainBoostBlast-hero_tcm1874-289418.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_JoyfulHappy-sq_tcm1874-289419.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "快乐到转圈圈汉堡",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SG_JoyfulHappy-hero_tcm1874-289420.png",
+                    "height": 96
+                  }
+                }
+              ]
+            }
+          ],
+          "menuPdfExterLink": "https://static.shanghaidisneyresort.com/web-img-gallery/stargazer_grill.pdf",
+          "title": [
+            {
+              "name": "招牌菜"
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>在皮克斯电影的灵感启发下，星露台餐厅迎来了焕新升级 – “星露台餐厅·皮克斯缤纷烩”，走进这里，你会发现以电影《怪物电力公司》和《头脑特工队》为主题的布置陈设。\n<br />\n<br />\n餐厅也以皮克斯电影为灵感，推出了缤纷美味新菜品，打造全新菜单，带你开启一场皮克斯味觉奇旅。\n<br />\n<br />\n以《头脑特工队》中怒怒为灵感的“怒吃一口辣汉堡薯条”，热辣风味刺激味蕾，美味到让你“咬牙切齿”；以莱莉的童年幻想朋友冰棒为灵感的“童年想‘象’棉花糖”，甜蜜的滋味带你穿越回无忧无虑的童年时光；还有以电影中缤纷情绪为灵感的“缤纷情绪炸鸡翅”，酥脆炸鸡配上多味多彩的蘸酱，激活你的各种情绪和感官！\n<br />\n以《怪物电力公司》中毛怪为灵感的“心里软战斧猪排饭”，外脆里嫩的战斧猪排，就像毛怪一样，外表粗犷其实内心很柔软哦；以电影中的变色龙蓝道·宝基为灵感的“摇身一变脆脆薯”，缤纷口味的调料包裹住薯条，薯条也像变色龙一样呈现各种色彩；以大眼仔为灵感的“一眼就爱的蜜瓜冰淇淋”，冰爽甜蜜，就像大眼仔一样带给你无限活力！\n<br />\n还有《超能总动员》中小超人小杰最爱的“小超人曲奇”.....超多缤纷美味汇聚在这里，等你来品尝、品味，畅游在这段味觉奇旅中。\n<br />\n<br />\n品尝完美食，还可以找到餐厅内的主题拍照点打卡留念，专为每一个喜爱皮克斯电影的影迷打造的互动留影空间，为你的味觉奇旅留下缤纷多彩的纪念。</p>",
+        "shortDescriptionMobileText": "<p>在皮克斯电影的灵感启发下，星露台餐厅迎来了焕新升级 – “星露台餐厅·皮克斯缤纷烩”，走进这里，你会发现以电影《怪物电力公司》和《头脑特工队》为主题的布置陈设。\n<br/>\n<br/>\n餐厅也以皮克斯电影为灵感，推出了缤纷美味新菜品，打造全新菜单，带你开启一场皮克斯味觉奇旅。\n<br/>\n<br/>\n以《头脑特工队》中怒怒为灵感的“怒吃一口辣汉堡薯条”，热辣风味刺激味蕾，美味到让你“咬牙切齿”；以莱莉的童年幻想朋友冰棒为灵感的“童年想‘象’棉花糖”，甜蜜的滋味带你穿越回无忧无虑的童年时光；还有以电影中缤纷情绪为灵感的“缤纷情绪炸鸡翅”，酥脆炸鸡配上多味多彩的蘸酱，激活你的各种情绪和感官！\n<br/>\n以《怪物电力公司》中毛怪为灵感的“心里软战斧猪排饭”，外脆里嫩的战斧猪排，就像毛怪一样，外表粗犷其实内心很柔软哦；以电影中的变色龙蓝道·宝基为灵感的“摇身一变脆脆薯”，缤纷口味的调料包裹住薯条，薯条也像变色龙一样呈现各种色彩；以大眼仔为灵感的“一眼就爱的蜜瓜冰淇淋”，冰爽甜蜜，就像大眼仔一样带给你无限活力！\n<br/>\n还有《超能总动员》中小超人小杰最爱的“小超人曲奇”.....超多缤纷美味汇聚在这里，等你来品尝、品味，畅游在这段味觉奇旅中。\n<br/>\n<br/>\n品尝完美食，还可以找到餐厅内的主题拍照点打卡留念，专为每一个喜爱皮克斯电影的影迷打造的互动留影空间，为你的味觉奇旅留下缤纷多彩的纪念。</p>\n<br/>\n<br/>\n<p><a href=\"wdpr-shdr://pdf?url=https%3A%2F%2Fstatic.shanghaidisneyresort.com%2Fweb-img-gallery%2Fstargazer_grill.pdf%3Ftitle%3D%E8%8F%9C%E5%8D%95%E8%AF%A6%E6%83%85\">点击查看菜单</a>\n<br/><br/><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单",
+              "text": "<p><a href=\"https://static.shanghaidisneyresort.com/web-img-gallery/stargazer_grill.pdf\">点击查看</a>菜单详情</p>\n<p><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineStargazerGrill;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landTomorrowland",
+          "name": "明日世界",
+          "urlFriendlyId": "tomorrowland"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "quickService": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "western",
+              "value": "西式"
+            },
+            {
+              "urlFriendlyId": "burger-fried-chicken",
+              "value": "汉堡炸鸡"
+            },
+            {
+              "urlFriendlyId": "snacks",
+              "value": "小食"
+            },
+            {
+              "urlFriendlyId": "vegetarian-option",
+              "value": "素食可选"
+            },
+            {
+              "urlFriendlyId": "souvenir",
+              "value": "纪念品"
+            },
+            {
+              "urlFriendlyId": "Cafe",
+              "value": "咖啡"
+            },
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            },
+            {
+              "urlFriendlyId": "halal-halal",
+              "value": "清真食品"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "tomorrowland",
+              "value": "明日世界"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Stargazer Grill - Dishes",
+            "referenceKey": "Stargazer Grill - Dishes",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-01-sq_tcm1874-137901.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Stargazer Grill - Dishes",
+                "subChapters": [
+                  {
+                    "title": "Stargazer Grill - Dishes",
+                    "thumbnail": null,
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-hero-20250603_tcm1874-279844.jpeg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-hero-20250603_tcm1874-279844.jpeg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BeefShankandShrimpYangChunNoodles-sq_tcm1874-288587.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BeefShankandShrimpYangChunNoodles-new-hero_tcm1874-288773.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-01-sq-0530_tcm1874-279826.jpeg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-01-hero_tcm1874-279825.jpeg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-01-2-sq_tcm1874-279828.jpeg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-01-2-hero_tcm1874-279827.jpeg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-02-ThePixarPartyPlatter-sq_tcm1874-279794.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-02-ThePixarPartyPlatter-hero_tcm1874-279793.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-03-JoyfulHappyBurger-sq_tcm1874-279796.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-03-JoyfulHappyBurger-hero_tcm1874-279795.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-04-Boo-tifullyTenderInsideTomahawkRice-sq_tcm1874-279798.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-gallery-04-Boo-tifullyTenderInsideTomahawkRice-hero_tcm1874-279797.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:30&21:15",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

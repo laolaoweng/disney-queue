@@ -1,0 +1,189 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:08"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:08"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "辛一铜锣烧",
+      "entityId": "dineIchiIchiDorayaki",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "ichi-ichi-dorayaki",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/ichi-ichi-dorayaki",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichi-ichi-dorayaki-hero-sq_tcm1874-292233.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichi-ichi-dorayaki-hero_tcm1874-292232.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichi-ichi-dorayaki-hero_tcm1874-292232.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichi-ichi-dorayaki-hero_tcm1874-292232.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-ichi-ichi-dorayaki-hero-sq_tcm1874-292233.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.145184",
+            "longitude": "121.669208"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/ichi-ichi-dorayaki/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "<p>“辛一”即是心意，辛一坚守“工序再复杂，也坚持手作”的初心，融合日式制菓技艺与中国本土特色食材，创新打造多款风味铜锣烧。\n<br />\n漫步迪士尼小镇，来一口温柔香甜的手作铜锣烧，解锁专属童话世界的治愈美好。</p>",
+        "shortDescriptionMobileText": "<p>“辛一”即是心意，辛一坚守“工序再复杂，也坚持手作”的初心，融合日式制菓技艺与中国本土特色食材，创新打造多款风味铜锣烧。\n<br/>\n漫步迪士尼小镇，来一口温柔香甜的手作铜锣烧，解锁专属童话世界的治愈美好。</p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineIchiIchiDorayaki;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "asian",
+              "value": "亚洲"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "11:00&18:30",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

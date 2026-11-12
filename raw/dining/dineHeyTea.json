@@ -1,0 +1,177 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:20:55"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:20:55"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "喜茶",
+      "entityId": "dineHeyTea",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "heytea",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/heytea",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-heytea-hero-sq-68_tcm1874-290908.png",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-heytea-hero-68_tcm1874-290907.png",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-heytea-hero-68_tcm1874-290907.png",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-heytea-hero-68_tcm1874-290907.png",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-heytea-hero-sq-68_tcm1874-290908.png",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.145877",
+            "longitude": "121.667718"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/heytea/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "2018年，喜茶第一次来到迪士尼小镇。2026年，喜茶带着 “万花筒”回归，空间轻轻转动，更多的产品与灵感在这里发生。\n<br />\nWhat’s in the cup？举起茶杯，是充满想象的味觉体验，也是一段新的奇幻旅程。像被打开的万花筒，色彩与光影交错，梦幻乐园再次开启。没有固定的方向，一切自然流转。",
+        "shortDescriptionMobileText": "2018年，喜茶第一次来到迪士尼小镇。2026年，喜茶带着 “万花筒”回归，空间轻轻转动，更多的产品与灵感在这里发生。<br/>\nWhat’s in the cup？举起茶杯，是充满想象的味觉体验，也是一段新的奇幻旅程。像被打开的万花筒，色彩与光影交错，梦幻乐园再次开启。没有固定的方向，一切自然流转。 "
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineHeyTea;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "milk-tea",
+              "value": "茶饮"
+            },
+            {
+              "urlFriendlyId": "bakery",
+              "value": "烘焙"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥",
+              "value": "¥ (人均 人民币1 - 50 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

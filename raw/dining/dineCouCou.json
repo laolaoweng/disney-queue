@@ -1,0 +1,197 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:03"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:03"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "湊湊火锅·茶憩",
+      "entityId": "dineCouCou",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "coucou",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/coucou",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-coucou-hero-sq_tcm1874-215455.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-coucou-hero_tcm1874-215454.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-coucou-hero_tcm1874-215454.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-coucou-hero_tcm1874-215454.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-coucou-hero-sq_tcm1874-215455.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.146314",
+            "longitude": "121.667584"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/coucou/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "2020年11月湊湊最新主题店力作 — “凯旋湊湊”在迪士尼小镇隆重开幕, 为迪士尼小镇首次引入中式火锅品牌。\n<br />\n<br />\n湊湊迪士尼小镇店, 以“凯旋湊湊” 为主题，述说着关于爱与勇气的故事, 以影音与艺术装饰展现隋唐风采。\n<br />\n<br />\n除了高人气的“台式麻辣锅”和“大红袍珍珠奶茶”, 还有当店限定产品, 更添特色。",
+        "shortDescriptionMobileText": "2020年11月湊湊最新主题店力作 — “凯旋湊湊”在迪士尼小镇隆重开幕, 为迪士尼小镇首次引入中式火锅品牌。\n<br/>\n<br/>\n湊湊迪士尼小镇店, 以“凯旋湊湊” 为主题，述说着关于爱与勇气的故事, 以影音与艺术装饰展现隋唐风采。\n<br/>\n<br/>\n除了高人气的“台式麻辣锅”和“大红袍珍珠奶茶”, 还有当店限定产品, 更添特色。"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineCouCou;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "asian",
+              "value": "亚洲"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥¥",
+              "value": "¥¥¥ (人均 人民币101 - 300)"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

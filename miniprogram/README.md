@@ -10,7 +10,7 @@
 
 默认是**演示（mock）模式**：不联网、不用配域名、结果可复现，适合评审和截图。真实数据接入见下文「切换真实数据」。
 
-## 八个页面
+## 十一个页面
 
 | 页面 | 路径 | 作用 |
 | --- | --- | --- |
@@ -19,11 +19,13 @@
 | 清单（我想玩） | `pages/watchlist/` | 勾选想玩的项目 → 自动按**当前排队从少到多**排好，并算出「全部玩完大约 N 分钟 / 预计 HH:MM 玩完」；顶部显示排队合计、步行合计、体验合计；支持全选在园、清空、点已选行移出；关闭项目自动跳过并提示 |
 | 行程 | `pages/plan/` | 按预算排出 3-4 个项目的顺序计划（几点到几点、排队多久、玩多久），每步可「我从这里开始」把出发点换成该项目、也可「标记已玩」，剩余行程自动重排。**不在 tabBar 上**：从首屏主卡的「看行程怎么排」`navigateTo` 进入 |
 | 演出 | `pages/shows/` | 2 列方形卡片（方形图 + 项目名 + 两行时间胶囊）：第一行蓝色「最近场次 + N分后」（已开场显示「演出中 · 下一场 N分后」），第二行浅灰「下一场」；按最近场次升序、停演/今日已结束沉底；顶部可切「全部 / 演出 / 见面会」（见面会来自 char* 实体，带场次和倒计时）；点卡片弹全部场次；倒计时按北京时间算 |
-| 我的（已从 tabBar 移出） | `pages/settings/` | 同行类型、时长预算、身高、当前位置、必玩/避开/尊享卡、已玩记录；页面文件保留，tabBar 不再显示（现为 4 个 tab：最优解 / 排队榜 / 清单 / 演出） |
+| 餐饮 | `pages/dining/` | 园区内 28 家餐厅/小食亭，按园区分组：官方图片、营业状态（营业中·至 HH:mm / 已打烊 / 今日停业）、服务标签与套餐价；点卡片进餐饮详情 |
+| 餐饮详情 | `pages/diningdetail/` | 大图 + 名称 + 营业时段 + 服务标签 + 「🧭 导航过去」（wx.openLocation，BD-09→GCJ-02）+ 查看官方菜单（复制链接）+ 官网介绍；含招牌菜/套餐价；逐菜价格以现场菜单为准 |
+| 我的（已从 tabBar 移出） | `pages/settings/` | 同行类型、时长预算、身高、当前位置、必玩/避开/尊享卡、已玩记录；页面文件保留，tabBar 不再显示（现为 5 个 tab：最优解 / 排队榜 / 餐饮 / 清单 / 演出） |
 | 分时预测 | `pages/forecast/` | 用最近 14 天历史数据画每个项目的排队曲线：13 个整点桶（9–21 点）CSS 柱状图，绿色高亮当天最空 2–3 小时，下方 13 行表格（平均/工作日/周末/样本天数）；可切「全部 / 工作日 / 周末」，可看全园平均、八大必玩、全部项目。**不是 tab**，从首屏或排队榜的「分时预测」入口 `navigateTo` 进入 |
 | 冲刺计划 | `pages/plan8/` | 勾选 8 大必玩（按勾选顺序=优先级，带序号，可全选/清空）+ 选出发点 → 调 `shared/planner.js` 的 `planMustDo()` 算「闭园前最多能玩完几项」：顶部状态条（现在 / 距 21:00 排队截止还剩多久 / 今日热度系数）、完成 N/总数 + 预计结束时刻、时间线（到达→项目→排队/玩/步行/离开）、来不及/关闭的跳过项、每项「今日最空时段」表、warnings；支持「重新计算」「我在这里」；算法文件没同步时显示兜底空态。**不是 tab**，从首屏「🎯 冲刺计划」入口 `navigateTo` 进入 |
 
-`app.json` 的 tabBar 是纯文字五项（最优解 / 排队榜 / 清单 / **演出** / 我的），白底、选中蓝 `#164f9e`，没有图片资源依赖；行程、分时预测、冲刺计划作为普通页面放在 `pages/` 里（分别从首屏主卡、首屏/排队榜入口、首屏「🎯 冲刺计划」入口 `navigateTo` 进入）。
+`app.json` 的 tabBar 是纯文字五项（最优解 / 排队榜 / **餐饮** / 清单 / 演出），白底、选中蓝 `#164f9e`，没有图片资源依赖；行程、分时预测、冲刺计划作为普通页面放在 `pages/` 里（分别从首屏主卡、首屏/排队榜入口、首屏「🎯 冲刺计划」入口 `navigateTo` 进入）。
 
 ## 数据与算法
 
@@ -34,7 +36,7 @@
 - 数据层：`utils/api.js`
   - `MOCK_MODE = true`（默认）：`require('./mock/*.json')`，离线可用。
   - `MOCK_NOW = 'auto'`：mock 模式下「当前时间」取 `mock/latest.json` 的 `fetchedAt`（取不到用 `updatedAt`，再取不到用兜底常量），所以 mock 数据换成新快照后不用手改时间。
-  - 请求失败会重试 2 次、带 8 秒超时；结果进内存 + `wx.setStorageSync` 缓存 5 分钟（key `dq_data_cache_v3`）；`forecast.json` / `hourly-stats.json` / `shows.json` 404 视为可选（页面自动降级/空态）。
+  - 请求失败会重试 2 次、带 8 秒超时；结果进内存 + `wx.setStorageSync` 缓存 5 分钟（key `dq_data_cache_v5`）；`forecast.json` / `hourly-stats.json` / `shows.json` 404 视为可选（页面自动降级/空态）。
 - 算法：`../shared/recommend.js` 由队友实现（CommonJS 纯函数，契约 §4 / §4.5）。小程序不能跨目录 `require`，所以本目录内有一份**字节一致的副本** `shared/recommend.js`。
   - 同步方式：直接用仓库根 `shared/recommend.js` 覆盖本文件即可（不要加注释头，要保持字节一致）。
   - 页面统一通过 `utils/rec.js` 调算法（`recommend()` / `scoreAttraction()` / `walkMinutes()` / `forecastAt()` / `estimateSelected()`），页面里不重复实现推荐逻辑。
@@ -53,7 +55,7 @@
 - `latest.json`：实时排队快照（`source:"queue-times"` 或 `fixture`），字段按契约 §2；mock 就是某次快照的拷贝。
 - `forecast.json`：分时预测曲线（12 桶 = 北京时间 08:00–09:00 … 19:00–20:00），按契约 §3。真实数据只有一天样本时 `weekday` 桶可能全为 `null`，页面会自动退到周末曲线并标注「参考周末」或显示「暂无分时预测」。
 - `hourly-stats.json`：最近 14 天分时统计（13 个整点桶 9–21 点，含全园 `park.byHour` 与每个项目的 `byHour`），按契约 §6。分时预测页优先用它；文件缺失时退 `forecast.json` 曲线。
-- `shows.json`：演出排期（`businessDate` + `shows[].times`）。**当前是占位 `{"schemaVersion":1,"shows":[]}`**，等数据管线产出 `../data/shows.json` 后用上面的 Copy-Item 覆盖即可，演出页会自动渲染并计算倒计时；没有真实文件时页面显示「今日暂无演出数据」空态。
+- `shows.json`：演出排期（`businessDate` + `shows[].times`）。**当前为官网真实数据（33 演出 + 21 见面会）**，等数据管线产出 `../data/shows.json` 后用上面的 Copy-Item 覆盖即可，演出页会自动渲染并计算倒计时；没有真实文件时页面显示「今日暂无演出数据」空态。
 
 mock 模式下「当前时间」= `mock/latest.json` 的 `fetchedAt`（`MOCK_NOW='auto'`），所以 13:00 的快照配 13:00-14:00 的预测桶、周末曲线能对上，演示结果稳定可复现。
 
@@ -91,6 +93,8 @@ miniprogram/
 │   ├── rank/      # 排队榜：排序 + 按园区分组 + 分时预测入口 + 行内操作
 │   ├── watchlist/ # 清单：勾选想玩 → 按排队升序 + 全部玩完总耗时
 │   ├── shows/     # 演出/见面会：2 列方形卡片 + 时间胶囊 + 倒计时 + 全部/演出/见面会
+│   ├── dining/    # 餐饮列表（tabBar 第 3 项）：按园区分组 + 营业状态
+│   ├── diningdetail/ # 餐饮详情：导航 + 官方菜单 + 介绍/招牌菜/套餐价
 │   ├── forecast/  # 分时预测（不在 tabBar，从排队榜入口进）：13 个整点柱状图 + 最空时段 + 工作日/周末 + 13 行表格
 │   ├── plan/      # 行程：时间线 + 我从这里开始 / 标记已玩（普通页）
 │   ├── plan8/     # 冲刺计划：勾选必玩 → 闭园前最多玩几项 + 每项最佳时间（普通页）
@@ -120,7 +124,7 @@ miniprogram/
 & "C:\Users\翁\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\node\bin\node.exe" --check miniprogram\pages\index\index.js
 # 其余 .js 同理；JSON 用 python -c "import json,glob;..." 校验
 
-# 2) 页面逻辑冒烟测试：在 Node 里 stub wx/Page/setData，跑 8 个页面的 onLoad/onShow/handler
+# 2) 页面逻辑冒烟测试：在 Node 里 stub wx/Page/setData，跑 11 个页面的 onLoad/onShow/handler
 & "C:\Users\翁\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\node\bin\node.exe" C:\Users\翁\AppData\Local\Temp\dq_test_pages.js
 & "C:\Users\翁\.dsh\dsh-runtimes\dsh-primary-runtime\dependencies\node\bin\node.exe" C:\Users\翁\AppData\Local\Temp\dq_test_task5.js
 

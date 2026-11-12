@@ -1,0 +1,155 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:28"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:28"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "米奇好伙伴主题糖葫芦",
+      "entityId": "dineSummerIceCreams",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "summer-ice-creams",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "TopSellerSecond",
+        "urlFriendlyId": "top-seller-second",
+        "value": "TopSellerSecond"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/summer-ice-creams",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-summer-ice-creams-Tanghulu-sq_tcm1874-294960.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-summer-ice-creams-Tanghulu-hero_tcm1874-294959.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-summer-ice-creams-Tanghulu-hero_tcm1874-294959.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-summer-ice-creams-Tanghulu-hero_tcm1874-294959.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-summer-ice-creams-Tanghulu-sq_tcm1874-294960.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.15154",
+            "longitude": "121.66533"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "hideFunctionality": "Hide from the Listing Page",
+      "hidebychannel": [
+        {
+          "channel": [
+            "WECHAT"
+          ],
+          "hideType": "Hide from List"
+        }
+      ],
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/summer-ice-creams/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "售卖地点: 户外小餐车(近旋转疯蜜罐)\n<br />\n灵感源于北京街头最具代表性的甜蜜记忆。精选水果裹上一层晶莹剔透的糖衣，轻轻一咬，酸甜交织。\n<br />\n<br />\n*具体产品请以户外小餐车实际售卖情况为准",
+        "shortDescriptionMobileText": "售卖地点: 户外小餐车(近旋转疯蜜罐)\n<br/>\n灵感源于北京街头最具代表性的甜蜜记忆。精选水果裹上一层晶莹剔透的糖衣，轻轻一咬，酸甜交织。\n<br/>\n<br/>\n*具体产品请以户外小餐车实际售卖情况为准"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineSummerIceCreams;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "梦幻世界",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "TopSellerSecond",
+              "urlFriendlyId": "top-seller-second",
+              "value": "TopSellerSecond"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "梦幻世界"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "hideOperationHours": false
+    }
+  }
+}

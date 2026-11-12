@@ -1,0 +1,197 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:20:45"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:20:45"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "FAT PHO大發越南粉",
+      "entityId": "dineFatPho",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "fat-pho",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/fat-pho",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fatpho-sq_tcm1874-285621.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fatpho-hero_tcm1874-285620.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fatpho-hero_tcm1874-285620.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fatpho-hero_tcm1874-285620.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fatpho-sq_tcm1874-285621.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.146230",
+            "longitude": "121.668568"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/fat-pho/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "FAT PHO创始于2020年的上海，匠心融合纯正越式风味与澳洲优质食材。招牌「头等舱牛肉河粉」尽显其精髓。\n<br />\n灵魂汤底坚持100%使用澳洲安格斯牛大骨，经24小时慢火熬煮，汤色纯澈，甘甜醇厚。牛肉精选自澳洲Rangers Valley等顶级牧场，雪花细腻，肉质鲜嫩。\n<br />\nFAT PHO迪士尼小镇店，是品牌首家专注亲子体验的门店。我们独家推出涵盖粉、饭、小食的专属宝宝餐，旨在为来迪士尼乐园游玩的亲子家庭提供安心美味的餐饮新选择。",
+        "shortDescriptionMobileText": "FAT PHO创始于2020年的上海，匠心融合纯正越式风味与澳洲优质食材。招牌「头等舱牛肉河粉」尽显其精髓。\n<br/>\n灵魂汤底坚持100%使用澳洲安格斯牛大骨，经24小时慢火熬煮，汤色纯澈，甘甜醇厚。牛肉精选自澳洲Rangers Valley等顶级牧场，雪花细腻，肉质鲜嫩。\n<br/>\nFAT PHO迪士尼小镇店，是品牌首家专注亲子体验的门店。我们独家推出涵盖粉、饭、小食的专属宝宝餐，旨在为来迪士尼乐园游玩的亲子家庭提供安心美味的餐饮新选择。"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineFatPho;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "asian",
+              "value": "亚洲"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

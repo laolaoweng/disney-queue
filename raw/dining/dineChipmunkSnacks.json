@@ -1,0 +1,227 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:20"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:20"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "花栗鼠小厨",
+      "entityId": "dineChipmunkSnacks",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "chipmunk-snacks",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/chipmunk-snacks",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CS-Environmentphoto-sq_tcm1874-283325.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CS-Environmentphoto-hero_tcm1874-283324.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CS-Environmentphoto-hero_tcm1874-283324.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CS-Environmentphoto-hero_tcm1874-283324.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CS-Environmentphoto-sq_tcm1874-283325.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.149721931045",
+            "longitude": "121.66962220076"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/chipmunk-snacks/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "这家特色小吃店以独创的牛肉泡菜卷远近闻名。在起身前往下一站前，品尝一杯新鲜饮品提提神，也是不错的选择。",
+        "shortDescriptionMobileText": "<p>这家特色小吃店以独创的牛肉泡菜卷远近闻名。在起身前往下一站前，品尝一杯新鲜饮品提提神，也是不错的选择。</p>\n<p><a href=\"wdpr-shdr://pdf?url=https%3A%2F%2Fstatic.shanghaidisneyresort.com%2Fweb-img-gallery%2Fchipmunk_snacks.pdf%3Ftitle%3D%E8%8F%9C%E5%8D%95%E8%AF%A6%E6%83%85\">点击查看菜单</a>\n<br/><br/><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单",
+              "text": "<p><a href=\"https://static.shanghaidisneyresort.com/web-img-gallery/chipmunk_snacks.pdf\">点击查看菜单详情</a></p>\n<p><small>此菜单内容可能变更，请以小食亭实际供应为准。</small></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineChipmunkSnacks;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landAdventureIsle",
+          "name": "探险岛",
+          "urlFriendlyId": "adventure-isle"
+        }
+      },
+      "facets": {
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "western",
+              "value": "西式"
+            },
+            {
+              "urlFriendlyId": "snacks",
+              "value": "小食"
+            },
+            {
+              "urlFriendlyId": "ice-cream",
+              "value": "冰淇淋"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "otherDining": {
+          "options": [
+            {
+              "id": "dineFacet-experience-kiosk-global_95658",
+              "urlFriendlyId": "kiosk",
+              "value": "小食亭"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "id": "dineFacet-experience-kiosk-global_95658",
+              "urlFriendlyId": "kiosk",
+              "value": "小食亭"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "adventure-isle",
+              "value": "探险岛"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&19:30",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

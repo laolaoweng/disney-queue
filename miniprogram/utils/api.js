@@ -14,7 +14,7 @@ var MOCK_NOW_FALLBACK = '2026-10-17T05:00:00Z';
 var MOCK_NOW = 'auto';
 
 var CACHE_TTL = 5 * 60 * 1000;
-var CACHE_KEY = 'dq_data_cache_v4';
+var CACHE_KEY = 'dq_data_cache_v5';
 var TIMEOUT_MS = 8000;
 var RETRY_TIMES = 2;
 
@@ -29,6 +29,7 @@ function getMockData() {
       'forecast.json': require('../mock/forecast.json'),
       'hourly-stats.json': require('../mock/hourly-stats.json'),
       'shows.json': require('../mock/shows.json'),
+      'dining.json': require('../mock/dining.json'),
       'history.json': require('../mock/history.json')
     };
   }
@@ -128,7 +129,7 @@ function writeStorageCache(bundle) {
   }
 }
 
-function normalizeBundle(catalog, latest, forecast, hourlyStats, shows, history) {
+function normalizeBundle(catalog, latest, forecast, hourlyStats, shows, history, dining) {
   if (!catalog || !catalog.attractions) {
     throw new Error('catalog.json 数据无效');
   }
@@ -142,6 +143,7 @@ function normalizeBundle(catalog, latest, forecast, hourlyStats, shows, history)
     forecast: forecast || null,
     hourlyStats: hourlyStats || null,
     shows: shows || { schemaVersion: 1, shows: [] },
+    dining: dining || { schemaVersion: 1, restaurants: [], dishes: [] },
     history: history || null,
     waits: latest.waits || [],
     updatedAt: latest.updatedAt || latest.fetchedAt || null,
@@ -171,7 +173,8 @@ function loadAll(forceRefresh) {
       getMockData()['forecast.json'],
       getMockData()['hourly-stats.json'],
       getMockData()['shows.json'],
-      getMockData()['history.json']
+      getMockData()['history.json'],
+      getMockData()['dining.json']
     );
     writeStorageCache(bundle);
     return new Promise(function (resolve) {
@@ -187,9 +190,10 @@ function loadAll(forceRefresh) {
     fetchJSON('forecast.json'),
     fetchJSON('hourly-stats.json'),
     fetchJSON('shows.json'),
-    fetchJSON('history.json').catch(function () { return null; })
+    fetchJSON('history.json').catch(function () { return null; }),
+    fetchJSON('dining.json').catch(function () { return null; })
   ]).then(function (arr) {
-    var bundle = normalizeBundle(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5]);
+    var bundle = normalizeBundle(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6]);
     writeStorageCache(bundle);
     return bundle;
   });

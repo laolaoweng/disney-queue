@@ -1,0 +1,613 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:26"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:26"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "皇家宴会厅",
+      "entityId": "dineRoyalBanquetHall",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "royal-banquet-hall",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": true,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/royal-banquet-hall",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-top0301-sq_tcm1874-234850.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-hero-20250410_tcm1874-278581.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-hero-20250410_tcm1874-278581.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-hero-20250410_tcm1874-278581.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-top0301-sq_tcm1874-234850.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.1498682400033",
+            "longitude": "121.666212239395"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/royal-banquet-hall/",
+      "showSignature": false,
+      "contactInformation": {
+        "phone": [
+          {
+            "type": "Reservations",
+            "number": ""
+          }
+        ]
+      },
+      "descriptions": {
+        "shortDescriptionText": "<p>上海迪士尼乐园皇家宴会厅是亚洲唯一一家坐落于迪士尼城堡内的餐厅。</p>\n<p>步入皇家宴会厅，就像置身梦幻的童话世界，让您在迪士尼公主故事的奇妙氛围中，和最爱的迪士尼朋友不期而遇，更能与家人朋友一起尊享城堡内的盛宴，创造专属于您的难忘时刻。</p>",
+        "shortDescriptionMobileText": "上海迪士尼乐园皇家宴会厅是亚洲唯一一家坐落于迪士尼城堡内的餐厅。\n<br/>步入皇家宴会厅，就像置身梦幻的童话世界，让您在迪士尼公主故事的奇妙氛围中，和最爱的迪士尼朋友不期而遇，更能与家人朋友一起尊享城堡内的盛宴，创造专属于您的难忘时刻。<br/>\n<br/><a href=\"wdpr-shdr://pdf?url=https%3A%2F%2Fstatic.shanghaidisneyresort.com%2Fweb-img-gallery%2Froyal_banquet_hall.pdf%3Ftitle%3D%E8%8F%9C%E5%8D%95%E8%AF%A6%E6%83%85\">点击查看菜单</a></strong>\n<br/><br/><small>此菜单内容可能变更，请以餐厅实际供应为准。</small>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "至臻品味，精膳尽美 ",
+              "text": "<p>在这里，您将品尝到精美绝伦的舌尖盛宴。各色佳肴汇集于此，每一道都兼具诱人的色泽与丰富的口感。不仅如此，迪士尼王国御用主厨更将迪士尼故事元素融入到菜品当中，旨在为您带去独一无二的感官体验。</p>\n<p>除了让宾客尽享精致美味，悉心周到的用餐服务也将伴您左右。</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-24_tcm1874-270756.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "美轮美奂，岂止于美食美味",
+              "text": "<p>除了美味佳肴，皇家宴会厅本身同样值得细品。精雕细琢的拱门、缤纷多彩的玻璃窗、布满恢宏画作的穹顶和瑰丽壮观的壁画，每一处都能让您沉浸在童话世界里。</p>\n<p>宴会厅由5个迪士尼公主主题餐厅组成，您可以在灰姑娘、花木兰、蒂安娜、白雪公主和睡美人的美妙场景中重温美好，寻味神奇。</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-17_tcm1874-234874.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "邂逅迪士尼朋友，童话梦想成真",
+              "text": "<p>一场完美的宴会怎能少得了您最喜爱的迪士尼朋友。看！他们已经来到您的身边，正向您问好。来成为皇家宴会厅的座上宾，尽情享受和迪士尼朋友们的亲密互动吧!与他们度过的每一刻，都将成为您人生中最奇妙的体验。</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-18_tcm1874-234876.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单 ",
+              "text": "<p><a href=\"https://static.shanghaidisneyresort.com/web-img-gallery/royal_banquet_hall.pdf\">点击查看</a>菜单详情</p>\n<p><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "立即预订",
+              "text": "<p>咨询更多详情，请致电 400-180-0000</p>\n<ul>\n<li>“皇家宴会厅生日派对” <a href=\"https://www.shanghaidisneyresort.com/ecoupon/products/RBH-Linabell-Birthday-party/booth\">立即预订</a></li>\n<li>“皇家宴会厅套餐含‘奇梦之光幻影秀’预留观赏位一位”<a href=\"https://www.shanghaidisneyresort.com/ecoupon/products/RBH-setmenu-wiz-premium-viewNTS/booth\">立即预订</a></li>\n</ul>",
+              "media": [
+                {
+                  "type": "image/png",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-tour-vip-tour-services-storycard-03_tcm1874-153741.png",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "奇幻童话城堡",
+              "text": "<p>欢迎来到奇幻童话城堡。城堡位于上海迪士尼乐园“梦幻世界”主题园区，丰富的美味佳肴、引人入胜的景点和精彩绝伦的现场演出定让您流连忘返，还能与迪士尼朋友们见面。\n<br /></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-att-enchanted-storybook-castle-hero-new_tcm1874-114800.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/attraction/enchanted-storybook-castle"
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "下载官方App即刻查看餐厅信息！",
+              "text": "下载上海迪士尼度假区官方App，即刻查看餐厅菜系，营业时间以及参考价格。",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-gsrvc-mobile-app-icon2_tcm1874-113788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/zh-cn/information/download-shanghai-disney-mobile-app"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineRoyalBanquetHall;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "梦幻世界",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "id": "dineFacet-experience-reservations-global_95640",
+              "urlFriendlyId": "reservations-accepted",
+              "value": "接受预订"
+            },
+            {
+              "urlFriendlyId": "character-dining",
+              "value": "邂逅迪士尼朋友"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "id": "dineFacet-experience-reservations-global_95640",
+              "urlFriendlyId": "reservations-accepted",
+              "value": "接受预订"
+            },
+            {
+              "urlFriendlyId": "character-dining",
+              "value": "邂逅迪士尼朋友"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "western",
+              "value": "西式"
+            },
+            {
+              "urlFriendlyId": "vegetarian-option",
+              "value": "素食可选"
+            },
+            {
+              "urlFriendlyId": "souvenir",
+              "value": "纪念品"
+            },
+            {
+              "urlFriendlyId": "Cafe",
+              "value": "咖啡"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥¥¥",
+              "value": "¥¥¥¥ (人均 人民币301 - 500)"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "梦幻世界"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "royal banquet hall - Dishes",
+            "referenceKey": "royal banquet hall - Dishes",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-01-sq_tcm1874-137870.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "royal banquet hall - Dishes",
+                "subChapters": [
+                  {
+                    "title": "royal banquet hall - Dishes",
+                    "thumbnail": null,
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-hero-20250410_tcm1874-278581.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-hero-20250410_tcm1874-278581.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-17-sq_tcm1874-234855.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-17_tcm1874-234854.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-18-sq_tcm1874-234857.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-18_tcm1874-234856.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-19-sq_tcm1874-234859.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-gallery-19_tcm1874-234858.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [
+        {
+          "productTypeId": "RBH-setmenu-wiz-premium-viewNTS",
+          "categoryId": "FoodBeverage_product",
+          "price": "￥790.00 起",
+          "availableCount": 98,
+          "tagGroups": [
+            {
+              "id": "tagFeatured",
+              "names": {
+                "tagLabel": {
+                  "text": "热门",
+                  "html": "<label style='border:1px solid #FF5000;color:#FF5000'>热门</label>",
+                  "translationMap": {},
+                  "defaultText": "热门"
+                }
+              },
+              "displayOrder": 1,
+              "color": "#EBF6FC"
+            }
+          ],
+          "descriptions": {
+            "productMainPicture": {
+              "key": "productMainPicture",
+              "text": "https://static.shanghaidisneyresort.com/web-img-gallery/20250709-RBH-setmenu-wiz-premium-viewNTS-icon-CN.jpg",
+              "sections": {}
+            },
+            "marketingTitle": {
+              "id": 1196986,
+              "key": "marketingTitle",
+              "text": "皇家宴会厅公主套餐含“奇梦之光幻影秀”预留观赏区域一位",
+              "type": "webDescription",
+              "usageType": "WDPRO",
+              "sections": {}
+            }
+          },
+          "displayOrder": "0",
+          "itemlink": "https://www.shanghaidisneyresort.com/commerce/ecoupon/products/RBH-setmenu-wiz-premium-viewNTS/booth?hidebackButton=true",
+          "sellable": true
+        }
+      ],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "11:30&14:00 17:00&19:30",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

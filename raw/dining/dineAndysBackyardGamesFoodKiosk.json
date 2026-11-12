@@ -1,0 +1,285 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:34"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:34"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "草莓熊餐盒",
+      "entityId": "dineAndysBackyardGamesFoodKiosk",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "andys-backyard-games-food-kiosk",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/andys-backyard-games-food-kiosk",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-sq-20220921_tcm1874-245831.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-hero-20220921_tcm1874-245830.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-hero-20220921_tcm1874-245830.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-hero-20220921_tcm1874-245830.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-sq-20220921_tcm1874-245831.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.14887480991",
+            "longitude": "121.663589362586"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/andys-backyard-games-food-kiosk/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "这家以玩具总动员为主题的互动游戏场所，还可以享用到“野餐式”的丰富餐饮和主题甜品。",
+        "shortDescriptionMobileText": "这家以玩具总动员为主题的互动游戏场所，还可以享用到“野餐式”的丰富餐饮和主题甜品。\n<br/><br/><a href=\"wdpr-shdr://pdf?url=https%3A%2F%2Fstatic.shanghaidisneyresort.com%2Fweb-img-gallery%2Flotso_lunch_box.pdf%3Ftitle%3D%E8%8F%9C%E5%8D%95%E8%AF%A6%E6%83%85\">查看菜单详情</a></strong>\n<br/><br/><small>此菜单内容可能变更，请以小食亭实际供应为准。</small>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "来玩具世界 趣吃趣玩",
+              "text": "由《玩具总动员》里的玩具包装盒所搭建起来的点餐区提供各种不同风味、妙趣横生又美味无穷的主题餐饮。\n<br />\n<br />\n《玩具总动员》中活泼可爱的小男孩安迪在后院与他心爱的玩具玩耍时，发现自己饿了，在回家吃饭前，安迪用他最喜欢的玩具包装盒和玩具家具，为他的玩具们搭建了餐厅，供他的玩具们享用美食。如今，在迪士尼·皮克斯玩具总动员主题园区，我们用草莓熊玩具包装盒搭建了餐厅，在这里，您可以买到各式美食——手撕猪肉佛卡夏三明治、川味炸鸡等。\n<br />\n<br />\n点好餐，来到“野餐式”的户外就餐区域，找一个玩具椅坐下来，身边围绕着各式玩具，边欣赏美景边用餐，感觉自己完全融于了玩具的世界。\n<br />\n<br />\n无论是点一份套餐大吃一顿，还是小坐片刻品尝甜品，这里的美味定会让您回味无穷。",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-PortobelloandBBQPork-hero_tcm1874-293692.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单",
+              "text": "<p><a href=\"https://static.shanghaidisneyresort.com/web-img-gallery/lotso_lunch_box.pdf\">点击查看</a>菜单详情</p>\n<p><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "下载官方App即刻查看餐厅信息！",
+              "text": "下载上海迪士尼度假区官方App，即刻查看餐厅菜系，营业时间以及参考价格。",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-gsrvc-mobile-app-icon2_tcm1874-113788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/zh-cn/information/download-shanghai-disney-mobile-app"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineAndysBackyardGamesFoodKiosk;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landToyStoryLand",
+          "name": "迪士尼·皮克斯玩具总动员",
+          "urlFriendlyId": "toy-story-land"
+        }
+      },
+      "facets": {
+        "quickService": {
+          "options": [
+            {
+              "id": "dineFacet-experience-kiosk-global_95658",
+              "urlFriendlyId": "kiosk",
+              "value": "小食亭"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "id": "dineFacet-experience-kiosk-global_95658",
+              "urlFriendlyId": "kiosk",
+              "value": "小食亭"
+            },
+            {
+              "urlFriendlyId": "unique-themed",
+              "value": "独特/主题餐饮"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "western",
+              "value": "西式"
+            },
+            {
+              "urlFriendlyId": "snacks",
+              "value": "小食"
+            },
+            {
+              "urlFriendlyId": "souvenir",
+              "value": "纪念品"
+            },
+            {
+              "urlFriendlyId": "Cafe",
+              "value": "咖啡"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "otherDining": {
+          "options": [
+            {
+              "id": "dineFacet-experience-kiosk-global_95658",
+              "urlFriendlyId": "kiosk",
+              "value": "小食亭"
+            },
+            {
+              "urlFriendlyId": "unique-themed",
+              "value": "独特/主题餐饮"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "toy-story-land",
+              "value": "迪士尼·皮克斯玩具总动员"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "11:00&18:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

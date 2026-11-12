@@ -1,0 +1,205 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:20:58"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:20:58"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "新旺茶餐厅",
+      "entityId": "dineXinWang",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "xin-wang",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/xin-wang",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-xin-wang-hero-sq-new_tcm1874-286585.png",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-xin-wang-hero-0417_tcm1874-289723.jpeg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-xin-wang-hero-0417_tcm1874-289723.jpeg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-xin-wang-hero-0417_tcm1874-289723.jpeg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-xin-wang-hero-sq-new_tcm1874-286585.png",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.147223",
+            "longitude": "121.666968"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/xin-wang/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "<p>新旺茶餐厅自1998年首登沪上，是港式美食的经典代表。2016年入驻迪士尼小镇后，更成为小镇的港式风味地标。餐厅在萃取港式茶餐厅精髓的基础上，融入地方风味与国际元素，菜品丰富且性价比出众，深受广大游客喜爱。新旺始终致力于从产品到环境的全面提升，为顾客提供更优质的体验。在这里，游客既能享受地道港味，也能感受特有的欢乐氛围，让美食与奇妙记忆相伴。</p>",
+        "shortDescriptionMobileText": "新旺茶餐厅自1998年首登沪上，是港式美食的经典代表。2016年入驻迪士尼小镇后，更成为小镇的港式风味地标。餐厅在萃取港式茶餐厅精髓的基础上，融入地方风味与国际元素，菜品丰富且性价比出众，深受广大游客喜爱。新旺始终致力于从产品到环境的全面提升，为顾客提供更优质的体验。在这里，游客既能享受地道港味，也能感受特有的欢乐氛围，让美食与奇妙记忆相伴。"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineXinWang;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "8:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

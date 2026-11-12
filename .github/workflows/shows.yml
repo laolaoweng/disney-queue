@@ -1,6 +1,6 @@
 name: collect-shows
 
-# 演出时刻表每天变一次，单独一条每天跑（33 个请求约 25s）。
+# 演出时刻表 + 园区餐饮营业信息每天变一次，单独一条每天跑（演出 54 个请求 + 餐饮 28 个请求，约 1 分钟）。
 # 北京时间 00:20 = UTC 16:20，赶在早上开园前把当天场次更新好。
 on:
   schedule:
@@ -30,15 +30,18 @@ jobs:
       - name: Fetch show schedules (official WAM facility/detail)
         run: python collector/fetch_shows.py
 
+      - name: Fetch dining info (official WAM facility/detail)
+        run: python collector/fetch_dining.py
+
       - name: Commit data/shows.json
         run: |
           git config user.name "disney-queue-bot"
           git config user.email "disney-queue-bot@users.noreply.github.com"
-          git add data/shows.json data/shows.error.json 2>/dev/null || true
+          git add data/shows.json data/dining.json data/shows.error.json data/dining.error.json 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "shows.json 无变化"
+            echo "shows.json / dining.json 无变化"
           else
-            git commit -m "data(shows): 更新演出时刻表 $(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "data(shows,dining): 更新演出时刻表与餐饮信息 $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           fi
 
@@ -46,6 +49,8 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: shows-error
-          path: data/shows.error.json
+          name: shows-dining-error
+          path: |
+            data/shows.error.json
+            data/dining.error.json
           retention-days: 7

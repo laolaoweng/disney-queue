@@ -1,0 +1,861 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:20"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:20"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "达菲好友欢庆堂",
+      "entityId": "dineDuffyAndFriendsCelebrationHallDining",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "duffy-and-friends-celebration-hall",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": true,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/duffy-and-friends-celebration-hall",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20250113_tcm1874-276393.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20250113_tcm1874-276423.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20250113_tcm1874-276423.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20250113_tcm1874-276423.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20250113_tcm1874-276393.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.149266267217",
+            "longitude": "121.66902192464"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/duffy-and-friends-celebration-hall/",
+      "showSignature": true,
+      "signature": [
+        {
+          "assets": [
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_CharSiuandMeatballBarley-sq_tcm1874-289323.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "叉烧肉丸大麦面配猪骨汤",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_CharSiuandMeatballBarley-hero_tcm1874-289324.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_Beef-UpYourFriendshipCombo-sq_tcm1874-289326.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "社交“牛”人萌友餐",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_Beef-UpYourFriendshipCombo-hero_tcm1874-289325.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH-Power-UpChicken-sq_tcm1874-291070.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "“贝”儿棒鸡腿餐",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH-Power-UpChicken-hero_tcm1874-291069.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_ShellebrationLobsterNoodles-sq_tcm1874-293331.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "巧手拾珍龙虾面",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_ShellebrationLobsterNoodles-hero_tcm1874-293332.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH-IslandBreezeCoconutRice-261102-sq_tcm1874-294897.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "海岛椰椰风情饭",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH-IslandBreezeCoconutRice-261102-hero_tcm1874-294898.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_LittleArtistsPaletteVegetableRice-sq_tcm1874-293335.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "小画家的调色盘蔬菜饭",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_LittleArtistsPaletteVegetableRice-hero_tcm1874-293336.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_TheArtistInspired-sq_tcm1874-289335.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "艺术家笔下的烤红鱼",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_TheArtistInspired-hero_tcm1874-289336.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_BlueberryFlavoredMilkshake-sq_tcm1874-293337.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "蓝莓风味奶昔含玲娜贝儿吸管挂扣",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/DFCH_BlueberryFlavoredMilkshake-hero_tcm1874-293338.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            }
+          ],
+          "menuPdfExterLink": "https://static.shanghaidisneyresort.com/web-img-gallery/duffy_and_friends_celebration_hall.pdf",
+          "title": [
+            {
+              "name": "招牌菜"
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>达菲和朋友们在冒险的旅途中，发现了许多新鲜的食材，他们展示才华，用经典的烧烤方式烹制和自然风味调味，他们在大自然享受欢乐，分享美味的食物来庆祝他们的友谊。他们的冒险故事启发了我们在这里制作美食...”达菲好友欢庆堂”将带给你乐趣和惊喜。快来餐厅欢享美味，畅寻萌物吧!</p>",
+        "shortDescriptionMobileText": "<p>达菲和朋友们在冒险的旅途中，发现了许多新鲜的食材，他们展示才华，用经典的烧烤方式烹制和自然风味调味，他们在大自然享受欢乐，分享美味的食物来庆祝他们的友谊。他们的冒险故事启发了我们在这里制作美食...”达菲好友欢庆堂”将带给你乐趣和惊喜。快来餐厅欢享美味，畅寻萌物吧!\n</p>\n<p><a href=\"wdpr-shdr://pdf?url=https%3A%2F%2Fstatic.shanghaidisneyresort.com%2Fweb-img-gallery%2Fduffy_and_friends_celebration_hall.pdf%3Ftitle%3D%E8%8F%9C%E5%8D%95%E8%AF%A6%E6%83%85\">点击查看菜单</a></strong>\n<br/><br/><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单",
+              "text": "<a href=\"https://static.shanghaidisneyresort.com/web-img-gallery/duffy_and_friends_celebration_hall.pdf\">点击查看</a>菜单详情\n<br />\n<br />\n<small>此菜单内容可能变更，请以餐厅实际供应为准。</small>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineDuffyAndFriendsCelebrationHallDining;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landAdventureIsle",
+          "name": "探险岛",
+          "urlFriendlyId": "adventure-isle"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "quickService": {
+          "options": [
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            },
+            {
+              "urlFriendlyId": "snacks",
+              "value": "小食"
+            },
+            {
+              "urlFriendlyId": "vegetarian-option",
+              "value": "素食可选"
+            },
+            {
+              "urlFriendlyId": "souvenir",
+              "value": "纪念品"
+            },
+            {
+              "urlFriendlyId": "halal-halal",
+              "value": "清真食品"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥¥",
+              "value": "¥¥¥ (人均 人民币101 - 300)"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "adventure-isle",
+              "value": "探险岛"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Duffy and Friends Celebration Hall",
+            "referenceKey": "Duffy and Friends Celebration Hall",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20240108_tcm1874-275869.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Duffy and Friends Celebration Hall",
+                "subChapters": [
+                  {
+                    "title": "Duffy and Friends Celebration Hall",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/jpeg",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20240108_tcm1874-275869.jpg",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20250113_tcm1874-276423.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20250113_tcm1874-276423.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CharSiuandMeatballBarleyNoodles-sq_tcm1874-288592.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CharSiuandMeatballBarleyNoodles-new-hero_tcm1874-288774.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20240114-g1_tcm1874-276425.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20240114-g1_tcm1874-276424.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20240108_tcm1874-275869.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20240108_tcm1874-275870.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20240108-g1_tcm1874-275878.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20240108-g1_tcm1874-275871.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20240108-g2_tcm1874-275877.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20240108-g2_tcm1874-275872.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-v2-duffy-and-friends-celebration-hall-sq-20240108-g3_tcm1874-275963.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-v2-duffy-and-friends-celebration-hall-hero-20240108-g3_tcm1874-275962.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20240108-g4_tcm1874-275875.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20240108-g4_tcm1874-275874.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20240108-g5_tcm1874-275880.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20240108-g5_tcm1874-275883.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [
+        {
+          "productTypeId": "duffy-friends-celebration-birparty",
+          "categoryId": "FoodBeverage_product",
+          "price": "￥999.00",
+          "availableCount": 40,
+          "tagGroups": [],
+          "descriptions": {
+            "productMainPicture": {
+              "key": "productMainPicture",
+              "text": "https://static.shanghaidisneyresort.com/web-img-gallery/20250827-duffy-friends-celebration-birparty-icon.jpg",
+              "sections": {}
+            },
+            "marketingTitle": {
+              "id": 1154266,
+              "key": "marketingTitle",
+              "text": "达菲和朋友们欢庆生日派对",
+              "type": "webDescription",
+              "usageType": "WDPRO",
+              "sections": {}
+            }
+          },
+          "displayOrder": "0",
+          "itemlink": "https://www.shanghaidisneyresort.com/commerce/ecoupon/products/duffy-friends-celebration-birparty/booth?hidebackButton=true",
+          "sellable": true
+        }
+      ],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:30&20:30",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

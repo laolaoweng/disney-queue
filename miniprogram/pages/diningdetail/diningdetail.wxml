@@ -1,0 +1,64 @@
+<!-- pages/diningdetail/diningdetail.wxml —— 餐饮详情 -->
+<view class="page">
+  <view class="state-box" wx:if="{{loading && !restaurant}}">正在加载…</view>
+  <view class="state-box err" wx:if="{{error}}">{{error}}
+    <view class="back-btn" bindtap="goBack">返回餐饮</view>
+  </view>
+
+  <block wx:if="{{restaurant}}">
+    <view class="back-pill" bindtap="goBack">‹ 园区餐饮</view>
+
+    <view class="hero" wx:if="{{heroUrl}}" style="background-image:url('{{heroUrl}}')">
+      <text class="hero-name">{{restaurant.name}}</text>
+    </view>
+
+    <view class="card head">
+      <view class="head-top">
+        <text class="land">{{restaurant.land}}</text>
+        <text class="status {{open ? 'on' : 'off'}}">{{statusText}}</text>
+      </view>
+      <text class="hours">营业时间：{{hoursText}}</text>
+      <view class="tags" wx:if="{{tags.length}}">
+        <text class="tag" wx:for="{{tags}}" wx:key="*this">{{item}}</text>
+      </view>
+      <view class="actions">
+        <button class="btn primary" bindtap="onNavigate">🧭 导航过去</button>
+        <button class="btn ghost" wx:if="{{hasMenu}}" bindtap="onCopyMenu">📄 复制菜单链接</button>
+        <button class="btn ghost" wx:if="{{hasSite}}" bindtap="onCopySite">官网介绍</button>
+      </view>
+    </view>
+
+    <view class="card" wx:if="{{restaurant.description}}">
+      <view class="card-title">介绍</view>
+      <text class="desc">{{restaurant.description}}</text>
+    </view>
+
+    <view class="card" wx:if="{{coupons.length}}">
+      <view class="card-title">套餐 / 价格</view>
+      <view class="coupon" wx:for="{{coupons}}" wx:key="index">
+        <text class="coupon-price">{{item.price || '套餐'}}</text>
+        <text class="coupon-desc" wx:if="{{item.description}}">{{item.description}}</text>
+      </view>
+    </view>
+
+    <view class="card" wx:if="{{signature.length}}">
+      <view class="card-title">招牌菜</view>
+      <view class="sig" wx:for="{{signature}}" wx:key="name">
+        <image class="sig-img" wx:if="{{item.imageUrl}}" src="{{item.imageUrl}}" mode="aspectFill"></image>
+        <view class="sig-body">
+          <text class="sig-name">{{item.name}}</text>
+          <text class="sig-desc" wx:if="{{item.description}}">{{item.description}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="card" wx:if="{{dishes.length}}">
+      <view class="card-title">部分菜单</view>
+      <view class="dishes">
+        <text class="dish" wx:for="{{dishes}}" wx:key="id">{{item.label}}</text>
+      </view>
+    </view>
+
+    <view class="footnote">菜单与价格来自官网/官方菜单文件，可能调整，以现场为准。</view>
+  </block>
+</view>

@@ -1,0 +1,197 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:09"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:09"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "野八椒",
+      "entityId": "dineYebajiao",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "yebajiao",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/yebajiao",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-yebajiao-hero-sq_tcm1874-290911.png",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-yebajiao-hero_tcm1874-290910.png",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-yebajiao-hero_tcm1874-290910.png",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-yebajiao-hero_tcm1874-290910.png",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-yebajiao-hero-sq_tcm1874-290911.png",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.146576",
+            "longitude": "121.66694"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/yebajiao/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "<p>野八椒，藏于迪士尼小镇的地道云南菜馆。\n<br />\n以山野本味、民族烟火为核心，严选云南直供鲜材：傣味酸笋、德宏香草、建水豆腐、腾冲黄牛肉、普洱香草、宣威火腿、野生菌及时令鲜蔬，复刻云南山林雨林、村寨火塘的原生风味。涵盖傣味凉拌、滇味小炒、云南小吃与招牌汤锅，木姜子清冽、香茅草绵长、烧椒焦香、薄荷清爽、酸汤醇厚，鲜野酸辣交织，一站式尝遍滇西、滇南、傣家及黔东南特色。\n<br />\n坚持现炒现做、无预制菜，以质朴火候守住食材本鲜。\n<br />\n野八椒，野至极致方为鲜，一口尽揽云南烟火人情。</p>",
+        "shortDescriptionMobileText": "<p>野八椒，藏于迪士尼小镇的地道云南菜馆。\n<br/>\n以山野本味、民族烟火为核心，严选云南直供鲜材：傣味酸笋、德宏香草、建水豆腐、腾冲黄牛肉、普洱香草、宣威火腿、野生菌及时令鲜蔬，复刻云南山林雨林、村寨火塘的原生风味。涵盖傣味凉拌、滇味小炒、云南小吃与招牌汤锅，木姜子清冽、香茅草绵长、烧椒焦香、薄荷清爽、酸汤醇厚，鲜野酸辣交织，一站式尝遍滇西、滇南、傣家及黔东南特色。\n<br/>\n坚持现炒现做、无预制菜，以质朴火候守住食材本鲜。\n<br/>\n野八椒，野至极致方为鲜，一口尽揽云南烟火人情。</p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineYebajiao;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

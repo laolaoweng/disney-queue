@@ -1,0 +1,1028 @@
+{
+ "schemaVersion": 1,
+ "generatedAt": "2026-11-12T07:26:47Z",
+ "source": "wam/facility/detail",
+ "parkId": "shdr",
+ "businessDate": "2026-11-12",
+ "restaurants": [
+  {
+   "id": "dineGardensOfImaginationSnacks",
+   "name": "奇想花园小食",
+   "land": "奇想花园",
+   "urlFriendlyId": "gardens-of-imagination-snacks-new",
+   "lat": "31.148568545365297",
+   "lng": "121.6661104248079",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-gardens-of-imagination-snacks-sq_tcm1874-295092.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-gardens-of-imagination-snacks-hero_tcm1874-295093.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-gardens-of-imagination-snacks-hero_tcm1874-295093.jpg"
+   ],
+   "description": "坐落于奇想花园的户外小餐车，在这里可以买到香烤猪手，还有迪士尼主题冰淇淋。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:00&19:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:00-19:30"
+    ]
+   },
+   "serviceTags": [
+    "户外小餐车"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/gardens_of_imagination_snacks.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/gardens-of-imagination-snacks-new/",
+   "phone": ""
+  },
+  {
+   "id": "dineGardensOfImaginationPopcorn",
+   "name": "奇想花园爆米花",
+   "land": "奇想花园",
+   "urlFriendlyId": "gardens-of-imagination-popcorn",
+   "lat": "31.14857621133263",
+   "lng": "121.66809361800318",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-gardens-of-imagination-popcorn-sq_tcm1874-294981.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-gardens-of-imagination-popcorn-hero_tcm1874-294982.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-gardens-of-imagination-popcorn-hero_tcm1874-294982.jpg"
+   ],
+   "description": "坐落于奇想花园的户外小餐车，提供现爆风味爆米花，迪士尼主题爆米花桶，还有迪士尼主题冰淇淋。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "8:30&21:15",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "08:30-21:15"
+    ]
+   },
+   "serviceTags": [
+    "户外小餐车"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/gardens_of_imagination_popcorn.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/gardens-of-imagination-popcorn/",
+   "phone": ""
+  },
+  {
+   "id": "dineTimothysTreats",
+   "name": "提摩太小吃",
+   "land": "奇想花园",
+   "urlFriendlyId": "timothys-treats",
+   "lat": "31.148370521768",
+   "lng": "121.66633789056",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-timothys-treats-gallery-01-sq_tcm1874-137985.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-timothys-treats-gallery-01_tcm1874-137984.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-timothys-treats-gallery-01_tcm1874-137984.jpg"
+   ],
+   "description": "右转来到这个马戏团主题小吃店，您可发现美式风味热狗。品尝美味热狗的同时欣赏迪士尼朋友的精彩巡游，是再好不过的享受！",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "11:00&21:15",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "11:00-21:15"
+    ]
+   },
+   "serviceTags": [
+    "小食亭"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/timothys_treats.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/timothys-treats/",
+   "phone": ""
+  },
+  {
+   "id": "dinePicnicBasket",
+   "name": "花间美味",
+   "land": "奇想花园",
+   "urlFriendlyId": "picnic-basket",
+   "lat": "31.1492460554318",
+   "lng": "121.667779105203",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-picnic-backet-gallery-10-sq_tcm1874-272668.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-picnic-backet-gallery-10-20250409_tcm1874-278564.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-picnic-backet-gallery-10-20250409_tcm1874-278564.jpg"
+   ],
+   "description": "花间，一个有味道的地方。漫步在“奇想花园”主题园区的美丽小径上，在花间美味小驻片刻，享受休闲时光的同时，更可品尝可口的美食。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "",
+    "statusCode": "ScheduledClosedDay",
+    "slots": []
+   },
+   "serviceTags": [
+    "小食亭"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/picnic_basket.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/picnic-basket/",
+   "phone": ""
+  },
+  {
+   "id": "dineTortugaTreats",
+   "name": "土图嘉风味",
+   "land": "宝藏湾",
+   "urlFriendlyId": "tortuga-treats",
+   "lat": "31.150992149137",
+   "lng": "121.66979984646",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tortuga-treats-sq-20220816_tcm1874-242856.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tortuga-treats-hero-20250410_tcm1874-278583.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tortuga-treats-hero-20250410_tcm1874-278583.jpg"
+   ],
+   "description": "在这家海岛风情的小食亭，每天限时限量供应远近闻名的火鸡翅。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "11:00&18:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "11:00-18:00"
+    ]
+   },
+   "serviceTags": [
+    "小食亭",
+    "外带",
+    "招牌餐饮"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/tortuga_treats.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/tortuga-treats/",
+   "phone": ""
+  },
+  {
+   "id": "dineBarbossasBounty",
+   "name": "巴波萨烧烤",
+   "land": "宝藏湾",
+   "urlFriendlyId": "barbossas-bounty",
+   "lat": "31.151571488436",
+   "lng": "121.66945471126",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-sq-hlw_tcm1874-283674.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-20240409_tcm1874-278562.JPG",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-20240409_tcm1874-278562.JPG"
+   ],
+   "description": "这家餐厅的景致和它的美食一样令人惊艳！更特别的是，食客可以通过开放式厨房亲眼看到主厨烹饪美食的精彩时刻。同时，食客们可以感受到 “加勒比海盗—沉落宝藏之战” 的战场。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:30&20:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:30-20:30"
+    ]
+   },
+   "serviceTags": [
+    "儿童餐",
+    "家庭餐",
+    "快餐服务"
+   ],
+   "signature": [
+    {
+     "name": "[{'name': '招牌菜'}]",
+     "imageUrl": "",
+     "description": ""
+    }
+   ],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/barbossas_bounty.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/barbossas-bounty/",
+   "phone": ""
+  },
+  {
+   "id": "dinePintelRagettisGrubGrab",
+   "name": "水手大排档 ",
+   "land": "宝藏湾",
+   "urlFriendlyId": "pintel-ragettis-grub-grab",
+   "lat": "31.151571488436",
+   "lng": "121.66961582224",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pintel-and-ragettis-grub-to-grab-0701-sq_tcm1874-281015.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pintel-and-ragettis-grub-to-grab-0701-hero_tcm1874-281016.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pintel-and-ragettis-grub-to-grab-0701-hero_tcm1874-281016.jpg"
+   ],
+   "description": "来到宝藏湾主题园区，令人垂涎三尺的特色饮品正等你来发现。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "",
+    "statusCode": "ScheduledClosedDay",
+    "slots": []
+   },
+   "serviceTags": [
+    "小食亭"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/pintel-ragettis-grub-grab/",
+   "phone": ""
+  },
+  {
+   "id": "dineSnackinKraken",
+   "name": "海怪小吃",
+   "land": "宝藏湾",
+   "urlFriendlyId": "snackin-kraken",
+   "lat": "31.1514988398674",
+   "lng": "121.668596651503",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-snackin-kraken-hero-sq-20220609_tcm1874-238953.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-snackin-kraken-hero-20220609_tcm1874-238954.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-snackin-kraken-hero-20220609_tcm1874-238954.jpg"
+   ],
+   "description": "在这家以北海巨妖命名的特色小店里，烤鱿鱼和鱼丸配椒麻酱是唤醒你所有味蕾的不二选择。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:00&19:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:00-19:00"
+    ]
+   },
+   "serviceTags": [
+    "小食亭",
+    "招牌餐饮",
+    "外带"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/the_snackin_kraken.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/snackin-kraken/",
+   "phone": ""
+  },
+  {
+   "id": "dineCaptainsKettle",
+   "name": "船长小灶",
+   "land": "宝藏湾",
+   "urlFriendlyId": "captain-s-kettle",
+   "lat": "31.15056",
+   "lng": "121.667944",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-captain-s-kettle-hero-sq_tcm1874-264804.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-captain-s-kettle-hero-20250410_tcm1874-278587.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-captain-s-kettle-hero-20250410_tcm1874-278587.jpg"
+   ],
+   "description": "在船长小灶小驻片刻，火鸡腿和风味烤玉米都会是你不错的选择。",
+   "hours": {
+    "businessDate": "",
+    "timeInfo": "",
+    "statusCode": "",
+    "slots": []
+   },
+   "serviceTags": [
+    "户外小餐车"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/captains_kettle.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/captain-s-kettle/",
+   "phone": ""
+  },
+  {
+   "id": "dineChipmunkSnacks",
+   "name": "花栗鼠小厨",
+   "land": "探险岛",
+   "urlFriendlyId": "chipmunk-snacks",
+   "lat": "31.149721931045",
+   "lng": "121.66962220076",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CS-Environmentphoto-sq_tcm1874-283325.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CS-Environmentphoto-hero_tcm1874-283324.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CS-Environmentphoto-hero_tcm1874-283324.jpg"
+   ],
+   "description": "这家特色小吃店以独创的牛肉泡菜卷远近闻名。在起身前往下一站前，品尝一杯新鲜饮品提提神，也是不错的选择。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:00&19:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:00-19:30"
+    ]
+   },
+   "serviceTags": [
+    "小食亭"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/chipmunk_snacks.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/chipmunk-snacks/",
+   "phone": ""
+  },
+  {
+   "id": "dineDuffyAndFriendsCelebrationHallDining",
+   "name": "达菲好友欢庆堂",
+   "land": "探险岛",
+   "urlFriendlyId": "duffy-and-friends-celebration-hall",
+   "lat": "31.149266267217",
+   "lng": "121.66902192464",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-sq-20250113_tcm1874-276393.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20250113_tcm1874-276423.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-duffy-and-friends-celebration-hall-hero-20250113_tcm1874-276423.jpg"
+   ],
+   "description": "达菲和朋友们在冒险的旅途中，发现了许多新鲜的食材，他们展示才华，用经典的烧烤方式烹制和自然风味调味，他们在大自然享受欢乐，分享美味的食物来庆祝他们的友谊。他们的冒险故事启发了我们在这里制作美食...”达菲好友欢庆堂”将带给你乐趣和惊喜。快来餐厅欢享美味，畅寻萌物吧!",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:30&20:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:30-20:30"
+    ]
+   },
+   "serviceTags": [
+    "家庭餐",
+    "儿童餐",
+    "快餐服务"
+   ],
+   "signature": [
+    {
+     "name": "[{'name': '招牌菜'}]",
+     "imageUrl": "",
+     "description": ""
+    }
+   ],
+   "coupons": [
+    {
+     "price": "￥999.00",
+     "description": ""
+    }
+   ],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/duffy_and_friends_celebration_hall.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/duffy-and-friends-celebration-hall/",
+   "phone": ""
+  },
+  {
+   "id": "dineStarTrailSnacks",
+   "name": "旋味美食站",
+   "land": "明日世界",
+   "urlFriendlyId": "star-trail-snacks",
+   "lat": "31.1477208006082",
+   "lng": "121.664378095252",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-star-trail-snacks-StarTrailSnacksEnvironment1-sq_tcm1874-281276.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-star-trail-snacks-StarTrailSnacksEnvironment1-hero_tcm1874-281277.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-star-trail-snacks-StarTrailSnacksEnvironment1-hero_tcm1874-281277.jpg"
+   ],
+   "description": "旋味美食站矗立于明日世界主题园区。在这个未来主义设计的美食亭，充满了史迪奇主题的特色美食。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "11:00&18:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "11:00-18:00"
+    ]
+   },
+   "serviceTags": [
+    "小食亭"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/star_trail_snacks.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/star-trail-snacks/",
+   "phone": ""
+  },
+  {
+   "id": "dineStargazerGrill",
+   "name": "星露台餐厅",
+   "land": "明日世界",
+   "urlFriendlyId": "stargazer-grill",
+   "lat": "31.147369462469",
+   "lng": "121.66445017657",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-sq-20250603_tcm1874-279845.jpeg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-hero-20250603_tcm1874-279844.jpeg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-stargazer-grill-hero-20250603_tcm1874-279844.jpeg"
+   ],
+   "description": "在皮克斯电影的灵感启发下，星露台餐厅迎来了焕新升级 – “星露台餐厅·皮克斯缤纷烩”，走进这里，你会发现以电影《怪物电力公司》和《头脑特工队》为主题的布置陈设。 餐厅也以皮克斯电影为灵感，推出了缤纷美味新菜品，打造全新菜单，带你开启一场皮克斯味觉奇旅。 以《头脑特工队》中怒怒为灵感的“怒吃一口辣汉堡薯条”，热辣风味刺激味蕾，美味到让你“咬牙切齿”；以莱莉的童年幻想朋友冰棒为灵感的“童年想‘象’棉花糖”，甜蜜的滋味带你穿越回无忧无虑的童年时光；还有以电影中缤纷情绪为灵感的“缤纷情绪炸鸡翅”，酥脆炸鸡配上多味多彩的蘸酱，激活你的各种情绪和感官！ 以《怪物电力公司》中毛怪为灵感的“心里软战斧猪排饭”，外脆里嫩的战斧猪排，就像毛怪一样，外表粗犷其实内心很柔软哦；以电影中的变色龙蓝道·宝基为灵感的“摇身一变脆脆薯”，缤纷口味的调料包裹住薯条，薯条也像变色龙一样呈现各种色彩；以大眼仔为灵感的“一眼就爱的蜜瓜冰淇淋”，冰爽甜蜜，就像大眼仔一样带给你无限活力！ 还有《超能总动员》中小超人小杰最爱的“小超人曲奇”.....超多缤纷美味汇聚在这里，等你来品尝、品味，畅游在这段味觉奇旅中。 品尝完美食，还可以找到餐厅内的主题拍照点打卡留念，专为每一个喜爱皮克斯电影的影迷打造的互动留影空间，为你的味觉奇旅留下缤纷多彩的纪念。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:30&21:15",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:30-21:15"
+    ]
+   },
+   "serviceTags": [
+    "儿童餐",
+    "家庭餐",
+    "快餐服务"
+   ],
+   "signature": [
+    {
+     "name": "[{'name': '招牌菜'}]",
+     "imageUrl": "",
+     "description": ""
+    }
+   ],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/stargazer_grill.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/stargazer-grill/",
+   "phone": ""
+  },
+  {
+   "id": "dineFairyGodmothersCupboard",
+   "name": "仙女教母妙味橱",
+   "land": "梦幻世界",
+   "urlFriendlyId": "fairy-godmothers-cupboard",
+   "lat": "31.1495190456192",
+   "lng": "121.66520748333100",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fairy-godmothers-cupboard-0701-sq_tcm1874-280982.JPG",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fairy-godmothers-cupboard-0701-hero_tcm1874-280983.JPG",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fairy-godmothers-cupboard-0701-hero_tcm1874-280983.JPG"
+   ],
+   "description": "游览上海迪士尼乐园，别忘了去寻找灰姑娘的仙女教母，她能用魔法变出让人垂涎欲滴的零食！仙女教母的魔法棒一挥，您就可享受源自梦幻世界的美食。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "",
+    "statusCode": "ScheduledClosedDay",
+    "slots": []
+   },
+   "serviceTags": [
+    "小食亭"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/fairy-godmothers-cupboard/",
+   "phone": "[{'type': 'Front Desk', 'number': '+86 999 99999999'}]"
+  },
+  {
+   "id": "dineTroubadourTreats",
+   "name": "吟游风味",
+   "land": "梦幻世界",
+   "urlFriendlyId": "troubadour-treats",
+   "lat": "31.1506835051161",
+   "lng": "121.66429525433",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-troubadour-treats-hero-sq-new-again_tcm1874-115229.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-troubadour-treats-hero-new-again_tcm1874-115228.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-troubadour-treats-hero-new-again_tcm1874-115228.jpg"
+   ],
+   "description": "林间剧场演出的间隙，不妨用美食犒赏自己。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:00&18:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:00-18:00"
+    ]
+   },
+   "serviceTags": [
+    "小食亭",
+    "外带"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/troubadour_treats.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/troubadour-treats/",
+   "phone": ""
+  },
+  {
+   "id": "dinePoohandFriendsTreats",
+   "name": "小熊维尼美食铺",
+   "land": "梦幻世界",
+   "urlFriendlyId": "pooh-and-friends-treats",
+   "lat": "31.151085817245",
+   "lng": "121.66540818722",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pooh-and-friends-treats-sq-20250923_tcm1874-283396.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pooh-and-friends-treats-hero-20250923_tcm1874-283395.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pooh-and-friends-treats-hero-20250923_tcm1874-283395.jpg"
+   ],
+   "description": "开启“梦幻世界”主题园区的森林探索之旅。在 “奇幻童话城堡” 不远处，就可以看到小熊维尼美食铺，这里的维尼主题美食都能寻到魔法的踪迹。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "9:00&20:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "09:00-20:00"
+    ]
+   },
+   "serviceTags": [
+    "小食亭",
+    "特色小食亭",
+    "外带",
+    "招牌餐饮"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/pooh_and_friends_treats.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/pooh-and-friends-treats/",
+   "phone": ""
+  },
+  {
+   "id": "dineFantasylandMickeyMouseHandBunOutdoorVendingCart",
+   "name": "梦幻世界米奇手包",
+   "land": "梦幻世界",
+   "urlFriendlyId": "fantasyland-mickey-mouse-hand-bun-outdoor-vending-cart",
+   "lat": "31.150927",
+   "lng": "121.666677",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fantasyland-mickey-mouse-hand-bun-outdoor-vending-cart-sq-20250318_tcm1874-277694.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fantasyland-mickey-mouse-hand-bun-outdoor-vending-cart-hero-20250318_tcm1874-277693.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fantasyland-mickey-mouse-hand-bun-outdoor-vending-cart-hero-20250318_tcm1874-277693.jpg"
+   ],
+   "description": "坐落于梦幻世界的户外小餐车，在这里可以买到米奇造型的小食，还有迪士尼主题冰淇淋。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:00&20:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:00-20:30"
+    ]
+   },
+   "serviceTags": [
+    "户外小餐车"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/fantasyland_mickey_mouse_hand_bun_outdoor_vending_cart.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/fantasyland-mickey-mouse-hand-bun-outdoor-vending-cart/",
+   "phone": ""
+  },
+  {
+   "id": "dineRoyalBanquetHall",
+   "name": "皇家宴会厅",
+   "land": "梦幻世界",
+   "urlFriendlyId": "royal-banquet-hall",
+   "lat": "31.1498682400033",
+   "lng": "121.666212239395",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-top0301-sq_tcm1874-234850.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-hero-20250410_tcm1874-278581.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-royal-banquet-hall-hero-20250410_tcm1874-278581.jpg"
+   ],
+   "description": "上海迪士尼乐园皇家宴会厅是亚洲唯一一家坐落于迪士尼城堡内的餐厅。 步入皇家宴会厅，就像置身梦幻的童话世界，让您在迪士尼公主故事的奇妙氛围中，和最爱的迪士尼朋友不期而遇，更能与家人朋友一起尊享城堡内的盛宴，创造专属于您的难忘时刻。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "11:30&14:00 17:00&19:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "11:30-14:00",
+     "17:00-19:30"
+    ]
+   },
+   "serviceTags": [
+    "接受预订",
+    "邂逅迪士尼朋友",
+    "儿童餐",
+    "家庭餐",
+    "点餐服务"
+   ],
+   "signature": [],
+   "coupons": [
+    {
+     "price": "￥790.00 起",
+     "description": ""
+    }
+   ],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/royal_banquet_hall.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/royal-banquet-hall/",
+   "phone": "[{'type': 'Reservations', 'number': ''}]"
+  },
+  {
+   "id": "dinePinocchioVillageKitchen",
+   "name": "皮诺丘乡村厨房",
+   "land": "梦幻世界",
+   "urlFriendlyId": "pinocchio-village-kitchen",
+   "lat": "31.1496273515771",
+   "lng": "121.66550065342500",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pinocchio-village-gallery-02-sq_tcm1874-137768.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pinocchio-village-gallery-02_tcm1874-137767.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-pinocchio-village-gallery-02_tcm1874-137767.jpg"
+   ],
+   "description": "走进梦幻世界， 踏入皮诺丘乡村厨房，彷佛翻开了一本充满美味的迪士尼童话故事书。在这里， 美食串起故事， 童话点亮想象。大人在这里重新找回纯真的童心， 孩子在这里种下梦想的种子。而皮诺丘乡村厨房，正是一座故事书里的童话餐厅。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:30&20:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:30-20:30"
+    ]
+   },
+   "serviceTags": [
+    "家庭餐",
+    "儿童餐",
+    "快餐服务"
+   ],
+   "signature": [
+    {
+     "name": "[{'name': '招牌菜'}]",
+     "imageUrl": "",
+     "description": ""
+    }
+   ],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/pinocchio_village_kitchen.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/pinocchio-village-kitchen/",
+   "phone": ""
+  },
+  {
+   "id": "dineSummerIceCreams",
+   "name": "米奇好伙伴主题糖葫芦",
+   "land": "梦幻世界",
+   "urlFriendlyId": "summer-ice-creams",
+   "lat": "31.15154",
+   "lng": "121.66533",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-summer-ice-creams-Tanghulu-sq_tcm1874-294960.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-summer-ice-creams-Tanghulu-hero_tcm1874-294959.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-summer-ice-creams-Tanghulu-hero_tcm1874-294959.jpg"
+   ],
+   "description": "售卖地点: 户外小餐车(近旋转疯蜜罐) 灵感源于北京街头最具代表性的甜蜜记忆。精选水果裹上一层晶莹剔透的糖衣，轻轻一咬，酸甜交织。 *具体产品请以户外小餐车实际售卖情况为准",
+   "hours": {
+    "businessDate": "",
+    "timeInfo": "",
+    "statusCode": "",
+    "slots": []
+   },
+   "serviceTags": [],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/summer-ice-creams/",
+   "phone": ""
+  },
+  {
+   "id": "dineTangledTreeTavern",
+   "name": "老藤树食栈",
+   "land": "梦幻世界",
+   "urlFriendlyId": "tangled-tree-tavern",
+   "lat": "31.1514616543375",
+   "lng": "121.664673399887",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-sq-220607_tcm1874-238794.png",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-20250410_tcm1874-278586.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-20250410_tcm1874-278586.jpg"
+   ],
+   "description": "欢迎来到老藤树食栈，这里的设计风格取材自迪士尼影片《魔发奇缘》的小鸭子酒馆，丰富的细节设计将重现电影中喧嚣吵闹的环境，是粉丝的朝圣之地！游客可以在郁郁葱葱的树林中美餐一顿。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:30&19:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:30-19:00"
+    ]
+   },
+   "serviceTags": [
+    "儿童餐",
+    "家庭餐",
+    "快餐服务",
+    "独特/主题餐饮",
+    "外带"
+   ],
+   "signature": [
+    {
+     "name": "[{'name': '招牌菜'}]",
+     "imageUrl": "",
+     "description": ""
+    }
+   ],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/tangled_tree_tavern.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/tangled-tree-tavern/",
+   "phone": ""
+  },
+  {
+   "id": "dineZootopiaMarket",
+   "name": "动物城食集",
+   "land": "疯狂动物城",
+   "urlFriendlyId": "zootopia-market ",
+   "lat": "31.152173",
+   "lng": "121.666552",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-zootopia-market-261004-sq_tcm1874-293670.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-zootopia-market-261004-hero_tcm1874-293671.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-zootopia-market-261004-hero_tcm1874-293671.jpg"
+   ],
+   "description": "来动物城食集，一个提供爆米花，树懒吨吨饮和迪士尼疯狂动物城爪爪棒冰的家庭市集，在这里你可以体验独特的动物城风味美食饮品。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "8:30&21:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "08:30-21:30"
+    ]
+   },
+   "serviceTags": [
+    "户外小餐车"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/zootopia_market.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/zootopia-market /",
+   "phone": ""
+  },
+  {
+   "id": "dineJumbeauxsCafe",
+   "name": "大象甜品店",
+   "land": "疯狂动物城",
+   "urlFriendlyId": "jumbeauxs-cafe",
+   "lat": "31.152322",
+   "lng": "121.665839",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-jumbeauxs-cafe-sq_tcm1874-266092.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-jumbeauxs-cafe-hero-20250429_tcm1874-279334.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-jumbeauxs-cafe-hero-20250429_tcm1874-279334.jpg"
+   ],
+   "description": "这家充满奇思妙想的甜品店由大象经营。在这里你能找到不同尺寸的迪士尼疯狂动物城美食，比如外形如同电影里巨型棒冰的巧克力脆米棒，还有豹警官最爱的大甜甜圈，以及各式各样迪士尼疯狂动物城主题的餐饮类纪念商品。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "8:30&21:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "08:30-21:00"
+    ]
+   },
+   "serviceTags": [
+    "小食亭"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/jumbeauxs_cafe.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/jumbeauxs-cafe/",
+   "phone": ""
+  },
+  {
+   "id": "dineChipDalesTreehouse",
+   "name": "奇奇蒂蒂小食",
+   "land": "米奇大街",
+   "urlFriendlyId": "chip-dales-treehouse",
+   "lat": "31.148007375034",
+   "lng": "121.66821446937",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-chip-dales-treehouse-gallery-01-sq_tcm1874-137657.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-chip-dales-treehouse-gallery-01_tcm1874-137656.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-chip-dales-treehouse-gallery-01_tcm1874-137656.jpg"
+   ],
+   "description": "在这个街角小店，一堆解馋零食和各式饮料正等着你的发现。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "8:30&20:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "08:30-20:00"
+    ]
+   },
+   "serviceTags": [
+    "小食亭"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/chip_n_dales_treehouse_treats0705.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/chip-dales-treehouse/",
+   "phone": ""
+  },
+  {
+   "id": "dineIlPaperino",
+   "name": "帕帕里诺冰激凌",
+   "land": "米奇大街",
+   "urlFriendlyId": "il-paperino",
+   "lat": "31.147842630298",
+   "lng": "121.667560861194",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-il-paperino-hero-sq-new_tcm1874-115181.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-il-paperino-hero-new_tcm1874-115180.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-il-paperino-hero-new_tcm1874-115180.jpg"
+   ],
+   "description": "试试诱人又凉爽的意式手工冰淇淋和软冰淇淋吧，再品尝一口现做的唐老鸭造型的华夫饼。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:00&20:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:00-20:30"
+    ]
+   },
+   "serviceTags": [],
+   "signature": [],
+   "coupons": [
+    {
+     "price": "￥58.00",
+     "description": ""
+    }
+   ],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/il_paperino.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/il-paperino/",
+   "phone": ""
+  },
+  {
+   "id": "dineCookieAnnBakeryCafe",
+   "name": "琦妙美味屋",
+   "land": "米奇大街",
+   "urlFriendlyId": "cookieann-bakery-cafe",
+   "lat": "31.148126828058",
+   "lng": "121.66803251391",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-cookieann-bakery-cafe-sq-1129_tcm1874-231044.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-cookieann-bakery-cafe-hero-1129_tcm1874-231043.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-cookieann-bakery-cafe-hero-1129_tcm1874-231043.jpg"
+   ],
+   "description": "欢迎来到琦妙美味屋，在这里你可以找到以可琦安和米妮为主打的各式经典美食和商品。精心制作的甜点应有尽有，新鲜出炉的可丽饼和法式吐司散发出香甜的气息。在街角小憩，将奇幻童话城堡的梦幻尽收眼底，再来一杯特色奶昔或者咖啡，也是不错的选择。享受美食的同时还能尽情挑选包括家居用品、纪念品在内的人气商品。走进可琦安和米妮的美味世界，与迪士尼朋友们一起分享快乐吧。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "8:30&21:30",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "08:30-21:30"
+    ]
+   },
+   "serviceTags": [
+    "快餐服务"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/cookieann_bakery_cafe.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/cookieann-bakery-cafe/",
+   "phone": ""
+  },
+  {
+   "id": "dineMickeyPalsMarketCafe",
+   "name": "米奇好伙伴美味集市",
+   "land": "米奇大街",
+   "urlFriendlyId": "mickey-pals-market-cafe",
+   "lat": "31.148655298167",
+   "lng": "121.66842456539",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-pals-market-gallery-30-sq_tcm1874-274150.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-20250410_tcm1874-278584.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-20250410_tcm1874-278584.jpg"
+   ],
+   "description": "米奇和他的好伙伴们相聚于米奇好伙伴美味集市，一起庆祝美食与欢聚带来的温暖与欢乐。菜单灵感源自米奇与朋友们故事中的美味时刻，将他们喜爱的地道风味带上餐桌，与大家一同分享这份惊喜与欢乐。 诚挚邀请您与亲朋好友相聚于此，在轻松愉悦的氛围中，分享幸福时光，尽情享用令人难忘的美味！",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "10:30&21:15",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "10:30-21:15"
+    ]
+   },
+   "serviceTags": [
+    "家庭餐",
+    "儿童餐",
+    "快餐服务"
+   ],
+   "signature": [
+    {
+     "name": "[{'name': '招牌菜'}]",
+     "imageUrl": "",
+     "description": ""
+    }
+   ],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/mickey_n_pals_market_cafe.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/mickey-pals-market-cafe/",
+   "phone": ""
+  },
+  {
+   "id": "dineAndysBackyardGamesFoodKiosk",
+   "name": "草莓熊餐盒",
+   "land": "迪士尼·皮克斯玩具总动员",
+   "urlFriendlyId": "andys-backyard-games-food-kiosk",
+   "lat": "31.14887480991",
+   "lng": "121.663589362586",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-sq-20220921_tcm1874-245831.jpg",
+   "heroUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-hero-20220921_tcm1874-245830.jpg",
+   "gallery": [
+    "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-andys-backyard-games-food-kiosk-hero-20220921_tcm1874-245830.jpg"
+   ],
+   "description": "这家以玩具总动员为主题的互动游戏场所，还可以享用到“野餐式”的丰富餐饮和主题甜品。",
+   "hours": {
+    "businessDate": "2026-11-12",
+    "timeInfo": "11:00&18:00",
+    "statusCode": "STNDOPR",
+    "slots": [
+     "11:00-18:00"
+    ]
+   },
+   "serviceTags": [
+    "小食亭",
+    "独特/主题餐饮"
+   ],
+   "signature": [],
+   "coupons": [],
+   "menuPdf": "https://static.shanghaidisneyresort.com/web-img-gallery/lotso_lunch_box.pdf",
+   "webLink": "https://www.shanghaidisneyresort.com/dining/theme-park/andys-backyard-games-food-kiosk/",
+   "phone": ""
+  }
+ ],
+ "dishes": [
+  {
+   "id": "dineListBeefupFriendshipCombo",
+   "name": "土图嘉风味 - 烤火鸡翅",
+   "parentName": "土图嘉风味",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/RoastedTurkeyWing-new-hero_tcm1874-290127.png",
+   "restaurantId": "dineTortugaTreats"
+  },
+  {
+   "id": "dineListDancersDelight",
+   "name": "奇奇蒂蒂小食 - 珍珠奶茶",
+   "parentName": "奇奇蒂蒂小食",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BubbleMilkTea-hero_tcm1874-288741.png",
+   "restaurantId": "dineChipDalesTreehouse"
+  },
+  {
+   "id": "dineListSummerSurpriseSundae",
+   "name": "巴波萨烧烤 - 山楂风味气泡水含唐老鸭主题纪念杯",
+   "parentName": "巴波萨烧烤",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-list-summer-surprise-sundae-Hawthorn-hero_tcm1874-291008.jpg",
+   "restaurantId": "dineBarbossasBounty"
+  },
+  {
+   "id": "dineListMeetHeroes",
+   "name": "巴波萨烧烤 - 海鲜咸鸭腿蝴蝶面配金酸汤​",
+   "parentName": "巴波萨烧烤",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SeafoodandSaltedDuck-hero_tcm1874-289297.png",
+   "restaurantId": "dineBarbossasBounty"
+  },
+  {
+   "id": "dineListShellLebrationSeafoodCombo",
+   "name": "星露台餐厅 - 巨无霸春卷",
+   "parentName": "星露台餐厅",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/JumboSpringRoll-hero_tcm1874-288746.png",
+   "restaurantId": "dineStargazerGrill"
+  },
+  {
+   "id": "dineListMickeyNewYearFeast",
+   "name": "星露台餐厅 - 牛腱虾仁阳春面配红汤​",
+   "parentName": "星露台餐厅",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BeefShankandShrimp-hero_tcm1874-289294.png",
+   "restaurantId": "dineStargazerGrill"
+  },
+  {
+   "id": "dineListOluPopcornBucket",
+   "name": "琦妙美味屋 - 上海风味可丽饼",
+   "parentName": "琦妙美味屋",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/ShanghaineseFlavoredCrepe-hero_tcm1874-288742.png",
+   "restaurantId": "dineCookieAnnBakeryCafe"
+  },
+  {
+   "id": "dineListAuroraCelebrationSetDinner",
+   "name": "皇家宴会厅 - 10岁生日庆典套餐",
+   "parentName": "皇家宴会厅",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/10thBirthdayCelebrationSetMenu-hero_tcm1874-288730.jpg",
+   "restaurantId": "dineRoyalBanquetHall"
+  },
+  {
+   "id": "dineListArtistInspiredGrilled",
+   "name": "皮诺丘乡村厨房 - 烤鸭披萨",
+   "parentName": "皮诺丘乡村厨房",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/RoastedDuckPizza-hero_tcm1874-288734.png",
+   "restaurantId": "dinePinocchioVillageKitchen"
+  },
+  {
+   "id": "dineListMarvelSnackCombo",
+   "name": "皮诺丘乡村厨房 - 猪手熏鱼鸡蛋鲜面配牛肉汤",
+   "parentName": "皮诺丘乡村厨房",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/PorkTrottersandCrispyFried-hero_tcm1874-289303.png",
+   "restaurantId": "dinePinocchioVillageKitchen"
+  },
+  {
+   "id": "dineListPowerupChickenCombo",
+   "name": "米奇好伙伴美味集市 - 宫保鸡肉虾球配香肠饭",
+   "parentName": "米奇好伙伴美味集市",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/GongBaoChicken-hero_tcm1874-288744.png",
+   "restaurantId": "dineMickeyPalsMarketCafe"
+  },
+  {
+   "id": "dineListLumiereSummerBuffet",
+   "name": "米奇好伙伴美味集市 - 牛肉咸鸡腿米线配番茄汤​",
+   "parentName": "米奇好伙伴美味集市",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/PorkTrottersandCrispy-hero_tcm1874-289301.png",
+   "restaurantId": "dineMickeyPalsMarketCafe"
+  },
+  {
+   "id": "dineListBBQPorkRibs",
+   "name": "老藤树食栈 - 川味鸡排",
+   "parentName": "老藤树食栈",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/SichuanFlavoredChickenBreast-hero_tcm1874-288737.png",
+   "restaurantId": "dineTangledTreeTavern"
+  },
+  {
+   "id": "dineListDuffyDinnerBuffet",
+   "name": "老藤树食栈 - 铁板肥牛南乳排骨配麻酱拌面​",
+   "parentName": "老藤树食栈",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TeppanyakiBeef-hero_tcm1874-289290.png",
+   "restaurantId": "dineTangledTreeTavern"
+  },
+  {
+   "id": "dineListSweetChefsCombo",
+   "name": "草莓熊餐盒 - 红豆香草冰淇淋蛋筒",
+   "parentName": "草莓熊餐盒",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/RedBeanandVanillaIceCream-hero_tcm1874-288748.png",
+   "restaurantId": "dineAndysBackyardGamesFoodKiosk"
+  },
+  {
+   "id": "dineListLmkSpringDinner",
+   "name": "达菲好友欢庆堂 - 叉烧肉丸大麦面配猪骨汤",
+   "parentName": "达菲好友欢庆堂",
+   "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/CharSiuandMeatballBarley-hero_tcm1874-289298.png",
+   "restaurantId": "dineDuffyAndFriendsCelebrationHallDining"
+  }
+ ]
+}

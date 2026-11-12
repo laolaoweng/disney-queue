@@ -1,0 +1,793 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:17"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:17"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "巴波萨烧烤",
+      "entityId": "dineBarbossasBounty",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "barbossas-bounty",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/barbossas-bounty",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-sq-hlw_tcm1874-283674.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-20240409_tcm1874-278562.JPG",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-20240409_tcm1874-278562.JPG",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-20240409_tcm1874-278562.JPG",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-sq-hlw_tcm1874-283674.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "name": "巴波萨烧烤",
+            "latitude": "31.151571488436",
+            "longitude": "121.66945471126"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/barbossas-bounty/",
+      "showSignature": true,
+      "signature": [
+        {
+          "assets": [
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB_Seafoodand-new-sq_tcm1874-289435.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "海鲜咸鸭腿蝴蝶面配金酸汤​",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB_Seafoodand-new-hero_tcm1874-289436.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-BarbossaBBQ-sq_tcm1874-289379.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "征服者号",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-BarbossaBBQ-hero_tcm1874-289378.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-DavyJones-sq_tcm1874-289381.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "夺宝归来的盛宴",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-DavyJones-hero_tcm1874-289380.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-XOSauceShrimp-sq_tcm1874-289383.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "海妖复仇号",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-XOSauceShrimp-hero_tcm1874-289382.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-TamarindGrilled-sq_tcm1874-289385.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "飞鱼号",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-TamarindGrilled-hero_tcm1874-289384.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-BarbossaChef-sq_tcm1874-289387.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "海盗一锅端",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-BarbossaChef-hero_tcm1874-289386.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-RoastedJerkChicken-sq_tcm1874-289389.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "暗夜宝石号",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/BB-RoastedJerkChicken-hero_tcm1874-289388.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            }
+          ],
+          "menuPdfExterLink": "https://static.shanghaidisneyresort.com/web-img-gallery/barbossas_bounty.pdf",
+          "title": [
+            {
+              "name": "招牌菜"
+            }
+          ]
+        }
+      ],
+      "advisories": [
+        {
+          "id": "advisoryMenuBarbossa",
+          "name": "Barbossa's Menu",
+          "text": "<p><a href=\"https://secure.cdn2.wdpromedia.cn/media/shdr/media/menu/barbossa-bounty.pdf\" title=\"shdr-barbossa-menu\">View Menu</a></p>",
+          "effectiveRange": {
+            "startDateTime": "2017-02-21T14:42:36",
+            "endDateTime": "2027-02-21T14:42:39"
+          }
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>这家餐厅的景致和它的美食一样令人惊艳！更特别的是，食客可以通过开放式厨房亲眼看到主厨烹饪美食的精彩时刻。同时，食客们可以感受到<a href=\"https://www.shanghaidisneyresort.com/attractions/pirates-of-caribbean/\">“加勒比海盗—沉落宝藏之战”</a>的战场。</p>",
+        "shortDescriptionMobileText": "这家餐厅的景致和它的美食一样令人惊艳！更特别的是，食客可以通过开放式厨房亲眼看到主厨烹饪美食的精彩时刻。同时，食客们可以感受到加勒比海盗——沉落宝藏之战的战场。\n<br/><br/><a href=\"wdpr-shdr://pdf?url=https%3A%2F%2Fstatic.shanghaidisneyresort.com%2Fweb-img-gallery%2Fbarbossas_bounty.pdf%3Ftitle%3D%E8%8F%9C%E5%8D%95%E8%AF%A6%E6%83%85\">点击查看菜单</a></strong>\n<br/><br/><small>此菜单内容可能变更，请以餐厅实际供应为准。</small>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单",
+              "text": "<p><a href=\"https://static.shanghaidisneyresort.com/web-img-gallery/barbossas_bounty.pdf\">点击查看菜单详情</a></p>\n<p><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cardType": "buttonCard",
+          "cardData": [
+            {
+              "header": "下载官方App即刻查看餐厅信息！",
+              "text": "下载上海迪士尼度假区官方App，即刻查看餐厅菜系，营业时间以及参考价格。",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-gsrvc-mobile-app-icon2_tcm1874-113788.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ],
+              "buttonCardUrl": "https://www.shanghaidisneyresort.com/zh-cn/information/download-shanghai-disney-mobile-app"
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineBarbossasBounty;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landTreasureCove",
+          "name": "宝藏湾",
+          "urlFriendlyId": "treasure-cove"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "quickService": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "western",
+              "value": "西式"
+            },
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            },
+            {
+              "urlFriendlyId": "snacks",
+              "value": "小食"
+            },
+            {
+              "urlFriendlyId": "vegetarian-option",
+              "value": "素食可选"
+            },
+            {
+              "urlFriendlyId": "souvenir",
+              "value": "纪念品"
+            },
+            {
+              "urlFriendlyId": "Cafe",
+              "value": "咖啡"
+            },
+            {
+              "urlFriendlyId": "halal-halal",
+              "value": "清真食品"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "treasure-cove",
+              "value": "宝藏湾"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Barbossa's Bounty - Dishes",
+            "referenceKey": "Barbossa's Bounty - Dishes",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/png",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-01-sq-2025_tcm1874-283613.png",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Barbossa's Bounty - Dishes",
+                "subChapters": [
+                  {
+                    "title": "Barbossa's Bounty - Dishes",
+                    "thumbnail": [
+                      {
+                        "binaryContent": {
+                          "type": "image/png",
+                          "title": "",
+                          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-01-sq-2025_tcm1874-283613.png",
+                          "width": 90,
+                          "height": 90,
+                          "alt": ""
+                        }
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "type": "video",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-01-sq-2025_tcm1874-283613.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-01-2025_tcm1874-283612.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "sourceForVideo": "https://static.shanghaidisneyresort.com/web-img-gallery/barbossa-20251011.mp4"
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-20240409_tcm1874-278562.JPG",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-hero-20240409_tcm1874-278562.JPG",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gSeafoodandSaltedDuck-sq_tcm1874-288580.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gSeafoodandSaltedDuck-new-hero_tcm1874-288767.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-02-sq-2025_tcm1874-283615.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-02-2026encn_tcm1874-292827.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-03-sq-2025_tcm1874-283617.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-03-2026encn_tcm1874-292828.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-04-sq-2025_tcm1874-283619.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-04-2026encn_tcm1874-292829.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-05-sq-2025_tcm1874-283621.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-barbossas-bounty-gallery-05-2026encn_tcm1874-292830.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:30&20:30",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

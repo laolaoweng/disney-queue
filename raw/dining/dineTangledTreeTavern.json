@@ -1,0 +1,836 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:29"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:29"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "老藤树食栈",
+      "entityId": "dineTangledTreeTavern",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "tangled-tree-tavern",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/tangled-tree-tavern",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-sq-220607_tcm1874-238794.png",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-20250410_tcm1874-278586.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-20250410_tcm1874-278586.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-20250410_tcm1874-278586.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/png",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-sq-220607_tcm1874-238794.png",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.1514616543375",
+            "longitude": "121.664673399887"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/tangled-tree-tavern/",
+      "showSignature": true,
+      "signature": [
+        {
+          "assets": [
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT_TeppanyakiBeefandFermented-sq_tcm1874-289421.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "铁板肥牛南乳排骨配麻酱拌面​",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT_TeppanyakiBeefandFermented-hero_tcm1874-289422.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT_TangledFamilyFeast-sq_tcm1874-289423.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "老藤树家庭盛宴",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT_TangledFamilyFeast-hero_tcm1874-289424.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-TangledFeastFor2-sq_tcm1874-290763.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "老藤树双人套餐",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-TangledFeastFor2-hero_tcm1874-290764.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-BBQBeefBrisket-sq_tcm1874-289427.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "烤牛肉配玉米和薯条",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-BBQBeefBrisket-hero_tcm1874-289428.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT_PorkRollwithStewedMeatSauceandRice-261102-sq_tcm1874-294903.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "猪肉卷配卤肉酱和米饭",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT_PorkRollwithStewedMeatSauceandRice-261102-hero_tcm1874-294904.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT_TeppanyakiLambwith-261102-sq_tcm1874-294906.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "铁板孜然羊肉配蔬菜和米饭",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT_TeppanyakiLambwith-261102-hero_tcm1874-294905.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-Tiramisu-sq_tcm1874-289433.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "提拉米苏",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-Tiramisu-hero_tcm1874-289434.png",
+                    "height": 96
+                  }
+                }
+              ]
+            }
+          ],
+          "menuPdfExterLink": "https://static.shanghaidisneyresort.com/web-img-gallery/tangled_tree_tavern.pdf",
+          "title": [
+            {
+              "name": "招牌菜"
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>欢迎来到老藤树食栈，这里的设计风格取材自迪士尼影片《魔发奇缘》的小鸭子酒馆，丰富的细节设计将重现电影中喧嚣吵闹的环境，是粉丝的朝圣之地！游客可以在郁郁葱葱的树林中美餐一顿。</p>",
+        "shortDescriptionMobileText": "<p>欢迎来到老藤树食栈，这里的设计风格取材自迪士尼影片《魔发奇缘》的小鸭子酒馆，丰富的细节设计将重现电影中喧嚣吵闹的环境，是粉丝的朝圣之地！游客可以在郁郁葱葱的树林中美餐一顿。</p>\n<p><a href=\"wdpr-shdr://pdf?url=https%3A%2F%2Fstatic.shanghaidisneyresort.com%2Fweb-img-gallery%2Ftangled_tree_tavern.pdf%3Ftitle%3D%E8%8F%9C%E5%8D%95%E8%AF%A6%E6%83%85\">点击查看菜单</a>\n<br/><br/><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>"
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单",
+              "text": "<p><a href=\"https://static.shanghaidisneyresort.com/web-img-gallery/tangled_tree_tavern.pdf\">点击查看菜单详情</a></p>\n<p>此菜单内容可能变更，请以餐厅实际供应为准。</p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineTangledTreeTavern;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "梦幻世界",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            },
+            {
+              "urlFriendlyId": "unique-themed",
+              "value": "独特/主题餐饮"
+            },
+            {
+              "urlFriendlyId": "grab-go",
+              "value": "外带"
+            }
+          ]
+        },
+        "quickService": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            },
+            {
+              "urlFriendlyId": "snacks",
+              "value": "小食"
+            },
+            {
+              "urlFriendlyId": "vegetarian-option",
+              "value": "素食可选"
+            },
+            {
+              "urlFriendlyId": "souvenir",
+              "value": "纪念品"
+            },
+            {
+              "urlFriendlyId": "asian",
+              "value": "亚洲"
+            },
+            {
+              "urlFriendlyId": "western",
+              "value": "西式"
+            },
+            {
+              "urlFriendlyId": "halal-halal",
+              "value": "清真食品"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "otherDining": {
+          "options": [
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            },
+            {
+              "urlFriendlyId": "unique-themed",
+              "value": "独特/主题餐饮"
+            },
+            {
+              "urlFriendlyId": "grab-go",
+              "value": "外带"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "梦幻世界"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Tangled Tree Tavern - Dishes",
+            "referenceKey": "Tangled Tree Tavern - Dishes",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-gallery-01-sq_tcm1874-137963.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Tangled Tree Tavern - Dishes",
+                "subChapters": [
+                  {
+                    "title": "Tangled Tree Tavern - Dishes",
+                    "thumbnail": null,
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-20250410_tcm1874-278586.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-hero-20250410_tcm1874-278586.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-TeppanyakiBeefandFermentedBeanCurdPorkRibNoodleswithSesamePeanutSauce-sq_tcm1874-288575.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TeppanyakiBeefandFermented-new-hero_tcm1874-288766.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-gallery-01-sq_tcm1874-137963.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-gallery-01_tcm1874-137962.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-FamilyFeast-sq_tcm1874-287344.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-FamilyFeast-hero_tcm1874-287343.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-gallery-25-sq_tcm1874-271801.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-gallery-25_tcm1874-271800.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-PorkRollwithStewedMeatSauceandRice-261102-sq_tcm1874-294899.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-PorkRollwithStewedMeatSauceandRice-261102-hero_tcm1874-294900.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-TeppanyakiLambwith-261102-sq_tcm1874-294901.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/TTT-TeppanyakiLambwith-261102-hero_tcm1874-294902.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-FamilyFeast-2606021-sq_tcm1874-290720.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-tangled-tree-tavern-FamilyFeast-2606021-hero_tcm1874-290721.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-Tiramisu1-gallery-32-sq_tcm1874-280526.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-Tiramisu1-gallery-32_tcm1874-280525.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:30&19:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

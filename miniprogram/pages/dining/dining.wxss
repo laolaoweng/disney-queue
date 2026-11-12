@@ -1,0 +1,30 @@
+/* pages/dining/dining.wxss —— 园区餐饮列表 */
+.page { padding: 16rpx 24rpx 40rpx; }
+
+.topbar { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12rpx; }
+.topbar-title { font-size: 34rpx; font-weight: 700; color: #16233a; }
+.topbar-sub { font-size: 22rpx; color: #5a6a82; }
+.topbar-sub.spinning { color: #164f9e; }
+
+.state-box { padding: 60rpx 0; text-align: center; font-size: 26rpx; color: #5a6a82; }
+.state-box.err { color: #b04a0c; }
+
+.group { margin-bottom: 28rpx; }
+.group-title { display: flex; align-items: baseline; gap: 12rpx; margin: 6rpx 4rpx 14rpx; font-size: 28rpx; font-weight: 700; color: #16233a; }
+.group-count { font-size: 22rpx; font-weight: 500; color: #5a6a82; }
+
+.grid { display: flex; flex-wrap: wrap; justify-content: space-between; }
+.card { width: 48.4%; background: #fff; border-radius: 24rpx; overflow: hidden; margin-bottom: 18rpx;
+        box-shadow: 0 6rpx 20rpx rgba(31, 88, 160, 0.06); }
+.card-img { width: 100%; height: 200rpx; background: #eef4ff; }
+.card-img.noimg { display: flex; align-items: center; justify-content: center; font-size: 48rpx; }
+.card-body { padding: 14rpx 16rpx 18rpx; display: flex; flex-direction: column; gap: 6rpx; }
+.card-name { font-size: 26rpx; font-weight: 700; color: #16233a; line-height: 1.35; }
+.card-meta { font-size: 21rpx; }
+.card-meta.open { color: #0d7a52; font-weight: 600; }
+.card-meta.closed { color: #8b6b2e; font-weight: 600; }
+.tags { display: flex; flex-wrap: wrap; gap: 8rpx; }
+.tag { font-size: 19rpx; padding: 2rpx 10rpx; border-radius: 8rpx; background: #eef4ff; color: #164f9e; }
+.price { font-size: 23rpx; font-weight: 700; color: #b04a0c; }
+
+.footnote { margin-top: 10rpx; font-size: 20rpx; color: #7a879c; line-height: 1.6; }

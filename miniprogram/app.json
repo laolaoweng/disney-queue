@@ -8,7 +8,9 @@
     "pages/settings/settings",
     "pages/forecast/forecast",
     "pages/detail/detail",
-    "pages/plan8/plan8"
+    "pages/plan8/plan8",
+    "pages/dining/dining",
+    "pages/diningdetail/diningdetail"
   ],
   "window": {
     "navigationBarTitleText": "排队最优解",
@@ -19,7 +21,7 @@
   },
   "tabBar": {
     "color": "#7d8ba1",
-    "selectedColor": "#2f7cf6",
+    "selectedColor": "#164f9e",
     "backgroundColor": "#ffffff",
     "borderStyle": "white",
     "list": [
@@ -30,6 +32,10 @@
       {
         "pagePath": "pages/rank/rank",
         "text": "排队榜"
+      },
+      {
+        "pagePath": "pages/dining/dining",
+        "text": "餐饮"
       },
       {
         "pagePath": "pages/watchlist/watchlist",

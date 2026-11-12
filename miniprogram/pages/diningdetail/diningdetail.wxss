@@ -1,0 +1,50 @@
+/* pages/diningdetail/diningdetail.wxss —— 餐饮详情 */
+.page { padding: 16rpx 24rpx 40rpx; }
+
+.state-box { padding: 80rpx 0; text-align: center; font-size: 26rpx; color: #5a6a82; }
+.state-box.err { color: #b04a0c; }
+.back-btn { margin: 20rpx auto 0; width: 240rpx; padding: 14rpx 0; border-radius: 999rpx; background: #164f9e; color: #fff; font-size: 26rpx; }
+
+.back-pill { display: inline-block; margin: 4rpx 0 14rpx; padding: 10rpx 22rpx; border-radius: 999rpx;
+             border: 1px solid #cddcf5; background: #fff; color: #164f9e; font-size: 24rpx; }
+
+.hero { position: relative; height: 300rpx; border-radius: 28rpx; overflow: hidden; background-size: cover;
+        background-position: center; margin-bottom: 20rpx; }
+.hero-name { position: absolute; left: 24rpx; bottom: 20rpx; font-size: 38rpx; font-weight: 800; color: #fff;
+             text-shadow: 0 4rpx 18rpx rgba(0, 0, 0, 0.45); }
+
+.card { background: #fff; border-radius: 24rpx; padding: 24rpx; margin-bottom: 20rpx;
+        box-shadow: 0 6rpx 20rpx rgba(31, 88, 160, 0.06); }
+.head-top { display: flex; align-items: center; justify-content: space-between; }
+.land { font-size: 24rpx; color: #5a6a82; }
+.status { font-size: 22rpx; font-weight: 700; padding: 6rpx 16rpx; border-radius: 999rpx; }
+.status.on { background: #e3f7ee; color: #0d7a52; }
+.status.off { background: #fff3df; color: #8b6b2e; }
+.hours { display: block; margin-top: 10rpx; font-size: 25rpx; color: #1b2740; }
+.tags { display: flex; flex-wrap: wrap; gap: 10rpx; margin-top: 12rpx; }
+.tag { font-size: 20rpx; padding: 4rpx 12rpx; border-radius: 8rpx; background: #eef4ff; color: #164f9e; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 14rpx; margin-top: 20rpx; }
+.btn { font-size: 25rpx; border-radius: 16rpx; padding: 0 24rpx; height: 72rpx; line-height: 72rpx; margin: 0; }
+.btn.primary { flex: 1 1 240rpx; background: #164f9e; color: #fff; font-weight: 700; }
+.btn.ghost { flex: 1 1 220rpx; background: #f6f9ff; color: #164f9e; border: 1px solid #cddcf5; }
+.btn::after { border: none; }
+
+.card-title { font-size: 28rpx; font-weight: 700; color: #16233a; margin-bottom: 14rpx; }
+.desc { display: block; font-size: 25rpx; line-height: 1.7; color: #33415c; }
+
+.coupon { display: flex; flex-direction: column; gap: 4rpx; padding: 14rpx 18rpx; border-radius: 16rpx;
+          background: #fff7ef; margin-bottom: 12rpx; }
+.coupon-price { font-size: 28rpx; font-weight: 700; color: #b04a0c; }
+.coupon-desc { font-size: 22rpx; color: #5a6a82; }
+
+.sig { display: flex; align-items: center; gap: 18rpx; margin-bottom: 16rpx; }
+.sig-img { width: 112rpx; height: 112rpx; border-radius: 16rpx; background: #eef4ff; flex: 0 0 auto; }
+.sig-body { display: flex; flex-direction: column; gap: 4rpx; }
+.sig-name { font-size: 26rpx; font-weight: 600; color: #16233a; }
+.sig-desc { font-size: 22rpx; color: #5a6a82; }
+
+.dishes { display: flex; flex-wrap: wrap; gap: 10rpx; }
+.dish { font-size: 22rpx; padding: 8rpx 16rpx; border-radius: 10rpx; background: #f2f7ff; color: #1b2740; }
+
+.footnote { margin-top: 8rpx; font-size: 20rpx; color: #7a879c; line-height: 1.6; }

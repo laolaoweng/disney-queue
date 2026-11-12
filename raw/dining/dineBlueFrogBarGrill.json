@@ -1,0 +1,240 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:07"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:07"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "蓝蛙西餐厅酒吧迪士尼小镇店",
+      "entityId": "dineBlueFrogBarGrill",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "blue-frog-bar-grill",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/blue-frog-bar-grill",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-blue-frog-bar-grill-hero-sq-new_tcm1874-220671.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-blue-frog-bar-grill-hero-0417_tcm1874-289718.jpeg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-blue-frog-bar-grill-hero-0417_tcm1874-289718.jpeg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-blue-frog-bar-grill-hero-0417_tcm1874-289718.jpeg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-blue-frog-bar-grill-hero-sq-new_tcm1874-220671.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.146671",
+            "longitude": "121.667771"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/blue-frog-bar-grill/",
+      "showSignature": false,
+      "contactInformation": {
+        "phone": [
+          {
+            "type": "Reservations",
+            "number": "+862158330399"
+          }
+        ]
+      },
+      "descriptions": {
+        "shortDescriptionText": "<p>2021年，蓝蛙迪士尼小镇店全新升级，摇身变成繁忙都市中的“悠然艺术小天地”。店内绿植萦绕，调皮的小蛙在“荷塘”玩耍，店内光线充沛，十足的休闲度假之感；而悬挂的美式波普艺术壁画，以斑斓的色彩糅合汉堡、牛排、碳扒及蛙爪多种元素，为闲适的大自然氛围增添艺术气息。再走进洒满阳光的玻璃房，享用一顿地道且富有创意的现代美式炙烤美食及饮品，可谓一场纯然一体的身心安宁之旅！</p>",
+        "shortDescriptionMobileText": "2021年，蓝蛙迪士尼小镇店全新升级，摇身变成繁忙都市中的“悠然艺术小天地”。店内绿植萦绕，调皮的小蛙在“荷塘”玩耍，店内光线充沛，十足的休闲度假之感；而悬挂的美式波普艺术壁画，以斑斓的色彩糅合汉堡、牛排、碳扒及蛙爪多种元素，为闲适的大自然氛围增添艺术气息。再走进洒满阳光的玻璃房，享用一顿地道且富有创意的现代美式炙烤美食及饮品，可谓一场纯然一体的身心安宁之旅！"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineBlueFrogBarGrill;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "id": "dineFacet-experience-reservations-global_95640",
+              "urlFriendlyId": "reservations-accepted",
+              "value": "接受预订"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "id": "dineFacet-experience-reservations-global_95640",
+              "urlFriendlyId": "reservations-accepted",
+              "value": "接受预订"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            },
+            {
+              "urlFriendlyId": "bars-lounges",
+              "value": "酒吧和酒廊"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "western",
+              "value": "西式"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥¥",
+              "value": "¥¥¥ (人均 人民币101 - 300)"
+            }
+          ]
+        },
+        "otherDining": {
+          "options": [
+            {
+              "id": "dineFacet-experience-reservations-global_95640",
+              "urlFriendlyId": "reservations-accepted",
+              "value": "接受预订"
+            },
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            },
+            {
+              "urlFriendlyId": "casual-dining",
+              "value": "休闲餐饮"
+            },
+            {
+              "urlFriendlyId": "bars-lounges",
+              "value": "酒吧和酒廊"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

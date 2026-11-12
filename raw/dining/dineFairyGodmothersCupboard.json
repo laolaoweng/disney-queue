@@ -1,0 +1,205 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:22"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:22"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "仙女教母妙味橱",
+      "entityId": "dineFairyGodmothersCupboard",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "fairy-godmothers-cupboard",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/fairy-godmothers-cupboard",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fairy-godmothers-cupboard-0701-sq_tcm1874-280982.JPG",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fairy-godmothers-cupboard-0701-hero_tcm1874-280983.JPG",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fairy-godmothers-cupboard-0701-hero_tcm1874-280983.JPG",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fairy-godmothers-cupboard-0701-hero_tcm1874-280983.JPG",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-fairy-godmothers-cupboard-0701-sq_tcm1874-280982.JPG",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.1495190456192",
+            "longitude": "121.66520748333100"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/fairy-godmothers-cupboard/",
+      "showSignature": false,
+      "contactInformation": {
+        "phone": [
+          {
+            "type": "Front Desk",
+            "number": "+86 999 99999999"
+          }
+        ]
+      },
+      "descriptions": {
+        "shortDescriptionText": "<p>游览上海迪士尼乐园，别忘了去寻找灰姑娘的仙女教母，她能用魔法变出让人垂涎欲滴的零食！仙女教母的魔法棒一挥，您就可享受源自梦幻世界的美食。</p>",
+        "shortDescriptionMobileText": "游览上海迪士尼乐园，别忘了去寻找灰姑娘的仙女教母，她能用魔法变出让人垂涎欲滴的零食！仙女教母的魔法棒一挥，您就可享受源自梦幻世界的美食。\n<br/><br/><strong>菜单</strong>\n<br/><strong>特制饮料</strong>\n<br/>1. 特色饮料\n<br/><br/><small>此菜单内容可能变更，请以餐厅实际供应为准。</small>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineFairyGodmothersCupboard;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landFantasyland",
+          "name": "梦幻世界",
+          "urlFriendlyId": "fantasyland"
+        }
+      },
+      "facets": {
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "souvenir",
+              "value": "纪念品"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "otherDining": {
+          "options": [
+            {
+              "urlFriendlyId": "vending-cart",
+              "value": "小食亭"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "vending-cart",
+              "value": "小食亭"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "fantasyland",
+              "value": "梦幻世界"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "",
+        "statusCode": "ScheduledClosedDay",
+        "separator": null,
+        "timeType": null
+      },
+      "hideOperationHours": false
+    }
+  }
+}

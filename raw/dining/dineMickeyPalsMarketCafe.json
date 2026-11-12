@@ -1,0 +1,610 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:33"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:33"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "米奇好伙伴美味集市",
+      "entityId": "dineMickeyPalsMarketCafe",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "mickey-pals-market-cafe",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/mickey-pals-market-cafe",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-pals-market-gallery-30-sq_tcm1874-274150.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-20250410_tcm1874-278584.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-20250410_tcm1874-278584.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-20250410_tcm1874-278584.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-pals-market-gallery-30-sq_tcm1874-274150.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.148655298167",
+            "longitude": "121.66842456539"
+          }
+        ]
+      },
+      "disneyOwned": true,
+      "disneyOperated": true,
+      "admissionRequired": true,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/theme-park/mickey-pals-market-cafe/",
+      "showSignature": true,
+      "signature": [
+        {
+          "assets": [
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_Beefand-sq_tcm1874-289364.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "牛肉咸鸡腿米线配番茄汤​",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_Beefand-hero_tcm1874-289365.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_GongBao-sq_tcm1874-289367.png",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "宫保鸡肉虾球配香肠饭​",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/png",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_GongBao-hero_tcm1874-289366.png",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_RecommendationFeastfor2-sq_tcm1874-291508.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "米奇好伙伴主厨推荐双人餐",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_RecommendationFeastfor2-hero_tcm1874-291509.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_MagicalPicksComboA-sq_tcm1874-291510.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "奇妙之选套餐A",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_MagicalPicksComboA-hero_tcm1874-291511.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_TastyPalsComboB-sq_tcm1874-291512.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "美味拍档套餐B",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP_TastyPalsComboB-hero_tcm1874-291513.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            },
+            {
+              "thumbnail": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP-CoconutCurryChicken-261004-sq_tcm1874-293707.jpg",
+                    "height": 96
+                  }
+                }
+              ],
+              "description": "椰香咖喱鸡面",
+              "type": "image",
+              "previewImage": [
+                {
+                  "BinaryContent": {
+                    "alt": "",
+                    "width": 170,
+                    "type": "image/jpeg",
+                    "title": "",
+                    "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/MP-CoconutCurryChicken-261004-hero_tcm1874-293706.jpg",
+                    "height": 96
+                  }
+                }
+              ]
+            }
+          ],
+          "menuPdfExterLink": "https://static.shanghaidisneyresort.com/web-img-gallery/mickey_n_pals_market_cafe.pdf",
+          "title": [
+            {
+              "name": "招牌菜"
+            }
+          ]
+        }
+      ],
+      "descriptions": {
+        "shortDescriptionText": "<p>米奇和他的好伙伴们相聚于米奇好伙伴美味集市，一起庆祝美食与欢聚带来的温暖与欢乐。菜单灵感源自米奇与朋友们故事中的美味时刻，将他们喜爱的地道风味带上餐桌，与大家一同分享这份惊喜与欢乐。\n<br />\n诚挚邀请您与亲朋好友相聚于此，在轻松愉悦的氛围中，分享幸福时光，尽情享用令人难忘的美味！</p>",
+        "shortDescriptionMobileText": "<p>米奇和他的好伙伴们相聚于米奇好伙伴美味集市，一起庆祝美食与欢聚带来的温暖与欢乐。菜单灵感源自米奇与朋友们故事中的美味时刻，将他们喜爱的地道风味带上餐桌，与大家一同分享这份惊喜与欢乐。\n<br/>\n诚挚邀请您与亲朋好友相聚于此，在轻松愉悦的氛围中，分享幸福时光，尽情享用令人难忘的美味！</p>\n \n<br/><br/><a href=\"wdpr-shdr://weblink?url=https://static.shanghaidisneyresort.com/web-img-gallery/mickey_n_pals_market_cafe.pdf\">点击查看菜单</a></strong>\n<br/><br/><small> 此菜单内容可能变更，请以餐厅实际供应为准。</small> "
+      },
+      "entityCards": [
+        {
+          "cardType": "StoryCard",
+          "cardData": [
+            {
+              "header": "菜单",
+              "text": "<p><a href=\"https://static.shanghaidisneyresort.com/web-img-gallery/mickey_n_pals_market_cafe.pdf\">点击查看菜单详情</a></p>\n<p><small>此菜单内容可能变更，请以餐厅实际供应为准。</small></p>",
+              "media": [
+                {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-menu-icon_tcm1874-136479.jpg",
+                  "width": 170,
+                  "height": 96
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineMickeyPalsMarketCafe;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "themePark": {
+          "id": "desShanghaiDisneyland",
+          "name": "上海迪士尼乐园",
+          "urlFriendlyId": "theme-park"
+        },
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "land": {
+          "id": "landMickeyAvenue",
+          "name": "米奇大街",
+          "urlFriendlyId": "mickey-avenue"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "quickService": {
+          "options": [
+            {
+              "urlFriendlyId": "family-style",
+              "value": "家庭餐"
+            },
+            {
+              "urlFriendlyId": "kids-meal",
+              "value": "儿童餐"
+            },
+            {
+              "urlFriendlyId": "quick-service",
+              "value": "快餐服务"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "asian",
+              "value": "亚洲"
+            },
+            {
+              "urlFriendlyId": "snacks",
+              "value": "小食"
+            },
+            {
+              "urlFriendlyId": "vegetarian-option",
+              "value": "素食可选"
+            },
+            {
+              "urlFriendlyId": "souvenir",
+              "value": "纪念品"
+            },
+            {
+              "urlFriendlyId": "Cafe",
+              "value": "咖啡"
+            },
+            {
+              "urlFriendlyId": "halal-halal",
+              "value": "清真食品"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            }
+          ]
+        },
+        "lands": {
+          "options": [
+            {
+              "urlFriendlyId": "mickey-avenue",
+              "value": "米奇大街"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "theme-park",
+              "value": "上海迪士尼乐园"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "bundleMedias": {
+        "books": [
+          {
+            "title": "Mickey Pals Market Cafe - Dishes",
+            "referenceKey": "Mickey Pals Market Cafe - Dishes",
+            "thumbnail": [
+              {
+                "binaryContent": {
+                  "type": "image/jpeg",
+                  "title": "",
+                  "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-sq-new-again_tcm1874-114905.jpg",
+                  "width": 90,
+                  "height": 90,
+                  "alt": ""
+                }
+              }
+            ],
+            "chapters": [
+              {
+                "title": "Mickey Pals Market Cafe - Dishes",
+                "subChapters": [
+                  {
+                    "title": "Mickey Pals Market Cafe - Dishes",
+                    "thumbnail": null,
+                    "assets": [
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-20250410_tcm1874-278584.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-20250410_tcm1874-278584.jpg",
+                              "width": 170,
+                              "height": 96
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-pals-market-gallery-Chicken-sq_tcm1874-288565.png",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/png",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-pals-market-gallery-Chicken-new-hero_tcm1874-288764.png",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "thumbnail": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-sq-new-again_tcm1874-114905.jpg",
+                              "width": 43,
+                              "height": 43,
+                              "alt": ""
+                            }
+                          }
+                        ],
+                        "display": [
+                          {
+                            "binaryContent": {
+                              "type": "image/jpeg",
+                              "title": "",
+                              "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-mickey-and-pals-market-cafe-hero-new_tcm1874-114904.jpg",
+                              "width": 640,
+                              "height": 360,
+                              "alt": ""
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "labels": {
+          "MUTE_BUTTON_TEXT": "静音",
+          "PREVIOUS_BUTTON_TITLE": "显示下一项",
+          "LARGE_PLAY_BUTTON_TEXT": "播放视频",
+          "THUMB_ALT_PREFIX": "放大显示",
+          "COUNTER_SEPARATOR": "／",
+          "VIDEO_DT_UNAVAILABLE": "不能关闭字幕",
+          "NEXT_BUTTON_TITLE": "显示上一项",
+          "THUMB_PREVIOUS_TEXT": "上一项",
+          "SHARE_MODAL_TITLE": "分享",
+          "VIDEO_SHARE_BUTTON_TEXT": "分享",
+          "ACCESSIBLE_SELECTED": " - 已选择",
+          "SHARE_GOOGLE_MESSAGE": "Disneyland Paris",
+          "UNMUTE_BUTTON_TEXT": "取消静音",
+          "PLAY_BUTTON_TEXT": "播放幻灯片",
+          "TYPE_FILTER_IMAGE": "照片",
+          "SHARE_FACEBOOK_TEXT": "FACEBOOK",
+          "VIDEO_DT_BUTTON_TEXT": "关闭字幕",
+          "NEXT_BUTTON_TEXT": "下一项",
+          "TYPE_FILTER_FLOORPLAN": "场地平面图",
+          "COUNTER_PREFIX": "照片",
+          "VIDEO_LINK_BUTTON_TEXT": "购买",
+          "PREVIOUS_BUTTON_TEXT": "上一项",
+          "SHARE_GOOGLE_TEXT": "GOOGLE+",
+          "SHARE_LINK_TEXT": "复制及黏贴此链接:",
+          "VIDEO_PLAY_BUTTON_TEXT": "播放视频",
+          "SHARE_BAIDU_TEXT": "百度贴吧",
+          "TYPE_FILTER_INTERACTIVE": "互动",
+          "VIDEO_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "SHARE_BUTTON_TEXT": "分享",
+          "BOOK_TAB_TITLE_PREFIX": "显示媒体",
+          "SHARE_FACEBOOK_MESSAGE": "Disneyland Paris",
+          "SHARE_TWITTER_ACCOUNT": "Disneyland Paris",
+          "TYPE_FILTER_VIDEO": "视频",
+          "THUMB_NEXT_TEXT": "下一项",
+          "SHARE_EMAIL_TEXT": "邮件",
+          "SHARE_CLOSE_TEXT": "关闭",
+          "SHARE_PINTEREST_TEXT": "PINTEREST",
+          "FULLSCREEN_BUTTON_TEXT": "全屏",
+          "PAUSE_BUTTON_TEXT": "暂停播放幻灯片",
+          "SHARE_TWITTER_TEXT": "TWITTER",
+          "SHARE_TWITTER_MESSAGE": "Disneyland Paris",
+          "CHAPTER_MODAL_BUTTON_TEXT": "显示全部",
+          "VIDEO_CC_UNAVAILABLE": "不能关闭字幕",
+          "TYPE_FILTER_PANO": "360度显示",
+          "THUMB_PREVIOUS_TITLE": "显示上一组",
+          "VIDEO_REPLAY_BUTTON_TEXT": "重新播放视频",
+          "SHARE_WEIBO_TEXT": "新浪微博",
+          "VIDEO_CC_BUTTON_TEXT": "关闭字幕",
+          "LARGE_PAUSE_BUTTON_TEXT": "暂停播放视频",
+          "LOADING_TEXT": "加载中",
+          "THUMB_NEXT_TITLE": "下一项"
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:30&21:15",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

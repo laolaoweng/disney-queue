@@ -16,7 +16,7 @@
   var PREFS_KEY = 'dq_prefs_v1';
   var WEEK = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
   var PARTY_TEXT = { family: '亲子家庭', thrill: '刺激党', kids: '带小孩', mixed: '混合同行' };
-  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出', plan8: '冲刺计划', detail: '历史等候时间' };
+  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出', plan8: '冲刺计划', detail: '历史等候时间', dining: '园区餐饮', diningdetail: '餐饮详情' };
   var TABS = [
     { key: 'mustDo', label: '必玩' },
     { key: 'avoid', label: '避开' },
@@ -84,7 +84,8 @@
     plan8PlanCache: null,
     plan8PlanSignature: null,
     detailId: null,
-    detailDate: null
+    detailDate: null,
+    diningId: null
   };
 
   /* ---------------- 工具 ---------------- */
@@ -236,7 +237,7 @@
 
   var pendingInitialView = null;
   var initialViewAttempts = 0;
-  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows', 'plan8', 'detail'];
+  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows', 'plan8', 'detail', 'dining', 'diningdetail'];
 
   function readInitialView() {
     var loc = typeof location !== 'undefined' ? location : null;
@@ -281,6 +282,7 @@
       loadJson('forecast.json').catch(function () { return null; }),
       loadJson('hourly-stats.json').catch(function () { return null; }),
       loadJson('shows.json').catch(function () { return null; }),
+      loadJson('dining.json').catch(function () { return null; }),
       loadJson('history.json').catch(function () { return null; })
     ]).then(function (arr) {
       var catalog = arr[0];
@@ -298,7 +300,8 @@
         forecast: arr[2] || null,
         hourlyStats: arr[3] || null,
         shows: arr[4] || null,
-        history: arr[5] || null,
+        dining: arr[5] || null,
+        history: arr[6] || null,
         updatedAt: latest.updatedAt || latest.fetchedAt || null,
         fetchedAt: latest.fetchedAt || null,
         source: latest.source || 'unknown',
@@ -1344,6 +1347,135 @@
       '<div class="footnote">场次来自上海迪士尼官网，可能临时调整，以现场为准。</div></div>';
   }
 
+  function diningOpenState(hours, nowMin) {
+    if (hours && hours.statusCode === 'ScheduledClosedDay') {
+      return { open: false, text: '今日停业' };
+    }
+    var slots = (hours && hours.slots) || [];
+    for (var i = 0; i < slots.length; i++) {
+      var m = /^(\d{1,2}):(\d{2})-(\d{1,2}):(\d{2})$/.exec(slots[i]);
+      if (!m) continue;
+      var start = parseInt(m[1], 10) * 60 + parseInt(m[2], 10);
+      var end = parseInt(m[3], 10) * 60 + parseInt(m[4], 10);
+      if (nowMin >= start && nowMin <= end) return { open: true, text: '营业中 · 至 ' + m[3] + ':' + m[4] };
+    }
+    for (var j = 0; j < slots.length; j++) {
+      var n = /^(\d{1,2}):(\d{2})-(\d{1,2}):(\d{2})$/.exec(slots[j]);
+      if (!n) continue;
+      var s2 = parseInt(n[1], 10) * 60 + parseInt(n[2], 10);
+      if (s2 > nowMin) return { open: false, text: m3n(n[3], n[4]) + ' 开门' };
+    }
+    if (slots.length) return { open: false, text: '今日已打烊' };
+    return { open: false, text: '营业时间未知' };
+  }
+  function m3n(h, m) { return h + ':' + m; }
+
+  function diningCard(r, nowMin) {
+    var st = diningOpenState(r.hours, nowMin);
+    var price = (r.coupons && r.coupons.length && r.coupons[0].price) ? r.coupons[0].price : '';
+    var tags = (r.serviceTags || []).slice(0, 2).map(function (tag) {
+      return '<span class="dine-tag">' + esc(tag) + '</span>';
+    }).join('');
+    var img = r.imageUrl
+      ? '<span class="dine-img" style="background-image:url(\'' + esc(r.imageUrl) + '\')"></span>'
+      : '<span class="dine-img noimg">🍽</span>';
+    return '<div class="dine-card" data-act="dining" data-id="' + esc(r.id) + '">' + img +
+      '<div class="dine-body"><span class="dine-name">' + esc(r.name) + '</span>' +
+      '<span class="dine-meta">' + esc(r.land || '') +
+      (st.open ? ' · <b class="open">' + esc(st.text) + '</b>' : ' · <b class="closed">' + esc(st.text) + '</b>') +
+      '</span>' + (tags ? '<span class="dine-tags">' + tags + '</span>' : '') +
+      (price ? '<span class="dine-price">' + esc(price) + '</span>' : '') +
+      '</div></div>';
+  }
+
+  function htmlDining() {
+    var bundle = currentBundle();
+    var data = bundle.dining;
+    if (!data || !data.restaurants || !data.restaurants.length) {
+      return emptyBox('🍽', '还没抓到园区餐饮数据',
+        '数据来自上海迪士尼官网，点「刷新」再试一次', '刷新', 'refresh');
+    }
+    var nowMin = nowChinaMinutes(bundle);
+    var restaurants = data.restaurants.slice();
+    var lands = [];
+    restaurants.forEach(function (r) {
+      var land = r.land || '其他';
+      if (lands.indexOf(land) < 0) lands.push(land);
+    });
+    var groups = lands.map(function (land) {
+      var items = restaurants.filter(function (r) { return (r.land || '其他') === land; });
+      return '<div class="dine-group"><div class="dine-group-title">' + esc(land) +
+        '<span class="dine-group-count">' + items.length + ' 家</span></div>' +
+        '<div class="dine-grid">' + items.map(function (r) { return diningCard(r, nowMin); }).join('') + '</div></div>';
+    }).join('');
+    var withMenu = restaurants.filter(function (r) { return r.menuPdf; }).length;
+    return '<div class="page">' +
+      '<div class="list-topbar"><button class="refresh-pill" data-act="refresh">↻ 刷新</button>' +
+      '<span class="update-time">园区内 ' + restaurants.length + ' 家 · ' + withMenu + ' 家有官方菜单</span></div>' +
+      groups +
+      '<div class="footnote">餐饮信息来自上海迪士尼官网；营业时间和菜单可能临时调整，价格与供应以现场为准。</div>' +
+      '</div>';
+  }
+
+  function htmlDiningDetail() {
+    var bundle = currentBundle();
+    var data = bundle.dining;
+    var r = null;
+    if (data && data.restaurants) {
+      for (var i = 0; i < data.restaurants.length; i++) {
+        if (data.restaurants[i].id === state.diningId) { r = data.restaurants[i]; break; }
+      }
+    }
+    if (!r) return emptyBox('🍽', '没有找到这家餐厅', '回到餐饮列表重新选择', '返回餐饮', 'diningback');
+    var nowMin = nowChinaMinutes(bundle);
+    var st = diningOpenState(r.hours, nowMin);
+    var hero = r.heroUrl || r.imageUrl;
+    var hoursText = (r.hours && r.hours.timeInfo) ? r.hours.timeInfo.replace(/&/g, '–').replace(/\s+/g, '  ') : '营业时间未知';
+    var tags = (r.serviceTags || []).map(function (tag) {
+      return '<span class="dine-tag">' + esc(tag) + '</span>';
+    }).join('');
+    var coupons = (r.coupons || []).map(function (c) {
+      return '<div class="dine-coupon"><b>' + esc(c.price || '套餐') + '</b>' +
+        (c.description ? '<span>' + esc(c.description) + '</span>' : '') + '</div>';
+    }).join('');
+    var signature = (r.signature || []).map(function (s) {
+      var img = s.imageUrl
+        ? '<span class="dine-sig-img" style="background-image:url(\'' + esc(s.imageUrl) + '\')"></span>'
+        : '';
+      return '<div class="dine-sig">' + img + '<div><span class="dine-sig-name">' + esc(s.name) + '</span>' +
+        (s.description ? '<span class="dine-sig-desc">' + esc(s.description) + '</span>' : '') + '</div></div>';
+    }).join('');
+    var dishes = ((data && data.dishes) || []).filter(function (d) { return d.restaurantId === r.id; });
+    var dishHtml = dishes.map(function (d) {
+      return '<div class="dine-dish">' + esc(d.name.replace(d.parentName + ' - ', '')) + '</div>';
+    }).join('');
+    var nav = amapWalkUrl(r);
+    var actions = '<a class="btn-primary dine-nav" href="' + esc(nav) + '">🧭 导航过去</a>';
+    var menuBtn = r.menuPdf
+      ? '<a class="btn-ghost dine-menu" href="' + esc(r.menuPdf) + '" target="_blank" rel="noopener">📄 查看官方菜单</a>'
+      : '';
+    var siteBtn = r.webLink
+      ? '<a class="btn-ghost dine-site" href="' + esc(r.webLink) + '" target="_blank" rel="noopener">官网介绍</a>'
+      : '';
+    return '<div class="page">' +
+      '<button class="back-pill" data-act="diningback">‹ 园区餐饮</button>' +
+      '<div class="dine-hero" style="background-image:url(\'' + esc(hero) + '\')">' +
+      '<span class="dine-hero-name">' + esc(r.name) + '</span></div>' +
+      '<div class="card dine-head-card">' +
+      '<div class="dine-head-top"><span class="dine-hero-land">' + esc(r.land || '') + '</span>' +
+      '<span class="dine-status ' + (st.open ? 'on' : 'off') + '">' + esc(st.text) + '</span></div>' +
+      '<div class="dine-hours">营业时间：' + esc(hoursText) + '</div>' +
+      (tags ? '<div class="dine-tags">' + tags + '</div>' : '') +
+      '<div class="dine-actions">' + actions + menuBtn + siteBtn + '</div>' +
+      '</div>' +
+      (r.description ? '<div class="card dine-desc-card"><div class="dine-card-title">介绍</div><p class="dine-desc">' + esc(r.description) + '</p></div>' : '') +
+      (coupons ? '<div class="card"><div class="dine-card-title">套餐 / 价格</div>' + coupons + '</div>' : '') +
+      (signature ? '<div class="card"><div class="dine-card-title">招牌菜</div>' + signature + '</div>' : '') +
+      (dishHtml ? '<div class="card"><div class="dine-card-title">部分菜单</div><div class="dine-dishes">' + dishHtml + '</div></div>' : '') +
+      '<div class="footnote">菜单与价格来自官网/官方菜单文件，可能调整，以现场为准。</div>' +
+      '</div>';
+  }
+
   function htmlSettings() {
     var bundle = currentBundle();
     var prefs = getPrefs();
@@ -1662,6 +1794,8 @@
       else if (state.view === 'shows') screenEl.innerHTML = htmlShows();
       else if (state.view === 'plan8') screenEl.innerHTML = htmlPlan8();
       else if (state.view === 'detail') screenEl.innerHTML = htmlDetail();
+      else if (state.view === 'dining') screenEl.innerHTML = htmlDining();
+      else if (state.view === 'diningdetail') screenEl.innerHTML = htmlDiningDetail();
       else if (state.view === 'plan') screenEl.innerHTML = htmlPlan();
       else screenEl.innerHTML = htmlSettings();
     } catch (e) {
@@ -1843,6 +1977,19 @@
       state.detailDate = null;
       state.menuId = null;
       state.view = 'detail';
+      render();
+      screenEl.scrollTop = 0;
+      return;
+    }
+    if (act === 'dining') {
+      state.diningId = target.getAttribute('data-id');
+      state.view = 'diningdetail';
+      render();
+      screenEl.scrollTop = 0;
+      return;
+    }
+    if (act === 'diningback') {
+      state.view = 'dining';
       render();
       screenEl.scrollTop = 0;
       return;

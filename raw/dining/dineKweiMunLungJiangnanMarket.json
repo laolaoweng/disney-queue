@@ -1,0 +1,193 @@
+{
+  "code": 200,
+  "message": "success",
+  "meta": {
+    "timestamp": "2026-11-12 15:21:02"
+  },
+  "data": {
+    "status": 200,
+    "message": "success",
+    "meta": {
+      "timestamp": "2026-11-12 15:21:02"
+    },
+    "code": "0000",
+    "success": true,
+    "data": {
+      "name": "桂满陇·江南市集",
+      "entityId": "dineKweiMunLungJiangnanMarket",
+      "entityType": "Restaurant",
+      "urlFriendlyId": "kwei-mun-lung-jiangnan-market",
+      "disneyPremierAccess": false,
+      "disneyStandbyPass": false,
+      "disneySetCoupon": false,
+      "primaryGroup": {
+        "id": "Restaurant",
+        "urlFriendlyId": "restaurant",
+        "value": "餐饮"
+      },
+      "primaryGroupUrl": "https://www.shanghaidisneyresort.com/zh-cn/experience/restaurant/kwei-mun-lung-jiangnan-market",
+      "media": {
+        "finderListMobileSquare": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-kwei-mun-lung-jiangnan-market-sq_tcm1874-252931.jpg",
+          "width": 125,
+          "height": 125
+        },
+        "finderDetailMobileHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-kwei-mun-lung-jiangnan-market-hero_tcm1874-252932.jpg",
+          "width": 720,
+          "height": 405
+        },
+        "finderDetailNarrowHero": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-kwei-mun-lung-jiangnan-market-hero_tcm1874-252932.jpg",
+          "width": 630,
+          "height": 354
+        },
+        "finderStandardThumb": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-kwei-mun-lung-jiangnan-market-hero_tcm1874-252932.jpg",
+          "width": 170,
+          "height": 96
+        },
+        "mapBubbleThumbLarge": {
+          "type": "image/jpeg",
+          "title": "",
+          "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/shdr-dine-kwei-mun-lung-jiangnan-market-sq_tcm1874-252931.jpg",
+          "width": 90,
+          "height": 90
+        }
+      },
+      "coordinates": {
+        "primaryLocations": [
+          {
+            "keyCoordinates": "Guest Entrance",
+            "latitude": "31.147026",
+            "longitude": "121.666672"
+          }
+        ]
+      },
+      "disneyOwned": false,
+      "disneyOperated": false,
+      "admissionRequired": false,
+      "fastPassPlus": false,
+      "fastPass": false,
+      "riderSwapAvailable": false,
+      "singleRiderAvailable": false,
+      "webLinks": "https://www.shanghaidisneyresort.com/dining/disneytown/kwei-mun-lung-jiangnan-market/",
+      "showSignature": false,
+      "descriptions": {
+        "shortDescriptionText": "<p>桂满陇，源于西湖十景之一的“满陇桂雨”。漫步于植满桂树的乡野小径，一路沐雨披香，是江南特定时节才能邂逅的美好。而景如此，食亦如此。桂满陇秉承“不时不食，食必求真”的中国古老智慧，遵循季节时令更迭，将江南风物珍馐次第呈现。</p>\n<p>岁末之际，正是人间繁华时，「桂满陇·江南市集」应运而生。千件老物什还原出人间烟火中的江南市集，散落民间的手作风味小吃汇聚于此，更有千余本漫画点缀其中，勾勒出令新生代也能沉浸其中的传统文化韵味，以食为笔绘崭新图景，千年传承未曾断绝。</p>",
+        "shortDescriptionMobileText": "<p>桂满陇，源于西湖十景之一的“满陇桂雨”。漫步于植满桂树的乡野小径，一路沐雨披香，是江南特定时节才能邂逅的美好。而景如此，食亦如此。桂满陇秉承“不时不食，食必求真”的中国古老智慧，遵循季节时令更迭，将江南风物珍馐次第呈现。</p>\n<p>岁末之际，正是人间繁华时，「桂满陇·江南市集」应运而生。千件老物什还原出人间烟火中的江南市集，散落民间的手作风味小吃汇聚于此，更有千余本漫画点缀其中，勾勒出令新生代也能沉浸其中的传统文化韵味，以食为笔绘崭新图景，千年传承未曾断绝。</p>"
+      },
+      "multiLocation": false,
+      "multiLocationLabel": "",
+      "facilityId": "dineKweiMunLungJiangnanMarket;entityType=restaurant;destination=shdr",
+      "ancestorFacilities": {
+        "destination": {
+          "id": "shdr",
+          "name": "上海迪士尼度假区"
+        },
+        "entertainmentVenue": {
+          "id": "desDisneytown",
+          "name": "迪士尼小镇",
+          "urlFriendlyId": "disneytown"
+        }
+      },
+      "facets": {
+        "tableService": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            }
+          ]
+        },
+        "diningExperience": {
+          "options": [
+            {
+              "urlFriendlyId": "table-service",
+              "value": "点餐服务"
+            }
+          ]
+        },
+        "cuisine": {
+          "options": [
+            {
+              "urlFriendlyId": "chinese",
+              "value": "中式"
+            },
+            {
+              "urlFriendlyId": "snacks",
+              "value": "小食"
+            }
+          ]
+        },
+        "priceRange": {
+          "iconMobile": [
+            {
+              "binaryContent": {
+                "type": "image/png",
+                "title": "",
+                "url": "https://static.shanghaidisneyresort.com/tridion/prod/zh-cn/system/images/list-icon-price-range_tcm1874-281396.png",
+                "width": 170,
+                "height": 96,
+                "alt": ""
+              }
+            }
+          ],
+          "options": [
+            {
+              "urlFriendlyId": "¥¥",
+              "value": "¥¥ (人均 人民币51 - 100 )"
+            }
+          ]
+        },
+        "dummyTypes": {
+          "options": [
+            {
+              "id": "Restaurant",
+              "urlFriendlyId": "restaurant",
+              "value": "餐饮"
+            },
+            {
+              "id": "Disneytown",
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "location": {
+          "options": [
+            {
+              "urlFriendlyId": "disneytown",
+              "value": "迪士尼小镇"
+            }
+          ]
+        },
+        "category": {
+          "options": [
+            {
+              "urlFriendlyId": "restaurant",
+              "value": "Restaurant"
+            }
+          ]
+        }
+      },
+      "coupons": [],
+      "schedule": {
+        "businessDate": "2026-11-12",
+        "timeInfo": "10:00&22:00",
+        "statusCode": "STNDOPR",
+        "separator": " 至 ",
+        "timeType": "OPERATING_TIME"
+      },
+      "hideOperationHours": false
+    }
+  }
+}

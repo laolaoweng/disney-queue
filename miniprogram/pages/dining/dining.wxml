@@ -1,0 +1,37 @@
+<!-- pages/dining/dining.wxml —— 园区餐饮列表 -->
+<view class="page">
+  <view class="topbar">
+    <text class="topbar-title">园区餐饮</text>
+    <text class="topbar-sub" wx:if="{{!loading && !error}}">{{updatedText}} · {{withMenu}} 家有官方菜单</text>
+    <text class="topbar-sub spinning" wx:if="{{spinning}}">刷新中…</text>
+  </view>
+
+  <view class="state-box" wx:if="{{loading && !groups.length}}">正在加载餐饮数据…</view>
+  <view class="state-box err" wx:if="{{error}}">{{error}}</view>
+
+  <block wx:for="{{groups}}" wx:key="land">
+    <view class="group">
+      <view class="group-title">
+        <text>{{item.land}}</text>
+        <text class="group-count">{{item.count}} 家</text>
+      </view>
+      <view class="grid">
+        <view class="card" wx:for="{{item.items}}" wx:for-item="r" wx:key="id"
+              data-id="{{r.id}}" bindtap="goDetail">
+          <image class="card-img" wx:if="{{r.imageUrl}}" src="{{r.imageUrl}}" mode="aspectFill" lazy-load></image>
+          <view class="card-img noimg" wx:else>🍽</view>
+          <view class="card-body">
+            <text class="card-name">{{r.name}}</text>
+            <text class="card-meta {{r.open ? 'open' : 'closed'}}">{{r.land}} · {{r.statusText}}</text>
+            <view class="tags" wx:if="{{r.tags.length}}">
+              <text class="tag" wx:for="{{r.tags}}" wx:for-item="tag" wx:key="*this">{{tag}}</text>
+            </view>
+            <text class="price" wx:if="{{r.price}}">{{r.price}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class="footnote" wx:if="{{groups.length}}">信息来自上海迪士尼官网；营业时间与菜单可能临时调整，价格与供应以现场为准。</view>
+</view>

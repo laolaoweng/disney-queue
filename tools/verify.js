@@ -412,7 +412,7 @@ check('miniprogram mock 含 hourly-stats（分时预测）', () => {
 
 // ---------- 小程序页面文件完整性 ----------
 check('小程序页面齐全', () => {
-  const pages = ['pages/index/index', 'pages/rank/rank', 'pages/watchlist/watchlist', 'pages/plan/plan', 'pages/settings/settings', 'pages/forecast/forecast', 'pages/shows/shows'];
+  const pages = ['pages/index/index', 'pages/rank/rank', 'pages/watchlist/watchlist', 'pages/plan/plan', 'pages/settings/settings', 'pages/forecast/forecast', 'pages/shows/shows', 'pages/dining/dining', 'pages/diningdetail/diningdetail'];
   for (const p of pages) {
     const base = path.join(ROOT, 'miniprogram', p);
     for (const ext of ['.js', '.wxml', '.wxss']) {
@@ -420,14 +420,15 @@ check('小程序页面齐全', () => {
     }
   }
   const app = readJSON('miniprogram/app.json');
-  assert(app.pages.length === 9, 'app.json pages 应为 9 个（4 tab + index + forecast + plan + plan8 + detail），实际 ' + app.pages.length);
+  assert(app.pages.length === 11, 'app.json pages 应为 11 个（5 tab + index + forecast + plan + plan8 + detail + diningdetail），实际 ' + app.pages.length);
   assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json 缺少 pages/plan8/plan8');
   for (const p of pages) assert(app.pages.indexOf(p) >= 0, 'app.json 未注册 ' + p);
-  assert(app.tabBar && Array.isArray(app.tabBar.list) && app.tabBar.list.length === 4,
-    'tabBar 应为 4 个 tab（最优解/排队榜/清单/演出）');
+  assert(app.tabBar && Array.isArray(app.tabBar.list) && app.tabBar.list.length === 5,
+    'tabBar 应为 5 个 tab（最优解/排队榜/餐饮/清单/演出）');
   const tabPaths = app.tabBar.list.map(t => t.pagePath);
   assert(tabPaths.indexOf('pages/watchlist/watchlist') >= 0, 'tabBar 缺少清单页');
   assert(tabPaths.indexOf('pages/shows/shows') >= 0, 'tabBar 缺少演出页');
+  assert(tabPaths.indexOf('pages/dining/dining') >= 0, 'tabBar 缺少餐饮页');
   assert(tabPaths.indexOf('pages/plan/plan') < 0, 'plan 页不应再放进 tabBar（tabBar 第五项是演出）');
   assert(tabPaths.indexOf('pages/forecast/forecast') < 0, 'forecast 页已从 tabBar 移除');
   assert(tabPaths.indexOf('pages/settings/settings') < 0, '设置（我的）页已从 tabBar 移除');
@@ -526,7 +527,7 @@ check('H5 演出页 + 今日客流卡', () => {
   assert(/今日客流/.test(preview) && /crowd-card/.test(css), 'preview 缺少今日客流卡');
   assert(/#eaf2ff|#e4efff/.test(css), 'preview.css 不是浅色主题');
   const tabs = (html.match(/class="tab" data-view=/g) || []).length;
-  assert(tabs === 3, 'H5 tabbar 应为 4 个（含 1 个 active，非 active 3 个），实际 ' + tabs);
+  assert(tabs === 4, 'H5 tabbar 应为 5 个（含 1 个 active，非 active 4 个），实际 ' + tabs);
 });
 
 // ---------- planner（冲刺计划） ----------
@@ -589,7 +590,7 @@ check('冲刺计划页面文件齐全（H5 + 小程序）', () => {
   files.forEach((rel) => assert(fs.existsSync(path.join(ROOT, rel)), '缺少 ' + rel));
   const app = readJSON('miniprogram/app.json');
   assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json pages 应包含 pages/plan8/plan8');
-  assert(app.pages.length === 9, '小程序应为 9 页，实际 ' + app.pages.length);
+  assert(app.pages.length === 11, '小程序应为 11 页，实际 ' + app.pages.length);
   const h5 = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
   assert(h5.indexOf('plan8') >= 0, 'preview.js 应包含 plan8 视图');
   const index = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/index/index.wxml'), 'utf8');
@@ -669,6 +670,63 @@ check('小程序排队榜顶部有热度卡与奇梦之光', () => {
   assert(/奇梦之光幻影秀/.test(wxml), 'rank.wxml 缺少奇梦之光');
   const wxss = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/rank/rank.wxss'), 'utf8');
   assert(/\.rank-hero/.test(wxss), 'rank.wxss 缺少 rank-hero 样式');
+});
+
+check('data/dining.json 结构合法', () => {
+  const d = readJSON('data/dining.json');
+  assert(d.schemaVersion === 1, 'dining schemaVersion 应为 1');
+  assert(d.source === 'wam/facility/detail', 'dining source 不符');
+  assert(Array.isArray(d.restaurants) && d.restaurants.length >= 20,
+    '园区餐饮数量异常: ' + (d.restaurants && d.restaurants.length));
+  const withMenu = d.restaurants.filter(r => r.menuPdf).length;
+  assert(withMenu >= 10, '有官方菜单的餐厅偏少: ' + withMenu);
+  for (const r of d.restaurants) {
+    assert(/^-?\d+(\.\d+)?$/.test(String(r.lat)) && /^-?\d+(\.\d+)?$/.test(String(r.lng)),
+      '餐厅缺少坐标: ' + r.id);
+    assert(typeof r.name === 'string' && r.name, '餐厅缺少名称: ' + r.id);
+    assert(Array.isArray(r.hours.slots), '餐厅 hours.slots 非数组: ' + r.id);
+  }
+  assert(Array.isArray(d.dishes), 'dining.dishes 应为数组');
+  return d.restaurants.length + ' 家餐饮，' + withMenu + ' 家有菜单，' + d.dishes.length + ' 个菜品';
+});
+
+check('miniprogram mock 含餐饮数据且与 data 一致', () => {
+  const m = readJSON('miniprogram/mock/dining.json');
+  const real = readJSON('data/dining.json');
+  assert(Array.isArray(m.restaurants), 'mock dining 缺 restaurants');
+  assert(m.restaurants.length === real.restaurants.length, 'mock dining 数量与 data 不一致（需重新同步）');
+  const ids = new Set(m.restaurants.map(r => r.id));
+  for (const r of real.restaurants) assert(ids.has(r.id), 'mock dining 缺餐厅: ' + r.id);
+  return m.restaurants.length + ' 家';
+});
+
+check('H5 餐饮页 + 详情页', () => {
+  const js = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
+  const html = fs.readFileSync(path.join(ROOT, 'web-preview/index.html'), 'utf8');
+  assert(/data-view="dining"/.test(html), 'index.html tabbar 缺少餐饮 tab');
+  assert(/function htmlDining\(/.test(js), 'preview.js 缺少 htmlDining');
+  assert(/function htmlDiningDetail\(/.test(js), 'preview.js 缺少 htmlDiningDetail');
+  assert(/dining\.json/.test(js), 'preview.js 未加载 dining.json');
+  assert(/amapWalkUrl\(r\)/.test(js), '餐饮详情页缺少导航链接');
+  assert(/menuPdf/.test(js), '餐饮详情页缺少菜单链接');
+});
+
+check('小程序餐饮页 + 详情页', () => {
+  for (const p of ['pages/dining/dining', 'pages/diningdetail/diningdetail']) {
+    for (const ext of ['.js', '.wxml', '.wxss', '.json']) {
+      assert(fs.existsSync(path.join(ROOT, 'miniprogram', p + ext)), '缺少 miniprogram/' + p + ext);
+    }
+  }
+  const js = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/diningdetail/diningdetail.js'), 'utf8');
+  assert(/wx\.openLocation/.test(js), '餐饮详情页缺少 wx.openLocation');
+  assert(/bd09ToGcj02/.test(js), '餐饮详情页缺少 BD-09→GCJ-02 坐标转换');
+});
+
+check('tools/fetch_dining.py 存在且可离线缓存', () => {
+  const src = fs.readFileSync(path.join(ROOT, 'collector/fetch_dining.py'), 'utf8');
+  assert(/class='dine'/.test(src) || /dineList/.test(src), 'fetch_dining.py 未区分餐厅/菜品');
+  assert(/raw\/dining/.test(src) || /raw', 'dining/.test(src), 'fetch_dining.py 缺少缓存目录');
+  assert(/themePark/.test(src), 'fetch_dining.py 未过滤园区内餐饮');
 });
 
 console.log('\n==== ' + pass + ' passed, ' + failures.length + ' failed ====');

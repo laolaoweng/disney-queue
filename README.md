@@ -102,6 +102,8 @@ python collector\collect.py       # 默认 --transport auto：TCP 被重置就�
 | **排行（rank）** | 排序栏可选「综合评分 / 排队最短 / 步行最近 / 八大必玩」；选「八大必玩」只留 8 个招牌项目并按排队升序；全部 30 个项目按主题园区分组，可点行加入必玩，闭园/停运灰显 |
 | **清单（watchlist）** | 勾选你想玩的项目 → 自动按「当前排队时间从少到多」排好序、算好步行和项目时长 → 汇总卡显示「一共 N 项、排队合计 X 分、总耗时 W 分、预计 HH:MM 全部玩完」；支持全选在园/清空，勾选状态自动保存 |
 | **演出（shows）** | 当天场次卡片（图 + 最近一场倒计时 + 下一场），顶部可切「全部 / 演出 / 见面会」；见面会单独一组（21 个角色见面会，带场次和倒计时），按「快要开始」排序，停演/已结束灰显；数据每天从官网抓一次 |
+| **餐饮（dining）** | 园区内 28 家餐厅/小食亭，按主题园区分组：官方图片、营业状态（营业中·至 HH:MM / 已打烊 / 今日停业）、服务标签（儿童餐/家庭餐/户外小餐车…）、套餐价；点进详情看介绍、营业时段、招牌菜、套餐价、官方菜单 PDF 与「🧭 导航过去」（高德步行导航） |
+| **餐饮详情（diningdetail）** | 大图 + 名称 + 营业时间 + 服务标签 + 导航按钮 + 查看官方菜单 + 官网介绍；含介绍文案、套餐价、招牌菜；逐菜价格不做，以现场菜单为准 |
 | **行程（plan）** | 自动排 3–4 个项目的顺序，显示「几点开始、排多久、玩完几点」，可点「我从这里开始」（不再占 tabBar，首页按钮进入） |
 | **历史等候时间（detail）** | 排队榜点任意图标进入：项目图 + 当前排队 + 「🧭 导航过去」按钮（高德步行导航）+ 14 天逐日平均排队 chips + 当日 8–21 点曲线（虚线为日均）；数据来自 `data/history.json`（由 `tools/build_history.js` 从 `data/history/*.jsonl` 聚合） |
 | **分时预测（forecast）** | 最近 14 天的每小时曲线：切项目看「几点人最少」，工作日/周末切换，标出最空 2–3 小时和「比高峰少 X%」；**不在 tabBar 上**，从排队榜的分时预测入口进入；数据接口保留（`hourly-stats.json`，缺失时退回 `forecast.json`） |
@@ -144,6 +146,7 @@ deliverables/disney-queue/
 │  ├─ build_forecast.py        ← 历史样本 → data/forecast.json（分时段曲线；--history-dir 用 14 天窗口）
 │  ├─ fetch_images.py          ← 官方 WAM facility/detail → data/images.json（项目方形图/头图）
 │  ├─ fetch_shows.py           ← 官方 WAM facility/detail → data/shows.json（33 个演出 + 21 个见面会的当日场次）
+│  ├─ fetch_dining.py          ← 官方 WAM facility/detail → data/dining.json（园区 28 家餐饮：坐标/营业时段/菜单/招牌菜/套餐价）
 │  ├─ common.py                ← 时间/IO/状态归一化
 │  └─ test_collect.py          ← 41 个单测（含 TCP→HTTP/3 回退、历史导入、分时统计、演出场次）
 ├─ shared/recommend.js         ← 推荐算法（纯函数，CommonJS，零依赖；recommend + estimateSelected）
@@ -161,7 +164,7 @@ deliverables/disney-queue/
 ├─ functions/_middleware.js    ← Cloudflare Pages 边缘函数：/data/latest.json 与 /api/live 现场抓数据
 ├─ cloudflare/lib/live.mjs     ← 边缘端 queue-times → latest.json 的纯函数 + 单测
 ├─ start_local.ps1             ← 本机一条命令：采集 + 每 N 分钟刷新 + 起网页服务器（手机同 Wi-Fi 可用）
-├─ data/                       ← 生成物：catalog.json / latest.json / forecast.json / hourly-stats.json / shows.json / images.json / history/ / collect.log
+├─ data/                       ← 生成物：catalog.json / latest.json / forecast.json / hourly-stats.json / shows.json / dining.json / images.json / history/ / collect.log
 ├─ raw/                        ← 原始素材：官方 WAM 全量设施 JSON + queue-times 历史 CSV（raw/history/）
 └─ .github/workflows/           ← collect.yml 每 5 分钟排队采集；shows.yml 每天 00:20 抓演出场次
 ```
@@ -220,6 +223,7 @@ console.log(est.totals); // { attractions: 3, waitMinutes, rideMinutes, walkMinu
 - **项目元数据**：迪士尼官网 `cu.apigw.shanghaidisneyresort.com/steamboat-wam/api/rap/facility/list`（344 个设施里的 30 个游乐项目，简体中文名 + 真实坐标 + 尊享卡标记）。
 - **历史等候时间**：`data/history/*.jsonl`（每 5–10 分钟一份 queue-times 快照，本机 HTTP/3 采集时写入）→ `tools/build_history.js` 聚合成 `data/history.json`（按天 × 按小时的每项目平均排队），供排队榜点开的详情页使用。
 - **演出场次**：上海迪士尼官网 `facility/detail`（`schedule.timeInfo`，33 个娱乐演出 + 21 个角色见面会/见面地点），`.github/workflows/shows.yml` 每天 00:20（北京时间）抓一次，产出 `data/shows.json`。
+- **园区餐饮**：同一份官方 `facility/detail`（`entityType=Restaurant`）：坐标、营业时段（`schedule.timeInfo`）、介绍、服务标签、招牌菜、套餐价、官方菜单 PDF 链接；`collector/fetch_dining.py` 过滤到园区内 28 家，产出 `data/dining.json`，每日随演出一起更新。逐菜价格官网只给菜单 PDF 图片、无法可靠自动解析，因此页面展示招牌菜/套餐价并标注「以现场为准」。
 - **历史排队（分时预测）**：GitHub 镜像 `hjeee3-tech/shanghai-disney-waits` 的 `data/YYYY-MM-DD.csv`（queue-times park 30 的 5 分钟粒度镜像）；`fetch_history.py` 会 HEAD 探测最新日期并下最近 14 天，不做实时请求。
 - **小程序怎么读到数据**：默认 `https://raw.githubusercontent.com/<你的仓库>/main/data`；正式发布换成自己的**备案域名 + 对象存储**（或微信云开发）。四种下发方式对比、成本、备案/白名单步骤、合规清单见 [docs/02-deploy.md](docs/02-deploy.md)。
 - **要上架微信小程序？** 主体选择、ICP 备案、服务类目、商标避坑、数据域名、隐私指引、提审驳回原因和 11 项检查清单，都整理在 [docs/05-release.md](docs/05-release.md)。
@@ -281,7 +285,7 @@ python collector\test_collect.py
 # 算法 28 个用例（含 estimateSelected 的排序/总耗时/关闭与未知 id/纯函数）
 & $node tests\recommend.test.js
 
-# 全量验收 46 项（catalog/latest/forecast/hourly-stats/shows/history 契约、recommend / estimateSelected / planMustDo 输出、页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、见面会筛选、历史等候时间详情页、排队榜顶部热度/奇梦之光卡片、手机部署文件齐全）
+# 全量验收 51 项（catalog/latest/forecast/hourly-stats/shows/dining/history 契约、recommend / estimateSelected / planMustDo 输出、页面齐全、算法文件双份一致、mock 数据合法、分时预测与冲刺计划入口、见面会筛选、历史等候时间详情页、排队榜顶部热度/奇梦之光卡片、餐饮列表/详情、手机部署文件齐全）
 & $node tools\verify.js
 
 # 手机部署（Cloudflare Pages）相关：边缘函数 8 + 5 个用例（解析映射 / 缓存 / 回退 / CORS / 静态放行）
