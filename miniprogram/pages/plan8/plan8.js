@@ -427,6 +427,10 @@ Page({
     wx.switchTab({ url: '/pages/rank/rank' });
   },
 
+  goMap: function () {
+    wx.navigateTo({ url: '/pages/map/map' });
+  },
+
   goForecast: function () {
     wx.navigateTo({ url: '/pages/forecast/forecast' });
   },

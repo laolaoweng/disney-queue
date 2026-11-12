@@ -16,7 +16,7 @@
   var PREFS_KEY = 'dq_prefs_v1';
   var WEEK = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
   var PARTY_TEXT = { family: '亲子家庭', thrill: '刺激党', kids: '带小孩', mixed: '混合同行' };
-  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出', plan8: '冲刺计划', detail: '历史等候时间', dining: '园区餐饮', diningdetail: '餐饮详情' };
+  var TITLES = { index: '排队最优解', rank: '排队榜', watchlist: '我想玩', plan: '行程', settings: '我的偏好', forecast: '分时预测' , shows: '娱乐演出', plan8: '冲刺计划', detail: '历史等候时间', dining: '园区餐饮', diningdetail: '餐饮详情', map: '园区地图' };
   var TABS = [
     { key: 'mustDo', label: '必玩' },
     { key: 'avoid', label: '避开' },
@@ -85,7 +85,9 @@
     plan8PlanSignature: null,
     detailId: null,
     detailDate: null,
-    diningId: null
+    diningId: null,
+    mapMode: 'plan',
+    mapZoom: 1
   };
 
   /* ---------------- 工具 ---------------- */
@@ -237,7 +239,7 @@
 
   var pendingInitialView = null;
   var initialViewAttempts = 0;
-  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows', 'plan8', 'detail', 'dining', 'diningdetail'];
+  var VIEW_NAMES = ['index', 'rank', 'watchlist', 'plan', 'settings', 'forecast', 'shows', 'plan8', 'detail', 'dining', 'diningdetail', 'map'];
 
   function readInitialView() {
     var loc = typeof location !== 'undefined' ? location : null;
@@ -283,7 +285,8 @@
       loadJson('hourly-stats.json').catch(function () { return null; }),
       loadJson('shows.json').catch(function () { return null; }),
       loadJson('dining.json').catch(function () { return null; }),
-      loadJson('history.json').catch(function () { return null; })
+      loadJson('history.json').catch(function () { return null; }),
+      loadJson('map.json').catch(function () { return null; })
     ]).then(function (arr) {
       var catalog = arr[0];
       var latest = arr[1];
@@ -302,6 +305,7 @@
         shows: arr[4] || null,
         dining: arr[5] || null,
         history: arr[6] || null,
+        map: arr[7] || null,
         updatedAt: latest.updatedAt || latest.fetchedAt || null,
         fetchedAt: latest.fetchedAt || null,
         source: latest.source || 'unknown',
@@ -1097,7 +1101,8 @@
       '<span class="p8-result-close">闭园 ' + esc(fmt.hhmm(fmt.toDate(result.closeAt))) + '</span></div></div>' +
       '<span class="p8-totals">' + esc(summaryText) + '</span>' +
       '<div class="p8-btns"><button class="p8-btn primary" data-act="plan8recalc">🔄 重新计算</button>' +
-      '<button class="p8-btn" data-act="plan8here">📍 我在这里</button></div></div>' +
+      '<button class="p8-btn" data-act="plan8here">📍 我在这里</button></div>' +
+      '<button class="p8-map-btn" data-act="mapopen">🗺 在地图上看这条路线 →</button></div>' +
       '<div class="card p8-timeline"><span class="card-title">建议顺序</span>' +
       '<p class="p8-hint">点任意一行可以跳到排队榜看它现在的排队</p>' +
       (rowsHtml || '<p class="muted small">当前时间已经排不进任何项目了。</p>') + '</div>';
@@ -1776,6 +1781,205 @@
       '</div>';
   }
 
+  /* ---------------- 园区地图（SVG 示意图） ---------------- */
+
+  function mapModel() {
+    return state.bundle && state.bundle.map ? state.bundle.map : null;
+  }
+
+  function mapAttrPos(model, id) {
+    if (!model) return null;
+    var list = model.attractions || [];
+    for (var i = 0; i < list.length; i++) if (list[i].id === id) return list[i];
+    return null;
+  }
+
+  function mapCurrentPos(model) {
+    var prefs = getPrefs();
+    if (prefs.lastAttractionId) {
+      var p = mapAttrPos(model, prefs.lastAttractionId);
+      if (p) return { x: p.x, y: p.y, name: p.name };
+    }
+    return { x: model.center.x, y: model.center.y, name: '园区中心' };
+  }
+
+  function mapPlanResult(bundle) {
+    if (!planner || !bundle || !bundle.catalog) return null;
+    var catalog = bundle.catalog;
+    var highlights = (catalog.highlights && catalog.highlights.length)
+      ? catalog.highlights.slice()
+      : (catalog.attractions || []).slice(0, 8).map(function (a) { return a.id; });
+    var selected = (state.plan8Selected && state.plan8Selected.length) ? state.plan8Selected.slice() : highlights;
+    var prefs = getPrefs();
+    try {
+      return planner.planMustDo({
+        catalog: catalog,
+        hourlyStats: bundle.hourlyStats || null,
+        latest: bundle.latest || { waits: bundle.waits || [] },
+        now: bundle.nowIso || new Date().toISOString(),
+        selected: selected,
+        location: prefs.lastAttractionId ? { attractionId: prefs.lastAttractionId } : null,
+        opts: { mode: 'max', riskMode: state.plan8Risk }
+      });
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function smoothPath(pts) {
+    if (!pts.length) return '';
+    if (pts.length < 3) return 'M' + pts[0][0] + ' ' + pts[0][1] + ' Z';
+    var n = pts.length;
+    var mid = function (a, b) { return [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]; };
+    var start = mid(pts[n - 1], pts[0]);
+    var d = 'M' + start[0].toFixed(1) + ' ' + start[1].toFixed(1);
+    for (var i = 0; i < n; i++) {
+      var cur = pts[i];
+      var nxt = pts[(i + 1) % n];
+      var m = mid(cur, nxt);
+      d += ' Q' + cur[0].toFixed(1) + ' ' + cur[1].toFixed(1) + ' ' + m[0].toFixed(1) + ' ' + m[1].toFixed(1);
+    }
+    return d + ' Z';
+  }
+
+  function mapLandSvg(model) {
+    return (model.lands || []).map(function (land) {
+      var pts = land.points || [];
+      if (!pts.length) return '';
+      if (pts.length < 3) {
+        return '<circle cx="' + pts[0][0] + '" cy="' + pts[0][1] + '" r="46" fill="' + land.color + '" opacity="0.85"></circle>';
+      }
+      var d = smoothPath(pts);
+      return '<path d="' + d + '" fill="' + land.color + '" stroke="#d9e5f6" stroke-width="2"></path>';
+    }).join('');
+  }
+
+  function mapLandLabels(model) {
+    return (model.lands || []).map(function (land) {
+      var pts = land.points || [];
+      if (pts.length < 3) return '';
+      var cx = 0, cy = 0;
+      pts.forEach(function (q) { cx += q[0]; cy += q[1]; });
+      cx = cx / pts.length;
+      cy = cy / pts.length;
+      return '<text x="' + Math.round(cx) + '" y="' + Math.round(cy) + '" class="map-land-label" text-anchor="middle">' + esc(land.name) + '</text>';
+    }).join('');
+  }
+
+  function mapMarkerSvg(a, opts) {
+    var order = opts.orderMap[a.id] || 0;
+    if (order) {
+      // 计划停靠点：蓝色圆点 + 白色序号，最醒目
+      return '<g class="map-pin is-stop" data-act="mapmark" data-id="' + esc(a.id) + '">' +
+        '<circle cx="' + a.x + '" cy="' + a.y + '" r="15" class="map-stop-halo"></circle>' +
+        '<circle cx="' + a.x + '" cy="' + a.y + '" r="12" class="map-stop-dot"></circle>' +
+        '<text class="map-stop-num" x="' + a.x + '" y="' + (a.y + 4.5) + '" text-anchor="middle">' + order + '</text>' +
+        '</g>';
+    }
+    var r = 11;
+    var inner;
+    if (opts.showImages && a.imageUrl) {
+      var cid = 'mapclip-' + String(a.id).replace(/[^A-Za-z0-9_-]/g, '');
+      inner = '<clipPath id="' + cid + '"><circle cx="' + a.x + '" cy="' + a.y + '" r="' + (r - 2) + '"></circle></clipPath>' +
+        '<image x="' + (a.x - r) + '" y="' + (a.y - r) + '" width="' + (r * 2) + '" height="' + (r * 2) +
+        '" href="' + esc(a.imageUrl) + '" clip-path="url(#' + cid + ')" preserveAspectRatio="xMidYMid slice"></image>';
+    } else {
+      inner = '<circle cx="' + a.x + '" cy="' + a.y + '" r="' + (r - 2) + '" class="map-pin-fill"></circle>';
+    }
+    return '<g class="map-pin" data-act="mapmark" data-id="' + esc(a.id) + '">' +
+      '<circle cx="' + a.x + '" cy="' + a.y + '" r="' + r + '" class="map-pin-ring"></circle>' +
+      inner + '</g>';
+  }
+
+  function mapSvg(bundle, plan) {
+    var model = mapModel();
+    if (!model) return '';
+    var orderMap = {};
+    var stops = (plan && plan.plan) || [];
+    stops.forEach(function (row, i) { orderMap[row.attractionId] = i + 1; });
+
+    var cur = mapCurrentPos(model);
+    var route = [cur];
+    stops.forEach(function (row) {
+      var pos = mapAttrPos(model, row.attractionId);
+      if (pos) route.push(pos);
+    });
+
+    var showImages = true;
+    var shown = (model.attractions || []).slice();
+
+    var routePath = '';
+    if (route.length > 1) {
+      var d = route.map(function (q, i) { return (i ? 'L' : 'M') + q.x + ' ' + q.y; }).join(' ');
+      routePath = '<path d="' + d + '" class="map-route-halo" fill="none"></path>' +
+        '<path d="' + d + '" class="map-route" fill="none"></path>';
+    }
+
+    var markerHtml = shown.map(function (a) {
+      return mapMarkerSvg(a, { orderMap: orderMap, showImages: showImages });
+    }).join('');
+
+    var vbW = model.width / state.mapZoom;
+    var vbH = model.height / state.mapZoom;
+    var vbX = (model.width - vbW) / 2;
+    var vbY = (model.height - vbH) / 2;
+    return '<svg class="map-svg" viewBox="' + vbX.toFixed(1) + ' ' + vbY.toFixed(1) + ' ' + vbW.toFixed(1) + ' ' + vbH.toFixed(1) +
+      '" width="100%" xmlns="http://www.w3.org/2000/svg">' +
+      '<rect x="0" y="0" width="' + model.width + '" height="' + model.height + '" fill="#f7fafe"></rect>' +
+      mapLandSvg(model) + mapLandLabels(model) +
+      '<text x="' + (model.width - 10) + '" y="' + (model.height - 8) + '" class="map-watermark" text-anchor="end">示意图 · 坐标来自官方</text>' +
+      routePath +
+      '<g class="map-current"><circle cx="' + cur.x + '" cy="' + cur.y + '" r="18" class="map-current-halo"></circle>' +
+      '<circle cx="' + cur.x + '" cy="' + cur.y + '" r="7" class="map-current-dot"></circle>' +
+      '<text x="' + (cur.x + 12) + '" y="' + (cur.y + 4) + '" class="map-current-label">你在' + esc(cur.name) + '</text></g>' +
+      markerHtml +
+      '</svg>';
+  }
+
+  function htmlMap() {
+    var bundle = currentBundle();
+    var model = mapModel();
+    function pageWrap(inner) {
+      return '<div class="page page-map">' +
+        '<div class="topbar"><div><span class="topbar-title">园区地图</span>' +
+        '<span class="topbar-sub">' + (model ? '点项目看详情 · 蓝色虚线是冲刺路线' : '数据还没生成') + '</span></div></div>' + inner + '</div>';
+    }
+    if (!model) {
+      return pageWrap('<div class="empty"><div class="empty-emoji">🗺</div><div class="empty-title">地图数据还没生成</div>' +
+        '<p class="muted small">运行 node tools/build_map.js 生成 data/map.json 后再刷新。</p></div>');
+    }
+    var plan = mapPlanResult(bundle);
+    var stops = (plan && plan.plan) || [];
+    var cur = mapCurrentPos(model);
+
+    var listHtml = stops.length ? stops.map(function (row, i) {
+      return '<div class="map-stop" data-act="mapmark" data-id="' + esc(row.attractionId) + '">' +
+        '<span class="map-stop-num">' + (i + 1) + '</span>' +
+        '<span class="map-stop-main"><b>' + esc(row.name) + '</b>' +
+        '<em>' + esc(row.arriveLabel) + ' 到 · 排 ' + row.queueMin + ' 分 · 玩 ' + row.rideMinutes + ' 分</em></span>' +
+        '<span class="map-stop-arrow">›</span></div>';
+    }).join('') : '<p class="muted small">现在没有可排的路线（闭园后或还没勾选项目）。</p>';
+
+    var modeBtn = state.mapMode === 'plan'
+      ? '<button class="map-tool" data-act="maptoggle">显示全部项目</button>'
+      : '<button class="map-tool" data-act="maptoggle">只看计划路线</button>';
+
+    var mapCard = '<div class="card map-card">' +
+      '<div class="map-toolbar">' + modeBtn +
+      '<button class="map-tool" data-act="mapzoom" data-delta="-0.25">−</button>' +
+      '<button class="map-tool" data-act="mapzoom" data-delta="0.25">＋</button></div>' +
+      '<div class="map-scroll">' + mapSvg(bundle, plan) + '</div>' +
+      '<div class="map-legend"><span><i class="lg-dot cur"></i>你的位置（' + esc(cur.name) + '）</span>' +
+      '<span><i class="lg-dot stop"></i>计划停靠点</span><span><i class="lg-line"></i>步行路线</span></div></div>';
+
+    var summary = '<div class="card map-summary"><span class="card-title">今日路线</span>' +
+      '<p class="muted small">共 ' + stops.length + ' 站 · 排队 ' + (plan ? plan.totals.queueMin : 0) + ' 分 · 步行 ' +
+      (plan ? Math.round(plan.totals.walkMin) : 0) + ' 分 · 预计 ' + (plan ? esc(plan.totals.finishLabel) : '—') + ' 结束</p>' +
+      listHtml + '</div>';
+
+    return pageWrap(mapCard + summary);
+  }
+
   function render() {
     navTitleEl.textContent = TITLES[state.view] || '排队最优解';
     if (state.loading) {
@@ -1796,6 +2000,7 @@
       else if (state.view === 'detail') screenEl.innerHTML = htmlDetail();
       else if (state.view === 'dining') screenEl.innerHTML = htmlDining();
       else if (state.view === 'diningdetail') screenEl.innerHTML = htmlDiningDetail();
+      else if (state.view === 'map') screenEl.innerHTML = htmlMap();
       else if (state.view === 'plan') screenEl.innerHTML = htmlPlan();
       else screenEl.innerHTML = htmlSettings();
     } catch (e) {
@@ -1972,6 +2177,23 @@
       return;
     }
     if (act === 'index') { switchView('index'); return; }
+    if (act === 'mapopen') { state.view = 'map'; render(); screenEl.scrollTop = 0; return; }
+    if (act === 'maptoggle') { state.mapMode = state.mapMode === 'plan' ? 'all' : 'plan'; render(); return; }
+    if (act === 'mapzoom') {
+      var delta = Number(target.getAttribute('data-delta')) || 0;
+      var next = Math.round((state.mapZoom + delta) * 100) / 100;
+      state.mapZoom = Math.max(0.75, Math.min(2.5, next));
+      render();
+      return;
+    }
+    if (act === 'mapmark') {
+      state.detailId = target.getAttribute('data-id');
+      state.detailDate = null;
+      state.view = 'detail';
+      render();
+      screenEl.scrollTop = 0;
+      return;
+    }
     if (act === 'detail') {
       state.detailId = target.getAttribute('data-id');
       state.detailDate = null;

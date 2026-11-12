@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-12T07:42:33.401Z",
+  "source": "derived from data/catalog.json (official WAM coordinates, BD-09)",
+  "park": {
+    "id": "shdr",
+    "name": "上海迪士尼乐园"
+  },
+  "width": 1000,
+  "height": 720,
+  "bounds": {
+    "minLat": 31.147109,
+    "maxLat": 31.152389,
+    "minLng": 121.663115,
+    "maxLng": 121.6715004
+  },
+  "center": {
+    "x": 396.1,
+    "y": 368
+  },
+  "lands": [
+    {
+      "name": "梦幻世界",
+      "color": "#efe6ff",
+      "points": [
+        [
+          136.5,
+          397.4
+        ],
+        [
+          275.6,
+          94.9
+        ],
+        [
+          415.3,
+          176.5
+        ],
+        [
+          402.2,
+          237
+        ],
+        [
+          355,
+          356.8
+        ],
+        [
+          227.7,
+          391.9
+        ]
+      ]
+    },
+    {
+      "name": "明日世界",
+      "color": "#e3f0ff",
+      "points": [
+        [
+          28,
+          508.5
+        ],
+        [
+          302.3,
+          576.1
+        ],
+        [
+          246.9,
+          607.4
+        ],
+        [
+          118.3,
+          665.3
+        ],
+        [
+          32.3,
+          572.3
+        ]
+      ]
+    },
+    {
+      "name": "奇想花园",
+      "color": "#e6f7ea",
+      "points": [
+        [
+          216.3,
+          482.1
+        ],
+        [
+          403.4,
+          453.5
+        ],
+        [
+          618.5,
+          458.1
+        ],
+        [
+          262.6,
+          500.5
+        ]
+      ]
+    },
+    {
+      "name": "探险岛",
+      "color": "#e8f3e2",
+      "points": [
+        [
+          718.7,
+          425.6
+        ],
+        [
+          757.6,
+          382.6
+        ],
+        [
+          870.4,
+          296
+        ],
+        [
+          997.7,
+          286.1
+        ]
+      ]
+    },
+    {
+      "name": "宝藏湾",
+      "color": "#ffeadf",
+      "points": [
+        [
+          581.5,
+          141.8
+        ],
+        [
+          744.7,
+          171.1
+        ],
+        [
+          630.5,
+          378.8
+        ]
+      ]
+    },
+    {
+      "name": "迪士尼·皮克斯玩具总动员",
+      "color": "#fff0e0",
+      "points": [
+        [
+          30.3,
+          400.1
+        ],
+        [
+          126.3,
+          295.2
+        ],
+        [
+          92.7,
+          418.7
+        ]
+      ]
+    },
+    {
+      "name": "疯狂动物城",
+      "color": "#e9f6f7",
+      "points": [
+        [
+          388.8,
+          72.9
+        ]
+      ]
+    }
+  ],
+  "attractions": [
+    {
+      "id": "attBecomeIronMan",
+      "name": "漫威英雄总部 – 变身钢铁侠",
+      "land": "奇想花园",
+      "category": "walkthrough",
+      "x": 257.5,
+      "y": 479.9,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-become-icon-man-hero-sq_tcm1871-116348.jpg"
+    },
+    {
+      "id": "attDumboFlyingElephant",
+      "name": "小飞象",
+      "land": "奇想花园",
+      "category": "family",
+      "x": 396.1,
+      "y": 458.7,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-dumbo-flying-elephant-hero-sq-new-again_tcm1871-114852.jpg"
+    },
+    {
+      "id": "attFantasiaCarousel",
+      "name": "幻想曲旋转木马",
+      "land": "奇想花园",
+      "category": "family",
+      "x": 555.4,
+      "y": 462.1,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-fantasia-carousel-b-new-sq_tcm1871-239287.jpg"
+    },
+    {
+      "id": "attMarvelUniverse",
+      "name": "漫威英雄总部",
+      "land": "奇想花园",
+      "category": "walkthrough",
+      "x": 291.8,
+      "y": 493.5,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-marvel-universe-hero-sq-new-again_tcm1871-115154.jpg"
+    },
+    {
+      "id": "attBuzzLightyearPlanetRescue",
+      "name": "巴斯光年星际营救",
+      "land": "明日世界",
+      "category": "family",
+      "x": 163,
+      "y": 628.6,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-buzz-lightyear-new-c-sq-260304-v2_tcm1871-287612.jpg"
+    },
+    {
+      "id": "attJetPacks",
+      "name": "喷气背包飞行器",
+      "land": "明日世界",
+      "category": "family",
+      "x": 262.6,
+      "y": 581,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-jet-packs-new-c-sq_tcm1871-239065.jpg"
+    },
+    {
+      "id": "attPixarAdventurousJourneyTomorrowland",
+      "name": "皮克斯奇旅",
+      "land": "明日世界",
+      "category": "walkthrough",
+      "x": 126.3,
+      "y": 647.1,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pixar-adventurous-journey-cover-sq-260305_tcm1871-287639.jpg"
+    },
+    {
+      "id": "attStitchEncounter",
+      "name": "太空对话史迪奇",
+      "land": "明日世界",
+      "category": "family",
+      "x": 221.6,
+      "y": 604.2,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-stitch-encounter-hero-sq_tcm1871-102758.jpg"
+    },
+    {
+      "id": "attTronLightcyclePowerRun",
+      "name": "创极速光轮",
+      "land": "明日世界",
+      "category": "thrill",
+      "x": 59.4,
+      "y": 530.9,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-lightcycle-power-run-hero-sq-new-again_tcm1871-114866.jpg"
+    },
+    {
+      "id": "attTronRealm",
+      "name": "创界：雪佛兰数字挑战",
+      "land": "明日世界",
+      "category": "walkthrough",
+      "x": 62.6,
+      "y": 578.2,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-tron-realm-new-b-sq_tcm1871-238912.jpg"
+    },
+    {
+      "id": "attAdventuresWinniePooh",
+      "name": "小熊维尼历险记",
+      "land": "梦幻世界",
+      "category": "family",
+      "x": 281.6,
+      "y": 136.5,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-winnie-the-pooh-new-c-sq_tcm1871-239131.jpg"
+    },
+    {
+      "id": "attAliceWonderlandMaze",
+      "name": "爱丽丝梦游仙境迷宫",
+      "land": "梦幻世界",
+      "category": "walkthrough",
+      "x": 375.4,
+      "y": 241.8,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-alice-new-b-sq_tcm1871-239484.jpg"
+    },
+    {
+      "id": "attHunnyPotSpin",
+      "name": "旋转疯蜜罐",
+      "land": "梦幻世界",
+      "category": "family",
+      "x": 284.4,
+      "y": 165.6,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hunny-pot-spin-new-b-sq_tcm1871-239379.jpg"
+    },
+    {
+      "id": "attOnceUponTimeAdventure",
+      "name": "漫游童话时光",
+      "land": "梦幻世界",
+      "category": "walkthrough",
+      "x": 340.4,
+      "y": 330.5,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-once-upon-time-adventure-hero-sq-new-again_tcm1871-115131.jpg"
+    },
+    {
+      "id": "attPeterPansFlight",
+      "name": "小飞侠天空奇遇",
+      "land": "梦幻世界",
+      "category": "family",
+      "x": 178.6,
+      "y": 360.6,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-peter-pans-flight-hero-sq-new-again2-260304-v2_tcm1871-287616.jpg"
+    },
+    {
+      "id": "attSevenDwarfsMineTrain",
+      "name": "七个小矮人矿山车",
+      "land": "梦幻世界",
+      "category": "family",
+      "x": 385.1,
+      "y": 197,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-seven-dwarfs-mine-train-hero-sq-new_tcm1871-114855.jpg"
+    },
+    {
+      "id": "attVoyageToCrystalGrotto",
+      "name": "晶彩奇航",
+      "land": "梦幻世界",
+      "category": "family",
+      "x": 246.1,
+      "y": 356.5,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-voyage-to-the-crystal-grotto-hero-sq-new-261026_tcm1871-294839.jpg"
+    },
+    {
+      "id": "attChallengeTrails",
+      "name": "古迹探索营的绳索挑战道",
+      "land": "探险岛",
+      "category": "walkthrough",
+      "x": 839.6,
+      "y": 337.7,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-camp-discovery-challenge-trails-new-c-sq_tcm1871-239014.jpg"
+    },
+    {
+      "id": "attJuniorExplorersCamp",
+      "name": "小勇者营地",
+      "land": "探险岛",
+      "category": "kids",
+      "x": 778.2,
+      "y": 372.9,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-junior-explorers-camp-hero-sq_tcm1871-280416.jpg"
+    },
+    {
+      "id": "attRoaringRapids",
+      "name": "雷鸣山漂流",
+      "land": "探险岛",
+      "category": "water",
+      "x": 749.4,
+      "y": 404.7,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-roaring-new-c-sq_tcm1871-239550.jpg"
+    },
+    {
+      "id": "attSoaringOverHorizon",
+      "name": "翱翔•飞越地平线",
+      "land": "探险岛",
+      "category": "family",
+      "x": 956,
+      "y": 301.4,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-soaring-hero-sq-new-again_tcm1871-114876.jpg"
+    },
+    {
+      "id": "attVistaTrail",
+      "name": "古迹探索营的探索步行道",
+      "land": "探险岛",
+      "category": "walkthrough",
+      "x": 861.7,
+      "y": 308.7,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-vista-trail-hero-sq_tcm1871-116277.jpg"
+    },
+    {
+      "id": "attExplorerCanoes",
+      "name": "探险家独木舟",
+      "land": "宝藏湾",
+      "category": "family",
+      "x": 633.7,
+      "y": 337.4,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-explorer-canoes-hero-sq-new-again2_tcm1871-114837.jpg"
+    },
+    {
+      "id": "attPiratesOfCaribbean",
+      "name": "加勒比海盗——沉落宝藏之战",
+      "land": "宝藏湾",
+      "category": "family",
+      "x": 597.4,
+      "y": 161.8,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-pirates-of-caribbean-hero-sq-new-again_tcm1871-115032.jpg"
+    },
+    {
+      "id": "attShipwreckShore",
+      "name": "船奇戏水滩",
+      "land": "宝藏湾",
+      "category": "family",
+      "x": 622.2,
+      "y": 193.2,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sshipwreck-shore-new-e-sq_tcm1871-239527.jpg"
+    },
+    {
+      "id": "attSirensRevenge",
+      "name": "探秘海妖复仇号",
+      "land": "宝藏湾",
+      "category": "walkthrough",
+      "x": 718.3,
+      "y": 183.5,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-sirens-revenge-new-b-sq_tcm1871-239351.jpg"
+    },
+    {
+      "id": "attRexsRCRacer",
+      "name": "抱抱龙冲天赛车",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "category": "thrill",
+      "x": 44,
+      "y": 392.6,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-rexs-racer-new-c-sq_tcm1871-239338.jpg"
+    },
+    {
+      "id": "attSlinkyDogSpin",
+      "name": "弹簧狗团团转",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "category": "family",
+      "x": 90.2,
+      "y": 406.4,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-slinky-dog-spin-sq-v2_tcm1871-151651.jpg"
+    },
+    {
+      "id": "attWoodysRoundUp",
+      "name": "胡迪牛仔嘉年华",
+      "land": "迪士尼·皮克斯玩具总动员",
+      "category": "family",
+      "x": 115.1,
+      "y": 314.9,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-woody-new-b-sq_tcm1871-239512.jpg"
+    },
+    {
+      "id": "attZootopiaHotPursuit",
+      "name": "疯狂动物城：热力追踪",
+      "land": "疯狂动物城",
+      "category": "family",
+      "x": 388.8,
+      "y": 72.9,
+      "imageUrl": "https://static.shanghaidisneyresort.com/tridion/prod/en/system/images/shdr-att-hot-pursuit-sq-20260304-v2_tcm1871-287618.png"
+    }
+  ]
+}

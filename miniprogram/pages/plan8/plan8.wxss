@@ -499,3 +499,8 @@
   font-weight: 600;
 }
 .p8-risk-btn.on { background: #164f9e; border-color: #164f9e; color: #ffffff; }
+
+.p8-btn.map {
+  width: 100%; margin-top: 12rpx; background: #f4f8ff; color: #164f9e;
+  border: 2rpx dashed #b9d1f5;
+}

@@ -116,6 +116,7 @@
           <view class="p8-btn primary" bindtap="onRecalc">🔄 重新计算</view>
           <view class="p8-btn" bindtap="onHere">📍 我在这里</view>
         </view>
+        <view class="p8-btn map" bindtap="goMap">🗺 在地图上看这条路线</view>
       </view>
 
       <!-- 时间线 -->

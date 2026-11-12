@@ -1,0 +1,64 @@
+<view class="map-page">
+  <view class="map-head">
+    <view>
+      <view class="map-title">园区地图</view>
+      <view class="map-sub">点项目看详情 · 蓝色虚线是冲刺路线</view>
+    </view>
+    <button class="map-refresh" bindtap="onRefresh">↻</button>
+  </view>
+
+  <view wx:if="{{loading}}" class="map-empty">正在加载地图…</view>
+  <view wx:elif="{{error}}" class="map-empty">{{error}}</view>
+
+  <block wx:else>
+    <view class="map-card">
+      <view class="map-toolbar">
+        <button class="map-tool" bindtap="onOpenPlan8">调整冲刺计划 ›</button>
+        <button class="map-tool" data-delta="-0.25" bindtap="onZoom">−</button>
+        <button class="map-tool" data-delta="0.25" bindtap="onZoom">＋</button>
+      </view>
+      <view class="map-viewport">
+        <view class="map-stage" style="transform: scale({{zoom}});">
+          <canvas type="2d" id="mapCanvas" class="map-canvas"></canvas>
+          <view
+            wx:for="{{markers}}"
+            wx:key="id"
+            class="map-pin {{item.order ? 'is-stop' : ''}}"
+            style="left: {{item.px}}%; top: {{item.py}}%;"
+            data-id="{{item.id}}"
+            bindtap="onPin"
+          >
+            <view wx:if="{{item.order}}" class="pin-dot">{{item.order}}</view>
+            <image wx:else class="pin-img" src="{{item.imageUrl}}" mode="aspectFill" lazy-load></image>
+          </view>
+          <view class="map-cur" style="left: {{curX}}%; top: {{curY}}%;">
+            <view class="cur-halo"></view>
+            <view class="cur-dot"></view>
+            <text class="cur-label">你在{{curLabel}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="map-legend">
+        <view class="lg"><i class="lg-dot cur"></i>你的位置（{{curLabel}}）</view>
+        <view class="lg"><i class="lg-dot stop"></i>计划停靠点</view>
+        <view class="lg"><i class="lg-line"></i>步行路线</view>
+      </view>
+    </view>
+
+    <view class="map-summary">
+      <view class="map-summary-title">今日路线</view>
+      <view class="map-summary-sub">{{summaryText}}</view>
+      <view wx:if="{{!stops.length}}" class="map-summary-empty">现在没有可排的路线（闭园后或还没勾选项目）。</view>
+      <view wx:for="{{stops}}" wx:key="id" class="map-stop" data-id="{{item.id}}" bindtap="onPin">
+        <view class="map-stop-num">{{item.order}}</view>
+        <view class="map-stop-main">
+          <view class="map-stop-name">{{item.name}}</view>
+          <view class="map-stop-meta">{{item.arriveLabel}} 到 · 排 {{item.queueMin}} 分 · 玩 {{item.rideMinutes}} 分</view>
+        </view>
+        <view class="map-stop-arrow">›</view>
+      </view>
+    </view>
+
+    <view class="map-note">地图为示意图：园区色块由官方坐标聚合而成，点位来自官网，步行路线为直线估算。</view>
+  </block>
+</view>

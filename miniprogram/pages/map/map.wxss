@@ -1,0 +1,105 @@
+.map-page {
+  min-height: 100vh;
+  padding: 24rpx 24rpx 40rpx;
+  background: linear-gradient(180deg, #e4efff 0%, #f4f9ff 420rpx, #f7fafe 100%);
+  box-sizing: border-box;
+}
+.map-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rpx 4rpx 20rpx;
+}
+.map-title { font-size: 38rpx; font-weight: 700; color: #16233a; }
+.map-sub { font-size: 22rpx; color: #64748c; margin-top: 6rpx; }
+.map-refresh {
+  width: 64rpx; height: 64rpx; line-height: 60rpx; text-align: center;
+  padding: 0; border-radius: 50%; background: #ffffff; color: #164f9e;
+  font-size: 30rpx; box-shadow: 0 6rpx 18rpx rgba(31, 88, 160, 0.08);
+}
+.map-refresh::after { border: none; }
+.map-empty {
+  margin-top: 80rpx; text-align: center; color: #64748c; font-size: 26rpx;
+}
+.map-card {
+  background: #ffffff; border-radius: 28rpx; padding: 16rpx 16rpx 20rpx;
+  box-shadow: 0 6rpx 18rpx rgba(31, 88, 160, 0.06);
+}
+.map-toolbar { display: flex; align-items: center; gap: 12rpx; padding: 4rpx 6rpx 14rpx; }
+.map-toolbar .map-tool:first-child { margin-right: auto; }
+.map-tool {
+  padding: 0 20rpx; height: 56rpx; line-height: 56rpx; border-radius: 28rpx;
+  background: #f4f8ff; color: #164f9e; font-size: 22rpx;
+}
+.map-tool::after { border: none; }
+.map-viewport { width: 100%; overflow: hidden; border-radius: 22rpx; background: #f7fafe; }
+.map-stage {
+  position: relative; width: 100%; padding-bottom: 72%;
+  transform-origin: center center;
+}
+.map-canvas {
+  position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+}
+.map-pin {
+  position: absolute; width: 44rpx; height: 44rpx; margin-left: -22rpx; margin-top: -22rpx;
+  border-radius: 50%; overflow: visible; z-index: 3;
+}
+.pin-img {
+  width: 44rpx; height: 44rpx; border-radius: 50%;
+  border: 4rpx solid #ffffff; box-sizing: border-box;
+  box-shadow: 0 2rpx 6rpx rgba(22, 79, 158, 0.18);
+  background: #cfe0fb;
+}
+.map-pin.is-stop { z-index: 5; }
+.pin-dot {
+  width: 44rpx; height: 44rpx; line-height: 42rpx; text-align: center;
+  border-radius: 50%; background: #164f9e; color: #ffffff;
+  font-size: 22rpx; font-weight: 700; border: 4rpx solid #ffffff; box-sizing: border-box;
+  box-shadow: 0 4rpx 10rpx rgba(22, 79, 158, 0.28);
+}
+.map-cur {
+  position: absolute; width: 0; height: 0; z-index: 6;
+}
+.cur-halo {
+  position: absolute; left: -26rpx; top: -26rpx; width: 52rpx; height: 52rpx;
+  border-radius: 50%; background: rgba(31, 111, 229, 0.18);
+}
+.cur-dot {
+  position: absolute; left: -11rpx; top: -11rpx; width: 22rpx; height: 22rpx;
+  border-radius: 50%; background: #1f6fe5; border: 4rpx solid #ffffff; box-sizing: border-box;
+}
+.cur-label {
+  position: absolute; left: 14rpx; top: -22rpx; white-space: nowrap;
+  font-size: 20rpx; font-weight: 600; color: #164f9e;
+}
+.map-legend {
+  display: flex; flex-wrap: wrap; gap: 18rpx; padding: 16rpx 6rpx 2rpx;
+  font-size: 20rpx; color: #5a6a82;
+}
+.map-legend .lg { display: flex; align-items: center; }
+.lg-dot { width: 16rpx; height: 16rpx; border-radius: 50%; margin-right: 8rpx; }
+.lg-dot.cur { background: #1f6fe5; }
+.lg-dot.stop { background: #164f9e; border: 3rpx solid #ffffff; box-shadow: 0 0 0 1rpx #1f6fe5; }
+.lg-line { width: 30rpx; border-top: 3rpx dashed #1f6fe5; margin-right: 8rpx; }
+.map-summary {
+  margin-top: 20rpx; background: #ffffff; border-radius: 28rpx; padding: 24rpx;
+  box-shadow: 0 6rpx 18rpx rgba(31, 88, 160, 0.06);
+}
+.map-summary-title { font-size: 30rpx; font-weight: 700; color: #16233a; }
+.map-summary-sub { font-size: 22rpx; color: #64748c; margin-top: 8rpx; }
+.map-summary-empty { font-size: 22rpx; color: #64748c; margin-top: 20rpx; }
+.map-stop {
+  display: flex; align-items: center; padding: 18rpx 0;
+  border-top: 1rpx solid #edf2fa;
+}
+.map-stop:first-of-type { border-top: none; }
+.map-stop-num {
+  width: 44rpx; height: 44rpx; line-height: 44rpx; text-align: center;
+  border-radius: 50%; background: #eaf2ff; color: #164f9e;
+  font-size: 22rpx; font-weight: 700; margin-right: 18rpx; flex: 0 0 auto;
+}
+.map-stop-main { flex: 1 1 auto; min-width: 0; }
+.map-stop-name { font-size: 26rpx; font-weight: 600; color: #16233a; }
+.map-stop-meta { font-size: 21rpx; color: #64748c; margin-top: 4rpx; }
+.map-stop-arrow { color: #a9b8cc; font-size: 30rpx; }
+.map-note { margin-top: 20rpx; font-size: 20rpx; color: #8a99ad; line-height: 1.6; }

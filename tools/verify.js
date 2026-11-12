@@ -412,7 +412,7 @@ check('miniprogram mock 含 hourly-stats（分时预测）', () => {
 
 // ---------- 小程序页面文件完整性 ----------
 check('小程序页面齐全', () => {
-  const pages = ['pages/index/index', 'pages/rank/rank', 'pages/watchlist/watchlist', 'pages/plan/plan', 'pages/settings/settings', 'pages/forecast/forecast', 'pages/shows/shows', 'pages/dining/dining', 'pages/diningdetail/diningdetail'];
+  const pages = ['pages/index/index', 'pages/rank/rank', 'pages/watchlist/watchlist', 'pages/plan/plan', 'pages/settings/settings', 'pages/forecast/forecast', 'pages/shows/shows', 'pages/dining/dining', 'pages/diningdetail/diningdetail', 'pages/map/map'];
   for (const p of pages) {
     const base = path.join(ROOT, 'miniprogram', p);
     for (const ext of ['.js', '.wxml', '.wxss']) {
@@ -420,7 +420,7 @@ check('小程序页面齐全', () => {
     }
   }
   const app = readJSON('miniprogram/app.json');
-  assert(app.pages.length === 11, 'app.json pages 应为 11 个（5 tab + index + forecast + plan + plan8 + detail + diningdetail），实际 ' + app.pages.length);
+  assert(app.pages.length === 12, 'app.json pages 应为 12 个（5 tab + index + forecast + plan + plan8 + detail + diningdetail + map），实际 ' + app.pages.length);
   assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json 缺少 pages/plan8/plan8');
   for (const p of pages) assert(app.pages.indexOf(p) >= 0, 'app.json 未注册 ' + p);
   assert(app.tabBar && Array.isArray(app.tabBar.list) && app.tabBar.list.length === 5,
@@ -590,7 +590,7 @@ check('冲刺计划页面文件齐全（H5 + 小程序）', () => {
   files.forEach((rel) => assert(fs.existsSync(path.join(ROOT, rel)), '缺少 ' + rel));
   const app = readJSON('miniprogram/app.json');
   assert(app.pages.indexOf('pages/plan8/plan8') >= 0, 'app.json pages 应包含 pages/plan8/plan8');
-  assert(app.pages.length === 11, '小程序应为 11 页，实际 ' + app.pages.length);
+  assert(app.pages.length === 12, '小程序应为 12 页，实际 ' + app.pages.length);
   const h5 = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
   assert(h5.indexOf('plan8') >= 0, 'preview.js 应包含 plan8 视图');
   const index = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/index/index.wxml'), 'utf8');
@@ -727,6 +727,46 @@ check('tools/fetch_dining.py 存在且可离线缓存', () => {
   assert(/class='dine'/.test(src) || /dineList/.test(src), 'fetch_dining.py 未区分餐厅/菜品');
   assert(/raw\/dining/.test(src) || /raw', 'dining/.test(src), 'fetch_dining.py 缺少缓存目录');
   assert(/themePark/.test(src), 'fetch_dining.py 未过滤园区内餐饮');
+});
+
+
+// ---- 园区地图 ----
+check('data/map.json 结构', () => {
+  const m = readJSON('data/map.json');
+  assert(m.width === 1000 && m.height === 720, '画布尺寸应为 1000×720');
+  assert(Array.isArray(m.lands) && m.lands.length >= 5, '园区色块不足');
+  assert(Array.isArray(m.attractions) && m.attractions.length >= 25, '地图项目不足');
+  assert(m.center && typeof m.center.x === 'number' && typeof m.center.y === 'number', '缺少 center');
+});
+
+check('地图项目坐标都在画布内', () => {
+  const m = readJSON('data/map.json');
+  const bad = m.attractions.filter((a) => !(a.x >= 0 && a.x <= m.width && a.y >= 0 && a.y <= m.height));
+  assert(bad.length === 0, '越界项目数 ' + bad.length);
+});
+
+check('mock map 与 data 一致', () => {
+  const m = readJSON('data/map.json');
+  const mock = readJSON('miniprogram/mock/map.json');
+  assert(mock.attractions.length === m.attractions.length, 'mock map 项目数不一致（需重新 Copy-Item）');
+});
+
+check('H5 有园区地图视图', () => {
+  const pv = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
+  assert(pv.indexOf("map: '园区地图'") >= 0, '缺少地图标题');
+  assert(pv.indexOf('htmlMap') >= 0, '缺少 htmlMap');
+  assert(pv.indexOf('map.json') >= 0, '未加载 map.json');
+  assert(pv.indexOf("act === 'mapopen'") >= 0, '缺少地图入口事件');
+});
+
+check('小程序地图页齐全', () => {
+  for (const f of ['map.js', 'map.json', 'map.wxml', 'map.wxss']) {
+    assert(fs.existsSync(path.join(ROOT, 'miniprogram', 'pages', 'map', f)), '缺少 miniprogram/pages/map/' + f);
+  }
+  const appJson = readJSON('miniprogram/app.json');
+  assert(appJson.pages.indexOf('pages/map/map') >= 0, 'app.json 未注册 pages/map/map');
+  const p8js = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/plan8/plan8.js'), 'utf8');
+  assert(p8js.indexOf('/pages/map/map') >= 0, '冲刺计划页缺少地图入口');
 });
 
 console.log('\n==== ' + pass + ' passed, ' + failures.length + ' failed ====');

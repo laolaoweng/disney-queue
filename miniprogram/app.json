@@ -10,7 +10,8 @@
     "pages/detail/detail",
     "pages/plan8/plan8",
     "pages/dining/dining",
-    "pages/diningdetail/diningdetail"
+    "pages/diningdetail/diningdetail",
+    "pages/map/map"
   ],
   "window": {
     "navigationBarTitleText": "排队最优解",

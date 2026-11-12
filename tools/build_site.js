@@ -29,8 +29,8 @@ function argValue(name, fallback) {
 const checkOnly = args.includes('--check');
 const outDir = resolve(root, argValue('--out', '_site'));
 
-const DATA_FILES = ['catalog.json', 'latest.json', 'forecast.json', 'hourly-stats.json', 'shows.json', 'dining.json', 'history.json'];
-const MOCK_FILES = ['catalog.json', 'latest.json', 'forecast.json', 'hourly-stats.json', 'shows.json', 'dining.json', 'history.json'];
+const DATA_FILES = ['catalog.json', 'latest.json', 'forecast.json', 'hourly-stats.json', 'shows.json', 'dining.json', 'map.json', 'history.json'];
+const MOCK_FILES = ['catalog.json', 'latest.json', 'forecast.json', 'hourly-stats.json', 'shows.json', 'dining.json', 'history.json', 'map.json'];
 const UTIL_FILES = ['api.js', 'rec.js', 'store.js', 'format.js'];
 
 function fail(message) {

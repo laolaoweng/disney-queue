@@ -2230,3 +2230,53 @@ body {
 .dine-dishes { display: flex; flex-wrap: wrap; gap: 6px; }
 .dine-dish { font-size: 12px; padding: 5px 9px; border-radius: 8px; background: #f2f7ff; color: #1b2740; }
 .back-pill { align-self: flex-start; margin-bottom: 10px; padding: 6px 12px; border-radius: 999px; border: 1px solid #cddcf5; background: #fff; color: #164f9e; font-size: 12.5px; cursor: pointer; }
+
+
+/* ---------------- 园区地图 ---------------- */
+.page-map { padding-bottom: 8px; }
+.map-card { padding: 8px 8px 10px; }
+.map-toolbar { display: flex; align-items: center; gap: 6px; padding: 2px 2px 8px; }
+.map-toolbar .map-tool:first-child { margin-right: auto; }
+.map-tool {
+  border: 1px solid #d9e5f6; background: #fff; color: #164f9e;
+  border-radius: 999px; padding: 5px 12px; font-size: 12px; cursor: pointer;
+}
+.map-tool:active { background: #eef4ff; }
+.map-scroll { overflow: hidden; border-radius: 14px; background: #f7fafe; -webkit-overflow-scrolling: touch; }
+.map-svg { display: block; }
+.map-land-label { font-size: 12px; fill: #6b7f9e; letter-spacing: 1px; }
+.map-watermark { font-size: 10px; fill: #a9b8cc; }
+.map-route-halo { stroke: #ffffff; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; opacity: 0.9; }
+.map-route { stroke: #1f6fe5; stroke-width: 4; stroke-dasharray: 10 7; stroke-linecap: round; stroke-linejoin: round; opacity: 0.95; }
+.map-pin-ring { fill: #ffffff; stroke: #c9d9f1; stroke-width: 2; }
+.map-pin.is-stop .map-pin-ring { stroke: #1f6fe5; stroke-width: 3; }
+.map-pin-fill { fill: #cfe0fb; }
+.map-stop-halo { fill: #1f6fe5; opacity: 0.16; }
+.map-stop-dot { fill: #164f9e; stroke: #ffffff; stroke-width: 2.5; }
+.map-stop-num { font-size: 13px; font-weight: 700; fill: #ffffff; }
+.map-current-halo { fill: #1f6fe5; opacity: 0.18; }
+.map-current-dot { fill: #1f6fe5; stroke: #ffffff; stroke-width: 2.5; }
+.map-current-label { font-size: 12px; font-weight: 600; fill: #164f9e; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 10px; padding: 8px 4px 0; font-size: 11px; color: #5a6a82; }
+.map-legend .lg-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: 1px; }
+.map-legend .lg-dot.cur { background: #1f6fe5; }
+.map-legend .lg-dot.stop { background: #164f9e; border: 2px solid #fff; box-shadow: 0 0 0 1px #1f6fe5; }
+.map-legend .lg-line { display: inline-block; width: 16px; border-top: 2px dashed #1f6fe5; margin-right: 4px; vertical-align: 3px; }
+.map-summary { margin-top: 12px; }
+.map-stop { display: flex; align-items: center; gap: 10px; padding: 9px 2px; border-top: 1px solid #edf2fa; }
+.map-stop:first-of-type { border-top: none; }
+.map-stop-num {
+  flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%;
+  background: #eaf2ff; color: #164f9e; font-size: 12px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.map-stop-main { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
+.map-stop-main b { font-size: 13.5px; color: #16233a; font-weight: 600; }
+.map-stop-main em { font-style: normal; font-size: 11.5px; color: #64748c; margin-top: 2px; }
+.map-stop-arrow { color: #a9b8cc; font-size: 16px; }
+.p8-map-btn {
+  display: block; width: 100%; margin-top: 10px; padding: 10px;
+  border: 1px dashed #b9d1f5; background: #f4f8ff; color: #164f9e;
+  border-radius: 12px; font-size: 13px; cursor: pointer;
+}
+.p8-map-btn:active { background: #e8f1ff; }
