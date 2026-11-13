@@ -432,7 +432,7 @@ check('小程序页面齐全', () => {
   assert(tabPaths.indexOf('pages/plan/plan') < 0, 'plan 页不应再放进 tabBar（tabBar 第五项是演出）');
   assert(tabPaths.indexOf('pages/forecast/forecast') < 0, 'forecast 页已从 tabBar 移除');
   assert(tabPaths.indexOf('pages/settings/settings') < 0, '设置（我的）页已从 tabBar 移除');
-  assert(tabPaths[0] === 'pages/plan8/plan8', 'tabBar 第一项应是最优解（plan8）');
+  assert(tabPaths[0] === 'pages/rank/rank', 'tabBar 第一项应是排队榜（rank）');
 });
 
 check('首页/预览包含「八大必玩」与清单入口', () => {
@@ -651,25 +651,23 @@ check('小程序演出页有 全部/演出/见面会 筛选', () => {
   assert(/见面会/.test(js), 'shows.js 缺少见面会文案');
 });
 
-check('H5 排队榜顶部有热度卡与奇梦之光场次', () => {
+check('排队榜顶部热度卡已移除、tabBar 排队榜在前', () => {
   const js = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
-  assert(/function rankHero\(/.test(js), 'preview.js 缺少 rankHero');
-  assert(/奇梦之光幻影秀/.test(js), 'rankHero 缺少奇梦之光');
-  assert(/rank-hero/.test(js), 'rankHero 未渲染 rank-hero');
+  assert(!/heroHtml/.test(js), 'preview.js 仍在渲染排队榜热度卡');
+  assert(/view: 'rank'/.test(js), 'H5 默认视图应为排队榜');
+  const html = fs.readFileSync(path.join(ROOT, 'web-preview/index.html'), 'utf8');
+  const firstTab = html.match(/<button class="tab(?: active)?" data-view="([a-z8]+)"/);
+  assert(firstTab && firstTab[1] === 'rank', 'H5 tabBar 第一项应为排队榜');
+  const wxml = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/rank/rank.wxml'), 'utf8');
+  assert(!/rank-hero/.test(wxml), 'rank.wxml 仍在渲染热度卡');
+  const app = readJSON('miniprogram/app.json');
+  assert(app.tabBar.list[0].pagePath === 'pages/rank/rank', '小程序 tabBar 第一项应为排队榜');
 });
 
 check('H5 详情页曲线加粗且提示缺失日期', () => {
   const js = fs.readFileSync(path.join(ROOT, 'web-preview/preview.js'), 'utf8');
   assert(/stroke-width="3\.2"/.test(js), '历史曲线未加粗');
   assert(/hist-gap/.test(js), '缺少缺失日期提示');
-});
-
-check('小程序排队榜顶部有热度卡与奇梦之光', () => {
-  const wxml = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/rank/rank.wxml'), 'utf8');
-  assert(/乐园热度/.test(wxml), 'rank.wxml 缺少乐园热度');
-  assert(/奇梦之光幻影秀/.test(wxml), 'rank.wxml 缺少奇梦之光');
-  const wxss = fs.readFileSync(path.join(ROOT, 'miniprogram/pages/rank/rank.wxss'), 'utf8');
-  assert(/\.rank-hero/.test(wxss), 'rank.wxss 缺少 rank-hero 样式');
 });
 
 check('data/dining.json 结构合法', () => {

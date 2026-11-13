@@ -67,7 +67,7 @@
   var planner = null;
 
   var state = {
-    view: 'plan8',
+    view: 'rank',
     loading: true,
     error: '',
     bundle: null,
@@ -588,7 +588,6 @@
     var stats = rec.parkStats(bundle);
 
     var crowd = crowdInfo(bundle);
-    var heroHtml = rankHero(bundle, crowd);
 
     var sorts = [
       { key: 'wait-desc', label: '排队最长' },
@@ -665,7 +664,6 @@
     return '<div class="page">' +
       '<div class="list-topbar"><button class="refresh-pill" data-act="refresh">↻ 刷新</button>' +
       '<span class="update-time">更新时间：' + esc(dateFull(bundle.updatedAt)) + '</span></div>' +
-      heroHtml +
       '<div class="sortbar">' + sorts + '</div>' +
       '<div class="groupbar"><button class="group-toggle ' + (state.grouped ? 'on' : '') + '" data-act="group">' +
       (state.grouped ? '按园区分组 ✓' : '按园区分组') + '</button>' +

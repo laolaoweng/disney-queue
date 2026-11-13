@@ -27,12 +27,12 @@
     "borderStyle": "white",
     "list": [
       {
-        "pagePath": "pages/plan8/plan8",
-        "text": "最优解"
-      },
-      {
         "pagePath": "pages/rank/rank",
         "text": "排队榜"
+      },
+      {
+        "pagePath": "pages/plan8/plan8",
+        "text": "最优解"
       },
       {
         "pagePath": "pages/dining/dining",
