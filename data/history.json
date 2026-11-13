@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T10:07:40Z",
+  "generatedAt": "2026-11-13T17:40:22Z",
   "source": "data/history/*.jsonl",
   "days": [
-    "2026-10-07",
     "2026-10-08",
     "2026-10-09",
     "2026-10-10",
@@ -16,44 +15,14 @@
     "2026-10-17",
     "2026-11-11",
     "2026-11-12",
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-14"
   ],
   "attractions": {
     "attBecomeIronMan": {
       "name": "漫威英雄总部 – 变身钢铁侠",
       "land": "奇想花园",
       "days": {
-        "2026-10-07": {
-          "avg": 5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 5,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 5.2,
           "samples": 115,
@@ -733,37 +702,6 @@
       "name": "小飞象",
       "land": "奇想花园",
       "days": {
-        "2026-10-07": {
-          "avg": 27.2,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 29,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 30,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 19.6,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 32.5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 24.4,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 26.6,
           "samples": 103,
@@ -1388,37 +1326,6 @@
       "name": "幻想曲旋转木马",
       "land": "奇想花园",
       "days": {
-        "2026-10-07": {
-          "avg": 9.7,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 8.5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 10,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 7.9,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 12.9,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 8.9,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 13.3,
           "samples": 120,
@@ -2108,37 +2015,6 @@
       "name": "漫威英雄总部",
       "land": "奇想花园",
       "days": {
-        "2026-10-07": {
-          "avg": 0,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 0,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 0,
           "samples": 115,
@@ -2818,37 +2694,6 @@
       "name": "巴斯光年星际营救",
       "land": "明日世界",
       "days": {
-        "2026-10-07": {
-          "avg": 5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 5,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 5,
           "samples": 120,
@@ -3553,37 +3398,6 @@
       "name": "喷气背包飞行器",
       "land": "明日世界",
       "days": {
-        "2026-10-07": {
-          "avg": 29.3,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 22,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 27.5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 25.8,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 34.2,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 37.8,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 35.3,
           "samples": 120,
@@ -4288,37 +4102,6 @@
       "name": "皮克斯奇旅",
       "land": "明日世界",
       "days": {
-        "2026-10-07": {
-          "avg": 5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 5,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 5,
           "samples": 91,
@@ -4878,37 +4661,6 @@
       "name": "创极速光轮",
       "land": "明日世界",
       "days": {
-        "2026-10-07": {
-          "avg": 47.3,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 44,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 53.3,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 44.2,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 45,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 50,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 58.2,
           "samples": 120,
@@ -5603,37 +5355,6 @@
       "name": "创界：雪佛兰数字挑战",
       "land": "明日世界",
       "days": {
-        "2026-10-07": {
-          "avg": 0,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 0,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 0,
           "samples": 120,
@@ -6298,37 +6019,6 @@
       "name": "小熊维尼历险记",
       "land": "梦幻世界",
       "days": {
-        "2026-10-07": {
-          "avg": 27.7,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 24.5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 28.3,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 25,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 29.6,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 31.7,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 25.8,
           "samples": 120,
@@ -7033,37 +6723,6 @@
       "name": "爱丽丝梦游仙境迷宫",
       "land": "梦幻世界",
       "days": {
-        "2026-10-07": {
-          "avg": 5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 5,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 5,
           "samples": 103,
@@ -7688,37 +7347,6 @@
       "name": "旋转疯蜜罐",
       "land": "梦幻世界",
       "days": {
-        "2026-10-07": {
-          "avg": 14.8,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 11,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 15.8,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 11.7,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 18.3,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 17.2,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 21.3,
           "samples": 120,
@@ -8423,37 +8051,6 @@
       "name": "漫游童话时光",
       "land": "梦幻世界",
       "days": {
-        "2026-10-07": {
-          "avg": 5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 5,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 5,
           "samples": 120,
@@ -9128,37 +8725,6 @@
       "name": "小飞侠天空奇遇",
       "land": "梦幻世界",
       "days": {
-        "2026-10-07": {
-          "avg": 23.1,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 16,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 20.4,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 21.3,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 30,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 27.8,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 23.3,
           "samples": 120,
@@ -9863,37 +9429,6 @@
       "name": "七个小矮人矿山车",
       "land": "梦幻世界",
       "days": {
-        "2026-10-07": {
-          "avg": 62.5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 62.5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 62.9,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 59.6,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 62.1,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 66.7,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 65,
           "samples": 120,
@@ -10598,37 +10133,6 @@
       "name": "晶彩奇航",
       "land": "梦幻世界",
       "days": {
-        "2026-10-07": {
-          "avg": 7,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 6.3,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 7.5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 12.2,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 9,
           "samples": 120,
@@ -11333,37 +10837,6 @@
       "name": "古迹探索营的绳索挑战道",
       "land": "探险岛",
       "days": {
-        "2026-10-07": {
-          "avg": 11.7,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 8,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 10,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 10,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 10.8,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 21.7,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 8.8,
           "samples": 120,
@@ -12068,37 +11541,6 @@
       "name": "小勇者营地",
       "land": "探险岛",
       "days": {
-        "2026-10-07": {
-          "avg": 5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 5,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 5,
           "samples": 120,
@@ -12793,37 +12235,6 @@
       "name": "雷鸣山漂流",
       "land": "探险岛",
       "days": {
-        "2026-10-07": {
-          "avg": 27.9,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 23.5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 31.7,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 20,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 31.3,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 33.9,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 22.2,
           "samples": 120,
@@ -13528,37 +12939,6 @@
       "name": "翱翔•飞越地平线",
       "land": "探险岛",
       "days": {
-        "2026-10-07": {
-          "avg": 45.9,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 40.5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 45.4,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 50,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 45.4,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 47.8,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 43.3,
           "samples": 120,
@@ -14263,37 +13643,6 @@
       "name": "古迹探索营的探索步行道",
       "land": "探险岛",
       "days": {
-        "2026-10-07": {
-          "avg": 0,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 0,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 0,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 0,
           "samples": 120,
@@ -14998,37 +14347,6 @@
       "name": "加勒比海盗——沉落宝藏之战",
       "land": "宝藏湾",
       "days": {
-        "2026-10-07": {
-          "avg": 14.7,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 10,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 11.7,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 15,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 20,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 16.7,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 12.5,
           "samples": 120,
@@ -15728,37 +15046,6 @@
       "name": "船奇戏水滩",
       "land": "宝藏湾",
       "days": {
-        "2026-10-07": {
-          "avg": 5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 5,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 5,
           "samples": 79,
@@ -16288,37 +15575,6 @@
       "name": "探秘海妖复仇号",
       "land": "宝藏湾",
       "days": {
-        "2026-10-07": {
-          "avg": 5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 5,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 5,
           "samples": 120,
@@ -16973,37 +16229,6 @@
       "name": "抱抱龙冲天赛车",
       "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-10-07": {
-          "avg": 56.9,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 50,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 58.3,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 55.8,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 60,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 60,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 69.3,
           "samples": 120,
@@ -17708,37 +16933,6 @@
       "name": "弹簧狗团团转",
       "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-10-07": {
-          "avg": 25.8,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 25,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 25.8,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 21.7,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 30,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 26.7,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 26.2,
           "samples": 120,
@@ -18443,37 +17637,6 @@
       "name": "胡迪牛仔嘉年华",
       "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-10-07": {
-          "avg": 36.5,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 34,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 35,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 32.5,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 40.8,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 41.1,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 37.3,
           "samples": 120,
@@ -19178,37 +18341,6 @@
       "name": "疯狂动物城：热力追踪",
       "land": "疯狂动物城",
       "days": {
-        "2026-10-07": {
-          "avg": 45.9,
-          "samples": 55,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 50,
-              "samples": 10
-            },
-            {
-              "hour": 11,
-              "wait": 42.1,
-              "samples": 12
-            },
-            {
-              "hour": 12,
-              "wait": 45.4,
-              "samples": 12
-            },
-            {
-              "hour": 13,
-              "wait": 49.2,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 42.8,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 41,
           "samples": 111,
@@ -19898,27 +19030,6 @@
       "name": "太空对话史迪奇",
       "land": "明日世界",
       "days": {
-        "2026-10-07": {
-          "avg": 15,
-          "samples": 31,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 15,
-              "samples": 10
-            },
-            {
-              "hour": 13,
-              "wait": 15,
-              "samples": 12
-            },
-            {
-              "hour": 14,
-              "wait": 15,
-              "samples": 9
-            }
-          ]
-        },
         "2026-10-08": {
           "avg": 15,
           "samples": 72,
