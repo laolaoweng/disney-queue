@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T02:43:40Z",
+  "generatedAt": "2026-11-14T09:26:37Z",
   "source": "data/history/*.jsonl",
   "days": [
     "2026-10-08",
@@ -698,10 +698,15 @@
         },
         "2026-11-14": {
           "avg": 5,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 5,
               "samples": 1
             }
@@ -1332,12 +1337,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 60,
-          "samples": 1,
+          "avg": 55,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 50,
               "samples": 1
             }
           ]
@@ -2033,10 +2043,15 @@
         },
         "2026-11-14": {
           "avg": 30,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 30,
               "samples": 1
             }
@@ -2723,10 +2738,15 @@
         },
         "2026-11-14": {
           "avg": 0,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 0,
               "samples": 1
             }
@@ -3437,12 +3457,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 12.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 20,
               "samples": 1
             }
           ]
@@ -4152,12 +4177,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 30,
-          "samples": 1,
+          "avg": 40,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 50,
               "samples": 1
             }
           ]
@@ -4723,10 +4753,15 @@
         },
         "2026-11-14": {
           "avg": 5,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 5,
               "samples": 1
             }
@@ -5427,12 +5462,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 105,
-          "samples": 1,
+          "avg": 112.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 120,
               "samples": 1
             }
           ]
@@ -6103,10 +6143,15 @@
         },
         "2026-11-14": {
           "avg": 0,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 0,
               "samples": 1
             }
@@ -6818,10 +6863,15 @@
         },
         "2026-11-14": {
           "avg": 45,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 45,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 45,
               "samples": 1
             }
@@ -7453,10 +7503,15 @@
         },
         "2026-11-14": {
           "avg": 5,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 5,
               "samples": 1
             }
@@ -8168,10 +8223,15 @@
         },
         "2026-11-14": {
           "avg": 40,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 40,
               "samples": 1
             }
@@ -8846,6 +8906,17 @@
           "hourly": [
             {
               "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-14": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
               "wait": 5,
               "samples": 1
             }
@@ -9556,12 +9627,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 60,
-          "samples": 1,
+          "avg": 52.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 45,
               "samples": 1
             }
           ]
@@ -10271,12 +10347,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 105,
-          "samples": 1,
+          "avg": 112.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 120,
               "samples": 1
             }
           ]
@@ -10987,10 +11068,15 @@
         },
         "2026-11-14": {
           "avg": 30,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 30,
               "samples": 1
             }
@@ -11701,12 +11787,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 10,
-          "samples": 1,
+          "avg": 20,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 10,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 30,
               "samples": 1
             }
           ]
@@ -12407,10 +12498,15 @@
         },
         "2026-11-14": {
           "avg": 5,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 5,
               "samples": 1
             }
@@ -13121,12 +13217,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 45,
-          "samples": 1,
+          "avg": 52.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 45,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 60,
               "samples": 1
             }
           ]
@@ -13836,12 +13937,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 90,
-          "samples": 1,
+          "avg": 105,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 90,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 120,
               "samples": 1
             }
           ]
@@ -14552,10 +14658,15 @@
         },
         "2026-11-14": {
           "avg": 0,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 0,
               "samples": 1
             }
@@ -15261,12 +15372,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 50,
-          "samples": 1,
+          "avg": 40,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 30,
               "samples": 1
             }
           ]
@@ -15802,10 +15918,15 @@
         },
         "2026-11-14": {
           "avg": 5,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 5,
               "samples": 1
             }
@@ -16467,10 +16588,15 @@
         },
         "2026-11-14": {
           "avg": 5,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
               "wait": 5,
               "samples": 1
             }
@@ -17181,12 +17307,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 40,
-          "samples": 1,
+          "avg": 57.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 75,
               "samples": 1
             }
           ]
@@ -17896,12 +18027,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 30,
-          "samples": 1,
+          "avg": 40,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 50,
               "samples": 1
             }
           ]
@@ -18611,12 +18747,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 30,
-          "samples": 1,
+          "avg": 40,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 50,
               "samples": 1
             }
           ]
@@ -19311,12 +19452,17 @@
           ]
         },
         "2026-11-14": {
-          "avg": 110,
-          "samples": 1,
+          "avg": 115,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
               "wait": 110,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 120,
               "samples": 1
             }
           ]
@@ -19765,6 +19911,17 @@
           "hourly": [
             {
               "hour": 18,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-14": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
               "wait": 15,
               "samples": 1
             }
