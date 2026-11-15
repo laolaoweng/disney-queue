@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T03:24:01Z",
+  "generatedAt": "2026-11-15T11:16:49Z",
   "source": "data/history/*.jsonl",
   "days": [
     "2026-10-09",
@@ -652,12 +652,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 12.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 20,
               "samples": 1
             }
           ]
@@ -1902,12 +1907,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 50,
-          "samples": 1,
+          "avg": 40,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 30,
               "samples": 1
             }
           ]
@@ -2548,10 +2558,15 @@
         },
         "2026-11-15": {
           "avg": 0,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 19,
               "wait": 0,
               "samples": 1
             }
@@ -3217,12 +3232,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 20,
-          "samples": 1,
+          "avg": 15,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 20,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 10,
               "samples": 1
             }
           ]
@@ -3887,12 +3907,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 27.5,
-          "samples": 2,
+          "avg": 31.7,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 40,
               "samples": 1
             }
           ]
@@ -5083,11 +5108,16 @@
         },
         "2026-11-15": {
           "avg": 75,
-          "samples": 2,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 110,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 75,
               "samples": 1
             }
           ]
@@ -5713,10 +5743,15 @@
         },
         "2026-11-15": {
           "avg": 0,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 19,
               "wait": 0,
               "samples": 1
             }
@@ -6382,12 +6417,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 55,
-          "samples": 1,
+          "avg": 47.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 55,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 40,
               "samples": 1
             }
           ]
@@ -7647,12 +7687,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 27.5,
-          "samples": 2,
+          "avg": 28.3,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 30,
               "samples": 1
             }
           ]
@@ -8952,12 +8997,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 37.5,
-          "samples": 2,
+          "avg": 30,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 70,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 15,
               "samples": 1
             }
           ]
@@ -9622,12 +9672,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 97.5,
-          "samples": 2,
+          "avg": 101.7,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 135,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 110,
               "samples": 1
             }
           ]
@@ -10292,12 +10347,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 40,
-          "samples": 1,
+          "avg": 35,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 30,
               "samples": 1
             }
           ]
@@ -10962,12 +11022,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 40,
-          "samples": 1,
+          "avg": 27.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 15,
               "samples": 1
             }
           ]
@@ -12292,12 +12357,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 70,
-          "samples": 1,
+          "avg": 55,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 70,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 40,
               "samples": 1
             }
           ]
@@ -12962,12 +13032,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 70,
-          "samples": 2,
+          "avg": 91.7,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 90,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 135,
               "samples": 1
             }
           ]
@@ -13633,10 +13708,15 @@
         },
         "2026-11-15": {
           "avg": 0,
-          "samples": 1,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 19,
               "wait": 0,
               "samples": 1
             }
@@ -14297,12 +14377,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 47.5,
-          "samples": 2,
+          "avg": 41.7,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 90,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 30,
               "samples": 1
             }
           ]
@@ -16097,12 +16182,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 57.5,
-          "samples": 2,
+          "avg": 63.3,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 75,
               "samples": 1
             }
           ]
@@ -16767,12 +16857,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 50,
-          "samples": 1,
+          "avg": 45,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 40,
               "samples": 1
             }
           ]
@@ -17437,12 +17532,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 35,
-          "samples": 2,
+          "avg": 36.7,
+          "samples": 3,
           "hourly": [
             {
               "hour": 11,
               "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 40,
               "samples": 1
             }
           ]
@@ -18092,12 +18192,17 @@
           ]
         },
         "2026-11-15": {
-          "avg": 140,
-          "samples": 1,
+          "avg": 130,
+          "samples": 2,
           "hourly": [
             {
               "hour": 11,
               "wait": 140,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 120,
               "samples": 1
             }
           ]
