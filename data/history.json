@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T18:43:05Z",
+  "generatedAt": "2026-11-21T00:15:53Z",
   "source": "data/history/*.jsonl",
   "days": [
     "2026-10-15",
@@ -342,6 +342,17 @@
             {
               "hour": 18,
               "wait": 50,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
               "samples": 1
             }
           ]
@@ -706,6 +717,17 @@
             {
               "hour": 18,
               "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
               "samples": 1
             }
           ]
@@ -1088,6 +1110,17 @@
               "samples": 1
             }
           ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
         }
       }
     },
@@ -1467,6 +1500,17 @@
               "samples": 1
             }
           ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
         }
       }
     },
@@ -1843,6 +1887,17 @@
             {
               "hour": 18,
               "wait": 120,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 30,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 30,
               "samples": 1
             }
           ]
@@ -2928,6 +2983,17 @@
               "samples": 1
             }
           ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
         }
       }
     },
@@ -3304,6 +3370,17 @@
             {
               "hour": 18,
               "wait": 35,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
               "samples": 1
             }
           ]
@@ -3686,6 +3763,17 @@
               "samples": 1
             }
           ]
+        },
+        "2026-11-21": {
+          "avg": 45,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 45,
+              "samples": 1
+            }
+          ]
         }
       }
     },
@@ -4062,6 +4150,17 @@
             {
               "hour": 18,
               "wait": 10,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
               "samples": 1
             }
           ]
@@ -5177,6 +5276,17 @@
               "samples": 1
             }
           ]
+        },
+        "2026-11-21": {
+          "avg": 30,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
         }
       }
     },
@@ -5553,6 +5663,17 @@
             {
               "hour": 18,
               "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
               "samples": 1
             }
           ]
@@ -6528,6 +6649,17 @@
               "samples": 1
             }
           ]
+        },
+        "2026-11-21": {
+          "avg": 20,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 20,
+              "samples": 1
+            }
+          ]
         }
       }
     },
@@ -6904,6 +7036,17 @@
             {
               "hour": 18,
               "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
               "samples": 1
             }
           ]
@@ -7286,6 +7429,17 @@
               "samples": 1
             }
           ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
         }
       }
     },
@@ -7652,6 +7806,17 @@
             {
               "hour": 10,
               "wait": 130,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 40,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 40,
               "samples": 1
             }
           ]
@@ -8034,6 +8199,17 @@
               "samples": 1
             }
           ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
         }
       }
     },
@@ -8409,6 +8585,17 @@
             },
             {
               "hour": 18,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 8,
               "wait": 0,
               "samples": 1
             }
