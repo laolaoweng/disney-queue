@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T05:30:02Z",
+  "generatedAt": "2026-11-24T16:10:03Z",
   "source": "data/history/*.jsonl",
   "days": [
-    "2026-11-11",
     "2026-11-12",
     "2026-11-13",
     "2026-11-14",
@@ -16,39 +15,14 @@
     "2026-11-21",
     "2026-11-22",
     "2026-11-23",
-    "2026-11-24"
+    "2026-11-24",
+    "2026-11-25"
   ],
   "attractions": {
     "attBecomeIronMan": {
       "name": "漫威英雄总部 – 变身钢铁侠",
       "land": "奇想花园",
       "days": {
-        "2026-11-11": {
-          "avg": 6.7,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 6.7,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 10,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 7.5,
           "samples": 2,
@@ -238,27 +212,6 @@
       "name": "小飞象",
       "land": "奇想花园",
       "days": {
-        "2026-11-11": {
-          "avg": 53,
-          "samples": 5,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 61.7,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 67.5,
           "samples": 2,
@@ -453,27 +406,6 @@
       "name": "幻想曲旋转木马",
       "land": "奇想花园",
       "days": {
-        "2026-11-11": {
-          "avg": 30,
-          "samples": 5,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 33.3,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 17.5,
           "samples": 2,
@@ -678,32 +610,6 @@
       "name": "漫威英雄总部",
       "land": "奇想花园",
       "days": {
-        "2026-11-11": {
-          "avg": 0,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 0,
           "samples": 2,
@@ -893,32 +799,6 @@
       "name": "巴斯光年星际营救",
       "land": "明日世界",
       "days": {
-        "2026-11-11": {
-          "avg": 5,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 17.5,
           "samples": 2,
@@ -1123,32 +1003,6 @@
       "name": "喷气背包飞行器",
       "land": "明日世界",
       "days": {
-        "2026-11-11": {
-          "avg": 45,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 50,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 60,
           "samples": 2,
@@ -1349,216 +1203,10 @@
         }
       }
     },
-    "attPixarAdventurousJourneyTomorrowland": {
-      "name": "皮克斯奇旅",
-      "land": "明日世界",
-      "days": {
-        "2026-11-11": {
-          "avg": 5,
-          "samples": 5,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-12": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-13": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-14": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
     "attTronLightcyclePowerRun": {
       "name": "创极速光轮",
       "land": "明日世界",
       "days": {
-        "2026-11-11": {
-          "avg": 95,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 105,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 120,
           "samples": 2,
@@ -1748,236 +1396,10 @@
         }
       }
     },
-    "attTronRealm": {
-      "name": "创界：雪佛兰数字挑战",
-      "land": "明日世界",
-      "days": {
-        "2026-11-11": {
-          "avg": 0,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-12": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-13": {
-          "avg": 0,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-14": {
-          "avg": 0,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-15": {
-          "avg": 0,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 0,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 0,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
     "attAdventuresWinniePooh": {
       "name": "小熊维尼历险记",
       "land": "梦幻世界",
       "days": {
-        "2026-11-11": {
-          "avg": 36.7,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 45,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 20,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 15,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 57.5,
           "samples": 2,
@@ -2177,27 +1599,6 @@
       "name": "爱丽丝梦游仙境迷宫",
       "land": "梦幻世界",
       "days": {
-        "2026-11-11": {
-          "avg": 5,
-          "samples": 5,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 5,
           "samples": 2,
@@ -2377,32 +1778,6 @@
       "name": "旋转疯蜜罐",
       "land": "梦幻世界",
       "days": {
-        "2026-11-11": {
-          "avg": 25,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 26.7,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 20,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 10,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 30,
           "samples": 2,
@@ -2607,32 +1982,6 @@
       "name": "小飞侠天空奇遇",
       "land": "梦幻世界",
       "days": {
-        "2026-11-11": {
-          "avg": 41.7,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 43.3,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 45,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 15,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 52.5,
           "samples": 2,
@@ -2832,32 +2181,6 @@
       "name": "七个小矮人矿山车",
       "land": "梦幻世界",
       "days": {
-        "2026-11-11": {
-          "avg": 111.7,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 120,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 120,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 130,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 132.5,
           "samples": 2,
@@ -3062,32 +2385,6 @@
       "name": "晶彩奇航",
       "land": "梦幻世界",
       "days": {
-        "2026-11-11": {
-          "avg": 16.7,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 16.7,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 15,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 35,
           "samples": 2,
@@ -3292,32 +2589,6 @@
       "name": "古迹探索营的绳索挑战道",
       "land": "探险岛",
       "days": {
-        "2026-11-11": {
-          "avg": 41.7,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 40,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 40,
           "samples": 2,
@@ -3518,226 +2789,10 @@
         }
       }
     },
-    "attJuniorExplorersCamp": {
-      "name": "小勇者营地",
-      "land": "探险岛",
-      "days": {
-        "2026-11-11": {
-          "avg": 5,
-          "samples": 5,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-12": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-13": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-14": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
     "attRoaringRapids": {
       "name": "雷鸣山漂流",
       "land": "探险岛",
       "days": {
-        "2026-11-11": {
-          "avg": 55.8,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 61.7,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 15,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 90,
           "samples": 2,
@@ -3937,32 +2992,6 @@
       "name": "翱翔•飞越地平线",
       "land": "探险岛",
       "days": {
-        "2026-11-11": {
-          "avg": 85.8,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 95,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 105,
           "samples": 2,
@@ -4167,32 +3196,6 @@
       "name": "古迹探索营的探索步行道",
       "land": "探险岛",
       "days": {
-        "2026-11-11": {
-          "avg": 0,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 0,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 0,
           "samples": 2,
@@ -4397,32 +3400,6 @@
       "name": "加勒比海盗——沉落宝藏之战",
       "land": "宝藏湾",
       "days": {
-        "2026-11-11": {
-          "avg": 50.8,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 56.7,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 55,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 65,
           "samples": 2,
@@ -4623,396 +3600,10 @@
         }
       }
     },
-    "attShipwreckShore": {
-      "name": "船奇戏水滩",
-      "land": "宝藏湾",
-      "days": {
-        "2026-11-11": {
-          "avg": 5,
-          "samples": 5,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-12": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-13": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-14": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attSirensRevenge": {
-      "name": "探秘海妖复仇号",
-      "land": "宝藏湾",
-      "days": {
-        "2026-11-11": {
-          "avg": 5,
-          "samples": 5,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-12": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-13": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-14": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
     "attRexsRCRacer": {
       "name": "抱抱龙冲天赛车",
       "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-11-11": {
-          "avg": 89.2,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 100,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 82.5,
           "samples": 2,
@@ -5217,32 +3808,6 @@
       "name": "弹簧狗团团转",
       "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-11-11": {
-          "avg": 36.7,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 40,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 10,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 35,
           "samples": 2,
@@ -5447,32 +4012,6 @@
       "name": "胡迪牛仔嘉年华",
       "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-11-11": {
-          "avg": 43.3,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 46.7,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 10,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 50,
           "samples": 2,
@@ -5677,32 +4216,6 @@
       "name": "疯狂动物城：热力追踪",
       "land": "疯狂动物城",
       "days": {
-        "2026-11-11": {
-          "avg": 98.3,
-          "samples": 6,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 110,
-              "samples": 3
-            },
-            {
-              "hour": 11,
-              "wait": 120,
-              "samples": 1
-            },
-            {
-              "hour": 12,
-              "wait": 100,
-              "samples": 1
-            },
-            {
-              "hour": 20,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
           "avg": 130,
           "samples": 2,
@@ -5893,19 +4406,101 @@
         }
       }
     },
-    "attOnceUponTimeAdventure": {
-      "name": "漫游童话时光",
-      "land": "梦幻世界",
+    "attPixarAdventurousJourneyTomorrowland": {
+      "name": "皮克斯奇旅",
+      "land": "明日世界",
       "days": {
-        "2026-11-11": {
+        "2026-11-12": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-13": {
           "avg": 5,
           "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-14": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-15": {
+          "avg": 5,
+          "samples": 1,
           "hourly": [
             {
               "hour": 11,
               "wait": 5,
               "samples": 1
-            },
+            }
+          ]
+        },
+        "2026-11-16": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
             {
               "hour": 12,
               "wait": 5,
@@ -5913,6 +4508,357 @@
             }
           ]
         },
+        "2026-11-20": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attStitchEncounter": {
+      "name": "太空对话史迪奇",
+      "land": "明日世界",
+      "days": {
+        "2026-11-12": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-13": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 18,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-14": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-16": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attTronRealm": {
+      "name": "创界：雪佛兰数字挑战",
+      "land": "明日世界",
+      "days": {
+        "2026-11-12": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-13": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-14": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-15": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 11,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-16": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attOnceUponTimeAdventure": {
+      "name": "漫游童话时光",
+      "land": "梦幻世界",
+      "days": {
         "2026-11-12": {
           "avg": 5,
           "samples": 1,
@@ -6058,127 +5004,487 @@
         }
       }
     },
-    "attStitchEncounter": {
-      "name": "太空对话史迪奇",
-      "land": "明日世界",
+    "attJuniorExplorersCamp": {
+      "name": "小勇者营地",
+      "land": "探险岛",
       "days": {
-        "2026-11-11": {
-          "avg": 15,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 15,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-12": {
-          "avg": 15,
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
               "hour": 16,
-              "wait": 15,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-13": {
-          "avg": 15,
-          "samples": 1,
+          "avg": 5,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
               "hour": 18,
-              "wait": 15,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-14": {
-          "avg": 15,
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-15": {
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
-              "hour": 17,
-              "wait": 15,
+              "hour": 11,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-16": {
-          "avg": 15,
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
               "hour": 16,
-              "wait": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-18": {
-          "avg": 15,
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
               "hour": 17,
-              "wait": 15,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-19": {
-          "avg": 15,
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
               "hour": 12,
-              "wait": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-21": {
-          "avg": 15,
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
               "hour": 15,
-              "wait": 15,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-22": {
-          "avg": 15,
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
               "hour": 15,
-              "wait": 15,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-23": {
-          "avg": 15,
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
               "hour": 17,
-              "wait": 15,
+              "wait": 5,
               "samples": 1
             }
           ]
         },
         "2026-11-24": {
-          "avg": 15,
+          "avg": 5,
           "samples": 1,
           "hourly": [
             {
               "hour": 13,
-              "wait": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attShipwreckShore": {
+      "name": "船奇戏水滩",
+      "land": "宝藏湾",
+      "days": {
+        "2026-11-12": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-13": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-14": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-15": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 11,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-16": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attSirensRevenge": {
+      "name": "探秘海妖复仇号",
+      "land": "宝藏湾",
+      "days": {
+        "2026-11-12": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-13": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-14": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-15": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 11,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-16": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 5,
               "samples": 1
             }
           ]
