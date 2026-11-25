@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T16:10:02Z",
+  "generatedAt": "2026-11-25T19:07:54Z",
   "parkId": "shdr",
   "basis": {
     "days": 14,
-    "sampleSize": 4344
+    "sampleSize": 4340
   },
   "curves": {
     "attBecomeIronMan": {
@@ -39,16 +39,16 @@
     },
     "attDumboFlyingElephant": {
       "weekday": [
-        null,
-        56,
+        5,
+        50,
         63,
         null,
         30,
         30,
         null,
         null,
-        68,
-        40,
+        75,
+        37,
         40,
         null
       ],
@@ -69,16 +69,16 @@
     },
     "attFantasiaCarousel": {
       "weekday": [
-        null,
-        14,
+        5,
+        13,
         27,
         null,
         5,
         10,
         null,
         null,
-        25,
-        20,
+        30,
+        18,
         30,
         null
       ],
@@ -129,7 +129,7 @@
     },
     "attBuzzLightyearPlanetRescue": {
       "weekday": [
-        null,
+        5,
         5,
         15,
         null,
@@ -137,7 +137,7 @@
         10,
         null,
         null,
-        35,
+        40,
         12,
         20,
         null
@@ -159,8 +159,8 @@
     },
     "attJetPacks": {
       "weekday": [
-        null,
-        50,
+        5,
+        47,
         60,
         null,
         50,
@@ -249,16 +249,16 @@
     },
     "attTronLightcyclePowerRun": {
       "weekday": [
-        null,
-        80,
+        30,
+        72,
         110,
         null,
         90,
         null,
         null,
         null,
-        125,
-        95,
+        115,
+        93,
         127,
         null
       ],
@@ -309,8 +309,8 @@
     },
     "attAdventuresWinniePooh": {
       "weekday": [
-        null,
-        51,
+        5,
+        47,
         47,
         null,
         40,
@@ -318,7 +318,7 @@
         null,
         null,
         50,
-        38,
+        37,
         43,
         null
       ],
@@ -369,16 +369,16 @@
     },
     "attHunnyPotSpin": {
       "weekday": [
-        null,
-        22,
+        5,
+        20,
         37,
         null,
         30,
         15,
         null,
         null,
-        35,
-        30,
+        40,
+        33,
         37,
         null
       ],
@@ -429,16 +429,16 @@
     },
     "attPeterPansFlight": {
       "weekday": [
-        null,
-        53,
+        5,
+        50,
         60,
         null,
         40,
         30,
         null,
         null,
-        48,
-        42,
+        50,
+        40,
         40,
         null
       ],
@@ -459,16 +459,16 @@
     },
     "attSevenDwarfsMineTrain": {
       "weekday": [
-        null,
-        112,
+        60,
+        107,
         130,
         null,
         135,
         75,
         null,
         null,
-        128,
-        90,
+        120,
+        87,
         125,
         null
       ],
@@ -489,8 +489,8 @@
     },
     "attVoyageToCrystalGrotto": {
       "weekday": [
-        null,
-        26,
+        5,
+        22,
         40,
         null,
         10,
@@ -498,7 +498,7 @@
         null,
         null,
         30,
-        28,
+        22,
         20,
         null
       ],
@@ -519,16 +519,16 @@
     },
     "attChallengeTrails": {
       "weekday": [
-        null,
-        18,
+        5,
+        13,
         45,
         null,
         50,
         5,
         null,
         null,
-        45,
-        20,
+        40,
+        23,
         37,
         null
       ],
@@ -579,16 +579,16 @@
     },
     "attRoaringRapids": {
       "weekday": [
-        null,
-        62,
+        5,
+        58,
         75,
         null,
         40,
         15,
         null,
         null,
-        90,
-        30,
+        75,
+        23,
         50,
         null
       ],
@@ -609,16 +609,16 @@
     },
     "attSoaringOverHorizon": {
       "weekday": [
-        null,
-        82,
+        40,
+        80,
         105,
         null,
         90,
         80,
         null,
         null,
-        128,
-        85,
+        135,
+        82,
         105,
         null
       ],
@@ -699,16 +699,16 @@
     },
     "attPiratesOfCaribbean": {
       "weekday": [
-        null,
-        49,
+        5,
+        40,
         68,
         null,
         60,
         15,
         null,
         null,
-        65,
-        25,
+        75,
+        23,
         35,
         null
       ],
@@ -789,8 +789,8 @@
     },
     "attRexsRCRacer": {
       "weekday": [
-        null,
-        66,
+        5,
+        68,
         100,
         null,
         120,
@@ -798,7 +798,7 @@
         null,
         null,
         105,
-        82,
+        85,
         80,
         null
       ],
@@ -819,7 +819,7 @@
     },
     "attSlinkyDogSpin": {
       "weekday": [
-        null,
+        5,
         30,
         43,
         null,
@@ -827,7 +827,7 @@
         40,
         null,
         null,
-        45,
+        50,
         30,
         37,
         null
@@ -849,8 +849,8 @@
     },
     "attWoodysRoundUp": {
       "weekday": [
-        null,
-        45,
+        5,
+        43,
         58,
         null,
         50,
@@ -879,8 +879,8 @@
     },
     "attZootopiaHotPursuit": {
       "weekday": [
-        null,
-        107,
+        60,
+        90,
         137,
         null,
         140,
@@ -888,7 +888,7 @@
         null,
         null,
         120,
-        85,
+        77,
         110,
         null
       ],
