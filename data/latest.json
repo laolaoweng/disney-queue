@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "parkId": "shdr",
   "source": "queue-times",
-  "fetchedAt": "2026-11-27T02:26:13Z",
-  "updatedAt": "2026-11-27T02:21:56Z",
+  "fetchedAt": "2026-11-27T11:05:25Z",
+  "updatedAt": "2026-11-27T11:02:18Z",
   "waits": [
     {
       "attractionId": "attBecomeIronMan",
       "queueTimesId": 3896,
-      "waitMinutes": 5,
+      "waitMinutes": 10,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attDumboFlyingElephant",
       "queueTimesId": 2993,
-      "waitMinutes": 60,
-      "isOpen": true,
-      "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "waitMinutes": null,
+      "isOpen": false,
+      "status": "closed",
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attFantasiaCarousel",
       "queueTimesId": 2994,
-      "waitMinutes": 30,
+      "waitMinutes": 50,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attMarvelUniverse",
@@ -35,15 +35,15 @@
       "waitMinutes": 0,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attBuzzLightyearPlanetRescue",
       "queueTimesId": 2999,
-      "waitMinutes": 5,
+      "waitMinutes": 10,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attJetPacks",
@@ -51,15 +51,15 @@
       "waitMinutes": 40,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attPixarAdventurousJourneyTomorrowland",
       "queueTimesId": 16392,
-      "waitMinutes": 0,
-      "isOpen": true,
-      "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "waitMinutes": null,
+      "isOpen": false,
+      "status": "closed",
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attStitchEncounter",
@@ -67,7 +67,7 @@
       "waitMinutes": null,
       "isOpen": false,
       "status": "closed",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attTronLightcyclePowerRun",
@@ -75,7 +75,7 @@
       "waitMinutes": 105,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attTronRealm",
@@ -83,47 +83,47 @@
       "waitMinutes": 0,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attAdventuresWinniePooh",
       "queueTimesId": 2991,
-      "waitMinutes": 45,
+      "waitMinutes": 40,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attAliceWonderlandMaze",
       "queueTimesId": 2987,
-      "waitMinutes": 5,
-      "isOpen": true,
-      "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "waitMinutes": null,
+      "isOpen": false,
+      "status": "closed",
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attHunnyPotSpin",
       "queueTimesId": 2988,
-      "waitMinutes": 40,
+      "waitMinutes": 30,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attOnceUponTimeAdventure",
       "queueTimesId": 3080,
-      "waitMinutes": null,
-      "isOpen": false,
-      "status": "closed",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "waitMinutes": 5,
+      "isOpen": true,
+      "status": "operating",
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attPeterPansFlight",
       "queueTimesId": 2989,
-      "waitMinutes": 50,
+      "waitMinutes": 40,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attSevenDwarfsMineTrain",
@@ -131,23 +131,23 @@
       "waitMinutes": 120,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attVoyageToCrystalGrotto",
       "queueTimesId": 2992,
-      "waitMinutes": 50,
+      "waitMinutes": 30,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attChallengeTrails",
       "queueTimesId": 3893,
-      "waitMinutes": 40,
+      "waitMinutes": 25,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attJuniorExplorersCamp",
@@ -155,23 +155,23 @@
       "waitMinutes": 5,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attRoaringRapids",
       "queueTimesId": 2986,
-      "waitMinutes": 75,
+      "waitMinutes": 35,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attSoaringOverHorizon",
       "queueTimesId": 3002,
-      "waitMinutes": 105,
+      "waitMinutes": 90,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attVistaTrail",
@@ -179,7 +179,7 @@
       "waitMinutes": 0,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attExplorerCanoes",
@@ -187,63 +187,63 @@
       "waitMinutes": null,
       "isOpen": false,
       "status": "closed",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attPiratesOfCaribbean",
       "queueTimesId": 2996,
-      "waitMinutes": 75,
+      "waitMinutes": 30,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attShipwreckShore",
       "queueTimesId": 2997,
-      "waitMinutes": 5,
-      "isOpen": true,
-      "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "waitMinutes": null,
+      "isOpen": false,
+      "status": "closed",
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attSirensRevenge",
       "queueTimesId": 2998,
-      "waitMinutes": 5,
-      "isOpen": true,
-      "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "waitMinutes": null,
+      "isOpen": false,
+      "status": "closed",
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attRexsRCRacer",
       "queueTimesId": 5633,
-      "waitMinutes": 105,
+      "waitMinutes": 90,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attSlinkyDogSpin",
       "queueTimesId": 5634,
-      "waitMinutes": 40,
+      "waitMinutes": 50,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attWoodysRoundUp",
       "queueTimesId": 5635,
-      "waitMinutes": 60,
+      "waitMinutes": 40,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     },
     {
       "attractionId": "attZootopiaHotPursuit",
       "queueTimesId": 12392,
-      "waitMinutes": 120,
+      "waitMinutes": 70,
       "isOpen": true,
       "status": "operating",
-      "lastUpdated": "2026-11-27T02:21:56Z"
+      "lastUpdated": "2026-11-27T11:02:18Z"
     }
   ]
 }
