@@ -1,9 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-28T10:29:22Z",
+  "generatedAt": "2026-11-28T18:21:30Z",
   "source": "data/history/*.jsonl",
   "days": [
-    "2026-11-15",
     "2026-11-16",
     "2026-11-17",
     "2026-11-18",
@@ -16,1977 +15,14 @@
     "2026-11-25",
     "2026-11-26",
     "2026-11-27",
-    "2026-11-28"
+    "2026-11-28",
+    "2026-11-29"
   ],
   "attractions": {
-    "attJetPacks": {
-      "name": "喷气背包飞行器",
-      "land": "明日世界",
-      "days": {
-        "2026-11-15": {
-          "avg": 31.7,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 60,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 55,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 55,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 27.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 50,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 32.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 12.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 35,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 60,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 27.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 55,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 40,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attTronLightcyclePowerRun": {
-      "name": "创极速光轮",
-      "land": "明日世界",
-      "days": {
-        "2026-11-15": {
-          "avg": 75,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 110,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 102.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 115,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 105,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 92.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 110,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 70,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 120,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 120,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 67.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 105,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 62.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 65,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 80,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 60,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 105,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 105,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 105,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 70,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 80,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attHunnyPotSpin": {
-      "name": "旋转疯蜜罐",
-      "land": "梦幻世界",
-      "days": {
-        "2026-11-15": {
-          "avg": 28.3,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 35,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 30,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 25,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 20,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 17.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 40,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 22.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 17.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 20,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 10,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 15,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 15,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 22.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 25,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 35,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 40,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attPeterPansFlight": {
-      "name": "小飞侠天空奇遇",
-      "land": "梦幻世界",
-      "days": {
-        "2026-11-15": {
-          "avg": 30,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 70,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 15,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 50,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 45,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 45,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 50,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 22.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 52.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 70,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 35,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 32.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 20,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 35,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 35,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 35,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 30,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 20,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 35,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 40,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 45,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 35,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 47.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 35,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attSevenDwarfsMineTrain": {
-      "name": "七个小矮人矿山车",
-      "land": "梦幻世界",
-      "days": {
-        "2026-11-15": {
-          "avg": 101.7,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 135,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 110,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 120,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 120,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 120,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 120,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 125,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 130,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 97.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 135,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 142.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 135,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 150,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 90,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 45,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 135,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 75,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 65,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 70,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 75,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 70,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 80,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 122.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 125,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 120,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 120,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 97.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attSoaringOverHorizon": {
-      "name": "翱翔•飞越地平线",
-      "land": "探险岛",
-      "days": {
-        "2026-11-15": {
-          "avg": 91.7,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 135,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 127.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 120,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 135,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 112.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 112.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 70,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 97.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 105,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 60,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 30,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 32.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 15,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 80,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 80,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 57.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 97.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 97.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 85,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 80,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attPiratesOfCaribbean": {
-      "name": "加勒比海盗——沉落宝藏之战",
-      "land": "宝藏湾",
-      "days": {
-        "2026-11-15": {
-          "avg": 41.7,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 67.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 50,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 25,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 32.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 47.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 55,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 27.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 12.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 10,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 10,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 10,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 15,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 15,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 12.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 50,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 25,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 52.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 47.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attRexsRCRacer": {
-      "name": "抱抱龙冲天赛车",
-      "land": "迪士尼·皮克斯玩具总动员",
-      "days": {
-        "2026-11-15": {
-          "avg": 63.3,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 97.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 105,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 75,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 90,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 75,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 105,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 62.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 120,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 90,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 55,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 20,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 40,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 50,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 90,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 47.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 90,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 90,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 97.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 105,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 90,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attWoodysRoundUp": {
-      "name": "胡迪牛仔嘉年华",
-      "land": "迪士尼·皮克斯玩具总动员",
-      "days": {
-        "2026-11-15": {
-          "avg": 36.7,
-          "samples": 3,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 55,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 16,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 27.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 50,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 50,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 32.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 60,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 22.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 15,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 20,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 9,
-              "wait": 20,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 40,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 17.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 8,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 17,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 50,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 60,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
     "attBecomeIronMan": {
       "name": "漫威英雄总部 – 变身钢铁侠",
       "land": "奇想花园",
       "days": {
-        "2026-11-15": {
-          "avg": 12.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 20,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 7.5,
           "samples": 2,
@@ -2171,17 +207,6 @@
       "name": "小飞象",
       "land": "奇想花园",
       "days": {
-        "2026-11-15": {
-          "avg": 75,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 75,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 67.5,
           "samples": 2,
@@ -2371,22 +396,6 @@
       "name": "幻想曲旋转木马",
       "land": "奇想花园",
       "days": {
-        "2026-11-15": {
-          "avg": 40,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 30,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 25,
           "samples": 2,
@@ -2591,22 +600,6 @@
       "name": "漫威英雄总部",
       "land": "奇想花园",
       "days": {
-        "2026-11-15": {
-          "avg": 0,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 0,
           "samples": 2,
@@ -2791,22 +784,6 @@
       "name": "巴斯光年星际营救",
       "land": "明日世界",
       "days": {
-        "2026-11-15": {
-          "avg": 15,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 20,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 10,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 22.5,
           "samples": 2,
@@ -3007,350 +984,397 @@
         }
       }
     },
-    "attPixarAdventurousJourneyTomorrowland": {
-      "name": "皮克斯奇旅",
+    "attJetPacks": {
+      "name": "喷气背包飞行器",
       "land": "明日世界",
       "days": {
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
+        "2026-11-16": {
+          "avg": 60,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 11,
-              "wait": 5,
+              "hour": 9,
+              "wait": 60,
               "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
+            },
             {
               "hour": 16,
-              "wait": 5,
+              "wait": 60,
               "samples": 1
             }
           ]
         },
         "2026-11-17": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 55,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 50,
               "samples": 1
             }
           ]
         },
         "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 55,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 9,
+              "wait": 50,
+              "samples": 1
+            },
+            {
               "hour": 17,
-              "wait": 5,
+              "wait": 60,
               "samples": 1
             }
           ]
         },
         "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 27.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 12,
-              "wait": 5,
+              "wait": 50,
               "samples": 1
             }
           ]
         },
         "2026-11-20": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 50,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 40,
               "samples": 1
             }
           ]
         },
         "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 32.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 15,
+              "hour": 8,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 60,
               "samples": 1
             }
           ]
         },
         "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 12.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 15,
+              "hour": 8,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 20,
               "samples": 1
             }
           ]
         },
         "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 35,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 9,
+              "wait": 30,
+              "samples": 1
+            },
+            {
               "hour": 17,
-              "wait": 5,
+              "wait": 40,
               "samples": 1
             }
           ]
         },
         "2026-11-24": {
-          "avg": 5,
+          "avg": 60,
           "samples": 1,
           "hourly": [
             {
               "hour": 13,
-              "wait": 5,
+              "wait": 60,
               "samples": 1
             }
           ]
         },
         "2026-11-25": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 27.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 17,
+              "hour": 8,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 50,
               "samples": 1
             }
           ]
         },
         "2026-11-26": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 55,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 50,
               "samples": 1
             }
           ]
         },
         "2026-11-27": {
-          "avg": 0,
-          "samples": 1,
+          "avg": 40,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 0,
+              "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 40,
               "samples": 1
             }
           ]
         },
         "2026-11-28": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 45,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 40,
               "samples": 1
             }
           ]
         }
       }
     },
-    "attTronRealm": {
-      "name": "创界：雪佛兰数字挑战",
+    "attTronLightcyclePowerRun": {
+      "name": "创极速光轮",
       "land": "明日世界",
       "days": {
-        "2026-11-15": {
-          "avg": 0,
+        "2026-11-16": {
+          "avg": 102.5,
           "samples": 2,
           "hourly": [
             {
-              "hour": 11,
-              "wait": 0,
+              "hour": 9,
+              "wait": 90,
               "samples": 1
             },
             {
-              "hour": 19,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
               "hour": 16,
-              "wait": 0,
+              "wait": 115,
               "samples": 1
             }
           ]
         },
         "2026-11-17": {
-          "avg": 0,
+          "avg": 105,
           "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 0,
+              "wait": 90,
               "samples": 1
             },
             {
               "hour": 18,
-              "wait": 0,
+              "wait": 120,
               "samples": 1
             }
           ]
         },
         "2026-11-18": {
-          "avg": 0,
-          "samples": 1,
+          "avg": 92.5,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 9,
+              "wait": 75,
+              "samples": 1
+            },
+            {
               "hour": 17,
-              "wait": 0,
+              "wait": 110,
               "samples": 1
             }
           ]
         },
         "2026-11-19": {
-          "avg": 0,
-          "samples": 1,
+          "avg": 70,
+          "samples": 2,
           "hourly": [
             {
               "hour": 12,
-              "wait": 0,
+              "wait": 90,
               "samples": 1
             }
           ]
         },
         "2026-11-20": {
-          "avg": 0,
+          "avg": 120,
           "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 0,
+              "wait": 120,
               "samples": 1
             },
             {
               "hour": 18,
-              "wait": 0,
+              "wait": 120,
               "samples": 1
             }
           ]
         },
         "2026-11-21": {
-          "avg": 0,
-          "samples": 1,
+          "avg": 67.5,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 8,
+              "wait": 30,
+              "samples": 1
+            },
+            {
               "hour": 15,
-              "wait": 0,
+              "wait": 105,
               "samples": 1
             }
           ]
         },
         "2026-11-22": {
-          "avg": 0,
-          "samples": 1,
+          "avg": 62.5,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 8,
+              "wait": 50,
+              "samples": 1
+            },
+            {
               "hour": 15,
-              "wait": 0,
+              "wait": 75,
               "samples": 1
             }
           ]
         },
         "2026-11-23": {
-          "avg": 0,
-          "samples": 1,
+          "avg": 65,
+          "samples": 2,
           "hourly": [
+            {
+              "hour": 9,
+              "wait": 50,
+              "samples": 1
+            },
             {
               "hour": 17,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 0,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 0,
+              "wait": 80,
               "samples": 1
             }
           ]
         },
         "2026-11-25": {
-          "avg": 0,
-          "samples": 1,
+          "avg": 60,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 8,
+              "wait": 30,
+              "samples": 1
+            },
+            {
               "hour": 17,
-              "wait": 0,
+              "wait": 90,
               "samples": 1
             }
           ]
         },
         "2026-11-26": {
-          "avg": 0,
+          "avg": 105,
           "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 0,
+              "wait": 90,
               "samples": 1
             },
             {
               "hour": 18,
-              "wait": 0,
+              "wait": 120,
               "samples": 1
             }
           ]
         },
         "2026-11-27": {
-          "avg": 0,
+          "avg": 105,
           "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 0,
+              "wait": 105,
               "samples": 1
             },
             {
               "hour": 19,
-              "wait": 0,
+              "wait": 105,
               "samples": 1
             }
           ]
         },
         "2026-11-28": {
-          "avg": 0,
+          "avg": 70,
           "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 0,
+              "wait": 60,
               "samples": 1
             },
             {
               "hour": 18,
-              "wait": 0,
+              "wait": 80,
               "samples": 1
             }
           ]
@@ -3361,22 +1385,6 @@
       "name": "小熊维尼历险记",
       "land": "梦幻世界",
       "days": {
-        "2026-11-15": {
-          "avg": 47.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 55,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 52.5,
           "samples": 2,
@@ -3576,17 +1584,6 @@
       "name": "爱丽丝梦游仙境迷宫",
       "land": "梦幻世界",
       "days": {
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 5,
           "samples": 2,
@@ -3747,176 +1744,182 @@
         }
       }
     },
-    "attOnceUponTimeAdventure": {
-      "name": "漫游童话时光",
+    "attHunnyPotSpin": {
+      "name": "旋转疯蜜罐",
       "land": "梦幻世界",
       "days": {
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 10,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 18,
-              "wait": 10,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 19,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
-    "attVoyageToCrystalGrotto": {
-      "name": "晶彩奇航",
-      "land": "梦幻世界",
-      "days": {
-        "2026-11-15": {
           "avg": 35,
           "samples": 2,
           "hourly": [
             {
-              "hour": 11,
+              "hour": 9,
+              "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 16,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 30,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 25,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 20,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 17.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 40,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 22.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 17.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 20,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 10,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 15,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 15,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 22.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 25,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 20,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 35,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
               "wait": 40,
               "samples": 1
             },
@@ -3927,6 +1930,431 @@
             }
           ]
         },
+        "2026-11-28": {
+          "avg": 40,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attPeterPansFlight": {
+      "name": "小飞侠天空奇遇",
+      "land": "梦幻世界",
+      "days": {
+        "2026-11-16": {
+          "avg": 50,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 16,
+              "wait": 50,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 45,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 45,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 45,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 50,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 50,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 22.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 52.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 70,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 35,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 32.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 60,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 20,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 35,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 35,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 35,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 30,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 20,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 35,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 40,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 45,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 35,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 45,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 47.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 35,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attSevenDwarfsMineTrain": {
+      "name": "七个小矮人矿山车",
+      "land": "梦幻世界",
+      "days": {
+        "2026-11-16": {
+          "avg": 120,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 120,
+              "samples": 1
+            },
+            {
+              "hour": 16,
+              "wait": 120,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 120,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 120,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 120,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 125,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 130,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 120,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 97.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 135,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 142.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 135,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 150,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 90,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 45,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 135,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 75,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 90,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 65,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 70,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 60,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 75,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 75,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 70,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 80,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 122.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 125,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 120,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 120,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 120,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 120,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 97.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 90,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attVoyageToCrystalGrotto": {
+      "name": "晶彩奇航",
+      "land": "梦幻世界",
+      "days": {
         "2026-11-16": {
           "avg": 40,
           "samples": 2,
@@ -4131,22 +2559,6 @@
       "name": "古迹探索营的绳索挑战道",
       "land": "探险岛",
       "days": {
-        "2026-11-15": {
-          "avg": 27.5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 40,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 15,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 32.5,
           "samples": 2,
@@ -4347,211 +2759,10 @@
         }
       }
     },
-    "attJuniorExplorersCamp": {
-      "name": "小勇者营地",
-      "land": "探险岛",
-      "days": {
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 16,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-17": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 12,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-20": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 15,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-24": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 13,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-25": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
-            {
-              "hour": 17,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-26": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-27": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 5,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 10,
-              "wait": 5,
-              "samples": 1
-            },
-            {
-              "hour": 18,
-              "wait": 5,
-              "samples": 1
-            }
-          ]
-        }
-      }
-    },
     "attRoaringRapids": {
       "name": "雷鸣山漂流",
       "land": "探险岛",
       "days": {
-        "2026-11-15": {
-          "avg": 55,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 70,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 82.5,
           "samples": 2,
@@ -4747,26 +2958,214 @@
         }
       }
     },
+    "attSoaringOverHorizon": {
+      "name": "翱翔•飞越地平线",
+      "land": "探险岛",
+      "days": {
+        "2026-11-16": {
+          "avg": 127.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 120,
+              "samples": 1
+            },
+            {
+              "hour": 16,
+              "wait": 135,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 112.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 120,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 112.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 120,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 70,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 90,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 97.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 90,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 105,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 60,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 90,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 45,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 30,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 60,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 32.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 15,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 50,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 80,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 80,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 57.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 75,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 97.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 90,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 97.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 90,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 85,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 90,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 80,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
     "attVistaTrail": {
       "name": "古迹探索营的探索步行道",
       "land": "探险岛",
       "days": {
-        "2026-11-15": {
-          "avg": 0,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 0,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 0,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 0,
           "samples": 2,
@@ -4962,320 +3361,392 @@
         }
       }
     },
-    "attShipwreckShore": {
-      "name": "船奇戏水滩",
+    "attPiratesOfCaribbean": {
+      "name": "加勒比海盗——沉落宝藏之战",
       "land": "宝藏湾",
       "days": {
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
+        "2026-11-16": {
+          "avg": 67.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 11,
-              "wait": 5,
+              "hour": 9,
+              "wait": 60,
               "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
+            },
             {
               "hour": 16,
-              "wait": 5,
+              "wait": 75,
               "samples": 1
             }
           ]
         },
         "2026-11-17": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 50,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 75,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 25,
               "samples": 1
             }
           ]
         },
         "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 45,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 9,
+              "wait": 50,
+              "samples": 1
+            },
+            {
               "hour": 17,
-              "wait": 5,
+              "wait": 40,
               "samples": 1
             }
           ]
         },
         "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 32.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 12,
-              "wait": 5,
+              "wait": 60,
               "samples": 1
             }
           ]
         },
         "2026-11-20": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 47.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 55,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 40,
               "samples": 1
             }
           ]
         },
         "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 27.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 15,
+              "hour": 8,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 50,
               "samples": 1
             }
           ]
         },
         "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 12.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 15,
+              "hour": 8,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 20,
               "samples": 1
             }
           ]
         },
         "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 10,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 9,
+              "wait": 10,
+              "samples": 1
+            },
+            {
               "hour": 17,
-              "wait": 5,
+              "wait": 10,
               "samples": 1
             }
           ]
         },
         "2026-11-24": {
-          "avg": 5,
+          "avg": 15,
           "samples": 1,
           "hourly": [
             {
               "hour": 13,
-              "wait": 5,
+              "wait": 15,
               "samples": 1
             }
           ]
         },
         "2026-11-25": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 12.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 17,
+              "hour": 8,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 20,
               "samples": 1
             }
           ]
         },
         "2026-11-26": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 50,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 75,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 25,
               "samples": 1
             }
           ]
         },
         "2026-11-27": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 52.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 75,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 30,
               "samples": 1
             }
           ]
         },
         "2026-11-28": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 47.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 75,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 20,
               "samples": 1
             }
           ]
         }
       }
     },
-    "attSirensRevenge": {
-      "name": "探秘海妖复仇号",
-      "land": "宝藏湾",
+    "attRexsRCRacer": {
+      "name": "抱抱龙冲天赛车",
+      "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-11-15": {
-          "avg": 5,
-          "samples": 1,
+        "2026-11-16": {
+          "avg": 97.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 11,
-              "wait": 5,
+              "hour": 9,
+              "wait": 90,
               "samples": 1
-            }
-          ]
-        },
-        "2026-11-16": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
+            },
             {
               "hour": 16,
-              "wait": 5,
+              "wait": 105,
               "samples": 1
             }
           ]
         },
         "2026-11-17": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 75,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 75,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 75,
               "samples": 1
             }
           ]
         },
         "2026-11-18": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 90,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 9,
+              "wait": 75,
+              "samples": 1
+            },
+            {
               "hour": 17,
-              "wait": 5,
+              "wait": 105,
               "samples": 1
             }
           ]
         },
         "2026-11-19": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 62.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 12,
-              "wait": 5,
+              "wait": 120,
               "samples": 1
             }
           ]
         },
         "2026-11-20": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 90,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 105,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 75,
               "samples": 1
             }
           ]
         },
         "2026-11-21": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 55,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 8,
+              "wait": 20,
+              "samples": 1
+            },
+            {
               "hour": 15,
-              "wait": 5,
+              "wait": 90,
               "samples": 1
             }
           ]
         },
         "2026-11-22": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 40,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 15,
+              "hour": 8,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 75,
               "samples": 1
             }
           ]
         },
         "2026-11-23": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 50,
+          "samples": 2,
           "hourly": [
             {
+              "hour": 9,
+              "wait": 40,
+              "samples": 1
+            },
+            {
               "hour": 17,
-              "wait": 5,
+              "wait": 60,
               "samples": 1
             }
           ]
         },
         "2026-11-24": {
-          "avg": 5,
+          "avg": 90,
           "samples": 1,
           "hourly": [
             {
               "hour": 13,
-              "wait": 5,
+              "wait": 90,
               "samples": 1
             }
           ]
         },
         "2026-11-25": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 47.5,
+          "samples": 2,
           "hourly": [
             {
-              "hour": 17,
+              "hour": 8,
               "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 90,
               "samples": 1
             }
           ]
         },
         "2026-11-26": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 90,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 90,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 90,
               "samples": 1
             }
           ]
         },
         "2026-11-27": {
-          "avg": 5,
-          "samples": 1,
+          "avg": 97.5,
+          "samples": 2,
           "hourly": [
             {
               "hour": 10,
-              "wait": 5,
+              "wait": 105,
               "samples": 1
-            }
-          ]
-        },
-        "2026-11-28": {
-          "avg": 5,
-          "samples": 1,
-          "hourly": [
+            },
             {
-              "hour": 10,
-              "wait": 5,
+              "hour": 19,
+              "wait": 90,
               "samples": 1
             }
           ]
@@ -5286,22 +3757,6 @@
       "name": "弹簧狗团团转",
       "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-11-15": {
-          "avg": 45,
-          "samples": 2,
-          "hourly": [
-            {
-              "hour": 11,
-              "wait": 50,
-              "samples": 1
-            },
-            {
-              "hour": 19,
-              "wait": 40,
-              "samples": 1
-            }
-          ]
-        },
         "2026-11-16": {
           "avg": 50,
           "samples": 2,
@@ -5502,26 +3957,214 @@
         }
       }
     },
-    "attZootopiaHotPursuit": {
-      "name": "疯狂动物城：热力追踪",
-      "land": "疯狂动物城",
+    "attWoodysRoundUp": {
+      "name": "胡迪牛仔嘉年华",
+      "land": "迪士尼·皮克斯玩具总动员",
       "days": {
-        "2026-11-15": {
-          "avg": 130,
+        "2026-11-16": {
+          "avg": 55,
           "samples": 2,
           "hourly": [
             {
-              "hour": 11,
-              "wait": 140,
+              "hour": 9,
+              "wait": 60,
               "samples": 1
             },
             {
-              "hour": 19,
-              "wait": 120,
+              "hour": 16,
+              "wait": 50,
               "samples": 1
             }
           ]
         },
+        "2026-11-17": {
+          "avg": 45,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 40,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 50,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 45,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 27.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 50,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 50,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 32.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 60,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 22.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 15,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 20,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 9,
+              "wait": 20,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 20,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 40,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 17.5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 8,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 17,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 45,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 30,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 50,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 60,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 45,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 50,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 40,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attZootopiaHotPursuit": {
+      "name": "疯狂动物城：热力追踪",
+      "land": "疯狂动物城",
+      "days": {
         "2026-11-16": {
           "avg": 125,
           "samples": 2,
@@ -5712,6 +4355,155 @@
         }
       }
     },
+    "attPixarAdventurousJourneyTomorrowland": {
+      "name": "皮克斯奇旅",
+      "land": "明日世界",
+      "days": {
+        "2026-11-16": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
     "attStitchEncounter": {
       "name": "太空对话史迪奇",
       "land": "明日世界",
@@ -5800,6 +4592,801 @@
             {
               "hour": 17,
               "wait": 15,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attTronRealm": {
+      "name": "创界：雪佛兰数字挑战",
+      "land": "明日世界",
+      "days": {
+        "2026-11-16": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 0,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 0,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 0,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 0,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attOnceUponTimeAdventure": {
+      "name": "漫游童话时光",
+      "land": "梦幻世界",
+      "days": {
+        "2026-11-16": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 10,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 18,
+              "wait": 10,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 19,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attJuniorExplorersCamp": {
+      "name": "小勇者营地",
+      "land": "探险岛",
+      "days": {
+        "2026-11-16": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 19,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 5,
+          "samples": 2,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            },
+            {
+              "hour": 18,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attShipwreckShore": {
+      "name": "船奇戏水滩",
+      "land": "宝藏湾",
+      "days": {
+        "2026-11-16": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        }
+      }
+    },
+    "attSirensRevenge": {
+      "name": "探秘海妖复仇号",
+      "land": "宝藏湾",
+      "days": {
+        "2026-11-16": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 16,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-17": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-18": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-19": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 12,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-20": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-21": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-22": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 15,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-23": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-24": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 13,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-25": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 17,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-26": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-27": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
+              "samples": 1
+            }
+          ]
+        },
+        "2026-11-28": {
+          "avg": 5,
+          "samples": 1,
+          "hourly": [
+            {
+              "hour": 10,
+              "wait": 5,
               "samples": 1
             }
           ]
